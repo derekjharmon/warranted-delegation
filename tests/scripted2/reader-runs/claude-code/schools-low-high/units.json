@@ -1,0 +1,5520 @@
+{
+ "files": [
+  "analysis/__pycache__/analysis.cpython-314.pyc",
+  "analysis/analysis.py",
+  "memo.md",
+  "output/figure1.png",
+  "output/table1.md"
+ ],
+ "units": [
+  {
+   "id": "U1",
+   "kind": "decision",
+   "row": "S1",
+   "label": "Research question: what predicts district ninth-grade math achievement",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "What predicts ninth-grade math achievement in California school districts?",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "What predicts how well a California school district's ninth graders do in",
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "Analysis for the memo: what predicts California districts' ninth-grade math results.",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "What predicts ninth-grade math achievement in California school districts?",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "What predicts how well a California school district's ninth graders do in",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "Analysis for the memo: what predicts California districts' ninth-grade math resu",
+     "by": "Claude",
+     "turn": 3,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U2",
+   "kind": "decision",
+   "row": "S2",
+   "label": "Framing: education production function (student background vs school resources)",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "math? Following the education production function, achievement depends on",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "Within this framework, what students",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "what students bring to school and on the resources schools give them. I test",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "Achievement depends both on what students bring to school and on what",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "bring to school predicts district math results far better than the",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "# What students bring: percent Asian, Black, Hispanic (white/other omitted).",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "# School resources: per-pupil spending ($000s), pupil-teacher ratio,",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "math? Following the education production function, achievement depends on",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "Within this framework, what students",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "what students bring to school and on the resources schools give them. I test",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "Achievement depends both on what students bring to school and on what",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added",
+     "copied_from": [
+      "notes/draft.md"
+     ]
+    },
+    {
+     "file": "memo.md",
+     "text": "bring to school predicts district math results far better than the",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "# What students bring: percent Asian, Black, Hispanic (white/other omitted).",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "# School resources: per-pupil spending ($000s), pupil-teacher ratio,",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U3",
+   "kind": "decision",
+   "row": "S3",
+   "label": "Positioned in the school-resources debate (Hanushek vs Krueger)",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "(*p* = .058). This pattern is closer to Hanushek's (1997) summary than to",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "## Background",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "schools spend on them. Hanushek (1997) reviewed decades of studies relating",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "achievement. Krueger (1999), using the Tennessee STAR experiment, found that",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "Krueger's (1999) experimental class-size effects, although resources here",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "(*p* = .058). This pattern is closer to Hanushek's (1997) summary than to",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "## Background",
+     "by": "Claude",
+     "turn": 14,
+     "change": "added",
+     "copied_from": [
+      "notes/draft.md"
+     ]
+    },
+    {
+     "file": "memo.md",
+     "text": "schools spend on them. Hanushek (1997) reviewed decades of studies relating",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added",
+     "copied_from": [
+      "notes/draft.md"
+     ]
+    },
+    {
+     "file": "memo.md",
+     "text": "achievement. Krueger (1999), using the Tennessee STAR experiment, found that",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "Krueger's (1999) experimental class-size effects, although resources here",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U4",
+   "kind": "decision",
+   "row": "S4",
+   "label": "Synthesis of prior work: mixed evidence on resources vs background",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "Achievement depends both on what students bring to school and on what",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "schools spend on them. Hanushek (1997) reviewed decades of studies relating",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "school resources to student achievement and found no strong or consistent",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "achievement. Krueger (1999), using the Tennessee STAR experiment, found that",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "students randomly assigned to smaller classes scored higher on standardized",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "Achievement depends both on what students bring to school and on what",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added",
+     "copied_from": [
+      "notes/draft.md"
+     ]
+    },
+    {
+     "file": "memo.md",
+     "text": "schools spend on them. Hanushek (1997) reviewed decades of studies relating",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added",
+     "copied_from": [
+      "notes/draft.md"
+     ]
+    },
+    {
+     "file": "memo.md",
+     "text": "school resources to student achievement and found no strong or consistent",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "achievement. Krueger (1999), using the Tennessee STAR experiment, found that",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "students randomly assigned to smaller classes scored higher on standardized",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U5",
+   "kind": "decision",
+   "row": "S5",
+   "label": "Source for data: Gill (2001)",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "results for ninth graders in mathematics, as compiled by Gill (2001). They",
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "bundled with statsmodels (statsmodels.datasets.star98; Gill 2001).",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "Gill, J. (2001). *Generalized linear models: A unified approach*. SAGE. https://doi.org/10.4135/9781412984348",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "results for ninth graders in mathematics, as compiled by Gill (2001). They",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added",
+     "copied_from": [
+      "notes/draft.md"
+     ]
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "bundled with statsmodels (statsmodels.datasets.star98; Gill 2001).",
+     "by": "Claude",
+     "turn": 3,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "Gill, J. (2001). *Generalized linear models: A unified approach*. SAGE. https://",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added",
+     "copied_from": [
+      "notes/references.md"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "U6",
+   "kind": "decision",
+   "row": "S5",
+   "label": "Source for resources-no-effect claim: Hanushek (1997)",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "schools spend on them. Hanushek (1997) reviewed decades of studies relating",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "(*p* = .058). This pattern is closer to Hanushek's (1997) summary than to",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "Hanushek, E. A. (1997). Assessing the effects of school resources on student performance: An update.",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "schools spend on them. Hanushek (1997) reviewed decades of studies relating",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added",
+     "copied_from": [
+      "notes/draft.md"
+     ]
+    },
+    {
+     "file": "memo.md",
+     "text": "(*p* = .058). This pattern is closer to Hanushek's (1997) summary than to",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "Hanushek, E. A. (1997). Assessing the effects of school resources on student per",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added",
+     "copied_from": [
+      "notes/references.md"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "U7",
+   "kind": "decision",
+   "row": "S5",
+   "label": "Source for class-size effect claim: Krueger (1999)",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "achievement. Krueger (1999), using the Tennessee STAR experiment, found that",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "Krueger's (1999) experimental class-size effects, although resources here",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "Krueger, A. B. (1999). Experimental estimates of education production functions.",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "achievement. Krueger (1999), using the Tennessee STAR experiment, found that",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "Krueger's (1999) experimental class-size effects, although resources here",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "Krueger, A. B. (1999). Experimental estimates of education production functions.",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U8",
+   "kind": "decision",
+   "row": "S5",
+   "label": "Source for estimator: Papke & Wooldridge (1996)",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "national median (Papke & Wooldridge, 1996).",
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "# Fractional logit (Papke & Wooldridge 1996): Bernoulli quasi-likelihood with",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "Column 1 is a fractional logit (Papke & Wooldridge, 1996).",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "\"logit (Papke & Wooldridge, 1996). Column 2 refits it without the \"",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "Papke, L. E., & Wooldridge, J. M. (1996). Econometric methods for fractional response variables with an application to 401(k) plan participation rates.",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "national median (Papke & Wooldridge, 1996).",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "# Fractional logit (Papke & Wooldridge 1996): Bernoulli quasi-likelihood with",
+     "by": "Claude",
+     "turn": 5,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "Column 1 is a fractional logit (Papke & Wooldridge, 1996).",
+     "by": "Claude",
+     "turn": 20,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "\"logit (Papke & Wooldridge, 1996). Column 2 refits it without the \"",
+     "by": "Claude",
+     "turn": 20,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "Papke, L. E., & Wooldridge, J. M. (1996). Econometric methods for fractional res",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added",
+     "copied_from": [
+      "notes/references.md"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "U9",
+   "kind": "decision",
+   "row": "S6",
+   "label": "Contribution: student background predicts far better than resources",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "bring to school predicts district math results far better than the",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "School resources, by contrast, explain little once student background is",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "Measured school resources added little once student",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "In 1998, California districts with more low-income students had markedly",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "bring to school predicts district math results far better than the",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "School resources, by contrast, explain little once student background is",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "Measured school resources added little once student",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "In 1998, California districts with more low-income students had markedly",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U10",
+   "kind": "decision",
+   "row": "S7",
+   "label": "Argument structure: question, data, background, methods, results, robustness, alternative explanation, limitations, conclusion",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "## Question and hypothesis",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "## Another explanation",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "## Data",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "## Background",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "## Methods",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "## Results",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "## Robustness",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "## Limitations",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "## Conclusion",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "## Question and hypothesis",
+     "by": "Claude",
+     "turn": 14,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "## Another explanation",
+     "by": "Claude",
+     "turn": 11,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "## Data",
+     "by": "Claude",
+     "turn": 14,
+     "change": "added",
+     "copied_from": [
+      "notes/draft.md"
+     ]
+    },
+    {
+     "file": "memo.md",
+     "text": "## Background",
+     "by": "Claude",
+     "turn": 14,
+     "change": "added",
+     "copied_from": [
+      "notes/draft.md"
+     ]
+    },
+    {
+     "file": "memo.md",
+     "text": "## Methods",
+     "by": "Claude",
+     "turn": 14,
+     "change": "added",
+     "copied_from": [
+      "notes/draft.md"
+     ]
+    },
+    {
+     "file": "memo.md",
+     "text": "## Results",
+     "by": "Claude",
+     "turn": 14,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "## Robustness",
+     "by": "Claude",
+     "turn": 14,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "## Limitations",
+     "by": "Claude",
+     "turn": 14,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "## Conclusion",
+     "by": "Claude",
+     "turn": 14,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U11",
+   "kind": "decision",
+   "row": "S8",
+   "label": "Table 1: main model plus robustness columns",
+   "anchors": [
+    {
+     "file": "analysis/analysis.py",
+     "quote": "def write_table1(path):",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "**Table 1.** Share of ninth graders above the national median in math, California districts, 1998: main model and robustness checks",
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "write_table1(out / \"table1.md\")",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "\"**Table 1.** Share of ninth graders above the national median in \"",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "main model (Table 1, column 1) with the other predictors held at their",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "analysis/analysis.py",
+     "text": "def write_table1(path):",
+     "by": "Claude",
+     "turn": 5,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "**Table 1.** Share of ninth graders above the national median in math, Californi",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added",
+     "copied_from": [
+      "analysis/__pycache__/analysis.cpython-314.pyc",
+      "output/table1.md"
+     ]
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "write_table1(out / \"table1.md\")",
+     "by": "Claude",
+     "turn": 17,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "\"**Table 1.** Share of ninth graders above the national median in \"",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "main model (Table 1, column 1) with the other predictors held at their",
+     "by": "Claude",
+     "turn": 17,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U12",
+   "kind": "decision",
+   "row": "S8",
+   "label": "Figure 1: observed shares vs low-income % with average predicted share and 95% band",
+   "anchors": [
+    {
+     "file": "analysis/analysis.py",
+     "quote": "def write_figure1(path):",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "![Figure 1](output/figure1.png)",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "**Figure 1.** Share of ninth graders above the national median in math by",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "observed values; the shaded band is a 95% confidence interval based on HC1",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "write_figure1(out / \"figure1.png\")",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "average predicted share (other predictors at their observed values)",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "analysis/analysis.py",
+     "text": "def write_figure1(path):",
+     "by": "Claude",
+     "turn": 17,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "![Figure 1](output/figure1.png)",
+     "by": "Claude",
+     "turn": 17,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "**Figure 1.** Share of ninth graders above the national median in math by",
+     "by": "Claude",
+     "turn": 17,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "observed values; the shaded band is a 95% confidence interval based on HC1",
+     "by": "Claude",
+     "turn": 17,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "write_figure1(out / \"figure1.png\")",
+     "by": "Claude",
+     "turn": 17,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "average predicted share (other predictors at their observed values)",
+     "by": "Claude",
+     "turn": 17,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U13",
+   "kind": "decision",
+   "row": "S9",
+   "label": "Limitations: district averages, one year, income/ethnicity collinearity, not causal, unmeasured parental education",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "These are district averages for one year, so they say nothing about which students within a district do better, and they may not hold in other years.",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "districts, not a causal effect of income on any one student. Figure 1 shows",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "Parents' education may matter as much as family income. Districts where more",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "Low income and ethnic composition also move together across districts, so the model can't fully separate them.",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "These data don't measure parental education, so this can't be tested here.",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "are not randomly assigned and partly respond to district need. Ethnic",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "Income and parental education rise and fall together, so part of what",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "These are district averages for one year, so they say nothing about which studen",
+     "by": "the author, between turns",
+     "turn": 19,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "districts, not a causal effect of income on any one student. Figure 1 shows",
+     "by": "Claude",
+     "turn": 17,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "Parents' education may matter as much as family income. Districts where more",
+     "by": "Claude",
+     "turn": 11,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "Low income and ethnic composition also move together across districts, so the mo",
+     "by": "Claude",
+     "turn": 20,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "These data don't measure parental education, so this can't be tested here.",
+     "by": "Claude",
+     "turn": 11,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "are not randomly assigned and partly respond to district need. Ethnic",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "Income and parental education rise and fall together, so part of what",
+     "by": "Claude",
+     "turn": 11,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U14",
+   "kind": "decision",
+   "row": "QC1",
+   "label": "Data source: 1998 California STAR via statsmodels star98",
+   "anchors": [
+    {
+     "file": "analysis/analysis.py",
+     "quote": "df = sm.datasets.star98.load_pandas().data",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "The data are California's 1998 Standardized Testing and Reporting (STAR)",
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "Data: 1998 California STAR ninth-grade math results by school district,",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "bundled with statsmodels (statsmodels.datasets.star98; Gill 2001).",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "results for ninth graders in mathematics, as compiled by Gill (2001). They",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "analysis/analysis.py",
+     "text": "df = sm.datasets.star98.load_pandas().data",
+     "by": "Claude",
+     "turn": 3,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "The data are California's 1998 Standardized Testing and Reporting (STAR)",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added",
+     "copied_from": [
+      "notes/draft.md"
+     ]
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "Data: 1998 California STAR ninth-grade math results by school district,",
+     "by": "Claude",
+     "turn": 3,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "bundled with statsmodels (statsmodels.datasets.star98; Gill 2001).",
+     "by": "Claude",
+     "turn": 3,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "results for ninth graders in mathematics, as compiled by Gill (2001). They",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added",
+     "copied_from": [
+      "notes/draft.md"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "U15",
+   "kind": "decision",
+   "row": "QC3",
+   "label": "Coverage: keep all 303 districts, no exclusions",
+   "anchors": [
+    {
+     "file": "analysis/analysis.py",
+     "quote": "# Keep all districts; no exclusions.",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "have one row per school district, covering 303 California school districts.",
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "assert len(df) == 303",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "| Districts | 303 | 288 | 303 |",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "percentage of low-income students, 303 California districts, 1998. Gray",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "analysis/analysis.py",
+     "text": "# Keep all districts; no exclusions.",
+     "by": "Claude",
+     "turn": 3,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "have one row per school district, covering 303 California school districts.",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "assert len(df) == 303",
+     "by": "Claude",
+     "turn": 3,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "| Districts | 303 | 288 | 303 |",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added",
+     "copied_from": [
+      "output/table1.md"
+     ]
+    },
+    {
+     "file": "memo.md",
+     "text": "percentage of low-income students, 303 California districts, 1998. Gray",
+     "by": "Claude",
+     "turn": 17,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U16",
+   "kind": "decision",
+   "row": "QK5",
+   "label": "Construction of outcome share from NABOVE and NBELOW",
+   "anchors": [
+    {
+     "file": "analysis/analysis.py",
+     "quote": "df[\"share_above\"] = df[\"NABOVE\"] / (df[\"NABOVE\"] + df[\"NBELOW\"])",
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "# PR50M = students above the national median) into NABOVE = students above",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "# the median and NBELOW = students tested minus NABOVE.",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "analysis/analysis.py",
+     "text": "df[\"share_above\"] = df[\"NABOVE\"] / (df[\"NABOVE\"] + df[\"NBELOW\"])",
+     "by": "Claude",
+     "turn": 3,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "# PR50M = students above the national median) into NABOVE = students above",
+     "by": "Claude",
+     "turn": 3,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "# the median and NBELOW = students tested minus NABOVE.",
+     "by": "Claude",
+     "turn": 3,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U17",
+   "kind": "decision",
+   "row": "QA1",
+   "label": "DV: share of ninth graders above national median in math",
+   "anchors": [
+    {
+     "file": "analysis/analysis.py",
+     "quote": "# Outcome: share of ninth graders scoring above the national median in math.",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "one hypothesis: districts with more low-income students have a smaller share",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "of ninth graders above the national median in math, holding school resources",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "I estimate a fractional logit of the share of ninth graders above the",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "df[\"share_above\"] = df[\"NABOVE\"] / (df[\"NABOVE\"] + df[\"NBELOW\"])",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "y = df[\"share_above\"]",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "ax.set_ylabel(\"Ninth graders above national median (%)\", color=ink)",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "output/table1.md",
+     "quote": "**Table 1.** Share of ninth graders above the national median in math, California districts, 1998: main model and robustness checks",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "analysis/analysis.py",
+     "text": "# Outcome: share of ninth graders scoring above the national median in math.",
+     "by": "Claude",
+     "turn": 3,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "one hypothesis: districts with more low-income students have a smaller share",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "of ninth graders above the national median in math, holding school resources",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "I estimate a fractional logit of the share of ninth graders above the",
+     "by": "Claude",
+     "turn": 20,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "df[\"share_above\"] = df[\"NABOVE\"] / (df[\"NABOVE\"] + df[\"NBELOW\"])",
+     "by": "Claude",
+     "turn": 3,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "y = df[\"share_above\"]",
+     "by": "Claude",
+     "turn": 5,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "ax.set_ylabel(\"Ninth graders above national median (%)\", color=ink)",
+     "by": "Claude",
+     "turn": 17,
+     "change": "added"
+    },
+    {
+     "file": "output/table1.md",
+     "text": "**Table 1.** Share of ninth graders above the national median in math, Californi",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U18",
+   "kind": "decision",
+   "row": "QA2",
+   "label": "Focal predictor: percent low-income students (LOWINC)",
+   "anchors": [
+    {
+     "file": "analysis/analysis.py",
+     "quote": "KEY = \"LOWINC\"",
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "# Key predictor: percent of students from low-income families (0-100 scale).",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "one hypothesis: districts with more low-income students have a smaller share",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "\"LOWINC\": \"Low-income students (%)\",",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "X = sm.add_constant(df[[KEY] + DEMOGRAPHIC + RESOURCES])",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "| Low-income students (%) | -0.0229 (0.0020) | -0.0227 (0.0017) | -0.0173 (0.0023) |",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "analysis/analysis.py",
+     "text": "KEY = \"LOWINC\"",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "# Key predictor: percent of students from low-income families (0-100 scale).",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "one hypothesis: districts with more low-income students have a smaller share",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "\"LOWINC\": \"Low-income students (%)\",",
+     "by": "Claude",
+     "turn": 5,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "X = sm.add_constant(df[[KEY] + DEMOGRAPHIC + RESOURCES])",
+     "by": "Claude",
+     "turn": 5,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "| Low-income students (%) | -0.0229 (0.0020) | -0.0227 (0.0017) | -0.0173 (0.002",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added",
+     "copied_from": [
+      "output/table1.md"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "U19",
+   "kind": "decision",
+   "row": "QA3",
+   "label": "Controls: ethnic composition and four resource measures; AVSALK, PCTAF, PERMINTE, PCTCHRT, interactions left out",
+   "anchors": [
+    {
+     "file": "analysis/analysis.py",
+     "quote": "DEMOGRAPHIC = [\"PERASIAN\", \"PERBLACK\", \"PERHISP\"]",
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "RESOURCES = [\"PERSPENK\", \"PTRATIO\", \"AVYRSEXP\", \"PCTYRRND\"]",
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "# year-round calendar (overcrowding). Teacher salary (AVSALK) is left out",
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "# Left out of the main model: PCTAF (college-prep course-taking, partly an",
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "X = sm.add_constant(df[[KEY] + DEMOGRAPHIC + RESOURCES])",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "# What students bring: percent Asian, Black, Hispanic (white/other omitted).",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "# School resources: per-pupil spending ($000s), pupil-teacher ratio,",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "# at the author's request, to keep per-pupil spending.",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "# outcome of achievement), PERMINTE (teacher composition that tracks student",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "The results support the hypothesis. Holding school resources and ethnic",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "held constant. None of the four resource measures is significant at the .05",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "analysis/analysis.py",
+     "text": "DEMOGRAPHIC = [\"PERASIAN\", \"PERBLACK\", \"PERHISP\"]",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "RESOURCES = [\"PERSPENK\", \"PTRATIO\", \"AVYRSEXP\", \"PCTYRRND\"]",
+     "by": "Claude",
+     "turn": 5,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "# year-round calendar (overcrowding). Teacher salary (AVSALK) is left out",
+     "by": "Claude",
+     "turn": 5,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "# Left out of the main model: PCTAF (college-prep course-taking, partly an",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "X = sm.add_constant(df[[KEY] + DEMOGRAPHIC + RESOURCES])",
+     "by": "Claude",
+     "turn": 5,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "# What students bring: percent Asian, Black, Hispanic (white/other omitted).",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "# School resources: per-pupil spending ($000s), pupil-teacher ratio,",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "# at the author's request, to keep per-pupil spending.",
+     "by": "Claude",
+     "turn": 5,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "# outcome of achievement), PERMINTE (teacher composition that tracks student",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "The results support the hypothesis. Holding school resources and ethnic",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "held constant. None of the four resource measures is significant at the .05",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U20",
+   "kind": "decision",
+   "row": "QA4",
+   "label": "Estimator: fractional logit (binomial GLM, logit link)",
+   "anchors": [
+    {
+     "file": "analysis/analysis.py",
+     "quote": "model = sm.GLM(y, X, family=sm.families.Binomial(), var_weights=weights)",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "I estimate a fractional logit of the share of ninth graders above the",
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "# Fractional logit (Papke & Wooldridge 1996): Bernoulli quasi-likelihood with",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "# a logit link, which keeps fitted shares in (0, 1). HC1 robust SEs.",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "(\"(1) Main: fractional logit\", res, r2),",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "Column 1 is a fractional logit (Papke & Wooldridge, 1996).",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "output/table1.md",
+     "quote": "| | (1) Main: fractional logit | (2) Without 15 influential districts | (3) Weighted by students tested |",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "analysis/analysis.py",
+     "text": "model = sm.GLM(y, X, family=sm.families.Binomial(), var_weights=weights)",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "I estimate a fractional logit of the share of ninth graders above the",
+     "by": "Claude",
+     "turn": 20,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "# Fractional logit (Papke & Wooldridge 1996): Bernoulli quasi-likelihood with",
+     "by": "Claude",
+     "turn": 5,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "# a logit link, which keeps fitted shares in (0, 1). HC1 robust SEs.",
+     "by": "Claude",
+     "turn": 5,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "(\"(1) Main: fractional logit\", res, r2),",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "Column 1 is a fractional logit (Papke & Wooldridge, 1996).",
+     "by": "Claude",
+     "turn": 20,
+     "change": "added"
+    },
+    {
+     "file": "output/table1.md",
+     "text": "| | (1) Main: fractional logit | (2) Without 15 influential districts | (3) Weig",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U21",
+   "kind": "decision",
+   "row": "QA5",
+   "label": "Standard errors: HC1 via per-observation clustering",
+   "anchors": [
+    {
+     "file": "analysis/analysis.py",
+     "quote": "return model.fit(cov_type=\"cluster\", cov_kwds={\"groups\": np.arange(len(y))})",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "Cells show coefficients with HC1 heteroskedasticity-robust standard errors in parentheses",
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "\"*Note.* Cells show coefficients with HC1 heteroskedasticity-robust \"",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "# a logit link, which keeps fitted shares in (0, 1). HC1 robust SEs.",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "\"\"\"Fractional logit with HC1 standard errors.",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "each observation gives the sandwich with the n/(n - k) correction, which",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "observed values; the shaded band is a 95% confidence interval based on HC1",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "analysis/analysis.py",
+     "text": "return model.fit(cov_type=\"cluster\", cov_kwds={\"groups\": np.arange(len(y))})",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "Cells show coefficients with HC1 heteroskedasticity-robust standard errors in pa",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added",
+     "copied_from": [
+      "analysis/__pycache__/analysis.cpython-314.pyc",
+      "output/table1.md"
+     ]
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "\"*Note.* Cells show coefficients with HC1 heteroskedasticity-robust \"",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "# a logit link, which keeps fitted shares in (0, 1). HC1 robust SEs.",
+     "by": "Claude",
+     "turn": 5,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "\"\"\"Fractional logit with HC1 standard errors.",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "each observation gives the sandwich with the n/(n - k) correction, which",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "observed values; the shaded band is a 95% confidence interval based on HC1",
+     "by": "Claude",
+     "turn": 17,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U22",
+   "kind": "decision",
+   "row": "QA6",
+   "label": "Inference: exact two-tailed p-values, .05 threshold",
+   "anchors": [
+    {
+     "file": "analysis/analysis.py",
+     "quote": "# Exact p-values; scientific notation when below .001.",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "held constant. None of the four resource measures is significant at the .05",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "*p*-values are exact and two-tailed",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "return f\"{p:.1e}\" if p < 0.001 else f\"{p:.3f}\".lstrip(\"0\")",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "findings are less stable. Teacher experience becomes significant without the",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "analysis/analysis.py",
+     "text": "# Exact p-values; scientific notation when below .001.",
+     "by": "Claude",
+     "turn": 5,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "held constant. None of the four resource measures is significant at the .05",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "*p*-values are exact and two-tailed",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added",
+     "copied_from": [
+      "analysis/__pycache__/analysis.cpython-314.pyc",
+      "analysis/analysis.py",
+      "output/table1.md"
+     ]
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "return f\"{p:.1e}\" if p < 0.001 else f\"{p:.3f}\".lstrip(\"0\")",
+     "by": "Claude",
+     "turn": 5,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "findings are less stable. Teacher experience becomes significant without the",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U23",
+   "kind": "decision",
+   "row": "QA7",
+   "label": "Robustness: drop influential districts (Cook's D > 4/n, Pearson dispersion)",
+   "anchors": [
+    {
+     "file": "analysis/analysis.py",
+     "quote": "keep = cooks <= 4 / len(df)",
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "fit_x2 = sm.GLM(y, X, family=sm.families.Binomial()).fit(scale=\"X2\")",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "the 15 districts whose Cook's distance exceeds 4/n leaves the coefficient",
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "# (1) Influential observations: refit without districts whose Cook's distance",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "cooks = fit_x2.get_influence().cooks_distance[0]",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "res_cook = frac_logit(y[keep], X[keep])",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "Column 2 refits it without the 15 districts whose Cook's distance exceeds 4/n (4/303), computed with the Pearson-estimated dispersion.",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "output/table1.md",
+     "quote": "| | (1) Main: fractional logit | (2) Without 15 influential districts | (3) Weighted by students tested |",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "analysis/analysis.py",
+     "text": "keep = cooks <= 4 / len(df)",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "fit_x2 = sm.GLM(y, X, family=sm.families.Binomial()).fit(scale=\"X2\")",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "the 15 districts whose Cook's distance exceeds 4/n leaves the coefficient",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "# (1) Influential observations: refit without districts whose Cook's distance",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "cooks = fit_x2.get_influence().cooks_distance[0]",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "res_cook = frac_logit(y[keep], X[keep])",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "Column 2 refits it without the 15 districts whose Cook's distance exceeds 4/n (4",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added",
+     "copied_from": [
+      "output/table1.md"
+     ]
+    },
+    {
+     "file": "output/table1.md",
+     "text": "| | (1) Main: fractional logit | (2) Without 15 influential districts | (3) Weig",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U24",
+   "kind": "decision",
+   "row": "QA7",
+   "label": "Robustness: weight by number of students tested",
+   "anchors": [
+    {
+     "file": "analysis/analysis.py",
+     "quote": "res_w = frac_logit(y, X, weights=n_tested)",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "district by the number of students tested shrinks it by about a quarter but",
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "# (2) Weighting: the main model weighted by the number of students tested,",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "n_tested = df[\"NABOVE\"] + df[\"NBELOW\"]",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "(\"(3) Weighted by students tested\", res_w, r2_w),",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "Column 3 weights the main model by the number of students tested in each district.",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "analysis/analysis.py",
+     "text": "res_w = frac_logit(y, X, weights=n_tested)",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "district by the number of students tested shrinks it by about a quarter but",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "# (2) Weighting: the main model weighted by the number of students tested,",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "n_tested = df[\"NABOVE\"] + df[\"NBELOW\"]",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "(\"(3) Weighted by students tested\", res_w, r2_w),",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "Column 3 weights the main model by the number of students tested in each distric",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added",
+     "copied_from": [
+      "output/table1.md"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "U25",
+   "kind": "decision",
+   "row": "QA8",
+   "label": "Diagnostic: largest district's share of total weight in weighted model",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "only when weighted. The weighted model gives the largest district 14.5",
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "only when weighted. The weighted model gives the largest district 14.5",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U26",
+   "kind": "decision",
+   "row": "QM1",
+   "label": "Hypothesis: more low-income students, smaller share above median, holding resources constant",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "one hypothesis: districts with more low-income students have a smaller share",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "of ninth graders above the national median in math, holding school resources",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "The results support the hypothesis. Holding school resources and ethnic",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "In 1998, California districts with more low-income students had markedly",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "one hypothesis: districts with more low-income students have a smaller share",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "of ninth graders above the national median in math, holding school resources",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "The results support the hypothesis. Holding school resources and ethnic",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "In 1998, California districts with more low-income students had markedly",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U27",
+   "kind": "decision",
+   "row": "QM2",
+   "label": "Interpretation: low-income result supports hypothesis, sizable, associational; figure flatter due to ethnic controls",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "The results support the hypothesis. Holding school resources and ethnic",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "average of 43.7. This is a sizable gap, and it is an association across",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "standard errors. The line is flatter than the raw scatter because ethnic",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "composition constant, districts with more low-income students have a smaller",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "districts, not a causal effect of income on any one student. Figure 1 shows",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "composition, which is correlated with income, is held constant.",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "In 1998, California districts with more low-income students had markedly",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "The results support the hypothesis. Holding school resources and ethnic",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "average of 43.7. This is a sizable gap, and it is an association across",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "standard errors. The line is flatter than the raw scatter because ethnic",
+     "by": "Claude",
+     "turn": 17,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "composition constant, districts with more low-income students have a smaller",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "districts, not a causal effect of income on any one student. Figure 1 shows",
+     "by": "Claude",
+     "turn": 17,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "composition, which is correlated with income, is held constant.",
+     "by": "Claude",
+     "turn": 17,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "In 1998, California districts with more low-income students had markedly",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U28",
+   "kind": "decision",
+   "row": "QM2",
+   "label": "Interpretation: resources explain little, closer to Hanushek than Krueger",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "School resources, by contrast, explain little once student background is",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "Krueger's (1999) experimental class-size effects, although resources here",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "held constant. None of the four resource measures is significant at the .05",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "(*p* = .058). This pattern is closer to Hanushek's (1997) summary than to",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "Measured school resources added little once student",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "resources districts spend on them.",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "School resources, by contrast, explain little once student background is",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "Krueger's (1999) experimental class-size effects, although resources here",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "held constant. None of the four resource measures is significant at the .05",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "(*p* = .058). This pattern is closer to Hanushek's (1997) summary than to",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "Measured school resources added little once student",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "resources districts spend on them.",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U29",
+   "kind": "decision",
+   "row": "QM2",
+   "label": "Interpretation: ethnic composition matters independently of income",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "composition matters independently of income: the share of Asian students is",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "positively associated with the outcome, and the shares of Black and Hispanic",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "students negatively (all *p* \u2264 2.6e-07).",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "composition matters independently of income: the share of Asian students is",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "positively associated with the outcome, and the shares of Black and Hispanic",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "students negatively (all *p* \u2264 2.6e-07).",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U30",
+   "kind": "decision",
+   "row": "QM2",
+   "label": "Interpretation of robustness: low-income stable, resource findings unstable and may reflect large districts",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "The low-income result does not depend on a few unusual districts. Dropping",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "percent of all the weight, so these resource effects may reflect a few large",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "essentially unchanged (column 2: \u22120.0227, *p* = 2.7e-41). Weighting each",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "leaves it clearly negative (column 3: \u22120.0173, *p* = 7.4e-14). The resource",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "findings are less stable. Teacher experience becomes significant without the",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "fewer ninth graders above the national median in math, and this held across",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "The low-income result does not depend on a few unusual districts. Dropping",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "percent of all the weight, so these resource effects may reflect a few large",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "essentially unchanged (column 2: \u22120.0227, *p* = 2.7e-41). Weighting each",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "leaves it clearly negative (column 3: \u22120.0173, *p* = 7.4e-14). The resource",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "findings are less stable. Teacher experience becomes significant without the",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "fewer ninth graders above the national median in math, and this held across",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U31",
+   "kind": "decision",
+   "row": "QM3",
+   "label": "Reporting: robustness models shown in main Table 1, AME in table note, no appendix",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "| | (1) Main: fractional logit | (2) Without 15 influential districts | (3) Weighted by students tested |",
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "MODELS = [",
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "\"shares. In column 1, the average marginal \"",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "In column 1, the average marginal effect of low-income students (%) on the share is -0.0050",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "| | (1) Main: fractional logit | (2) Without 15 influential districts | (3) Weig",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added",
+     "copied_from": [
+      "output/table1.md"
+     ]
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "MODELS = [",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "\"shares. In column 1, the average marginal \"",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "In column 1, the average marginal effect of low-income students (%) on the share",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added",
+     "copied_from": [
+      "output/table1.md"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "U32",
+   "kind": "claim",
+   "row": "V1",
+   "label": "Reference: Gill (2001)",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "Gill, J. (2001). *Generalized linear models: A unified approach*. SAGE. https://doi.org/10.4135/9781412984348",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "results for ninth graders in mathematics, as compiled by Gill (2001). They",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "bundled with statsmodels (statsmodels.datasets.star98; Gill 2001).",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "Gill, J. (2001). *Generalized linear models: A unified approach*. SAGE. https://",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added",
+     "copied_from": [
+      "notes/references.md"
+     ]
+    },
+    {
+     "file": "memo.md",
+     "text": "results for ninth graders in mathematics, as compiled by Gill (2001). They",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added",
+     "copied_from": [
+      "notes/draft.md"
+     ]
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "bundled with statsmodels (statsmodels.datasets.star98; Gill 2001).",
+     "by": "Claude",
+     "turn": 3,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U33",
+   "kind": "claim",
+   "row": "V1",
+   "label": "Reference: Hanushek (1997)",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "Hanushek, E. A. (1997). Assessing the effects of school resources on student performance: An update.",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "schools spend on them. Hanushek (1997) reviewed decades of studies relating",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "(*p* = .058). This pattern is closer to Hanushek's (1997) summary than to",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "Hanushek, E. A. (1997). Assessing the effects of school resources on student per",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added",
+     "copied_from": [
+      "notes/references.md"
+     ]
+    },
+    {
+     "file": "memo.md",
+     "text": "schools spend on them. Hanushek (1997) reviewed decades of studies relating",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added",
+     "copied_from": [
+      "notes/draft.md"
+     ]
+    },
+    {
+     "file": "memo.md",
+     "text": "(*p* = .058). This pattern is closer to Hanushek's (1997) summary than to",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U34",
+   "kind": "claim",
+   "row": "V1",
+   "label": "Reference: Krueger (1999)",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "Krueger, A. B. (1999). Experimental estimates of education production functions.",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "achievement. Krueger (1999), using the Tennessee STAR experiment, found that",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "Krueger's (1999) experimental class-size effects, although resources here",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "Krueger, A. B. (1999). Experimental estimates of education production functions.",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "achievement. Krueger (1999), using the Tennessee STAR experiment, found that",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "Krueger's (1999) experimental class-size effects, although resources here",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U35",
+   "kind": "claim",
+   "row": "V1",
+   "label": "Reference: Papke & Wooldridge (1996)",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "Papke, L. E., & Wooldridge, J. M. (1996). Econometric methods for fractional response variables with an application to 401(k) plan participation rates.",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "national median (Papke & Wooldridge, 1996).",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "Column 1 is a fractional logit (Papke & Wooldridge, 1996).",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "# Fractional logit (Papke & Wooldridge 1996): Bernoulli quasi-likelihood with",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "Papke, L. E., & Wooldridge, J. M. (1996). Econometric methods for fractional res",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added",
+     "copied_from": [
+      "notes/references.md"
+     ]
+    },
+    {
+     "file": "memo.md",
+     "text": "national median (Papke & Wooldridge, 1996).",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "Column 1 is a fractional logit (Papke & Wooldridge, 1996).",
+     "by": "Claude",
+     "turn": 20,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "# Fractional logit (Papke & Wooldridge 1996): Bernoulli quasi-likelihood with",
+     "by": "Claude",
+     "turn": 5,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U36",
+   "kind": "claim",
+   "row": "V2",
+   "label": "Gill (2001) compiled the STAR ninth-grade math data",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "results for ninth graders in mathematics, as compiled by Gill (2001). They",
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "bundled with statsmodels (statsmodels.datasets.star98; Gill 2001).",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "results for ninth graders in mathematics, as compiled by Gill (2001). They",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added",
+     "copied_from": [
+      "notes/draft.md"
+     ]
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "bundled with statsmodels (statsmodels.datasets.star98; Gill 2001).",
+     "by": "Claude",
+     "turn": 3,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U37",
+   "kind": "claim",
+   "row": "V2",
+   "label": "Hanushek (1997) found no strong or consistent resource-achievement relationship",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "relationship between resources such as class size and spending and student",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "schools spend on them. Hanushek (1997) reviewed decades of studies relating",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "school resources to student achievement and found no strong or consistent",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "(*p* = .058). This pattern is closer to Hanushek's (1997) summary than to",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "relationship between resources such as class size and spending and student",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "schools spend on them. Hanushek (1997) reviewed decades of studies relating",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added",
+     "copied_from": [
+      "notes/draft.md"
+     ]
+    },
+    {
+     "file": "memo.md",
+     "text": "school resources to student achievement and found no strong or consistent",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "(*p* = .058). This pattern is closer to Hanushek's (1997) summary than to",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U38",
+   "kind": "claim",
+   "row": "V2",
+   "label": "Krueger (1999): Tennessee STAR, smaller classes scored higher",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "students randomly assigned to smaller classes scored higher on standardized",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "achievement. Krueger (1999), using the Tennessee STAR experiment, found that",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "Krueger's (1999) experimental class-size effects, although resources here",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "students randomly assigned to smaller classes scored higher on standardized",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "achievement. Krueger (1999), using the Tennessee STAR experiment, found that",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "Krueger's (1999) experimental class-size effects, although resources here",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U39",
+   "kind": "claim",
+   "row": "V2",
+   "label": "Papke & Wooldridge (1996) as source of fractional logit",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "national median (Papke & Wooldridge, 1996).",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "Column 1 is a fractional logit (Papke & Wooldridge, 1996).",
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "# Fractional logit (Papke & Wooldridge 1996): Bernoulli quasi-likelihood with",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "\"logit (Papke & Wooldridge, 1996). Column 2 refits it without the \"",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "national median (Papke & Wooldridge, 1996).",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "Column 1 is a fractional logit (Papke & Wooldridge, 1996).",
+     "by": "Claude",
+     "turn": 20,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "# Fractional logit (Papke & Wooldridge 1996): Bernoulli quasi-likelihood with",
+     "by": "Claude",
+     "turn": 5,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "\"logit (Papke & Wooldridge, 1996). Column 2 refits it without the \"",
+     "by": "Claude",
+     "turn": 20,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U40",
+   "kind": "claim",
+   "row": "V2",
+   "label": "Comparison: Hanushek summary vs Krueger experimental class-size effects",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "Krueger's (1999) experimental class-size effects, although resources here",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "(*p* = .058). This pattern is closer to Hanushek's (1997) summary than to",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "Krueger's (1999) experimental class-size effects, although resources here",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "(*p* = .058). This pattern is closer to Hanushek's (1997) summary than to",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U41",
+   "kind": "claim",
+   "row": "V4",
+   "label": "N of 303 districts stated consistently",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "have one row per school district, covering 303 California school districts.",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "percentage of low-income students, 303 California districts, 1998. Gray",
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "assert len(df) == 303",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "| Districts | 303 | 288 | 303 |",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "have one row per school district, covering 303 California school districts.",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "percentage of low-income students, 303 California districts, 1998. Gray",
+     "by": "Claude",
+     "turn": 17,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "assert len(df) == 303",
+     "by": "Claude",
+     "turn": 3,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "| Districts | 303 | 288 | 303 |",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added",
+     "copied_from": [
+      "output/table1.md"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "U42",
+   "kind": "claim",
+   "row": "V4",
+   "label": "15 influential districts stated consistently",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "the 15 districts whose Cook's distance exceeds 4/n leaves the coefficient",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "| | (1) Main: fractional logit | (2) Without 15 influential districts | (3) Weighted by students tested |",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "Column 2 refits it without the 15 districts whose Cook's distance exceeds 4/n (4/303)",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "the 15 districts whose Cook's distance exceeds 4/n leaves the coefficient",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "| | (1) Main: fractional logit | (2) Without 15 influential districts | (3) Weig",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added",
+     "copied_from": [
+      "output/table1.md"
+     ]
+    },
+    {
+     "file": "memo.md",
+     "text": "Column 2 refits it without the 15 districts whose Cook's distance exceeds 4/n (4",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added",
+     "copied_from": [
+      "output/table1.md"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "U43",
+   "kind": "claim",
+   "row": "V4",
+   "label": "43.7 percent average stated consistently",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "On average, 43.7 percent of a district's ninth graders scored above the",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "average of 43.7. This is a sizable gap, and it is an association across",
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "print(f\"Mean share above national median: {df['share_above'].mean():.4f}\")",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "On average, 43.7 percent of a district's ninth graders scored above the",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "average of 43.7. This is a sizable gap, and it is an association across",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "print(f\"Mean share above national median: {df['share_above'].mean():.4f}\")",
+     "by": "Claude",
+     "turn": 3,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U44",
+   "kind": "claim",
+   "row": "V5",
+   "label": "STAR is California's 1998 Standardized Testing and Reporting program",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "The data are California's 1998 Standardized Testing and Reporting (STAR)",
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "Data: 1998 California STAR ninth-grade math results by school district,",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "The data are California's 1998 Standardized Testing and Reporting (STAR)",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added",
+     "copied_from": [
+      "notes/draft.md"
+     ]
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "Data: 1998 California STAR ninth-grade math results by school district,",
+     "by": "Claude",
+     "turn": 3,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U45",
+   "kind": "claim",
+   "row": "V5",
+   "label": "Income and parental education move together",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "Income and parental education rise and fall together, so part of what",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "combined disadvantage of poorer, less-educated households rather than income",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "Income and parental education rise and fall together, so part of what",
+     "by": "Claude",
+     "turn": 11,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "combined disadvantage of poorer, less-educated households rather than income",
+     "by": "Claude",
+     "turn": 11,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U46",
+   "kind": "claim",
+   "row": "V5",
+   "label": "Resources partly respond to district need",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "are not randomly assigned and partly respond to district need. Ethnic",
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "are not randomly assigned and partly respond to district need. Ethnic",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U47",
+   "kind": "claim",
+   "row": "V5",
+   "label": "Data do not measure parental education",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "These data don't measure parental education, so this can't be tested here.",
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "These data don't measure parental education, so this can't be tested here.",
+     "by": "Claude",
+     "turn": 11,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U48",
+   "kind": "claim",
+   "row": "V5",
+   "label": "statsmodels GLM returns HC0 when asked for HC1",
+   "anchors": [
+    {
+     "file": "analysis/analysis.py",
+     "quote": "statsmodels' GLM silently returns HC0 when asked for HC1. Clustering on",
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "each observation gives the sandwich with the n/(n - k) correction, which",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "is HC1 (checked against a hand-computed sandwich).",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "analysis/analysis.py",
+     "text": "statsmodels' GLM silently returns HC0 when asked for HC1. Clustering on",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "each observation gives the sandwich with the n/(n - k) correction, which",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "is HC1 (checked against a hand-computed sandwich).",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U49",
+   "kind": "claim",
+   "row": "V5",
+   "label": "statsmodels loader converts MATHTOT/PR50M into NABOVE/NBELOW",
+   "anchors": [
+    {
+     "file": "analysis/analysis.py",
+     "quote": "# The statsmodels loader converts the raw columns (MATHTOT = students tested,",
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "# PR50M = students above the national median) into NABOVE = students above",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "# the median and NBELOW = students tested minus NABOVE.",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "analysis/analysis.py",
+     "text": "# The statsmodels loader converts the raw columns (MATHTOT = students tested,",
+     "by": "Claude",
+     "turn": 3,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "# PR50M = students above the national median) into NABOVE = students above",
+     "by": "Claude",
+     "turn": 3,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "# the median and NBELOW = students tested minus NABOVE.",
+     "by": "Claude",
+     "turn": 3,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U50",
+   "kind": "claim",
+   "row": "QV1",
+   "label": "Table 1 numbers",
+   "anchors": [
+    {
+     "file": "output/table1.md",
+     "quote": "| Low-income students (%) | -0.0229 (0.0020) | -0.0227 (0.0017) | -0.0173 (0.0023) |",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "| R\u00b2 (observed vs. fitted share) | 0.798 | 0.845 | 0.777 |",
+     "found": true
+    },
+    {
+     "file": "output/table1.md",
+     "quote": "| Asian students (%) | 0.0193 (0.0025) | 0.0172 (0.0023) | 0.0126 (0.0022) |",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "output/table1.md",
+     "text": "| Low-income students (%) | -0.0229 (0.0020) | -0.0227 (0.0017) | -0.0173 (0.002",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "| R\u00b2 (observed vs. fitted share) | 0.798 | 0.845 | 0.777 |",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added",
+     "copied_from": [
+      "output/table1.md"
+     ]
+    },
+    {
+     "file": "output/table1.md",
+     "text": "| Asian students (%) | 0.0193 (0.0025) | 0.0172 (0.0023) | 0.0126 (0.0022) |",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U51",
+   "kind": "claim",
+   "row": "QV1",
+   "label": "Mean share 43.7 percent",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "On average, 43.7 percent of a district's ninth graders scored above the",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "average of 43.7. This is a sizable gap, and it is an association across",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "print(f\"Mean share above national median: {df['share_above'].mean():.4f}\")",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "On average, 43.7 percent of a district's ninth graders scored above the",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "average of 43.7. This is a sizable gap, and it is an association across",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "print(f\"Mean share above national median: {df['share_above'].mean():.4f}\")",
+     "by": "Claude",
+     "turn": 3,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U52",
+   "kind": "claim",
+   "row": "QV1",
+   "label": "303 districts in data",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "have one row per school district, covering 303 California school districts.",
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "assert len(df) == 303",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "| Districts | 303 | 288 | 303 |",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "percentage of low-income students, 303 California districts, 1998. Gray",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "have one row per school district, covering 303 California school districts.",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "assert len(df) == 303",
+     "by": "Claude",
+     "turn": 3,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "| Districts | 303 | 288 | 303 |",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added",
+     "copied_from": [
+      "output/table1.md"
+     ]
+    },
+    {
+     "file": "memo.md",
+     "text": "percentage of low-income students, 303 California districts, 1998. Gray",
+     "by": "Claude",
+     "turn": 17,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U53",
+   "kind": "claim",
+   "row": "QV1",
+   "label": "Column 1 low-income coefficient, SE, p in text",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "\u22120.0229, SE 0.0020, *p* = 3.7e-31). On the share itself, the average marginal",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "| Low-income students (%) | -0.0229 (0.0020) | -0.0227 (0.0017) | -0.0173 (0.0023) |",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "| &nbsp;&nbsp;*p* | 3.7e-31 | 2.7e-41 | 7.4e-14 |",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "\u22120.0229, SE 0.0020, *p* = 3.7e-31). On the share itself, the average marginal",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "| Low-income students (%) | -0.0229 (0.0020) | -0.0227 (0.0017) | -0.0173 (0.002",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added",
+     "copied_from": [
+      "output/table1.md"
+     ]
+    },
+    {
+     "file": "memo.md",
+     "text": "| &nbsp;&nbsp;*p* | 3.7e-31 | 2.7e-41 | 7.4e-14 |",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added",
+     "copied_from": [
+      "output/table1.md"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "U54",
+   "kind": "claim",
+   "row": "QV1",
+   "label": "AME \u22120.0050, SE, p, and 5.0-point drop in text",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "effect is \u22120.0050 (SE 0.0004, *p* = 2.4e-33): each 10-point rise in the",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "percentage of low-income students goes with a 5.0-point drop in the",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "on the share is -0.0050 (SE 0.0004, *p* = 2.4e-33), i.e., a 5.0-point drop in the percentage above the median",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "ame = np.mean(b * mu * (1 - mu))",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "effect is \u22120.0050 (SE 0.0004, *p* = 2.4e-33): each 10-point rise in the",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "percentage of low-income students goes with a 5.0-point drop in the",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "on the share is -0.0050 (SE 0.0004, *p* = 2.4e-33), i.e., a 5.0-point drop in th",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added",
+     "copied_from": [
+      "output/table1.md"
+     ]
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "ame = np.mean(b * mu * (1 - mu))",
+     "by": "Claude",
+     "turn": 5,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U55",
+   "kind": "claim",
+   "row": "QV1",
+   "label": "SD of low-income percentage 20.5",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "low-income percentage has a standard deviation of 20.5 points, so a district",
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "low-income percentage has a standard deviation of 20.5 points, so a district",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U56",
+   "kind": "claim",
+   "row": "QV1",
+   "label": "One-SD gap about 10 percentage points",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "one standard deviation poorer than another is expected to have about 10",
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "one standard deviation poorer than another is expected to have about 10",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U57",
+   "kind": "claim",
+   "row": "QV1",
+   "label": "Resource p-values in text (.086, .838, .257, .058)",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "level: per-pupil spending (*p* = .086), pupil-teacher ratio (*p* = .838),",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "teacher experience (*p* = .257), and the share of year-round schools",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "| &nbsp;&nbsp;*p* | .086 | .132 | .041 |",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "| &nbsp;&nbsp;*p* | .838 | .825 | .490 |",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "| &nbsp;&nbsp;*p* | .257 | .023 | .027 |",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "| &nbsp;&nbsp;*p* | .058 | .120 | .006 |",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "level: per-pupil spending (*p* = .086), pupil-teacher ratio (*p* = .838),",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "teacher experience (*p* = .257), and the share of year-round schools",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "| &nbsp;&nbsp;*p* | .086 | .132 | .041 |",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added",
+     "copied_from": [
+      "output/table1.md"
+     ]
+    },
+    {
+     "file": "memo.md",
+     "text": "| &nbsp;&nbsp;*p* | .838 | .825 | .490 |",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added",
+     "copied_from": [
+      "output/table1.md"
+     ]
+    },
+    {
+     "file": "memo.md",
+     "text": "| &nbsp;&nbsp;*p* | .257 | .023 | .027 |",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added",
+     "copied_from": [
+      "output/table1.md"
+     ]
+    },
+    {
+     "file": "memo.md",
+     "text": "| &nbsp;&nbsp;*p* | .058 | .120 | .006 |",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added",
+     "copied_from": [
+      "output/table1.md"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "U58",
+   "kind": "claim",
+   "row": "QV1",
+   "label": "Ethnic composition p \u2264 2.6e-07",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "students negatively (all *p* \u2264 2.6e-07).",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "| &nbsp;&nbsp;*p* | 2.6e-07 | 4.1e-11 | 9.0e-10 |",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "students negatively (all *p* \u2264 2.6e-07).",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "| &nbsp;&nbsp;*p* | 2.6e-07 | 4.1e-11 | 9.0e-10 |",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added",
+     "copied_from": [
+      "output/table1.md"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "U59",
+   "kind": "claim",
+   "row": "QV1",
+   "label": "Column 2 coefficient and p in text",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "essentially unchanged (column 2: \u22120.0227, *p* = 2.7e-41). Weighting each",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "| Low-income students (%) | -0.0229 (0.0020) | -0.0227 (0.0017) | -0.0173 (0.0023) |",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "| &nbsp;&nbsp;*p* | 3.7e-31 | 2.7e-41 | 7.4e-14 |",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "essentially unchanged (column 2: \u22120.0227, *p* = 2.7e-41). Weighting each",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "| Low-income students (%) | -0.0229 (0.0020) | -0.0227 (0.0017) | -0.0173 (0.002",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added",
+     "copied_from": [
+      "output/table1.md"
+     ]
+    },
+    {
+     "file": "memo.md",
+     "text": "| &nbsp;&nbsp;*p* | 3.7e-31 | 2.7e-41 | 7.4e-14 |",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added",
+     "copied_from": [
+      "output/table1.md"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "U60",
+   "kind": "claim",
+   "row": "QV1",
+   "label": "Column 3 coefficient and p in text",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "leaves it clearly negative (column 3: \u22120.0173, *p* = 7.4e-14). The resource",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "| Low-income students (%) | -0.0229 (0.0020) | -0.0227 (0.0017) | -0.0173 (0.0023) |",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "| &nbsp;&nbsp;*p* | 3.7e-31 | 2.7e-41 | 7.4e-14 |",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "leaves it clearly negative (column 3: \u22120.0173, *p* = 7.4e-14). The resource",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "| Low-income students (%) | -0.0229 (0.0020) | -0.0227 (0.0017) | -0.0173 (0.002",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added",
+     "copied_from": [
+      "output/table1.md"
+     ]
+    },
+    {
+     "file": "memo.md",
+     "text": "| &nbsp;&nbsp;*p* | 3.7e-31 | 2.7e-41 | 7.4e-14 |",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added",
+     "copied_from": [
+      "output/table1.md"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "U61",
+   "kind": "claim",
+   "row": "QV1",
+   "label": "Teacher experience p .023 and .027",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "influential districts (*p* = .023) and when weighted (*p* = .027), and",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "| &nbsp;&nbsp;*p* | .257 | .023 | .027 |",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "influential districts (*p* = .023) and when weighted (*p* = .027), and",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "| &nbsp;&nbsp;*p* | .257 | .023 | .027 |",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added",
+     "copied_from": [
+      "output/table1.md"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "U62",
+   "kind": "claim",
+   "row": "QV1",
+   "label": "Weighted spending p .041 and year-round p .006",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "spending (*p* = .041) and year-round schools (*p* = .006) become significant",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "| &nbsp;&nbsp;*p* | .086 | .132 | .041 |",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "| &nbsp;&nbsp;*p* | .058 | .120 | .006 |",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "spending (*p* = .041) and year-round schools (*p* = .006) become significant",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "| &nbsp;&nbsp;*p* | .086 | .132 | .041 |",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added",
+     "copied_from": [
+      "output/table1.md"
+     ]
+    },
+    {
+     "file": "memo.md",
+     "text": "| &nbsp;&nbsp;*p* | .058 | .120 | .006 |",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added",
+     "copied_from": [
+      "output/table1.md"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "U63",
+   "kind": "claim",
+   "row": "QV1",
+   "label": "Largest district has 14.5 percent of weight",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "only when weighted. The weighted model gives the largest district 14.5",
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "only when weighted. The weighted model gives the largest district 14.5",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U64",
+   "kind": "claim",
+   "row": "QV1",
+   "label": "PCTCHRT 88% zeros",
+   "anchors": [
+    {
+     "file": "analysis/analysis.py",
+     "quote": "# outcome of achievement), PERMINTE (teacher composition that tracks student",
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "# composition), PCTCHRT (88% zeros), and the precomputed interaction terms.",
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "analysis/analysis.py",
+     "text": "# outcome of achievement), PERMINTE (teacher composition that tracks student",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "# composition), PCTCHRT (88% zeros), and the precomputed interaction terms.",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U65",
+   "kind": "claim",
+   "row": "QV1",
+   "label": "Fixed dispersion shrinks Cook's distance by ~30x",
+   "anchors": [
+    {
+     "file": "analysis/analysis.py",
+     "quote": "# fractional outcome shrinks Cook's distance by ~30x; compute it from a fit",
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "analysis/analysis.py",
+     "text": "# fractional outcome shrinks Cook's distance by ~30x; compute it from a fit",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U66",
+   "kind": "claim",
+   "row": "QV2",
+   "label": "Results support the hypothesis (negative, significant low-income effect)",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "The results support the hypothesis. Holding school resources and ethnic",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "share of ninth graders above the national median (column 1: coefficient",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "\u22120.0229, SE 0.0020, *p* = 3.7e-31). On the share itself, the average marginal",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "In 1998, California districts with more low-income students had markedly",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "| Low-income students (%) | -0.0229 (0.0020) | -0.0227 (0.0017) | -0.0173 (0.0023) |",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "The results support the hypothesis. Holding school resources and ethnic",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "share of ninth graders above the national median (column 1: coefficient",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "\u22120.0229, SE 0.0020, *p* = 3.7e-31). On the share itself, the average marginal",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "In 1998, California districts with more low-income students had markedly",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "| Low-income students (%) | -0.0229 (0.0020) | -0.0227 (0.0017) | -0.0173 (0.002",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added",
+     "copied_from": [
+      "output/table1.md"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "U67",
+   "kind": "claim",
+   "row": "QV2",
+   "label": "None of the four resource measures significant at .05",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "held constant. None of the four resource measures is significant at the .05",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "level: per-pupil spending (*p* = .086), pupil-teacher ratio (*p* = .838),",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "teacher experience (*p* = .257), and the share of year-round schools",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "School resources, by contrast, explain little once student background is",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "every specification. Measured school resources added little once student",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "bring to school predicts district math results far better than the",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "| &nbsp;&nbsp;*p* | .838 | .825 | .490 |",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "output/table1.md",
+     "quote": "| &nbsp;&nbsp;*p* | .086 | .132 | .041 |",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "output/table1.md",
+     "quote": "| &nbsp;&nbsp;*p* | .257 | .023 | .027 |",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "output/table1.md",
+     "quote": "| &nbsp;&nbsp;*p* | .058 | .120 | .006 |",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "held constant. None of the four resource measures is significant at the .05",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "level: per-pupil spending (*p* = .086), pupil-teacher ratio (*p* = .838),",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "teacher experience (*p* = .257), and the share of year-round schools",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "School resources, by contrast, explain little once student background is",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "every specification. Measured school resources added little once student",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "bring to school predicts district math results far better than the",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "| &nbsp;&nbsp;*p* | .838 | .825 | .490 |",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added",
+     "copied_from": [
+      "output/table1.md"
+     ]
+    },
+    {
+     "file": "output/table1.md",
+     "text": "| &nbsp;&nbsp;*p* | .086 | .132 | .041 |",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "output/table1.md",
+     "text": "| &nbsp;&nbsp;*p* | .257 | .023 | .027 |",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "output/table1.md",
+     "text": "| &nbsp;&nbsp;*p* | .058 | .120 | .006 |",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U68",
+   "kind": "claim",
+   "row": "QV2",
+   "label": "Asian share positive, Black and Hispanic shares negative",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "composition matters independently of income: the share of Asian students is",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "positively associated with the outcome, and the shares of Black and Hispanic",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "students negatively (all *p* \u2264 2.6e-07).",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "| Asian students (%) | 0.0193 (0.0025) | 0.0172 (0.0023) | 0.0126 (0.0022) |",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "| Black students (%) | -0.0175 (0.0034) | -0.0171 (0.0026) | -0.0167 (0.0027) |",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "| Hispanic students (%) | -0.0085 (0.0016) | -0.0098 (0.0014) | -0.0128 (0.0019) |",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "composition matters independently of income: the share of Asian students is",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "positively associated with the outcome, and the shares of Black and Hispanic",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "students negatively (all *p* \u2264 2.6e-07).",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "| Asian students (%) | 0.0193 (0.0025) | 0.0172 (0.0023) | 0.0126 (0.0022) |",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added",
+     "copied_from": [
+      "output/table1.md"
+     ]
+    },
+    {
+     "file": "memo.md",
+     "text": "| Black students (%) | -0.0175 (0.0034) | -0.0171 (0.0026) | -0.0167 (0.0027) |",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added",
+     "copied_from": [
+      "output/table1.md"
+     ]
+    },
+    {
+     "file": "memo.md",
+     "text": "| Hispanic students (%) | -0.0085 (0.0016) | -0.0098 (0.0014) | -0.0128 (0.0019)",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added",
+     "copied_from": [
+      "output/table1.md"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "U69",
+   "kind": "claim",
+   "row": "QV2",
+   "label": "Dropping influential districts leaves coefficient essentially unchanged",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "the 15 districts whose Cook's distance exceeds 4/n leaves the coefficient",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "The low-income result does not depend on a few unusual districts. Dropping",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "essentially unchanged (column 2: \u22120.0227, *p* = 2.7e-41). Weighting each",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "| Low-income students (%) | -0.0229 (0.0020) | -0.0227 (0.0017) | -0.0173 (0.0023) |",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "the 15 districts whose Cook's distance exceeds 4/n leaves the coefficient",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "The low-income result does not depend on a few unusual districts. Dropping",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "essentially unchanged (column 2: \u22120.0227, *p* = 2.7e-41). Weighting each",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "| Low-income students (%) | -0.0229 (0.0020) | -0.0227 (0.0017) | -0.0173 (0.002",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added",
+     "copied_from": [
+      "output/table1.md"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "U70",
+   "kind": "claim",
+   "row": "QV2",
+   "label": "Weighting shrinks coefficient by about a quarter",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "district by the number of students tested shrinks it by about a quarter but",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "leaves it clearly negative (column 3: \u22120.0173, *p* = 7.4e-14). The resource",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "| Low-income students (%) | -0.0229 (0.0020) | -0.0227 (0.0017) | -0.0173 (0.0023) |",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "district by the number of students tested shrinks it by about a quarter but",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "leaves it clearly negative (column 3: \u22120.0173, *p* = 7.4e-14). The resource",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "| Low-income students (%) | -0.0229 (0.0020) | -0.0227 (0.0017) | -0.0173 (0.002",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added",
+     "copied_from": [
+      "output/table1.md"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "U71",
+   "kind": "claim",
+   "row": "QV2",
+   "label": "Resource findings become significant in robustness models",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "findings are less stable. Teacher experience becomes significant without the",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "influential districts (*p* = .023) and when weighted (*p* = .027), and",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "spending (*p* = .041) and year-round schools (*p* = .006) become significant",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "| &nbsp;&nbsp;*p* | .257 | .023 | .027 |",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "| &nbsp;&nbsp;*p* | .086 | .132 | .041 |",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "| &nbsp;&nbsp;*p* | .058 | .120 | .006 |",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "findings are less stable. Teacher experience becomes significant without the",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "influential districts (*p* = .023) and when weighted (*p* = .027), and",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "spending (*p* = .041) and year-round schools (*p* = .006) become significant",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "| &nbsp;&nbsp;*p* | .257 | .023 | .027 |",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added",
+     "copied_from": [
+      "output/table1.md"
+     ]
+    },
+    {
+     "file": "memo.md",
+     "text": "| &nbsp;&nbsp;*p* | .086 | .132 | .041 |",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added",
+     "copied_from": [
+      "output/table1.md"
+     ]
+    },
+    {
+     "file": "memo.md",
+     "text": "| &nbsp;&nbsp;*p* | .058 | .120 | .006 |",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added",
+     "copied_from": [
+      "output/table1.md"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "U72",
+   "kind": "claim",
+   "row": "QV2",
+   "label": "Low-income result held across every specification",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "fewer ninth graders above the national median in math, and this held across",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "The low-income result does not depend on a few unusual districts. Dropping",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "| Low-income students (%) | -0.0229 (0.0020) | -0.0227 (0.0017) | -0.0173 (0.0023) |",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "| &nbsp;&nbsp;*p* | 3.7e-31 | 2.7e-41 | 7.4e-14 |",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "fewer ninth graders above the national median in math, and this held across",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "The low-income result does not depend on a few unusual districts. Dropping",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "| Low-income students (%) | -0.0229 (0.0020) | -0.0227 (0.0017) | -0.0173 (0.002",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added",
+     "copied_from": [
+      "output/table1.md"
+     ]
+    },
+    {
+     "file": "memo.md",
+     "text": "| &nbsp;&nbsp;*p* | 3.7e-31 | 2.7e-41 | 7.4e-14 |",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added",
+     "copied_from": [
+      "output/table1.md"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "U73",
+   "kind": "claim",
+   "row": "QV2",
+   "label": "Predicted line flatter than raw scatter",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "standard errors. The line is flatter than the raw scatter because ethnic",
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "standard errors. The line is flatter than the raw scatter because ethnic",
+     "by": "Claude",
+     "turn": 17,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U74",
+   "kind": "claim",
+   "row": "QV3",
+   "label": "Methods: fractional logit is what the code estimates",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "I estimate a fractional logit of the share of ninth graders above the",
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "def frac_logit(y, X, weights=None):",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "| | (1) Main: fractional logit | (2) Without 15 influential districts | (3) Weighted by students tested |",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "Column 1 is a fractional logit (Papke & Wooldridge, 1996).",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "# Fractional logit (Papke & Wooldridge 1996): Bernoulli quasi-likelihood with",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "model = sm.GLM(y, X, family=sm.families.Binomial(), var_weights=weights)",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "res = frac_logit(y, X)",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "(\"(1) Main: fractional logit\", res, r2),",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "logit (Papke & Wooldridge, 1996). Column 2 refits it without the",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "I estimate a fractional logit of the share of ninth graders above the",
+     "by": "Claude",
+     "turn": 20,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "def frac_logit(y, X, weights=None):",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "| | (1) Main: fractional logit | (2) Without 15 influential districts | (3) Weig",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added",
+     "copied_from": [
+      "output/table1.md"
+     ]
+    },
+    {
+     "file": "memo.md",
+     "text": "Column 1 is a fractional logit (Papke & Wooldridge, 1996).",
+     "by": "Claude",
+     "turn": 20,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "# Fractional logit (Papke & Wooldridge 1996): Bernoulli quasi-likelihood with",
+     "by": "Claude",
+     "turn": 5,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "model = sm.GLM(y, X, family=sm.families.Binomial(), var_weights=weights)",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "res = frac_logit(y, X)",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "(\"(1) Main: fractional logit\", res, r2),",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "logit (Papke & Wooldridge, 1996). Column 2 refits it without the",
+     "by": "Claude",
+     "turn": 20,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U75",
+   "kind": "claim",
+   "row": "QV3",
+   "label": "SEs are HC1 (per-observation clustering equals HC1)",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "Cells show coefficients with HC1 heteroskedasticity-robust standard errors in parentheses",
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "is HC1 (checked against a hand-computed sandwich).",
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "# a logit link, which keeps fitted shares in (0, 1). HC1 robust SEs.",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "\"\"\"Fractional logit with HC1 standard errors.",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "statsmodels' GLM silently returns HC0 when asked for HC1. Clustering on",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "return model.fit(cov_type=\"cluster\", cov_kwds={\"groups\": np.arange(len(y))})",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "*Note.* Cells show coefficients with HC1 heteroskedasticity-robust",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "Cells show coefficients with HC1 heteroskedasticity-robust standard errors in pa",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added",
+     "copied_from": [
+      "analysis/__pycache__/analysis.cpython-314.pyc",
+      "output/table1.md"
+     ]
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "is HC1 (checked against a hand-computed sandwich).",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "# a logit link, which keeps fitted shares in (0, 1). HC1 robust SEs.",
+     "by": "Claude",
+     "turn": 5,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "\"\"\"Fractional logit with HC1 standard errors.",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "statsmodels' GLM silently returns HC0 when asked for HC1. Clustering on",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "return model.fit(cov_type=\"cluster\", cov_kwds={\"groups\": np.arange(len(y))})",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "*Note.* Cells show coefficients with HC1 heteroskedasticity-robust",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U76",
+   "kind": "claim",
+   "row": "QV3",
+   "label": "Cook's distance rule and Pearson dispersion as described",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "Column 2 refits it without the 15 districts whose Cook's distance exceeds 4/n (4/303), computed with the Pearson-estimated dispersion.",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "the 15 districts whose Cook's distance exceeds 4/n leaves the coefficient",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "# (1) Influential observations: refit without districts whose Cook's distance",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "# with the Pearson-estimated dispersion (same coefficients).",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "fit_x2 = sm.GLM(y, X, family=sm.families.Binomial()).fit(scale=\"X2\")",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "keep = cooks <= 4 / len(df)",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "computed with the Pearson-estimated dispersion. Column 3 weights the main model by",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "Column 2 refits it without the 15 districts whose Cook's distance exceeds 4/n (4",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added",
+     "copied_from": [
+      "output/table1.md"
+     ]
+    },
+    {
+     "file": "memo.md",
+     "text": "the 15 districts whose Cook's distance exceeds 4/n leaves the coefficient",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "# (1) Influential observations: refit without districts whose Cook's distance",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "# with the Pearson-estimated dispersion (same coefficients).",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "fit_x2 = sm.GLM(y, X, family=sm.families.Binomial()).fit(scale=\"X2\")",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "keep = cooks <= 4 / len(df)",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "computed with the Pearson-estimated dispersion. Column 3 weights the main model ",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U77",
+   "kind": "claim",
+   "row": "QV3",
+   "label": "Weighting by students tested as described (weighted HC1 checked by hand)",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "Column 3 weights the main model by the number of students tested in each district.",
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "# the weighted HC1 was checked by hand and matches.",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "district by the number of students tested shrinks it by about a quarter but",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "# (2) Weighting: the main model weighted by the number of students tested,",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "n_tested = df[\"NABOVE\"] + df[\"NBELOW\"]",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "res_w = frac_logit(y, X, weights=n_tested)",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "the number of students tested in each district. R\u00b2 is the",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "Column 3 weights the main model by the number of students tested in each distric",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added",
+     "copied_from": [
+      "output/table1.md"
+     ]
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "# the weighted HC1 was checked by hand and matches.",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "district by the number of students tested shrinks it by about a quarter but",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "# (2) Weighting: the main model weighted by the number of students tested,",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "n_tested = df[\"NABOVE\"] + df[\"NBELOW\"]",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "res_w = frac_logit(y, X, weights=n_tested)",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "the number of students tested in each district. R\u00b2 is the",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U78",
+   "kind": "claim",
+   "row": "QV3",
+   "label": "R\u00b2 defined as unweighted squared correlation",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "R\u00b2 is the (unweighted) squared correlation between observed and fitted shares.",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "| R\u00b2 (observed vs. fitted share) | 0.798 | 0.845 | 0.777 |",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "\"\"\"Fit: squared correlation between observed and fitted shares.\"\"\"",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "return np.corrcoef(observed, fitted_share)[0, 1] ** 2",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "r2_w = share_r2(res_w.fittedvalues)",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "R\u00b2 is the (unweighted) squared correlation between observed and fitted shares.",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added",
+     "copied_from": [
+      "output/table1.md"
+     ]
+    },
+    {
+     "file": "memo.md",
+     "text": "| R\u00b2 (observed vs. fitted share) | 0.798 | 0.845 | 0.777 |",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added",
+     "copied_from": [
+      "output/table1.md"
+     ]
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "\"\"\"Fit: squared correlation between observed and fitted shares.\"\"\"",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "return np.corrcoef(observed, fitted_share)[0, 1] ** 2",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "r2_w = share_r2(res_w.fittedvalues)",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U79",
+   "kind": "claim",
+   "row": "QV3",
+   "label": "Figure 1 caption describes prediction and 95% HC1 band",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "main model (Table 1, column 1) with the other predictors held at their",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "observed values; the shaded band is a 95% confidence interval based on HC1",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "points are districts. The blue line is the average predicted share from the",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "\"\"\"Observed shares by low-income percentage, with the main model's",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "average predicted share (other predictors at their observed values)",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "and a 95% delta-method band from the HC1 covariance.\"\"\"",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "half.append(1.96 * np.sqrt(grad @ V @ grad))",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "label=\"Predicted, other predictors held at observed values\")",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "main model (Table 1, column 1) with the other predictors held at their",
+     "by": "Claude",
+     "turn": 17,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "observed values; the shaded band is a 95% confidence interval based on HC1",
+     "by": "Claude",
+     "turn": 17,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "points are districts. The blue line is the average predicted share from the",
+     "by": "Claude",
+     "turn": 17,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "\"\"\"Observed shares by low-income percentage, with the main model's",
+     "by": "Claude",
+     "turn": 17,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "average predicted share (other predictors at their observed values)",
+     "by": "Claude",
+     "turn": 17,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "and a 95% delta-method band from the HC1 covariance.\"\"\"",
+     "by": "Claude",
+     "turn": 17,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "half.append(1.96 * np.sqrt(grad @ V @ grad))",
+     "by": "Claude",
+     "turn": 17,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "label=\"Predicted, other predictors held at observed values\")",
+     "by": "Claude",
+     "turn": 17,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U80",
+   "kind": "claim",
+   "row": "QV4",
+   "label": "Loaded star98 data match STAR source (303 districts, no missing)",
+   "anchors": [
+    {
+     "file": "analysis/analysis.py",
+     "quote": "assert len(df) == 303",
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "assert df.notna().all().all()",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "have one row per school district, covering 303 California school districts.",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "percentage of low-income students, 303 California districts, 1998. Gray",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "| Districts | 303 | 288 | 303 |",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "# Keep all districts; no exclusions.",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "df = sm.datasets.star98.load_pandas().data",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "analysis/analysis.py",
+     "text": "assert len(df) == 303",
+     "by": "Claude",
+     "turn": 3,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "assert df.notna().all().all()",
+     "by": "Claude",
+     "turn": 3,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "have one row per school district, covering 303 California school districts.",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "percentage of low-income students, 303 California districts, 1998. Gray",
+     "by": "Claude",
+     "turn": 17,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "| Districts | 303 | 288 | 303 |",
+     "by": "Claude",
+     "turn": 15,
+     "change": "added",
+     "copied_from": [
+      "output/table1.md"
+     ]
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "# Keep all districts; no exclusions.",
+     "by": "Claude",
+     "turn": 3,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "df = sm.datasets.star98.load_pandas().data",
+     "by": "Claude",
+     "turn": 3,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U81",
+   "kind": "claim",
+   "row": "QV6",
+   "label": "Figure 1 matches data and code",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "![Figure 1](output/figure1.png)",
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "write_figure1(out / \"figure1.png\")",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "**Figure 1.** Share of ninth graders above the national median in math by",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "districts, not a causal effect of income on any one student. Figure 1 shows",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "def write_figure1(path):",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "fig.savefig(path)",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "![Figure 1](output/figure1.png)",
+     "by": "Claude",
+     "turn": 17,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "write_figure1(out / \"figure1.png\")",
+     "by": "Claude",
+     "turn": 17,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "**Figure 1.** Share of ninth graders above the national median in math by",
+     "by": "Claude",
+     "turn": 17,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "districts, not a causal effect of income on any one student. Figure 1 shows",
+     "by": "Claude",
+     "turn": 17,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "def write_figure1(path):",
+     "by": "Claude",
+     "turn": 17,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "fig.savefig(path)",
+     "by": "Claude",
+     "turn": 17,
+     "change": "added"
+    }
+   ]
+  }
+ ]
+}

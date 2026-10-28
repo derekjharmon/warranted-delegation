@@ -1,0 +1,1290 @@
+{
+ "U120": {
+  "id": "U120",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3, T4, T5",
+  "basis": "\"write the whole paper... run the analysis\"; produced by 03_analyze.py, bare /attest",
+  "confidence": "high"
+ },
+ "U121": {
+  "id": "U121",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3, T4, T5",
+  "basis": "Table produced by 03_analyze.py; an ad hoc refit covered only some models; bare /attest",
+  "confidence": "medium"
+ },
+ "U122": {
+  "id": "U122",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3, T4, T5",
+  "basis": "Robustness table produced by 03_analyze.py; no comparison against a source; bare /attest",
+  "confidence": "high"
+ },
+ "U123": {
+  "id": "U123",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3, T4, T5",
+  "basis": "Sample flow printed by 02_clean.py; production, not a check",
+  "confidence": "high"
+ },
+ "U124": {
+  "id": "U124",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T4, T5",
+  "basis": "By-journal models produced by 03_analyze.py; bare /attest",
+  "confidence": "high"
+ },
+ "U125": {
+  "id": "U125",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T4, T5",
+  "basis": "Interaction output \"Table 5... 1.091*\" produced, not checked; bare /attest",
+  "confidence": "high"
+ },
+ "U126": {
+  "id": "U126",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T4, T5",
+  "basis": "By-year table produced by 03_analyze.py; no check",
+  "confidence": "high"
+ },
+ "U127": {
+  "id": "U127",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3, T4, T5",
+  "basis": "\"3640 ... 3147\" printed by 02_clean.py; production only",
+  "confidence": "high"
+ },
+ "U128": {
+  "id": "U128",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T4, T5",
+  "basis": "\"2691 all authors have an institution c...\" produced; no check",
+  "confidence": "high"
+ },
+ "U129": {
+  "id": "U129",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T4, T5",
+  "basis": "By-journal N produced by 03_analyze.py; bare /attest",
+  "confidence": "high"
+ },
+ "U130": {
+  "id": "U130",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T4, T5",
+  "basis": "crosstab output \"2012 124 ... 2013 ... 187\" is production, not a check",
+  "confidence": "high"
+ },
+ "U131": {
+  "id": "U131",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3, T4, T5",
+  "basis": "correlation computed in T3 (the claim's origin); reply \"agree (r > 0.9999)\" never answered",
+  "confidence": "medium"
+ },
+ "U132": {
+  "id": "U132",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T4, T5",
+  "basis": "Descriptives \"cites5 | 47.5 | 44.34\" produced; bare /attest",
+  "confidence": "high"
+ },
+ "U133": {
+  "id": "U133",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T4, T5",
+  "basis": "Descriptives produced by 03_analyze.py; no check",
+  "confidence": "high"
+ },
+ "U134": {
+  "id": "U134",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T4, T5",
+  "basis": "Table 1d cell \"1 | 1 | 18\" produced; no check",
+  "confidence": "high"
+ },
+ "U135": {
+  "id": "U135",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T4, T5",
+  "basis": "\"TW 1\" in results output; production only",
+  "confidence": "high"
+ },
+ "U136": {
+  "id": "U136",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T4, T5",
+  "basis": "\"N=150; multinational share=0.947\" produced; bare /attest",
+  "confidence": "high"
+ },
+ "U137": {
+  "id": "U137",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T4, T5",
+  "basis": "alpha and SD from 03_analyze.py output; no check",
+  "confidence": "high"
+ },
+ "U138": {
+  "id": "U138",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T4, T5",
+  "basis": "By-journal table produced; no check; bare /attest",
+  "confidence": "high"
+ },
+ "U139": {
+  "id": "U139",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T4, T5",
+  "basis": "By-year table produced; no check",
+  "confidence": "high"
+ },
+ "U140": {
+  "id": "U140",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T4, T5",
+  "basis": "Table 1d cell means produced; no check",
+  "confidence": "high"
+ },
+ "U141": {
+  "id": "U141",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T4, T5",
+  "basis": "Correlation matrix produced by 03_analyze.py",
+  "confidence": "high"
+ },
+ "U142": {
+  "id": "U142",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T4, T5",
+  "basis": "ad hoc refit produced \"irr ... 1.073\" and p values used in text; production; reply unanswered",
+  "confidence": "medium"
+ },
+ "U143": {
+  "id": "U143",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T4, T5",
+  "basis": "Model 4 output produced by 03_analyze.py; no check",
+  "confidence": "high"
+ },
+ "U144": {
+  "id": "U144",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T4, T5",
+  "basis": "p-values from ad hoc refit \"multi_country': 0.0125\" are the numbers' origin; reply unanswered",
+  "confidence": "medium"
+ },
+ "U145": {
+  "id": "U145",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3, T4",
+  "basis": "\"write the whole paper... Use your judgment\"; predictions produced by 03_analyze.py, never compared to a source",
+  "confidence": "high"
+ },
+ "U146": {
+  "id": "U146",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3, T4",
+  "basis": "model 5 output produced and written up; no record of a comparison for this CI",
+  "confidence": "medium"
+ },
+ "U147": {
+  "id": "U147",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3, T4",
+  "basis": "robustness numbers produced by script; no check of the text against output",
+  "confidence": "high"
+ },
+ "U148": {
+  "id": "U148",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3, T4",
+  "basis": "p-values written in paper; no tool call compares them with output",
+  "confidence": "high"
+ },
+ "U149": {
+  "id": "U149",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T4",
+  "basis": "Table 5 printed via sed; producing a number is not a check",
+  "confidence": "medium"
+ },
+ "U150": {
+  "id": "U150",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3, T4",
+  "basis": "76% figure appears only in paper; no check in record",
+  "confidence": "high"
+ },
+ "U151": {
+  "id": "U151",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3, T4",
+  "basis": "\"Use your judgment on everything\"; description written, author gave only bare /attest",
+  "confidence": "high"
+ },
+ "U152": {
+  "id": "U152",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3, T4",
+  "basis": "null-result description written by Claude; no check",
+  "confidence": "high"
+ },
+ "U153": {
+  "id": "U153",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3, T4",
+  "basis": "robustness description written; no comparison against output shown",
+  "confidence": "high"
+ },
+ "U154": {
+  "id": "U154",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3, T4",
+  "basis": "figure description written; no check",
+  "confidence": "high"
+ },
+ "U155": {
+  "id": "U155",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3, T4",
+  "basis": "discussion summary; no check",
+  "confidence": "high"
+ },
+ "U156": {
+  "id": "U156",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3, T4",
+  "basis": "methods text vs 02_clean.py never compared",
+  "confidence": "high"
+ },
+ "U157": {
+  "id": "U157",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3, T4",
+  "basis": "no check of the dropped-article claim",
+  "confidence": "high"
+ },
+ "U158": {
+  "id": "U158",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3, T4",
+  "basis": "methods description vs code never compared",
+  "confidence": "high"
+ },
+ "U159": {
+  "id": "U159",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T4",
+  "basis": "\"scripts in code/ reproduce every number\" asserted; no comparison of paper to output",
+  "confidence": "medium"
+ },
+ "U160": {
+  "id": "U160",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3",
+  "basis": "data collected by script; no check of the collected data against the sources",
+  "confidence": "medium"
+ },
+ "U161": {
+  "id": "U161",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T4",
+  "basis": "Claude viewed the png but did not compare it with the data",
+  "confidence": "medium"
+ },
+ "U89": {
+  "id": "U89",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T4",
+  "basis": "\"I checked all of them except Cameron & Trivedi\"",
+  "confidence": "high"
+ },
+ "U90": {
+  "id": "U90",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T4, T5",
+  "basis": "OpenAlex lookup \"Collaboration: Strength in diversity\"; only bare /attest after",
+  "confidence": "high"
+ },
+ "U91": {
+  "id": "U91",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T4, T5",
+  "basis": "\"checked all of them except Cameron & Trivedi against OpenAlex\"; bare /attest",
+  "confidence": "medium"
+ },
+ "U92": {
+  "id": "U92",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T4, T5",
+  "basis": "OpenAlex lookup \"Multi-university researc...\"; bare /attest",
+  "confidence": "high"
+ },
+ "U93": {
+  "id": "U93",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T4, T5",
+  "basis": "\"checked all of them except Cameron & Trivedi against OpenAlex\"; bare /attest",
+  "confidence": "medium"
+ },
+ "U94": {
+  "id": "U94",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T4, T5",
+  "basis": "OpenAlex lookup \"Team size matters\"; bare /attest",
+  "confidence": "high"
+ },
+ "U95": {
+  "id": "U95",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T4, T5",
+  "basis": "\"checked all of them except Cameron & Trivedi against OpenAlex\"; bare /attest",
+  "confidence": "medium"
+ },
+ "U96": {
+  "id": "U96",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T4, T5",
+  "basis": "OpenAlex lookup returned Wuchty 2007 Science 316; bare /attest",
+  "confidence": "high"
+ },
+ "U97": {
+  "id": "U97",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3, T4",
+  "basis": "T4 reply: lit summaries \"written from memory\"; lookup in T4 checked only bibliographic records; no author response",
+  "confidence": "medium"
+ },
+ "U98": {
+  "id": "U98",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3, T4",
+  "basis": "\"Their summaries in the literature review are written from memory\"; only title lookups run",
+  "confidence": "medium"
+ },
+ "U99": {
+  "id": "U99",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3, T4",
+  "basis": "summaries \"written from memory\"; lookup of 'Team size matters' checks the reference, not the finding",
+  "confidence": "medium"
+ },
+ "U100": {
+  "id": "U100",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3, T4",
+  "basis": "added reference within \"write the whole paper\"; summary \"written from memory\"",
+  "confidence": "medium"
+ },
+ "U101": {
+  "id": "U101",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3, T4",
+  "basis": "added reference; \"read them against the originals before submitting\"; no content check",
+  "confidence": "medium"
+ },
+ "U102": {
+  "id": "U102",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3, T4",
+  "basis": "Jones et al. summary \"written from memory\"; no content check",
+  "confidence": "medium"
+ },
+ "U103": {
+  "id": "U103",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3, T4",
+  "basis": "\"Freeman & Huang (2014) is summarized backwards\" fixed and reported; no tool check of the finding; author never responded",
+  "confidence": "medium"
+ },
+ "U104": {
+  "id": "U104",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T4, T5",
+  "basis": "\"I checked all of them except Cameron & Trivedi against OpenAlex\" with lookup tool call; only bare /attest after",
+  "confidence": "medium"
+ },
+ "U105": {
+  "id": "U105",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3, T4",
+  "basis": "Discussion comparison written by Claude; no check in record",
+  "confidence": "medium"
+ },
+ "U106": {
+  "id": "U106",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3, T4",
+  "basis": "Discussion comparison to Freeman & Huang; no content check",
+  "confidence": "medium"
+ },
+ "U115": {
+  "id": "U115",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3, T4",
+  "basis": "N produced by 02_clean.py; no tool call comparing paper text with output",
+  "confidence": "medium"
+ },
+ "U116": {
+  "id": "U116",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T4",
+  "basis": "abstract numbers written from model output; no consistency check shown",
+  "confidence": "medium"
+ },
+ "U117": {
+  "id": "U117",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3, T4",
+  "basis": "removal counts derived from sample flow; no comparison tool call",
+  "confidence": "medium"
+ },
+ "U118": {
+  "id": "U118",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T4",
+  "basis": "list counts written by Claude; no check",
+  "confidence": "medium"
+ },
+ "U119": {
+  "id": "U119",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T4",
+  "basis": "table cross-references written by Claude; no check",
+  "confidence": "medium"
+ },
+ "U107": {
+  "id": "U107",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T4",
+  "basis": "\"It replaced Microsoft Academic Graph, not Google Scholar\" \u2014 no lookup in record",
+  "confidence": "medium"
+ },
+ "U108": {
+  "id": "U108",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T3, T4, T5",
+  "basis": "curl sources/issn lookup output lists journals; author gave only bare /attest",
+  "confidence": "high"
+ },
+ "U109": {
+  "id": "U109",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T3, T4, T5",
+  "basis": "audit_doi output \"('OrgSci', '10.11207/soshikikagaku') 18\"; never confirmed",
+  "confidence": "medium"
+ },
+ "U110": {
+  "id": "U110",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T3, T4, T5",
+  "basis": "tool call printed counts_by_year for a 2008 AMJ work; reply reported, no author response",
+  "confidence": "medium"
+ },
+ "U111": {
+  "id": "U111",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T3, T5",
+  "basis": "World Bank API curl shows id ABW/iso2Code AW; unmatched \"[('TW', 27)]\"; no author response",
+  "confidence": "medium"
+ },
+ "U112": {
+  "id": "U112",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T4",
+  "basis": "\"mainly China and India) were middle-income throughout\" asserted; historical file blocked",
+  "confidence": "medium"
+ },
+ "U113": {
+  "id": "U113",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T3, T4, T5",
+  "basis": "tool inspected OpenAlex countries and WB join on iso2; reply item 3; no response",
+  "confidence": "medium"
+ },
+ "U114": {
+  "id": "U114",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T4",
+  "basis": "crosstab produced counts; early-view explanation never checked",
+  "confidence": "medium"
+ },
+ "U50": {
+  "id": "U50",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3, T4",
+  "basis": "\"I used five as the notes specify\"",
+  "confidence": "high"
+ },
+ "U51": {
+  "id": "U51",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3, T4",
+  "basis": "notes' hypotheses: \"H1 (team size)\" \u2014 paper based on notes.md",
+  "confidence": "low"
+ },
+ "U52": {
+  "id": "U52",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3, T4",
+  "basis": "\"based on notes.md\"; reply reports \"H2 (authors in more than one country)\" as the notes' hypothesis",
+  "confidence": "medium"
+ },
+ "U53": {
+  "id": "U53",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3, T4",
+  "basis": "reply lists \"Extension: no effect\" alongside the notes' H1/H2; notes referenced World Bank join",
+  "confidence": "medium"
+ },
+ "U54": {
+  "id": "U54",
+  "discretion": "given",
+  "certification": "wasn't notified",
+  "turns": "T3, T4",
+  "basis": "\"Use your judgment on everything\"; T4 reply never mentions reference/page controls",
+  "confidence": "medium"
+ },
+ "U55": {
+  "id": "U55",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T3, T4",
+  "basis": "T4 reply: \"negative binomial models with journal and year fixed effects\"; only bare /attest followed",
+  "confidence": "medium"
+ },
+ "U56": {
+  "id": "U56",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T3, T4",
+  "basis": "T4 reply: \"with journal and year fixed effects\"; no response beyond bare /attest",
+  "confidence": "medium"
+ },
+ "U57": {
+  "id": "U57",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T3, T4",
+  "basis": "T4 reply reports \"95% CI 1.02\u20131.09\" and \"p = .013\"; never responded",
+  "confidence": "low"
+ },
+ "U60": {
+  "id": "U60",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T3, T4",
+  "basis": "T4 reply: \"The three-year version gives nearly identical results and is in the robustness table\"",
+  "confidence": "medium"
+ },
+ "U61": {
+  "id": "U61",
+  "discretion": "given",
+  "certification": "wasn't notified",
+  "turns": "T3, T4",
+  "basis": "\"Use your judgment on everything\"; t+1 to t+5 window not named in reply",
+  "confidence": "medium"
+ },
+ "U62": {
+  "id": "U62",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T3, T4",
+  "basis": "T4 reply: \"when only each author's first-listed affiliation counts (p = .067)\"",
+  "confidence": "high"
+ },
+ "U63": {
+  "id": "U63",
+  "discretion": "given",
+  "certification": "wasn't notified",
+  "turns": "T3, T4",
+  "basis": "\"Use your judgment on everything\"; teams-of-2+ check not named in reply",
+  "confidence": "medium"
+ },
+ "U64": {
+  "id": "U64",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T3, T4",
+  "basis": "T4 reply: \"when the sample is limited to teams of 2\u20134 (p = .12)\"",
+  "confidence": "high"
+ },
+ "U65": {
+  "id": "U65",
+  "discretion": "given",
+  "certification": "wasn't notified",
+  "turns": "T3, T4",
+  "basis": "\"Use your judgment on everything\"; partial-location check not named in reply",
+  "confidence": "medium"
+ },
+ "U66": {
+  "id": "U66",
+  "discretion": "given",
+  "certification": "wasn't notified",
+  "turns": "T3, T4",
+  "basis": "\"Use your judgment on everything\"; number-of-countries check not named in reply",
+  "confidence": "medium"
+ },
+ "U67": {
+  "id": "U67",
+  "discretion": "given",
+  "certification": "wasn't notified",
+  "turns": "T3, T4",
+  "basis": "\"Use your judgment on everything\"; excluding ASQ not named in reply",
+  "confidence": "medium"
+ },
+ "U68": {
+  "id": "U68",
+  "discretion": "given",
+  "certification": "wasn't notified",
+  "turns": "T3, T4",
+  "basis": "\"Use your judgment on everything\"; journal \u00d7 year FE not named in reply",
+  "confidence": "medium"
+ },
+ "U69": {
+  "id": "U69",
+  "discretion": "given",
+  "certification": "wasn't notified",
+  "turns": "T3, T4",
+  "basis": "\"Use your judgment on everything\"; OLS check not named in reply",
+  "confidence": "medium"
+ },
+ "U70": {
+  "id": "U70",
+  "discretion": "given",
+  "certification": "wasn't notified",
+  "turns": "T3, T4",
+  "basis": "\"Use your judgment on everything\"; by-journal models not named in reply",
+  "confidence": "medium"
+ },
+ "U58": {
+  "id": "U58",
+  "discretion": "given",
+  "certification": "wasn't notified",
+  "turns": "T3, T4",
+  "basis": "\"Use your judgment on everything\"; model 1 not mentioned in reply",
+  "confidence": "medium"
+ },
+ "U59": {
+  "id": "U59",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T3, T4",
+  "basis": "T4 reply: \"Most of the gain is from going solo to coauthored, with no clear gain beyond four authors\"",
+  "confidence": "low"
+ },
+ "U71": {
+  "id": "U71",
+  "discretion": "taken",
+  "certification": "ignored",
+  "turns": "T4",
+  "basis": "code: \"not pre-specified in the notes\"; reply: \"Exploratory, not hypothesized... interaction p = .025\"",
+  "confidence": "medium"
+ },
+ "U72": {
+  "id": "U72",
+  "discretion": "taken",
+  "certification": "ignored",
+  "turns": "T3, T4",
+  "basis": "T4 reply: \"the two methods agree (r > 0.9999)\"; no author response",
+  "confidence": "medium"
+ },
+ "U73": {
+  "id": "U73",
+  "discretion": "given",
+  "certification": "wasn't notified",
+  "turns": "T3, T4",
+  "basis": "\"write it up\"; SMJ 2012 predictions not mentioned in reply",
+  "confidence": "medium"
+ },
+ "U74": {
+  "id": "U74",
+  "discretion": "given",
+  "certification": "wasn't notified",
+  "turns": "T3, T4",
+  "basis": "\"Use your judgment on everything\"; complete vs incomplete comparison not mentioned",
+  "confidence": "low"
+ },
+ "U75": {
+  "id": "U75",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T3, T4",
+  "basis": "T4 reply: \"only 150 papers qualify\"; countries \"mainly China and India\"",
+  "confidence": "medium"
+ },
+ "U76": {
+  "id": "U76",
+  "discretion": "given",
+  "certification": "wasn't notified",
+  "turns": "T3, T4",
+  "basis": "\"Use your judgment on everything\"; correlation 0.30 not mentioned in reply",
+  "confidence": "medium"
+ },
+ "U24": {
+  "id": "U24",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3, T4",
+  "basis": "notes.md specified OpenAlex (counts_by_year) and a World Bank join; Claude 'joined to the World Bank data on its two-letter code'",
+  "confidence": "medium"
+ },
+ "U25": {
+  "id": "U25",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3, T4",
+  "basis": "Notes named the journals; reply: 'I used Organization Science (1047-7039), the journal named'",
+  "confidence": "medium"
+ },
+ "U26": {
+  "id": "U26",
+  "discretion": "given",
+  "certification": "wasn't notified",
+  "turns": "T3, T4",
+  "basis": "'Use your judgment on everything'; the reply never describes retrieving all works assigned to the journals",
+  "confidence": "medium"
+ },
+ "U27": {
+  "id": "U27",
+  "discretion": "given",
+  "certification": "wasn't notified",
+  "turns": "T3, T4",
+  "basis": "Fields chosen in 01_collect.py under 'Use your judgment'; not mentioned in the reply",
+  "confidence": "medium"
+ },
+ "U28": {
+  "id": "U28",
+  "discretion": "taken",
+  "certification": "ignored",
+  "turns": "T3, T4, T5",
+  "basis": "Notes specified counts_by_year; reply: 'I counted citing papers by year instead'; then only a bare /attest",
+  "confidence": "medium"
+ },
+ "U29": {
+  "id": "U29",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T3, T4, T5",
+  "basis": "Reply: 'editorials that OpenAlex labels as articles'; author never responded",
+  "confidence": "medium"
+ },
+ "U30": {
+  "id": "U30",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T3, T4, T5",
+  "basis": "Reply: 'I kept only records with the publisher's own DOI prefix'; author never responded",
+  "confidence": "high"
+ },
+ "U31": {
+  "id": "U31",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T3, T4, T5",
+  "basis": "Reply: 'I removed ASQ book reviews and editorials'; author never responded",
+  "confidence": "medium"
+ },
+ "U32": {
+  "id": "U32",
+  "discretion": "given",
+  "certification": "wasn't notified",
+  "turns": "T3, T4",
+  "basis": "Reference and page thresholds are never mentioned in the reply",
+  "confidence": "low"
+ },
+ "U33": {
+  "id": "U33",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T3, T4, T5",
+  "basis": "Reply: 'removed ASQ book reviews'; author never responded",
+  "confidence": "high"
+ },
+ "U34": {
+  "id": "U34",
+  "discretion": "given",
+  "certification": "wasn't notified",
+  "turns": "T3, T4",
+  "basis": "Reply mentions only DOI duplicates, not title deduplication",
+  "confidence": "medium"
+ },
+ "U35": {
+  "id": "U35",
+  "discretion": "given",
+  "certification": "wasn't notified",
+  "turns": "T3, T4",
+  "basis": "Complete-country sample restriction is not mentioned in the reply",
+  "confidence": "medium"
+ },
+ "U36": {
+  "id": "U36",
+  "discretion": "given",
+  "certification": "wasn't notified",
+  "turns": "T3, T4",
+  "basis": "Dropping articles without queried counts is not mentioned in the reply",
+  "confidence": "medium"
+ },
+ "U37": {
+  "id": "U37",
+  "discretion": "given",
+  "certification": "wasn't notified",
+  "turns": "T3, T4",
+  "basis": "Model 3 listwise drop is not mentioned in the reply",
+  "confidence": "medium"
+ },
+ "U38": {
+  "id": "U38",
+  "discretion": "given",
+  "certification": "wasn't notified",
+  "turns": "T3",
+  "basis": "pages() bounds 0<p<200 are never reported",
+  "confidence": "medium"
+ },
+ "U39": {
+  "id": "U39",
+  "discretion": "given",
+  "certification": "wasn't notified",
+  "turns": "T3, T4",
+  "basis": "Log controls are not mentioned in the reply",
+  "confidence": "medium"
+ },
+ "U40": {
+  "id": "U40",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T3, T4, T5",
+  "basis": "Reply: 'no clear gain beyond four authors' (category results); no response",
+  "confidence": "medium"
+ },
+ "U41": {
+  "id": "U41",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3, T4",
+  "basis": "Reply: 'I used five as the notes specify'",
+  "confidence": "medium"
+ },
+ "U42": {
+  "id": "U42",
+  "discretion": "given",
+  "certification": "wasn't notified",
+  "turns": "T3, T4",
+  "basis": "Online-first dating of windows is not mentioned in the reply",
+  "confidence": "medium"
+ },
+ "U43": {
+  "id": "U43",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T3, T4, T5",
+  "basis": "Reply: 'Each extra author goes with about 6% more'; no response",
+  "confidence": "medium"
+ },
+ "U44": {
+  "id": "U44",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T3, T4, T5",
+  "basis": "Reply: 'H2 (authors in more than one country)'; no response",
+  "confidence": "medium"
+ },
+ "U45": {
+  "id": "U45",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T3, T4, T5",
+  "basis": "Reply: 'historical income-classification file was blocked... so I used the current classification'",
+  "confidence": "medium"
+ },
+ "U46": {
+  "id": "U46",
+  "discretion": "given",
+  "certification": "wasn't notified",
+  "turns": "T3, T4",
+  "basis": "Taiwan coding appears only in code and paper, not in the reply",
+  "confidence": "medium"
+ },
+ "U47": {
+  "id": "U47",
+  "discretion": "given",
+  "certification": "wasn't notified",
+  "turns": "T3, T4",
+  "basis": "Number-of-countries check is not named; reply says only 'every robustness check'",
+  "confidence": "low"
+ },
+ "U48": {
+  "id": "U48",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T3, T4, T5",
+  "basis": "Reply: 'when only each author's first-listed affiliation counts'; 'three-year version... in the robustness table'",
+  "confidence": "medium"
+ },
+ "U49": {
+  "id": "U49",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T3, T4, T5",
+  "basis": "T4 reply: 'joined to the World Bank data on its two-letter code'; no response but bare /attest",
+  "confidence": "medium"
+ },
+ "U77": {
+  "id": "U77",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3, T4",
+  "basis": "'based on notes.md'; reply reports 'H1 (team size) is supported', apparently the notes' hypothesis",
+  "confidence": "medium"
+ },
+ "U78": {
+  "id": "U78",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3, T4",
+  "basis": "'based on notes.md'; reply reports 'H2 (authors in more than one country)', apparently from the notes",
+  "confidence": "medium"
+ },
+ "U79": {
+  "id": "U79",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T3, T4, T5",
+  "basis": "'Use your judgment on everything'; reply: 'Extension: no effect'; only a bare /attest followed",
+  "confidence": "low"
+ },
+ "U80": {
+  "id": "U80",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T3, T4, T5",
+  "basis": "Reply: 'Most of the gain is from going solo to coauthored'; no response",
+  "confidence": "high"
+ },
+ "U81": {
+  "id": "U81",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T3, T4, T5",
+  "basis": "Reply: 'H2 ... gets qualified support ... loses significance in two'; no response",
+  "confidence": "high"
+ },
+ "U82": {
+  "id": "U82",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T3, T4, T5",
+  "basis": "Reply: 'only 150 papers qualify, so the estimate is imprecise'; no response",
+  "confidence": "high"
+ },
+ "U83": {
+  "id": "U83",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T3, T4, T5",
+  "basis": "Reply: 'held in every robustness check' and 'points the same way in every check'",
+  "confidence": "high"
+ },
+ "U84": {
+  "id": "U84",
+  "discretion": "taken",
+  "certification": "ignored",
+  "turns": "T4, T5",
+  "basis": "Reply: 'Exploratory, not hypothesized: ... only when the team spans countries'; no response",
+  "confidence": "medium"
+ },
+ "U85": {
+  "id": "U85",
+  "discretion": "given",
+  "certification": "wasn't notified",
+  "turns": "T3, T4",
+  "basis": "Discussion written under 'Use your judgment on everything'; the reply does not mention alternative explanations",
+  "confidence": "medium"
+ },
+ "U86": {
+  "id": "U86",
+  "discretion": "given",
+  "certification": "wasn't notified",
+  "turns": "T3, T4",
+  "basis": "Crosstab run in T4; the reply never mentions the online-first explanation",
+  "confidence": "medium"
+ },
+ "U87": {
+  "id": "U87",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T3, T4, T5",
+  "basis": "Reply: 'five tables, a figure and an appendix'; no response",
+  "confidence": "low"
+ },
+ "U1": {
+  "id": "U1",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3, T4",
+  "basis": "'write the whole paper for me based on notes.md'; the hypotheses come from the notes",
+  "confidence": "medium"
+ },
+ "U2": {
+  "id": "U2",
+  "discretion": "given",
+  "certification": "wasn't notified",
+  "turns": "T3, T4",
+  "basis": "'Use your judgment on everything'; the reply does not mention the size-vs-reach framing",
+  "confidence": "low"
+ },
+ "U3": {
+  "id": "U3",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T3, T4, T5",
+  "basis": "Reply: 'I added five references beyond your three (... Gl\u00e4nzel 2001 ...)'; no response",
+  "confidence": "medium"
+ },
+ "U4": {
+  "id": "U4",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T3, T4, T5",
+  "basis": "Reply: 'Their summaries in the literature review are written from memory'; no response",
+  "confidence": "medium"
+ },
+ "U5": {
+  "id": "U5",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T4",
+  "basis": "Reply: 'beyond your three'; 'Wuchty et al. is 2007, not 2005' shows it was in the notes",
+  "confidence": "medium"
+ },
+ "U6": {
+  "id": "U6",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T4",
+  "basis": "Not among the 'five references beyond your three', so it was in the notes",
+  "confidence": "medium"
+ },
+ "U7": {
+  "id": "U7",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T3, T4, T5",
+  "basis": "Reply: 'I added five references beyond your three (... Gl\u00e4nzel 2001 ...)'",
+  "confidence": "high"
+ },
+ "U8": {
+  "id": "U8",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T3, T4, T5",
+  "basis": "Reply: 'I added five references ... Katz & Martin 1997'",
+  "confidence": "high"
+ },
+ "U9": {
+  "id": "U9",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T3, T4, T5",
+  "basis": "Reply: 'I added five references ... Jones et al. 2008'",
+  "confidence": "high"
+ },
+ "U10": {
+  "id": "U10",
+  "discretion": "taken",
+  "certification": "ignored",
+  "turns": "T4, T5",
+  "basis": "Reply: 'Freeman & Huang (2014) is summarized backwards' in the notes; Claude reversed the claim; no response",
+  "confidence": "medium"
+ },
+ "U11": {
+  "id": "U11",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T3, T4, T5",
+  "basis": "Reply: 'Priem et al. 2022 for OpenAlex'; no response",
+  "confidence": "high"
+ },
+ "U12": {
+  "id": "U12",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T3, T4, T5",
+  "basis": "Reply: 'Cameron & Trivedi 2013'; no response",
+  "confidence": "high"
+ },
+ "U13": {
+  "id": "U13",
+  "discretion": "given",
+  "certification": "wasn't notified",
+  "turns": "T3, T4",
+  "basis": "Written under 'Use your judgment on everything'; the reply does not mention the contribution framing",
+  "confidence": "medium"
+ },
+ "U14": {
+  "id": "U14",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T3, T4",
+  "basis": "\"Use your judgment on everything\"; reply: \"All cleaning steps are documented in the paper's appendix\"; no response, only bare /attest",
+  "confidence": "medium"
+ },
+ "U15": {
+  "id": "U15",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T3, T4",
+  "basis": "\"write it up as an 8-10 page paper... Use your judgment\"; reply lists H1, H2, extension, exploratory, appendix; never answered",
+  "confidence": "medium"
+ },
+ "U16": {
+  "id": "U16",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T3, T4",
+  "basis": "open request; reply mentions \"five tables, a figure and an appendix\"; bare /attest only",
+  "confidence": "low"
+ },
+ "U17": {
+  "id": "U17",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T3, T4",
+  "basis": "open request (Claude used the built-in dataviz skill for styling); reply mentions \"a figure\"; no response",
+  "confidence": "medium"
+ },
+ "U18": {
+  "id": "U18",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T3, T4",
+  "basis": "reply reports \"negative binomial models... IRR 1.058, 95% CI\"; author never responded",
+  "confidence": "high"
+ },
+ "U19": {
+  "id": "U19",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T3, T4",
+  "basis": "reply: \"This held in every robustness check\"; author never responded",
+  "confidence": "high"
+ },
+ "U20": {
+  "id": "U20",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T3, T4",
+  "basis": "reply: \"All cleaning steps are documented in the paper's appendix\"; no response",
+  "confidence": "medium"
+ },
+ "U21": {
+  "id": "U21",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T3, T4",
+  "basis": "open request; reply mentions only \"five tables... and an appendix\" generically; no response",
+  "confidence": "low"
+ },
+ "U22": {
+  "id": "U22",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T3, T4",
+  "basis": "reply: \"Exploratory, not hypothesized... interaction p = .025\"; never answered",
+  "confidence": "high"
+ },
+ "U88": {
+  "id": "U88",
+  "discretion": "given",
+  "certification": "wasn't notified",
+  "turns": "T3, T4",
+  "basis": "sed changed threshold to 30 in T4; reply never mentions dropping sparse cells",
+  "confidence": "medium"
+ },
+ "U23": {
+  "id": "U23",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T3, T4",
+  "basis": "reply: \"Limitations to know about: ... used the current classification\"; no response",
+  "confidence": "medium"
+ }
+}

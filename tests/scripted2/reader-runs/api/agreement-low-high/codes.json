@@ -1,0 +1,578 @@
+{
+ "U47": {
+  "id": "U47",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T14, T15",
+  "basis": "T14 check 5 \"Input: \u2713 Columns can be in any order, extra columns are ignored, and column names are case-sensitive\"; T15 \"I've read the results\"",
+  "confidence": "medium"
+ },
+ "U48": {
+  "id": "U48",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T6, T7, T14, T15",
+  "basis": "Case-sensitivity and codes-kept-exactly tests passed in the T6 run (\"all 32 pass\"); T7 \"Keep the tests\"; T15 \"I've read the results\"",
+  "confidence": "medium"
+ },
+ "U49": {
+  "id": "U49",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T14, T15",
+  "basis": "T14 \"Output fields and no rounding: \u2713\" and \"Undefined \u03ba ... exit 0\"; T15 \"I've read the results\"",
+  "confidence": "medium"
+ },
+ "U50": {
+  "id": "U50",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T14, T15, T16, T17",
+  "basis": "T14 \"rows_read doesn't count completely empty lines, because Python's CSV reader skips them\"; the bash output in the record is truncated; T15 \"I've read the results\"",
+  "confidence": "low"
+ },
+ "U51": {
+  "id": "U51",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T14, T15",
+  "basis": "T14 \"Output fields and no rounding: \u2713\"; the JSON from the rerun is unrounded; T15 \"I've read the results\"",
+  "confidence": "medium"
+ },
+ "U52": {
+  "id": "U52",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T14, T15",
+  "basis": "T14 \"All of these exit 1 with the message on standard error and nothing on standard output\"; T15 \"I've read the results\"",
+  "confidence": "medium"
+ },
+ "U53": {
+  "id": "U53",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T14, T15",
+  "basis": "T14 bash output \"read 22 kept 20\"; \"A row with too few cells is dropped as blank\"; T15 \"I've read the results\"",
+  "confidence": "medium"
+ },
+ "U54": {
+  "id": "U54",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T14, T15",
+  "basis": "T14 \"a code that's only spaces (the message gives the line and item)\" \u2713; T15 \"I've read the results\"",
+  "confidence": "medium"
+ },
+ "U55": {
+  "id": "U55",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T14, T15",
+  "basis": "T14 \"fewer than two rows left (the message gives the counts)\" \u2713; T15 \"I've read the results\"",
+  "confidence": "medium"
+ },
+ "U56": {
+  "id": "U56",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T14, T15",
+  "basis": "T14 \"`Coder1` gives a missing-column error\" and \"an empty file\" \u2713; T15 \"I've read the results\"",
+  "confidence": "medium"
+ },
+ "U57": {
+  "id": "U57",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T6, T7, T14, T15",
+  "basis": "T14 \"a file that isn't UTF-8\" and \"a file that doesn't exist\" \u2713; the malformed-CSV test passed in T6; T15 \"I've read the results\"",
+  "confidence": "medium"
+ },
+ "U58": {
+  "id": "U58",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T14, T15",
+  "basis": "T14 \"Undefined \u03ba: \u2713 `null` plus the explanatory note, exit 0\"; T15 \"I've read the results\"",
+  "confidence": "medium"
+ },
+ "U59": {
+  "id": "U59",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T14, T15",
+  "basis": "T14 check 4 rerun of the tool: \"Usage section's JSON block: \u2713 every value matches\"; T15 \"I've read the results\"",
+  "confidence": "high"
+ },
+ "U60": {
+  "id": "U60",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T14, T15",
+  "basis": "T14 \"75 percent of the items \u2713\" and the tool output shows kappa 0.6226; T15 \"I've read the results. Fix anything\"",
+  "confidence": "medium"
+ },
+ "U61": {
+  "id": "U61",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T13",
+  "basis": "No tool call ran --help; the README was written at the author's request",
+  "confidence": "medium"
+ },
+ "U62": {
+  "id": "U62",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T2, T9, T13",
+  "basis": "Rule from CLAUDE.md; no tool call checked the imports",
+  "confidence": "medium"
+ },
+ "U63": {
+  "id": "U63",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T9",
+  "basis": "Claude wrote the script and described it in T9; no check of the description against the code",
+  "confidence": "medium"
+ },
+ "U64": {
+  "id": "U64",
+  "discretion": "none",
+  "certification": "you checked it against the source",
+  "turns": "T18",
+  "basis": "\"I ran the tests myself and every one passed\"",
+  "confidence": "high"
+ },
+ "U65": {
+  "id": "U65",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T6, T7",
+  "basis": "Claude listed the coverage in T6; no tool call verified the mapping; T7 \"Keep the tests\"",
+  "confidence": "medium"
+ },
+ "U66": {
+  "id": "U66",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T14, T15",
+  "basis": "T14 check 6 \"\u2713 Every value matches ... all three \u03ba values to 15 decimals\"; T15 \"I've read the results\"",
+  "confidence": "medium"
+ },
+ "U67": {
+  "id": "U67",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T13, T14, T15",
+  "basis": "T13 rerun of the validation (exit 0, no diff in results.md); T14 check 6 compared the two tables; T15 \"I've read the results\"",
+  "confidence": "medium"
+ },
+ "U68": {
+  "id": "U68",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T14, T15",
+  "basis": "T14 check 6 includes \"'all three match'\" \u2713; T15 \"I've read the results\"",
+  "confidence": "medium"
+ },
+ "U69": {
+  "id": "U69",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T9, T14, T15",
+  "basis": "T9 bash printed \"0.14.6\"; T14 check 6 \"the statsmodels version (0.14.6)\" \u2713; T15 \"I've read the results\"",
+  "confidence": "medium"
+ },
+ "U70": {
+  "id": "U70",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T14, T15, T16, T17",
+  "basis": "\"The 3.6 figure is my reading of the code; I haven't run the tool on 3.6\"; mentioned to the author, who okayed it in T17",
+  "confidence": "medium"
+ },
+ "U71": {
+  "id": "U71",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T14, T15",
+  "basis": "T14 ran `python3 agree.py notes/example.csv` and got exit 0; T15 \"I've read the results\"",
+  "confidence": "medium"
+ },
+ "U72": {
+  "id": "U72",
+  "discretion": "none",
+  "certification": "you checked it against the source",
+  "turns": "T13, T14, T15, T18",
+  "basis": "T18 attest: \"I ran the tests myself and every one passed\"",
+  "confidence": "medium"
+ },
+ "U28": {
+  "id": "U28",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T14, T15",
+  "basis": "Crossref lookup by DOI in T14; T15 \"I've read the results\"",
+  "confidence": "high"
+ },
+ "U29": {
+  "id": "U29",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T14, T15",
+  "basis": "Crossref lookup of Hallgren DOI; T15 \"I've read the results\"",
+  "confidence": "high"
+ },
+ "U30": {
+  "id": "U30",
+  "discretion": "none",
+  "certification": "you checked it against the source",
+  "turns": "T14, T18",
+  "basis": "T18: \"checked the Landis and Koch reference against its Crossref record\"",
+  "confidence": "high"
+ },
+ "U31": {
+  "id": "U31",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T1, T13, T14",
+  "basis": "author's draft text; T14 only \"That is what \u03ba = ... does\", no tool call reading Cohen",
+  "confidence": "low"
+ },
+ "U32": {
+  "id": "U32",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3, T14",
+  "basis": "T3 author: \"unweighted, as Cohen (1960) defines it\"; no lookup of Cohen's content",
+  "confidence": "medium"
+ },
+ "U33": {
+  "id": "U33",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T14, T15",
+  "basis": "WebSearch on Landis Koch labels with cited sources; T15 \"I've read the results\"",
+  "confidence": "high"
+ },
+ "U34": {
+  "id": "U34",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T14, T15",
+  "basis": "WebFetch of Hallgren: \"tutorial ... with SPSS and R code\"; T15 \"I've read the results\"",
+  "confidence": "high"
+ },
+ "U35": {
+  "id": "U35",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T14, T15",
+  "basis": "WebSearch \"0.61\u20130.80 'substantial'\" sources; T15 \"I've read the results\"",
+  "confidence": "medium"
+ },
+ "U36": {
+  "id": "U36",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T14, T15",
+  "basis": "WebSearch \"0.81\u20131.00 'almost perfect'\"; T15 \"I've read the results\"",
+  "confidence": "medium"
+ },
+ "U44": {
+  "id": "U44",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T3, T14, T15",
+  "basis": "T14 rerun shows \"rows_dropped\": 2; T15 \"I've read the results\"",
+  "confidence": "low"
+ },
+ "U45": {
+  "id": "U45",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T9",
+  "basis": "T9 author asked for \"two more test files you make up\"; description never compared to data",
+  "confidence": "medium"
+ },
+ "U46": {
+  "id": "U46",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T9, T10",
+  "basis": "statsmodels comparison gave \u22120.5366; T10 author responded \"Keep your threshold\"",
+  "confidence": "medium"
+ },
+ "U37": {
+  "id": "U37",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T14, T15",
+  "basis": "WebSearch on kappa negative values, Wikipedia/JMP cited; T15 \"I've read the results\"",
+  "confidence": "high"
+ },
+ "U38": {
+  "id": "U38",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T14, T15",
+  "basis": "T14: \"lowest possible value lies somewhere between \u22121 and 0\" with sources; T15 read results",
+  "confidence": "medium"
+ },
+ "U39": {
+  "id": "U39",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T5, T14",
+  "basis": "T5 author asked for \"a sentence saying why\"; T14 \"follows directly from the formula\", no source lookup",
+  "confidence": "medium"
+ },
+ "U40": {
+  "id": "U40",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T14, T15",
+  "basis": "WebFetch Hallgren: \"describes prevalence effects\"; T15 \"I've read the results\"",
+  "confidence": "medium"
+ },
+ "U41": {
+  "id": "U41",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T14, T15",
+  "basis": "Hallgren: weighted \u03ba \"typically used for ... ordinal structure\"; T15 read results",
+  "confidence": "medium"
+ },
+ "U42": {
+  "id": "U42",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T9, T10",
+  "basis": "T9 \"You choose how close\"; rationale never checked against a source",
+  "confidence": "medium"
+ },
+ "U43": {
+  "id": "U43",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T9",
+  "basis": "\"rounding differences are around 1e-16\" asserted, not checked",
+  "confidence": "medium"
+ },
+ "U22": {
+  "id": "U22",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T1, T3",
+  "basis": "T3 \"as Cohen (1960) defines it\"; draft \"Cohen's \u03ba (Cohen, 1960)\"",
+  "confidence": "high"
+ },
+ "U23": {
+  "id": "U23",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T1, T13, T15",
+  "basis": "author's draft cites Landis and Koch for labels; T15 \"Fix anything they found wrong\"",
+  "confidence": "medium"
+ },
+ "U24": {
+  "id": "U24",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T1, T13",
+  "basis": "draft \"Hallgren (2012) is a practical tutorial\" used as written",
+  "confidence": "high"
+ },
+ "U25": {
+  "id": "U25",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T13, T16, T17",
+  "basis": "T13 \"Report the validation result as it is\"; T16 \"Formatting the validation table\"; T17 \"Keep them\"",
+  "confidence": "high"
+ },
+ "U26": {
+  "id": "U26",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T9, T16, T17",
+  "basis": "T9 \"write the comparison to validation/results.md\"; T16 lists results.md; T17 \"Keep them\"",
+  "confidence": "medium"
+ },
+ "U27": {
+  "id": "U27",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T13, T14",
+  "basis": "Limits paragraph added by the author's hand edit between T13 and T14",
+  "confidence": "high"
+ },
+ "U1": {
+  "id": "U1",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3",
+  "basis": "\"percent agreement and Cohen's \u03ba, unweighted, as Cohen (1960) defines it\"",
+  "confidence": "high"
+ },
+ "U18": {
+  "id": "U18",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T9, T16, T17",
+  "basis": "\"two more test files you make up\"; listed in T16; \"I've read your list. Keep them.\"",
+  "confidence": "high"
+ },
+ "U19": {
+  "id": "U19",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T9",
+  "basis": "\"compare the tool's \u03ba with statsmodels' cohens_kappa\"",
+  "confidence": "medium"
+ },
+ "U20": {
+  "id": "U20",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T9, T16, T17",
+  "basis": "T16 lists \"Running the tool from the command line and rebuilding statsmodels' input table separately\"; \"Keep them.\"",
+  "confidence": "high"
+ },
+ "U21": {
+  "id": "U21",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T9, T10",
+  "basis": "\"You choose how close\"; \"Keep your threshold.\"",
+  "confidence": "high"
+ },
+ "U2": {
+  "id": "U2",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3",
+  "basis": "\"The input is a CSV with columns item, coder1, and coder2\"",
+  "confidence": "medium"
+ },
+ "U3": {
+  "id": "U3",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3",
+  "basis": "\"percent agreement and Cohen's \u03ba\"",
+  "confidence": "medium"
+ },
+ "U4": {
+  "id": "U4",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3",
+  "basis": "\"Cohen's \u03ba, unweighted, as Cohen (1960) defines it\"",
+  "confidence": "high"
+ },
+ "U5": {
+  "id": "U5",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T2",
+  "basis": "CLAUDE.md: \"Treat codes as case-sensitive text, and never recode them\"",
+  "confidence": "high"
+ },
+ "U6": {
+  "id": "U6",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3",
+  "basis": "\"Drop any row where either code is blank, and report how many were dropped\"",
+  "confidence": "high"
+ },
+ "U7": {
+  "id": "U7",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T5, T16, T17",
+  "basis": "T5 \"Short rows... counts as having a blank code\"; T16 list; \"Keep them.\"",
+  "confidence": "medium"
+ },
+ "U8": {
+  "id": "U8",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T2",
+  "basis": "CLAUDE.md: \"Use only Python's standard library, in the tool and in its tests\"",
+  "confidence": "high"
+ },
+ "U9": {
+  "id": "U9",
+  "discretion": "given",
+  "certification": "elaborated and okayed",
+  "turns": "T3, T8",
+  "basis": "methods-kit tool-conventions skill (asked for); \"Keep the JSON output. Other scripts will read it\"",
+  "confidence": "high"
+ },
+ "U10": {
+  "id": "U10",
+  "discretion": "given",
+  "certification": "changed",
+  "turns": "T4, T5",
+  "basis": "\"Propose how to handle each\"; \"except for a file with only one category: report \u03ba as undefined, with a sentence saying why\"",
+  "confidence": "high"
+ },
+ "U11": {
+  "id": "U11",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T4, T5, T16, T17",
+  "basis": "\"I'd lean toward the error\"; T16 \"Spaces-only codes are an error\"; \"Keep them.\"",
+  "confidence": "medium"
+ },
+ "U12": {
+  "id": "U12",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T4, T5",
+  "basis": "\"Propose how to handle each\"; \"Use your handling\"",
+  "confidence": "high"
+ },
+ "U13": {
+  "id": "U13",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T4, T5",
+  "basis": "\"Propose how to handle each\"; \"Use your handling\"",
+  "confidence": "high"
+ },
+ "U14": {
+  "id": "U14",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T5, T6, T7, T16, T17",
+  "basis": "methods-kit skill errors rule; T16 \"Any other encoding is an error\"; \"Keep them.\"",
+  "confidence": "medium"
+ },
+ "U15": {
+  "id": "U15",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T3, T4, T5, T16, T17",
+  "basis": "methods-kit tool-conventions skill: errors to stderr; T16 \"The error exit code is 1\"; \"Keep them.\"",
+  "confidence": "medium"
+ },
+ "U16": {
+  "id": "U16",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T12, T13, T15, T16, T17",
+  "basis": "outline Requirements section; \"Use your outline\"; T16 lists Python 3.6 wording; \"Keep them.\"",
+  "confidence": "medium"
+ },
+ "U17": {
+  "id": "U17",
+  "discretion": "given",
+  "certification": "elaborated and okayed",
+  "turns": "T6, T7",
+  "basis": "methods-kit skill (asked for); \"Keep the tests. One for each function... is what I'd want a reviewer to see.\"",
+  "confidence": "high"
+ }
+}

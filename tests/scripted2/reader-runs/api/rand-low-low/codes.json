@@ -1,0 +1,538 @@
+{
+ "U67": {
+  "id": "U67",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T5, T6, T8",
+  "basis": "memo asked for in T8; no tool call compares memo with plan.md",
+  "confidence": "medium"
+ },
+ "U44": {
+  "id": "U44",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T6, T8",
+  "basis": "numbers produced by running script; no comparison check",
+  "confidence": "medium"
+ },
+ "U45": {
+  "id": "U45",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T8",
+  "basis": "\"Interpret the main result\"; computed, not checked",
+  "confidence": "medium"
+ },
+ "U46": {
+  "id": "U46",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T6, T8",
+  "basis": "exploratory asked for; numbers produced, not checked",
+  "confidence": "medium"
+ },
+ "U47": {
+  "id": "U47",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T4, T8, T9",
+  "basis": "mdvis.mean() -> 2.86; \"it's 2.86\"; author never responded, bare attest",
+  "confidence": "high"
+ },
+ "U48": {
+  "id": "U48",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T5, T8",
+  "basis": "produced by refit; no check",
+  "confidence": "medium"
+ },
+ "U49": {
+  "id": "U49",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T5, T8",
+  "basis": "produced by refit; no check",
+  "confidence": "medium"
+ },
+ "U50": {
+  "id": "U50",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T4, T5",
+  "basis": "planned model output; no comparison check",
+  "confidence": "medium"
+ },
+ "U51": {
+  "id": "U51",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T6, T8",
+  "basis": "CI produced by script; no check",
+  "confidence": "medium"
+ },
+ "U52": {
+  "id": "U52",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T8",
+  "basis": "derived from computed table; no check",
+  "confidence": "medium"
+ },
+ "U53": {
+  "id": "U53",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T6, T8",
+  "basis": "\"dispersion is 1.3\"; produced, not checked",
+  "confidence": "medium"
+ },
+ "U54": {
+  "id": "U54",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T5, T8",
+  "basis": "\"IRR of 1.024\"; produced, not checked",
+  "confidence": "medium"
+ },
+ "U55": {
+  "id": "U55",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T6, T8",
+  "basis": "\"Share ... 0.688\" produced by script",
+  "confidence": "medium"
+ },
+ "U56": {
+  "id": "U56",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T6, T8",
+  "basis": "marginal effects produced; no check",
+  "confidence": "medium"
+ },
+ "U57": {
+  "id": "U57",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T6, T8",
+  "basis": "p-values produced; no check",
+  "confidence": "medium"
+ },
+ "U58": {
+  "id": "U58",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T6, T8",
+  "basis": "\"results hardly move\"; no check",
+  "confidence": "medium"
+ },
+ "U59": {
+  "id": "U59",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T8",
+  "basis": "memo statement; no comparison with table1",
+  "confidence": "medium"
+ },
+ "U60": {
+  "id": "U60",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T5, T8",
+  "basis": "\"got somewhat stronger\"; no check",
+  "confidence": "medium"
+ },
+ "U61": {
+  "id": "U61",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T8",
+  "basis": "interpretation asked for; no check",
+  "confidence": "medium"
+ },
+ "U62": {
+  "id": "U62",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T6, T8",
+  "basis": "p-values produced; no check",
+  "confidence": "medium"
+ },
+ "U63": {
+  "id": "U63",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T4, T8",
+  "basis": "author's draft \"use ... as written\"; flagged but no tool comparison",
+  "confidence": "medium"
+ },
+ "U64": {
+  "id": "U64",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T6, T8",
+  "basis": "code written that way; no verification call",
+  "confidence": "medium"
+ },
+ "U65": {
+  "id": "U65",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T6, T8",
+  "basis": "code written that way; no verification call",
+  "confidence": "medium"
+ },
+ "U66": {
+  "id": "U66",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T4, T8",
+  "basis": "\"se_irr = irr * se # delta method\"; no check",
+  "confidence": "medium"
+ },
+ "U32": {
+  "id": "U32",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T8",
+  "basis": "diff only against notes/references.md; source never looked up",
+  "confidence": "medium"
+ },
+ "U33": {
+  "id": "U33",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T1, T8",
+  "basis": "Author's notes/references.md; T8 diff only compared memo to notes, not looked up",
+  "confidence": "high"
+ },
+ "U34": {
+  "id": "U34",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T1, T8",
+  "basis": "Author's notes/references.md; 'refs-match' diff is copy fidelity, not a source lookup",
+  "confidence": "high"
+ },
+ "U35": {
+  "id": "U35",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T1, T4, T8",
+  "basis": "Author's draft; Claude flagged it 'from my own knowledge', with no tool check",
+  "confidence": "high"
+ },
+ "U36": {
+  "id": "U36",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T1, T8",
+  "basis": "Author's draft paragraph used 'as written'",
+  "confidence": "high"
+ },
+ "U37": {
+  "id": "U37",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T1, T4",
+  "basis": "Author's draft and T4 prompt 'appear for several years with no person identifier'",
+  "confidence": "medium"
+ },
+ "U42": {
+  "id": "U42",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T4, T6, T8",
+  "basis": "Counts produced by model runs; no comparison check of memo against outputs",
+  "confidence": "medium"
+ },
+ "U43": {
+  "id": "U43",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T6, T8",
+  "basis": "Memo wording 'standard robustness checklist' written as part of requested memo; never checked",
+  "confidence": "medium"
+ },
+ "U38": {
+  "id": "U38",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T1, T8",
+  "basis": "Author's draft; Claude said 'worth checking against the sources', no check",
+  "confidence": "high"
+ },
+ "U39": {
+  "id": "U39",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T1, T8",
+  "basis": "Author's draft 'assigning families at random'; interpretation requested",
+  "confidence": "high"
+ },
+ "U40": {
+  "id": "U40",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T8, T9",
+  "basis": "Author's hand edit to Limitations; no attest sentence on checking",
+  "confidence": "high"
+ },
+ "U41": {
+  "id": "U41",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T5",
+  "basis": "Author's prompt 'incentive payments differed by plan'",
+  "confidence": "high"
+ },
+ "U31": {
+  "id": "U31",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3",
+  "basis": "'I want a short pre-analysis plan in plan.md, with exactly these'",
+  "confidence": "high"
+ },
+ "U15": {
+  "id": "U15",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3",
+  "basis": "'the outcome, the number of outpatient visits (mdvis)'",
+  "confidence": "high"
+ },
+ "U16": {
+  "id": "U16",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3",
+  "basis": "'the treatment, the plan's log coinsurance (lncoins)'",
+  "confidence": "high"
+ },
+ "U17": {
+  "id": "U17",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3",
+  "basis": "'whether it has an individual deductible (idp)'",
+  "confidence": "high"
+ },
+ "U18": {
+  "id": "U18",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3, T5",
+  "basis": "'the controls, self-rated health...'; 'add the participation incentive (lpi) as a control'",
+  "confidence": "high"
+ },
+ "U19": {
+  "id": "U19",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T2, T3",
+  "basis": "'the model, a Poisson regression'; CLAUDE.md 'report incidence-rate ratios'",
+  "confidence": "high"
+ },
+ "U20": {
+  "id": "U20",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T4, T5",
+  "basis": "'handle that as you think best'; reply described HC0, author moved on without responding",
+  "confidence": "medium"
+ },
+ "U21": {
+  "id": "U21",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T2",
+  "basis": "CLAUDE.md 'Use two-tailed tests at the .05 level'",
+  "confidence": "high"
+ },
+ "U22": {
+  "id": "U22",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T6, T7, T8",
+  "basis": "'Use the methods-kit robustness skill' (plugin skill methods-kit:robustness); reply reported NB, no explicit okay",
+  "confidence": "medium"
+ },
+ "U23": {
+  "id": "U23",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T6, T7, T8",
+  "basis": "'one exploratory analysis of your choice'; reply described logit, no explicit acceptance",
+  "confidence": "medium"
+ },
+ "U12": {
+  "id": "U12",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3",
+  "basis": "'RAND Health Insurance Experiment data bundled with statsmodels'",
+  "confidence": "high"
+ },
+ "U13": {
+  "id": "U13",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T2",
+  "basis": "CLAUDE.md 'Keep every person-year in the data'",
+  "confidence": "high"
+ },
+ "U14": {
+  "id": "U14",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T2, T6",
+  "basis": "CLAUDE.md 'Keep every person-year'; Claude 'let the project rule win'",
+  "confidence": "medium"
+ },
+ "U24": {
+  "id": "U24",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3",
+  "basis": "'the hypothesis, that people in plans with higher coinsurance make fewer'",
+  "confidence": "high"
+ },
+ "U25": {
+  "id": "U25",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T8",
+  "basis": "\"Interpret the main result\"; reply: \"I turned the estimate into plan levels\"; no later response",
+  "confidence": "medium"
+ },
+ "U26": {
+  "id": "U26",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T5, T8",
+  "basis": "\"Interpret the main result\"; T5 reply \"an individual deductible with about 26% fewer\"; never okayed",
+  "confidence": "medium"
+ },
+ "U27": {
+  "id": "U27",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T8",
+  "basis": "reply: \"notes that the controls are measured rather than randomly assigned\"; bare /attest after",
+  "confidence": "medium"
+ },
+ "U28": {
+  "id": "U28",
+  "discretion": "taken",
+  "certification": "wasn't notified",
+  "turns": "T8",
+  "basis": "asked only to \"Interpret the main result\"; controls reading never mentioned in reply",
+  "confidence": "medium"
+ },
+ "U29": {
+  "id": "U29",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T6, T8",
+  "basis": "\"exploratory analysis of your choice\"; T6 reply \"much of the reduction comes from people choosing not to start care\"; no response",
+  "confidence": "medium"
+ },
+ "U30": {
+  "id": "U30",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T6",
+  "basis": "\"keep it out of Table 1\"",
+  "confidence": "medium"
+ },
+ "U1": {
+  "id": "U1",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3",
+  "basis": "\"I'm studying whether cost sharing reduces doctor visits\"",
+  "confidence": "high"
+ },
+ "U2": {
+  "id": "U2",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T8",
+  "basis": "\"use the paragraphs I drafted in notes/draft.md as written\"; references from notes/references.md",
+  "confidence": "high"
+ },
+ "U3": {
+  "id": "U3",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T8",
+  "basis": "draft Background paragraph used \"as written\"",
+  "confidence": "high"
+ },
+ "U4": {
+  "id": "U4",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T8",
+  "basis": "citation in author's draft.md, used as written",
+  "confidence": "high"
+ },
+ "U5": {
+  "id": "U5",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T8",
+  "basis": "citation in author's draft.md, used as written",
+  "confidence": "high"
+ },
+ "U6": {
+  "id": "U6",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T8",
+  "basis": "citation in author's draft.md Data paragraph, used as written",
+  "confidence": "high"
+ },
+ "U7": {
+  "id": "U7",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T8",
+  "basis": "\"with whatever structure you think works best\"; reply lists sections; no response",
+  "confidence": "high"
+ },
+ "U8": {
+  "id": "U8",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T4, T6",
+  "basis": "methods-kit robustness skill chose NB column; T6 reply reported it; author never responded",
+  "confidence": "medium"
+ },
+ "U9": {
+  "id": "U9",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T8",
+  "basis": "\"Interpret the main result\"; reply shows the plan-level table; bare /attest after",
+  "confidence": "medium"
+ },
+ "U10": {
+  "id": "U10",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T6, T8",
+  "basis": "\"exploratory analysis of your choice\"; reply \"I reported odds ratios here\"; no response",
+  "confidence": "medium"
+ },
+ "U11": {
+  "id": "U11",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T8, T9",
+  "basis": "\"I'll write that one myself\"; author hand-added Limitations text",
+  "confidence": "medium"
+ }
+}

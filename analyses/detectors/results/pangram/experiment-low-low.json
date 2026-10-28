@@ -1,0 +1,1698 @@
+{
+ "meta": {
+  "id": "experiment-low-low",
+  "group": "experiment",
+  "label": "Low delegation, low warrant",
+  "words": 2940,
+  "sha256": "6be07f3600978bc99d8b626be379592917a5e10fdc4732362cf6e82d7eb77db3",
+  "detector": "pangram",
+  "scored_at": "2026-10-19T18:27:32+00:00"
+ },
+ "response": {
+  "stage": "STAGE_SUCCESS",
+  "text": "<2940 words, taken out>",
+  "version": "4.1",
+  "prediction": "We believe this text is mainly AI, with some human-written content.",
+  "prediction_short": "AI",
+  "fraction_ai": 0.9920699000358582,
+  "fraction_ai_assisted": 1.875089032611285e-13,
+  "fraction_human": 0.007930070161819458,
+  "headline": "AI Detected",
+  "num_ai_segments": 81,
+  "num_ai_assisted_segments": 0,
+  "num_human_segments": 1,
+  "windows": [
+   {
+    "text": "<1 words, taken out>",
+    "label": "AI-Generated",
+    "ai_assistance_score": 0.9999998807907104,
+    "confidence": "Low",
+    "start_index": 0,
+    "end_index": 2,
+    "word_count": 1,
+    "token_length": 2,
+    "is_humanized": false,
+    "humanizer_score": 0.014196722768247128,
+    "class_probabilities": [
+     1.4036366735581396e-07,
+     1.8430092174614998e-10,
+     0.9999998807907104
+    ],
+    "confidence_score": 0.9999998807907104,
+    "uncertainty_highlighting": true,
+    "calibrated_confidence": 0.8120604781997187
+   },
+   {
+    "text": "<243 words, taken out>",
+    "label": "AI-Generated",
+    "ai_assistance_score": 1.0,
+    "confidence": "High",
+    "start_index": 2,
+    "end_index": 1483,
+    "word_count": 244,
+    "token_length": 297,
+    "is_humanized": false,
+    "humanizer_score": 0.014444996602833271,
+    "class_probabilities": [
+     7.61918404823938e-21,
+     5.675232619175629e-28,
+     1.0
+    ],
+    "confidence_score": 1.0,
+    "uncertainty_highlighting": false,
+    "calibrated_confidence": 0.9982907876504932
+   },
+   {
+    "text": "<5 words, taken out>",
+    "label": "AI-Generated",
+    "ai_assistance_score": 1.0,
+    "confidence": "Medium",
+    "start_index": 1483,
+    "end_index": 1514,
+    "word_count": 5,
+    "token_length": 6,
+    "is_humanized": false,
+    "humanizer_score": 0.01584557071328163,
+    "class_probabilities": [
+     3.898028004978987e-14,
+     1.3374358655979477e-18,
+     1.0
+    ],
+    "confidence_score": 1.0,
+    "uncertainty_highlighting": false,
+    "calibrated_confidence": 0.9855219342695816
+   },
+   {
+    "text": "<66 words, taken out>",
+    "label": "AI-Generated",
+    "ai_assistance_score": 1.0,
+    "confidence": "High",
+    "start_index": 1514,
+    "end_index": 1913,
+    "word_count": 66,
+    "token_length": 84,
+    "is_humanized": false,
+    "humanizer_score": 0.01584557071328163,
+    "class_probabilities": [
+     4.439850979263411e-32,
+     1.5792633692940688e-40,
+     1.0
+    ],
+    "confidence_score": 1.0,
+    "uncertainty_highlighting": false,
+    "calibrated_confidence": 0.9978983172327953
+   },
+   {
+    "text": "<4 words, taken out>",
+    "label": "AI-Generated",
+    "ai_assistance_score": 1.0,
+    "confidence": "Medium",
+    "start_index": 1913,
+    "end_index": 1937,
+    "word_count": 4,
+    "token_length": 5,
+    "is_humanized": false,
+    "humanizer_score": 0.01584557071328163,
+    "class_probabilities": [
+     2.0689033168944104e-13,
+     8.821934999617856e-18,
+     1.0
+    ],
+    "confidence_score": 1.0,
+    "uncertainty_highlighting": false,
+    "calibrated_confidence": 0.9817138980542107
+   },
+   {
+    "text": "<40 words, taken out>",
+    "label": "AI-Generated",
+    "ai_assistance_score": 1.0,
+    "confidence": "High",
+    "start_index": 1937,
+    "end_index": 2155,
+    "word_count": 40,
+    "token_length": 45,
+    "is_humanized": false,
+    "humanizer_score": 0.01584557071328163,
+    "class_probabilities": [
+     2.279768264894672e-26,
+     2.5150806600532614e-31,
+     1.0
+    ],
+    "confidence_score": 1.0,
+    "uncertainty_highlighting": false,
+    "calibrated_confidence": 0.9968268639752893
+   },
+   {
+    "text": "<6 words, taken out>",
+    "label": "AI-Generated",
+    "ai_assistance_score": 1.0,
+    "confidence": "Medium",
+    "start_index": 2155,
+    "end_index": 2196,
+    "word_count": 6,
+    "token_length": 8,
+    "is_humanized": false,
+    "humanizer_score": 0.01584557071328163,
+    "class_probabilities": [
+     1.2475332487155936e-14,
+     1.5219262163033344e-20,
+     1.0
+    ],
+    "confidence_score": 1.0,
+    "uncertainty_highlighting": false,
+    "calibrated_confidence": 0.9866064475938328
+   },
+   {
+    "text": "<81 words, taken out>",
+    "label": "AI-Generated",
+    "ai_assistance_score": 1.0,
+    "confidence": "High",
+    "start_index": 2196,
+    "end_index": 2702,
+    "word_count": 85,
+    "token_length": 108,
+    "is_humanized": false,
+    "humanizer_score": 0.021466674283146858,
+    "class_probabilities": [
+     5.2075494736573975e-21,
+     1.0049030070041789e-23,
+     1.0
+    ],
+    "confidence_score": 1.0,
+    "uncertainty_highlighting": false,
+    "calibrated_confidence": 0.9977340874190181
+   },
+   {
+    "text": "<1 words, taken out>",
+    "label": "AI-Generated",
+    "ai_assistance_score": 0.9999999403953552,
+    "confidence": "Low",
+    "start_index": 2702,
+    "end_index": 2704,
+    "word_count": 1,
+    "token_length": 2,
+    "is_humanized": false,
+    "humanizer_score": 0.029261978343129158,
+    "class_probabilities": [
+     8.110718141551843e-08,
+     1.0937974831426445e-10,
+     0.9999999403953552
+    ],
+    "confidence_score": 0.9999999403953552,
+    "uncertainty_highlighting": true,
+    "calibrated_confidence": 0.8211382113821138
+   },
+   {
+    "text": "<109 words, taken out>",
+    "label": "AI-Generated",
+    "ai_assistance_score": 1.0,
+    "confidence": "High",
+    "start_index": 2704,
+    "end_index": 3322,
+    "word_count": 110,
+    "token_length": 131,
+    "is_humanized": false,
+    "humanizer_score": 0.029261978343129158,
+    "class_probabilities": [
+     2.2245439955949168e-26,
+     3.2629852030592482e-34,
+     1.0
+    ],
+    "confidence_score": 1.0,
+    "uncertainty_highlighting": false,
+    "calibrated_confidence": 0.9986022114927885
+   },
+   {
+    "text": "<1 words, taken out>",
+    "label": "AI-Generated",
+    "ai_assistance_score": 0.9999998211860657,
+    "confidence": "Low",
+    "start_index": 3322,
+    "end_index": 3326,
+    "word_count": 1,
+    "token_length": 3,
+    "is_humanized": false,
+    "humanizer_score": 0.029261978343129158,
+    "class_probabilities": [
+     1.738161472530919e-07,
+     6.49300058164215e-11,
+     0.9999998211860657
+    ],
+    "confidence_score": 0.9999998211860657,
+    "uncertainty_highlighting": true,
+    "calibrated_confidence": 0.8120604781997187
+   },
+   {
+    "text": "<128 words, taken out>",
+    "label": "AI-Generated",
+    "ai_assistance_score": 1.0,
+    "confidence": "High",
+    "start_index": 3326,
+    "end_index": 4131,
+    "word_count": 131,
+    "token_length": 156,
+    "is_humanized": false,
+    "humanizer_score": 0.05493202805519104,
+    "class_probabilities": [
+     3.613422287061838e-18,
+     2.5350932657795588e-26,
+     1.0
+    ],
+    "confidence_score": 1.0,
+    "uncertainty_highlighting": false,
+    "calibrated_confidence": 0.9960955464383813
+   },
+   {
+    "text": "<1 words, taken out>",
+    "label": "AI-Generated",
+    "ai_assistance_score": 1.0,
+    "confidence": "Low",
+    "start_index": 4131,
+    "end_index": 4135,
+    "word_count": 1,
+    "token_length": 3,
+    "is_humanized": false,
+    "humanizer_score": 0.08003443479537964,
+    "class_probabilities": [
+     2.4697488498759412e-08,
+     3.996186628135723e-12,
+     1.0
+    ],
+    "confidence_score": 1.0,
+    "uncertainty_highlighting": true,
+    "calibrated_confidence": 0.8553175497933108
+   },
+   {
+    "text": "<71 words, taken out>",
+    "label": "AI-Generated",
+    "ai_assistance_score": 1.0,
+    "confidence": "High",
+    "start_index": 4135,
+    "end_index": 4617,
+    "word_count": 73,
+    "token_length": 90,
+    "is_humanized": false,
+    "humanizer_score": 0.08003443479537964,
+    "class_probabilities": [
+     7.586301283073256e-25,
+     5.605193857299268e-45,
+     1.0
+    ],
+    "confidence_score": 1.0,
+    "uncertainty_highlighting": false,
+    "calibrated_confidence": 0.9972924756624069
+   },
+   {
+    "text": "<1 words, taken out>",
+    "label": "AI-Generated",
+    "ai_assistance_score": 0.9999999403953552,
+    "confidence": "Low",
+    "start_index": 4617,
+    "end_index": 4621,
+    "word_count": 1,
+    "token_length": 3,
+    "is_humanized": false,
+    "humanizer_score": 0.08003443479537964,
+    "class_probabilities": [
+     3.2351472611935606e-08,
+     9.984061320744697e-12,
+     0.9999999403953552
+    ],
+    "confidence_score": 0.9999999403953552,
+    "uncertainty_highlighting": true,
+    "calibrated_confidence": 0.8506700701978303
+   },
+   {
+    "text": "<7 words, taken out>",
+    "label": "AI-Generated",
+    "ai_assistance_score": 1.0,
+    "confidence": "Medium",
+    "start_index": 4621,
+    "end_index": 4679,
+    "word_count": 7,
+    "token_length": 11,
+    "is_humanized": false,
+    "humanizer_score": 0.08003443479537964,
+    "class_probabilities": [
+     8.99882078575498e-12,
+     4.4722918909826505e-24,
+     1.0
+    ],
+    "confidence_score": 1.0,
+    "uncertainty_highlighting": false,
+    "calibrated_confidence": 0.9625564139830184
+   },
+   {
+    "text": "<1 words, taken out>",
+    "label": "AI-Generated",
+    "ai_assistance_score": 0.9999998807907104,
+    "confidence": "Low",
+    "start_index": 4679,
+    "end_index": 4681,
+    "word_count": 1,
+    "token_length": 2,
+    "is_humanized": false,
+    "humanizer_score": 0.08003443479537964,
+    "class_probabilities": [
+     1.3265584186683554e-07,
+     6.890174542029115e-11,
+     0.9999998807907104
+    ],
+    "confidence_score": 0.9999998807907104,
+    "uncertainty_highlighting": true,
+    "calibrated_confidence": 0.8120604781997187
+   },
+   {
+    "text": "<21 words, taken out>",
+    "label": "AI-Generated",
+    "ai_assistance_score": 1.0,
+    "confidence": "Medium",
+    "start_index": 4681,
+    "end_index": 4815,
+    "word_count": 22,
+    "token_length": 33,
+    "is_humanized": false,
+    "humanizer_score": 0.08003443479537964,
+    "class_probabilities": [
+     7.207995741854328e-16,
+     0.0,
+     1.0
+    ],
+    "confidence_score": 1.0,
+    "uncertainty_highlighting": false,
+    "calibrated_confidence": 0.9892636312535132
+   },
+   {
+    "text": "<204 words, taken out>",
+    "label": "AI-Generated",
+    "ai_assistance_score": 1.0,
+    "confidence": "High",
+    "start_index": 4815,
+    "end_index": 6012,
+    "word_count": 212,
+    "token_length": 287,
+    "is_humanized": false,
+    "humanizer_score": 0.12571263313293457,
+    "class_probabilities": [
+     5.276524743291047e-18,
+     1.0679308504646444e-26,
+     1.0
+    ],
+    "confidence_score": 1.0,
+    "uncertainty_highlighting": false,
+    "calibrated_confidence": 0.9959498140530154
+   },
+   {
+    "text": "<1 words, taken out>",
+    "label": "AI-Generated",
+    "ai_assistance_score": 1.0,
+    "confidence": "Low",
+    "start_index": 6012,
+    "end_index": 6014,
+    "word_count": 1,
+    "token_length": 2,
+    "is_humanized": false,
+    "humanizer_score": 0.13190995156764984,
+    "class_probabilities": [
+     1.2822969353010194e-08,
+     1.3795238562597234e-10,
+     1.0
+    ],
+    "confidence_score": 1.0,
+    "uncertainty_highlighting": true,
+    "calibrated_confidence": 0.8721036307243204
+   },
+   {
+    "text": "<24 words, taken out>",
+    "label": "AI-Generated",
+    "ai_assistance_score": 1.0,
+    "confidence": "High",
+    "start_index": 6014,
+    "end_index": 6167,
+    "word_count": 25,
+    "token_length": 35,
+    "is_humanized": false,
+    "humanizer_score": 0.15772849321365356,
+    "class_probabilities": [
+     7.087469802866236e-33,
+     0.0,
+     1.0
+    ],
+    "confidence_score": 1.0,
+    "uncertainty_highlighting": false,
+    "calibrated_confidence": 0.9970615349158792
+   },
+   {
+    "text": "<1 words, taken out>",
+    "label": "AI-Generated",
+    "ai_assistance_score": 0.9999999403953552,
+    "confidence": "Low",
+    "start_index": 6167,
+    "end_index": 6169,
+    "word_count": 1,
+    "token_length": 2,
+    "is_humanized": false,
+    "humanizer_score": 0.16012592613697052,
+    "class_probabilities": [
+     5.460622176656216e-08,
+     7.041651706174434e-10,
+     0.9999999403953552
+    ],
+    "confidence_score": 0.9999999403953552,
+    "uncertainty_highlighting": true,
+    "calibrated_confidence": 0.8291909042834479
+   },
+   {
+    "text": "<17 words, taken out>",
+    "label": "AI-Generated",
+    "ai_assistance_score": 1.0,
+    "confidence": "High",
+    "start_index": 6169,
+    "end_index": 6275,
+    "word_count": 18,
+    "token_length": 23,
+    "is_humanized": false,
+    "humanizer_score": 0.16012592613697052,
+    "class_probabilities": [
+     3.7042661433320645e-23,
+     2.4194054115983092e-33,
+     1.0
+    ],
+    "confidence_score": 1.0,
+    "uncertainty_highlighting": false,
+    "calibrated_confidence": 0.9950784753363229
+   },
+   {
+    "text": "<1 words, taken out>",
+    "label": "AI-Generated",
+    "ai_assistance_score": 1.0,
+    "confidence": "Low",
+    "start_index": 6275,
+    "end_index": 6277,
+    "word_count": 1,
+    "token_length": 2,
+    "is_humanized": false,
+    "humanizer_score": 0.16012592613697052,
+    "class_probabilities": [
+     1.0286011153937125e-08,
+     2.603939563972091e-10,
+     1.0
+    ],
+    "confidence_score": 1.0,
+    "uncertainty_highlighting": true,
+    "calibrated_confidence": 0.8721036307243204
+   },
+   {
+    "text": "<9 words, taken out>",
+    "label": "AI-Generated",
+    "ai_assistance_score": 1.0,
+    "confidence": "High",
+    "start_index": 6277,
+    "end_index": 6330,
+    "word_count": 9,
+    "token_length": 14,
+    "is_humanized": false,
+    "humanizer_score": 0.16012592613697052,
+    "class_probabilities": [
+     2.0713741979621605e-18,
+     1.4924493978540926e-25,
+     1.0
+    ],
+    "confidence_score": 1.0,
+    "uncertainty_highlighting": false,
+    "calibrated_confidence": 0.9923091194279066
+   },
+   {
+    "text": "<4 words, taken out>",
+    "label": "AI-Generated",
+    "ai_assistance_score": 1.0,
+    "confidence": "Medium",
+    "start_index": 6330,
+    "end_index": 6358,
+    "word_count": 5,
+    "token_length": 11,
+    "is_humanized": false,
+    "humanizer_score": 0.16012592613697052,
+    "class_probabilities": [
+     1.9398917964607437e-15,
+     3.791186939946023e-23,
+     1.0
+    ],
+    "confidence_score": 1.0,
+    "uncertainty_highlighting": false,
+    "calibrated_confidence": 0.9885824464565888
+   },
+   {
+    "text": "<76 words, taken out>",
+    "label": "AI-Generated",
+    "ai_assistance_score": 1.0,
+    "confidence": "High",
+    "start_index": 6358,
+    "end_index": 6807,
+    "word_count": 78,
+    "token_length": 115,
+    "is_humanized": false,
+    "humanizer_score": 0.16012592613697052,
+    "class_probabilities": [
+     1.0063895702229164e-32,
+     2.634441112930656e-43,
+     1.0
+    ],
+    "confidence_score": 1.0,
+    "uncertainty_highlighting": false,
+    "calibrated_confidence": 0.9977873137129667
+   },
+   {
+    "text": "<8 words, taken out>",
+    "label": "AI-Generated",
+    "ai_assistance_score": 1.0,
+    "confidence": "Medium",
+    "start_index": 6807,
+    "end_index": 6851,
+    "word_count": 8,
+    "token_length": 9,
+    "is_humanized": false,
+    "humanizer_score": 0.16012592613697052,
+    "class_probabilities": [
+     6.951029920924945e-13,
+     9.505761076112381e-18,
+     1.0
+    ],
+    "confidence_score": 1.0,
+    "uncertainty_highlighting": false,
+    "calibrated_confidence": 0.9763021576865032
+   },
+   {
+    "text": "<39 words, taken out>",
+    "label": "AI-Generated",
+    "ai_assistance_score": 1.0,
+    "confidence": "High",
+    "start_index": 6851,
+    "end_index": 7082,
+    "word_count": 42,
+    "token_length": 48,
+    "is_humanized": false,
+    "humanizer_score": 0.16048911213874817,
+    "class_probabilities": [
+     2.560872943553603e-41,
+     0.0,
+     1.0
+    ],
+    "confidence_score": 1.0,
+    "uncertainty_highlighting": false,
+    "calibrated_confidence": 0.9976149480262738
+   },
+   {
+    "text": "<5 words, taken out>",
+    "label": "AI-Generated",
+    "ai_assistance_score": 1.0,
+    "confidence": "Medium",
+    "start_index": 7082,
+    "end_index": 7133,
+    "word_count": 6,
+    "token_length": 14,
+    "is_humanized": false,
+    "humanizer_score": 0.24402034282684326,
+    "class_probabilities": [
+     7.311901273494013e-16,
+     4.626736360881717e-31,
+     1.0
+    ],
+    "confidence_score": 1.0,
+    "uncertainty_highlighting": false,
+    "calibrated_confidence": 0.988752968588968
+   },
+   {
+    "text": "<200 words, taken out>",
+    "label": "AI-Generated",
+    "ai_assistance_score": 1.0,
+    "confidence": "High",
+    "start_index": 7133,
+    "end_index": 8368,
+    "word_count": 213,
+    "token_length": 267,
+    "is_humanized": false,
+    "humanizer_score": 0.24332314729690552,
+    "class_probabilities": [
+     6.014235151726647e-23,
+     1.2917801294773823e-33,
+     1.0
+    ],
+    "confidence_score": 1.0,
+    "uncertainty_highlighting": false,
+    "calibrated_confidence": 0.9972416760861946
+   },
+   {
+    "text": "<6 words, taken out>",
+    "label": "AI-Generated",
+    "ai_assistance_score": 1.0,
+    "confidence": "Medium",
+    "start_index": 8368,
+    "end_index": 8408,
+    "word_count": 6,
+    "token_length": 7,
+    "is_humanized": false,
+    "humanizer_score": 0.236332505941391,
+    "class_probabilities": [
+     7.586058170527821e-11,
+     5.5669406686112565e-22,
+     1.0
+    ],
+    "confidence_score": 1.0,
+    "uncertainty_highlighting": false,
+    "calibrated_confidence": 0.9511600701891207
+   },
+   {
+    "text": "<38 words, taken out>",
+    "label": "AI-Generated",
+    "ai_assistance_score": 1.0,
+    "confidence": "High",
+    "start_index": 8408,
+    "end_index": 8638,
+    "word_count": 42,
+    "token_length": 48,
+    "is_humanized": false,
+    "humanizer_score": 0.236332505941391,
+    "class_probabilities": [
+     8.536606511330248e-21,
+     1.401298464324817e-45,
+     1.0
+    ],
+    "confidence_score": 1.0,
+    "uncertainty_highlighting": false,
+    "calibrated_confidence": 0.9955066260371191
+   },
+   {
+    "text": "<4 words, taken out>",
+    "label": "AI-Generated",
+    "ai_assistance_score": 1.0,
+    "confidence": "Medium",
+    "start_index": 8638,
+    "end_index": 8654,
+    "word_count": 4,
+    "token_length": 5,
+    "is_humanized": false,
+    "humanizer_score": 0.236332505941391,
+    "class_probabilities": [
+     1.037127189684739e-10,
+     7.092416144055233e-18,
+     1.0
+    ],
+    "confidence_score": 1.0,
+    "uncertainty_highlighting": false,
+    "calibrated_confidence": 0.9496322353693636
+   },
+   {
+    "text": "<11 words, taken out>",
+    "label": "AI-Generated",
+    "ai_assistance_score": 1.0,
+    "confidence": "High",
+    "start_index": 8654,
+    "end_index": 8737,
+    "word_count": 15,
+    "token_length": 22,
+    "is_humanized": false,
+    "humanizer_score": 0.236332505941391,
+    "class_probabilities": [
+     9.697129310826524e-18,
+     0.0,
+     1.0
+    ],
+    "confidence_score": 1.0,
+    "uncertainty_highlighting": false,
+    "calibrated_confidence": 0.9918565213221381
+   },
+   {
+    "text": "<1 words, taken out>",
+    "label": "AI-Generated",
+    "ai_assistance_score": 0.9999998211860657,
+    "confidence": "Low",
+    "start_index": 8737,
+    "end_index": 8739,
+    "word_count": 1,
+    "token_length": 2,
+    "is_humanized": false,
+    "humanizer_score": 0.236332505941391,
+    "class_probabilities": [
+     1.566668288432993e-07,
+     1.4669527745314603e-11,
+     0.9999998211860657
+    ],
+    "confidence_score": 0.9999998211860657,
+    "uncertainty_highlighting": true,
+    "calibrated_confidence": 0.8120604781997187
+   },
+   {
+    "text": "<29 words, taken out>",
+    "label": "AI-Generated",
+    "ai_assistance_score": 1.0,
+    "confidence": "High",
+    "start_index": 8739,
+    "end_index": 8904,
+    "word_count": 31,
+    "token_length": 41,
+    "is_humanized": false,
+    "humanizer_score": 0.236332505941391,
+    "class_probabilities": [
+     5.215478648648511e-17,
+     2.671610755138604e-34,
+     1.0
+    ],
+    "confidence_score": 1.0,
+    "uncertainty_highlighting": false,
+    "calibrated_confidence": 0.9907812070463123
+   },
+   {
+    "text": "<5 words, taken out>",
+    "label": "AI-Generated",
+    "ai_assistance_score": 1.0,
+    "confidence": "Medium",
+    "start_index": 8904,
+    "end_index": 8933,
+    "word_count": 5,
+    "token_length": 6,
+    "is_humanized": false,
+    "humanizer_score": 0.236332505941391,
+    "class_probabilities": [
+     6.927600854078619e-13,
+     6.269499647559916e-19,
+     1.0
+    ],
+    "confidence_score": 1.0,
+    "uncertainty_highlighting": false,
+    "calibrated_confidence": 0.9763021576865032
+   },
+   {
+    "text": "<32 words, taken out>",
+    "label": "AI-Generated",
+    "ai_assistance_score": 1.0,
+    "confidence": "High",
+    "start_index": 8933,
+    "end_index": 9136,
+    "word_count": 37,
+    "token_length": 61,
+    "is_humanized": false,
+    "humanizer_score": 0.236332505941391,
+    "class_probabilities": [
+     3.3947619868895384e-27,
+     0.0,
+     1.0
+    ],
+    "confidence_score": 1.0,
+    "uncertainty_highlighting": false,
+    "calibrated_confidence": 0.9966685709740631
+   },
+   {
+    "text": "<2 words, taken out>",
+    "label": "AI-Generated",
+    "ai_assistance_score": 0.9999999403953552,
+    "confidence": "Low",
+    "start_index": 9136,
+    "end_index": 9145,
+    "word_count": 2,
+    "token_length": 4,
+    "is_humanized": false,
+    "humanizer_score": 0.236332505941391,
+    "class_probabilities": [
+     5.750554521455342e-08,
+     2.8096671548323484e-15,
+     0.9999999403953552
+    ],
+    "confidence_score": 0.9999999403953552,
+    "uncertainty_highlighting": true,
+    "calibrated_confidence": 0.8291909042834479
+   },
+   {
+    "text": "<6 words, taken out>",
+    "label": "AI-Generated",
+    "ai_assistance_score": 1.0,
+    "confidence": "Medium",
+    "start_index": 9145,
+    "end_index": 9198,
+    "word_count": 8,
+    "token_length": 16,
+    "is_humanized": false,
+    "humanizer_score": 0.236332505941391,
+    "class_probabilities": [
+     1.8401199453066397e-09,
+     7.844045499050223e-37,
+     1.0
+    ],
+    "confidence_score": 1.0,
+    "uncertainty_highlighting": false,
+    "calibrated_confidence": 0.9087603878116344
+   },
+   {
+    "text": "<29 words, taken out>",
+    "label": "AI-Generated",
+    "ai_assistance_score": 1.0,
+    "confidence": "High",
+    "start_index": 9198,
+    "end_index": 9364,
+    "word_count": 30,
+    "token_length": 38,
+    "is_humanized": false,
+    "humanizer_score": 0.1920216679573059,
+    "class_probabilities": [
+     1.322015693865705e-19,
+     2.802596928649634e-45,
+     1.0
+    ],
+    "confidence_score": 1.0,
+    "uncertainty_highlighting": false,
+    "calibrated_confidence": 0.9941522257036013
+   },
+   {
+    "text": "<18 words, taken out>",
+    "label": "AI-Generated",
+    "ai_assistance_score": 1.0,
+    "confidence": "Medium",
+    "start_index": 9364,
+    "end_index": 9469,
+    "word_count": 18,
+    "token_length": 25,
+    "is_humanized": false,
+    "humanizer_score": 0.16277649998664856,
+    "class_probabilities": [
+     7.97752299332502e-14,
+     0.0,
+     1.0
+    ],
+    "confidence_score": 1.0,
+    "uncertainty_highlighting": false,
+    "calibrated_confidence": 0.9821373680795108
+   },
+   {
+    "text": "<7 words, taken out>",
+    "label": "AI-Generated",
+    "ai_assistance_score": 0.9999996423721313,
+    "confidence": "Low",
+    "start_index": 9469,
+    "end_index": 9553,
+    "word_count": 9,
+    "token_length": 22,
+    "is_humanized": false,
+    "humanizer_score": 0.16277649998664856,
+    "class_probabilities": [
+     3.754465467409318e-07,
+     1.1493138068991793e-15,
+     0.9999996423721313
+    ],
+    "confidence_score": 0.9999996423721313,
+    "uncertainty_highlighting": true,
+    "calibrated_confidence": 0.7887773571336961
+   },
+   {
+    "text": "<16 words, taken out>",
+    "label": "AI-Generated",
+    "ai_assistance_score": 1.0,
+    "confidence": "Medium",
+    "start_index": 9553,
+    "end_index": 9642,
+    "word_count": 16,
+    "token_length": 28,
+    "is_humanized": false,
+    "humanizer_score": 0.16277649998664856,
+    "class_probabilities": [
+     5.179305246368179e-16,
+     0.0,
+     1.0
+    ],
+    "confidence_score": 1.0,
+    "uncertainty_highlighting": false,
+    "calibrated_confidence": 0.9892702731203206
+   },
+   {
+    "text": "<31 words, taken out>",
+    "label": "AI-Generated",
+    "ai_assistance_score": 1.0,
+    "confidence": "High",
+    "start_index": 9642,
+    "end_index": 9813,
+    "word_count": 34,
+    "token_length": 41,
+    "is_humanized": false,
+    "humanizer_score": 0.16277649998664856,
+    "class_probabilities": [
+     6.483090089430296e-19,
+     0.0,
+     1.0
+    ],
+    "confidence_score": 1.0,
+    "uncertainty_highlighting": false,
+    "calibrated_confidence": 0.9929624938993523
+   },
+   {
+    "text": "<17 words, taken out>",
+    "label": "AI-Generated",
+    "ai_assistance_score": 1.0,
+    "confidence": "Medium",
+    "start_index": 9813,
+    "end_index": 9929,
+    "word_count": 17,
+    "token_length": 26,
+    "is_humanized": false,
+    "humanizer_score": 0.16277649998664856,
+    "class_probabilities": [
+     2.737490234494544e-10,
+     1.0017101374800204e-26,
+     1.0
+    ],
+    "confidence_score": 1.0,
+    "uncertainty_highlighting": false,
+    "calibrated_confidence": 0.9470433523019037
+   },
+   {
+    "text": "<6 words, taken out>",
+    "label": "AI-Generated",
+    "ai_assistance_score": 1.0,
+    "confidence": "Low",
+    "start_index": 9929,
+    "end_index": 9962,
+    "word_count": 6,
+    "token_length": 11,
+    "is_humanized": false,
+    "humanizer_score": 0.16277649998664856,
+    "class_probabilities": [
+     1.2298097651353146e-08,
+     4.466009096125423e-28,
+     1.0
+    ],
+    "confidence_score": 1.0,
+    "uncertainty_highlighting": true,
+    "calibrated_confidence": 0.8721036307243204
+   },
+   {
+    "text": "<14 words, taken out>",
+    "label": "AI-Generated",
+    "ai_assistance_score": 1.0,
+    "confidence": "Medium",
+    "start_index": 9962,
+    "end_index": 10037,
+    "word_count": 15,
+    "token_length": 19,
+    "is_humanized": false,
+    "humanizer_score": 0.16277649998664856,
+    "class_probabilities": [
+     2.854775971172785e-09,
+     3.017999147599542e-37,
+     1.0
+    ],
+    "confidence_score": 1.0,
+    "uncertainty_highlighting": false,
+    "calibrated_confidence": 0.9026359534552362
+   },
+   {
+    "text": "<201 words, taken out>",
+    "label": "AI-Generated",
+    "ai_assistance_score": 1.0,
+    "confidence": "High",
+    "start_index": 10037,
+    "end_index": 11185,
+    "word_count": 212,
+    "token_length": 340,
+    "is_humanized": false,
+    "humanizer_score": 0.1128816306591034,
+    "class_probabilities": [
+     2.5504798453910766e-19,
+     1.0299484055588143e-34,
+     1.0
+    ],
+    "confidence_score": 1.0,
+    "uncertainty_highlighting": false,
+    "calibrated_confidence": 0.9963694472577515
+   },
+   {
+    "text": "<6 words, taken out>",
+    "label": "AI-Generated",
+    "ai_assistance_score": 1.0,
+    "confidence": "Medium",
+    "start_index": 11185,
+    "end_index": 11219,
+    "word_count": 6,
+    "token_length": 7,
+    "is_humanized": false,
+    "humanizer_score": 0.07603220641613007,
+    "class_probabilities": [
+     5.012122308986275e-14,
+     4.997679858203343e-21,
+     1.0
+    ],
+    "confidence_score": 1.0,
+    "uncertainty_highlighting": false,
+    "calibrated_confidence": 0.9852900666629938
+   },
+   {
+    "text": "<93 words, taken out>",
+    "label": "AI-Generated",
+    "ai_assistance_score": 1.0,
+    "confidence": "High",
+    "start_index": 11219,
+    "end_index": 11715,
+    "word_count": 97,
+    "token_length": 200,
+    "is_humanized": false,
+    "humanizer_score": 0.07603220641613007,
+    "class_probabilities": [
+     4.2102671168215384e-19,
+     1.5666516831151455e-42,
+     1.0
+    ],
+    "confidence_score": 1.0,
+    "uncertainty_highlighting": false,
+    "calibrated_confidence": 0.9956188901245304
+   },
+   {
+    "text": "<10 words, taken out>",
+    "label": "AI-Generated",
+    "ai_assistance_score": 1.0,
+    "confidence": "Medium",
+    "start_index": 11715,
+    "end_index": 11780,
+    "word_count": 10,
+    "token_length": 18,
+    "is_humanized": false,
+    "humanizer_score": 0.07603220641613007,
+    "class_probabilities": [
+     2.4088918360032352e-11,
+     7.144194894908602e-37,
+     1.0
+    ],
+    "confidence_score": 1.0,
+    "uncertainty_highlighting": false,
+    "calibrated_confidence": 0.9612121212121212
+   },
+   {
+    "text": "<24 words, taken out>",
+    "label": "AI-Generated",
+    "ai_assistance_score": 1.0,
+    "confidence": "High",
+    "start_index": 11780,
+    "end_index": 11933,
+    "word_count": 24,
+    "token_length": 37,
+    "is_humanized": false,
+    "humanizer_score": 0.07070407271385193,
+    "class_probabilities": [
+     4.2276561057401184e-23,
+     0.0,
+     1.0
+    ],
+    "confidence_score": 1.0,
+    "uncertainty_highlighting": false,
+    "calibrated_confidence": 0.995078475336323
+   },
+   {
+    "text": "<24 words, taken out>",
+    "label": "AI-Generated",
+    "ai_assistance_score": 0.9980067014694214,
+    "confidence": "Low",
+    "start_index": 11933,
+    "end_index": 12056,
+    "word_count": 26,
+    "token_length": 46,
+    "is_humanized": false,
+    "humanizer_score": 0.06762803345918655,
+    "class_probabilities": [
+     0.001993288053199649,
+     0.0,
+     0.9980067014694214
+    ],
+    "confidence_score": 0.9980067014694214,
+    "uncertainty_highlighting": true,
+    "calibrated_confidence": 0.5752700798496947
+   },
+   {
+    "text": "<15 words, taken out>",
+    "label": "AI-Generated",
+    "ai_assistance_score": 1.0,
+    "confidence": "High",
+    "start_index": 12056,
+    "end_index": 12158,
+    "word_count": 18,
+    "token_length": 28,
+    "is_humanized": false,
+    "humanizer_score": 0.06762803345918655,
+    "class_probabilities": [
+     1.7562680567752407e-17,
+     0.0,
+     1.0
+    ],
+    "confidence_score": 1.0,
+    "uncertainty_highlighting": false,
+    "calibrated_confidence": 0.9918565213221382
+   },
+   {
+    "text": "<18 words, taken out>",
+    "label": "AI-Generated",
+    "ai_assistance_score": 1.0,
+    "confidence": "Medium",
+    "start_index": 12158,
+    "end_index": 12269,
+    "word_count": 21,
+    "token_length": 30,
+    "is_humanized": false,
+    "humanizer_score": 0.06762803345918655,
+    "class_probabilities": [
+     2.0799325803344537e-12,
+     7.554648806252927e-19,
+     1.0
+    ],
+    "confidence_score": 1.0,
+    "uncertainty_highlighting": false,
+    "calibrated_confidence": 0.9826582046790406
+   },
+   {
+    "text": "<24 words, taken out>",
+    "label": "AI-Generated",
+    "ai_assistance_score": 1.0,
+    "confidence": "High",
+    "start_index": 12269,
+    "end_index": 12438,
+    "word_count": 28,
+    "token_length": 36,
+    "is_humanized": false,
+    "humanizer_score": 0.06762803345918655,
+    "class_probabilities": [
+     1.888962196735349e-25,
+     0.0,
+     1.0
+    ],
+    "confidence_score": 1.0,
+    "uncertainty_highlighting": false,
+    "calibrated_confidence": 0.9958272868080699
+   },
+   {
+    "text": "<27 words, taken out>",
+    "label": "AI-Generated",
+    "ai_assistance_score": 0.9999984502792358,
+    "confidence": "Low",
+    "start_index": 12438,
+    "end_index": 12596,
+    "word_count": 28,
+    "token_length": 39,
+    "is_humanized": false,
+    "humanizer_score": 0.06762803345918655,
+    "class_probabilities": [
+     1.5359540839199326e-06,
+     0.0,
+     0.9999984502792358
+    ],
+    "confidence_score": 0.9999984502792358,
+    "uncertainty_highlighting": true,
+    "calibrated_confidence": 0.7536111111111111
+   },
+   {
+    "text": "<27 words, taken out>",
+    "label": "Human Written",
+    "ai_assistance_score": 8.47597974029668e-08,
+    "confidence": "Low",
+    "start_index": 12596,
+    "end_index": 12735,
+    "word_count": 28,
+    "token_length": 41,
+    "is_humanized": false,
+    "humanizer_score": 0.0,
+    "class_probabilities": [
+     0.9999999403953552,
+     5.02183084031555e-37,
+     8.47597974029668e-08
+    ],
+    "confidence_score": 0.9999999403953552,
+    "uncertainty_highlighting": true,
+    "calibrated_confidence": 0.8211382113821138
+   },
+   {
+    "text": "<9 words, taken out>",
+    "label": "AI-Generated",
+    "ai_assistance_score": 0.9766564965248108,
+    "confidence": "Low",
+    "start_index": 12735,
+    "end_index": 12809,
+    "word_count": 11,
+    "token_length": 15,
+    "is_humanized": false,
+    "humanizer_score": 0.04962707683444023,
+    "class_probabilities": [
+     0.023343510925769806,
+     4.25649672238434e-25,
+     0.9766564965248108
+    ],
+    "confidence_score": 0.9766564965248108,
+    "uncertainty_highlighting": true,
+    "calibrated_confidence": 0.5309585690261428
+   },
+   {
+    "text": "<68 words, taken out>",
+    "label": "AI-Generated",
+    "ai_assistance_score": 1.0,
+    "confidence": "High",
+    "start_index": 12809,
+    "end_index": 13209,
+    "word_count": 76,
+    "token_length": 121,
+    "is_humanized": false,
+    "humanizer_score": 0.02322567254304886,
+    "class_probabilities": [
+     4.236052097800615e-27,
+     5.653118264779177e-41,
+     1.0
+    ],
+    "confidence_score": 1.0,
+    "uncertainty_highlighting": false,
+    "calibrated_confidence": 0.9971362564759089
+   },
+   {
+    "text": "<5 words, taken out>",
+    "label": "AI-Generated",
+    "ai_assistance_score": 1.0,
+    "confidence": "Medium",
+    "start_index": 13209,
+    "end_index": 13266,
+    "word_count": 7,
+    "token_length": 14,
+    "is_humanized": false,
+    "humanizer_score": 0.02322567254304886,
+    "class_probabilities": [
+     9.661312853524121e-16,
+     1.4173367969785423e-31,
+     1.0
+    ],
+    "confidence_score": 1.0,
+    "uncertainty_highlighting": false,
+    "calibrated_confidence": 0.988752968588968
+   },
+   {
+    "text": "<121 words, taken out>",
+    "label": "AI-Generated",
+    "ai_assistance_score": 1.0,
+    "confidence": "High",
+    "start_index": 13266,
+    "end_index": 13968,
+    "word_count": 123,
+    "token_length": 177,
+    "is_humanized": false,
+    "humanizer_score": 0.024473359808325768,
+    "class_probabilities": [
+     1.8461221192011905e-25,
+     6.087107349620956e-37,
+     1.0
+    ],
+    "confidence_score": 1.0,
+    "uncertainty_highlighting": false,
+    "calibrated_confidence": 0.9964045756989537
+   },
+   {
+    "text": "<8 words, taken out>",
+    "label": "AI-Generated",
+    "ai_assistance_score": 1.0,
+    "confidence": "Medium",
+    "start_index": 13968,
+    "end_index": 14014,
+    "word_count": 8,
+    "token_length": 9,
+    "is_humanized": false,
+    "humanizer_score": 0.027605053037405014,
+    "class_probabilities": [
+     2.1021104643212038e-15,
+     2.4958577895441945e-25,
+     1.0
+    ],
+    "confidence_score": 1.0,
+    "uncertainty_highlighting": false,
+    "calibrated_confidence": 0.9885824464565888
+   },
+   {
+    "text": "<2 words, taken out>",
+    "label": "AI-Generated",
+    "ai_assistance_score": 1.0,
+    "confidence": "Low",
+    "start_index": 14014,
+    "end_index": 14023,
+    "word_count": 2,
+    "token_length": 4,
+    "is_humanized": false,
+    "humanizer_score": 0.027605053037405014,
+    "class_probabilities": [
+     4.374354212188791e-09,
+     2.2383599490517943e-15,
+     1.0
+    ],
+    "confidence_score": 1.0,
+    "uncertainty_highlighting": true,
+    "calibrated_confidence": 0.8947575877020102
+   },
+   {
+    "text": "<10 words, taken out>",
+    "label": "AI-Generated",
+    "ai_assistance_score": 1.0,
+    "confidence": "High",
+    "start_index": 14023,
+    "end_index": 14113,
+    "word_count": 12,
+    "token_length": 24,
+    "is_humanized": false,
+    "humanizer_score": 0.027605053037405014,
+    "class_probabilities": [
+     1.0359809342141744e-17,
+     0.0,
+     1.0
+    ],
+    "confidence_score": 1.0,
+    "uncertainty_highlighting": false,
+    "calibrated_confidence": 0.9918565213221382
+   },
+   {
+    "text": "<5 words, taken out>",
+    "label": "AI-Generated",
+    "ai_assistance_score": 1.0,
+    "confidence": "Medium",
+    "start_index": 14113,
+    "end_index": 14136,
+    "word_count": 5,
+    "token_length": 7,
+    "is_humanized": false,
+    "humanizer_score": 0.027605053037405014,
+    "class_probabilities": [
+     9.218835417268423e-11,
+     4.511812626421091e-21,
+     1.0
+    ],
+    "confidence_score": 1.0,
+    "uncertainty_highlighting": false,
+    "calibrated_confidence": 0.9496322353693636
+   },
+   {
+    "text": "<9 words, taken out>",
+    "label": "AI-Generated",
+    "ai_assistance_score": 1.0,
+    "confidence": "High",
+    "start_index": 14136,
+    "end_index": 14201,
+    "word_count": 11,
+    "token_length": 14,
+    "is_humanized": false,
+    "humanizer_score": 0.027605053037405014,
+    "class_probabilities": [
+     1.562866115807075e-17,
+     9.973671230262524e-35,
+     1.0
+    ],
+    "confidence_score": 1.0,
+    "uncertainty_highlighting": false,
+    "calibrated_confidence": 0.9918565213221381
+   },
+   {
+    "text": "<11 words, taken out>",
+    "label": "AI-Generated",
+    "ai_assistance_score": 1.0,
+    "confidence": "Medium",
+    "start_index": 14201,
+    "end_index": 14275,
+    "word_count": 10,
+    "token_length": 14,
+    "is_humanized": false,
+    "humanizer_score": 0.027605053037405014,
+    "class_probabilities": [
+     1.232901516881428e-14,
+     3.7278741519237506e-31,
+     1.0
+    ],
+    "confidence_score": 1.0,
+    "uncertainty_highlighting": false,
+    "calibrated_confidence": 0.9866064475938328
+   },
+   {
+    "text": "<2 words, taken out>",
+    "label": "AI-Generated",
+    "ai_assistance_score": 1.0,
+    "confidence": "Low",
+    "start_index": 14275,
+    "end_index": 14285,
+    "word_count": 2,
+    "token_length": 4,
+    "is_humanized": false,
+    "humanizer_score": 0.027605053037405014,
+    "class_probabilities": [
+     2.7197126328815102e-08,
+     1.9731707045188285e-14,
+     1.0
+    ],
+    "confidence_score": 1.0,
+    "uncertainty_highlighting": true,
+    "calibrated_confidence": 0.8506700701978304
+   },
+   {
+    "text": "<11 words, taken out>",
+    "label": "AI-Generated",
+    "ai_assistance_score": 1.0,
+    "confidence": "Medium",
+    "start_index": 14285,
+    "end_index": 14342,
+    "word_count": 11,
+    "token_length": 13,
+    "is_humanized": false,
+    "humanizer_score": 0.027605053037405014,
+    "class_probabilities": [
+     4.567278846789868e-12,
+     3.1088280273241097e-27,
+     1.0
+    ],
+    "confidence_score": 1.0,
+    "uncertainty_highlighting": false,
+    "calibrated_confidence": 0.9692243709710958
+   },
+   {
+    "text": "<33 words, taken out>",
+    "label": "AI-Generated",
+    "ai_assistance_score": 1.0,
+    "confidence": "High",
+    "start_index": 14342,
+    "end_index": 14548,
+    "word_count": 37,
+    "token_length": 45,
+    "is_humanized": false,
+    "humanizer_score": 0.027605053037405014,
+    "class_probabilities": [
+     5.084604908355302e-20,
+     2.480413450856551e-31,
+     1.0
+    ],
+    "confidence_score": 1.0,
+    "uncertainty_highlighting": false,
+    "calibrated_confidence": 0.9942915164491074
+   },
+   {
+    "text": "<12 words, taken out>",
+    "label": "AI-Generated",
+    "ai_assistance_score": 1.0,
+    "confidence": "Medium",
+    "start_index": 14548,
+    "end_index": 14673,
+    "word_count": 16,
+    "token_length": 33,
+    "is_humanized": false,
+    "humanizer_score": 0.027605053037405014,
+    "class_probabilities": [
+     1.6965748738610037e-13,
+     5.518800009040699e-21,
+     1.0
+    ],
+    "confidence_score": 1.0,
+    "uncertainty_highlighting": false,
+    "calibrated_confidence": 0.9831650022932347
+   },
+   {
+    "text": "<1 words, taken out>",
+    "label": "AI-Generated",
+    "ai_assistance_score": 0.9999999403953552,
+    "confidence": "Low",
+    "start_index": 14673,
+    "end_index": 14675,
+    "word_count": 1,
+    "token_length": 2,
+    "is_humanized": false,
+    "humanizer_score": 0.027605053037405014,
+    "class_probabilities": [
+     5.056071472608892e-08,
+     1.5887773735512312e-11,
+     0.9999999403953552
+    ],
+    "confidence_score": 0.9999999403953552,
+    "uncertainty_highlighting": true,
+    "calibrated_confidence": 0.8291909042834479
+   },
+   {
+    "text": "<180 words, taken out>",
+    "label": "AI-Generated",
+    "ai_assistance_score": 1.0,
+    "confidence": "High",
+    "start_index": 14675,
+    "end_index": 15711,
+    "word_count": 188,
+    "token_length": 231,
+    "is_humanized": false,
+    "humanizer_score": 0.029450450092554092,
+    "class_probabilities": [
+     1.2074023495215758e-18,
+     1.305038942228759e-26,
+     1.0
+    ],
+    "confidence_score": 1.0,
+    "uncertainty_highlighting": false,
+    "calibrated_confidence": 0.9971415994704363
+   },
+   {
+    "text": "<4 words, taken out>",
+    "label": "AI-Generated",
+    "ai_assistance_score": 1.0,
+    "confidence": "Medium",
+    "start_index": 15711,
+    "end_index": 15743,
+    "word_count": 4,
+    "token_length": 5,
+    "is_humanized": false,
+    "humanizer_score": 0.02632901817560196,
+    "class_probabilities": [
+     7.438285230809694e-12,
+     4.729369583505596e-18,
+     1.0
+    ],
+    "confidence_score": 1.0,
+    "uncertainty_highlighting": false,
+    "calibrated_confidence": 0.9631070566138986
+   },
+   {
+    "text": "<15 words, taken out>",
+    "label": "AI-Generated",
+    "ai_assistance_score": 1.0,
+    "confidence": "High",
+    "start_index": 15743,
+    "end_index": 15832,
+    "word_count": 15,
+    "token_length": 16,
+    "is_humanized": false,
+    "humanizer_score": 0.02632901817560196,
+    "class_probabilities": [
+     1.4379524449969234e-22,
+     1.3743297747296538e-38,
+     1.0
+    ],
+    "confidence_score": 1.0,
+    "uncertainty_highlighting": false,
+    "calibrated_confidence": 0.995046286772269
+   },
+   {
+    "text": "<6 words, taken out>",
+    "label": "AI-Generated",
+    "ai_assistance_score": 1.0,
+    "confidence": "Medium",
+    "start_index": 15832,
+    "end_index": 15870,
+    "word_count": 6,
+    "token_length": 8,
+    "is_humanized": false,
+    "humanizer_score": 0.02632901817560196,
+    "class_probabilities": [
+     1.632175314635097e-15,
+     3.640683402168617e-24,
+     1.0
+    ],
+    "confidence_score": 1.0,
+    "uncertainty_highlighting": false,
+    "calibrated_confidence": 0.9885824464565887
+   },
+   {
+    "text": "<177 words, taken out>",
+    "label": "AI-Generated",
+    "ai_assistance_score": 1.0,
+    "confidence": "High",
+    "start_index": 15870,
+    "end_index": 16906,
+    "word_count": 182,
+    "token_length": 220,
+    "is_humanized": false,
+    "humanizer_score": 0.018107157200574875,
+    "class_probabilities": [
+     2.3727802016127013e-18,
+     2.484768481102195e-32,
+     1.0
+    ],
+    "confidence_score": 1.0,
+    "uncertainty_highlighting": false,
+    "calibrated_confidence": 0.9960943607227856
+   },
+   {
+    "text": "<1 words, taken out>",
+    "label": "AI-Generated",
+    "ai_assistance_score": 0.9999997615814209,
+    "confidence": "Low",
+    "start_index": 16906,
+    "end_index": 16908,
+    "word_count": 1,
+    "token_length": 2,
+    "is_humanized": false,
+    "humanizer_score": 0.017400456592440605,
+    "class_probabilities": [
+     2.556182892021752e-07,
+     1.3031052799317155e-11,
+     0.9999997615814209
+    ],
+    "confidence_score": 0.9999997615814209,
+    "uncertainty_highlighting": true,
+    "calibrated_confidence": 0.7929973066564063
+   },
+   {
+    "text": "<133 words, taken out>",
+    "label": "AI-Generated",
+    "ai_assistance_score": 1.0,
+    "confidence": "High",
+    "start_index": 16908,
+    "end_index": 17777,
+    "word_count": 136,
+    "token_length": 166,
+    "is_humanized": false,
+    "humanizer_score": 0.01554163172841072,
+    "class_probabilities": [
+     6.440367742036859e-41,
+     0.0,
+     1.0
+    ],
+    "confidence_score": 1.0,
+    "uncertainty_highlighting": false,
+    "calibrated_confidence": 0.9986158899772147
+   }
+  ],
+  "readout_policy_id": "pangram-4.1-continuous-readout-sentences-v1",
+  "segment_policy_id": "leading-class-rounded-support-confidence-v1",
+  "confidence_policy_id": "pangram-4.1-calibrated-accuracy-v2",
+  "document_confidence": {
+   "level": "High",
+   "boundary": null
+  },
+  "calibration_table_id": "p42-120b-invariance-step24516-sentence-calibration-v2",
+  "verdict_support": {
+   "source": "sentence_dp",
+   "coverage_resolution": 0.0010125442640855908,
+   "human": 0.0,
+   "mixed": 0.0,
+   "ai": 1.0,
+   "human_threshold": 0.8999999761581421,
+   "ai_threshold": 0.800000011920929,
+   "ai_coverage": {
+    "mean": 0.9921846985816956,
+    "std": 0.0006885237526148558,
+    "p10": 0.9922934174537659,
+    "p50": 0.9922934174537659,
+    "p90": 0.9922934174537659
+   },
+   "human_coverage": {
+    "mean": 0.008209043182432652,
+    "std": 0.0006885241600684822,
+    "p10": 0.008100354112684727,
+    "p50": 0.008100354112684727,
+    "p90": 0.008100354112684727
+   }
+  }
+ }
+}

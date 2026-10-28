@@ -1,0 +1,993 @@
+{
+ "run": "owned",
+ "status": "settled: Claude's labels (committed independently in cd68df0) with the author's rulings on the sample (2026-10-06)",
+ "labeled_by": "Claude",
+ "date": "2026-10-06",
+ "reader_frozen_at": "9d40a9c",
+ "units": [
+  {
+   "id": "K1",
+   "kind": "decision",
+   "row": "S1",
+   "label": "Research question",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "# Memo: Does a Firm's Market Value Predict How Much It Invests?"
+    }
+   ],
+   "discretion": "kept",
+   "certification": null,
+   "labeled": [],
+   "basis": "O1"
+  },
+  {
+   "id": "K2",
+   "kind": "decision",
+   "row": "S2",
+   "label": "Framing: q theory (from the author's notes)",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "Tobin (1969) argued that firms invest when the market values their capital above what it would cost to replace it"
+    }
+   ],
+   "discretion": "kept",
+   "certification": null,
+   "labeled": [
+    "override"
+   ],
+   "basis": "Planted rule says given; the frame is written out in the author's notes, used in the memo (rules 2 and 14)"
+  },
+  {
+   "id": "K3",
+   "kind": "decision",
+   "row": "S3",
+   "label": "Literature: the author's reference list",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "Hayashi, F. (1982). Tobin's marginal q and average q"
+    }
+   ],
+   "discretion": "kept",
+   "certification": null,
+   "labeled": [],
+   "basis": "O1"
+  },
+  {
+   "id": "K4",
+   "kind": "decision",
+   "row": "S4",
+   "label": "Background synthesis, rewritten and extended by Claude",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "What should drive investment is *marginal* q"
+    }
+   ],
+   "discretion": "taken",
+   "certification": "okayed",
+   "labeled": [
+    "discretion",
+    "certification"
+   ],
+   "basis": "Claude changed and extended the author's paragraph (rule 2); on the T3 list (items 1, 7); T4 'Keep the rest'"
+  },
+  {
+   "id": "K5",
+   "kind": "decision",
+   "row": "S5",
+   "label": "Sources for the q-theory claim: Tobin, Hayashi",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "Hayashi (1982) showed when the two coincide"
+    }
+   ],
+   "discretion": "kept",
+   "certification": null,
+   "labeled": [],
+   "basis": "O1 (the author's notes)"
+  },
+  {
+   "id": "K6",
+   "kind": "decision",
+   "row": "S5",
+   "label": "Source for the data description: Kleiber and Zeileis",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "Kleiber and Zeileis (2010) describe them in detail"
+    }
+   ],
+   "discretion": "kept",
+   "certification": null,
+   "labeled": [],
+   "basis": "O1 (the author's notes)"
+  },
+  {
+   "id": "K7",
+   "kind": "decision",
+   "row": "S5",
+   "label": "Kleiber and Zeileis cited for versions of the data",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "Several versions of these data circulate with differing values (Kleiber and Zeileis, 2010)."
+    }
+   ],
+   "discretion": "taken",
+   "certification": "okayed",
+   "labeled": [
+    "discretion",
+    "certification"
+   ],
+   "basis": "Claude's added citation; on the T3 list (item 26); T4 'Keep the rest'"
+  },
+  {
+   "id": "K8",
+   "kind": "decision",
+   "row": "S7",
+   "label": "Structure of the memo",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "## Bottom line"
+    }
+   ],
+   "discretion": "given",
+   "certification": "okayed",
+   "labeled": [],
+   "basis": "T3 list item 21; T4"
+  },
+  {
+   "id": "K9",
+   "kind": "decision",
+   "row": "S8",
+   "label": "The memo's results table",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "**Table 1. Gross investment on market value and capital stock, 1935–1954**"
+    }
+   ],
+   "discretion": "given",
+   "certification": "okayed",
+   "labeled": [],
+   "basis": "T3 list items 19, 20; T4"
+  },
+  {
+   "id": "K10",
+   "kind": "decision",
+   "row": "S8",
+   "label": "The full results table in output/",
+   "anchors": [
+    {
+     "file": "output/results_table.md",
+     "quote": "# Table 1. Market value and corporate investment, Grunfeld panel"
+    }
+   ],
+   "discretion": "given",
+   "certification": "okayed",
+   "labeled": [],
+   "basis": "T3 list item 20; T4"
+  },
+  {
+   "id": "K11",
+   "kind": "decision",
+   "row": "S8",
+   "label": "The leave-one-firm-out table",
+   "anchors": [
+    {
+     "file": "output/leave_one_firm_out.csv",
+     "quote": "dropped firm,b (value),s.e."
+    }
+   ],
+   "discretion": "given",
+   "certification": "okayed",
+   "labeled": [],
+   "basis": "T3 list items 16, 20; T4"
+  },
+  {
+   "id": "K12",
+   "kind": "decision",
+   "row": "S9",
+   "label": "Limitations",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "**It is not causal.** The regression shows"
+    }
+   ],
+   "discretion": "given",
+   "certification": "okayed",
+   "labeled": [],
+   "basis": "T3 list item 24; T4"
+  },
+  {
+   "id": "K13",
+   "kind": "decision",
+   "row": "QC1",
+   "label": "Data source: Grunfeld in statsmodels",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "**Data:** Grunfeld investment panel (`statsmodels.datasets.grunfeld`)"
+    }
+   ],
+   "discretion": "kept",
+   "certification": null,
+   "labeled": [],
+   "basis": "O1"
+  },
+  {
+   "id": "K14",
+   "kind": "decision",
+   "row": "QC2",
+   "label": "Sample: all 11 firms, 1935-1954",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "The `statsmodels` version covers **11** US corporations over 20 years"
+    }
+   ],
+   "discretion": "given",
+   "certification": "okayed",
+   "labeled": [],
+   "basis": "T3 list item 11; T4"
+  },
+  {
+   "id": "K15",
+   "kind": "decision",
+   "row": "QA1",
+   "label": "Outcome: investment",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "**Table 1. Gross investment on market value and capital stock"
+    }
+   ],
+   "discretion": "given",
+   "certification": "okayed",
+   "labeled": [
+    "certification"
+   ],
+   "basis": "The question points to investment; measuring it in levels was Claude's call (rule 14). T3 list item 9; T4 'Keep the rest'"
+  },
+  {
+   "id": "K16",
+   "kind": "decision",
+   "row": "QA2",
+   "label": "Predictor: market value",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "each additional $1 of market value went with"
+    }
+   ],
+   "discretion": "given",
+   "certification": "okayed",
+   "labeled": [
+    "certification"
+   ],
+   "basis": "The question points to market value; Claude weighed a q-style ratio and chose levels (T3 list item 9; rule 14); T4 'Keep the rest'"
+  },
+  {
+   "id": "K17",
+   "kind": "decision",
+   "row": "QA3",
+   "label": "Control: capital stock",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "c · capital_it"
+    }
+   ],
+   "discretion": "given",
+   "certification": "okayed",
+   "labeled": [],
+   "basis": "T3 list item 9; T4"
+  },
+  {
+   "id": "K18",
+   "kind": "decision",
+   "row": "QA4",
+   "label": "Estimator: two-way fixed effects",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "where α_i is a firm fixed effect and λ_t is a year fixed effect."
+    }
+   ],
+   "discretion": "given",
+   "certification": "elaborated and okayed",
+   "labeled": [],
+   "basis": "O3"
+  },
+  {
+   "id": "K19",
+   "kind": "decision",
+   "row": "QA5",
+   "label": "Fixed effects and errors clustered by firm",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "Standard errors are clustered by firm, because a firm's errors are correlated over time."
+    }
+   ],
+   "discretion": "given",
+   "certification": "elaborated and okayed",
+   "labeled": [],
+   "basis": "O3"
+  },
+  {
+   "id": "K20",
+   "kind": "decision",
+   "row": "QA6",
+   "label": "Inference: t with G-1 df and bootstrap stars",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "So for b I also report p-values from a restricted wild cluster bootstrap"
+    }
+   ],
+   "discretion": "given",
+   "certification": "okayed",
+   "labeled": [
+    "certification"
+   ],
+   "basis": "T3 list items 14, 19; T4 'Keep the rest'; revised in T6 after the checks"
+  },
+  {
+   "id": "K21",
+   "kind": "decision",
+   "row": "QA7",
+   "label": "Robustness: logs",
+   "anchors": [
+    {
+     "file": "analysis/grunfeld_investment.py",
+     "quote": "\"log_invest ~ log_value + log_capital + C(firm) + C(year)\", \"cluster\"),"
+    }
+   ],
+   "discretion": "given",
+   "certification": "okayed",
+   "labeled": [],
+   "basis": "T3 list item 15; T4"
+  },
+  {
+   "id": "K22",
+   "kind": "decision",
+   "row": "QA7",
+   "label": "Robustness: drop each firm in turn",
+   "anchors": [
+    {
+     "file": "analysis/grunfeld_investment.py",
+     "quote": "loo.append({\"dropped firm\": firm, \"b (value)\": r.params[\"value\"],"
+    }
+   ],
+   "discretion": "given",
+   "certification": "okayed",
+   "labeled": [],
+   "basis": "T3 list item 16; T4"
+  },
+  {
+   "id": "K23",
+   "kind": "decision",
+   "row": "QA8",
+   "label": "Comparison models: pooled and firm effects only",
+   "anchors": [
+    {
+     "file": "analysis/grunfeld_investment.py",
+     "quote": "\"(3) Firm FE\": (\"invest ~ value + capital + C(firm)\", \"cluster\"),"
+    }
+   ],
+   "discretion": "given",
+   "certification": "okayed",
+   "labeled": [
+    "certification"
+   ],
+   "basis": "T3 list item 6 (pooled kept for comparison); T4"
+  },
+  {
+   "id": "K24",
+   "kind": "decision",
+   "row": "QM2",
+   "label": "Interpretation of the main result",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "For these 11 corporations between 1935 and 1954, market value predicted investment"
+    }
+   ],
+   "discretion": "given",
+   "certification": "changed",
+   "labeled": [],
+   "basis": "O2, O3"
+  },
+  {
+   "id": "K25",
+   "kind": "decision",
+   "row": "QM3",
+   "label": "What gets reported",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "**Recommendation:** Report column (4) as the headline estimate"
+    }
+   ],
+   "discretion": "given",
+   "certification": "okayed",
+   "labeled": [],
+   "basis": "T3 list items 20, 21; T4"
+  },
+  {
+   "id": "K26",
+   "kind": "claim",
+   "row": "V1",
+   "label": "Reference entry: Tobin",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "Tobin, J. (1969). A general equilibrium approach to monetary theory."
+    }
+   ],
+   "discretion": null,
+   "certification": "you checked it against the source",
+   "labeled": [],
+   "basis": "O6, O7"
+  },
+  {
+   "id": "K27",
+   "kind": "claim",
+   "row": "V1",
+   "label": "Reference entry: Hayashi (error 1)",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "Hayashi, F. (1982). Tobin's marginal q and average q: A neoclassical interpretation."
+    }
+   ],
+   "discretion": null,
+   "certification": "tool checked, you confirmed",
+   "labeled": [],
+   "basis": "Crossref T5; confirmed T6"
+  },
+  {
+   "id": "K28",
+   "kind": "claim",
+   "row": "V1",
+   "label": "Reference entry: Kleiber and Zeileis",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "Kleiber, C., & Zeileis, A. (2010). The Grunfeld data at 50."
+    }
+   ],
+   "discretion": null,
+   "certification": "tool checked, you confirmed",
+   "labeled": [],
+   "basis": "Crossref T5; confirmed T6"
+  },
+  {
+   "id": "K29",
+   "kind": "claim",
+   "row": "V2",
+   "label": "Citation description: Tobin",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "a ratio he called *q*"
+    }
+   ],
+   "discretion": null,
+   "certification": "tool checked, you confirmed",
+   "labeled": [],
+   "basis": "NBER paper fetched T5; confirmed T6"
+  },
+  {
+   "id": "K30",
+   "kind": "claim",
+   "row": "V2",
+   "label": "Citation description: Hayashi (error 2)",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "if the firm is a price-taker and its production and adjustment-cost technology has constant returns to scale"
+    }
+   ],
+   "discretion": null,
+   "certification": "tool checked, you confirmed",
+   "labeled": [],
+   "basis": "Abstract and secondary sources fetched T5; confirmed T6"
+  },
+  {
+   "id": "K31",
+   "kind": "claim",
+   "row": "V2",
+   "label": "Citation description: Kleiber and Zeileis",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "Kleiber and Zeileis (2010) describe them in detail, including the several versions"
+    }
+   ],
+   "discretion": null,
+   "certification": "tool checked, you confirmed",
+   "labeled": [],
+   "basis": "Paper fetched T5; confirmed T6"
+  },
+  {
+   "id": "K32",
+   "kind": "claim",
+   "row": "V2",
+   "label": "Kleiber and Zeileis on versions of the data",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "Several versions of these data circulate with differing values"
+    }
+   ],
+   "discretion": null,
+   "certification": "tool checked, you confirmed",
+   "labeled": [],
+   "basis": "Paper fetched T5; confirmed T6"
+  },
+  {
+   "id": "K33",
+   "kind": "claim",
+   "row": "V5",
+   "label": "Where the data come from: Chicago thesis (error 3)",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "doctoral thesis at the University of Chicago"
+    }
+   ],
+   "discretion": null,
+   "certification": "tool checked, you confirmed",
+   "labeled": [],
+   "basis": "Paper searched T5; confirmed T6"
+  },
+  {
+   "id": "K34",
+   "kind": "claim",
+   "row": "V5",
+   "label": "Coverage: 11 US corporations, 1935-1954",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "covers **11** US corporations over 20 years, 1935–1954"
+    }
+   ],
+   "discretion": null,
+   "certification": "tool checked, you confirmed",
+   "labeled": [],
+   "basis": "Paper T5; confirmed T6"
+  },
+  {
+   "id": "K35",
+   "kind": "claim",
+   "row": "V5",
+   "label": "Matches the corrected data value for value",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "It matches, value for value, the corrected 11-firm data"
+    }
+   ],
+   "discretion": null,
+   "certification": "tool checked, you confirmed",
+   "labeled": [
+    "certification"
+   ],
+   "basis": "Cell-by-cell comparison T5; written T6 from it"
+  },
+  {
+   "id": "K36",
+   "kind": "claim",
+   "row": "V5",
+   "label": "Two firms are much smaller",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "Diamond Match and American Steel are much smaller than the rest"
+    }
+   ],
+   "discretion": null,
+   "certification": "tool checked, you confirmed",
+   "labeled": [
+    "certification"
+   ],
+   "basis": "Paper T5; written T6 from it"
+  },
+  {
+   "id": "K37",
+   "kind": "claim",
+   "row": "V5",
+   "label": "Units and definitions of the variables",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "all in millions of 1947 dollars"
+    },
+    {
+     "file": "memo.md",
+     "quote": "(for Westinghouse, IBM and Chrysler, the average of December 31"
+    }
+   ],
+   "discretion": null,
+   "certification": "tool checked, you confirmed",
+   "labeled": [
+    "certification"
+   ],
+   "basis": "Paper T5; confirmed T6"
+  },
+  {
+   "id": "K38",
+   "kind": "claim",
+   "row": "V5",
+   "label": "GM's 1935 capital stock",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "GM's recorded stock in 1935 is only 2.8"
+    }
+   ],
+   "discretion": null,
+   "certification": "tool checked, you confirmed",
+   "labeled": [
+    "certification"
+   ],
+   "basis": "Recomputed from the data T5; confirmed T6"
+  },
+  {
+   "id": "K39",
+   "kind": "claim",
+   "row": "V4",
+   "label": "Counts stated the same way throughout",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "giving 220 firm-year observations"
+    }
+   ],
+   "discretion": null,
+   "certification": "tool checked, you confirmed",
+   "labeled": [],
+   "basis": "Check 4, T5; confirmed T6"
+  },
+  {
+   "id": "K40",
+   "kind": "claim",
+   "row": "QV1",
+   "label": "Mean investment (error 4)",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "Mean annual investment is 133.3 across all 11 firms and 146.0"
+    }
+   ],
+   "discretion": null,
+   "certification": "tool checked, you confirmed",
+   "labeled": [],
+   "basis": "Recomputed T5; confirmed T6"
+  },
+  {
+   "id": "K41",
+   "kind": "claim",
+   "row": "QV1",
+   "label": "Firm averages and shares",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "General Motors averages $608 million of investment a year"
+    },
+    {
+     "file": "memo.md",
+     "quote": "together account for over half"
+    }
+   ],
+   "discretion": null,
+   "certification": "tool checked, you confirmed",
+   "labeled": [
+    "certification"
+   ],
+   "basis": "Recomputed T5; confirmed T6"
+  },
+  {
+   "id": "K42",
+   "kind": "claim",
+   "row": "QV1",
+   "label": "Bottom-line estimate and p-value",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "about 11.7 cents more gross investment (s.e. 0.012; wild cluster bootstrap p = 0.001)"
+    }
+   ],
+   "discretion": null,
+   "certification": "no check",
+   "labeled": [
+    "certification"
+   ],
+   "basis": "The p-value changed in T6 on a rerun after the checks; never compared again (weakest part)"
+  },
+  {
+   "id": "K43",
+   "kind": "claim",
+   "row": "QV1",
+   "label": "One-SD effect",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "went with roughly $32 million more investment a year"
+    }
+   ],
+   "discretion": null,
+   "certification": "no check",
+   "labeled": [
+    "certification"
+   ],
+   "basis": "Rewritten in T6 from a rerun; never compared again"
+  },
+  {
+   "id": "K44",
+   "kind": "claim",
+   "row": "QV1",
+   "label": "Standard errors, HC1 vs clustered",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "(0.0068 versus 0.0162 for b)"
+    }
+   ],
+   "discretion": null,
+   "certification": "tool checked, you confirmed",
+   "labeled": [
+    "certification"
+   ],
+   "basis": "Recomputed T5; confirmed T6"
+  },
+  {
+   "id": "K45",
+   "kind": "claim",
+   "row": "QV1",
+   "label": "Stability range and within R-squared",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "It stays between 0.110 and 0.117"
+    },
+    {
+     "file": "memo.md",
+     "quote": "explain 72.5% of the within-firm"
+    }
+   ],
+   "discretion": null,
+   "certification": "tool checked, you confirmed",
+   "labeled": [
+    "certification"
+   ],
+   "basis": "Recomputed T5; confirmed T6"
+  },
+  {
+   "id": "K46",
+   "kind": "claim",
+   "row": "QV1",
+   "label": "Bootstrap p in finding 2",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "the bootstrap still rejects b = 0 decisively (p = 0.001)."
+    }
+   ],
+   "discretion": null,
+   "certification": "no check",
+   "labeled": [
+    "certification"
+   ],
+   "basis": "Changed in T6 on a rerun; never compared again"
+  },
+  {
+   "id": "K47",
+   "kind": "claim",
+   "row": "QV1",
+   "label": "Leave-one-out numbers",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "Dropping any single other firm leaves b between 0.113 and 0.125."
+    }
+   ],
+   "discretion": null,
+   "certification": "tool checked, you confirmed",
+   "labeled": [
+    "certification"
+   ],
+   "basis": "Recomputed T5; confirmed T6"
+  },
+  {
+   "id": "K48",
+   "kind": "claim",
+   "row": "QV1",
+   "label": "Without-GM p-values",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "(p = 0.023), though not by the clustered t-test (p = 0.063)"
+    }
+   ],
+   "discretion": null,
+   "certification": "no check",
+   "labeled": [
+    "certification"
+   ],
+   "basis": "New in T6 from a rerun; never compared again"
+  },
+  {
+   "id": "K49",
+   "kind": "claim",
+   "row": "QV1",
+   "label": "Log-model numbers",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "about a 4.2% rise in investment"
+    },
+    {
+     "file": "memo.md",
+     "quote": "the wild bootstrap p-value is 0.12"
+    }
+   ],
+   "discretion": null,
+   "certification": "tool checked, you confirmed",
+   "labeled": [
+    "certification"
+   ],
+   "basis": "Recomputed T5 (4.2% is the check's figure); confirmed T6"
+  },
+  {
+   "id": "K50",
+   "kind": "claim",
+   "row": "QV1",
+   "label": "The results table (memo and output)",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "| Market value (b) | 0.1145*** | 0.1145** |"
+    },
+    {
+     "file": "output/results_table.md",
+     "quote": "# Table 1. Market value and corporate investment, Grunfeld panel"
+    },
+    {
+     "file": "output/results_table.csv",
+     "quote": "Market value (b),0.1145***"
+    }
+   ],
+   "discretion": null,
+   "certification": "you checked it against the source",
+   "labeled": [],
+   "basis": "O6, O7"
+  },
+  {
+   "id": "K51",
+   "kind": "claim",
+   "row": "QV1",
+   "label": "The leave-one-firm-out table",
+   "anchors": [
+    {
+     "file": "output/leave_one_firm_out.csv",
+     "quote": "General Motors,0.06743174256206343"
+    }
+   ],
+   "discretion": null,
+   "certification": "no check",
+   "labeled": [
+    "certification"
+   ],
+   "basis": "Rewritten in T6 by the rerun; the author's check covered the results table only"
+  },
+  {
+   "id": "K52",
+   "kind": "claim",
+   "row": "QV2",
+   "label": "Description of stability",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "The estimate is very stable across the four specifications in levels."
+    }
+   ],
+   "discretion": null,
+   "certification": "tool checked, you confirmed",
+   "labeled": [],
+   "basis": "Check 5, T5; fixed T6 as the author asked"
+  },
+  {
+   "id": "K53",
+   "kind": "claim",
+   "row": "QV2",
+   "label": "Description of finding 1",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "So in this panel the association is not just a cross-sectional size effect"
+    }
+   ],
+   "discretion": null,
+   "certification": "tool checked, you confirmed",
+   "labeled": [],
+   "basis": "Check 5, T5; confirmed T6"
+  },
+  {
+   "id": "K54",
+   "kind": "claim",
+   "row": "QV2",
+   "label": "Description of finding 3",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "It is still positive and significant at 5% by the wild bootstrap"
+    }
+   ],
+   "discretion": null,
+   "certification": "tool checked, you confirmed",
+   "labeled": [],
+   "basis": "Check 5, T5; fixed T6 as the author asked"
+  },
+  {
+   "id": "K55",
+   "kind": "claim",
+   "row": "QV2",
+   "label": "Description of finding 4",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "so with 11 firms we cannot rule out zero at conventional levels"
+    }
+   ],
+   "discretion": null,
+   "certification": "tool checked, you confirmed",
+   "labeled": [],
+   "basis": "Check 5, T5; confirmed T6"
+  },
+  {
+   "id": "K56",
+   "kind": "claim",
+   "row": "QV3",
+   "label": "Methods: model and inference",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "invest_it = b · value_it + c · capital_it + α_i + λ_t + ε_it"
+    },
+    {
+     "file": "memo.md",
+     "quote": "even when they use a t distribution with 10 degrees of freedom as here"
+    }
+   ],
+   "discretion": null,
+   "certification": "tool checked, you confirmed",
+   "labeled": [],
+   "basis": "Check 6 reimplemented the code's estimates T5; fixed T6"
+  },
+  {
+   "id": "K57",
+   "kind": "claim",
+   "row": "QV3",
+   "label": "Methods: robustness checks",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "As robustness checks, I re-estimate the model in logs"
+    }
+   ],
+   "discretion": null,
+   "certification": "tool checked, you confirmed",
+   "labeled": [],
+   "basis": "Check 6, T5; confirmed T6"
+  }
+ ]
+}

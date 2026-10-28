@@ -1,0 +1,12 @@
+{
+  "name": "warranted-delegation",
+  "description": "Warranted delegation for AI-assisted research.",
+  "owner": {"name": "Anonymous"},
+  "plugins": [
+    {
+      "name": "warrant",
+      "source": "./plugin/warrant",
+      "description": "Records who made the calls in AI-assisted research, and lets authors sign what they stand behind."
+    }
+  ]
+}

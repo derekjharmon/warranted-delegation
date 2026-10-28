@@ -1,0 +1,854 @@
+{
+ "run": "agreement-low-high",
+ "status": "settled: Claude's labels (committed in cec27cb), with the author's rulings on the 11 new kinds and his spot-check of a random tenth of the labels applied by precedent (33 drawn, none changed), 2026-10-15",
+ "labeled_by": "Claude",
+ "date": "2026-10-15",
+ "units": [
+  {
+   "id": "K1",
+   "kind": "decision",
+   "row": "TL1",
+   "label": "Purpose and scope",
+   "anchors": [
+    {
+     "file": "README.md",
+     "quote": "agree.py measures how well two coders agree when they have coded the same"
+    },
+    {
+     "file": "agree.py",
+     "quote": "Percent agreement and Cohen's kappa for two coders who coded the same items."
+    }
+   ],
+   "discretion": "kept",
+   "certification": null,
+   "basis": "B-LH1 (T3): 'a small command-line tool, agree.py, that measures how well two coders agree'",
+   "labeled": [],
+   "labeled_by": "planted",
+   "precedent": null
+  },
+  {
+   "id": "K2",
+   "kind": "decision",
+   "row": "TL2a",
+   "label": "Input format: item, coder1, coder2",
+   "anchors": [
+    {
+     "file": "agree.py",
+     "quote": "COLUMNS = (\"item\", \"coder1\", \"coder2\")"
+    },
+    {
+     "file": "README.md",
+     "quote": "A CSV file with a header row and the columns `item`, `coder1`, and `coder2`,"
+    }
+   ],
+   "discretion": "kept",
+   "certification": null,
+   "basis": "B-LH1 (T3): 'The input is a CSV with columns item, coder1, and coder2'",
+   "labeled": [],
+   "labeled_by": "planted",
+   "precedent": null
+  },
+  {
+   "id": "K3",
+   "kind": "decision",
+   "row": "TL2b",
+   "label": "Blank codes: dropped and counted",
+   "anchors": [
+    {
+     "file": "agree.py",
+     "quote": "if code1 == \"\" or code2 == \"\":"
+    },
+    {
+     "file": "agree.py",
+     "quote": "\"rows_dropped\": dropped,"
+    },
+    {
+     "file": "README.md",
+     "quote": "Rows where either coder left the code blank are dropped before either"
+    }
+   ],
+   "discretion": "kept",
+   "certification": null,
+   "basis": "B-LH1 (T3): 'Drop any row where either code is blank, and report how many were dropped'",
+   "labeled": [],
+   "labeled_by": "planted",
+   "precedent": null
+  },
+  {
+   "id": "K4",
+   "kind": "decision",
+   "row": "TL2c",
+   "label": "Codes left as written, case-sensitive",
+   "anchors": [
+    {
+     "file": "agree.py",
+     "quote": "Codes are compared as exact, case-sensitive"
+    },
+    {
+     "file": "README.md",
+     "quote": "Codes are compared exactly as written: `Praise` and `praise` are different codes"
+    }
+   ],
+   "discretion": "kept",
+   "certification": null,
+   "basis": "Rule 9: the author's CLAUDE.md, 'Treat codes as case-sensitive text, and never recode them'",
+   "labeled": [],
+   "labeled_by": "planted",
+   "precedent": null
+  },
+  {
+   "id": "K5",
+   "kind": "decision",
+   "row": "TL3",
+   "label": "Method: percent agreement and unweighted Cohen's kappa",
+   "anchors": [
+    {
+     "file": "agree.py",
+     "quote": "kappa = (p_o - p_e) / (1 - p_e)"
+    },
+    {
+     "file": "README.md",
+     "quote": "items: it computes percent agreement and unweighted Cohen's κ and prints the"
+    }
+   ],
+   "discretion": "kept",
+   "certification": null,
+   "basis": "B-LH1 (T3): 'percent agreement and Cohen's κ, unweighted, as Cohen (1960) defines it'",
+   "labeled": [],
+   "labeled_by": "planted",
+   "precedent": null
+  },
+  {
+   "id": "K6",
+   "kind": "decision",
+   "row": "TL4",
+   "label": "Standard library only",
+   "anchors": [
+    {
+     "file": "README.md",
+     "quote": "The tool and its tests use only Python's standard library"
+    }
+   ],
+   "discretion": "kept",
+   "certification": null,
+   "basis": "Rule 9: the author's CLAUDE.md, 'Use only Python's standard library, in the tool and in its tests'",
+   "labeled": [],
+   "labeled_by": "planted",
+   "precedent": null
+  },
+  {
+   "id": "K7",
+   "kind": "decision",
+   "row": "TL5",
+   "label": "Output: JSON on standard output",
+   "anchors": [
+    {
+     "file": "agree.py",
+     "quote": "print(json.dumps(result, indent=2, ensure_ascii=False))"
+    },
+    {
+     "file": "README.md",
+     "quote": "On success, agree.py prints one JSON object to standard output and exits"
+    }
+   ],
+   "discretion": "given",
+   "certification": "elaborated and okayed",
+   "basis": "B-LH1 (T3): output handed to the methods-kit tool-conventions skill (rule 9); B-LH6 (T8): 'Keep the JSON output. Other scripts will read it, so plain JSON on standard output is right.'",
+   "labeled": [],
+   "labeled_by": "planted",
+   "precedent": null
+  },
+  {
+   "id": "K8",
+   "kind": "decision",
+   "row": "TL6",
+   "label": "Failure handling: missing column, one category, fewer than two rows",
+   "anchors": [
+    {
+     "file": "agree.py",
+     "quote": "f\"missing column(s): {', '.join(missing)}; \""
+    },
+    {
+     "file": "agree.py",
+     "quote": "\"kappa_note\": KAPPA_UNDEFINED if kappa is None else None,"
+    },
+    {
+     "file": "README.md",
+     "quote": "fewer than two rows are left to compare (the message gives how many rows"
+    }
+   ],
+   "discretion": "given",
+   "certification": "elaborated and okayed",
+   "basis": "Given in B-LH2 (T4: 'Propose how to handle each'). Planted 'changed' by B-LH3, but Claude's T4 proposal already had a one-category file report kappa as null with the reason and exit 0, so B-LH3 (T5) changed nothing: 'Use your handling, except for a file with only one category: report κ as undefined... That happens in real coding, and people should still see their percent agreement.' A reason for the one-category case, the rest accepted (P7; strongest counts, P17); also on the T16 list, T17 'Keep them'",
+   "labeled": [
+    "override"
+   ],
+   "labeled_by": "Claude, by precedent",
+   "precedent": "P7"
+  },
+  {
+   "id": "K9",
+   "kind": "decision",
+   "row": "TL8",
+   "label": "Interface: argparse",
+   "anchors": [
+    {
+     "file": "agree.py",
+     "quote": "parser = argparse.ArgumentParser("
+    },
+    {
+     "file": "README.md",
+     "quote": "`python3 agree.py --help` describes the arguments."
+    }
+   ],
+   "discretion": "given",
+   "certification": "okayed",
+   "basis": "B-LH1 (T3): interface handed to the skill (rule 9); on the T16 list under 'Decided by the methods-kit skill'; B-LH16 (T17): 'I've read your list. Keep them.'",
+   "labeled": [],
+   "labeled_by": "planted",
+   "precedent": null
+  },
+  {
+   "id": "K10",
+   "kind": "decision",
+   "row": "TL9a",
+   "label": "Test framework: unittest",
+   "anchors": [
+    {
+     "file": "tests/test_agree.py",
+     "quote": "class TestAgreement(unittest.TestCase):"
+    },
+    {
+     "file": "README.md",
+     "quote": "python3 -m unittest discover tests"
+    }
+   ],
+   "discretion": "given",
+   "certification": "okayed",
+   "basis": "B-LH1 (T3): tests handed to the skill (rule 9); on the T16 list under 'Decided by the methods-kit skill'; B-LH16 (T17): 'Keep them.'",
+   "labeled": [],
+   "labeled_by": "planted",
+   "precedent": null
+  },
+  {
+   "id": "K11",
+   "kind": "decision",
+   "row": "TL9b",
+   "label": "Tests written",
+   "anchors": [
+    {
+     "file": "tests/test_agree.py",
+     "quote": "def test_worse_than_chance_is_negative(self):"
+    },
+    {
+     "file": "tests/test_agree.py",
+     "quote": "def test_malformed_csv(self):"
+    }
+   ],
+   "discretion": "given",
+   "certification": "elaborated and okayed",
+   "basis": "B-LH4 (T6): 'Now write the tests, following the skill'; B-LH5 (T7): 'Keep the tests. One for each function and one for each kind of bad input is what I'd want a reviewer to see.'",
+   "labeled": [],
+   "labeled_by": "planted",
+   "precedent": null
+  },
+  {
+   "id": "K12",
+   "kind": "decision",
+   "row": "TL11",
+   "label": "Validation: against statsmodels, on the example and two made-up files",
+   "anchors": [
+    {
+     "file": "validation/compare_statsmodels.py",
+     "quote": "from statsmodels.stats.inter_rater import cohens_kappa"
+    },
+    {
+     "file": "README.md",
+     "quote": "files: `notes/example.csv`, and two made-up files in `validation/data/`, one"
+    },
+    {
+     "file": "validation/results.md",
+     "quote": "Five categories, including `Praise`, which only coder2 uses and which must stay distinct from `praise`"
+    }
+   ],
+   "discretion": "kept",
+   "certification": null,
+   "basis": "B-LH7 (T9): 'compare the tool's κ with statsmodels' cohens_kappa on notes/example.csv and on two more test files you make up'; the made-up files are part of it (key)",
+   "labeled": [],
+   "labeled_by": "planted",
+   "precedent": null
+  },
+  {
+   "id": "K13",
+   "kind": "decision",
+   "row": "TL14",
+   "label": "Threshold for matching: 1e-9 and the same rows compared",
+   "anchors": [
+    {
+     "file": "validation/compare_statsmodels.py",
+     "quote": "TOLERANCE = 1e-9"
+    },
+    {
+     "file": "README.md",
+     "quote": "than 1e-9 and both compared the same number of rows."
+    },
+    {
+     "file": "validation/results.md",
+     "quote": "**Matching rule:** the two κ values must differ by no more than 1e-09 in absolute value"
+    }
+   ],
+   "discretion": "given",
+   "certification": "okayed",
+   "basis": "B-LH7 (T9): 'You choose how close the two have to be to count as matching'; B-LH8 (T10): 'Keep your threshold.'",
+   "labeled": [],
+   "labeled_by": "planted",
+   "precedent": null
+  },
+  {
+   "id": "K14",
+   "kind": "decision",
+   "row": "S4",
+   "label": "Background on kappa (the author's draft paragraph, corrected at the author's request)",
+   "anchors": [
+    {
+     "file": "README.md",
+     "quote": "Cohen's κ (Cohen, 1960) corrects percent agreement for the agreement two"
+    }
+   ],
+   "discretion": "kept",
+   "certification": null,
+   "basis": "B-LH11 (T13): 'use the paragraphs I drafted in notes/readme-draft.md as written'; corrected in T15 because the author asked for fixes (B-LH14)",
+   "labeled": [],
+   "labeled_by": "planted",
+   "precedent": null
+  },
+  {
+   "id": "K15",
+   "kind": "decision",
+   "row": "S5",
+   "label": "Sources for the background: Cohen, Landis and Koch, Hallgren",
+   "anchors": [
+    {
+     "file": "README.md",
+     "quote": "Landis and Koch (1977) call κ from 0.61 to 0.80"
+    },
+    {
+     "file": "README.md",
+     "quote": "Hallgren (2012) is a practical tutorial on"
+    }
+   ],
+   "discretion": "kept",
+   "certification": null,
+   "basis": "B-LH11 (T13): the author's drafted paragraphs, and 'Take the references from notes/references.md'",
+   "labeled": [],
+   "labeled_by": "planted",
+   "precedent": null
+  },
+  {
+   "id": "K16",
+   "kind": "decision",
+   "row": "S7",
+   "label": "README structure",
+   "anchors": [
+    {
+     "file": "README.md",
+     "quote": "## The example"
+    },
+    {
+     "file": "README.md",
+     "quote": "## Other problem input"
+    }
+   ],
+   "discretion": "given",
+   "certification": "changed",
+   "basis": "B-LH10 (T12): outline proposed by Claude; B-LH11 (T13): 'Use your outline, but put the example before the installation section.'",
+   "labeled": [],
+   "labeled_by": "planted",
+   "precedent": null
+  },
+  {
+   "id": "K17",
+   "kind": "decision",
+   "row": "S9",
+   "label": "Limits",
+   "anchors": [
+    {
+     "file": "README.md",
+     "quote": "κ depends on how often each category is used, so two pairs of coders with the same percent agreement"
+    }
+   ],
+   "discretion": "kept",
+   "certification": null,
+   "basis": "B-LH12: the author's hand edit between T13 and T14",
+   "labeled": [],
+   "labeled_by": "planted",
+   "precedent": null
+  },
+  {
+   "id": "K18",
+   "kind": "decision",
+   "row": "TL2d",
+   "label": "What counts as blank: an empty cell or a short row; a spaces-only code is an error",
+   "anchors": [
+    {
+     "file": "agree.py",
+     "quote": "if code and not code.strip():"
+    },
+    {
+     "file": "agree.py",
+     "quote": "code1 = row[\"coder1\"] or \"\""
+    },
+    {
+     "file": "README.md",
+     "quote": "a code consists only of spaces, which is treated as a likely mistake rather"
+    }
+   ],
+   "discretion": "given",
+   "certification": "okayed",
+   "basis": "B-LH1 (T3) 'Drop any row where either code is blank' points to the call without defining blank (P3). Claude asked in T4 and leaned to an error for spaces-only codes; T5 'Use your handling'; short rows told in the T5 reply; both on the T16 list; B-LH16 (T17) 'Keep them' (P6, P8) Marked a new kind on review (Claude, Oct 15), with the high-delegation runs' K4: what counts as blank. The author ruled, Oct 15 (question 1): what counts as blank is Claude's call, not settled by the CLAUDE.md; T5 'Use your handling'; on the final list kept in T17.",
+   "labeled": [
+    "discretion",
+    "certification"
+   ],
+   "labeled_by": "The author",
+   "precedent": "new kind",
+   "claude_label": {
+    "discretion": "given",
+    "certification": "okayed"
+   }
+  },
+  {
+   "id": "K19",
+   "kind": "decision",
+   "row": "TL6b",
+   "label": "Failure handling: unreadable, non-UTF-8, or malformed file stops with an error",
+   "anchors": [
+    {
+     "file": "agree.py",
+     "quote": "with open(path, newline=\"\", encoding=\"utf-8-sig\") as f:"
+    },
+    {
+     "file": "agree.py",
+     "quote": "except (OSError, ValueError, csv.Error) as e:"
+    },
+    {
+     "file": "README.md",
+     "quote": "the file cannot be opened, is not UTF-8, or cannot be parsed as CSV."
+    }
+   ],
+   "discretion": "given",
+   "certification": "okayed",
+   "basis": "Needed by the command-line tool B-LH1 asked for under the skill's error rule (P1); told in the T6 reply (tests for a missing file, non-UTF-8, malformed CSV, a folder) and on the T16 list ('Any other encoding is an error'); B-LH16 (T17) 'Keep them' (P8)",
+   "labeled": [
+    "discretion",
+    "certification"
+   ],
+   "labeled_by": "Claude, by precedent",
+   "precedent": "P1"
+  },
+  {
+   "id": "K20",
+   "kind": "decision",
+   "row": "S8",
+   "label": "The README's validation table",
+   "anchors": [
+    {
+     "file": "README.md",
+     "quote": "| File | Rows compared | κ | Difference |"
+    }
+   ],
+   "discretion": "given",
+   "certification": "okayed",
+   "basis": "Inside B-LH11 (T13) 'Report the validation result as it is' (P1); on the T16 list ('Formatting the validation table: 15 decimals, \"0\" and a typographic minus sign'); B-LH16 (T17) 'Keep them' (P8)",
+   "labeled": [
+    "discretion",
+    "certification"
+   ],
+   "labeled_by": "Claude, by precedent",
+   "precedent": "P1"
+  },
+  {
+   "id": "K21",
+   "kind": "decision",
+   "row": "S8",
+   "label": "The validation table in results.md",
+   "anchors": [
+    {
+     "file": "validation/results.md",
+     "quote": "| File | Rows compared | agree.py κ | statsmodels κ | Difference | Match |"
+    }
+   ],
+   "discretion": "given",
+   "certification": "okayed",
+   "basis": "Inside B-LH7 (T9) 'write the comparison to validation/results.md' (P1); T9 reply points to it; on the T16 list under 'In validation/' ('The script writes results.md itself'); B-LH16 (T17) 'Keep them' (P8)",
+   "labeled": [
+    "discretion",
+    "certification"
+   ],
+   "labeled_by": "Claude, by precedent",
+   "precedent": "P1"
+  },
+  {
+   "id": "K22",
+   "kind": "claim",
+   "row": "V1",
+   "label": "Reference entry: Landis and Koch",
+   "anchors": [
+    {
+     "file": "README.md",
+     "quote": "Landis, J. R., & Koch, G. G. (1977). The measurement of observer agreement for categorical data."
+    }
+   ],
+   "discretion": null,
+   "certification": "you checked it against the source",
+   "basis": "B-LH17 runner check; B-LH18 (T18): 'I checked the Landis and Koch reference against its Crossref record' (Claude's unasked Crossref lookup in T14 is weaker, P17)",
+   "labeled": [],
+   "labeled_by": "planted",
+   "precedent": null
+  },
+  {
+   "id": "K23",
+   "kind": "claim",
+   "row": "V1",
+   "label": "Reference entry: Cohen (error 1)",
+   "anchors": [
+    {
+     "file": "README.md",
+     "quote": "Cohen, J. (1960). A coefficient of agreement for nominal scales. *Educational and Psychological Measurement*, 20(1), 37–46."
+    }
+   ],
+   "discretion": null,
+   "certification": "tool checked, you confirmed",
+   "basis": "Crossref lookup in T14 (check 1 found volume 21, should be 20); B-LH14 (T15) 'I've read the results'; fixed in T15",
+   "labeled": [],
+   "labeled_by": "planted",
+   "precedent": null
+  },
+  {
+   "id": "K24",
+   "kind": "claim",
+   "row": "V1",
+   "label": "Reference entry: Hallgren",
+   "anchors": [
+    {
+     "file": "README.md",
+     "quote": "Hallgren, K. A. (2012). Computing inter-rater reliability for observational data: An overview and tutorial."
+    }
+   ],
+   "discretion": null,
+   "certification": "tool checked, you confirmed",
+   "basis": "Crossref lookup in T14 (check 1); B-LH14 (T15) 'I've read the results'",
+   "labeled": [],
+   "labeled_by": "planted",
+   "precedent": null
+  },
+  {
+   "id": "K25",
+   "kind": "claim",
+   "row": "V2",
+   "label": "Citation description: Cohen",
+   "anchors": [
+    {
+     "file": "README.md",
+     "quote": "Cohen's κ (Cohen, 1960) corrects percent agreement for the agreement two coders would reach by chance alone."
+    }
+   ],
+   "discretion": null,
+   "certification": "no check",
+   "basis": "Planted 'tool checked, you confirmed'. In T14 (check 2) Claude judged it from the formula ('That is what κ = (p_o − p_e)/(1 − p_e) does'); no tool call looked up Cohen (1960) or compared this sentence with a source (P13)",
+   "labeled": [
+    "override"
+   ],
+   "labeled_by": "Claude, by precedent",
+   "precedent": "P13"
+  },
+  {
+   "id": "K26",
+   "kind": "claim",
+   "row": "V2",
+   "label": "Citation description: Landis and Koch (error 2)",
+   "anchors": [
+    {
+     "file": "README.md",
+     "quote": "Koch (1977) call κ from 0.61 to 0.80 \"substantial\" agreement and from 0.81 to 1.00 \"almost perfect\""
+    }
+   ],
+   "discretion": null,
+   "certification": "tool checked, you confirmed",
+   "basis": "T14 check 2: a WebSearch and the fetched Hallgren article returned Landis and Koch's bands (secondary sources); B-LH14 (T15) 'I've read the results'; fixed in T15",
+   "labeled": [],
+   "labeled_by": "planted",
+   "precedent": null
+  },
+  {
+   "id": "K27",
+   "kind": "claim",
+   "row": "V2",
+   "label": "Citation description: Hallgren",
+   "anchors": [
+    {
+     "file": "README.md",
+     "quote": "Hallgren (2012) is a practical tutorial on computing κ and related statistics for observational data."
+    }
+   ],
+   "discretion": null,
+   "certification": "tool checked, you confirmed",
+   "basis": "T14 check 2: Hallgren's article fetched (WebFetch); B-LH14 (T15) 'I've read the results'",
+   "labeled": [],
+   "labeled_by": "planted",
+   "precedent": null
+  },
+  {
+   "id": "K28",
+   "kind": "claim",
+   "row": "V5",
+   "label": "Kappa's range (error 3)",
+   "anchors": [
+    {
+     "file": "README.md",
+     "quote": "it is negative when the coders agree less often than chance would predict; its lowest possible value lies between −1 and 0"
+    }
+   ],
+   "discretion": null,
+   "certification": "tool checked, you confirmed",
+   "basis": "T14 check 3: the fetched Hallgren article ('range from −1 to 1') and a WebSearch ('between -1 and 0, depending on the marginal proportions'); B-LH14 (T15) 'I've read the results'; rewritten in T15 from the check",
+   "labeled": [],
+   "labeled_by": "planted",
+   "precedent": null
+  },
+  {
+   "id": "K29",
+   "kind": "claim",
+   "row": "QV1",
+   "label": "The example's numbers (error 4)",
+   "anchors": [
+    {
+     "file": "README.md",
+     "quote": "On example.csv, the two coders agree on 75 percent of the items, and κ is 0.62."
+    }
+   ],
+   "discretion": null,
+   "certification": "tool checked, you confirmed",
+   "basis": "T14 check 4 reran agree.py on notes/example.csv; B-LH14 (T15) 'I've read the results'; fixed in T15",
+   "labeled": [],
+   "labeled_by": "planted",
+   "precedent": null
+  },
+  {
+   "id": "K30",
+   "kind": "claim",
+   "row": "TLV1",
+   "label": "What the tool does with blank codes (error 5)",
+   "anchors": [
+    {
+     "file": "README.md",
+     "quote": "Rows where either coder left the code blank are dropped before either statistic is computed, and the output reports how many were dropped"
+    }
+   ],
+   "discretion": null,
+   "certification": "tool checked, you confirmed",
+   "basis": "T14 check 5 ran the tool on a file with a blank code; B-LH14 (T15) 'I've read the results'; rewritten in T15",
+   "labeled": [],
+   "labeled_by": "planted",
+   "precedent": null
+  },
+  {
+   "id": "K31",
+   "kind": "claim",
+   "row": "TLV1",
+   "label": "What the tool does otherwise, as the README describes it",
+   "anchors": [
+    {
+     "file": "README.md",
+     "quote": "Column names must match exactly, including case; other columns are ignored, and the columns may be in any order."
+    },
+    {
+     "file": "README.md",
+     "quote": "On an error, agree.py prints nothing to standard output, writes a message to standard error, and exits with status 1."
+    },
+    {
+     "file": "README.md",
+     "quote": "reports `\"kappa\": null`, with a sentence in `kappa_note` saying why, and still reports percent agreement."
+    }
+   ],
+   "discretion": null,
+   "certification": "tool checked, you confirmed",
+   "basis": "T14 check 5 ran each documented behavior on small files; B-LH14 (T15) 'I've read the results'",
+   "labeled": [],
+   "labeled_by": "planted",
+   "precedent": null
+  },
+  {
+   "id": "K32",
+   "kind": "claim",
+   "row": "TLV3",
+   "label": "The validation result",
+   "anchors": [
+    {
+     "file": "README.md",
+     "quote": "| `validation/data/worse_than_chance.csv` | 9 | −0.536585365853658 | 0 |"
+    },
+    {
+     "file": "README.md",
+     "quote": "All three match. Full results are in `validation/results.md`"
+    },
+    {
+     "file": "validation/results.md",
+     "quote": "| `notes/example.csv` | 20 (statsmodels: 20) | 0.622641509433962 | 0.622641509433962 | 0.0e+00 | yes |"
+    }
+   ],
+   "discretion": null,
+   "certification": "tool checked, you confirmed",
+   "basis": "T14 check 6 reran the comparison and compared the README's figures with validation/results.md; B-LH14 (T15) 'I've read the results'",
+   "labeled": [],
+   "labeled_by": "planted",
+   "precedent": null
+  },
+  {
+   "id": "K33",
+   "kind": "claim",
+   "row": "TLV2",
+   "label": "The tests pass",
+   "anchors": [
+    {
+     "file": "README.md",
+     "quote": "On the current version, all 32 tests pass."
+    }
+   ],
+   "discretion": null,
+   "certification": "you checked it against the source",
+   "basis": "B-LH17 runner ran the suite; B-LH18 (T18): 'I ran the tests myself and every one passed'",
+   "labeled": [],
+   "labeled_by": "planted",
+   "precedent": null
+  },
+  {
+   "id": "K34",
+   "kind": "claim",
+   "row": "QV1",
+   "label": "The example output shown under Usage",
+   "anchors": [
+    {
+     "file": "README.md",
+     "quote": "\"kappa\": 0.6226415094339622,"
+    },
+    {
+     "file": "README.md",
+     "quote": "\"rows_read\": 22,"
+    }
+   ],
+   "discretion": null,
+   "certification": "tool checked, you confirmed",
+   "basis": "Claude's, inside the README B-LH11 asked for; T14 check 4: 'Usage section's JSON block: ✓ every value matches' after rerunning the tool; B-LH14 (T15) 'I've read the results' (P13, P14)",
+   "labeled": [
+    "certification"
+   ],
+   "labeled_by": "Claude, by precedent",
+   "precedent": "P14"
+  },
+  {
+   "id": "K35",
+   "kind": "claim",
+   "row": "V5",
+   "label": "Undefined kappa: chance agreement of 1 makes the denominator 0",
+   "anchors": [
+    {
+     "file": "README.md",
+     "quote": "agreement expected by chance is 1 and κ's denominator is 0."
+    }
+   ],
+   "discretion": null,
+   "certification": "no check",
+   "basis": "Claude's sentence inside the README B-LH11 asked for (P12); T14 check 3 called it right because it 'follows directly from the formula', with no tool call comparing it with a source (P13)",
+   "labeled": [
+    "certification"
+   ],
+   "labeled_by": "Claude, by precedent",
+   "precedent": "P13"
+  },
+  {
+   "id": "K36",
+   "kind": "claim",
+   "row": "V5",
+   "label": "Limits: kappa depends on how often each category is used",
+   "anchors": [
+    {
+     "file": "README.md",
+     "quote": "κ depends on how often each category is used, so two pairs of coders with the same percent agreement can get very different κ."
+    }
+   ],
+   "discretion": null,
+   "certification": "tool checked, you confirmed",
+   "basis": "The author's claim (B-LH12); T14 check 3 against the fetched Hallgren article (prevalence effects); B-LH14 (T15) 'I've read the results' (P13, P14)",
+   "labeled": [
+    "certification"
+   ],
+   "labeled_by": "Claude, by precedent",
+   "precedent": "P14"
+  },
+  {
+   "id": "K37",
+   "kind": "claim",
+   "row": "V5",
+   "label": "Limits: kappa treats every disagreement alike; weighted kappa for ordered categories",
+   "anchors": [
+    {
+     "file": "README.md",
+     "quote": "It also treats every disagreement alike; for ordered categories, a weighted κ is better."
+    }
+   ],
+   "discretion": null,
+   "certification": "tool checked, you confirmed",
+   "basis": "The author's claim (B-LH12); T14 check 3 against the fetched Hallgren article (weighted κ 'typically used for categorical data with an ordinal structure'); B-LH14 (T15) 'I've read the results' (P13, P14)",
+   "labeled": [
+    "certification"
+   ],
+   "labeled_by": "Claude, by precedent",
+   "precedent": "P14"
+  },
+  {
+   "id": "K38",
+   "kind": "claim",
+   "row": "TLV1",
+   "label": "Test coverage as the README describes it",
+   "anchors": [
+    {
+     "file": "README.md",
+     "quote": "There is at least one test for each function and one for each kind of bad input."
+    }
+   ],
+   "discretion": null,
+   "certification": "no check",
+   "basis": "Claude's sentence, in the outline the author accepted (T12, T13); no tool call compared it with the tests (check 5 covered agree.py; the T18 sentence names only the tests passing, P16) (P12)",
+   "labeled": [
+    "certification"
+   ],
+   "labeled_by": "Claude, by precedent",
+   "precedent": "P12"
+  },
+  {
+   "id": "K39",
+   "kind": "claim",
+   "row": "TLV4",
+   "label": "Requirements: Python 3.6 or later; standard library only",
+   "anchors": [
+    {
+     "file": "README.md",
+     "quote": "Python 3.6 or later (tested with 3.14)."
+    },
+    {
+     "file": "README.md",
+     "quote": "The tool and its tests use only Python's standard library; there is nothing to install."
+    }
+   ],
+   "discretion": null,
+   "certification": "no check",
+   "basis": "README requirements (B-LH11); '3.6 or later' added by Claude in T15 beyond the errors found ('my reading of the code; I haven't run the tool on 3.6', T16); no tool call checked either part; replies mentioned it, so not wasn't notified (P12)",
+   "labeled": [
+    "certification"
+   ],
+   "labeled_by": "Claude, by precedent",
+   "precedent": "P12"
+  }
+ ]
+}

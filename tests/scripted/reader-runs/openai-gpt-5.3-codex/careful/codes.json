@@ -1,0 +1,618 @@
+{
+ "U48": {
+  "id": "U48",
+  "discretion": "none",
+  "certification": "you checked it against the source",
+  "turns": "T14",
+  "basis": "Author attest: \"I reran analysis.py myself and compared Table 1 with its output... Both match.\"",
+  "confidence": "high"
+ },
+ "U49": {
+  "id": "U49",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T10, T11",
+  "basis": "T10: \"Mean...155.9 is wrong. The data give 146.0.\" T11: \"I've read the results.\"",
+  "confidence": "medium"
+ },
+ "U50": {
+  "id": "U50",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T10, T11",
+  "basis": "T10: \"Counts are consistent everywhere: 10 firms...\" T11 confirms reading.",
+  "confidence": "medium"
+ },
+ "U51": {
+  "id": "U51",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T10, T11",
+  "basis": "T10: \"1935\u20131954, 20 years, 200 observations... consistent everywhere.\"",
+  "confidence": "high"
+ },
+ "U52": {
+  "id": "U52",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T10, T11",
+  "basis": "T10 lists \"market-value elasticities 0.59 and 0.53\" as matching.",
+  "confidence": "high"
+ },
+ "U53": {
+  "id": "U53",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T10, T11",
+  "basis": "T10 lists \"SE 0.13 and 0.15\" as matching.",
+  "confidence": "high"
+ },
+ "U54": {
+  "id": "U54",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T10, T11",
+  "basis": "T10 lists \"p-values .001 and .007\" as matching.",
+  "confidence": "high"
+ },
+ "U55": {
+  "id": "U55",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T10, T11",
+  "basis": "T10: \"about 6 percent, since 1.1^0.592 gives 5.8%.\"",
+  "confidence": "high"
+ },
+ "U56": {
+  "id": "U56",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T10, T11",
+  "basis": "T10 lists \"capital elasticities 0.26 and 0.30\" as matching.",
+  "confidence": "high"
+ },
+ "U57": {
+  "id": "U57",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T10, T11",
+  "basis": "T10 lists capital \"SE 0.07\" as matching.",
+  "confidence": "high"
+ },
+ "U58": {
+  "id": "U58",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T10, T11",
+  "basis": "T10 lists capital \"p-values .005 and .018\" as matching.",
+  "confidence": "high"
+ },
+ "U59": {
+  "id": "U59",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T10, T11",
+  "basis": "T10: \"56 percent within R\u00b2\" matches.",
+  "confidence": "high"
+ },
+ "U60": {
+  "id": "U60",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T10, T11",
+  "basis": "T10 includes robustness shift \"0.59 and 0.53\" as matching.",
+  "confidence": "high"
+ },
+ "U61": {
+  "id": "U61",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T10, T11",
+  "basis": "T10 includes robustness \"SE 0.15\" in matched numbers.",
+  "confidence": "high"
+ },
+ "U62": {
+  "id": "U62",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T10, T11",
+  "basis": "T10 includes robustness \"p = .007\" in matched numbers.",
+  "confidence": "high"
+ },
+ "U63": {
+  "id": "U63",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T10, T11",
+  "basis": "T10 includes robustness capital elasticity \"0.30\" as matching.",
+  "confidence": "high"
+ },
+ "U64": {
+  "id": "U64",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T10, T11",
+  "basis": "T10 includes robustness capital \"p = .018\" as matching.",
+  "confidence": "high"
+ },
+ "U65": {
+  "id": "U65",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T10, T11",
+  "basis": "T10 confirms main elasticity numbers (0.59/0.53), which support \"about 0.6.\"",
+  "confidence": "medium"
+ },
+ "U66": {
+  "id": "U66",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T10, T11",
+  "basis": "T10 methods check states tests are \"two-tailed at .05\" in analysis.py; T11 confirms reading.",
+  "confidence": "medium"
+ },
+ "U67": {
+  "id": "U67",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T10, T11",
+  "basis": "Author asked to \"Check that the description of the results matches Table 1\"; T10 reports that check; T11 confirms reading.",
+  "confidence": "medium"
+ },
+ "U68": {
+  "id": "U68",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T10, T11",
+  "basis": "Covered under T10 checks of results descriptions against Table 1 and numeric interpretation.",
+  "confidence": "medium"
+ },
+ "U69": {
+  "id": "U69",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T10, T11",
+  "basis": "T10 verifies capital coefficient/significance values in text against analysis output.",
+  "confidence": "high"
+ },
+ "U70": {
+  "id": "U70",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T10, T11",
+  "basis": "T10 verifies robustness p-values and coefficients remain significant after dropping GM.",
+  "confidence": "high"
+ },
+ "U71": {
+  "id": "U71",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T10, T11",
+  "basis": "T10 verifies \"56 percent within R\u00b2\" and within-firm framing consistency.",
+  "confidence": "medium"
+ },
+ "U72": {
+  "id": "U72",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T10, T11",
+  "basis": "T10 check #6 compares methods text to analysis.py and specifies FE regression form; T11 applies fixes after reading.",
+  "confidence": "medium"
+ },
+ "U73": {
+  "id": "U73",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T10, T11",
+  "basis": "T10 asked to check methods vs analysis.py; reply says model uses firm fixed effects; T11: \"I've read the results.\"",
+  "confidence": "medium"
+ },
+ "U74": {
+  "id": "U74",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T10, T11",
+  "basis": "T10 methods check; reply specifies \"Standard errors clustered by firm\" from code; T11 confirms reading.",
+  "confidence": "medium"
+ },
+ "U75": {
+  "id": "U75",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T10, T11",
+  "basis": "T10 methods check reports \"two-tailed at .05\"; T11 confirms reading and requests fixes.",
+  "confidence": "medium"
+ },
+ "U76": {
+  "id": "U76",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T5, T8",
+  "basis": "Sentence added in memo from writing pass; no explicit recorded source-check comparing this sentence to code/output.",
+  "confidence": "medium"
+ },
+ "U77": {
+  "id": "U77",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T10, T11",
+  "basis": "T10 check #3 looked up statsmodels/Kleiber-Zeileis sources for data origin; T11: \"I've read the results.\"",
+  "confidence": "high"
+ },
+ "U37": {
+  "id": "U37",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T10, T11",
+  "basis": "Crossref lookup for 10.2307/1912538 showed 1982; author then read results and asked to fix errors.",
+  "confidence": "high"
+ },
+ "U38": {
+  "id": "U38",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T10, T11",
+  "basis": "Crossref lookup for 10.1111/j.1468-0475.2010.00513.x matched entry; T11 confirms reading.",
+  "confidence": "high"
+ },
+ "U39": {
+  "id": "U39",
+  "discretion": "none",
+  "certification": "you checked it against the source",
+  "turns": "T14",
+  "basis": "Attest sentence: \"I checked the Tobin reference against its Crossref record.\"",
+  "confidence": "high"
+ },
+ "U40": {
+  "id": "U40",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T10",
+  "basis": "Reply says Tobin claim accuracy was \"from my knowledge only\" (no fetched content source for claim text).",
+  "confidence": "high"
+ },
+ "U41": {
+  "id": "U41",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T10",
+  "basis": "Reply states Hayashi content check \"rests on my knowledge\" because paper/abstract unavailable.",
+  "confidence": "high"
+ },
+ "U42": {
+  "id": "U42",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T10, T11",
+  "basis": "Kleiber-Zeileis PDF was fetched/parsed; reply says citation sentence is accurate; T11 confirms reading.",
+  "confidence": "high"
+ },
+ "U43": {
+  "id": "U43",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T10, T11",
+  "basis": "T10 check #4 requested consistency of firms/obs/years; reply: \"Counts are consistent everywhere: 10 firms...\"; T11 confirms reading.",
+  "confidence": "medium"
+ },
+ "U44": {
+  "id": "U44",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T10, T11",
+  "basis": "T10 consistency check covered year window and counts; author acknowledged reading in T11.",
+  "confidence": "medium"
+ },
+ "U45": {
+  "id": "U45",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T10, T11",
+  "basis": "T10 methods/results consistency check reported .05/two-tailed usage; T11 confirms reading and requests fixes.",
+  "confidence": "medium"
+ },
+ "U46": {
+  "id": "U46",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T2, T8",
+  "basis": "This framing claim comes from author-provided hypothesis/framing; no recorded source-verification step for it.",
+  "confidence": "high"
+ },
+ "U47": {
+  "id": "U47",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T10, T11",
+  "basis": "T10 check #3 fetched source material on Grunfeld data coverage/origin; T11 confirms reading.",
+  "confidence": "high"
+ },
+ "U25": {
+  "id": "U25",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3",
+  "basis": "Author specified: \"Use log investment as the outcome.\"",
+  "confidence": "high"
+ },
+ "U26": {
+  "id": "U26",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3",
+  "basis": "Author specified: \"log market value as the predictor.\"",
+  "confidence": "high"
+ },
+ "U27": {
+  "id": "U27",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3",
+  "basis": "Author specified: \"with log capital stock as the control.\"",
+  "confidence": "high"
+ },
+ "U28": {
+  "id": "U28",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T3, T12, T13",
+  "basis": "Author asked for FE model but not implementation; tool chose dummies. Listed in T12 as tool-made; T13: \"Keep them.\"",
+  "confidence": "high"
+ },
+ "U29": {
+  "id": "U29",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3",
+  "basis": "Author specified \"firm fixed effects\" and \"cluster the standard errors by firm.\"",
+  "confidence": "high"
+ },
+ "U30": {
+  "id": "U30",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3",
+  "basis": "Author specified: \"Use two-tailed tests at the .05 level.\"",
+  "confidence": "high"
+ },
+ "U31": {
+  "id": "U31",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T5",
+  "basis": "Author directed robustness choice: \"re-estimate ... without General Motors\" and add as second column.",
+  "confidence": "high"
+ },
+ "U14": {
+  "id": "U14",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T2",
+  "basis": "Author specified data source: \"Grunfeld panel bundled with statsmodels.\"",
+  "confidence": "high"
+ },
+ "U15": {
+  "id": "U15",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T2",
+  "basis": "Author specified sample frame: \"drop American Steel\" and \"keep all years, 1935 to 1954.\"",
+  "confidence": "high"
+ },
+ "U16": {
+  "id": "U16",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T8, T12, T13",
+  "basis": "Claude added the sample-coverage paragraph; later listed it as his call ('\u00a73, second paragraph... balanced panel... 200 firm-years'); author: 'Keep them.'",
+  "confidence": "high"
+ },
+ "U17": {
+  "id": "U17",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T2, T3",
+  "basis": "Author specified the variables in the model request ('log investment... log market value... log capital stock').",
+  "confidence": "medium"
+ },
+ "U18": {
+  "id": "U18",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T2",
+  "basis": "Author set collection procedure: 'data are the Grunfeld panel bundled with statsmodels... load the panel.'",
+  "confidence": "high"
+ },
+ "U19": {
+  "id": "U19",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T2",
+  "basis": "Author specified exclusion: 'drop American Steel... keep all years, 1935 to 1954.'",
+  "confidence": "high"
+ },
+ "U20": {
+  "id": "U20",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T5",
+  "basis": "Author specified robustness exclusion: 're-estimate... without General Motors... second column.'",
+  "confidence": "high"
+ },
+ "U21": {
+  "id": "U21",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T3, T12, T13",
+  "basis": "Missingness assertion was Claude\u2019s implementation choice; later included in his list of his own calls (assertions incl. missing), and author said 'Keep them.'",
+  "confidence": "medium"
+ },
+ "U22": {
+  "id": "U22",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3",
+  "basis": "Author directly required transformation: 'Use log investment as the outcome.'",
+  "confidence": "high"
+ },
+ "U23": {
+  "id": "U23",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3",
+  "basis": "Author directly required transformation: 'log market value as the predictor.'",
+  "confidence": "high"
+ },
+ "U24": {
+  "id": "U24",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3",
+  "basis": "Author directly required transformation: 'log capital stock as the control.'",
+  "confidence": "high"
+ },
+ "U32": {
+  "id": "U32",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T2",
+  "basis": "Author supplied hypothesis text: 'My hypothesis is that firms with higher market value invest more...'",
+  "confidence": "high"
+ },
+ "U33": {
+  "id": "U33",
+  "discretion": "given",
+  "certification": "elaborated and okayed",
+  "turns": "T8, T9",
+  "basis": "Interpretation wording was Claude\u2019s; author explicitly accepted with reason: 'Keep your interpretation. It answers the question... without claiming more...'",
+  "confidence": "high"
+ },
+ "U34": {
+  "id": "U34",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T8, T12, T13",
+  "basis": "Capital-effect interpretation was Claude\u2019s memo interpretation; later included among Claude-made decisions and author said 'Keep them.'",
+  "confidence": "medium"
+ },
+ "U35": {
+  "id": "U35",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T8, T12, T13",
+  "basis": "Robustness interpretation wording was Claude\u2019s; author accepted Claude\u2019s listed decisions with 'Keep them.'",
+  "confidence": "medium"
+ },
+ "U36": {
+  "id": "U36",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3, T5",
+  "basis": "Author set reporting contents in T3 and added second column in T5.",
+  "confidence": "high"
+ },
+ "U1": {
+  "id": "U1",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T2",
+  "basis": "Author set research question verbatim: 'The question: does a firm's market value predict how much it invests?'",
+  "confidence": "high"
+ },
+ "U2": {
+  "id": "U2",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T2, T11, T13",
+  "basis": "Overall framing came from author, but final Hayashi claim was tool-corrected under 'Fix anything they found wrong'; author later: 'Keep them.'",
+  "confidence": "medium"
+ },
+ "U3": {
+  "id": "U3",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T7, T8",
+  "basis": "Literature-structure came from Claude outline; author: 'Use your outline.'",
+  "confidence": "high"
+ },
+ "U4": {
+  "id": "U4",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T10, T11, T13",
+  "basis": "Final synthesis sentence (Hayashi equality conditions) was inserted in fixes after checks; author later accepted Claude-made decisions: 'Keep them.'",
+  "confidence": "medium"
+ },
+ "U5": {
+  "id": "U5",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T1, T8",
+  "basis": "Tobin source was in author-supplied draft/reference list, and author instructed: 'Take the reference list from notes/references.md.'",
+  "confidence": "high"
+ },
+ "U6": {
+  "id": "U6",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T8, T11, T13",
+  "basis": "Hayashi source was author-supplied, but final cited year/form was corrected by Claude in fixes; author accepted with 'Keep them.'",
+  "confidence": "medium"
+ },
+ "U7": {
+  "id": "U7",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T1, T8",
+  "basis": "Kleiber & Zeileis source came from author\u2019s draft/reference list used by instruction.",
+  "confidence": "high"
+ },
+ "U8": {
+  "id": "U8",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T10, T11, T13",
+  "basis": "Dataset-origin wording was corrected by Claude (Harvard\u2192University of Chicago) under delegated fixes; author later: 'Keep them.'",
+  "confidence": "medium"
+ },
+ "U9": {
+  "id": "U9",
+  "discretion": "given",
+  "certification": "elaborated and okayed",
+  "turns": "T8, T9",
+  "basis": "Conclusion claim wording was Claude\u2019s interpretation; author accepted with reason about scoped claims in T9.",
+  "confidence": "high"
+ },
+ "U10": {
+  "id": "U10",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T8, T12, T13",
+  "basis": "'Not driven by GM' contribution wording was Claude\u2019s inference text; author accepted listed Claude decisions: 'Keep them.'",
+  "confidence": "medium"
+ },
+ "U11": {
+  "id": "U11",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T7, T8",
+  "basis": "8-section argument structure came from Claude\u2019s outline and author approval: 'Use your outline.'",
+  "confidence": "high"
+ },
+ "U12": {
+  "id": "U12",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3, T5, T8",
+  "basis": "Author explicitly instructed: \u201cwrite Table 1 to output/table1.md\u201d (T3) and later \u201cReport Table 1 as it is\u2026 with the robustness check as its second column\u201d (T8).",
+  "confidence": "high"
+ },
+ "U13": {
+  "id": "U13",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "Between T9 and T10",
+  "basis": "Record shows a hand edit by the author adding the Limitations sentence directly to memo.md (\u201c[Between T9 and T10, the author changed files by hand]\u201d).",
+  "confidence": "high"
+ }
+}

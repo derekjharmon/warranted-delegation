@@ -1,0 +1,442 @@
+{
+ "U39": {
+  "id": "U39",
+  "discretion": "none",
+  "certification": "you checked it against the source",
+  "turns": "T5, T10, T11, T14",
+  "basis": "\"I reran analysis.py myself and compared Table 1 with its output\"",
+  "confidence": "high"
+ },
+ "U40": {
+  "id": "U40",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T2, T10, T11",
+  "basis": "T10 \"The data give 146.0\"; T11 \"I've read the results\"",
+  "confidence": "low"
+ },
+ "U41": {
+  "id": "U41",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T2, T10, T11",
+  "basis": "T10 \"Counts are consistent everywhere: 10 firms ... 200 observations\"; T11 \"I've read the results\"",
+  "confidence": "medium"
+ },
+ "U42": {
+  "id": "U42",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T10, T11",
+  "basis": "T10 \"market-value elasticities 0.59 and 0.53, with SE 0.13 and 0.15; p-values .001\"; T11 \"I've read the results\"",
+  "confidence": "medium"
+ },
+ "U43": {
+  "id": "U43",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T10, T11",
+  "basis": "T10 \"'about 6 percent', since 1.1^0.592 gives 5.8%\"; T11 \"I've read the results\"",
+  "confidence": "medium"
+ },
+ "U44": {
+  "id": "U44",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T10, T11",
+  "basis": "T10 \"capital elasticities 0.26 and 0.30, with SE 0.07; capital p-values .005\"; T11 \"I've read the results\"",
+  "confidence": "medium"
+ },
+ "U45": {
+  "id": "U45",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T10, T11",
+  "basis": "T10 \"56 percent within R\u00b2\" matches; T11 \"I've read the results\"",
+  "confidence": "medium"
+ },
+ "U46": {
+  "id": "U46",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T10, T11",
+  "basis": "T10 \"0.53, with SE ... 0.15; p-values ... .007\"; T11 \"I've read the results\"",
+  "confidence": "medium"
+ },
+ "U47": {
+  "id": "U47",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T10, T11",
+  "basis": "T10 \"capital elasticities 0.26 and 0.30 ... p-values .005 and .018\"; T11 \"I've read the results\"",
+  "confidence": "medium"
+ },
+ "U48": {
+  "id": "U48",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T10, T11",
+  "basis": "T10 \"Everything else matches analysis.py\"; T11 \"I've read the results\"",
+  "confidence": "medium"
+ },
+ "U49": {
+  "id": "U49",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T10, T11, T12, T13",
+  "basis": "T10 check 5 \"every coefficient ... cited in the text matches\"; T11 \"I've read the results\"",
+  "confidence": "medium"
+ },
+ "U50": {
+  "id": "U50",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T10, T11",
+  "basis": "T10 check 5, results text against Table 1; T11 \"I've read the results\"",
+  "confidence": "medium"
+ },
+ "U51": {
+  "id": "U51",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T10, T11",
+  "basis": "T10 \"'well within one standard error', since the gap of 0.064 is less than the SE\"; T11 \"I've read the results\"",
+  "confidence": "medium"
+ },
+ "U52": {
+  "id": "U52",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T10, T11",
+  "basis": "T10 check 5, results text against table; T11 \"I've read the results\"",
+  "confidence": "medium"
+ },
+ "U53": {
+  "id": "U53",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T10, T11",
+  "basis": "T10 check 6 \"The script fits: ... firm fixed effects ... clustered by firm\"; T11 \"I've read the results. Fix anything\"",
+  "confidence": "medium"
+ },
+ "U54": {
+  "id": "U54",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T2, T10, T11",
+  "basis": "T10 \"Counts are consistent everywhere\"; T11 \"I've read the results\"",
+  "confidence": "medium"
+ },
+ "U55": {
+  "id": "U55",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T10, T11",
+  "basis": "T10 statsmodels SOURCE \"original 11-firm data set from Grunfeld's Ph.D. thesis\"; K&Z PDF; T11 \"I've read the results\"",
+  "confidence": "high"
+ },
+ "U28": {
+  "id": "U28",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T10, T11",
+  "basis": "T10 Crossref lookup \"published January 1982\"; T11 \"I've read the results\"",
+  "confidence": "high"
+ },
+ "U29": {
+  "id": "U29",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T10, T11",
+  "basis": "T10 Crossref \"Kleiber and Zeileis: everything matches\"; T11 \"I've read the results\"",
+  "confidence": "high"
+ },
+ "U30": {
+  "id": "U30",
+  "discretion": "none",
+  "certification": "you checked it against the source",
+  "turns": "T10, T14",
+  "basis": "\"I checked the Tobin reference against its Crossref record\"",
+  "confidence": "high"
+ },
+ "U31": {
+  "id": "U31",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T1, T8, T10",
+  "basis": "T10 \"Tobin (line 13): accurate, also from my knowledge only\"; author's draft text",
+  "confidence": "medium"
+ },
+ "U32": {
+  "id": "U32",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T10, T11",
+  "basis": "T10 \"rests on my knowledge, not a fetched source\"; T11 \"couldn't check against the paper itself\"",
+  "confidence": "medium"
+ },
+ "U33": {
+  "id": "U33",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T10, T11",
+  "basis": "T10 K&Z PDF fetched; \"Kleiber and Zeileis (line 21): accurate\"; T11 \"I've read the results\"",
+  "confidence": "high"
+ },
+ "U37": {
+  "id": "U37",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T10, T11",
+  "basis": "T10 \"Counts are consistent everywhere: 10 firms, 1935\u20131954, 20 years, 200 observations\"; T11 \"I've read the results\"",
+  "confidence": "medium"
+ },
+ "U38": {
+  "id": "U38",
+  "discretion": "none",
+  "certification": "you checked it against the source",
+  "turns": "T10, T14",
+  "basis": "\"compared Table 1 with its output ... Both match\"",
+  "confidence": "high"
+ },
+ "U34": {
+  "id": "U34",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T10, T11",
+  "basis": "T10 pdftotext/grep of Kleiber & Zeileis: 'Department of Economics, University of Chicago'; T11 'I've read the results'",
+  "confidence": "high"
+ },
+ "U35": {
+  "id": "U35",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T10, T11",
+  "basis": "T10 checked against K&Z: 'call the ten-firm version \"widely used\"'; T11 'I've read the results'",
+  "confidence": "medium"
+ },
+ "U36": {
+  "id": "U36",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T5, T10",
+  "basis": "Author T5: 'since it's by far the largest firm'; T10 reply asserts a check but no tool call computes firm sizes",
+  "confidence": "medium"
+ },
+ "U16": {
+  "id": "U16",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3",
+  "basis": "'Use log investment as the outcome'",
+  "confidence": "high"
+ },
+ "U17": {
+  "id": "U17",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3",
+  "basis": "'log market value as the predictor'",
+  "confidence": "high"
+ },
+ "U18": {
+  "id": "U18",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T2, T3",
+  "basis": "'with log capital stock as the control'",
+  "confidence": "high"
+ },
+ "U19": {
+  "id": "U19",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T3, T12, T13",
+  "basis": "Author asked for 'firm fixed effects'; Claude chose dummies ('linearmodels isn't installed'), listed in T12; T13 'Keep them'",
+  "confidence": "medium"
+ },
+ "U20": {
+  "id": "U20",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3",
+  "basis": "'Estimate it with firm fixed effects and cluster the standard errors by firm'",
+  "confidence": "high"
+ },
+ "U21": {
+  "id": "U21",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T3, T12, T13",
+  "basis": "Author set '.05 level' two-tailed; t(9) and small-sample correction were Claude's, listed T12 point 2; T13 'Keep them'",
+  "confidence": "medium"
+ },
+ "U22": {
+  "id": "U22",
+  "discretion": "given",
+  "certification": "changed",
+  "turns": "T4, T5",
+  "basis": "T4 'Propose one robustness check'; T5 'I'd rather not use that one. Instead, re-estimate ... without General Motors'",
+  "confidence": "high"
+ },
+ "U11": {
+  "id": "U11",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T2",
+  "basis": "'Grunfeld panel bundled with statsmodels'",
+  "confidence": "high"
+ },
+ "U12": {
+  "id": "U12",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T2",
+  "basis": "'keep all years, 1935 to 1954'",
+  "confidence": "high"
+ },
+ "U13": {
+  "id": "U13",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T2, T3",
+  "basis": "Author named investment, market value, capital stock as the variables",
+  "confidence": "medium"
+ },
+ "U14": {
+  "id": "U14",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T2",
+  "basis": "'drop American Steel so the sample matches the ten-firm version'",
+  "confidence": "high"
+ },
+ "U15": {
+  "id": "U15",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3",
+  "basis": "'Logs make the coefficients elasticities'",
+  "confidence": "high"
+ },
+ "U23": {
+  "id": "U23",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T2",
+  "basis": "'My hypothesis is that firms with higher market value invest more, holding their capital stock constant'",
+  "confidence": "high"
+ },
+ "U24": {
+  "id": "U24",
+  "discretion": "given",
+  "certification": "elaborated and okayed",
+  "turns": "T8, T9, T12, T13",
+  "basis": "T8 'Interpret the main result'; T9 'Keep your interpretation. It answers the question ... without claiming more'",
+  "confidence": "high"
+ },
+ "U25": {
+  "id": "U25",
+  "discretion": "taken",
+  "certification": "okayed",
+  "turns": "T8, T12, T13",
+  "basis": "T12 '\"Consistent with replacement investment.\" ... is my addition'; T13 'Keep them'",
+  "confidence": "medium"
+ },
+ "U26": {
+  "id": "U26",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T7, T8, T12, T13",
+  "basis": "Outline: 'One sentence on why ... size alone carries little weight'; T8 'Use your outline'",
+  "confidence": "medium"
+ },
+ "U27": {
+  "id": "U27",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3, T5",
+  "basis": "T3 'coefficients with standard errors ... observations and firms, and the within R-squared'; T5 'Add it to Table 1 as a second column'",
+  "confidence": "medium"
+ },
+ "U1": {
+  "id": "U1",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T2",
+  "basis": "'does a firm's market value predict how much it invests?'",
+  "confidence": "high"
+ },
+ "U2": {
+  "id": "U2",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T2",
+  "basis": "'framing it with q theory, following Tobin and Hayashi'",
+  "confidence": "high"
+ },
+ "U3": {
+  "id": "U3",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T2, T8",
+  "basis": "Author's draft and 'Take the reference list from notes/references.md'",
+  "confidence": "high"
+ },
+ "U4": {
+  "id": "U4",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T8, T10, T11, T12, T13",
+  "basis": "Author's draft said 'never equal'; T11 'Fix anything they found wrong'; T12 lists 'the new Hayashi sentence'; T13 'Keep them'",
+  "confidence": "medium"
+ },
+ "U5": {
+  "id": "U5",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T8",
+  "basis": "Tobin (1969) sentence copied from notes/draft.md 'as written'",
+  "confidence": "high"
+ },
+ "U6": {
+  "id": "U6",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T2, T8, T11, T12, T13",
+  "basis": "\"Fix anything they found wrong\"; T12 lists \"the new Hayashi sentence\"; T13 \"Keep them\"",
+  "confidence": "medium"
+ },
+ "U7": {
+  "id": "U7",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T1, T8",
+  "basis": "\"use the paragraphs I drafted in notes/draft.md as written\"; references from notes/references.md",
+  "confidence": "high"
+ },
+ "U8": {
+  "id": "U8",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T7, T8, T13",
+  "basis": "\"Propose an outline for the memo\"; \"Use your outline.\"",
+  "confidence": "high"
+ },
+ "U9": {
+  "id": "U9",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3, T5",
+  "basis": "\"coefficients with standard errors in parentheses, the number of observations and firms, and the within R-squared\"; \"Add it to Table 1 as a second column\"",
+  "confidence": "high"
+ },
+ "U10": {
+  "id": "U10",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T7, T9-T10 hand edit",
+  "basis": "author's hand edit; \"I'll write that one myself\"",
+  "confidence": "high"
+ }
+}

@@ -1,0 +1,866 @@
+{
+ "U59": {
+  "id": "U59",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3, T4",
+  "basis": "table produced by analysis.py in T3; no comparison; bare /attest final",
+  "confidence": "high"
+ },
+ "U60": {
+  "id": "U60",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3, T4",
+  "basis": "descriptives produced by analysis.py; never compared to source",
+  "confidence": "medium"
+ },
+ "U61": {
+  "id": "U61",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T3, T4",
+  "basis": "\"The average share is 43.7%, not 47.3%\"; computed from the data against the draft; no author response",
+  "confidence": "medium"
+ },
+ "U62": {
+  "id": "U62",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3, T4",
+  "basis": "SD from descriptives output; no check",
+  "confidence": "high"
+ },
+ "U63": {
+  "id": "U63",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3, T4",
+  "basis": "range from descriptives output; no check",
+  "confidence": "high"
+ },
+ "U64": {
+  "id": "U64",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3, T4",
+  "basis": "pooled = d[\"NABOVE\"].sum()...; produced, not checked",
+  "confidence": "medium"
+ },
+ "U65": {
+  "id": "U65",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3, T4",
+  "basis": "Cook's D cutoff 4/n = 0.01320 produced by script",
+  "confidence": "high"
+ },
+ "U66": {
+  "id": "U66",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3, T4",
+  "basis": "dropped = 18 produced after scale fix; diagnostic run produced it, not a check",
+  "confidence": "medium"
+ },
+ "U67": {
+  "id": "U67",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3, T4",
+  "basis": "Scale: 0.031455 produced by diagnostic run; not compared to a claim",
+  "confidence": "medium"
+ },
+ "U68": {
+  "id": "U68",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3, T4",
+  "basis": "LOWINC AME -0.456 x10; produced, not checked",
+  "confidence": "high"
+ },
+ "U69": {
+  "id": "U69",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3, T4",
+  "basis": "p=5.13e-28 from results_long; produced only",
+  "confidence": "high"
+ },
+ "U70": {
+  "id": "U70",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3, T4",
+  "basis": "LOWINC -0.4562 produced by script",
+  "confidence": "high"
+ },
+ "U71": {
+  "id": "U71",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3, T4",
+  "basis": "\"interquartile range of low income (27% to 55%)\"; no tool computation of it in the record",
+  "confidence": "medium"
+ },
+ "U72": {
+  "id": "U72",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3, T4",
+  "basis": "\"roughly 13 percentage points\" derived in memo; no check",
+  "confidence": "medium"
+ },
+ "U73": {
+  "id": "U73",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3, T4",
+  "basis": "PERASIAN 0.3872 produced by script",
+  "confidence": "high"
+ },
+ "U74": {
+  "id": "U74",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3, T4",
+  "basis": "PERBLACK -0.4097 produced by script",
+  "confidence": "high"
+ },
+ "U75": {
+  "id": "U75",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3, T4",
+  "basis": "PERHISP -0.1946 produced by script",
+  "confidence": "high"
+ },
+ "U76": {
+  "id": "U76",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3, T4",
+  "basis": "PCTAF 0.1201 produced by script",
+  "confidence": "high"
+ },
+ "U77": {
+  "id": "U77",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3, T4",
+  "basis": "PCTAF p=0.00094 produced by script",
+  "confidence": "high"
+ },
+ "U78": {
+  "id": "U78",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3, T4",
+  "basis": "PERSPENK 1.1456 produced by script",
+  "confidence": "high"
+ },
+ "U79": {
+  "id": "U79",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3, T4",
+  "basis": "\"95% confidence interval runs from roughly \u22121.7 to +4.0\"; no tool computation of it in the record",
+  "confidence": "medium"
+ },
+ "U80": {
+  "id": "U80",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3, T4",
+  "basis": "\"interquartile range 21 to 24\"; no tool computation of it in the record",
+  "confidence": "medium"
+ },
+ "U81": {
+  "id": "U81",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3, T4",
+  "basis": "PCTYRRND -0.0424, p 0.0363 produced by script",
+  "confidence": "high"
+ },
+ "U82": {
+  "id": "U82",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3, T4",
+  "basis": "drop_cooks PCTYRRND p 0.039 produced by script",
+  "confidence": "high"
+ },
+ "U83": {
+  "id": "U83",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3, T4",
+  "basis": "ols_logodds PCTYRRND p 0.134 produced by script",
+  "confidence": "high"
+ },
+ "U84": {
+  "id": "U84",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3",
+  "basis": "memo written from results_long.csv; no later comparison; T4 bare /attest",
+  "confidence": "high"
+ },
+ "U85": {
+  "id": "U85",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3",
+  "basis": "\"the median district has none\" written by Claude; never checked",
+  "confidence": "medium"
+ },
+ "U86": {
+  "id": "U86",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3",
+  "basis": "scale computed by the script; computing a number is not checking it",
+  "confidence": "high"
+ },
+ "U87": {
+  "id": "U87",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3",
+  "basis": "fit statistic added to the memo as part of \"pick whatever approach\"; not checked",
+  "confidence": "medium"
+ },
+ "U88": {
+  "id": "U88",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3",
+  "basis": "R-squared 0.796 read from output; not checked",
+  "confidence": "medium"
+ },
+ "U89": {
+  "id": "U89",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3",
+  "basis": "\"Resources show no detectable link\"; not checked; T4 bare /attest",
+  "confidence": "high"
+ },
+ "U90": {
+  "id": "U90",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3",
+  "basis": "memo interpretation of results; not checked",
+  "confidence": "high"
+ },
+ "U91": {
+  "id": "U91",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3",
+  "basis": "\"These results hold in both robustness checks\" in the reply; author never responded",
+  "confidence": "high"
+ },
+ "U92": {
+  "id": "U92",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3",
+  "basis": "\"because large districts score lower\" stated, never verified",
+  "confidence": "medium"
+ },
+ "U93": {
+  "id": "U93",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T3",
+  "basis": "diagnostic run printed \"1.0 0.0314... 0.0097... 0 ... 18\"; reply \"first run ... dropped zero\"; author never responded",
+  "confidence": "medium"
+ },
+ "U94": {
+  "id": "U94",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3",
+  "basis": "Claude's interpretation of the AME table; not checked",
+  "confidence": "high"
+ },
+ "U95": {
+  "id": "U95",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3",
+  "basis": "\"1.146 (1.438)\" taken from output; not checked",
+  "confidence": "high"
+ },
+ "U96": {
+  "id": "U96",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3",
+  "basis": "memo interpretation; not checked",
+  "confidence": "high"
+ },
+ "U97": {
+  "id": "U97",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3",
+  "basis": "\"disappears in the log-odds check\"; author never responded",
+  "confidence": "high"
+ },
+ "U98": {
+  "id": "U98",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3",
+  "basis": "robustness summary written from output; not checked",
+  "confidence": "high"
+ },
+ "U99": {
+  "id": "U99",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3",
+  "basis": "\"mostly sharpens the composition estimates\"; not checked",
+  "confidence": "high"
+ },
+ "U100": {
+  "id": "U100",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3",
+  "basis": "charter sign change taken from results; not checked",
+  "confidence": "high"
+ },
+ "U101": {
+  "id": "U101",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3",
+  "basis": "\"pick whatever approach\"; fractional logit described; not checked",
+  "confidence": "high"
+ },
+ "U102": {
+  "id": "U102",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3",
+  "basis": "delta-method AME code written by Claude; not checked",
+  "confidence": "high"
+ },
+ "U103": {
+  "id": "U103",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3",
+  "basis": "\"Districts are weighted equally\"; not checked",
+  "confidence": "medium"
+ },
+ "U104": {
+  "id": "U104",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T2, T3",
+  "basis": "CLAUDE.md \"HC1 ... two-tailed\"; claim not checked",
+  "confidence": "high"
+ },
+ "U105": {
+  "id": "U105",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3",
+  "basis": "scale=\"X2\" fix described in reply; the claim itself never checked",
+  "confidence": "medium"
+ },
+ "U106": {
+  "id": "U106",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3",
+  "basis": "\"p\": r2.pvalues in code; not checked",
+  "confidence": "high"
+ },
+ "U107": {
+  "id": "U107",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3",
+  "basis": "skill \"Keep every other choice ... unchanged\"; not checked",
+  "confidence": "high"
+ },
+ "U108": {
+  "id": "U108",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T2, T3",
+  "basis": "CLAUDE.md \"Leave the percentage variables ... 0\u2013100\"; not checked",
+  "confidence": "high"
+ },
+ "U35": {
+  "id": "U35",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T1, T3",
+  "basis": "Gill reference copied from notes/references.md; no lookup in record",
+  "confidence": "high"
+ },
+ "U36": {
+  "id": "U36",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T1, T3",
+  "basis": "Hanushek reference copied from notes/references.md; no lookup tool call",
+  "confidence": "high"
+ },
+ "U37": {
+  "id": "U37",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3",
+  "basis": "\"The Krueger article is 1999, not 1998\" stated in reply with no lookup; bare /attest at T4",
+  "confidence": "medium"
+ },
+ "U38": {
+  "id": "U38",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3",
+  "basis": "\"Papke & Wooldridge, from your references\"; no lookup",
+  "confidence": "high"
+ },
+ "U39": {
+  "id": "U39",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T1, T3",
+  "basis": "Claude reversed the draft (\"says the opposite\") with no lookup tool call; bare /attest",
+  "confidence": "medium"
+ },
+ "U40": {
+  "id": "U40",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3",
+  "basis": "Claude's background elaboration in requested memo; no source consulted",
+  "confidence": "medium"
+ },
+ "U41": {
+  "id": "U41",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T1, T3",
+  "basis": "draft: \"using the Tennessee STAR experiment\"",
+  "confidence": "high"
+ },
+ "U42": {
+  "id": "U42",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T1, T3",
+  "basis": "draft: \"randomly assigned to smaller classes scored higher\"",
+  "confidence": "high"
+ },
+ "U43": {
+  "id": "U43",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T1, T3",
+  "basis": "draft: \"STAR results ... as compiled by Gill (2001)\"; no check shown in record",
+  "confidence": "medium"
+ },
+ "U44": {
+  "id": "U44",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3",
+  "basis": "supports interaction exclusion under \"pick whatever approach\"; Gill not consulted",
+  "confidence": "medium"
+ },
+ "U45": {
+  "id": "U45",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3",
+  "basis": "method description for the model choice the author handed over; no source check",
+  "confidence": "high"
+ },
+ "U46": {
+  "id": "U46",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3",
+  "basis": "methods justification in requested memo; unchecked",
+  "confidence": "high"
+ },
+ "U47": {
+  "id": "U47",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3",
+  "basis": "methods justification in requested memo; unchecked",
+  "confidence": "high"
+ },
+ "U48": {
+  "id": "U48",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3",
+  "basis": "characterization of Hanushek; no lookup",
+  "confidence": "medium"
+ },
+ "U49": {
+  "id": "U49",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T1, T3",
+  "basis": "draft: \"Tennessee STAR experiment\"; no lookup",
+  "confidence": "high"
+ },
+ "U50": {
+  "id": "U50",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T1, T3",
+  "basis": "d.shape output only produced the number; draft also says 303; bare /attest",
+  "confidence": "medium"
+ },
+ "U51": {
+  "id": "U51",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3",
+  "basis": "\"dropped = 18\" was produced by the run and not compared with a source; bare /attest",
+  "confidence": "medium"
+ },
+ "U52": {
+  "id": "U52",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3",
+  "basis": "background clarification Claude added in requested memo; unchecked",
+  "confidence": "low"
+ },
+ "U53": {
+  "id": "U53",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3",
+  "basis": "interpretive context in requested memo; no source",
+  "confidence": "low"
+ },
+ "U54": {
+  "id": "U54",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3",
+  "basis": "limitations context in requested memo; no source",
+  "confidence": "low"
+ },
+ "U55": {
+  "id": "U55",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3",
+  "basis": "interpretive context in requested memo; no source",
+  "confidence": "low"
+ },
+ "U56": {
+  "id": "U56",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T1, T3, T4",
+  "basis": "draft \"for ninth graders\"; Claude asked \"please confirm\", answered only by bare /attest",
+  "confidence": "high"
+ },
+ "U57": {
+  "id": "U57",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3",
+  "basis": "variable description Claude wrote; no source check shown",
+  "confidence": "low"
+ },
+ "U58": {
+  "id": "U58",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3",
+  "basis": "interpretive context in requested memo; unchecked",
+  "confidence": "low"
+ },
+ "U19": {
+  "id": "U19",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T1, T3",
+  "basis": "draft Methods: \"regression of the share of ninth graders above the national median\"",
+  "confidence": "medium"
+ },
+ "U20": {
+  "id": "U20",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T3, T4",
+  "basis": "\"pick whatever approach you think is best\"; reply lists low-income, racial makeup, UC/CSU prep, resources; author never replied (bare /attest)",
+  "confidence": "medium"
+ },
+ "U21": {
+  "id": "U21",
+  "discretion": "given",
+  "certification": "wasn't notified",
+  "turns": "T3",
+  "basis": "open request \"pick whatever approach\"; the reply never mentions dropping the interaction terms",
+  "confidence": "medium"
+ },
+ "U22": {
+  "id": "U22",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T1, T3, T4",
+  "basis": "draft \"Written before I settled the model\" + \"pick whatever approach\"; reply \"I used a fractional logit ... rather than the OLS in your draft\"; bare /attest",
+  "confidence": "medium"
+ },
+ "U23": {
+  "id": "U23",
+  "discretion": "given",
+  "certification": "wasn't notified",
+  "turns": "T3",
+  "basis": "part of choosing the approach; the reply never mentions weighting",
+  "confidence": "medium"
+ },
+ "U24": {
+  "id": "U24",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T3, T4",
+  "basis": "reply \"results are average marginal effects in percentage points\"; no response",
+  "confidence": "high"
+ },
+ "U25": {
+  "id": "U25",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T1, T3",
+  "basis": "CLAUDE.md: \"Use heteroskedasticity-robust (HC1) standard errors in every model\"",
+  "confidence": "high"
+ },
+ "U26": {
+  "id": "U26",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T1, T3",
+  "basis": "CLAUDE.md: \"two-tailed tests at the .05 level, and report exact p-values\"",
+  "confidence": "high"
+ },
+ "U27": {
+  "id": "U27",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T3, T4",
+  "basis": "author asked for the methods-kit:robustness skill (plugin-written) and it set the Cook's D check; reply \"One drops districts with Cook's distance above 4/n\"; no response",
+  "confidence": "high"
+ },
+ "U28": {
+  "id": "U28",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T3, T4",
+  "basis": "methods-kit:robustness skill (plugin) set log-odds OLS, which the author asked for; reply \"the other is OLS on the log-odds of the share\"; no response",
+  "confidence": "medium"
+ },
+ "U14": {
+  "id": "U14",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3",
+  "basis": "prompt: \"using the star98 data in statsmodels\"",
+  "confidence": "high"
+ },
+ "U15": {
+  "id": "U15",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T1, T3",
+  "basis": "author's draft \"covering all 303\" and prompt \"California school districts\"",
+  "confidence": "medium"
+ },
+ "U18": {
+  "id": "U18",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T3, T4",
+  "basis": "4/n from methods-kit:robustness skill; dispersion choice explained in reply under \"Bug I fixed ... With the dispersion estimated properly, 18 districts are dropped\"; no response",
+  "confidence": "medium"
+ },
+ "U17": {
+  "id": "U17",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T1, T3",
+  "basis": "CLAUDE.md: \"Leave the percentage variables ... on their original 0\u2013100 scale\"",
+  "confidence": "high"
+ },
+ "U16": {
+  "id": "U16",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T3, T4",
+  "basis": "how to measure \"how well ... do in math\" handed over; reply \"The outcome is a share between 0 and 1\"; no response",
+  "confidence": "medium"
+ },
+ "U29": {
+  "id": "U29",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T3, T4",
+  "basis": "reply \"Student makeup predicts districts' math results much more than district resources do\"; no response",
+  "confidence": "medium"
+ },
+ "U30": {
+  "id": "U30",
+  "discretion": "given",
+  "certification": "wasn't notified",
+  "turns": "T3",
+  "basis": "the reply gives only the UC/CSU estimate, not the \"academic orientation\" reading",
+  "confidence": "medium"
+ },
+ "U31": {
+  "id": "U31",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T3, T4",
+  "basis": "reply \"Resources show no detectable link\"; no response",
+  "confidence": "medium"
+ },
+ "U32": {
+  "id": "U32",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T3, T4",
+  "basis": "reply \"small negative link with year-round schools ... disappears in the log-odds check\"; no response",
+  "confidence": "high"
+ },
+ "U33": {
+  "id": "U33",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T3, T4",
+  "basis": "reply \"These results hold in both robustness checks\"; no response",
+  "confidence": "medium"
+ },
+ "U34": {
+  "id": "U34",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3",
+  "basis": "prompt: \"put the results in output/\"",
+  "confidence": "medium"
+ },
+ "U1": {
+  "id": "U1",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3",
+  "basis": "prompt: \"what predicts how well California school districts' ninth graders do in math\"",
+  "confidence": "high"
+ },
+ "U2": {
+  "id": "U2",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T1, T3",
+  "basis": "author's draft: \"Achievement depends both on what students bring to school and on what schools spend on them\"",
+  "confidence": "high"
+ },
+ "U3": {
+  "id": "U3",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T1, T3",
+  "basis": "author's draft Background cites Hanushek and Krueger on resources/class size",
+  "confidence": "medium"
+ },
+ "U4": {
+  "id": "U4",
+  "discretion": "taken",
+  "certification": "ignored",
+  "turns": "T1, T3, T4",
+  "basis": "draft said resources \"raised achievement in most of the studies\"; Claude changed it to mixed; reply \"Hanushek (1997) says the opposite\"; no response",
+  "confidence": "medium"
+ },
+ "U5": {
+  "id": "U5",
+  "discretion": "taken",
+  "certification": "ignored",
+  "turns": "T1, T3, T4",
+  "basis": "draft cited Hanushek for positive effects; Claude changed what it claims; reply \"Hanushek (1997) says the opposite of what the draft says\"; bare /attest",
+  "confidence": "medium"
+ },
+ "U6": {
+  "id": "U6",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T1, T3",
+  "basis": "Author's draft: \"Krueger (1998), using the Tennessee STAR experiment, found that students randomly assigned to smaller classes scored higher\"; Claude only corrected the year",
+  "confidence": "medium"
+ },
+ "U7": {
+  "id": "U7",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T3, T4",
+  "basis": "Reference list only; \"pick whatever approach you think is best\"; reply: \"fractional logit (Papke & Wooldridge, from your references)\"; only a bare /attest followed",
+  "confidence": "high"
+ },
+ "U8": {
+  "id": "U8",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T1, T3",
+  "basis": "Author's draft: \"as compiled by Gill (2001)\"",
+  "confidence": "high"
+ },
+ "U9": {
+  "id": "U9",
+  "discretion": "given",
+  "certification": "wasn't notified",
+  "turns": "T3",
+  "basis": "Memo on \"what predicts\" asked for; framing written by Claude; reply never mentions the holding-others-constant framing",
+  "confidence": "medium"
+ },
+ "U10": {
+  "id": "U10",
+  "discretion": "given",
+  "certification": "wasn't notified",
+  "turns": "T1, T3",
+  "basis": "\"Write a 2 to 3 page memo\"; draft had only Background/Data/Methods; reply never describes the section structure",
+  "confidence": "medium"
+ },
+ "U11": {
+  "id": "U11",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T3, T4",
+  "basis": "methods-kit:robustness skill, which the author asked for: \"report each as its own column next to the main result\"; reply: \"both are columns in the table\"; author never responded",
+  "confidence": "high"
+ },
+ "U12": {
+  "id": "U12",
+  "discretion": "given",
+  "certification": "wasn't notified",
+  "turns": "T3",
+  "basis": "\"pick whatever approach you think is best\"; descriptives file never mentioned in reply",
+  "confidence": "low"
+ },
+ "U13": {
+  "id": "U13",
+  "discretion": "given",
+  "certification": "wasn't notified",
+  "turns": "T3",
+  "basis": "Limitations written by Claude as part of the memo; reply never mentions them",
+  "confidence": "medium"
+ }
+}

@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Try warranted delegation</title>
+<style>
+:root { --bg: #fbfaf7; --fg: #1d1c1a; --muted: #6b6760; --rule: #e2ded6; --code: #f1eee8; --accent: #2f5d8a; color-scheme: light; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #17171a; --fg: #ecebe8; --muted: #a29f98; --rule: #34343a; --code: #232328; --accent: #8db7e0; color-scheme: dark; }
+}
+body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.6 Charter, "Iowan Old Style", Georgia, serif; }
+main { max-width: 760px; margin: 0 auto; padding: 32px 20px 72px; }
+nav { font: 14px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin-bottom: 24px; }
+h1, h2, h3, h4 { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.25; text-wrap: balance; }
+h1 { font-size: 28px; } h2 { font-size: 21px; margin-top: 40px; } h3 { font-size: 17px; margin-top: 28px; }
+a { color: var(--accent); }
+code { font: 14px ui-monospace, SFMono-Regular, Menlo, monospace; background: var(--code); padding: 1px 4px; border-radius: 4px; overflow-wrap: anywhere; }
+pre { position: relative; background: var(--code); padding: 12px 72px 12px 14px; border-radius: 8px; overflow-x: auto; }
+pre code { padding: 0; background: none; white-space: pre-wrap; }
+.copy { position: absolute; top: 8px; right: 8px; font: 12px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; padding: 3px 9px; border: 1px solid var(--rule); border-radius: 6px; background: var(--bg); color: var(--fg); cursor: pointer; }
+table { border-collapse: collapse; font-size: 14px; display: block; overflow-x: auto; margin: 16px 0; }
+th, td { border-bottom: 1px solid var(--rule); padding: 6px 10px; text-align: left; vertical-align: top; }
+img { max-width: 100%; height: auto; border: 1px solid var(--rule); border-radius: 6px; margin: 12px 0 4px; }
+</style>
+</head>
+<body><main>
+<nav><a href="../index.html">Start page</a> · <a href="GUIDE.md">Markdown source</a></nav>
+<h1>Try warranted delegation</h1>
+<p><em>About 20 minutes for one pass, 35 for two. Optional: the demonstrations in the submission show the same thing at full scale.</em></p>
+<p>To see a pass before you try it, watch <a href="walkthrough.mp4"><code>walkthrough.mp4</code></a>: steps 1 to 6 on a newly set-up Mac, 8½ minutes, no sound. The stretches where Claude is working play at 8× speed. Nothing is cut.</p>
+<p>You do a few minutes of work with Claude Code on a small sample project, sign it, and generate its disclosure: who made each call in the work, and whether the author warranted what was handed to the tool. If you have time, do it twice, once making some calls yourself and choosing which of Claude's to stand behind, once handing everything over, and compare the two disclosures.</p>
+<h2>Before you start</h2>
+<ul><li><strong>Claude Code</strong>, signed in to a Claude subscription. To install it, see <a href="https://code.claude.com/docs/en/setup">Claude Code's setup page</a>. No API key is needed: the disclosure runs through your subscription.</li><li><strong>git</strong> and <strong>Python 3</strong>. A new Mac doesn't have them until Apple's command-line tools are installed (below).</li><li><strong>A note on GitHub:</strong> if you're logged in to GitHub's command-line tool (<code>gh</code>), setup creates a private GitHub repository for the sample, because sharing the work and its record with coauthors is part of the tool. If you'd rather it didn't, log out of <code>gh</code> first, or delete the repository afterward (step 8).</li><li><strong>What's sent where:</strong> Claude Code sends your prompts and the sample to Anthropic, as it always does. The disclosure sends the sample's finished work and its record the same way, through your subscription. Nothing else leaves your computer.</li></ul>
+<p>If your Mac doesn't have git and Python 3, or you're not sure, run this in Terminal first and click Install. It takes 5 to 15 minutes.</p>
+<pre><code>xcode-select --install</code></pre>
+<p>Codex and Gemini: steps for these come later; for now the guide uses Claude Code.</p>
+<h2>1. Install the plugin from this copy</h2>
+<p>In Terminal, go to this copy's folder. If you unzipped it on your Desktop:</p>
+<pre><code>cd ~/Desktop/warrant-review-copy</code></pre>
+<p>(Or type <code>cd </code>, with a space, and drag the folder from Finder into the Terminal window. That types its path for you.) Then:</p>
+<pre><code>claude plugin marketplace add ./
+claude plugin install warrant@warranted-delegation</code></pre>
+<p>Each command ends with a line starting ✔ Successfully.</p>
+<h2>2. Copy the sample</h2>
+<p>From the same folder:</p>
+<pre><code>cp -R reviewer/sample ~/warrant-sample-a</code></pre>
+<p>It prints nothing when it works. The sample has three files: <code>notes.md</code> (the plan, written quickly), <code>codebook.md</code>, and <code>teams.csv</code>, 40 made-up teams. The notes contain a few mistakes, as real notes do. They're listed at the end of this guide; try not to look first.</p>
+<h2>3. Start Claude Code and set up</h2>
+<pre><code>cd ~/warrant-sample-a
+claude</code></pre>
+<p>Then, in Claude Code, type:</p>
+<pre><code>/warrant:setup</code></pre>
+<p>It makes a git repository and the record, then asks you two questions: which tool you use (Claude Code) and whether the record keeps Claude's memory notes (either answer is fine). From here on, everything you and Claude do in this folder is recorded.</p>
+<p>If git doesn't know your name and email yet, setup asks for them. Type this, with your own name and email:</p>
+<pre><code>/warrant:setup Your Name &lt;you@example.com&gt;</code></pre>
+<p>If you don't use GitHub's <code>gh</code>, setup says there's no online copy yet. You can ignore that.</p>
+<p>When setup is done, make your first save. It records the sample's files as yours, before any work:</p>
+<pre><code>/warrant:attest</code></pre>
+<h2>4. Do the work, knowing what each prompt does</h2>
+<p>The disclosure has two rows. <strong>Judgment calls</strong> are the decisions in the work that could have gone another way. For each one, it reports who made it, and if it was handed to the tool, whether you warranted it. <strong>Verifiable claims</strong> are facts a source can settle. For each one, it reports only whether it was checked, and by whom.</p>
+<p>Each prompt below is one kind of act the disclosure reports. Type them into Claude Code one at a time, and read each answer before the next.</p>
+<p><strong>1. Verification.</strong> Type this:</p>
+<pre><code>Read notes.md and codebook.md, and check what the notes say about the data against teams.csv and the codebook. Show me every difference. Then check the Bloom et al. reference against its DOI.</code></pre>
+<p>Claude checks what the notes say against the data, the codebook, and the reference's record. A check isn't kept or handed over. The row asks only whether it happened, and who ran it.</p>
+<p><strong>2. Judgment calls you make.</strong> Type this:</p>
+<pre><code>Drop any team with an impossible value, and tell me which. Then compute the Pearson correlation between remote_share and tasks_completed, and a regression of tasks_completed on remote_share and team_size.</code></pre>
+<p>You chose the rule, the test, and the model. They show as calls you made. If Python's numpy isn't installed, Claude may do the math in plain Python. That's fine.</p>
+<p><strong>3. Judgment calls you delegate.</strong> Type this:</p>
+<pre><code>Write the result as one paragraph in memo.md, citing Bloom et al., and list every decision you made that I didn't specify.</code></pre>
+<p>Whatever Claude decides in writing the memo, you've handed over, and its list tells you which calls those are. They show as calls handed to the tool.</p>
+<p><strong>4. You warrant, or not.</strong> Open the memo in a second Terminal window and read it:</p>
+<pre><code>open -e ~/warrant-sample-a/memo.md</code></pre>
+<p>Then answer Claude's list in one prompt of your own. For each item, you can:</p>
+<ul><li>change it, which shows as <strong>you changed it</strong>;</li><li>keep it with a reason, which shows as <strong>you accepted it, with a reason</strong>;</li><li>just say "keep", which shows as <strong>you accepted it</strong>;</li><li>leave it out of your answer entirely, which shows as <strong>you ignored it</strong>.</li></ul>
+<p>Answer each however you'd like, and write down what you did with each item. That's your answer key for step 6.</p>
+<h2>5. Sign it</h2>
+<p>Signing saves the work and its record, signed by you. It doesn't warrant any calls; you did that in step 4.</p>
+<p>If you checked something yourself that the record can't see, add a sentence saying so, such as a number you compared by eye with Claude's output, or a reference you looked up in your browser. The sentence counts only for the claims it names, which then show as <strong>You checked it against the source</strong>. Name only what you actually checked. For example:</p>
+<pre><code>/warrant:attest I compared the memo's correlation with Claude's output.</code></pre>
+<p>If you checked nothing yourself, sign with no sentence:</p>
+<pre><code>/warrant:attest</code></pre>
+<h2>6. Generate the disclosure</h2>
+<p>Type:</p>
+<pre><code>/warrant:disclosure</code></pre>
+<p>The first time, Claude asks whether the disclosure should reach Claude through your subscription or an API key; choose your subscription. Then Claude says what it takes the finished work to be (the kind of paper, and the memo, the data, and the code) and asks whether that's right; answer in plain words, and it saves your changes in <code>provenance/finished-work.md</code> for you. Before anything is sent, Claude says what goes where and asks you to agree. Claude then narrates the run, step by step. It takes a few minutes.</p>
+<p>Open the disclosure in a browser, from a second Terminal window:</p>
+<pre><code>open ~/warrant-sample-a/disclosure/*/disclosure.html</code></pre>
+<p>Look at:</p>
+<ul><li><strong>Judgment calls:</strong> how many calls you made, how many were handed to the tool, and whether you changed or accepted those.</li><li><strong>Verifiable claims:</strong> how many were checked, and by whom.</li><li><strong>Calls and claims by research stage:</strong> where in the work your calls and claims fell.</li></ul>
+<p>Then type:</p>
+<pre><code>/warrant:trail</code></pre>
+<p>and open the trail beside it: the memo with each call marked, and the turns behind each one when you click it.</p>
+<pre><code>open ~/warrant-sample-a/disclosure/*/trail.html</code></pre>
+<p>Now check it against what you did:</p>
+<ul><li>The calls you set in prompt 2 show as <strong>You made the call</strong>.</li><li>Each item on Claude's list shows under <strong>Handed to the tool</strong>, shaded by your answer. These should match your notes one for one.</li><li>Calls Claude made but never mentioned show as <strong>you were never told</strong>. These are calls you handed over without knowing it.</li><li>The checks Claude ran in prompt 1 show as <strong>The tool checked it</strong>, and say whether you confirmed reading the result.</li><li>Any claim your sentence names shows as <strong>You checked it against the source</strong>.</li><li>The memo's numbers show as <strong>No check</strong>, unless you checked them yourself and said so when you signed.</li></ul>
+<p>In the trail, click any call to see the turn it rests on, including your answer.</p>
+<h2>7. Optional: the second pass, you delegate everything and warrant nothing</h2>
+<p>This pass works the same sample the other way: you hand Claude every call, ask for no checks, and answer nothing.</p>
+<p>In a new Terminal window, go to this copy's folder again, as in step 1, then:</p>
+<pre><code>cp -R reviewer/sample ~/warrant-sample-b
+cd ~/warrant-sample-b
+claude</code></pre>
+<p>Then, in Claude Code, type:</p>
+<pre><code>/warrant:setup</code></pre>
+<p>When setup is done, make your first save, as in step 3:</p>
+<pre><code>/warrant:attest</code></pre>
+<p><strong>1. Judgment calls you delegate.</strong> Type this:</p>
+<pre><code>Using notes.md and teams.csv, write a one-paragraph finding in memo.md. Use your judgment on everything.</code></pre>
+<p>Every call in the memo is now Claude's. You asked for no checks, so any check Claude runs is its own.</p>
+<p><strong>2. You don't warrant.</strong> Don't answer anything Claude says. Go straight to signing.</p>
+<p><strong>3. Sign it with no sentence</strong>, since you checked nothing yourself:</p>
+<pre><code>/warrant:attest</code></pre>
+<p>Then generate the disclosure and the trail, letting each finish before the next:</p>
+<pre><code>/warrant:disclosure</code></pre>
+<pre><code>/warrant:trail</code></pre>
+<p>Open both from a second Terminal window:</p>
+<pre><code>open ~/warrant-sample-b/disclosure/*/disclosure.html
+open ~/warrant-sample-b/disclosure/*/trail.html</code></pre>
+<p>Now check it against what you did:</p>
+<ul><li>Nearly every call shows under <strong>Handed to the tool</strong>, and none as changed or accepted by you.</li><li>Calls Claude mentioned in its reply show as <strong>you ignored it</strong>, since you never answered. Calls it never mentioned show as <strong>you were never told</strong>.</li><li>Checks Claude ran on its own show as <strong>The tool checked it, and you didn't see the result</strong>. The other claims show as <strong>No check</strong> or <strong>You were never told</strong>.</li><li>No claim shows as checked by you.</li></ul>
+<p>Compare the two disclosures. The memos may read much alike, since Claude may fix the same mistakes either way. The difference is in who made the calls and who stands behind them.</p>
+<h2>8. Clean up</h2>
+<p>Delete the folders and remove the plugin:</p>
+<pre><code>rm -rf ~/warrant-sample-a ~/warrant-sample-b
+claude plugin uninstall warrant@warranted-delegation
+claude plugin marketplace remove warranted-delegation</code></pre>
+<p>If setup made GitHub repositories, they're named after the folders (<code>warrant-sample-a</code>, <code>warrant-sample-b</code>); delete them on GitHub, or with <code>gh repo delete warrant-sample-a</code>.</p>
+<h2>What the notes got wrong</h2>
+<p>Four mistakes were planted, as an author's quick notes might have them:</p>
+<ol><li>The notes say 50 teams; the data have 40.</li><li>The notes say tasks are counted per month; the codebook says per quarter.</li><li>Team T17's <code>remote_share</code> is 1.4, which is impossible for a share.</li><li>The notes date Bloom, Liang, Roberts, and Ying to 2013 (their working paper's year); the article is 2015, Quarterly Journal of Economics 130(1), 165–218.</li></ol>
+<p>Whether each was caught, and by whom, shows in the disclosure's claims and in the trail.</p>
+</main>
+<script>
+// A copy button on every box. The clipboard API can be refused on a page opened
+// from a file, so a hidden text area does the copying then.
+document.querySelectorAll("pre").forEach(function (pre) {
+  var button = document.createElement("button");
+  button.type = "button"; button.className = "copy"; button.textContent = "Copy";
+  button.addEventListener("click", function () {
+    var text = (pre.querySelector("code") || pre).innerText.replace(/\n$/, "");
+    var done = function () { button.textContent = "Copied"; setTimeout(function () { button.textContent = "Copy"; }, 1500); };
+    var fallback = function () {
+      var area = document.createElement("textarea");
+      area.value = text; area.style.position = "fixed"; area.style.opacity = "0";
+      document.body.appendChild(area); area.select();
+      try { document.execCommand("copy"); done(); } catch (e) {}
+      area.remove();
+    };
+    if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(text).then(done, fallback);
+    else fallback();
+  });
+  pre.appendChild(button);
+});
+</script>
+</body>
+</html>

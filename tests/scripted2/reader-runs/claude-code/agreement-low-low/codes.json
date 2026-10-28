@@ -1,0 +1,466 @@
+{
+ "U43": {
+  "id": "U43",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T2, T4, T5",
+  "basis": "test_codes_are_case_sensitive / test_column_names_are_case_sensitive passed in T4 run; T4 reply \"Column names must match exactly\"; author proceeded in T5",
+  "confidence": "medium"
+ },
+ "U44": {
+  "id": "U44",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T4, T5",
+  "basis": "test_extra_columns_and_order_ignored passed in T4; reply \"columns in a different order, are fine\"",
+  "confidence": "medium"
+ },
+ "U45": {
+  "id": "U45",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T4, T5",
+  "basis": "is_blank and short-row tests passed in T4; reply \"empty, only whitespace, or missing because the row is short\"",
+  "confidence": "medium"
+ },
+ "U46": {
+  "id": "U46",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T4, T5",
+  "basis": "assertFails/returncode tests passed and /tmp/one.csv exit run in T4; reply \"writes an error to stderr ... exits with code 1\"",
+  "confidence": "medium"
+ },
+ "U47": {
+  "id": "U47",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T3, T4, T5",
+  "basis": "test_hand_computed checks p_e and kappa; T4 tests passed, reply reported; author responded T5",
+  "confidence": "low"
+ },
+ "U48": {
+  "id": "U48",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T2, T5, T7",
+  "basis": "CLAUDE.md \"Use only Python's standard library\"; no tool call verified imports",
+  "confidence": "medium"
+ },
+ "U49": {
+  "id": "U49",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T5, T7",
+  "basis": "T5 caveat \"drops blank rows with the same rule the tool uses\"; never compared",
+  "confidence": "medium"
+ },
+ "U50": {
+  "id": "U50",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3, T4",
+  "basis": "skill asked \"one for each kind of bad input\"; coverage claim never checked",
+  "confidence": "medium"
+ },
+ "U51": {
+  "id": "U51",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T4, T5, T7",
+  "basis": "tests rerun in T5 \"all 29 tests still pass\"; T7 prompt \"the result of running the tests\"",
+  "confidence": "medium"
+ },
+ "U52": {
+  "id": "U52",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T7",
+  "basis": "compare_statsmodels.py run in T5; T7 prompt \"Report the validation result as it is\"",
+  "confidence": "medium"
+ },
+ "U53": {
+  "id": "U53",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T7",
+  "basis": "script output \"All files match.\"; T5 reply reported; T7 prompt referenced validation result",
+  "confidence": "medium"
+ },
+ "U54": {
+  "id": "U54",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T3, T4, T5, T7",
+  "basis": "test_example asserts n/dropped/expected/kappa, passed T4; statsmodels match T5",
+  "confidence": "medium"
+ },
+ "U55": {
+  "id": "U55",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T4, T5, T7",
+  "basis": "test_example and statsmodels comparison confirm 75%, n 20, \u03ba 0.62; responded in T7 prompt",
+  "confidence": "medium"
+ },
+ "U56": {
+  "id": "U56",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T5",
+  "basis": "descriptions of made-up files written by Claude as asked; not compared",
+  "confidence": "medium"
+ },
+ "U57": {
+  "id": "U57",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T7",
+  "basis": "versions printed by tool calls; mentioned only in T7 reply, author never responded",
+  "confidence": "low"
+ },
+ "U58": {
+  "id": "U58",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T4, T5",
+  "basis": "commands run in T4 bash; reply \"Run them with python3 -m unittest discover -s tests\"",
+  "confidence": "medium"
+ },
+ "U30": {
+  "id": "U30",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3, T7",
+  "basis": "reference from notes/references.md; \"DOI confirms volume 20\" with no lookup call",
+  "confidence": "high"
+ },
+ "U31": {
+  "id": "U31",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T7",
+  "basis": "\"Take the references from notes/references.md\"; never looked up",
+  "confidence": "high"
+ },
+ "U32": {
+  "id": "U32",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T7",
+  "basis": "\"Take the references from notes/references.md\"; never looked up",
+  "confidence": "high"
+ },
+ "U33": {
+  "id": "U33",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3",
+  "basis": "author's prompt \"unweighted, as Cohen (1960) defines it\"; Cohen not consulted",
+  "confidence": "medium"
+ },
+ "U34": {
+  "id": "U34",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T7",
+  "basis": "author's draft paragraph; no source check",
+  "confidence": "high"
+ },
+ "U35": {
+  "id": "U35",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3, T7",
+  "basis": "Claude revised range, told author in T3/T7 replies; no lookup tool call",
+  "confidence": "medium"
+ },
+ "U36": {
+  "id": "U36",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T7",
+  "basis": "author's draft \"Hallgren (2012) is a practical tutorial\"; not checked",
+  "confidence": "high"
+ },
+ "U37": {
+  "id": "U37",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3, T7",
+  "basis": "quoted labels revised by Claude, mentioned in replies; never looked up",
+  "confidence": "medium"
+ },
+ "U38": {
+  "id": "U38",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T4, T5, T7",
+  "basis": "test_example and statsmodels comparison agree on n 20, dropped 2, \u03ba; T7 prompt referenced results",
+  "confidence": "medium"
+ },
+ "U39": {
+  "id": "U39",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T3, T4, T5, T7",
+  "basis": "Claude rewrote the draft's \"runs from 0... to 1\" against the instruction \"as written\"; the statsmodels comparison gave \u03ba = \u22120.33, and tests assert \u03ba = \u22121, 1 and 0; the author never acknowledged the T7 reply",
+  "confidence": "medium"
+ },
+ "U40": {
+  "id": "U40",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T7, T8",
+  "basis": "the author wrote the Limits section by hand: \"I'll write that one myself\"",
+  "confidence": "high"
+ },
+ "U41": {
+  "id": "U41",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T7, T8",
+  "basis": "the author's hand edit: \"for ordered categories, a weighted \u03ba is better\"",
+  "confidence": "high"
+ },
+ "U42": {
+  "id": "U42",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T5",
+  "basis": "\"Both compute the same closed-form formula\": Claude's reasoning for the tolerance the author asked it to choose; no tool call looked at statsmodels' source",
+  "confidence": "medium"
+ },
+ "U22": {
+  "id": "U22",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T1, T7",
+  "basis": "the author's draft paragraphs and references.md cite Cohen, Landis & Koch and Hallgren",
+  "confidence": "medium"
+ },
+ "U23": {
+  "id": "U23",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3, T7",
+  "basis": "T3 prompt: \"unweighted, as Cohen (1960) defines it\"",
+  "confidence": "high"
+ },
+ "U24": {
+  "id": "U24",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T1, T7",
+  "basis": "the author's draft cites \"Landis and Koch (1977)\" for the thresholds; Claude changed only the threshold wording",
+  "confidence": "medium"
+ },
+ "U25": {
+  "id": "U25",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T1, T7",
+  "basis": "the draft: \"Hallgren (2012) is a practical tutorial...\"",
+  "confidence": "high"
+ },
+ "U26": {
+  "id": "U26",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T7, T8",
+  "basis": "\"with whatever structure you think works best\"; the T7 reply listed the section order and the author didn't respond",
+  "confidence": "high"
+ },
+ "U27": {
+  "id": "U27",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T5, T7",
+  "basis": "\"write the comparison to validation/results.md\" and \"Report the validation result\"; the table was shown in the replies, with no response",
+  "confidence": "medium"
+ },
+ "U28": {
+  "id": "U28",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T7",
+  "basis": "\"whatever structure\"; the T7 reply mentioned \"what each output field means\"",
+  "confidence": "medium"
+ },
+ "U29": {
+  "id": "U29",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T7, T8",
+  "basis": "the author's hand edit filled in Limits: \"I'll write that one myself\"",
+  "confidence": "high"
+ },
+ "U1": {
+  "id": "U1",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3",
+  "basis": "T3: \"percent agreement and Cohen's \u03ba, unweighted\" for two coders",
+  "confidence": "high"
+ },
+ "U18": {
+  "id": "U18",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T5",
+  "basis": "\"two more test files you make up\"; the T5 reply described both files and the caveat about dropped rows",
+  "confidence": "high"
+ },
+ "U19": {
+  "id": "U19",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T5",
+  "basis": "\"compare the tool's \u03ba with statsmodels' cohens_kappa\"",
+  "confidence": "medium"
+ },
+ "U20": {
+  "id": "U20",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T5",
+  "basis": "\"You choose how close\"; the reply said \"both must use the same number of items\"",
+  "confidence": "high"
+ },
+ "U21": {
+  "id": "U21",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T5",
+  "basis": "\"You choose how close the two have to be\"; the reply said \"differ by at most 1e-9\"",
+  "confidence": "high"
+ },
+ "U2": {
+  "id": "U2",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T3, T4",
+  "basis": "T4: \"Decide how the tool should handle a missing column\"; the reply mentioned exact names, extra columns and the byte-order mark",
+  "confidence": "medium"
+ },
+ "U3": {
+  "id": "U3",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T2",
+  "basis": "CLAUDE.md: \"Treat codes as case-sensitive text, and never recode them\"",
+  "confidence": "high"
+ },
+ "U4": {
+  "id": "U4",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3",
+  "basis": "\"Drop any row where either code is blank, and report how many were dropped\"",
+  "confidence": "high"
+ },
+ "U5": {
+  "id": "U5",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3",
+  "basis": "\"Cohen's \u03ba, unweighted, as Cohen (1960) defines it\"",
+  "confidence": "medium"
+ },
+ "U6": {
+  "id": "U6",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T2",
+  "basis": "CLAUDE.md: \"Use only Python's standard library, in the tool and in its tests\"",
+  "confidence": "high"
+ },
+ "U7": {
+  "id": "U7",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T3, T4",
+  "basis": "the author asked for the methods-kit tool-conventions skill (JSON to stdout); the fields were shown in the T3 reply",
+  "confidence": "medium"
+ },
+ "U8": {
+  "id": "U8",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T3, T4",
+  "basis": "tool-conventions skill (errors to stderr, nonzero exit) plus T4 \"Decide how\"; the reply said \"Missing files, files that aren't UTF-8 ... handled the same way\"",
+  "confidence": "medium"
+ },
+ "U9": {
+  "id": "U9",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T4",
+  "basis": "\"Decide how the tool should handle a missing column\"; the reply said \"the error names each missing column\"",
+  "confidence": "high"
+ },
+ "U10": {
+  "id": "U10",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T4, T5, T6",
+  "basis": "\"Decide how the tool should handle ... a file with fewer than two rows left\"; T4 reply described it, author never responded",
+  "confidence": "high"
+ },
+ "U11": {
+  "id": "U11",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T3, T4, T5",
+  "basis": "\"Decide how the tool should handle ... a file with only one category\"; T4 reply explained choosing an error over null, author never responded",
+  "confidence": "high"
+ },
+ "U12": {
+  "id": "U12",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T3, T7",
+  "basis": "skill methods-kit:tool-conventions \"A single script run from the command line\"; T7 \"whatever structure you think works best\"; reply listed the usage section, no response",
+  "confidence": "medium"
+ },
+ "U13": {
+  "id": "U13",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T4, T5",
+  "basis": "\"write the tests, following the skill\" (methods-kit:tool-conventions); reply: \"Each function has its own tests: is_blank...\", no response",
+  "confidence": "high"
+ },
+ "U14": {
+  "id": "U14",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T4, T5",
+  "basis": "\"write the tests, following the skill\" (methods-kit:tool-conventions); reply named the agreement tests, no response",
+  "confidence": "high"
+ },
+ "U15": {
+  "id": "U15",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T4, T5",
+  "basis": "\"write the tests, following the skill\" (methods-kit:tool-conventions); reply named the read_pairs tests, no response",
+  "confidence": "high"
+ },
+ "U16": {
+  "id": "U16",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T4, T5",
+  "basis": "\"write the tests, following the skill\" (methods-kit:tool-conventions); reply named the main tests and \"Every kind of bad input above has a test\", no response",
+  "confidence": "high"
+ },
+ "U17": {
+  "id": "U17",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T4, T5",
+  "basis": "\"write the tests\"; reply: \"a few tests that run agree.py as a real command\", no response",
+  "confidence": "medium"
+ }
+}

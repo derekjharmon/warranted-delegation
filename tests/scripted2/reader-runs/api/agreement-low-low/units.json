@@ -1,0 +1,3892 @@
+{
+ "files": [
+  "README.md",
+  "agree.py",
+  "tests/__pycache__/test_agree.cpython-314.pyc",
+  "tests/test_agree.py",
+  "validation/compare_statsmodels.py",
+  "validation/results.md"
+ ],
+ "units": [
+  {
+   "id": "U1",
+   "kind": "decision",
+   "row": "TL1",
+   "label": "Purpose and scope: two-coder agreement tool reporting percent agreement and unweighted kappa",
+   "anchors": [
+    {
+     "file": "README.md",
+     "quote": "A small command-line tool for checking how well two coders agree when they've",
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "reports percent agreement and Cohen's \u03ba (unweighted, as defined by Cohen, 1960).",
+     "found": true
+    },
+    {
+     "file": "agree.py",
+     "quote": "Agreement between two coders: percent agreement and Cohen's kappa.",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "agree.py",
+     "quote": "Compute percent agreement and unweighted Cohen's (1960) kappa.",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "agree.py",
+     "quote": "description=\"Percent agreement and Cohen's kappa for two coders.\"",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "README.md",
+     "text": "A small command-line tool for checking how well two coders agree when they've",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "reports percent agreement and Cohen's \u03ba (unweighted, as defined by Cohen, 1960).",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "agree.py",
+     "text": "Agreement between two coders: percent agreement and Cohen's kappa.",
+     "by": "Claude",
+     "turn": 3,
+     "change": "added"
+    },
+    {
+     "file": "agree.py",
+     "text": "Compute percent agreement and unweighted Cohen's (1960) kappa.",
+     "by": "Claude",
+     "turn": 3,
+     "change": "added"
+    },
+    {
+     "file": "agree.py",
+     "text": "description=\"Percent agreement and Cohen's kappa for two coders.\"",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U2",
+   "kind": "decision",
+   "row": "TL2",
+   "label": "Input: CSV with required item/coder1/coder2 columns, any order, extras ignored, case-sensitive names, UTF-8 with BOM",
+   "anchors": [
+    {
+     "file": "agree.py",
+     "quote": "REQUIRED_COLUMNS = (\"item\", \"coder1\", \"coder2\")",
+     "found": true
+    },
+    {
+     "file": "agree.py",
+     "quote": "with open(path, newline=\"\", encoding=\"utf-8-sig\") as f:",
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "The CSV needs a header row with the columns `item`, `coder1` and `coder2`, in",
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "any order; other columns are ignored. Column names and codes are case-sensitive,",
+     "found": true
+    },
+    {
+     "file": "agree.py",
+     "quote": "Reads a CSV with columns item, coder1 and coder2, drops rows where either",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "agree.py",
+     "quote": "help=\"CSV file with columns item, coder1 and coder2, one row per item\",",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "tests/test_agree.py",
+     "quote": "def test_extra_columns_and_order_ignored(self):",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "tests/test_agree.py",
+     "quote": "def test_byte_order_mark_ignored(self):",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "tests/test_agree.py",
+     "quote": "def test_column_names_are_case_sensitive(self):",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "agree.py",
+     "text": "REQUIRED_COLUMNS = (\"item\", \"coder1\", \"coder2\")",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    },
+    {
+     "file": "agree.py",
+     "text": "with open(path, newline=\"\", encoding=\"utf-8-sig\") as f:",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "The CSV needs a header row with the columns `item`, `coder1` and `coder2`, in",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "any order; other columns are ignored. Column names and codes are case-sensitive,",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "agree.py",
+     "text": "Reads a CSV with columns item, coder1 and coder2, drops rows where either",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    },
+    {
+     "file": "agree.py",
+     "text": "help=\"CSV file with columns item, coder1 and coder2, one row per item\",",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    },
+    {
+     "file": "tests/test_agree.py",
+     "text": "def test_extra_columns_and_order_ignored(self):",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    },
+    {
+     "file": "tests/test_agree.py",
+     "text": "def test_byte_order_mark_ignored(self):",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    },
+    {
+     "file": "tests/test_agree.py",
+     "text": "def test_column_names_are_case_sensitive(self):",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U3",
+   "kind": "decision",
+   "row": "TL3",
+   "label": "Method: rule for dropping rows with a blank code (empty, whitespace-only, or missing)",
+   "anchors": [
+    {
+     "file": "agree.py",
+     "quote": "return code is None or not code.strip()",
+     "found": true
+    },
+    {
+     "file": "agree.py",
+     "quote": "if is_blank(code1) or is_blank(code2):",
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "Rows where either coder left the code blank are dropped, and the tool reports",
+     "found": true
+    },
+    {
+     "file": "agree.py",
+     "quote": "True if a code is missing, empty, or only whitespace.",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "agree.py",
+     "quote": "given (case-sensitive, never recoded). A pair where either code is blank",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "agree.py",
+     "quote": "code is blank, and prints the results as JSON.",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "A code counts as blank if it is empty, contains only",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "whitespace, or is missing because the row is short.",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "| `dropped` | Rows dropped because a code was blank |",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "| `n` | Items used: rows where both coders gave a code |",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "- fewer than two items are left after blank rows are dropped;",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "tests/test_agree.py",
+     "quote": "def test_blank_pairs_dropped_and_counted(self):",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "tests/test_agree.py",
+     "quote": "def test_short_row_gives_missing_code(self):",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "tests/test_agree.py",
+     "quote": "for code in (None, \"\", \" \", \"\\t\"):",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "validation/compare_statsmodels.py",
+     "quote": "if a is not None and b is not None and a.strip() and b.strip()]",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "The comparison script drops blank rows by the same rule as the tool, so it",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "agree.py",
+     "text": "return code is None or not code.strip()",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    },
+    {
+     "file": "agree.py",
+     "text": "if is_blank(code1) or is_blank(code2):",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "Rows where either coder left the code blank are dropped, and the tool reports",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "agree.py",
+     "text": "True if a code is missing, empty, or only whitespace.",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    },
+    {
+     "file": "agree.py",
+     "text": "given (case-sensitive, never recoded). A pair where either code is blank",
+     "by": "Claude",
+     "turn": 3,
+     "change": "added"
+    },
+    {
+     "file": "agree.py",
+     "text": "code is blank, and prints the results as JSON.",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "A code counts as blank if it is empty, contains only",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "whitespace, or is missing because the row is short.",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "| `dropped` | Rows dropped because a code was blank |",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "| `n` | Items used: rows where both coders gave a code |",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "- fewer than two items are left after blank rows are dropped;",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "tests/test_agree.py",
+     "text": "def test_blank_pairs_dropped_and_counted(self):",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    },
+    {
+     "file": "tests/test_agree.py",
+     "text": "def test_short_row_gives_missing_code(self):",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    },
+    {
+     "file": "tests/test_agree.py",
+     "text": "for code in (None, \"\", \" \", \"\\t\"):",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    },
+    {
+     "file": "validation/compare_statsmodels.py",
+     "text": "if a is not None and b is not None and a.strip() and b.strip()]",
+     "by": "Claude",
+     "turn": 5,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "The comparison script drops blank rows by the same rule as the tool, so it",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U4",
+   "kind": "decision",
+   "row": "TL3",
+   "label": "Method: codes compared exactly as written, case-sensitive, never trimmed or recoded",
+   "anchors": [
+    {
+     "file": "agree.py",
+     "quote": "given (case-sensitive, never recoded).",
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "and codes are compared exactly as written, so `Yes`, `yes` and `yes ` are three",
+     "found": true
+    },
+    {
+     "file": "agree.py",
+     "quote": "pairs is an iterable of (code1, code2). Codes are compared exactly as",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "any order; other columns are ignored. Column names and codes are case-sensitive,",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "different codes.",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "tests/test_agree.py",
+     "quote": "def test_codes_are_case_sensitive(self):",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "tests/test_agree.py",
+     "quote": "def test_codes_are_not_trimmed(self):",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "marginals, and one where `yes`, `Yes` and `no` are distinct codes and \u03ba is",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "validation/compare_statsmodels.py",
+     "quote": "Build the contingency table from the raw string codes; return kappa and n.",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "validation/results.md",
+     "quote": "`yes`, `Yes` and `no` as three distinct codes, agreement below chance (negative kappa); one empty code and one short row.",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "agree.py",
+     "text": "given (case-sensitive, never recoded).",
+     "by": "Claude",
+     "turn": 3,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "and codes are compared exactly as written, so `Yes`, `yes` and `yes ` are three",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "agree.py",
+     "text": "pairs is an iterable of (code1, code2). Codes are compared exactly as",
+     "by": "Claude",
+     "turn": 3,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "any order; other columns are ignored. Column names and codes are case-sensitive,",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "different codes.",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "tests/test_agree.py",
+     "text": "def test_codes_are_case_sensitive(self):",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    },
+    {
+     "file": "tests/test_agree.py",
+     "text": "def test_codes_are_not_trimmed(self):",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "marginals, and one where `yes`, `Yes` and `no` are distinct codes and \u03ba is",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "validation/compare_statsmodels.py",
+     "text": "Build the contingency table from the raw string codes; return kappa and n.",
+     "by": "Claude",
+     "turn": 5,
+     "change": "added"
+    },
+    {
+     "file": "validation/results.md",
+     "text": "`yes`, `Yes` and `no` as three distinct codes, agreement below chance (negative ",
+     "by": "Claude",
+     "turn": 5,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U5",
+   "kind": "decision",
+   "row": "TL3",
+   "label": "Method: unweighted Cohen's kappa with chance agreement from the two coders' marginals, plus percent agreement",
+   "anchors": [
+    {
+     "file": "agree.py",
+     "quote": "p_o = sum(1 for a, b in kept if a == b) / n",
+     "found": true
+    },
+    {
+     "file": "agree.py",
+     "quote": "p_e = sum(marg1[c] * marg2[c] for c in marg1) / (n * n)",
+     "found": true
+    },
+    {
+     "file": "agree.py",
+     "quote": "\"kappa\": (p_o - p_e) / (1 - p_e),",
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "| `expected` | Agreement expected by chance from the two coders' marginal totals, p_e |",
+     "found": true
+    },
+    {
+     "file": "agree.py",
+     "quote": "Compute percent agreement and unweighted Cohen's (1960) kappa.",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "agree.py",
+     "quote": "observed (p_o), expected (p_e), and kappa = (p_o - p_e) / (1 - p_e).",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "agree.py",
+     "quote": "\"percent_agreement\": 100 * p_o,",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "agree.py",
+     "quote": "marg1 = Counter(a for a, _ in kept)",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "| `kappa` | Cohen's \u03ba = (p_o \u2212 p_e) / (1 \u2212 p_e) |",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "| `observed` | Observed agreement, p_o (the same, as a proportion) |",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "| `percent_agreement` | Percentage of the `n` items on which the coders gave the same code |",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "reports percent agreement and Cohen's \u03ba (unweighted, as defined by Cohen, 1960).",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "tests/test_agree.py",
+     "quote": "# p_o = 2/4; marginals a:2/2, b:2/2 -> p_e = 0.5; kappa = 0.",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "agree.py",
+     "text": "p_o = sum(1 for a, b in kept if a == b) / n",
+     "by": "Claude",
+     "turn": 3,
+     "change": "added"
+    },
+    {
+     "file": "agree.py",
+     "text": "p_e = sum(marg1[c] * marg2[c] for c in marg1) / (n * n)",
+     "by": "Claude",
+     "turn": 3,
+     "change": "added"
+    },
+    {
+     "file": "agree.py",
+     "text": "\"kappa\": (p_o - p_e) / (1 - p_e),",
+     "by": "Claude",
+     "turn": 3,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "| `expected` | Agreement expected by chance from the two coders' marginal totals",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "agree.py",
+     "text": "Compute percent agreement and unweighted Cohen's (1960) kappa.",
+     "by": "Claude",
+     "turn": 3,
+     "change": "added"
+    },
+    {
+     "file": "agree.py",
+     "text": "observed (p_o), expected (p_e), and kappa = (p_o - p_e) / (1 - p_e).",
+     "by": "Claude",
+     "turn": 3,
+     "change": "added"
+    },
+    {
+     "file": "agree.py",
+     "text": "\"percent_agreement\": 100 * p_o,",
+     "by": "Claude",
+     "turn": 3,
+     "change": "added"
+    },
+    {
+     "file": "agree.py",
+     "text": "marg1 = Counter(a for a, _ in kept)",
+     "by": "Claude",
+     "turn": 3,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "| `kappa` | Cohen's \u03ba = (p_o \u2212 p_e) / (1 \u2212 p_e) |",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "| `observed` | Observed agreement, p_o (the same, as a proportion) |",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "| `percent_agreement` | Percentage of the `n` items on which the coders gave the",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "reports percent agreement and Cohen's \u03ba (unweighted, as defined by Cohen, 1960).",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "tests/test_agree.py",
+     "text": "# p_o = 2/4; marginals a:2/2, b:2/2 -> p_e = 0.5; kappa = 0.",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U6",
+   "kind": "decision",
+   "row": "TL4",
+   "label": "Dependencies: Python standard library only for the tool",
+   "anchors": [
+    {
+     "file": "README.md",
+     "quote": "It uses only Python's standard library.",
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "and numpy; the tool and its tests do not.",
+     "found": true
+    },
+    {
+     "file": "validation/compare_statsmodels.py",
+     "quote": "Needs numpy and statsmodels, which the tool itself does not use. Writes",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "that. Full details are in `validation/results.md`. The script needs statsmodels",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "README.md",
+     "text": "It uses only Python's standard library.",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "and numpy; the tool and its tests do not.",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "validation/compare_statsmodels.py",
+     "text": "Needs numpy and statsmodels, which the tool itself does not use. Writes",
+     "by": "Claude",
+     "turn": 5,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "that. Full details are in `validation/results.md`. The script needs statsmodels",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U7",
+   "kind": "decision",
+   "row": "TL5",
+   "label": "Output: JSON on standard output with n, dropped, percent agreement, p_o, p_e, kappa",
+   "anchors": [
+    {
+     "file": "agree.py",
+     "quote": "print(json.dumps(result, indent=2))",
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "Results are printed to standard output as JSON:",
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "| `dropped` | Rows dropped because a code was blank |",
+     "found": true
+    },
+    {
+     "file": "agree.py",
+     "quote": "code is blank, and prints the results as JSON.",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "agree.py",
+     "quote": "Returns a dict with n (pairs used), dropped, percent_agreement (0-100),",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "| `n` | Items used: rows where both coders gave a code |",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "| `percent_agreement` | Percentage of the `n` items on which the coders gave the same code |",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "| `observed` | Observed agreement, p_o (the same, as a proportion) |",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "| `expected` | Agreement expected by chance from the two coders' marginal totals, p_e |",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "| `kappa` | Cohen's \u03ba = (p_o \u2212 p_e) / (1 \u2212 p_e) |",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "tests/test_agree.py",
+     "quote": "def test_success_prints_json(self):",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "agree.py",
+     "text": "print(json.dumps(result, indent=2))",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "Results are printed to standard output as JSON:",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "| `dropped` | Rows dropped because a code was blank |",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "agree.py",
+     "text": "code is blank, and prints the results as JSON.",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    },
+    {
+     "file": "agree.py",
+     "text": "Returns a dict with n (pairs used), dropped, percent_agreement (0-100),",
+     "by": "Claude",
+     "turn": 3,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "| `n` | Items used: rows where both coders gave a code |",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "| `percent_agreement` | Percentage of the `n` items on which the coders gave the",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "| `observed` | Observed agreement, p_o (the same, as a proportion) |",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "| `expected` | Agreement expected by chance from the two coders' marginal totals",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "| `kappa` | Cohen's \u03ba = (p_o \u2212 p_e) / (1 \u2212 p_e) |",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "tests/test_agree.py",
+     "text": "def test_success_prints_json(self):",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U8",
+   "kind": "decision",
+   "row": "TL6",
+   "label": "Failure handling: unreadable file, non-UTF-8, or invalid CSV gives stderr message and exit 1",
+   "anchors": [
+    {
+     "file": "agree.py",
+     "quote": "except (OSError, UnicodeDecodeError, csv.Error, ValueError) as e:",
+     "found": true
+    },
+    {
+     "file": "agree.py",
+     "quote": "print(f\"agree.py: error: {args.csv_file}: {e}\", file=sys.stderr)",
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "On any of the following, the tool prints a message to standard error, nothing",
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "- the file can't be opened, isn't UTF-8, or isn't valid CSV;",
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "to standard output, and exits with status 1:",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "tests/test_agree.py",
+     "quote": "def test_error_exits_nonzero(self):",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "tests/test_agree.py",
+     "quote": "self.assertEqual(p.returncode, 1)",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "tests/test_agree.py",
+     "quote": "def test_missing_file(self):",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "tests/test_agree.py",
+     "quote": "def test_not_utf8(self):",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "tests/test_agree.py",
+     "quote": "def assertFails(self, argv, message):",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "agree.py",
+     "text": "except (OSError, UnicodeDecodeError, csv.Error, ValueError) as e:",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    },
+    {
+     "file": "agree.py",
+     "text": "print(f\"agree.py: error: {args.csv_file}: {e}\", file=sys.stderr)",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "On any of the following, the tool prints a message to standard error, nothing",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "- the file can't be opened, isn't UTF-8, or isn't valid CSV;",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "to standard output, and exits with status 1:",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "tests/test_agree.py",
+     "text": "def test_error_exits_nonzero(self):",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    },
+    {
+     "file": "tests/test_agree.py",
+     "text": "self.assertEqual(p.returncode, 1)",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    },
+    {
+     "file": "tests/test_agree.py",
+     "text": "def test_missing_file(self):",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    },
+    {
+     "file": "tests/test_agree.py",
+     "text": "def test_not_utf8(self):",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    },
+    {
+     "file": "tests/test_agree.py",
+     "text": "def assertFails(self, argv, message):",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U9",
+   "kind": "decision",
+   "row": "TL6",
+   "label": "Failure handling: missing required column is an error naming the column",
+   "anchors": [
+    {
+     "file": "agree.py",
+     "quote": "raise ValueError(f\"missing column(s): {', '.join(missing)}\")",
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "- the `item`, `coder1` or `coder2` column is missing (the message names which);",
+     "found": true
+    },
+    {
+     "file": "agree.py",
+     "quote": "Raises ValueError if any of the columns item, coder1, coder2 is missing.",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "agree.py",
+     "quote": "missing = [c for c in REQUIRED_COLUMNS if c not in (reader.fieldnames or [])]",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "tests/test_agree.py",
+     "quote": "def test_missing_column_is_error(self):",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "tests/test_agree.py",
+     "quote": "self.assertFails([path], \"missing column(s): coder2\")",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "agree.py",
+     "text": "raise ValueError(f\"missing column(s): {', '.join(missing)}\")",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "- the `item`, `coder1` or `coder2` column is missing (the message names which);",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "agree.py",
+     "text": "Raises ValueError if any of the columns item, coder1, coder2 is missing.",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    },
+    {
+     "file": "agree.py",
+     "text": "missing = [c for c in REQUIRED_COLUMNS if c not in (reader.fieldnames or [])]",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    },
+    {
+     "file": "tests/test_agree.py",
+     "text": "def test_missing_column_is_error(self):",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    },
+    {
+     "file": "tests/test_agree.py",
+     "text": "self.assertFails([path], \"missing column(s): coder2\")",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U10",
+   "kind": "decision",
+   "row": "TL6",
+   "label": "Failure handling: fewer than two items after dropping is an error",
+   "anchors": [
+    {
+     "file": "agree.py",
+     "quote": "MIN_ITEMS = 2",
+     "found": true
+    },
+    {
+     "file": "agree.py",
+     "quote": "if n < MIN_ITEMS:",
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "- fewer than two items are left after blank rows are dropped;",
+     "found": true
+    },
+    {
+     "file": "agree.py",
+     "quote": "Raises ValueError if fewer than two pairs remain, or if p_e is 1, which",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "agree.py",
+     "quote": "f\"need at least {MIN_ITEMS} items with both codes present, \"",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "tests/test_agree.py",
+     "quote": "def test_fewer_than_two_items_is_error(self):",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "tests/test_agree.py",
+     "quote": "def test_fewer_than_two_items(self):",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "tests/test_agree.py",
+     "quote": "def test_header_only(self):",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "agree.py",
+     "text": "MIN_ITEMS = 2",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    },
+    {
+     "file": "agree.py",
+     "text": "if n < MIN_ITEMS:",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "- fewer than two items are left after blank rows are dropped;",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "agree.py",
+     "text": "Raises ValueError if fewer than two pairs remain, or if p_e is 1, which",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    },
+    {
+     "file": "agree.py",
+     "text": "f\"need at least {MIN_ITEMS} items with both codes present, \"",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    },
+    {
+     "file": "tests/test_agree.py",
+     "text": "def test_fewer_than_two_items_is_error(self):",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    },
+    {
+     "file": "tests/test_agree.py",
+     "text": "def test_fewer_than_two_items(self):",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    },
+    {
+     "file": "tests/test_agree.py",
+     "text": "def test_header_only(self):",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U11",
+   "kind": "decision",
+   "row": "TL6",
+   "label": "Failure handling: p_e = 1 (single shared code) treated as undefined kappa error",
+   "anchors": [
+    {
+     "file": "agree.py",
+     "quote": "if p_e == 1:",
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "- both coders used one and the same code for every item, so p_e = 1 and \u03ba is",
+     "found": true
+    },
+    {
+     "file": "agree.py",
+     "quote": "Raises ValueError if fewer than two pairs remain, or if p_e is 1, which",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "agree.py",
+     "quote": "happens when both coders used one and the same code for every item.",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "agree.py",
+     "quote": "\"kappa is undefined: both coders used the single code \"",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "tests/test_agree.py",
+     "quote": "def test_one_category_is_error(self):",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "tests/test_agree.py",
+     "quote": "def test_one_category(self):",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "tests/test_agree.py",
+     "quote": "def test_one_coder_one_category_is_defined(self):",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "agree.py",
+     "text": "if p_e == 1:",
+     "by": "Claude",
+     "turn": 3,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "- both coders used one and the same code for every item, so p_e = 1 and \u03ba is",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "agree.py",
+     "text": "Raises ValueError if fewer than two pairs remain, or if p_e is 1, which",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    },
+    {
+     "file": "agree.py",
+     "text": "happens when both coders used one and the same code for every item.",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    },
+    {
+     "file": "agree.py",
+     "text": "\"kappa is undefined: both coders used the single code \"",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    },
+    {
+     "file": "tests/test_agree.py",
+     "text": "def test_one_category_is_error(self):",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    },
+    {
+     "file": "tests/test_agree.py",
+     "text": "def test_one_category(self):",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    },
+    {
+     "file": "tests/test_agree.py",
+     "text": "def test_one_coder_one_category_is_defined(self):",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U12",
+   "kind": "decision",
+   "row": "TL8",
+   "label": "Setup: no installation, run the script directly with python3",
+   "anchors": [
+    {
+     "file": "README.md",
+     "quote": "python3 agree.py FILE.csv",
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "$ python3 agree.py notes/example.csv",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "README.md",
+     "text": "python3 agree.py FILE.csv",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "$ python3 agree.py notes/example.csv",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U13",
+   "kind": "decision",
+   "row": "TL9",
+   "label": "Test suite design: unit and command-line tests of each function and each bad input",
+   "anchors": [
+    {
+     "file": "tests/test_agree.py",
+     "quote": "class TestAgreement(unittest.TestCase):",
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "29 tests, in `tests/test_agree.py`, covering each function, the command line,",
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "and each kind of bad input above. On Python 3.14.7 all 29 pass:",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "tests/test_agree.py",
+     "quote": "class TestIsBlank(unittest.TestCase):",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "tests/test_agree.py",
+     "quote": "class TestReadPairs(unittest.TestCase):",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "tests/test_agree.py",
+     "quote": "class TestMain(unittest.TestCase):",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "tests/test_agree.py",
+     "quote": "class TestCommandLine(unittest.TestCase):",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "tests/test_agree.py",
+     "text": "class TestAgreement(unittest.TestCase):",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "29 tests, in `tests/test_agree.py`, covering each function, the command line,",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "and each kind of bad input above. On Python 3.14.7 all 29 pass:",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "tests/test_agree.py",
+     "text": "class TestIsBlank(unittest.TestCase):",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    },
+    {
+     "file": "tests/test_agree.py",
+     "text": "class TestReadPairs(unittest.TestCase):",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    },
+    {
+     "file": "tests/test_agree.py",
+     "text": "class TestMain(unittest.TestCase):",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    },
+    {
+     "file": "tests/test_agree.py",
+     "text": "class TestCommandLine(unittest.TestCase):",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U14",
+   "kind": "decision",
+   "row": "TL11",
+   "label": "Validation design: compare against a reference on the example plus two made-up files (uneven marginals; case-distinct codes, negative kappa)",
+   "anchors": [
+    {
+     "file": "README.md",
+     "quote": "made-up files in `validation/data/`: one with four categories and uneven",
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "marginals, and one where `yes`, `Yes` and `no` are distinct codes and \u03ba is",
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "checks the \u03ba calculation, not the rule for dropping rows; the unit tests cover",
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "`cohens_kappa` from statsmodels 0.14.6 on `notes/example.csv` and on two",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "validation/compare_statsmodels.py",
+     "quote": "(\"notes/example.csv\", \"The example from the notes: 3 categories, 2 rows with a blank code.\"),",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "validation/compare_statsmodels.py",
+     "quote": "\"4 categories with uneven marginals; one empty and one whitespace-only code.\"),",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "validation/compare_statsmodels.py",
+     "quote": "\"`yes`, `Yes` and `no` as three distinct codes, agreement below chance \"",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "validation/results.md",
+     "quote": "`yes`, `Yes` and `no` as three distinct codes, agreement below chance (negative kappa); one empty code and one short row.",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "validation/results.md",
+     "quote": "- `validation/data/four_categories.csv`: 4 categories with uneven marginals; one empty and one whitespace-only code.",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "README.md",
+     "text": "made-up files in `validation/data/`: one with four categories and uneven",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "marginals, and one where `yes`, `Yes` and `no` are distinct codes and \u03ba is",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "checks the \u03ba calculation, not the rule for dropping rows; the unit tests cover",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "`cohens_kappa` from statsmodels 0.14.6 on `notes/example.csv` and on two",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "validation/compare_statsmodels.py",
+     "text": "(\"notes/example.csv\", \"The example from the notes: 3 categories, 2 rows with a b",
+     "by": "Claude",
+     "turn": 5,
+     "change": "added"
+    },
+    {
+     "file": "validation/compare_statsmodels.py",
+     "text": "\"4 categories with uneven marginals; one empty and one whitespace-only code.\"),",
+     "by": "Claude",
+     "turn": 5,
+     "change": "added"
+    },
+    {
+     "file": "validation/compare_statsmodels.py",
+     "text": "\"`yes`, `Yes` and `no` as three distinct codes, agreement below chance \"",
+     "by": "Claude",
+     "turn": 5,
+     "change": "added"
+    },
+    {
+     "file": "validation/results.md",
+     "text": "`yes`, `Yes` and `no` as three distinct codes, agreement below chance (negative ",
+     "by": "Claude",
+     "turn": 5,
+     "change": "added"
+    },
+    {
+     "file": "validation/results.md",
+     "text": "- `validation/data/four_categories.csv`: 4 categories with uneven marginals; one",
+     "by": "Claude",
+     "turn": 5,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U15",
+   "kind": "decision",
+   "row": "TL12",
+   "label": "Answer key: statsmodels cohens_kappa as the reference implementation",
+   "anchors": [
+    {
+     "file": "validation/compare_statsmodels.py",
+     "quote": "from statsmodels.stats.inter_rater import cohens_kappa",
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "`validation/compare_statsmodels.py` compares the \u03ba from `agree.py` with",
+     "found": true
+    },
+    {
+     "file": "validation/compare_statsmodels.py",
+     "quote": "Compare agree.py's kappa with statsmodels' cohens_kappa.",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "validation/compare_statsmodels.py",
+     "quote": "return cohens_kappa(table).kappa, len(kept), cats",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "`cohens_kappa` from statsmodels 0.14.6 on `notes/example.csv` and on two",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "validation/results.md",
+     "quote": "# Validation: agree.py against statsmodels",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "validation/results.md",
+     "quote": "`statsmodels.stats.inter_rater.cohens_kappa` (unweighted) on a contingency",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "validation/compare_statsmodels.py",
+     "text": "from statsmodels.stats.inter_rater import cohens_kappa",
+     "by": "Claude",
+     "turn": 5,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "`validation/compare_statsmodels.py` compares the \u03ba from `agree.py` with",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "validation/compare_statsmodels.py",
+     "text": "Compare agree.py's kappa with statsmodels' cohens_kappa.",
+     "by": "Claude",
+     "turn": 5,
+     "change": "added"
+    },
+    {
+     "file": "validation/compare_statsmodels.py",
+     "text": "return cohens_kappa(table).kappa, len(kept), cats",
+     "by": "Claude",
+     "turn": 5,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "`cohens_kappa` from statsmodels 0.14.6 on `notes/example.csv` and on two",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "validation/results.md",
+     "text": "# Validation: agree.py against statsmodels",
+     "by": "Claude",
+     "turn": 5,
+     "change": "added"
+    },
+    {
+     "file": "validation/results.md",
+     "text": "`statsmodels.stats.inter_rater.cohens_kappa` (unweighted) on a contingency",
+     "by": "Claude",
+     "turn": 5,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U16",
+   "kind": "decision",
+   "row": "TL13",
+   "label": "Matching rule: per-file comparison with contingency table built from raw string codes after the same blank-drop rule",
+   "anchors": [
+    {
+     "file": "validation/compare_statsmodels.py",
+     "quote": "if a is not None and b is not None and a.strip() and b.strip()]",
+     "found": true
+    },
+    {
+     "file": "validation/compare_statsmodels.py",
+     "quote": "table[index[a], index[b]] += 1",
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "The comparison script drops blank rows by the same rule as the tool, so it",
+     "found": true
+    },
+    {
+     "file": "validation/compare_statsmodels.py",
+     "quote": "Build the contingency table from the raw string codes; return kappa and n.",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "validation/compare_statsmodels.py",
+     "quote": "cats = sorted({a for a, _ in kept} | {b for _, b in kept})",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "validation/results.md",
+     "quote": "table counted directly from the string codes, after dropping rows with a",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "checks the \u03ba calculation, not the rule for dropping rows; the unit tests cover",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "validation/compare_statsmodels.py",
+     "text": "if a is not None and b is not None and a.strip() and b.strip()]",
+     "by": "Claude",
+     "turn": 5,
+     "change": "added"
+    },
+    {
+     "file": "validation/compare_statsmodels.py",
+     "text": "table[index[a], index[b]] += 1",
+     "by": "Claude",
+     "turn": 5,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "The comparison script drops blank rows by the same rule as the tool, so it",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "validation/compare_statsmodels.py",
+     "text": "Build the contingency table from the raw string codes; return kappa and n.",
+     "by": "Claude",
+     "turn": 5,
+     "change": "added"
+    },
+    {
+     "file": "validation/compare_statsmodels.py",
+     "text": "cats = sorted({a for a, _ in kept} | {b for _, b in kept})",
+     "by": "Claude",
+     "turn": 5,
+     "change": "added"
+    },
+    {
+     "file": "validation/results.md",
+     "text": "table counted directly from the string codes, after dropping rows with a",
+     "by": "Claude",
+     "turn": 5,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "checks the \u03ba calculation, not the rule for dropping rows; the unit tests cover",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U17",
+   "kind": "decision",
+   "row": "TL14",
+   "label": "Agreement bar: absolute difference no more than 1e-9 and equal n",
+   "anchors": [
+    {
+     "file": "validation/compare_statsmodels.py",
+     "quote": "TOLERANCE = 1e-9",
+     "found": true
+    },
+    {
+     "file": "validation/compare_statsmodels.py",
+     "quote": "match = diff <= TOLERANCE and tool[\"n\"] == sm_n",
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "negative. The two count as matching if they differ by no more than 1e-9.",
+     "found": true
+    },
+    {
+     "file": "validation/results.md",
+     "quote": "Matching criterion: absolute difference no larger than 1e-09. Both",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "validation/compare_statsmodels.py",
+     "quote": "f\"Matching criterion: absolute difference no larger than {TOLERANCE:g}. Both\",",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "validation/compare_statsmodels.py",
+     "text": "TOLERANCE = 1e-9",
+     "by": "Claude",
+     "turn": 5,
+     "change": "added"
+    },
+    {
+     "file": "validation/compare_statsmodels.py",
+     "text": "match = diff <= TOLERANCE and tool[\"n\"] == sm_n",
+     "by": "Claude",
+     "turn": 5,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "negative. The two count as matching if they differ by no more than 1e-9.",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "validation/results.md",
+     "text": "Matching criterion: absolute difference no larger than 1e-09. Both",
+     "by": "Claude",
+     "turn": 5,
+     "change": "added"
+    },
+    {
+     "file": "validation/compare_statsmodels.py",
+     "text": "f\"Matching criterion: absolute difference no larger than {TOLERANCE:g}. Both\",",
+     "by": "Claude",
+     "turn": 5,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U18",
+   "kind": "decision",
+   "row": "S3",
+   "label": "Literature positioned in: kappa and inter-rater reliability methods literature",
+   "anchors": [
+    {
+     "file": "README.md",
+     "quote": "Cohen's \u03ba (Cohen, 1960) corrects percent agreement for the agreement two",
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "worse than chance. Landis and Koch (1977) call \u03ba from 0.61 to 0.80",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "\"substantial\" agreement, and \u03ba above 0.80 \"almost perfect\". Hallgren (2012) is",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "## References",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "README.md",
+     "text": "Cohen's \u03ba (Cohen, 1960) corrects percent agreement for the agreement two",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added",
+     "copied_from": [
+      "notes/readme-draft.md"
+     ]
+    },
+    {
+     "file": "README.md",
+     "text": "worse than chance. Landis and Koch (1977) call \u03ba from 0.61 to 0.80",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "\"substantial\" agreement, and \u03ba above 0.80 \"almost perfect\". Hallgren (2012) is",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "## References",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U19",
+   "kind": "decision",
+   "row": "S5",
+   "label": "Source for kappa definition: Cohen (1960)",
+   "anchors": [
+    {
+     "file": "README.md",
+     "quote": "reports percent agreement and Cohen's \u03ba (unweighted, as defined by Cohen, 1960).",
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "Cohen's \u03ba (Cohen, 1960) corrects percent agreement for the agreement two",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "Cohen, J. (1960). A coefficient of agreement for nominal scales.",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "agree.py",
+     "quote": "Compute percent agreement and unweighted Cohen's (1960) kappa.",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "README.md",
+     "text": "reports percent agreement and Cohen's \u03ba (unweighted, as defined by Cohen, 1960).",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "Cohen's \u03ba (Cohen, 1960) corrects percent agreement for the agreement two",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added",
+     "copied_from": [
+      "notes/readme-draft.md"
+     ]
+    },
+    {
+     "file": "README.md",
+     "text": "Cohen, J. (1960). A coefficient of agreement for nominal scales.",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added",
+     "copied_from": [
+      "notes/references.md"
+     ]
+    },
+    {
+     "file": "agree.py",
+     "text": "Compute percent agreement and unweighted Cohen's (1960) kappa.",
+     "by": "Claude",
+     "turn": 3,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U20",
+   "kind": "decision",
+   "row": "S5",
+   "label": "Source for interpretation benchmarks: Landis and Koch (1977)",
+   "anchors": [
+    {
+     "file": "README.md",
+     "quote": "worse than chance. Landis and Koch (1977) call \u03ba from 0.61 to 0.80",
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "\"substantial\" agreement, and \u03ba above 0.80 \"almost perfect\". Hallgren (2012) is",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "Landis, J. R., & Koch, G. G. (1977). The measurement of observer agreement for categorical data.",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "README.md",
+     "text": "worse than chance. Landis and Koch (1977) call \u03ba from 0.61 to 0.80",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "\"substantial\" agreement, and \u03ba above 0.80 \"almost perfect\". Hallgren (2012) is",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "Landis, J. R., & Koch, G. G. (1977). The measurement of observer agreement for c",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added",
+     "copied_from": [
+      "notes/references.md"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "U21",
+   "kind": "decision",
+   "row": "S5",
+   "label": "Source for practical tutorial: Hallgren (2012)",
+   "anchors": [
+    {
+     "file": "README.md",
+     "quote": "a practical tutorial on computing \u03ba and related statistics for observational",
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "\"substantial\" agreement, and \u03ba above 0.80 \"almost perfect\". Hallgren (2012) is",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "Hallgren, K. A. (2012). Computing inter-rater reliability for observational data: An overview and tutorial.",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "README.md",
+     "text": "a practical tutorial on computing \u03ba and related statistics for observational",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "\"substantial\" agreement, and \u03ba above 0.80 \"almost perfect\". Hallgren (2012) is",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "Hallgren, K. A. (2012). Computing inter-rater reliability for observational data",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added",
+     "copied_from": [
+      "notes/references.md"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "U22",
+   "kind": "decision",
+   "row": "S7",
+   "label": "README structure: usage, what kappa is, example, missing codes, errors, tests, validation, limits",
+   "anchors": [
+    {
+     "file": "README.md",
+     "quote": "## Limits",
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "## Usage",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "## What \u03ba is",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "## The example",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "## Missing codes",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "## Errors",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "## Tests",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "## Validation",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "README.md",
+     "text": "## Limits",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "## Usage",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "## What \u03ba is",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added",
+     "copied_from": [
+      "notes/readme-draft.md"
+     ]
+    },
+    {
+     "file": "README.md",
+     "text": "## The example",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added",
+     "copied_from": [
+      "notes/readme-draft.md"
+     ]
+    },
+    {
+     "file": "README.md",
+     "text": "## Missing codes",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added",
+     "copied_from": [
+      "notes/readme-draft.md"
+     ]
+    },
+    {
+     "file": "README.md",
+     "text": "## Errors",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "## Tests",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "## Validation",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U23",
+   "kind": "decision",
+   "row": "S8",
+   "label": "Validation results table: what columns are shown",
+   "anchors": [
+    {
+     "file": "README.md",
+     "quote": "| File | Items used | Dropped | agree.py \u03ba | statsmodels \u03ba | Abs. difference | Match |",
+     "found": true
+    },
+    {
+     "file": "validation/compare_statsmodels.py",
+     "quote": "\"| File | Items used | Dropped | agree.py \u03ba | statsmodels \u03ba | Abs. difference | Match |\",",
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "README.md",
+     "text": "| File | Items used | Dropped | agree.py \u03ba | statsmodels \u03ba | Abs. difference | M",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added",
+     "copied_from": [
+      "validation/compare_statsmodels.py",
+      "validation/results.md"
+     ]
+    },
+    {
+     "file": "validation/compare_statsmodels.py",
+     "text": "\"| File | Items used | Dropped | agree.py \u03ba | statsmodels \u03ba | Abs. difference | ",
+     "by": "Claude",
+     "turn": 5,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U24",
+   "kind": "decision",
+   "row": "S9",
+   "label": "Limitations: kappa depends on prevalence; unweighted kappa treats all disagreements alike",
+   "anchors": [
+    {
+     "file": "README.md",
+     "quote": "\u03ba depends on how often each category is used",
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "for ordered categories, a weighted \u03ba is better.",
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "so two pairs of coders with the same percent agreement can get very different \u03ba",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "It also treats every disagreement alike",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "README.md",
+     "text": "\u03ba depends on how often each category is used",
+     "by": "the author, between turns",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "for ordered categories, a weighted \u03ba is better.",
+     "by": "the author, between turns",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "so two pairs of coders with the same percent agreement can get very different \u03ba",
+     "by": "the author, between turns",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "It also treats every disagreement alike",
+     "by": "the author, between turns",
+     "turn": 8,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U25",
+   "kind": "claim",
+   "row": "V1",
+   "label": "Reference entry: Cohen (1960)",
+   "anchors": [
+    {
+     "file": "README.md",
+     "quote": "Cohen, J. (1960). A coefficient of agreement for nominal scales.",
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "reports percent agreement and Cohen's \u03ba (unweighted, as defined by Cohen, 1960).",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "Cohen's \u03ba (Cohen, 1960) corrects percent agreement for the agreement two",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "README.md",
+     "text": "Cohen, J. (1960). A coefficient of agreement for nominal scales.",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added",
+     "copied_from": [
+      "notes/references.md"
+     ]
+    },
+    {
+     "file": "README.md",
+     "text": "reports percent agreement and Cohen's \u03ba (unweighted, as defined by Cohen, 1960).",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "Cohen's \u03ba (Cohen, 1960) corrects percent agreement for the agreement two",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added",
+     "copied_from": [
+      "notes/readme-draft.md"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "U26",
+   "kind": "claim",
+   "row": "V1",
+   "label": "Reference entry: Hallgren (2012)",
+   "anchors": [
+    {
+     "file": "README.md",
+     "quote": "Hallgren, K. A. (2012). Computing inter-rater reliability for observational data: An overview and tutorial.",
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "\"substantial\" agreement, and \u03ba above 0.80 \"almost perfect\". Hallgren (2012) is",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "README.md",
+     "text": "Hallgren, K. A. (2012). Computing inter-rater reliability for observational data",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added",
+     "copied_from": [
+      "notes/references.md"
+     ]
+    },
+    {
+     "file": "README.md",
+     "text": "\"substantial\" agreement, and \u03ba above 0.80 \"almost perfect\". Hallgren (2012) is",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U27",
+   "kind": "claim",
+   "row": "V1",
+   "label": "Reference entry: Landis and Koch (1977)",
+   "anchors": [
+    {
+     "file": "README.md",
+     "quote": "Landis, J. R., & Koch, G. G. (1977). The measurement of observer agreement for categorical data.",
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "worse than chance. Landis and Koch (1977) call \u03ba from 0.61 to 0.80",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "README.md",
+     "text": "Landis, J. R., & Koch, G. G. (1977). The measurement of observer agreement for c",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added",
+     "copied_from": [
+      "notes/references.md"
+     ]
+    },
+    {
+     "file": "README.md",
+     "text": "worse than chance. Landis and Koch (1977) call \u03ba from 0.61 to 0.80",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U28",
+   "kind": "claim",
+   "row": "V2",
+   "label": "Cohen (1960) defines unweighted kappa",
+   "anchors": [
+    {
+     "file": "README.md",
+     "quote": "reports percent agreement and Cohen's \u03ba (unweighted, as defined by Cohen, 1960).",
+     "found": true
+    },
+    {
+     "file": "agree.py",
+     "quote": "Compute percent agreement and unweighted Cohen's (1960) kappa.",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "README.md",
+     "text": "reports percent agreement and Cohen's \u03ba (unweighted, as defined by Cohen, 1960).",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "agree.py",
+     "text": "Compute percent agreement and unweighted Cohen's (1960) kappa.",
+     "by": "Claude",
+     "turn": 3,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U29",
+   "kind": "claim",
+   "row": "V2",
+   "label": "Cohen (1960): kappa corrects for chance; 0 at chance, 1 perfect, negative below chance",
+   "anchors": [
+    {
+     "file": "README.md",
+     "quote": "Cohen's \u03ba (Cohen, 1960) corrects percent agreement for the agreement two",
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "chance and 1 for perfect agreement, and it is negative when agreement is",
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "coders would reach by chance alone. It is 0 for agreement no better than",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "tests/test_agree.py",
+     "quote": "def test_kappa_can_be_negative(self):",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "tests/test_agree.py",
+     "quote": "def test_perfect_agreement(self):",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "README.md",
+     "text": "Cohen's \u03ba (Cohen, 1960) corrects percent agreement for the agreement two",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added",
+     "copied_from": [
+      "notes/readme-draft.md"
+     ]
+    },
+    {
+     "file": "README.md",
+     "text": "chance and 1 for perfect agreement, and it is negative when agreement is",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "coders would reach by chance alone. It is 0 for agreement no better than",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "tests/test_agree.py",
+     "text": "def test_kappa_can_be_negative(self):",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    },
+    {
+     "file": "tests/test_agree.py",
+     "text": "def test_perfect_agreement(self):",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U30",
+   "kind": "claim",
+   "row": "V2",
+   "label": "Landis and Koch (1977) benchmark labels for kappa ranges",
+   "anchors": [
+    {
+     "file": "README.md",
+     "quote": "worse than chance. Landis and Koch (1977) call \u03ba from 0.61 to 0.80",
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "\"substantial\" agreement, and \u03ba above 0.80 \"almost perfect\". Hallgren (2012) is",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "README.md",
+     "text": "worse than chance. Landis and Koch (1977) call \u03ba from 0.61 to 0.80",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "\"substantial\" agreement, and \u03ba above 0.80 \"almost perfect\". Hallgren (2012) is",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U31",
+   "kind": "claim",
+   "row": "V2",
+   "label": "Hallgren (2012) is a practical tutorial on kappa for observational data",
+   "anchors": [
+    {
+     "file": "README.md",
+     "quote": "a practical tutorial on computing \u03ba and related statistics for observational",
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "\"substantial\" agreement, and \u03ba above 0.80 \"almost perfect\". Hallgren (2012) is",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "Hallgren, K. A. (2012). Computing inter-rater reliability for observational data: An overview and tutorial.",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "README.md",
+     "text": "a practical tutorial on computing \u03ba and related statistics for observational",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "\"substantial\" agreement, and \u03ba above 0.80 \"almost perfect\". Hallgren (2012) is",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "Hallgren, K. A. (2012). Computing inter-rater reliability for observational data",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added",
+     "copied_from": [
+      "notes/references.md"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "U32",
+   "kind": "claim",
+   "row": "V3",
+   "label": "Quoted labels \"substantial\" and \"almost perfect\" from Landis and Koch",
+   "anchors": [
+    {
+     "file": "README.md",
+     "quote": "\"substantial\" agreement, and \u03ba above 0.80 \"almost perfect\". Hallgren (2012) is",
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "worse than chance. Landis and Koch (1977) call \u03ba from 0.61 to 0.80",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "README.md",
+     "text": "\"substantial\" agreement, and \u03ba above 0.80 \"almost perfect\". Hallgren (2012) is",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "worse than chance. Landis and Koch (1977) call \u03ba from 0.61 to 0.80",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U33",
+   "kind": "claim",
+   "row": "V4",
+   "label": "Example results (n 20, 2 dropped, 75 percent, kappa 0.62) consistent across README sections and results file",
+   "anchors": [
+    {
+     "file": "README.md",
+     "quote": "On example.csv, the two coders agree on 75 percent of the 20 items they both",
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "coded, and \u03ba is 0.62.",
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "  \"kappa\": 0.6226415094339622",
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "\"n\": 20,",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "\"dropped\": 2,",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "\"percent_agreement\": 75.0,",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "| `notes/example.csv` | 20 | 2 | 0.622641509434 | 0.622641509434 | 0.0e+00 | yes |",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "tests/test_agree.py",
+     "quote": "self.assertEqual(r[\"n\"], 20)",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "tests/test_agree.py",
+     "quote": "self.assertEqual(r[\"percent_agreement\"], 75.0)",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "tests/test_agree.py",
+     "quote": "self.assertAlmostEqual(r[\"kappa\"], 0.4125 / 0.6625)",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "README.md",
+     "text": "On example.csv, the two coders agree on 75 percent of the 20 items they both",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "coded, and \u03ba is 0.62.",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "\"kappa\": 0.6226415094339622",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "\"n\": 20,",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "\"dropped\": 2,",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "\"percent_agreement\": 75.0,",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "| `notes/example.csv` | 20 | 2 | 0.622641509434 | 0.622641509434 | 0.0e+00 | yes",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added",
+     "copied_from": [
+      "validation/results.md"
+     ]
+    },
+    {
+     "file": "tests/test_agree.py",
+     "text": "self.assertEqual(r[\"n\"], 20)",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    },
+    {
+     "file": "tests/test_agree.py",
+     "text": "self.assertEqual(r[\"percent_agreement\"], 75.0)",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    },
+    {
+     "file": "tests/test_agree.py",
+     "text": "self.assertAlmostEqual(r[\"kappa\"], 0.4125 / 0.6625)",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U34",
+   "kind": "claim",
+   "row": "V4",
+   "label": "Validation table in README matches validation/results.md",
+   "anchors": [
+    {
+     "file": "README.md",
+     "quote": "| `validation/data/four_categories.csv` | 28 | 2 | 0.596396396396 | 0.596396396396 | 0.0e+00 | yes |",
+     "found": true
+    },
+    {
+     "file": "validation/results.md",
+     "quote": "| `validation/data/four_categories.csv` | 28 | 2 | 0.596396396396 | 0.596396396396 | 0.0e+00 | yes |",
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "| `notes/example.csv` | 20 | 2 | 0.622641509434 | 0.622641509434 | 0.0e+00 | yes |",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "| `validation/data/case_and_disagreement.csv` | 12 | 2 | -0.333333333333 | -0.333333333333 | 0.0e+00 | yes |",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "README.md",
+     "text": "| `validation/data/four_categories.csv` | 28 | 2 | 0.596396396396 | 0.5963963963",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added",
+     "copied_from": [
+      "validation/results.md"
+     ]
+    },
+    {
+     "file": "validation/results.md",
+     "text": "| `validation/data/four_categories.csv` | 28 | 2 | 0.596396396396 | 0.5963963963",
+     "by": "Claude",
+     "turn": 5,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "| `notes/example.csv` | 20 | 2 | 0.622641509434 | 0.622641509434 | 0.0e+00 | yes",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added",
+     "copied_from": [
+      "validation/results.md"
+     ]
+    },
+    {
+     "file": "README.md",
+     "text": "| `validation/data/case_and_disagreement.csv` | 12 | 2 | -0.333333333333 | -0.33",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added",
+     "copied_from": [
+      "validation/results.md"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "U35",
+   "kind": "claim",
+   "row": "V5",
+   "label": "Kappa depends on category prevalence; same percent agreement can give very different kappa",
+   "anchors": [
+    {
+     "file": "README.md",
+     "quote": "\u03ba depends on how often each category is used",
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "so two pairs of coders with the same percent agreement can get very different \u03ba",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "README.md",
+     "text": "\u03ba depends on how often each category is used",
+     "by": "the author, between turns",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "so two pairs of coders with the same percent agreement can get very different \u03ba",
+     "by": "the author, between turns",
+     "turn": 8,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U36",
+   "kind": "claim",
+   "row": "V5",
+   "label": "Weighted kappa is better for ordered categories",
+   "anchors": [
+    {
+     "file": "README.md",
+     "quote": "for ordered categories, a weighted \u03ba is better.",
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "It also treats every disagreement alike",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "README.md",
+     "text": "for ordered categories, a weighted \u03ba is better.",
+     "by": "the author, between turns",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "It also treats every disagreement alike",
+     "by": "the author, between turns",
+     "turn": 8,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U37",
+   "kind": "claim",
+   "row": "V5",
+   "label": "statsmodels and agree.py compute the same closed-form formula",
+   "anchors": [
+    {
+     "file": "validation/results.md",
+     "quote": "compute the same closed-form formula, so any difference beyond",
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "validation/results.md",
+     "text": "compute the same closed-form formula, so any difference beyond",
+     "by": "Claude",
+     "turn": 5,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U38",
+   "kind": "claim",
+   "row": "TLV1",
+   "label": "Behavior: columns in any order, extras ignored, names and codes case-sensitive, exact comparison",
+   "anchors": [
+    {
+     "file": "README.md",
+     "quote": "any order; other columns are ignored. Column names and codes are case-sensitive,",
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "and codes are compared exactly as written, so `Yes`, `yes` and `yes ` are three",
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "different codes.",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "agree.py",
+     "quote": "given (case-sensitive, never recoded). A pair where either code is blank",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "tests/test_agree.py",
+     "quote": "def test_extra_columns_and_order_ignored(self):",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "tests/test_agree.py",
+     "quote": "def test_column_names_are_case_sensitive(self):",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "tests/test_agree.py",
+     "quote": "def test_codes_are_case_sensitive(self):",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "tests/test_agree.py",
+     "quote": "def test_codes_are_not_trimmed(self):",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "README.md",
+     "text": "any order; other columns are ignored. Column names and codes are case-sensitive,",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "and codes are compared exactly as written, so `Yes`, `yes` and `yes ` are three",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "different codes.",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "agree.py",
+     "text": "given (case-sensitive, never recoded). A pair where either code is blank",
+     "by": "Claude",
+     "turn": 3,
+     "change": "added"
+    },
+    {
+     "file": "tests/test_agree.py",
+     "text": "def test_extra_columns_and_order_ignored(self):",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    },
+    {
+     "file": "tests/test_agree.py",
+     "text": "def test_column_names_are_case_sensitive(self):",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    },
+    {
+     "file": "tests/test_agree.py",
+     "text": "def test_codes_are_case_sensitive(self):",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    },
+    {
+     "file": "tests/test_agree.py",
+     "text": "def test_codes_are_not_trimmed(self):",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U39",
+   "kind": "claim",
+   "row": "TLV1",
+   "label": "Behavior: definition of blank code and dropped count",
+   "anchors": [
+    {
+     "file": "README.md",
+     "quote": "whitespace, or is missing because the row is short.",
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "A code counts as blank if it is empty, contains only",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "Rows where either coder left the code blank are dropped, and the tool reports",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "| `dropped` | Rows dropped because a code was blank |",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "agree.py",
+     "quote": "True if a code is missing, empty, or only whitespace.",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "tests/test_agree.py",
+     "quote": "def test_blank_pairs_dropped_and_counted(self):",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "tests/test_agree.py",
+     "quote": "def test_short_row_gives_missing_code(self):",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "README.md",
+     "text": "whitespace, or is missing because the row is short.",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "A code counts as blank if it is empty, contains only",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "Rows where either coder left the code blank are dropped, and the tool reports",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "| `dropped` | Rows dropped because a code was blank |",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "agree.py",
+     "text": "True if a code is missing, empty, or only whitespace.",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    },
+    {
+     "file": "tests/test_agree.py",
+     "text": "def test_blank_pairs_dropped_and_counted(self):",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    },
+    {
+     "file": "tests/test_agree.py",
+     "text": "def test_short_row_gives_missing_code(self):",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U40",
+   "kind": "claim",
+   "row": "TLV1",
+   "label": "Behavior: error cases print to stderr, nothing to stdout, exit status 1",
+   "anchors": [
+    {
+     "file": "README.md",
+     "quote": "On any of the following, the tool prints a message to standard error, nothing",
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "to standard output, and exits with status 1:",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "agree.py",
+     "quote": "print(f\"agree.py: error: {args.csv_file}: {e}\", file=sys.stderr)",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "tests/test_agree.py",
+     "quote": "def test_error_exits_nonzero(self):",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "tests/test_agree.py",
+     "quote": "self.assertEqual(p.returncode, 1)",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "README.md",
+     "text": "On any of the following, the tool prints a message to standard error, nothing",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "to standard output, and exits with status 1:",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "agree.py",
+     "text": "print(f\"agree.py: error: {args.csv_file}: {e}\", file=sys.stderr)",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    },
+    {
+     "file": "tests/test_agree.py",
+     "text": "def test_error_exits_nonzero(self):",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    },
+    {
+     "file": "tests/test_agree.py",
+     "text": "self.assertEqual(p.returncode, 1)",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U41",
+   "kind": "claim",
+   "row": "TLV1",
+   "label": "Behavior: example run output on notes/example.csv",
+   "anchors": [
+    {
+     "file": "README.md",
+     "quote": "$ python3 agree.py notes/example.csv",
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "  \"expected\": 0.3375,",
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "\"n\": 20,",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "\"kappa\": 0.6226415094339622",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "tests/test_agree.py",
+     "quote": "self.assertAlmostEqual(r[\"expected\"], 0.3375)",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "tests/test_agree.py",
+     "quote": "self.assertEqual(r[\"dropped\"], 2)",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "On example.csv, the two coders agree on 75 percent of the 20 items they both",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "README.md",
+     "text": "$ python3 agree.py notes/example.csv",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "\"expected\": 0.3375,",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "\"n\": 20,",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "\"kappa\": 0.6226415094339622",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "tests/test_agree.py",
+     "text": "self.assertAlmostEqual(r[\"expected\"], 0.3375)",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    },
+    {
+     "file": "tests/test_agree.py",
+     "text": "self.assertEqual(r[\"dropped\"], 2)",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "On example.csv, the two coders agree on 75 percent of the 20 items they both",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U42",
+   "kind": "claim",
+   "row": "TLV1",
+   "label": "Behavior: tool uses only the standard library; validation script needs statsmodels and numpy",
+   "anchors": [
+    {
+     "file": "README.md",
+     "quote": "It uses only Python's standard library.",
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "and numpy; the tool and its tests do not.",
+     "found": true
+    },
+    {
+     "file": "validation/compare_statsmodels.py",
+     "quote": "Needs numpy and statsmodels, which the tool itself does not use. Writes",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "that. Full details are in `validation/results.md`. The script needs statsmodels",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "README.md",
+     "text": "It uses only Python's standard library.",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "and numpy; the tool and its tests do not.",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "validation/compare_statsmodels.py",
+     "text": "Needs numpy and statsmodels, which the tool itself does not use. Writes",
+     "by": "Claude",
+     "turn": 5,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "that. Full details are in `validation/results.md`. The script needs statsmodels",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U43",
+   "kind": "claim",
+   "row": "TLV1",
+   "label": "Behavior: comparison script drops blank rows by the same rule as the tool",
+   "anchors": [
+    {
+     "file": "README.md",
+     "quote": "The comparison script drops blank rows by the same rule as the tool, so it",
+     "found": true
+    },
+    {
+     "file": "validation/compare_statsmodels.py",
+     "quote": "if a is not None and b is not None and a.strip() and b.strip()]",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "validation/results.md",
+     "quote": "table counted directly from the string codes, after dropping rows with a",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "README.md",
+     "text": "The comparison script drops blank rows by the same rule as the tool, so it",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "validation/compare_statsmodels.py",
+     "text": "if a is not None and b is not None and a.strip() and b.strip()]",
+     "by": "Claude",
+     "turn": 5,
+     "change": "added"
+    },
+    {
+     "file": "validation/results.md",
+     "text": "table counted directly from the string codes, after dropping rows with a",
+     "by": "Claude",
+     "turn": 5,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U44",
+   "kind": "claim",
+   "row": "TLV1",
+   "label": "Description of validation data files (categories, blanks, short row)",
+   "anchors": [
+    {
+     "file": "validation/results.md",
+     "quote": "- `validation/data/four_categories.csv`: 4 categories with uneven marginals; one empty and one whitespace-only code. Categories: `A`, `B`, `C`, `D`.",
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "made-up files in `validation/data/`: one with four categories and uneven",
+     "found": true
+    },
+    {
+     "file": "validation/compare_statsmodels.py",
+     "quote": "\"4 categories with uneven marginals; one empty and one whitespace-only code.\"),",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "validation/compare_statsmodels.py",
+     "quote": "\"`yes`, `Yes` and `no` as three distinct codes, agreement below chance \"",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "validation/results.md",
+     "quote": "`yes`, `Yes` and `no` as three distinct codes, agreement below chance (negative kappa); one empty code and one short row.",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "marginals, and one where `yes`, `Yes` and `no` are distinct codes and \u03ba is",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "validation/results.md",
+     "text": "- `validation/data/four_categories.csv`: 4 categories with uneven marginals; one",
+     "by": "Claude",
+     "turn": 5,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "made-up files in `validation/data/`: one with four categories and uneven",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "validation/compare_statsmodels.py",
+     "text": "\"4 categories with uneven marginals; one empty and one whitespace-only code.\"),",
+     "by": "Claude",
+     "turn": 5,
+     "change": "added"
+    },
+    {
+     "file": "validation/compare_statsmodels.py",
+     "text": "\"`yes`, `Yes` and `no` as three distinct codes, agreement below chance \"",
+     "by": "Claude",
+     "turn": 5,
+     "change": "added"
+    },
+    {
+     "file": "validation/results.md",
+     "text": "`yes`, `Yes` and `no` as three distinct codes, agreement below chance (negative ",
+     "by": "Claude",
+     "turn": 5,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "marginals, and one where `yes`, `Yes` and `no` are distinct codes and \u03ba is",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U45",
+   "kind": "claim",
+   "row": "TLV1",
+   "label": "Test coverage description: 29 tests covering each function, command line, each bad input",
+   "anchors": [
+    {
+     "file": "README.md",
+     "quote": "29 tests, in `tests/test_agree.py`, covering each function, the command line,",
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "and each kind of bad input above. On Python 3.14.7 all 29 pass:",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "Ran 29 tests in 0.145s",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "README.md",
+     "text": "29 tests, in `tests/test_agree.py`, covering each function, the command line,",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "and each kind of bad input above. On Python 3.14.7 all 29 pass:",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "Ran 29 tests in 0.145s",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U46",
+   "kind": "claim",
+   "row": "TLV2",
+   "label": "Test result: all 29 tests pass on Python 3.14.7",
+   "anchors": [
+    {
+     "file": "README.md",
+     "quote": "and each kind of bad input above. On Python 3.14.7 all 29 pass:",
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "Ran 29 tests in 0.145s",
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "README.md",
+     "text": "and each kind of bad input above. On Python 3.14.7 all 29 pass:",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "Ran 29 tests in 0.145s",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U47",
+   "kind": "claim",
+   "row": "TLV3",
+   "label": "Validation results table numbers (items, dropped, both kappas, differences)",
+   "anchors": [
+    {
+     "file": "validation/results.md",
+     "quote": "| `notes/example.csv` | 20 | 2 | 0.622641509434 | 0.622641509434 | 0.0e+00 | yes |",
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "| `validation/data/case_and_disagreement.csv` | 12 | 2 | -0.333333333333 | -0.333333333333 | 0.0e+00 | yes |",
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "| `validation/data/four_categories.csv` | 28 | 2 | 0.596396396396 | 0.596396396396 | 0.0e+00 | yes |",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "validation/results.md",
+     "text": "| `notes/example.csv` | 20 | 2 | 0.622641509434 | 0.622641509434 | 0.0e+00 | yes",
+     "by": "Claude",
+     "turn": 5,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "| `validation/data/case_and_disagreement.csv` | 12 | 2 | -0.333333333333 | -0.33",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added",
+     "copied_from": [
+      "validation/results.md"
+     ]
+    },
+    {
+     "file": "README.md",
+     "text": "| `validation/data/four_categories.csv` | 28 | 2 | 0.596396396396 | 0.5963963963",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added",
+     "copied_from": [
+      "validation/results.md"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "U48",
+   "kind": "claim",
+   "row": "TLV3",
+   "label": "All three files match with a difference of 0",
+   "anchors": [
+    {
+     "file": "README.md",
+     "quote": "All three match, with a difference of 0:",
+     "found": true
+    },
+    {
+     "file": "validation/results.md",
+     "quote": "All files match.",
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "| `notes/example.csv` | 20 | 2 | 0.622641509434 | 0.622641509434 | 0.0e+00 | yes |",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "validation/results.md",
+     "quote": "| `validation/data/four_categories.csv` | 28 | 2 | 0.596396396396 | 0.596396396396 | 0.0e+00 | yes |",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "README.md",
+     "text": "All three match, with a difference of 0:",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "validation/results.md",
+     "text": "All files match.",
+     "by": "Claude",
+     "turn": 5,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "| `notes/example.csv` | 20 | 2 | 0.622641509434 | 0.622641509434 | 0.0e+00 | yes",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added",
+     "copied_from": [
+      "validation/results.md"
+     ]
+    },
+    {
+     "file": "validation/results.md",
+     "text": "| `validation/data/four_categories.csv` | 28 | 2 | 0.596396396396 | 0.5963963963",
+     "by": "Claude",
+     "turn": 5,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U49",
+   "kind": "claim",
+   "row": "TLV4",
+   "label": "Versions: Python 3.14.7, statsmodels 0.14.6, numpy 2.4.3",
+   "anchors": [
+    {
+     "file": "validation/results.md",
+     "quote": "Versions: Python 3.14.7, statsmodels 0.14.6, numpy 2.4.3.",
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "`cohens_kappa` from statsmodels 0.14.6 on `notes/example.csv` and on two",
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "validation/results.md",
+     "text": "Versions: Python 3.14.7, statsmodels 0.14.6, numpy 2.4.3.",
+     "by": "Claude",
+     "turn": 5,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "`cohens_kappa` from statsmodels 0.14.6 on `notes/example.csv` and on two",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U50",
+   "kind": "claim",
+   "row": "TLV5",
+   "label": "Setup works: run and test commands as stated",
+   "anchors": [
+    {
+     "file": "README.md",
+     "quote": "python3 agree.py FILE.csv",
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "python3 -m unittest discover -s tests",
+     "found": true
+    },
+    {
+     "file": "README.md",
+     "quote": "$ python3 agree.py notes/example.csv",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "README.md",
+     "text": "python3 agree.py FILE.csv",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "python3 -m unittest discover -s tests",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    },
+    {
+     "file": "README.md",
+     "text": "$ python3 agree.py notes/example.csv",
+     "by": "Claude",
+     "turn": 7,
+     "change": "added"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,269 @@
+{
+ "name": "high-high",
+ "paper": "archival",
+ "run": "high-high-2026-10-17-0857",
+ "base": "/Users/user/.warranted-delegation/demos/high-high-2026-10-17-0857",
+ "project": "/Users/user/.warranted-delegation/demos/high-high-2026-10-17-0857/project",
+ "venv": "/Users/user/.warranted-delegation/demos/high-high-2026-10-17-0857/venv",
+ "plugin": "/Users/user/.warranted-delegation/demos/high-high-2026-10-17-0857/plugin",
+ "session": "008327c2-34b1-4caa-869c-bc354cf8ce2a",
+ "started": "2026-10-17T08:57:59",
+ "phase": "save",
+ "prompts": 19,
+ "steps": [
+  {
+   "kind": "setup",
+   "commit": "d6b7fe7f2f71599f69da0c0236d617768b47213a"
+  },
+  {
+   "kind": "prompt",
+   "n": 1,
+   "seconds": 1693,
+   "turns": 2,
+   "cost_usd": 1.2334957,
+   "tool_calls": 45,
+   "resent": false
+  },
+  {
+   "kind": "prompt",
+   "n": 2,
+   "seconds": 44,
+   "turns": 2,
+   "cost_usd": 1.3743033,
+   "tool_calls": 1,
+   "resent": false
+  },
+  {
+   "kind": "prompt",
+   "n": 3,
+   "seconds": 61,
+   "turns": 9,
+   "cost_usd": 1.6543581,
+   "tool_calls": 8,
+   "resent": false
+  },
+  {
+   "kind": "prompt",
+   "n": 4,
+   "seconds": 717,
+   "turns": 3,
+   "cost_usd": 1.9652718999999998,
+   "tool_calls": 7,
+   "resent": false
+  },
+  {
+   "kind": "attest",
+   "sentence": "Stage 1 (collection): I read the ISSN API output and one 2008 paper's citing-year counts against counts_by_year, accepted all 12 collection decisions, set the Y+1 to Y+5 window, and saw a rerun reproduce the raw data byte for byte. Freeman & Huang and Wuchty details are still unverified.",
+   "commit": "9add7a08bb6c8b38b10788714f0f4942c024d6b8"
+  },
+  {
+   "kind": "prompt",
+   "n": 5,
+   "seconds": 986,
+   "turns": 45,
+   "cost_usd": 5.747874900000002,
+   "tool_calls": 43,
+   "resent": false
+  },
+  {
+   "kind": "prompt",
+   "n": 6,
+   "seconds": 503,
+   "turns": 17,
+   "cost_usd": 6.861333700000002,
+   "tool_calls": 16,
+   "resent": false
+  },
+  {
+   "kind": "prompt",
+   "n": 7,
+   "seconds": 177,
+   "turns": 22,
+   "cost_usd": 8.079022100000003,
+   "tool_calls": 21,
+   "resent": false
+  },
+  {
+   "kind": "prompt",
+   "n": 8,
+   "seconds": 31,
+   "turns": 3,
+   "cost_usd": 8.363505900000002,
+   "tool_calls": 2,
+   "resent": false
+  },
+  {
+   "kind": "attest",
+   "sentence": "Stage 2 (cleaning): I read summary.json and the cleaning log, checked the authorless records against Crossref, and went through the 15 random drops and the 15 shortest kept articles. I saw evidence for six borderline short items (three dropped, three kept) and for the anniversary essay. I accepted the final decision list: N=2,789, complete case 2,768.",
+   "commit": "31f223fe16cafd9d7770c24526b86fea7f1b9971"
+  },
+  {
+   "kind": "prompt",
+   "n": 9,
+   "seconds": 87,
+   "turns": 5,
+   "cost_usd": 8.8814409,
+   "tool_calls": 4,
+   "resent": false
+  },
+  {
+   "kind": "prompt",
+   "n": 10,
+   "seconds": 76,
+   "turns": 5,
+   "cost_usd": 9.3621953,
+   "tool_calls": 4,
+   "resent": false
+  },
+  {
+   "kind": "prompt",
+   "n": 11,
+   "seconds": 52,
+   "turns": 6,
+   "cost_usd": 9.7542101,
+   "tool_calls": 5,
+   "resent": false
+  },
+  {
+   "kind": "attest",
+   "sentence": "Stage 3 (countries): I read the country-code table (53 of 54 codes mapped, Taiwan left unmapped) and the evidence that api.worldbank.org has only current income groups. I decided to drop the income-group extension rather than use today's classification for 2008\u20132017; the paper will say this plainly as a limitation.",
+   "commit": "10633969701f06fc1e2c1b0b981e1fa01e5c0c10"
+  },
+  {
+   "kind": "prompt",
+   "n": 12,
+   "seconds": 352,
+   "turns": 28,
+   "cost_usd": 12.271754700000002,
+   "tool_calls": 22,
+   "resent": false
+  },
+  {
+   "kind": "prompt",
+   "n": 13,
+   "seconds": 96,
+   "turns": 13,
+   "cost_usd": 13.319092699999997,
+   "tool_calls": 11,
+   "resent": false
+  },
+  {
+   "kind": "attest",
+   "sentence": "Stage 4 (analysis): I read tables.md and figure1_data.csv and accepted the specification and decisions. H1 holds in every check. H2 is borderline, about 1.07 with the interval touching 1. The self-citation check is incomplete (1,200 of 2,768 papers) and says nothing about H2. I read the Taiwan table.",
+   "commit": "f23422b74b307f9407c24d145afaadad96defab2"
+  },
+  {
+   "kind": "prompt",
+   "n": 14,
+   "seconds": 341,
+   "turns": 23,
+   "cost_usd": 15.827028499999996,
+   "tool_calls": 21,
+   "resent": false
+  },
+  {
+   "kind": "prompt",
+   "n": 15,
+   "seconds": 158,
+   "turns": 13,
+   "cost_usd": 17.359648699999997,
+   "tool_calls": 11,
+   "resent": false
+  },
+  {
+   "kind": "prompt",
+   "n": 16,
+   "seconds": 207,
+   "turns": 13,
+   "cost_usd": 19.273424100000003,
+   "tool_calls": 12,
+   "resent": false
+  },
+  {
+   "kind": "prompt",
+   "n": 17,
+   "seconds": 72,
+   "turns": 8,
+   "cost_usd": 20.169802300000004,
+   "tool_calls": 6,
+   "resent": false
+  },
+  {
+   "kind": "prompt",
+   "n": 18,
+   "seconds": 300,
+   "turns": 12,
+   "cost_usd": 22.364631100000008,
+   "tool_calls": 11,
+   "resent": false
+  },
+  {
+   "kind": "prompt",
+   "n": 19,
+   "seconds": 320,
+   "turns": 23,
+   "cost_usd": 25.70145210000001,
+   "tool_calls": 22,
+   "resent": false
+  },
+  {
+   "kind": "attest",
+   "sentence": "Stage 5 (writing and references): I read the full paper.md and the 280-row paper_check.csv. All numbers and tables trace to code. I saw Wuchty and Larivi\u00e8re checked sentence by sentence against their abstracts and Freeman & Huang removed as unread. I saw the OpenAlex docs claims checked against saved pages, and the SMJ retitled-copy error found and fixed. H2 is stated as borderline, and the length is about 9.9 pages by estimate. Still unchecked: the World Bank file details (marked unverified), the full texts of the references, and typeset length.",
+   "commit": "fce7ef1ea8bac02a7174eab32570c5fc77d45392"
+  },
+  {
+   "kind": "hand edit",
+   "path": "provenance/finished-work.md"
+  },
+  {
+   "kind": "attest",
+   "sentence": "Corrected the finished-work map. Collection, cleaning, and analysis were listed as \"none\", so I named the scripts and data behind each stage. I left out the preliminary Stage 2 estimates (estimate_h1_h2.py and results/h1_h2_estimates.*), which the paper doesn't report. I added the reference check evidence.",
+   "commit": "e434ae9676c4a956e0ed78b69eaa8ab2e8cedb22"
+  }
+ ],
+ "author_usage": {
+  "input_tokens": 84,
+  "output_tokens": 11895,
+  "cache_creation_input_tokens": 419100,
+  "cache_read_input_tokens": 2103807,
+  "calls": 40,
+  "seconds": 157
+ },
+ "nudges": 0,
+ "versions": {
+  "plugin": "0.10.2",
+  "claude_code": "2.1.302 (Claude Code)",
+  "python_packages": [
+   "certifi==2026.7.22",
+   "charset-normalizer==3.5.2",
+   "contourpy==1.4.0",
+   "cycler==0.12.1",
+   "fonttools==4.67.0",
+   "formulaic==1.2.2",
+   "idna==3.20",
+   "interface_meta==2.0.1",
+   "kiwisolver==1.5.1",
+   "matplotlib==3.11.2",
+   "narwhals==2.27.1",
+   "numpy==2.5.4",
+   "packaging==26.3",
+   "pandas==3.0.6",
+   "patsy==1.0.3",
+   "pillow==13.0.0",
+   "pyparsing==3.3.3",
+   "pypdf==6.21.1",
+   "pyreadstat==1.3.6",
+   "python-dateutil==2.9.0.post0",
+   "requests==2.34.2",
+   "scipy==1.18.1",
+   "six==1.17.0",
+   "statsmodels==0.15.0",
+   "typing_extensions==4.16.0",
+   "urllib3==2.8.0",
+   "wrapt==2.5.1"
+  ],
+  "runner_commit": "e83806ef426beee69f4c179a92ae96e3ee28c508"
+ },
+ "map": true,
+ "finished": "2026-10-17T11:12:54"
+}

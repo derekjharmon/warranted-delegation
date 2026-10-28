@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Results: the second preregistered test (the fixed reader)</title>
+<style>
+:root { --bg: #fbfaf7; --fg: #1d1c1a; --muted: #6b6760; --rule: #e2ded6; --code: #f1eee8; --accent: #2f5d8a; color-scheme: light; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #17171a; --fg: #ecebe8; --muted: #a29f98; --rule: #34343a; --code: #232328; --accent: #8db7e0; color-scheme: dark; }
+}
+body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.6 Charter, "Iowan Old Style", Georgia, serif; }
+main { max-width: 760px; margin: 0 auto; padding: 32px 20px 72px; }
+nav { font: 14px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin-bottom: 24px; }
+h1, h2, h3, h4 { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.25; text-wrap: balance; }
+h1 { font-size: 28px; } h2 { font-size: 21px; margin-top: 40px; } h3 { font-size: 17px; margin-top: 28px; }
+a { color: var(--accent); }
+code { font: 14px ui-monospace, SFMono-Regular, Menlo, monospace; background: var(--code); padding: 1px 4px; border-radius: 4px; overflow-wrap: anywhere; }
+pre { position: relative; background: var(--code); padding: 12px 72px 12px 14px; border-radius: 8px; overflow-x: auto; }
+pre code { padding: 0; background: none; white-space: pre-wrap; }
+.copy { position: absolute; top: 8px; right: 8px; font: 12px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; padding: 3px 9px; border: 1px solid var(--rule); border-radius: 6px; background: var(--bg); color: var(--fg); cursor: pointer; }
+table { border-collapse: collapse; font-size: 14px; display: block; overflow-x: auto; margin: 16px 0; }
+th, td { border-bottom: 1px solid var(--rule); padding: 6px 10px; text-align: left; vertical-align: top; }
+img { max-width: 100%; height: auto; border: 1px solid var(--rule); border-radius: 6px; margin: 12px 0 4px; }
+</style>
+</head>
+<body><main>
+<nav><a href="../../index.html">Start page</a> · <a href="RESULTS.md">Markdown source</a></nav>
+<h1>Results: the second preregistered test (the fixed reader)</h1>
+<p><em>Redrawn 2026-10-23: the disclosures in <code>reader-runs/</code> were drawn again from their saved codes with plugin 0.10.7, in the layout the demonstrations use, which leaves out the section outside the two measures (DECISIONS.md, Oct 22). No codes or scores changed.</em></p>
+<p><em>2026-10-15, written by Claude. Preregistration and frozen reader attested in <code>057f94d</code> (README.md); twelve runs played that evening; the settled key attested in <code>d73f8bb</code>; the reader then run on all twelve, through the API and through headless Claude Code with no API key; scored by <code>score.py</code> (<a href="reader-runs/score.html"><code>reader-runs/score.md</code></a>).</em></p>
+<p><em>Corrected 2026-10-23: the settled key (<code>d73f8bb</code>) has 389 planted units and 325 labeled by precedent; the summary below says 390 and 324. The total, 725, and every score are unchanged.</em></p>
+<h2>The result</h2>
+<p><strong>The fixed reader is validated on both paths:</strong> κ is at least 0.6 on all three primary codes, through the API and headless, each on its own.</p>
+<table><thead><tr><th>Code</th><th>Layer</th><th>API: n</th><th>API: κ</th><th>Headless: n</th><th>Headless: κ</th></tr></thead><tbody><tr><td>Discretion: kept vs handed over</td><td>primary</td><td>336</td><td>0.73</td><td>342</td><td>0.71</td></tr><tr><td>Judgment certification</td><td>primary</td><td>188</td><td>0.78</td><td>191</td><td>0.77</td></tr><tr><td>Right-answer certification</td><td>primary</td><td>348</td><td>0.72</td><td>355</td><td>0.73</td></tr><tr><td>Discretion: given vs taken</td><td>second</td><td>188</td><td>0.66</td><td>191</td><td>0.63</td></tr><tr><td>Unchecked claims: no check vs wasn't notified</td><td>second</td><td>158</td><td>0.00</td><td>157</td><td>0.00</td></tr></tbody></table>
+<p>Agreement on the primary codes is 84–87% on both paths. For comparison, the first test's frozen reader scored 0.71, 0.70, and 0.75 on four runs, with 37 judgment-certification units; this test has 188–191, so that κ is now measured about twice as precisely.</p>
+<p><strong>Second layers.</strong></p>
+<ul><li><strong>Given vs taken clears 0.6 on both paths for the first time</strong> (0.66 and 0.63; the first test: 0.47). Whether the disclosure now reports the split is a decision for the author; this test only reports it.</li><li><strong>No check vs wasn't notified</strong> stays at κ 0 despite 97% agreement: the key has few "wasn't notified" claims, so the category is still unvalidated.</li></ul>
+<p><strong>By task</strong>, reported and not held to the bar: every task clears 0.6 on every primary code on both paths. The agreement tool (the tool pack) is lowest: kept vs handed over 0.71 through the API and 0.64 headless; right-answer certification 0.63 and 0.66. Schools is highest (judgment certification 0.83 and 0.87).</p>
+<p><strong>Listing.</strong> The reader found 684 of the key's 725 units through the API (94%) and 697 headless (96%); the first test's frozen reader found 85%. It lists at a finer grain, as before: 885 and 895 units, 281 on each path matching no key unit.</p>
+<h2>The runs and the key</h2>
+<ul><li><strong>Twelve runs</strong>, three tasks in four cells each, about 30 minutes in all; every record verifies. The other author's skill was used and captured in every run, and both brainstorm segments were labeled where the scripts put them.</li><li><strong>The key: 725 units</strong> (350 decisions, 375 claims), including <strong>209 judgment-certification units</strong> against the target of about 160. 390 planted, 324 labeled by Claude under a first-test ruling, 11 new kinds; 29 overrides where Claude departed from a script, most of them checks that by the record never read the source.</li><li><strong>The author's part:</strong> he ruled on the 11 new kinds, agreeing with Claude's code on 7, and spot-checked 33 of the 325 labels applied by precedent (a random tenth, seed 20261017), changing none (<code>labels/author.md</code>, <code>labels/spotcheck.md</code>).</li><li><strong>The planted errors:</strong> of the 56 that were errors in their run (error 5 was no error in four high-delegation runs, where the description matched the code), 50 were caught by the checks or fixed by Claude unasked. Six survived: all five in RAND low-delegation, low-warrant, and one in RAND high-delegation, low-warrant. In most low-warrant runs Claude fixed the errors unasked, as in the first test, so only the disclosure tells those runs apart from careful ones. Each run's fates are in <code>labels/notes/</code>.</li></ul>
+<p><strong>Cost:</strong> $19.37 on the API key for the API pass (85 minutes of model time); the headless pass billed nothing extra ($31.90 at list prices, on the subscription; 90 minutes).</p>
+<h2>Departures from the preregistration</h2>
+<ol><li><strong>Seven runs first refused to start.</strong> Claude's adapter work briefly changed the attested plugin folder while the runs were queued, and each run's start-up check refused, before making a project or running anything. They were requeued once the folder was clean and finished normally.</li><li><strong><code>labels/tools.py</code> gained a <code>check</code> command</strong> (it validates label files) <strong>and a <code>Claude, new kind</code> value</strong> (so new kinds stay out of the spot-check draw) after the attest. Neither changes the procedure.</li><li><strong><code>score.py</code> reads files with undecodable bytes replaced</strong> (<code>text_at</code>), changed after the reading and before any score was seen, when a reader unit naming a PNG figure stopped the scorer. A quote can't match inside an image either way; nothing changes for text files.</li><li><strong>The agreement key's summary line miscounts</strong> its low-high planted decisions (it says 9 kept and 8 handed over; its table, which the labels follow, gives 10 and 7).</li></ol>
+<p>Before Claude's labels were committed, two of them were made consistent across the six labeling agents (noted in the runs' notes): "what counts as blank" was marked a new kind in all four agreement runs, and two RAND methods descriptions became "no check" to match the first test's ruling.</p>
+<h2>Limits</h2>
+<p>Claude did the runs, the reading, and most of the labeling; the author ruled on the new kinds and spot-checked a tenth, and the "Claude graded Claude" limit is larger than in the first test. The simulated author's lines are scripted, the tasks are small, and two of the three are quantitative. Current models take no temperature setting, so a rerun would vary.</p>
+</main>
+<script>
+// A copy button on every box. The clipboard API can be refused on a page opened
+// from a file, so a hidden text area does the copying then.
+document.querySelectorAll("pre").forEach(function (pre) {
+  var button = document.createElement("button");
+  button.type = "button"; button.className = "copy"; button.textContent = "Copy";
+  button.addEventListener("click", function () {
+    var text = (pre.querySelector("code") || pre).innerText.replace(/\n$/, "");
+    var done = function () { button.textContent = "Copied"; setTimeout(function () { button.textContent = "Copy"; }, 1500); };
+    var fallback = function () {
+      var area = document.createElement("textarea");
+      area.value = text; area.style.position = "fixed"; area.style.opacity = "0";
+      document.body.appendChild(area); area.select();
+      try { document.execCommand("copy"); done(); } catch (e) {}
+      area.remove();
+    };
+    if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(text).then(done, fallback);
+    else fallback();
+  });
+  pre.appendChild(button);
+});
+</script>
+</body>
+</html>

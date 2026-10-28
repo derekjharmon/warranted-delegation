@@ -1,0 +1,1898 @@
+{
+ "U131": {
+  "id": "U131",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T37, T38, T39, T40",
+  "basis": "check_paper.py re-derived every table cell (B 71/71 OK); author: \"I read ... the 280-row paper_check.csv\"",
+  "confidence": "high"
+ },
+ "U132": {
+  "id": "U132",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T37, T38, T39, T40",
+  "basis": "table cells re-derived and pipeline re-run byte-for-byte; T40 \"All numbers and tables trace to code\"",
+  "confidence": "high"
+ },
+ "U133": {
+  "id": "U133",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T38, T39, T40",
+  "basis": "B table cells 71/71 OK; author read paper_check.csv",
+  "confidence": "high"
+ },
+ "U134": {
+  "id": "U134",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T38, T39, T40",
+  "basis": "B table cells 71/71 OK; author read paper_check.csv",
+  "confidence": "high"
+ },
+ "U135": {
+  "id": "U135",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T38, T39, T40",
+  "basis": "B table cells 71/71 OK; author read paper_check.csv",
+  "confidence": "high"
+ },
+ "U136": {
+  "id": "U136",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T38, T39, T40",
+  "basis": "paper_check.csv \"value articles,2,789,2,789,OK\"; T40 read the 280-row check",
+  "confidence": "high"
+ },
+ "U137": {
+  "id": "U137",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T38, T39, T40",
+  "basis": "value n_cc OK in paper_check.csv; T40 attest",
+  "confidence": "high"
+ },
+ "U138": {
+  "id": "U138",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T38, T39, T40",
+  "basis": "h1_rr/h1_ci/h1_pct recomputed OK; T40 attest",
+  "confidence": "high"
+ },
+ "U139": {
+  "id": "U139",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T38, T39, T40",
+  "basis": "h2_rr 1.066 recomputed after re-run, 280/280 OK; T40 attest",
+  "confidence": "high"
+ },
+ "U140": {
+  "id": "U140",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T38, T39, T40",
+  "basis": "\"solo_share,14.0%,14.0%,OK\"; T40 attest",
+  "confidence": "high"
+ },
+ "U141": {
+  "id": "U141",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T38, T39, T40",
+  "basis": "\"multi_share_solo,4.9%,4.9%,OK\"; T40 attest",
+  "confidence": "high"
+ },
+ "U142": {
+  "id": "U142",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T38, T39, T40",
+  "basis": "\"multi_share_4,62.3%,62.3%,OK\"; T40 attest",
+  "confidence": "high"
+ },
+ "U143": {
+  "id": "U143",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T38, T39, T40",
+  "basis": "\"records_in,3,656,3,656,OK\"; T40 attest",
+  "confidence": "high"
+ },
+ "U144": {
+  "id": "U144",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T38, T39, T40",
+  "basis": "D cleaning counts vs cleaning_log and summary.json OK; T40 attest",
+  "confidence": "high"
+ },
+ "U145": {
+  "id": "U145",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T38, T39, T40",
+  "basis": "drop_R1 112 OK; T40 attest",
+  "confidence": "high"
+ },
+ "U146": {
+  "id": "U146",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T38, T39, T40",
+  "basis": "drop_soshiki 64 OK; T40 attest",
+  "confidence": "high"
+ },
+ "U147": {
+  "id": "U147",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T38, T39, T40",
+  "basis": "after fix, drop_copies 31 OK, 280/280; T40 attest",
+  "confidence": "high"
+ },
+ "U148": {
+  "id": "U148",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T38, T39, T40",
+  "basis": "after fix, drop_unverifiable 8 OK; T40 attest",
+  "confidence": "high"
+ },
+ "U149": {
+  "id": "U149",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T38, T39, T40",
+  "basis": "drop_R3 11 OK; T40 attest",
+  "confidence": "high"
+ },
+ "U150": {
+  "id": "U150",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T38, T39, T40",
+  "basis": "drop_R4 246 OK; T40 attest",
+  "confidence": "high"
+ },
+ "U151": {
+  "id": "U151",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T38, T39, T40",
+  "basis": "drop_book_reviews 149 OK; T40 attest",
+  "confidence": "high"
+ },
+ "U152": {
+  "id": "U152",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T38, T39, T40",
+  "basis": "drop_amj_editorials 37 OK; T40 attest",
+  "confidence": "high"
+ },
+ "U153": {
+  "id": "U153",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T38, T39, T40",
+  "basis": "drop_R5 4 OK; T40 attest",
+  "confidence": "high"
+ },
+ "U154": {
+  "id": "U154",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T38, T39, T40",
+  "basis": "drop_R6 8 OK; T40 attest",
+  "confidence": "high"
+ },
+ "U155": {
+  "id": "U155",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T38, T39, T40",
+  "basis": "merged_dups 20 OK after re-run; T40 attest",
+  "confidence": "high"
+ },
+ "U156": {
+  "id": "U156",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T38, T39, T40",
+  "basis": "check_paper.py 280/280 OK incl. n_ASQ; attest: \"I read ... the 280-row paper_check.csv\"",
+  "confidence": "high"
+ },
+ "U157": {
+  "id": "U157",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T38, T39, T40",
+  "basis": "paper_check row n_AMJ OK; attest: \"read ... the 280-row paper_check.csv\"",
+  "confidence": "high"
+ },
+ "U158": {
+  "id": "U158",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T38, T39, T40",
+  "basis": "paper_check row n_SMJ OK; attest: \"read ... the 280-row paper_check.csv\"",
+  "confidence": "high"
+ },
+ "U159": {
+  "id": "U159",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T38, T39, T40",
+  "basis": "paper_check row n_OrgSci OK; attest: \"read ... the 280-row paper_check.csv\"",
+  "confidence": "high"
+ },
+ "U160": {
+  "id": "U160",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T34, T38, T39, T40",
+  "basis": "date_check_n recomputed from Crossref sample, OK; attest read paper_check.csv",
+  "confidence": "high"
+ },
+ "U161": {
+  "id": "U161",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T34, T38, T39, T40",
+  "basis": "date_check_year 95 OK in paper_check; attest read paper_check.csv",
+  "confidence": "high"
+ },
+ "U162": {
+  "id": "U162",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T34, T38, T39, T40",
+  "basis": "date_check_day 80 OK in paper_check; attest read paper_check.csv",
+  "confidence": "high"
+ },
+ "U163": {
+  "id": "U163",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T38, T39, T40",
+  "basis": "mismatch 5 fixed: \"changed the publication year of 32 papers\"; 280/280 OK, attest read paper_check.csv",
+  "confidence": "high"
+ },
+ "U164": {
+  "id": "U164",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T38, T39, T40",
+  "basis": "mean_cites 64.5 OK and table cells re-derived; attest read paper_check.csv",
+  "confidence": "high"
+ },
+ "U165": {
+  "id": "U165",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T38, T39, T40",
+  "basis": "median_cites 47 OK; attest read paper_check.csv",
+  "confidence": "high"
+ },
+ "U166": {
+  "id": "U166",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T16, T38, T39, T40",
+  "basis": "tool output \"any year before 2012 in any article: 0\"; wording fix 3 checked; attest read paper_check.csv",
+  "confidence": "high"
+ },
+ "U167": {
+  "id": "U167",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T38, T39, T40",
+  "basis": "aff_recovered 65 OK vs summary.json; attest read paper_check.csv",
+  "confidence": "high"
+ },
+ "U168": {
+  "id": "U168",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T38, T39, T40",
+  "basis": "n_incomplete 21 OK; attest read paper_check.csv",
+  "confidence": "high"
+ },
+ "U169": {
+  "id": "U169",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T38, T39, T40",
+  "basis": "alpha 0.51 OK and table cells re-derived; attest read paper_check.csv",
+  "confidence": "high"
+ },
+ "U170": {
+  "id": "U170",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T38, T39, T40",
+  "basis": "section C typed numbers 55/55 OK; attest read paper_check.csv",
+  "confidence": "medium"
+ },
+ "U171": {
+  "id": "U171",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T35, T36, T38, T40",
+  "basis": "T35 printed versions from venv; T36 \"Evidence accepted: ... the software versions\"",
+  "confidence": "high"
+ },
+ "U172": {
+  "id": "U172",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T38, T39, T40",
+  "basis": "cat_2 1.227 OK; attest read paper_check.csv",
+  "confidence": "high"
+ },
+ "U173": {
+  "id": "U173",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T38, T39, T40",
+  "basis": "cat_3 1.255 OK; attest read paper_check.csv",
+  "confidence": "high"
+ },
+ "U174": {
+  "id": "U174",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T38, T39, T40",
+  "basis": "cat_4 1.427 OK; attest read paper_check.csv",
+  "confidence": "high"
+ },
+ "U175": {
+  "id": "U175",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T38, T39, T40",
+  "basis": "cat_5+ 1.235 OK; attest read paper_check.csv",
+  "confidence": "high"
+ },
+ "U176": {
+  "id": "U176",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T38, T39, T40",
+  "basis": "h2ln_rr/h2ln_p OK; attest read paper_check.csv",
+  "confidence": "high"
+ },
+ "U177": {
+  "id": "U177",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T38, T39, T40",
+  "basis": "proxy_h1_min/max/pmax OK; attest read paper_check.csv",
+  "confidence": "high"
+ },
+ "U178": {
+  "id": "U178",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T38, T39, T40",
+  "basis": "proxy_h2_min/max OK; attest read paper_check.csv",
+  "confidence": "high"
+ },
+ "U179": {
+  "id": "U179",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T38, T39, T40",
+  "basis": "proxy_all_h2 and p OK; attest read paper_check.csv",
+  "confidence": "high"
+ },
+ "U180": {
+  "id": "U180",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T38, T39, T40",
+  "basis": "rob_h1_min/max OK; attest read paper_check.csv",
+  "confidence": "high"
+ },
+ "U181": {
+  "id": "U181",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T38, T39, T40",
+  "basis": "check_paper.py 'A,value teams_h1 ... OK'; attest 'I read ... the 280-row paper_check.csv'",
+  "confidence": "high"
+ },
+ "U182": {
+  "id": "U182",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T38, T39, T40",
+  "basis": "'A,value lin_pct,6.8%,6.8%,OK'; attest read paper_check.csv",
+  "confidence": "high"
+ },
+ "U183": {
+  "id": "U183",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T38, T39, T40",
+  "basis": "'A,value team_h1,1.261,1.261,OK'; attest read paper_check.csv",
+  "confidence": "high"
+ },
+ "U184": {
+  "id": "U184",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T38, T39, T40",
+  "basis": "rob_h2_min/max/pmin/pmax all OK in check; attest read paper_check.csv",
+  "confidence": "high"
+ },
+ "U185": {
+  "id": "U185",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T39, T40",
+  "basis": "'A,value clus_h2,1.066,1.066,OK' after re-run; attest read paper_check.csv",
+  "confidence": "high"
+ },
+ "U186": {
+  "id": "U186",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T38, T39, T40",
+  "basis": "'A,value wins_h2,1.071,1.071,OK'; attest read paper_check.csv",
+  "confidence": "high"
+ },
+ "U187": {
+  "id": "U187",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T38, T39, T40",
+  "basis": "'A,value tw_n,21,21,OK'; attest read paper_check.csv",
+  "confidence": "high"
+ },
+ "U188": {
+  "id": "U188",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T38, T39, T40",
+  "basis": "'A,value tw_multi,19,19,OK'; attest read paper_check.csv",
+  "confidence": "high"
+ },
+ "U189": {
+  "id": "U189",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T38, T39, T40",
+  "basis": "'A,value tw_only,2,2,OK'; attest read paper_check.csv",
+  "confidence": "high"
+ },
+ "U190": {
+  "id": "U190",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T38, T39, T40",
+  "basis": "'A,value tw_cn_only,0,0,OK'; attest read paper_check.csv",
+  "confidence": "high"
+ },
+ "U191": {
+  "id": "U191",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T38, T39, T40",
+  "basis": "'A,value hkmo_n,126,126,OK'; attest read paper_check.csv",
+  "confidence": "high"
+ },
+ "U192": {
+  "id": "U192",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T38, T39, T40",
+  "basis": "'A,value flip_n,4,4,OK'; attest read paper_check.csv",
+  "confidence": "high"
+ },
+ "U193": {
+  "id": "U193",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T38, T39, T40",
+  "basis": "'A,value flip_tw,1,1,OK'; attest read paper_check.csv",
+  "confidence": "high"
+ },
+ "U194": {
+  "id": "U194",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T38, T39, T40",
+  "basis": "'A,value cn_h2,1.064,1.064,OK'; attest read paper_check.csv",
+  "confidence": "high"
+ },
+ "U195": {
+  "id": "U195",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T32, T38, T39, T40",
+  "basis": "sub_all_n and comp_n OK in check; attest 'incomplete (1,200 of 2,768 papers)', read paper_check.csv",
+  "confidence": "high"
+ },
+ "U196": {
+  "id": "U196",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T38, T39, T40",
+  "basis": "'A,value self_1,5.6%,5.6%,OK'; attest read paper_check.csv",
+  "confidence": "high"
+ },
+ "U197": {
+  "id": "U197",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T38, T39, T40",
+  "basis": "'A,value self_2,6.6%,6.6%,OK'; attest read paper_check.csv",
+  "confidence": "high"
+ },
+ "U198": {
+  "id": "U198",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T38, T39, T40",
+  "basis": "'A,value self_3,7.4%,7.4%,OK'; attest read paper_check.csv",
+  "confidence": "high"
+ },
+ "U199": {
+  "id": "U199",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T38, T39, T40",
+  "basis": "'A,value self_4,7.8%,7.8%,OK'; attest read paper_check.csv",
+  "confidence": "high"
+ },
+ "U200": {
+  "id": "U200",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T38, T39, T40",
+  "basis": "'A,value self_5,11.6%,11.6%,OK'; attest read paper_check.csv",
+  "confidence": "high"
+ },
+ "U201": {
+  "id": "U201",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T38, T39, T40",
+  "basis": "sub_all_h1 and sub_ns_h1 OK in check; attest read paper_check.csv",
+  "confidence": "high"
+ },
+ "U202": {
+  "id": "U202",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T38, T39, T40",
+  "basis": "sub_all_h2 and comp_h2 OK in check; attest read paper_check.csv",
+  "confidence": "high"
+ },
+ "U203": {
+  "id": "U203",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T38, T39, T40",
+  "basis": "split_h2_d/se/p OK in check; attest read paper_check.csv",
+  "confidence": "high"
+ },
+ "U204": {
+  "id": "U204",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T38, T39, T40",
+  "basis": "wald_h1_p and wald_h2_p OK in check; attest read paper_check.csv",
+  "confidence": "high"
+ },
+ "U205": {
+  "id": "U205",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T38, T39, T40",
+  "basis": "check sections B table cells and E 'data-based wording' all OK; attest 'read ... the 280-row paper_check.csv'",
+  "confidence": "medium"
+ },
+ "U206": {
+  "id": "U206",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T38, T39, T40",
+  "basis": "check_paper.py flagged 'rises steeply with team size' (mismatch 6) and the wording was fixed; T40: 'I read ... the 280-row paper_check.csv'",
+  "confidence": "high"
+ },
+ "U207": {
+  "id": "U207",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T38, T39, T40",
+  "basis": "cat_2..cat_5+ values and table cells re-derived in check_paper.py (A/B all OK); author read paper_check.csv",
+  "confidence": "medium"
+ },
+ "U208": {
+  "id": "U208",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T38, T39, T40",
+  "basis": "Table 1 and Table 2 cells checked in section B; T40 'All numbers and tables trace to code'",
+  "confidence": "low"
+ },
+ "U209": {
+  "id": "U209",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T38, T39, T40",
+  "basis": "h2_rr/h2_ci/h2_p checked OK in paper_check.csv; T40 'H2 is stated as borderline'",
+  "confidence": "medium"
+ },
+ "U210": {
+  "id": "U210",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T38, T39, T40",
+  "basis": "mismatch 7 'does not shrink' fixed to 'changes little'; re-run 280/280 OK, author read paper_check.csv",
+  "confidence": "high"
+ },
+ "U211": {
+  "id": "U211",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T38, T39, T40",
+  "basis": "clus_h2_p, wins_h2_p, rob_h2_pmin/pmax all OK in paper_check.csv; author read it",
+  "confidence": "medium"
+ },
+ "U212": {
+  "id": "U212",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T38, T39, T40",
+  "basis": "Table 5 cells re-derived from CSV in section B; author read paper_check.csv",
+  "confidence": "medium"
+ },
+ "U213": {
+  "id": "U213",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T38, T39, T40",
+  "basis": "Table 5 cells checked in section B; author read paper_check.csv",
+  "confidence": "medium"
+ },
+ "U214": {
+  "id": "U214",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T38, T39, T40",
+  "basis": "wald_h1_p, wald_h2_p OK in paper_check.csv; author read it",
+  "confidence": "medium"
+ },
+ "U215": {
+  "id": "U215",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T38, T39, T40",
+  "basis": "self_1..self_5 values OK in paper_check.csv; author read the 280 rows",
+  "confidence": "medium"
+ },
+ "U216": {
+  "id": "U216",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T38, T39, T40",
+  "basis": "'A,value ff_best_bic,the logarithm,the logarithm,OK'; T40 read paper_check.csv",
+  "confidence": "high"
+ },
+ "U217": {
+  "id": "U217",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T38, T39, T40",
+  "basis": "proxy_h1_min/max, rob_h1_min/max, pmax values OK in paper_check.csv; author read it",
+  "confidence": "medium"
+ },
+ "U218": {
+  "id": "U218",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T38, T39, T40",
+  "basis": "rob_h2_min/max and p ranges OK in paper_check.csv; author read it",
+  "confidence": "medium"
+ },
+ "U219": {
+  "id": "U219",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T38, T39, T40",
+  "basis": "split_h2_d/se/p OK in paper_check.csv; author read it",
+  "confidence": "medium"
+ },
+ "U220": {
+  "id": "U220",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T31, T32, T34",
+  "basis": "specification accepted in T32 ('Decisions 1\u201312 ... accepted'); no record of checking the paper's description against code",
+  "confidence": "medium"
+ },
+ "U221": {
+  "id": "U221",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T31, T32, T34",
+  "basis": "journal-specific model description written in T34; no check of description shown",
+  "confidence": "medium"
+ },
+ "U222": {
+  "id": "U222",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T31, T34",
+  "basis": "Wald test description in table note; no check shown",
+  "confidence": "medium"
+ },
+ "U223": {
+  "id": "U223",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T31, T34",
+  "basis": "table note describing proxy models; no check shown",
+  "confidence": "medium"
+ },
+ "U224": {
+  "id": "U224",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T34, T36",
+  "basis": "Table 4 note; no check of description against code",
+  "confidence": "medium"
+ },
+ "U225": {
+  "id": "U225",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T31, T34",
+  "basis": "self-citation definition described; no check of paper text against fetch script",
+  "confidence": "medium"
+ },
+ "U226": {
+  "id": "U226",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T20, T34",
+  "basis": "cleaning procedure described; counts checked but not this procedural description",
+  "confidence": "low"
+ },
+ "U227": {
+  "id": "U227",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T20, T21, T34",
+  "basis": "rule accepted in T21 ('explicit place names'), but paper description not checked",
+  "confidence": "medium"
+ },
+ "U228": {
+  "id": "U228",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T31, T32, T34",
+  "basis": "decisions 11-12 accepted in T32; paper description not checked",
+  "confidence": "medium"
+ },
+ "U229": {
+  "id": "U229",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T20, T34, T38",
+  "basis": "check covered the 32-paper count (mismatch 5), not the criteria wording",
+  "confidence": "low"
+ },
+ "U230": {
+  "id": "U230",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T38, T39, T40",
+  "basis": "tool found retitled copy escaped title matching (Crossref search saved); T40 'the SMJ retitled-copy error found and fixed'",
+  "confidence": "medium"
+ },
+ "U231": {
+  "id": "U231",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T20, T34, T38",
+  "basis": "limitation stated from T20 reasoning; no tool call compares it, not among checked items",
+  "confidence": "medium"
+ },
+ "U232": {
+  "id": "U232",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T16, T18, T19",
+  "basis": "raw citing-year counts shown next to counts_by_year; attest \"I read ... one 2008 paper's citing-year counts\"",
+  "confidence": "high"
+ },
+ "U233": {
+  "id": "U233",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T17, T18, T19",
+  "basis": "rerun SHA-256 identical; attest \"saw a rerun reproduce the raw data byte for byte\"",
+  "confidence": "high"
+ },
+ "U234": {
+  "id": "U234",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T38, T39, T40",
+  "basis": "check_paper recomputed Crossref date-check counts; attest \"I read ... the 280-row paper_check.csv\"",
+  "confidence": "medium"
+ },
+ "U235": {
+  "id": "U235",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T21, T22, T24",
+  "basis": "15 random drops shown, six items checked against Crossref; attest \"went through the 15 random drops ... saw evidence\"",
+  "confidence": "high"
+ },
+ "U236": {
+  "id": "U236",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T20, T21",
+  "basis": "rule accepted (\"only explicit place names\") but recovered countries never compared to a source",
+  "confidence": "medium"
+ },
+ "U237": {
+  "id": "U237",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T32, T33, T37, T38, T40",
+  "basis": "figure regenerated byte-identical by hash; author read figure1_data.csv and replied \"Yes, remove the dead code\"",
+  "confidence": "medium"
+ },
+ "U103": {
+  "id": "U103",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T35, T36",
+  "basis": "DOI resolved and Crossref fields tabled; \"Evidence accepted: the reference check\"",
+  "confidence": "high"
+ },
+ "U104": {
+  "id": "U104",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T35, T36",
+  "basis": "DOI resolved and Crossref fields tabled; \"Evidence accepted: the reference check\"",
+  "confidence": "high"
+ },
+ "U105": {
+  "id": "U105",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T35, T37, T38, T40",
+  "basis": "sentence quoted against fetched abstract; attest \"checked sentence by sentence against their abstracts\"",
+  "confidence": "high"
+ },
+ "U106": {
+  "id": "U106",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T35, T36",
+  "basis": "abstract \"We have used 19.9 million papers...\"; \"Evidence accepted ... sentence-by-sentence check\"",
+  "confidence": "high"
+ },
+ "U107": {
+  "id": "U107",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T35, T36",
+  "basis": "verbatim abstract match; \"Evidence accepted\"",
+  "confidence": "high"
+ },
+ "U108": {
+  "id": "U108",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T35, T36",
+  "basis": "softened to \"detailed for\" per abstract; \"Evidence accepted\"",
+  "confidence": "high"
+ },
+ "U109": {
+  "id": "U109",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T35, T36",
+  "basis": "three indicators quoted from abstract; \"Evidence accepted\"",
+  "confidence": "high"
+ },
+ "U110": {
+  "id": "U110",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T35, T36",
+  "basis": "abstract \"not due simply to self-citations\"; \"Evidence accepted\"",
+  "confidence": "high"
+ },
+ "U111": {
+  "id": "U111",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T35, T36",
+  "basis": "abstract \"A similar trend is also observed\"; \"Evidence accepted\"",
+  "confidence": "high"
+ },
+ "U112": {
+  "id": "U112",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T35, T36",
+  "basis": "diminishing returns and diverse teams quoted from abstract; \"Evidence accepted\"",
+  "confidence": "high"
+ },
+ "U113": {
+  "id": "U113",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T34, T36",
+  "basis": "Discussion interpretation; sentence check covered Section 2 only",
+  "confidence": "medium"
+ },
+ "U114": {
+  "id": "U114",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T39, T40",
+  "basis": "stored About page checked by check_paper F; attest \"OpenAlex docs claims checked against saved pages\"",
+  "confidence": "high"
+ },
+ "U115": {
+  "id": "U115",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T38, T39, T40",
+  "basis": "check_paper 280/280 OK; attest \"read ... paper_check.csv\"",
+  "confidence": "high"
+ },
+ "U116": {
+  "id": "U116",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T38, T39, T40",
+  "basis": "substituted values and table cells recomputed; attest \"All numbers and tables trace to code\"",
+  "confidence": "high"
+ },
+ "U117": {
+  "id": "U117",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T39, T40",
+  "basis": "re-run check 280/280 after 1.066 change; attest read paper_check.csv",
+  "confidence": "high"
+ },
+ "U118": {
+  "id": "U118",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T38, T39, T40",
+  "basis": "sub_all_n and comp_n checked OK in paper_check.csv; attest",
+  "confidence": "high"
+ },
+ "U119": {
+  "id": "U119",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T38, T39, T40",
+  "basis": "check_paper C \"cross-reference Section 4.5 | heading exists\"; attest",
+  "confidence": "medium"
+ },
+ "U120": {
+  "id": "U120",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T32, T36",
+  "basis": "caption written in trim; no check compared it with the rows plotted",
+  "confidence": "low"
+ },
+ "U121": {
+  "id": "U121",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T3, T15, T39, T40",
+  "basis": "T39 docs re-fetched to data/raw/checks and checked; T40 attest: \"I saw the OpenAlex docs claims checked against saved pages\"",
+  "confidence": "high"
+ },
+ "U122": {
+  "id": "U122",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T3, T15, T39, T40",
+  "basis": "Stored authorship/institution pages quoted \"ISO 3166-1 alpha-2\"; T40 attest confirms docs claims checked against saved pages",
+  "confidence": "high"
+ },
+ "U123": {
+  "id": "U123",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T3, T16, T19, T38, T40",
+  "basis": "OpenAlex /sources ISSN lookup shown; T19 attest: \"I read the ISSN API output\"",
+  "confidence": "high"
+ },
+ "U124": {
+  "id": "U124",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T16, T19",
+  "basis": "Raw API output shown with 0170-8406 = Organization Studies; T19 \"I read the ISSN API output\"",
+  "confidence": "high"
+ },
+ "U125": {
+  "id": "U125",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T20, T21",
+  "basis": "Claude stated the English title in T20; no lookup compares it to a source; author accepted decision 5 in T21",
+  "confidence": "medium"
+ },
+ "U126": {
+  "id": "U126",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T20, T38, T40",
+  "basis": "T38: online-first \"supported by the data ... but not by the journals' own statements\"; listed as unchecked",
+  "confidence": "medium"
+ },
+ "U127": {
+  "id": "U127",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T26, T28, T39",
+  "basis": "API calls for Chile 2010 and WDI archive returned current group; T28 attest: \"I read ... the evidence that api.worldbank.org has only current income groups\"",
+  "confidence": "high"
+ },
+ "U128": {
+  "id": "U128",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T26, T27, T39, T40",
+  "basis": "Host blocked; marked [Unverified]; T40: \"Still unchecked: the World Bank file details\"",
+  "confidence": "high"
+ },
+ "U129": {
+  "id": "U129",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T25, T27, T28, T31, T33",
+  "basis": "Code counts list TW, HK, MO separately in OpenAlex data; T28 attest read the country-code table; T33 \"I read the Taiwan table\"",
+  "confidence": "medium"
+ },
+ "U130": {
+  "id": "U130",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T13, T20, T21, T24",
+  "basis": "Tool listed front matter, reviews, editorials typed 'article'; T24 attest: read the cleaning log and 15 random drops",
+  "confidence": "medium"
+ },
+ "U54": {
+  "id": "U54",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T16, T17",
+  "basis": "\"Window decision: citations in calendar years Y+1 to Y+5\"",
+  "confidence": "high"
+ },
+ "U55": {
+  "id": "U55",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T29, T31, T32",
+  "basis": "\"Use the specification you think is right\"; decision 6; \"Decisions 1\u201312 and 14\u201317 accepted\"",
+  "confidence": "high"
+ },
+ "U56": {
+  "id": "U56",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T29, T21",
+  "basis": "Author's notes and prompt name \"multi-country status\" as H2's variable",
+  "confidence": "medium"
+ },
+ "U57": {
+  "id": "U57",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T29, T31, T32",
+  "basis": "Decision 7 \"H2 controls team size by categories\"; accepted in list without reason",
+  "confidence": "high"
+ },
+ "U58": {
+  "id": "U58",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T29, T31, T32",
+  "basis": "Decision 10 \"confounders are checks, not main-model controls\"; accepted",
+  "confidence": "high"
+ },
+ "U59": {
+  "id": "U59",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T21, T29, T31",
+  "basis": "Notes' draft methods: \"We estimate negative binomial models\"; T21 \"as in the notes' draft methods\"",
+  "confidence": "medium"
+ },
+ "U60": {
+  "id": "U60",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T29, T31, T32",
+  "basis": "Decision 4 \"Journal-by-year fixed effects\"; accepted without reason",
+  "confidence": "high"
+ },
+ "U61": {
+  "id": "U61",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T29, T31, T32",
+  "basis": "Decision 5 \"Robust standard errors\"; accepted",
+  "confidence": "high"
+ },
+ "U62": {
+  "id": "U62",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T29, T31, T32",
+  "basis": "Decision 17 \"No correction for multiple checks\"; accepted",
+  "confidence": "high"
+ },
+ "U63": {
+  "id": "U63",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T29, T31, T32",
+  "basis": "Prompt asked for \"the author count's functional form\"; Claude chose linear (decision 6); accepted",
+  "confidence": "medium"
+ },
+ "U64": {
+  "id": "U64",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T29",
+  "basis": "Prompt: \"test robustness (e.g. ... solo versus team ...)\"",
+  "confidence": "high"
+ },
+ "U65": {
+  "id": "U65",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T29, T31, T32",
+  "basis": "Prompt named \"outliers like the 17-author paper\"; handling by dropping is decision 14; accepted",
+  "confidence": "medium"
+ },
+ "U66": {
+  "id": "U66",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T29, T31, T32",
+  "basis": "Decision 14 \"dropping the large-team papers\"; accepted without reason",
+  "confidence": "medium"
+ },
+ "U67": {
+  "id": "U67",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T29, T31, T32",
+  "basis": "Decision 14 \"capping at the 99th percentile\"; accepted without reason",
+  "confidence": "high"
+ },
+ "U68": {
+  "id": "U68",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T29",
+  "basis": "Prompt: \"a Poisson alternative\"",
+  "confidence": "high"
+ },
+ "U69": {
+  "id": "U69",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T29, T31, T32",
+  "basis": "T29 'test robustness'; T31 decision 4 'Separate effects are a check'; T32 'Decisions 1\u201312 and 14\u201317 accepted'",
+  "confidence": "high"
+ },
+ "U70": {
+  "id": "U70",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T29, T31, T32",
+  "basis": "T31 decision 5 'Clustering by journal-year is a check'; T32 'Decisions 1\u201312 ... accepted'",
+  "confidence": "high"
+ },
+ "U71": {
+  "id": "U71",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T29, T31, T32, T33",
+  "basis": "T31 robustness 'Within teams only (2+ authors), it's 1.089'; T33 attest 'accepted the specification and decisions'",
+  "confidence": "medium"
+ },
+ "U72": {
+  "id": "U72",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T29, T31, T32, T33",
+  "basis": "T29 'for the Taiwan authors say what they do'; T31 decision 9 'Merging them into China is a check'; T32 accepted",
+  "confidence": "high"
+ },
+ "U73": {
+  "id": "U73",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T29, T31, T32",
+  "basis": "T31 decision 8 'A variant counting only differences between authors gives 1.068'; T32 accepted",
+  "confidence": "high"
+ },
+ "U74": {
+  "id": "U74",
+  "discretion": "given",
+  "certification": "changed",
+  "turns": "T29, T31, T32",
+  "basis": "T31 decision 13 subsample of 1,200; T32 'Decision 13 I'm changing... say plainly that H2 can't be assessed there'",
+  "confidence": "high"
+ },
+ "U75": {
+  "id": "U75",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T29, T31, T32, T33",
+  "basis": "T31 'H2: multi-country (log team size) 1.070'; T33 'accepted the specification and decisions'",
+  "confidence": "medium"
+ },
+ "U76": {
+  "id": "U76",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T29, T31, T32",
+  "basis": "T29 'Check that author count ... aren't just proxying'; T31 lists 'paper length'; decision 10; T32 accepted",
+  "confidence": "high"
+ },
+ "U77": {
+  "id": "U77",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T29, T31, T32",
+  "basis": "T31 lists 'number of references'; decision 10; T32 accepted",
+  "confidence": "high"
+ },
+ "U78": {
+  "id": "U78",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T29, T31, T32",
+  "basis": "T31 lists 'any US-based author'; decision 10; T32 accepted",
+  "confidence": "high"
+ },
+ "U79": {
+  "id": "U79",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T29, T31, T32",
+  "basis": "T31 decision 12 '\"Several institutions\" counts distinct institution IDs'; T32 accepted",
+  "confidence": "high"
+ },
+ "U80": {
+  "id": "U80",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T29, T31, T32",
+  "basis": "T31 decision 11 'Prior output is counted within the sample only'; T32 accepted",
+  "confidence": "high"
+ },
+ "U81": {
+  "id": "U81",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T29, T31, T32",
+  "basis": "T31 'one at a time, then all together'; decision 10; T32 accepted",
+  "confidence": "high"
+ },
+ "U82": {
+  "id": "U82",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T29, T31, T32",
+  "basis": "T31 decision 6 'The straight line, categories and team-versus-solo are shown too'; T32 accepted",
+  "confidence": "high"
+ },
+ "U83": {
+  "id": "U83",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T29, T31, T32",
+  "basis": "T29 'the author count's functional form'; T31 decision 6 'fits better on BIC'; T32 accepted",
+  "confidence": "high"
+ },
+ "U84": {
+  "id": "U84",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T29, T31, T32",
+  "basis": "T29 'journal-specific effects'; T31 decision 15 'separate per-journal models'; T32 accepted",
+  "confidence": "high"
+ },
+ "U85": {
+  "id": "U85",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T29, T31, T32",
+  "basis": "T31 decision 15 'plus a test of equal slopes in the pooled model'; T32 accepted",
+  "confidence": "high"
+ },
+ "U86": {
+  "id": "U86",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T32",
+  "basis": "T32 'add to Table 4 the full-sample H2 for the same 1,200 papers' complement'",
+  "confidence": "high"
+ },
+ "U87": {
+  "id": "U87",
+  "discretion": "taken",
+  "certification": "okayed",
+  "turns": "T32, T33",
+  "basis": "T32 reply adds 'difference in log ratio 0.080, standard error 0.072, p = 0.26' beyond the asked rows; T33 attest 'accepted the specification and decisions'",
+  "confidence": "medium"
+ },
+ "U88": {
+  "id": "U88",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T29, T31, T32, T33",
+  "basis": "T31 'Self-citations rise from 5.6% ... to 11.6%'; T33 attest 'accepted the specification and decisions'",
+  "confidence": "medium"
+ },
+ "U89": {
+  "id": "U89",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T29, T31, T33",
+  "basis": "T29 'for the Taiwan authors say what they do'; T31 Table 6 counts; T33 'I read the Taiwan table'",
+  "confidence": "medium"
+ },
+ "U90": {
+  "id": "U90",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T20, T21",
+  "basis": "T20 'show me the evidence'; reply 'In a random sample of 100 papers checked against Crossref'; T21 'Accept: ... 2'",
+  "confidence": "medium"
+ },
+ "U16": {
+  "id": "U16",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3",
+  "basis": "T3 'collect the articles for the four journals listed there from OpenAlex'",
+  "confidence": "high"
+ },
+ "U17": {
+  "id": "U17",
+  "discretion": "given",
+  "certification": "elaborated and okayed",
+  "turns": "T3, T15, T16",
+  "basis": "T16 '1 (Organization Science is 1047-7039, I mixed it up with Organization Studies)'",
+  "confidence": "medium"
+ },
+ "U18": {
+  "id": "U18",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T3, T15, T16",
+  "basis": "T3 'You decide the years'; T15 decision 3 'Years: 2008\u20132017'; T16 'Decisions 1\u201312: I accept all'",
+  "confidence": "medium"
+ },
+ "U19": {
+  "id": "U19",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T3, T15, T16, T19",
+  "basis": "T16: \"Decisions 1\u201312: I accept all... On 2, keep the extra-location records but flag them\"",
+  "confidence": "medium"
+ },
+ "U20": {
+  "id": "U20",
+  "discretion": "given",
+  "certification": "changed",
+  "turns": "T29, T31, T32",
+  "basis": "T32: \"Decision 13 I'm changing... Fetch the remaining papers if the API budget allows\"",
+  "confidence": "high"
+ },
+ "U21": {
+  "id": "U21",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T3, T15, T16",
+  "basis": "T3: \"You decide the years, document types, and fields\"; T16: \"Specifically... 8\"",
+  "confidence": "high"
+ },
+ "U22": {
+  "id": "U22",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T3, T15, T16, T19",
+  "basis": "T16: \"6 (counting citing works directly)\" accepted without a reason",
+  "confidence": "medium"
+ },
+ "U23": {
+  "id": "U23",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T20, T21, T22, T23",
+  "basis": "T20: \"You decide how to handle...\"; T21: \"Accept: ... 6\"",
+  "confidence": "medium"
+ },
+ "U24": {
+  "id": "U24",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T3, T15, T16, T21",
+  "basis": "T3: \"You decide the... document types\"; T16: \"I accept all\"",
+  "confidence": "high"
+ },
+ "U25": {
+  "id": "U25",
+  "discretion": "given",
+  "certification": "changed",
+  "turns": "T20, T21, T22",
+  "basis": "T21: \"Accept: 1 for front matter only... Recover authors for real papers instead of dropping them\"",
+  "confidence": "high"
+ },
+ "U26": {
+  "id": "U26",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T20, T21",
+  "basis": "T20 reply item 5 Soshiki Kagaku; T21: \"Accept: ... 5\"",
+  "confidence": "medium"
+ },
+ "U27": {
+  "id": "U27",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T20, T21, T38, T39",
+  "basis": "T21: \"Accept: ... 3\"; T39: \"take option (a)\"",
+  "confidence": "medium"
+ },
+ "U28": {
+  "id": "U28",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T20, T21, T39",
+  "basis": "T21: \"Accept: ... 5\"",
+  "confidence": "medium"
+ },
+ "U29": {
+  "id": "U29",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T20, T21",
+  "basis": "T21: \"Accept: ... 3\" (duplicates)",
+  "confidence": "high"
+ },
+ "U30": {
+  "id": "U30",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T20, T21, T22, T23",
+  "basis": "T22: \"the cutoff stays at 6 pages\"; T23: \"Stage 2 decisions accepted as listed\"",
+  "confidence": "medium"
+ },
+ "U31": {
+  "id": "U31",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T20, T21",
+  "basis": "T20 asked to decide retractions; T21: \"Accept: ... 9\"",
+  "confidence": "high"
+ },
+ "U32": {
+  "id": "U32",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T20, T21, T23",
+  "basis": "T20 item 6 \"8 then dropped\"; T21: \"Accept: ... 6\"",
+  "confidence": "medium"
+ },
+ "U33": {
+  "id": "U33",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T21",
+  "basis": "T21: \"Estimate H1 and H2 on one common sample, the complete-case one.\"",
+  "confidence": "high"
+ },
+ "U34": {
+  "id": "U34",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T21",
+  "basis": "T21: \"Check every R1 drop against Crossref for authors. Recover authors for real papers\"",
+  "confidence": "high"
+ },
+ "U37": {
+  "id": "U37",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T29, T31, T32",
+  "basis": "T29: \"Use the specification you think is right\"; T32: \"Decisions 1\u201312 and 14\u201317 accepted\"",
+  "confidence": "high"
+ },
+ "U38": {
+  "id": "U38",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T29, T31, T32",
+  "basis": "T29: \"Check that author count... aren't just proxying\"; T32: \"Decisions 1\u201312... accepted\"",
+  "confidence": "medium"
+ },
+ "U39": {
+  "id": "U39",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T29, T31, T32",
+  "basis": "T31 lists number of references as confounder; T32 accepted",
+  "confidence": "medium"
+ },
+ "U40": {
+  "id": "U40",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T29, T31, T32",
+  "basis": "T31 decision 11 prior output; T32: \"Decisions 1\u201312... accepted\"",
+  "confidence": "medium"
+ },
+ "U41": {
+  "id": "U41",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T16, T17",
+  "basis": "T17: \"Window decision: citations in calendar years Y+1 to Y+5... publication year itself is excluded\"",
+  "confidence": "high"
+ },
+ "U42": {
+  "id": "U42",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T20, T21",
+  "basis": "T20 item 6 dates corrected from Crossref; T21: \"Accept: ... 6\"",
+  "confidence": "high"
+ },
+ "U43": {
+  "id": "U43",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T29, T31, T32",
+  "basis": "T31 decision 8 \"includes a solo author affiliated in two countries\"; T32 accepted",
+  "confidence": "high"
+ },
+ "U44": {
+  "id": "U44",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T29, T31, T32",
+  "basis": "T31 decision 9 \"coded separately from China\"; T32: \"Decisions 1\u201312... accepted\"",
+  "confidence": "high"
+ },
+ "U45": {
+  "id": "U45",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T29, T31, T32",
+  "basis": "T31 decision 7 \"H2 controls team size by categories\"; T32 accepted",
+  "confidence": "high"
+ },
+ "U46": {
+  "id": "U46",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T29, T31, T32",
+  "basis": "T29 asked for proxy checks; T31 listed '\"Several institutions\" counts distinct institution IDs' (decision 12); T32 'Decisions 1\u201312 and 14\u201317 accepted.'",
+  "confidence": "medium"
+ },
+ "U47": {
+  "id": "U47",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T29, T31, T32",
+  "basis": "T31 decision 11, 'Prior output is counted within the sample only'; T32 accepted decisions 1\u201312 with no reason given.",
+  "confidence": "medium"
+ },
+ "U48": {
+  "id": "U48",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T29, T31, T32",
+  "basis": "T31 confounder list includes 'any US-based author' (decision 10); T32 'Decisions 1\u201312 \u2026 accepted.'",
+  "confidence": "medium"
+ },
+ "U49": {
+  "id": "U49",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T29, T31, T32",
+  "basis": "T31 decision 13: 'counts as a self-citation if the citing work lists any of the paper's authors by OpenAlex ID'; T32 changed only the subsample part of 13 and kept the definition.",
+  "confidence": "low"
+ },
+ "U50": {
+  "id": "U50",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T20, T21, T22",
+  "basis": "T21 reported the 'BIB' page fix from Crossref; T22 '(a) accepted: \u2026 plus the pipeline check and the BIB page fix.'",
+  "confidence": "high"
+ },
+ "U51": {
+  "id": "U51",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T20, T21",
+  "basis": "T20 'You decide' on duplicates; item 3 'citations merged \u2026 by citing-work ID'; T21 'Accept: \u2026 2, 3, \u2026'",
+  "confidence": "high"
+ },
+ "U52": {
+  "id": "U52",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T20, T21",
+  "basis": "T20 item 3 'matched \u2026 by title words plus a shared author surname'; T21 accepted 3.",
+  "confidence": "medium"
+ },
+ "U53": {
+  "id": "U53",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T38, T39",
+  "basis": "T38 Claude proposed option (a), a hand-linked merge; T39 'For 1 and 2 take option (a): fix the data, merge the citations.'",
+  "confidence": "medium"
+ },
+ "U35": {
+  "id": "U35",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T20, T21",
+  "basis": "T20 'You decide how to handle \u2026 missing affiliations'; T21 'Accept \u2026 the 7 rule of using only explicit place names.'",
+  "confidence": "high"
+ },
+ "U36": {
+  "id": "U36",
+  "discretion": "given",
+  "certification": "changed",
+  "turns": "T20, T21, T22, T23",
+  "basis": "T20 item 10 flagged the non-research screen; T22 'cutoff stays at 6 pages \u2026 check the six editorial-looking \u2026 Drop only those you can confirm', which added CONFIRMED_NONRESEARCH.",
+  "confidence": "medium"
+ },
+ "U91": {
+  "id": "U91",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3, T29, T34",
+  "basis": "The research idea is in the author's notes.md ('Do management papers written by larger teams \u2026 get cited more?'); the author named H1 in T29.",
+  "confidence": "medium"
+ },
+ "U92": {
+  "id": "U92",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3, T29, T34",
+  "basis": "The author's notes ask 'is that about size \u2026' versus teams spread across countries; the author named H2 in T29.",
+  "confidence": "medium"
+ },
+ "U93": {
+  "id": "U93",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T31, T33, T34",
+  "basis": "T31 'The advantage rises to 4 authors and doesn't grow beyond that'; T33 attest 'H1 holds in every check \u2026 accepted the specification and decisions.'",
+  "confidence": "medium"
+ },
+ "U94": {
+  "id": "U94",
+  "discretion": "given",
+  "certification": "elaborated and okayed",
+  "turns": "T31, T33, T34",
+  "basis": "T31 'H2 is borderline'; T33 attest 'H2 is borderline, about 1.07 with the interval touching 1'; T34 'State plainly that H2 is borderline.'",
+  "confidence": "medium"
+ },
+ "U95": {
+  "id": "U95",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T31, T32, T38, T39",
+  "basis": "T31 'multi-country status isn't standing in for these factors'; T38 proposed the 'changes little' wording; T39 'Apply all of them.'",
+  "confidence": "medium"
+ },
+ "U96": {
+  "id": "U96",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T31, T33",
+  "basis": "T31 'Its p-value moves around 0.05'; T33 attest 'accepted the specification and decisions \u2026 H2 is borderline.'",
+  "confidence": "medium"
+ },
+ "U97": {
+  "id": "U97",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T31, T32, T33",
+  "basis": "T31 'a small part of the team-size effect is mechanical self-citation'; T33 attest says the check 'says nothing about H2', leaving the H1 reading in place.",
+  "confidence": "low"
+ },
+ "U98": {
+  "id": "U98",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T32",
+  "basis": "T32 'Report the subsample result and say plainly that H2 can't be assessed there \u2026 so I can see whether the subsample is just noisy.'",
+  "confidence": "medium"
+ },
+ "U99": {
+  "id": "U99",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T29, T31, T32",
+  "basis": "T31 decision 15, the test of equal slopes, 'so the pooled estimate is appropriate'; T32 accepted 14\u201317.",
+  "confidence": "medium"
+ },
+ "U100": {
+  "id": "U100",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T29, T31, T32, T33",
+  "basis": "T31 'whether these places are coded separately doesn't matter for the results'; T32 accepted decision 9; T33 'I read the Taiwan table.'",
+  "confidence": "medium"
+ },
+ "U101": {
+  "id": "U101",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T26, T27, T28",
+  "basis": "T27 'the income-group extension is dropped from this paper \u2026 won't use current income groups as a substitute.'",
+  "confidence": "high"
+ },
+ "U102": {
+  "id": "U102",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T29, T31, T32",
+  "basis": "T31 decision 6 'The straight line, categories and team-versus-solo are shown too'; T32 accepted it.",
+  "confidence": "medium"
+ },
+ "U1": {
+  "id": "U1",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3, T16",
+  "basis": "The author's notes.md: 'Do management papers written by larger teams, and by teams spread across countries, get cited more?'",
+  "confidence": "high"
+ },
+ "U2": {
+  "id": "U2",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3, T16",
+  "basis": "The author's notes.md: 'If team papers are cited more, is that about size (more p\u2026' versus spread across countries.",
+  "confidence": "medium"
+ },
+ "U3": {
+  "id": "U3",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3, T16, T34",
+  "basis": "The author's notes.md Literature section supplied the team-science sources; T34 asked for a 'literature and hypotheses' section.",
+  "confidence": "medium"
+ },
+ "U4": {
+  "id": "U4",
+  "discretion": "given",
+  "certification": "changed",
+  "turns": "T34, T35, T36",
+  "basis": "T35: \"Soften or cut anything the abstract doesn't state\"; T36: \"remove it from Section 2\"",
+  "confidence": "medium"
+ },
+ "U5": {
+  "id": "U5",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T16, T36, T37",
+  "basis": "notes: \"Wuchty, Jones, and Uzzi (2005): teams increasingly dominate... team papers are cited more\"; T37 \"stays within the Wuchty abstract's wording\"",
+  "confidence": "medium"
+ },
+ "U6": {
+  "id": "U6",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T34, T36, T37",
+  "basis": "Discussion citation written by Claude; T34 reply on literature use not answered for this sentence",
+  "confidence": "low"
+ },
+ "U7": {
+  "id": "U7",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T16, T29",
+  "basis": "notes: \"If team papers are cited more, is that about size\"; T29 \"aren't just proxying for something else\"",
+  "confidence": "medium"
+ },
+ "U8": {
+  "id": "U8",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T34",
+  "basis": "\"introduction, literature and hypotheses, data and methods, results, discussion with limitations, references\"",
+  "confidence": "medium"
+ },
+ "U9": {
+  "id": "U9",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T29, T31, T32",
+  "basis": "\"Produce the tables and a figure by code\"; T32 \"I read tables.md. Decisions 1\u201312 and 14\u201317 accepted\"",
+  "confidence": "medium"
+ },
+ "U10": {
+  "id": "U10",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T29, T31, T32",
+  "basis": "T32 \"I read tables.md. Decisions 1\u201312 and 14\u201317 accepted\" (specification decisions 3\u20137)",
+  "confidence": "high"
+ },
+ "U11": {
+  "id": "U11",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T29, T31, T32",
+  "basis": "decision 16 (figure) in list; T32 \"Decisions 1\u201312 and 14\u201317 accepted\"",
+  "confidence": "high"
+ },
+ "U12": {
+  "id": "U12",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T29, T31, T32",
+  "basis": "proxy decisions 10\u201312; T32 \"Decisions 1\u201312 and 14\u201317 accepted\"",
+  "confidence": "high"
+ },
+ "U13": {
+  "id": "U13",
+  "discretion": "given",
+  "certification": "changed",
+  "turns": "T29, T31, T32",
+  "basis": "T32 \"Decision 13 I'm changing... add to Table 4 the full-sample H2 for the same 1,200 papers' complement\"",
+  "confidence": "high"
+ },
+ "U14": {
+  "id": "U14",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T29, T31, T32",
+  "basis": "decision 15 journal-specific models; T32 accepted 14\u201317",
+  "confidence": "high"
+ },
+ "U15": {
+  "id": "U15",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T34, T35, T36",
+  "basis": "T34 \"discussion with limitations\"; T36 \"Don't cut any limitation\"",
+  "confidence": "medium"
+ }
+}

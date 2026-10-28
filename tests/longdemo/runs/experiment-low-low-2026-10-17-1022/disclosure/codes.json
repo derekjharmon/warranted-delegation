@@ -1,0 +1,978 @@
+{
+ "U96": {
+  "id": "U96",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3, T9",
+  "basis": "clean.py log produced 12838 raw rows; producing is not checking; no confirmation",
+  "confidence": "medium"
+ },
+ "U97": {
+  "id": "U97",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3, T9",
+  "basis": "log 'keep finished == 1 ... 1949' produced, not checked",
+  "confidence": "medium"
+ },
+ "U98": {
+  "id": "U98",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3, T9",
+  "basis": "log 'Drop points above 3,500 | 62' produced, not checked",
+  "confidence": "medium"
+ },
+ "U99": {
+  "id": "U99",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3, T9",
+  "basis": "log 'Drop repeat IDs ... 25' produced, not checked",
+  "confidence": "medium"
+ },
+ "U100": {
+  "id": "U100",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3, T9",
+  "basis": "log 'Keep the 18 treatment codes | 42' produced, not checked",
+  "confidence": "medium"
+ },
+ "U101": {
+  "id": "U101",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3, T5, T7, T9",
+  "basis": "'10,760 workers' produced by clean.py; no comparison check",
+  "confidence": "medium"
+ },
+ "U102": {
+  "id": "U102",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T7, T9",
+  "basis": "'Dropped for having no points score: 501' printed by script",
+  "confidence": "medium"
+ },
+ "U103": {
+  "id": "U103",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T5, T7, T9",
+  "basis": "len(d) 10259 computed; producing not checking",
+  "confidence": "medium"
+ },
+ "U121": {
+  "id": "U121",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T7, T9",
+  "basis": "Section 3.4 requested in T9; 'without deviation' unchecked",
+  "confidence": "medium"
+ },
+ "U122": {
+  "id": "U122",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T9",
+  "basis": "design description written in requested Section 3; no lookup",
+  "confidence": "medium"
+ },
+ "U62": {
+  "id": "U62",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T9, T10, T11",
+  "basis": "T9 script compared paper vs arm_means.csv, recomputed 'T1 1.3, 7, 8'; T11 moved on without responding",
+  "confidence": "high"
+ },
+ "U63": {
+  "id": "U63",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T9, T11",
+  "basis": "'every value in Tables 1\u20133 matches the script's outputs'; no author response",
+  "confidence": "medium"
+ },
+ "U64": {
+  "id": "U64",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T9, T11",
+  "basis": "check script loaded t3 and compared paper; author never responded",
+  "confidence": "high"
+ },
+ "U65": {
+  "id": "U65",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T9, T11",
+  "basis": "Table 1 rows checked against arm_means.csv; unconfirmed",
+  "confidence": "medium"
+ },
+ "U66": {
+  "id": "U66",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T9, T11",
+  "basis": "Table 1 rows checked against arm_means.csv; unconfirmed",
+  "confidence": "medium"
+ },
+ "U67": {
+  "id": "U67",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T9, T11",
+  "basis": "recomputed SD '1.3': 726.9 from clean data; unconfirmed",
+  "confidence": "high"
+ },
+ "U68": {
+  "id": "U68",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T5, T9",
+  "basis": "practicecount missing counts computed in T5; producing not checking",
+  "confidence": "medium"
+ },
+ "U69": {
+  "id": "U69",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T5",
+  "basis": "per-arm missing counts '81 ... 138' computed, not checked",
+  "confidence": "medium"
+ },
+ "U70": {
+  "id": "U70",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T9, T11",
+  "basis": "recomputed mean '1.3': 1514.4 from clean data; unconfirmed",
+  "confidence": "high"
+ },
+ "U71": {
+  "id": "U71",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T9, T11",
+  "basis": "Table 1 rows checked against arm_means.csv; unconfirmed",
+  "confidence": "medium"
+ },
+ "U72": {
+  "id": "U72",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T9, T11",
+  "basis": "recomputed means for 7 and 8; Table 1 checked; unconfirmed",
+  "confidence": "medium"
+ },
+ "U73": {
+  "id": "U73",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T9, T11",
+  "basis": "Tables 2\u20133 rows checked against CSVs; unconfirmed",
+  "confidence": "medium"
+ },
+ "U74": {
+  "id": "U74",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T9, T11",
+  "basis": "Tables 2\u20133 rows checked against CSVs; unconfirmed",
+  "confidence": "medium"
+ },
+ "U75": {
+  "id": "U75",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T9, T11",
+  "basis": "'every value in Tables 1\u20133 matches'; Table 2 row; unconfirmed",
+  "confidence": "medium"
+ },
+ "U76": {
+  "id": "U76",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T9, T11",
+  "basis": "'every value in Tables 1\u20133 matches'; Table 2 row; unconfirmed",
+  "confidence": "medium"
+ },
+ "U77": {
+  "id": "U77",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T9",
+  "basis": "78% of ten-cent gain is a hand calculation listed as 'Simple calculations\u2026 not test results'; no tool compared it",
+  "confidence": "high"
+ },
+ "U78": {
+  "id": "U78",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T9, T10",
+  "basis": "T9 script compared paper tables with the CSVs ('mismatches 3', then recomputed); T10 is a bare /attest",
+  "confidence": "medium"
+ },
+ "U79": {
+  "id": "U79",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T9, T10",
+  "basis": "Table 3 row is covered by the T9 comparison script; the author never responded to that reply",
+  "confidence": "medium"
+ },
+ "U80": {
+  "id": "U80",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T9, T10",
+  "basis": "Table 3 row is covered by the T9 comparison script; the author never responded to that reply",
+  "confidence": "medium"
+ },
+ "U81": {
+  "id": "U81",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T9, T10",
+  "basis": "T9 check script reported 'every value in Tables 1\u20133 matches'; the Table 2 part of the check is truncated in the record; no author response",
+  "confidence": "low"
+ },
+ "U82": {
+  "id": "U82",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T9, T11",
+  "basis": "'psychological arms reached 43\u201364%' is a hand calculation; the 'about half' wording is the author's verbatim paragraph; no tool compared these",
+  "confidence": "high"
+ },
+ "U83": {
+  "id": "U83",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T9, T10",
+  "basis": "Gift row in Table 3 is covered by the T9 comparison script; the author never responded to that reply",
+  "confidence": "medium"
+ },
+ "U84": {
+  "id": "U84",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T9, T10",
+  "basis": "Table 2 H3a row falls under the T9 check of Tables 1\u20133; no author response",
+  "confidence": "low"
+ },
+ "U85": {
+  "id": "U85",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T9",
+  "basis": "14% is a hand calculation in the results text the author asked for; no tool compared it",
+  "confidence": "high"
+ },
+ "U86": {
+  "id": "U86",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T7, T9",
+  "basis": "Script output was copied to results.md; 'checked by reading the outputs' is not a comparison",
+  "confidence": "high"
+ },
+ "U87": {
+  "id": "U87",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T9",
+  "basis": "Robustness estimates are not in the checked tables; no comparison tool call",
+  "confidence": "high"
+ },
+ "U88": {
+  "id": "U88",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T9, T10",
+  "basis": "Table 3 rows are covered by the T9 comparison script; no author response",
+  "confidence": "medium"
+ },
+ "U89": {
+  "id": "U89",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T9, T10",
+  "basis": "Table 3 rows are covered by the T9 comparison script; no author response",
+  "confidence": "medium"
+ },
+ "U90": {
+  "id": "U90",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T9, T10",
+  "basis": "Table 3 rows are covered by the T9 comparison script; no author response",
+  "confidence": "medium"
+ },
+ "U91": {
+  "id": "U91",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T9, T10",
+  "basis": "Table 3 row is covered by the T9 comparison script; no author response",
+  "confidence": "medium"
+ },
+ "U92": {
+  "id": "U92",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T9",
+  "basis": "Prose ratio in the discussion section the author asked for; no tool compared it",
+  "confidence": "medium"
+ },
+ "U93": {
+  "id": "U93",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T9",
+  "basis": "'about 20 cents per worker' is listed as a simple calculation; no check",
+  "confidence": "high"
+ },
+ "U94": {
+  "id": "U94",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T9",
+  "basis": "'$1 gift cost about five times as much' is a hand calculation; no check",
+  "confidence": "high"
+ },
+ "U95": {
+  "id": "U95",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T9",
+  "basis": "Prose summary in the intro; no comparison tool call covers the prose",
+  "confidence": "medium"
+ },
+ "U104": {
+  "id": "U104",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T9",
+  "basis": "Prose statement about the arm means; the check covered only the table cells",
+  "confidence": "medium"
+ },
+ "U105": {
+  "id": "U105",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T7, T9",
+  "basis": "Support verdicts come from the script's output; producing a result is not checking it",
+  "confidence": "medium"
+ },
+ "U106": {
+  "id": "U106",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T9, T10",
+  "basis": "The H1e row of Table 2 falls under the T9 check of Tables 1\u20133; no author response",
+  "confidence": "low"
+ },
+ "U107": {
+  "id": "U107",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T7, T9",
+  "basis": "Prose verdicts and the results.md support lines are script outputs; no comparison was made",
+  "confidence": "medium"
+ },
+ "U108": {
+  "id": "U108",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T7, T9",
+  "basis": "'H3 is formally supported\u2026 weak evidence' is prose; no check covers it",
+  "confidence": "medium"
+ },
+ "U109": {
+  "id": "U109",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T7, T9",
+  "basis": "'only one of the 12 tests where the two models disagree' is a script output; no comparison was made",
+  "confidence": "medium"
+ },
+ "U110": {
+  "id": "U110",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T9, T10, T11",
+  "basis": "T9 check script compared paper Table 3 with the CSVs: \"every value in Tables 1\u20133 matches\"; the author never responded (bare attest at T10)",
+  "confidence": "medium"
+ },
+ "U111": {
+  "id": "U111",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T7, T9",
+  "basis": "Script output: \"No test met that definition\"; the author asked for the support rules; no comparison against a source",
+  "confidence": "medium"
+ },
+ "U112": {
+  "id": "U112",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T5, T9",
+  "basis": "Interpretation written within the requested sample section; nothing checked it",
+  "confidence": "medium"
+ },
+ "U113": {
+  "id": "U113",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T9, T11",
+  "basis": "Section 5 was requested and Section 6 is the author's verbatim text; no check",
+  "confidence": "medium"
+ },
+ "U114": {
+  "id": "U114",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3, T9",
+  "basis": "The author set the rules \"in the order I gave\"; the paper's text was never compared with the code",
+  "confidence": "medium"
+ },
+ "U115": {
+  "id": "U115",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T5, T9",
+  "basis": "Method description from the author's spec; no tool compared the paper's text with the code",
+  "confidence": "medium"
+ },
+ "U116": {
+  "id": "U116",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T5, T9",
+  "basis": "\"Holm correction within each hypothesis family\" was the author's spec; not checked",
+  "confidence": "medium"
+ },
+ "U117": {
+  "id": "U117",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T5, T7, T9",
+  "basis": "The script producing N = 10,259 for both models is production, not a check",
+  "confidence": "medium"
+ },
+ "U118": {
+  "id": "U118",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T7, T9",
+  "basis": "\"All produced by code\" was the author's request; no verification",
+  "confidence": "medium"
+ },
+ "U119": {
+  "id": "U119",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T1, T2",
+  "basis": "Data file added by the author by hand (\"authors' posted replication files\"); no lookup against the source",
+  "confidence": "medium"
+ },
+ "U120": {
+  "id": "U120",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T7, T8",
+  "basis": "Claude only viewed the png (\"looking at the plot\"); no comparison with the table, and no response from the author",
+  "confidence": "low"
+ },
+ "U45": {
+  "id": "U45",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T9",
+  "basis": "Reference copied from notes.md as \"formatted as in notes.md\"; never looked up",
+  "confidence": "high"
+ },
+ "U46": {
+  "id": "U46",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T9, T10, T11",
+  "basis": "Year issue flagged \"as far as I know\" with no tool lookup; the author never checked it",
+  "confidence": "high"
+ },
+ "U47": {
+  "id": "U47",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T9",
+  "basis": "Reference copied from notes.md; no lookup",
+  "confidence": "high"
+ },
+ "U48": {
+  "id": "U48",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T9",
+  "basis": "Description of the study written in the requested introduction; no source check",
+  "confidence": "medium"
+ },
+ "U49": {
+  "id": "U49",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T9, T10, T11",
+  "basis": "Claude reversed the notes.md claim \"As I recall\" and told the author in its reply; no lookup was made",
+  "confidence": "medium"
+ },
+ "U50": {
+  "id": "U50",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T9",
+  "basis": "Framing explanation written for the requested H1 citation; no source check",
+  "confidence": "medium"
+ },
+ "U51": {
+  "id": "U51",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T9",
+  "basis": "\"Cite ... Grant (2008) for task significance\"; never read or checked",
+  "confidence": "medium"
+ },
+ "U52": {
+  "id": "U52",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T9",
+  "basis": "Procedure described in the requested section 3; no source lookup",
+  "confidence": "medium"
+ },
+ "U53": {
+  "id": "U53",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3, T9",
+  "basis": "The author gave \"AEARCTR-0000714\" in the T9 prompt; not looked up",
+  "confidence": "high"
+ },
+ "U54": {
+  "id": "U54",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3, T9",
+  "basis": "\"per the AEA registration\"; the registration was not consulted",
+  "confidence": "medium"
+ },
+ "U55": {
+  "id": "U55",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T9",
+  "basis": "Comparison written in the requested results; the cited paper was not read",
+  "confidence": "medium"
+ },
+ "U59": {
+  "id": "U59",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T9, T11, T12",
+  "basis": "Claude noted the mismatch (\"reach only about half\") at T11; the author never responded and nothing was checked",
+  "confidence": "medium"
+ },
+ "U60": {
+  "id": "U60",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T9",
+  "basis": "The T9 check covered the table cells only, not these text figures",
+  "confidence": "medium"
+ },
+ "U61": {
+  "id": "U61",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T9, T10",
+  "basis": "T9 check flagged \"T1 1.3\" and recomputed the SD as 726.9; reported but no response from the author",
+  "confidence": "medium"
+ },
+ "U56": {
+  "id": "U56",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T9",
+  "basis": "author asked intro: 'organizations lean on more than pay (significance reminders, social comparison, ranking, gifts)'; no check",
+  "confidence": "high"
+ },
+ "U57": {
+  "id": "U57",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T9",
+  "basis": "Claude wrote the motivation inside the requested introduction; nobody checked it",
+  "confidence": "medium"
+ },
+ "U58": {
+  "id": "U58",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T9",
+  "basis": "'the gift exchange logic for H3 without a new citation'; not checked",
+  "confidence": "high"
+ },
+ "U44": {
+  "id": "U44",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T5",
+  "basis": "'Write preregistration.md ... before any outcome comparison is run'",
+  "confidence": "high"
+ },
+ "U24": {
+  "id": "U24",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T5",
+  "basis": "'Outcome: buttonpresses (points)'",
+  "confidence": "high"
+ },
+ "U25": {
+  "id": "U25",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T5",
+  "basis": "'OLS of points on arm indicators with no piece rate (1.3) as the omitted category'",
+  "confidence": "high"
+ },
+ "U26": {
+  "id": "U26",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T5",
+  "basis": "'No covariates in the main model'",
+  "confidence": "high"
+ },
+ "U27": {
+  "id": "U27",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T5",
+  "basis": "'Estimator: OLS' and dose-response 'as pairwise differences'",
+  "confidence": "medium"
+ },
+ "U28": {
+  "id": "U28",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T5",
+  "basis": "'HC3 robust standard errors'",
+  "confidence": "high"
+ },
+ "U29": {
+  "id": "U29",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T5, T7",
+  "basis": "T5 reply 'Which p-value decides ... \u03b1 = 0.05'; 'CIs are not adjusted'; T7 'runs exactly the plan in preregistration.md'",
+  "confidence": "medium"
+ },
+ "U30": {
+  "id": "U30",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T7, T9, T11",
+  "basis": "T7 reply 'One decision I made that the plan didn't spell out'; author never responded to it",
+  "confidence": "medium"
+ },
+ "U31": {
+  "id": "U31",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T5, T7",
+  "basis": "T5 reply 'Dose-response holds only if both ... are significant'; T7 'runs exactly the plan'",
+  "confidence": "medium"
+ },
+ "U32": {
+  "id": "U32",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T5, T7",
+  "basis": "T5 reply 'Each psychological arm is judged on its own'; T7 'runs exactly the plan'",
+  "confidence": "medium"
+ },
+ "U33": {
+  "id": "U33",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T5",
+  "basis": "'a robustness model adds practicecount'",
+  "confidence": "high"
+ },
+ "U34": {
+  "id": "U34",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T5, T7",
+  "basis": "'compared with 1.3 under the same model, with Holm across all 17 contrasts'",
+  "confidence": "high"
+ },
+ "U15": {
+  "id": "U15",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T1, T3",
+  "basis": "author added data/mturk_raw.csv; 'load data/mturk_raw.csv'",
+  "confidence": "high"
+ },
+ "U16": {
+  "id": "U16",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3",
+  "basis": "'(1) keep only workers with finished == 1'",
+  "confidence": "high"
+ },
+ "U17": {
+  "id": "U17",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3, T5",
+  "basis": "'(2) drop anyone with buttonpresses above 3,500'; author then ruled on missing scores",
+  "confidence": "medium"
+ },
+ "U18": {
+  "id": "U18",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T3, T5",
+  "basis": "T3 reply 'I kept the one that comes first in the file' and 'duplicate check skips rows with no worker ID'; not addressed",
+  "confidence": "low"
+ },
+ "U19": {
+  "id": "U19",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3",
+  "basis": "'(4) keep only the 18 treatment codes in the notes table'",
+  "confidence": "high"
+ },
+ "U20": {
+  "id": "U20",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T5",
+  "basis": "'Workers with no points score are dropped from all analyses'",
+  "confidence": "high"
+ },
+ "U21": {
+  "id": "U21",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T5, T7",
+  "basis": "T5 reply 'I set missing values to 0 and added a \"missing\" indicator'; T7 'runs exactly the plan'",
+  "confidence": "medium"
+ },
+ "U22": {
+  "id": "U22",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T5",
+  "basis": "'in standard deviations of the no-piece-rate arm'",
+  "confidence": "high"
+ },
+ "U23": {
+  "id": "U23",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3",
+  "basis": "'add a group variable: \"psych\" ... \"gift\" ... \"piece\" ... everything else \"other\"'",
+  "confidence": "high"
+ },
+ "U35": {
+  "id": "U35",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T5, T9",
+  "basis": "'H1: piece rates vs no piece rate ... dose-response'; 'H1\u2013H3 as in notes.md'",
+  "confidence": "high"
+ },
+ "U36": {
+  "id": "U36",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T5, T9",
+  "basis": "T5: \"Each against 1.3 (predicted positive), and each against 1 cent per 100 (1.1), predicted lower\"",
+  "confidence": "high"
+ },
+ "U37": {
+  "id": "U37",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T5, T9",
+  "basis": "T5: \"H3: gift exchange (10) vs 1.3, predicted positive\"; T9 \"gift exchange logic for H3\"",
+  "confidence": "high"
+ },
+ "U38": {
+  "id": "U38",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T9, T10, T11",
+  "basis": "T9 asked for results and discussion; reply notes \"first cent bought about 78% of the gain\"; no response, only bare attest",
+  "confidence": "medium"
+ },
+ "U39": {
+  "id": "U39",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T9, T11",
+  "basis": "T9 \"how far non-pay motivators get\"; reply \"43\u201364% of the 1-cent effect\"; T11 reply flags mismatch with \"about half\", never answered",
+  "confidence": "medium"
+ },
+ "U40": {
+  "id": "U40",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T9, T11",
+  "basis": "T9: \"Present H3 as weak evidence\"; T11 author text \"an unconditional gift adds little\"",
+  "confidence": "high"
+ },
+ "U41": {
+  "id": "U41",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T7, T9",
+  "basis": "T9 report results; replies say \"only test whose significance changes in the robustness model\"; no response",
+  "confidence": "medium"
+ },
+ "U42": {
+  "id": "U42",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T9",
+  "basis": "reply item 6: threshold bonuses \"on a par with\" highest rate, \"not tested\"; no response",
+  "confidence": "medium"
+ },
+ "U43": {
+  "id": "U43",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T7, T9",
+  "basis": "T7 asked for \"the robustness model\"; reply \"plus the full main and robustness model coefficients\"; no response",
+  "confidence": "low"
+ },
+ "U1": {
+  "id": "U1",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T9",
+  "basis": "T9: \"the question is how much effort these buy relative to small piece rates\"",
+  "confidence": "high"
+ },
+ "U2": {
+  "id": "U2",
+  "discretion": "taken",
+  "certification": "ignored",
+  "turns": "T9, T10, T11",
+  "basis": "Claude reversed the notes.md claim (\"small amount improves performance\") into crowding-out framing; reply item 1 flagged it, never answered",
+  "confidence": "medium"
+ },
+ "U3": {
+  "id": "U3",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T9, T11",
+  "basis": "T9: \"for an organizational audience\"; T11 verbatim paragraph",
+  "confidence": "high"
+ },
+ "U4": {
+  "id": "U4",
+  "discretion": "taken",
+  "certification": "ignored",
+  "turns": "T9, T10, T11",
+  "basis": "reply: notes say small pay \"improves performance\"; \"I wrote the paper that way\" (opposite); no response",
+  "confidence": "medium"
+ },
+ "U5": {
+  "id": "U5",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T9",
+  "basis": "T9: \"Cite DellaVigna and Pope (2018)\"",
+  "confidence": "high"
+ },
+ "U6": {
+  "id": "U6",
+  "discretion": "taken",
+  "certification": "ignored",
+  "turns": "T9, T10, T11",
+  "basis": "Claude changed the cited claim to \"a small payment lowered performance\"; reply asked to check; only bare attest followed",
+  "confidence": "high"
+ },
+ "U7": {
+  "id": "U7",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T9",
+  "basis": "T9: \"Grant (2008) for task significance in H2\"",
+  "confidence": "high"
+ },
+ "U8": {
+  "id": "U8",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T11",
+  "basis": "T11: \"Put the following into Section 6... verbatim\"",
+  "confidence": "high"
+ },
+ "U9": {
+  "id": "U9",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T9",
+  "basis": "T9 lists sections incl. \"5. Discussion for managers\" and \"6. Contribution and limitations\"",
+  "confidence": "high"
+ },
+ "U10": {
+  "id": "U10",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T5, T7",
+  "basis": "T7: \"Table 1 (arm means, SDs, n)\"",
+  "confidence": "high"
+ },
+ "U11": {
+  "id": "U11",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T5, T7",
+  "basis": "T7: \"Table 2 (H1, H2, H3 contrasts with estimates in points and SD units, 95% CIs...)\"",
+  "confidence": "high"
+ },
+ "U12": {
+  "id": "U12",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T5, T7",
+  "basis": "T7: \"Table 3 (the exploratory arms vs 1.3, Holm across all 17)\"",
+  "confidence": "high"
+ },
+ "U13": {
+  "id": "U13",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T5, T7",
+  "basis": "author asked \"coefficient plot of all 17 arms\"; ordering, SD axis, dataviz skill palette by Claude; T7 reply mentions palette and second axis, no response",
+  "confidence": "medium"
+ },
+ "U14": {
+  "id": "U14",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T9, T11",
+  "basis": "T11 author paragraph lists limitations; T9 \"saying the plan was written after the raw arm means had been seen\"",
+  "confidence": "medium"
+ }
+}

@@ -1,0 +1,45 @@
+#!/bin/sh
+# Pre-fill the attestation trailers (Verified / Attested-by) for the human to
+# complete in the editor; commit-msg requires Attested-by. Activate once per
+# clone: git config core.hooksPath .githooks
+#
+# Skipped for -m / -F (source "message"): no editor opens, so pass the
+# trailers with --trailer instead (see PROVENANCE.md). /attest uses -F and
+# writes its own trailers.
+
+msg_file="$1"
+source="$2"
+
+[ "$source" = "message" ] && exit 0
+
+name=$(git config user.name)
+
+if [ -z "$(git stripspace --strip-comments < "$msg_file")" ]; then
+	# Empty message: leave line 1 for the subject and a blank line after it,
+	# so the trailers form their own (last) paragraph.
+	{
+		printf '\n\nVerified: \nAttested-by: %s\n' "$name"
+		cat "$msg_file"
+	} > "$msg_file.tmp" && mv "$msg_file.tmp" "$msg_file"
+else
+	# Existing message (amend, merge, template): add only missing keys.
+	git interpret-trailers --in-place --if-exists doNothing --if-missing add \
+		--trailer "Verified:" --trailer "Attested-by: $name" "$msg_file"
+fi
+
+# Explain the trailers above git's own comments. Only when git wrote comments,
+# i.e. an editor will open and strip them; otherwise they would be committed.
+if grep -q '^#' "$msg_file"; then
+	awk '
+		!done && /^#/ {
+			print "# Attestation (enforced by .githooks/commit-msg):"
+			print "#   Verified:    optional: anything you checked that the record cannot"
+			print "#                see, or shows unclearly. Delete the line if unused"
+			print "#   Attested-by: required: who attests to this commit"
+			print "#   Delegated:, Stage: optional; useful when importing outside work"
+			print "#"
+			done = 1
+		}
+		{ print }
+	' "$msg_file" > "$msg_file.tmp" && mv "$msg_file.tmp" "$msg_file"
+fi

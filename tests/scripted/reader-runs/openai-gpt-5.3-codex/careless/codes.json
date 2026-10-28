@@ -1,0 +1,722 @@
+{
+ "U62": {
+  "id": "U62",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T2, T3",
+  "basis": "Claude added the memo table in T2; author gave no follow-up check statement (only bare '/attest final' in T3).",
+  "confidence": "high"
+ },
+ "U63": {
+  "id": "U63",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T2, T3",
+  "basis": "Full output table was produced in T2 as part of requested analysis; no recorded comparison/check step and no confirming response beyond bare attest.",
+  "confidence": "high"
+ },
+ "U64": {
+  "id": "U64",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T2, T3",
+  "basis": "Descriptives CSV values were generated in T2; record shows no separate claim-vs-source check or author confirmation.",
+  "confidence": "high"
+ },
+ "U65": {
+  "id": "U65",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T2, T3",
+  "basis": "\"11.7 cents\" text was drafted by Claude in T2 from analysis output; no explicit checking step by author in record.",
+  "confidence": "high"
+ },
+ "U66": {
+  "id": "U66",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T2, T3",
+  "basis": "T2 ran `python3 -c \"from scipy import stats...\"` printing CI bounds and then edited memo `9.1\u201314.3` -> `9.0\u201314.3`; author gave no confirming response (only bare attest).",
+  "confidence": "medium"
+ },
+ "U67": {
+  "id": "U67",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T2, T3",
+  "basis": "Mean-investment numbers were inserted by Claude in T2; no recorded comparison/check action by author.",
+  "confidence": "high"
+ },
+ "U68": {
+  "id": "U68",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T2, T3",
+  "basis": "Median value text was added in T2 without a separate verification step in record.",
+  "confidence": "high"
+ },
+ "U69": {
+  "id": "U69",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T2, T3",
+  "basis": "Firm-range numbers were added in T2; no explicit source-check action is shown.",
+  "confidence": "high"
+ },
+ "U70": {
+  "id": "U70",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T2, T3",
+  "basis": "\"94% ... 6%\" claim was written in T2; no separate check against source is recorded.",
+  "confidence": "high"
+ },
+ "U71": {
+  "id": "U71",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T2, T3",
+  "basis": "SE change `(0.0068 \u2192 0.0162)` appears in T2 memo text; no explicit verification step in record.",
+  "confidence": "high"
+ },
+ "U72": {
+  "id": "U72",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T2, T3",
+  "basis": "\"11 clusters\" and \"10 degrees of freedom\" were stated in T2 methods text; no separate check recorded.",
+  "confidence": "high"
+ },
+ "U73": {
+  "id": "U73",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T2, T3",
+  "basis": "\"9,999 draws\" was written in T2 from chosen setup; no source-check action is shown.",
+  "confidence": "high"
+ },
+ "U74": {
+  "id": "U74",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T2, T3",
+  "basis": "\"\u03b2 = 0.117\" added in T2; no explicit compare-to-source check recorded.",
+  "confidence": "high"
+ },
+ "U75": {
+  "id": "U75",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T2, T3",
+  "basis": "Within-SD (~325) and implied ~38 statement was added in T2; no separate verification step shown.",
+  "confidence": "high"
+ },
+ "U76": {
+  "id": "U76",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T2, T3",
+  "basis": "Capital coefficient \"0.35\" appears in T2 memo text; no explicit check action in record.",
+  "confidence": "high"
+ },
+ "U77": {
+  "id": "U77",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T2, T3",
+  "basis": "Range \"0.10 to 0.12\" was written in T2; no recorded claim-vs-source check.",
+  "confidence": "high"
+ },
+ "U78": {
+  "id": "U78",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T2, T3",
+  "basis": "\"about 2.4 times too small\" was added in T2; no explicit checking step shown.",
+  "confidence": "high"
+ },
+ "U79": {
+  "id": "U79",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T2, T3",
+  "basis": "Lag/log/p-value numbers were inserted in T2; no separate verification action by author is recorded.",
+  "confidence": "high"
+ },
+ "U80": {
+  "id": "U80",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T2, T3",
+  "basis": "Qualitative result description was authored in T2 as requested analysis output; no check statement recorded.",
+  "confidence": "high"
+ },
+ "U81": {
+  "id": "U81",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T2, T3",
+  "basis": "Claim that effect holds with FE/controls was written in T2; no explicit source-check step in record.",
+  "confidence": "high"
+ },
+ "U82": {
+  "id": "U82",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T2, T3",
+  "basis": "Robustness-description sentence is in final memo from T2 work; no recorded checking action.",
+  "confidence": "high"
+ },
+ "U83": {
+  "id": "U83",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T2, T3",
+  "basis": "\"logs less precise\" interpretation was added in T2; no explicit check against source recorded.",
+  "confidence": "high"
+ },
+ "U84": {
+  "id": "U84",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T2, T3",
+  "basis": "\"helps forecast next year's investment\" added in T2; no separate verification step shown.",
+  "confidence": "high"
+ },
+ "U85": {
+  "id": "U85",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T2, T3",
+  "basis": "Memo methods sentence and code formula were both created in T2; record shows no explicit cross-check step.",
+  "confidence": "high"
+ },
+ "U86": {
+  "id": "U86",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T2, T3",
+  "basis": "Clustered-SE description and `groups = pd.factorize(data[\"firm\"])` both from T2; no separate verification by author.",
+  "confidence": "high"
+ },
+ "U87": {
+  "id": "U87",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T2",
+  "basis": "Memo line and code line were both authored in T2; no compare/check step was run.",
+  "confidence": "high"
+ },
+ "U88": {
+  "id": "U88",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T2",
+  "basis": "Webb/9999/seed were written into files in T2; no explicit verification pass against source.",
+  "confidence": "high"
+ },
+ "U89": {
+  "id": "U89",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T2",
+  "basis": "Robustness-check text and spec rows were generated in T2; no separate check action shown.",
+  "confidence": "high"
+ },
+ "U90": {
+  "id": "U90",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T2",
+  "basis": "Source statement was written by Claude; record shows data loading, but no explicit claim-vs-source check step.",
+  "confidence": "medium"
+ },
+ "U46": {
+  "id": "U46",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T2, T3",
+  "basis": "Tool ran Crossref lookup for 10.2307/1912538 and replied \u201cCrossref confirms 1982\u201d; author gave only bare \u201c/attest final\u201d.",
+  "confidence": "high"
+ },
+ "U47": {
+  "id": "U47",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T2, T3",
+  "basis": "Tool ran Crossref lookup for 10.1111/j.1468-0475.2010.00513.x and said references checked; no confirming author response.",
+  "confidence": "high"
+ },
+ "U48": {
+  "id": "U48",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T2, T3",
+  "basis": "Tool ran Crossref lookup for 10.2307/1991374 and reported checks; author did not respond beyond bare attest.",
+  "confidence": "high"
+ },
+ "U49": {
+  "id": "U49",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T1, T2",
+  "basis": "Claim text was copied from notes/draft; no tool/source verification of Tobin argument shown.",
+  "confidence": "high"
+ },
+ "U50": {
+  "id": "U50",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T2",
+  "basis": "No tool call reading Hayashi content; Crossref metadata check does not verify the conditions claim.",
+  "confidence": "medium"
+ },
+ "U51": {
+  "id": "U51",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T2",
+  "basis": "No lookup/read of Kleiber & Zeileis content shown for this descriptive claim.",
+  "confidence": "high"
+ },
+ "U52": {
+  "id": "U52",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T2",
+  "basis": "No tool call verifies the \u2018different versions in circulation\u2019 statement.",
+  "confidence": "high"
+ },
+ "U53": {
+  "id": "U53",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T2",
+  "basis": "Repeated scope text was generated across files; no explicit internal-consistency check step.",
+  "confidence": "high"
+ },
+ "U54": {
+  "id": "U54",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T2",
+  "basis": "Coefficient appears in table/text produced in same turn; no separate comparison check recorded.",
+  "confidence": "high"
+ },
+ "U55": {
+  "id": "U55",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T2",
+  "basis": "Log-model p-values in memo/table were generated, not independently checked against source in record.",
+  "confidence": "high"
+ },
+ "U56": {
+  "id": "U56",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T2",
+  "basis": "Provenance claim added by Claude; no source lookup/tool check for thesis institution shown.",
+  "confidence": "high"
+ },
+ "U57": {
+  "id": "U57",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T2",
+  "basis": "Textbook 10-firm-practice claim added without a recorded source check.",
+  "confidence": "high"
+ },
+ "U58": {
+  "id": "U58",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T2",
+  "basis": "Theoretical claim (\u2018cannot observe marginal q\u2019) added with no recorded verification step.",
+  "confidence": "high"
+ },
+ "U59": {
+  "id": "U59",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T2",
+  "basis": "Historical-period interpretation added in memo; no claim-vs-source check shown.",
+  "confidence": "high"
+ },
+ "U60": {
+  "id": "U60",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T2",
+  "basis": "Serial-correlation assertion added without a recorded diagnostic/source-check step.",
+  "confidence": "high"
+ },
+ "U61": {
+  "id": "U61",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T2",
+  "basis": "Non-causal caveat is an interpretive statement; no check action applicable in record.",
+  "confidence": "high"
+ },
+ "U25": {
+  "id": "U25",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T2, T3",
+  "basis": "Prompt: \u201cpick whatever approach you think is best\u201d; reply described investment/log setup; author gave only bare attest.",
+  "confidence": "high"
+ },
+ "U26": {
+  "id": "U26",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T2, T3",
+  "basis": "Open delegation in prompt; reply states \u201ceach extra dollar of value\u2026\u201d, but no author acceptance response.",
+  "confidence": "high"
+ },
+ "U27": {
+  "id": "U27",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T2, T3",
+  "basis": "Open delegation; reply mentions \u201cuse last year's value instead\u201d; no author response beyond /attest.",
+  "confidence": "high"
+ },
+ "U28": {
+  "id": "U28",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T2, T3",
+  "basis": "Open delegation; reply mentions \u201clog version\u2026 bootstrap p = 0.12\u201d; author did not respond.",
+  "confidence": "high"
+ },
+ "U29": {
+  "id": "U29",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T2, T3",
+  "basis": "Open delegation; reply notes adjustment \u201cfor each firm's capital stock\u201d; no explicit author okay/change.",
+  "confidence": "high"
+ },
+ "U30": {
+  "id": "U30",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T2, T3",
+  "basis": "Prompt: \"pick whatever approach you think is best\"; reply reports \"I used firm and year fixed effects\"; only later \"/attest final\" (no response).",
+  "confidence": "high"
+ },
+ "U31": {
+  "id": "U31",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T2, T3",
+  "basis": "Open delegation in prompt; reply states \"firm and year fixed effects\" and \"standard errors clustered by firm\"; no author response beyond bare attest.",
+  "confidence": "high"
+ },
+ "U32": {
+  "id": "U32",
+  "discretion": "given",
+  "certification": "wasn't notified",
+  "turns": "T2",
+  "basis": "Method was delegated, but reply never mentions \"t distribution with 10 degrees of freedom\" / t(G\u22121) two-sided rule.",
+  "confidence": "high"
+ },
+ "U33": {
+  "id": "U33",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T2, T3",
+  "basis": "Delegated approach; reply explicitly: \"checked significance with a bootstrap method designed for that case\"; no follow-up response from author.",
+  "confidence": "high"
+ },
+ "U34": {
+  "id": "U34",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T2, T3",
+  "basis": "Delegated approach; reply says estimate \"barely moves if I drop American Steel\"; author gave no response besides /attest.",
+  "confidence": "high"
+ },
+ "U35": {
+  "id": "U35",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T2, T3",
+  "basis": "Delegated approach; reply says \"if I use last year's value instead\"; no explicit author acceptance/rejection.",
+  "confidence": "high"
+ },
+ "U36": {
+  "id": "U36",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T2, T3",
+  "basis": "Delegated approach; reply flags \"one weak spot is a log version\"; no author response other than attest.",
+  "confidence": "high"
+ },
+ "U37": {
+  "id": "U37",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T2, T3",
+  "basis": "Approach delegated; reply discusses pooled OLS robust-errors plan (\"I didn't keep your pooled-OLS-with-robust-errors plan...\"); no author response.",
+  "confidence": "medium"
+ },
+ "U38": {
+  "id": "U38",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T2, T3",
+  "basis": "Delegated methods; reply mentions clustering effect in pooled model (SEs \"about 2.4\u00d7 too small\"), indicating pooled clustered comparison; no author response.",
+  "confidence": "medium"
+ },
+ "U39": {
+  "id": "U39",
+  "discretion": "given",
+  "certification": "wasn't notified",
+  "turns": "T2",
+  "basis": "Delegated methods, but reply does not specifically mention adding a separate \"Firm FE\" model as an additional row.",
+  "confidence": "medium"
+ },
+ "U14": {
+  "id": "U14",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T2",
+  "basis": "Prompt explicitly set source: \"using the Grunfeld data in statsmodels.\"",
+  "confidence": "high"
+ },
+ "U15": {
+  "id": "U15",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T2, T3",
+  "basis": "Sample framing beyond source was left to tool under \"pick whatever approach...\"; reply notifies \"data also has 11 firms\"; no author response.",
+  "confidence": "medium"
+ },
+ "U16": {
+  "id": "U16",
+  "discretion": "given",
+  "certification": "wasn't notified",
+  "turns": "T2",
+  "basis": "Coverage count choice/reporting came under delegated analysis; reply mentions 11 firms but not \"220 firm-years.\"",
+  "confidence": "medium"
+ },
+ "U17": {
+  "id": "U17",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T2, T3",
+  "basis": "Variable set/modeling was delegated; reply discusses controlling for \"capital stock\" and market value-investment relation; no author response.",
+  "confidence": "medium"
+ },
+ "U18": {
+  "id": "U18",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T2, T3",
+  "basis": "Delegated approach; reply explicitly notes dropping American Steel; no follow-up acceptance/reason from author.",
+  "confidence": "high"
+ },
+ "U19": {
+  "id": "U19",
+  "discretion": "given",
+  "certification": "wasn't notified",
+  "turns": "T2",
+  "basis": "Technical missing-lag row drop was part of delegated implementation; reply does not mention dropping rows with missing lags.",
+  "confidence": "high"
+ },
+ "U20": {
+  "id": "U20",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T2, T3",
+  "basis": "Delegated implementation; reply mentions using \"last year's value\" (lag construction); no author response.",
+  "confidence": "high"
+ },
+ "U21": {
+  "id": "U21",
+  "discretion": "given",
+  "certification": "wasn't notified",
+  "turns": "T2",
+  "basis": "Lagged-capital construction was delegated and not specifically mentioned in reply text.",
+  "confidence": "medium"
+ },
+ "U22": {
+  "id": "U22",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T2, T3",
+  "basis": "Delegated robustness design; reply mentions a \"log version,\" which notifies this transformation family; no author response.",
+  "confidence": "medium"
+ },
+ "U23": {
+  "id": "U23",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T2, T3",
+  "basis": "Same delegated log-spec decision; reply discusses the \"log version\" and its uncertainty; no author response.",
+  "confidence": "medium"
+ },
+ "U24": {
+  "id": "U24",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T2, T3",
+  "basis": "Log-log robustness was reported as a \"log version\" in reply, covering logged regressors; author did not respond.",
+  "confidence": "low"
+ },
+ "U40": {
+  "id": "U40",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T2",
+  "basis": "Research question set by author: \"whether a firm's market value predicts how much it invests.\"",
+  "confidence": "high"
+ },
+ "U41": {
+  "id": "U41",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T2, T3",
+  "basis": "Interpretation magnitude was part of delegated memo writing; reply gives \"11.7 cents\" effect and CI; no author response.",
+  "confidence": "high"
+ },
+ "U42": {
+  "id": "U42",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T2, T3",
+  "basis": "Cross-spec stability interpretation came from delegated synthesis; reply says estimate \"barely moves\" across checks; no response from author.",
+  "confidence": "high"
+ },
+ "U43": {
+  "id": "U43",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T2, T3",
+  "basis": "Predictive interpretation was delegated; reply says last-year value is \"a true prediction\"; no author response beyond attest.",
+  "confidence": "high"
+ },
+ "U44": {
+  "id": "U44",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T2, T3",
+  "basis": "T2 prompt: \u201cpick whatever approach you think is best\u201d; T2 reply flags \u201cone weak spot is a log version\u2026 positive but uncertain\u201d; then only bare \u201c/attest final.\u201d",
+  "confidence": "high"
+ },
+ "U45": {
+  "id": "U45",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T2, T3",
+  "basis": "Open delegation in T2; T2 reply reports outputs: \u201cresults tables (`output/results_table.md` and `.csv`)\u201d and discusses multiple robustness specs; no substantive author response after.",
+  "confidence": "medium"
+ },
+ "U1": {
+  "id": "U1",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T2",
+  "basis": "Author set the question in prompt: \u201cwhether a firm's market value predicts how much it invests.\u201d",
+  "confidence": "high"
+ },
+ "U2": {
+  "id": "U2",
+  "discretion": "taken",
+  "certification": "ignored",
+  "turns": "T1, T2, T3",
+  "basis": "Draft had opposite Hayashi claim (\u201cnever equal\u201d); final uses corrected equivalence claim; T2 reply: \u201cHayashi's result was reversed\u2026 I fixed these.\u201d No later response.",
+  "confidence": "medium"
+ },
+ "U3": {
+  "id": "U3",
+  "discretion": "taken",
+  "certification": "ignored",
+  "turns": "T1, T2, T3",
+  "basis": "References were supplied, but Hayashi bibliographic/content correction was Claude\u2019s change; T2 reply: \u201cHayashi's year is 1982\u2026 other two references checked out.\u201d No author follow-up.",
+  "confidence": "medium"
+ },
+ "U4": {
+  "id": "U4",
+  "discretion": "taken",
+  "certification": "ignored",
+  "turns": "T1, T2, T3",
+  "basis": "Claude changed the draft\u2019s q-logic claim (from \u201cnever equal\u201d to \u201cequal under conditions\u201d); explicitly disclosed in T2 corrections list; no author response.",
+  "confidence": "high"
+ },
+ "U5": {
+  "id": "U5",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T1, T2",
+  "basis": "Anchor is copied from author draft; prompt required using drafted paragraphs.",
+  "confidence": "high"
+ },
+ "U6": {
+  "id": "U6",
+  "discretion": "taken",
+  "certification": "ignored",
+  "turns": "T1, T2, T3",
+  "basis": "Hayashi source/claim was rewritten by Claude (including year/result correction), disclosed in T2; no response beyond bare attest.",
+  "confidence": "high"
+ },
+ "U7": {
+  "id": "U7",
+  "discretion": "taken",
+  "certification": "ignored",
+  "turns": "T1, T2, T3",
+  "basis": "Claude corrected provenance claim (\u201cUniversity of Chicago, not Harvard\u201d) and reported this in T2 corrections; no author response.",
+  "confidence": "high"
+ },
+ "U8": {
+  "id": "U8",
+  "discretion": "given",
+  "certification": "wasn't notified",
+  "turns": "T2",
+  "basis": "Data-version caveat/source-linking was part of open writing task, but T2 reply did not mention this specific caveat.",
+  "confidence": "medium"
+ },
+ "U9": {
+  "id": "U9",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T2, T3",
+  "basis": "Conclusion was delegated by open memo request; T2 reply explicitly states \u201cAnswer: yes, market value predicts investment.\u201d No substantive follow-up.",
+  "confidence": "high"
+ },
+ "U10": {
+  "id": "U10",
+  "discretion": "given",
+  "certification": "wasn't notified",
+  "turns": "T2",
+  "basis": "Memo organization was delegated by \u201cwrite a 2 to 3 page memo\u2026 pick whatever approach\u201d; reply does not describe section structure choices.",
+  "confidence": "medium"
+ },
+ "U11": {
+  "id": "U11",
+  "discretion": "given",
+  "certification": "wasn't notified",
+  "turns": "T2",
+  "basis": "Including a condensed results table inside memo was a presentation choice within open delegation; T2 reply mentions output tables, not this memo-table decision.",
+  "confidence": "medium"
+ },
+ "U12": {
+  "id": "U12",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T2, T3",
+  "basis": "Author asked for results table in output; Claude chose full column structure and reported creating `output/results_table.md`/`.csv`; no later response.",
+  "confidence": "high"
+ },
+ "U13": {
+  "id": "U13",
+  "discretion": "given",
+  "certification": "wasn't notified",
+  "turns": "T2",
+  "basis": "Including explicit limitations/boundary section is a writing-choice under open delegation; T2 reply did not mention the not-causal limitation call.",
+  "confidence": "medium"
+ }
+}

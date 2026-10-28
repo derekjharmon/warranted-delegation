@@ -1,0 +1,83 @@
+{
+ "name": "high-low",
+ "paper": "archival",
+ "run": "high-low-2026-10-18-2005",
+ "base": "/Users/user/.warranted-delegation/demos/high-low-2026-10-18-2005",
+ "project": "/Users/user/.warranted-delegation/demos/high-low-2026-10-18-2005/project",
+ "venv": "/Users/user/.warranted-delegation/demos/high-low-2026-10-18-2005/venv",
+ "plugin": "/Users/user/.warranted-delegation/demos/high-low-2026-10-18-2005/plugin",
+ "session": "0e64e05c-b046-4b97-a184-05c397a497a5",
+ "started": "2026-10-18T20:05:29",
+ "phase": "save",
+ "prompts": 1,
+ "steps": [
+  {
+   "kind": "setup",
+   "commit": "a5107257d382813a71c9cc340695c311d16409d7"
+  },
+  {
+   "kind": "prompt",
+   "n": 1,
+   "seconds": 768,
+   "turns": 13,
+   "cost_usd": 1.9009896,
+   "tool_calls": 39,
+   "resent": false
+  },
+  {
+   "kind": "attest",
+   "sentence": "",
+   "commit": "8b3f206d1434f20e8b772a348cbaaf82f8472d15"
+  },
+  {
+   "kind": "attest",
+   "sentence": "",
+   "commit": "d45b838ece9685c4d9bc025cc9b92aa5d948f54c"
+  }
+ ],
+ "author_usage": {
+  "input_tokens": 14,
+  "output_tokens": 232,
+  "cache_creation_input_tokens": 7749,
+  "cache_read_input_tokens": 16539,
+  "calls": 5,
+  "seconds": 6
+ },
+ "nudges": 0,
+ "versions": {
+  "plugin": "0.10.3",
+  "claude_code": "2.1.303 (Claude Code)",
+  "python_packages": [
+   "certifi==2026.10.18",
+   "charset-normalizer==3.5.2",
+   "contourpy==1.4.0",
+   "cycler==0.12.1",
+   "fonttools==4.67.0",
+   "formulaic==1.2.2",
+   "idna==3.20",
+   "interface_meta==2.0.1",
+   "kiwisolver==1.5.1",
+   "matplotlib==3.11.2",
+   "narwhals==2.27.1",
+   "numpy==2.5.4",
+   "packaging==26.3",
+   "pandas==3.0.6",
+   "patsy==1.0.3",
+   "pillow==13.0.0",
+   "pyparsing==3.3.3",
+   "pypdf==6.21.1",
+   "pyreadstat==1.3.6",
+   "python-dateutil==2.9.0.post0",
+   "requests==2.34.2",
+   "scipy==1.18.1",
+   "six==1.17.0",
+   "statsmodels==0.15.0",
+   "typing_extensions==4.16.0",
+   "urllib3==2.8.0",
+   "wrapt==2.5.1"
+  ],
+  "runner_commit": "fb5b6dc5b15458349e3626427c59673abf85541b"
+ },
+ "map": true,
+ "finished": "2026-10-18T20:32:31"
+}

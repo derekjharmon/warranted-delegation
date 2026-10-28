@@ -1,0 +1,23 @@
+{
+ "meta": {
+  "id": "article-claude-brief",
+  "group": "Article",
+  "label": "Claude's copy edit, journal brief",
+  "detector": "pangram",
+  "scored_at": "2026-10-19T18:26:42+00:00"
+ },
+ "response": {
+  "stage": "STAGE_SUCCESS",
+  "version": "4.1",
+  "prediction": "We believe that this entire text is human-written.",
+  "prediction_short": "Human",
+  "fraction_ai": 1.5583087538824564e-19,
+  "fraction_ai_assisted": 2.703433180442638e-13,
+  "fraction_human": 1.0,
+  "headline": "Human Written",
+  "document_confidence": {
+   "level": "High",
+   "boundary": null
+  }
+ }
+}

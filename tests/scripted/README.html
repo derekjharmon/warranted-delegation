@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Scripted test task</title>
+<style>
+:root { --bg: #fbfaf7; --fg: #1d1c1a; --muted: #6b6760; --rule: #e2ded6; --code: #f1eee8; --accent: #2f5d8a; color-scheme: light; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #17171a; --fg: #ecebe8; --muted: #a29f98; --rule: #34343a; --code: #232328; --accent: #8db7e0; color-scheme: dark; }
+}
+body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.6 Charter, "Iowan Old Style", Georgia, serif; }
+main { max-width: 760px; margin: 0 auto; padding: 32px 20px 72px; }
+nav { font: 14px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin-bottom: 24px; }
+h1, h2, h3, h4 { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.25; text-wrap: balance; }
+h1 { font-size: 28px; } h2 { font-size: 21px; margin-top: 40px; } h3 { font-size: 17px; margin-top: 28px; }
+a { color: var(--accent); }
+code { font: 14px ui-monospace, SFMono-Regular, Menlo, monospace; background: var(--code); padding: 1px 4px; border-radius: 4px; overflow-wrap: anywhere; }
+pre { position: relative; background: var(--code); padding: 12px 72px 12px 14px; border-radius: 8px; overflow-x: auto; }
+pre code { padding: 0; background: none; white-space: pre-wrap; }
+.copy { position: absolute; top: 8px; right: 8px; font: 12px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; padding: 3px 9px; border: 1px solid var(--rule); border-radius: 6px; background: var(--bg); color: var(--fg); cursor: pointer; }
+table { border-collapse: collapse; font-size: 14px; display: block; overflow-x: auto; margin: 16px 0; }
+th, td { border-bottom: 1px solid var(--rule); padding: 6px 10px; text-align: left; vertical-align: top; }
+img { max-width: 100%; height: auto; border: 1px solid var(--rule); border-radius: 6px; margin: 12px 0 4px; }
+</style>
+</head>
+<body><main>
+<nav><a href="../../index.html">Start page</a> · <a href="README.md">Markdown source</a></nav>
+<h1>Scripted test task</h1>
+<p><em>Drafted by Claude, 2026-10-06, for the author's review. Nothing has run.</em></p>
+<p><strong>What it's for.</strong> It produces small projects whose answers we know in advance. They are used to score the reader against those answers (PLAN criterion 5, as changed Oct 5), and to show that careful and careless work produce different disclosures (PLAN's seeded-error demonstration).</p>
+<h2>The task</h2>
+<p>A memo of 2–3 pages, <code>memo.md</code>, asking whether a firm's market value predicts how much it invests. The data are the Grunfeld panel bundled with Python's statsmodels: 11 US firms, 1935–1954, with investment, market value, and capital stock. The finished work consists of <code>memo.md</code> (with its reference list), <code>analysis/analysis.py</code>, and <code>output/table1.md</code>.</p>
+<p><strong>Starting materials, the same for every run.</strong> An empty project with the tool installed, plus the simulated author's notes: a reference list, <a href="start/notes/references.md"><code>start/notes/references.md</code></a>, and paragraphs drafted earlier, <a href="start/notes/draft.md"><code>start/notes/draft.md</code></a>. The three references are real and were checked against Crossref on Oct 6. The notes carry <strong>five planted errors</strong>, one for each kind of checkable claim: a reference entry, a citation description, a factual claim, a reported number, and a methods description. They're listed in the <a href="answer-key.html">answer key</a>. The careful run's checks should catch all five, and the careless run should let them through.</p>
+<h2>The runs</h2>
+<table><thead><tr><th>Run</th><th>Cell in the 2×2</th><th>What the simulated author does</th></tr></thead><tbody><tr><td><a href="careful.md">Careful</a></td><td>Directed tightly and followed up</td><td>Makes most calls in the prompts. Hands a few over and takes each back, by changing it or by accepting it with a reason. Has checks run and reads them. Writes the Limitations section by hand. Attests with a sentence</td></tr><tr><td><a href="unchecked.md">Unchecked</a></td><td>Directed tightly, but let additions pass</td><td>Gives the same direction as the careful author and hands over the same three calls, but never takes them back: no response to what comes back, no checks, no asking what Claude decided on its own. Attests as soon as the writing is done</td></tr><tr><td><a href="careless.md">Careless</a></td><td>Abdicated</td><td>Asks for the whole memo in one prompt ("pick whatever approach you think is best"), then attests without comment</td></tr><tr><td><a href="owned.md">Owned</a></td><td>Delegated a lot, but checked and owned it</td><td>Opens with the careless prompt word for word, then asks Claude what it decided, takes each call back, has everything checked, and checks two things personally. Added after the other three ran</td></tr></tbody></table>
+<p>Together the four runs pull the two measures apart. Careful and unchecked differ only in follow-up, the second measure, and so do owned and careless. Unchecked and careless differ mainly in direction, the first, and so do careful and owned. The unchecked run is also where Claude's unasked additions should show most clearly as taken and not notified.</p>
+<p><strong>Development material.</strong> The reader is built and tuned only on a separate <a href="dev-mixed.md">development run</a>, never on the four scored runs. The author attests the frozen reader before it sees them.</p>
+<h2>How a run works</h2>
+<ol><li><strong>Setup.</strong> The runner makes a throwaway project outside this repository, installs the tool without GitHub, and copies in the starting materials. The runner is a script, not yet written; the author sees it before it runs.</li><li><strong>Playing the script.</strong> The runner sends the script's lines to Claude Code in order, in one headless session. Between turns it makes the author's hand edits, and it sends the <code>/attest</code> lines as written. The lines don't adapt to Claude's replies; each is worded to make sense whatever Claude says.</li><li><strong>The author's own checks.</strong> Where the script says the author checked something, the runner first does that check for real: it reruns the script and compares the table, or looks the reference up on Crossref. That way the statement is true of the simulation. If a check fails, the run stops.</li><li><strong>Saving.</strong> At the end, the run is saved here as a git bundle, <code>tests/scripted/runs/&lt;run&gt;-&lt;date&gt;.bundle</code>, a complete history anyone can clone. It records the Claude Code version and model. Then the throwaway project is deleted.</li></ol>
+<h2>The answer key</h2>
+<p>It has two halves.</p>
+<ul><li><strong>Planted, before the run</strong> (<a href="answer-key.html"><code>answer-key.md</code></a>). For every unit the script settles: where the discretion sat, and how the author responded. The author attests the key before any run, so the commit's date shows it came first.</li><li><strong>Labeled after the run, by the author and Claude independently.</strong> This half covers:</li><li>everything Claude did without being asked (discretion taken)</li><li>whether its replies told the author about each decision, which decides "ignored" versus "wasn't notified"</li><li>any checks it ran unasked</li><li>any place it departed from a planted instruction</li></ul>
+<p>Agreement between the two of us is reported, and the author settles disagreements. A departure overrides the planted code for that unit, and the number of overrides is reported.</p>
+<h2>Scoring</h2>
+<p>The reader codes each run without seeing the key. Agreement is reported as κ for each of the three codes, pooled over runs:</p>
+<ul><li>discretion</li><li>judgment certification</li><li>right-answer certification</li></ul>
+<p>It is reported whatever it is. Below 0.6 on any code, the reader is reported as unvalidated, and the demonstration's disclosures are coded by hand (PLAN).</p>
+<p><strong>Discretion is scored in two layers.</strong></p>
+<ul><li><strong>Primary: kept versus handed over,</strong> where handed over is given and taken combined. This is what the first measure uses, and coders should agree on it even when the request was broad.</li><li><strong>Secondary: given versus taken,</strong> among the calls handed over. It has its own κ and is flagged as less reliable where the request was broad, since the line then depends on how far the request reached.</li></ul>
+<p>The 0.6 rule applies to the primary layer. If the secondary layer falls below 0.6, the disclosure reports only "handed over," and the measure loses nothing.</p>
+<p><strong>Right-answer certification is scored the same way</strong> (rule 11): "no check" and "wasn't notified" count together as unchecked in the primary layer, and the split between them, which marks where the tool went beyond, is a second layer. Listing is reported separately: how many of the key's units the reader found, and how many units it found that the key doesn't have.</p>
+<h2>The simulated author</h2>
+<p>Claude wrote every line the simulated author types, including the attestation sentences and the Limitations paragraph, as part of the script. No person did this work, and the paper says so.</p>
+<h2>Before scoring</h2>
+<p>PLAN needs two Deviations lines. The wording, with the author's reasons, comes later.</p>
+<ol><li><strong>The key is written in two halves.</strong> Criterion 5 says the true codes are written down before each run, but the hand-labeled half can only be written after.</li><li><strong>Discretion is scored in two layers.</strong> The 0.6 rule applies to kept versus handed over. A low score on given versus taken drops that split from the disclosure instead of invalidating the reader.</li></ol>
+</main>
+<script>
+// A copy button on every box. The clipboard API can be refused on a page opened
+// from a file, so a hidden text area does the copying then.
+document.querySelectorAll("pre").forEach(function (pre) {
+  var button = document.createElement("button");
+  button.type = "button"; button.className = "copy"; button.textContent = "Copy";
+  button.addEventListener("click", function () {
+    var text = (pre.querySelector("code") || pre).innerText.replace(/\n$/, "");
+    var done = function () { button.textContent = "Copied"; setTimeout(function () { button.textContent = "Copy"; }, 1500); };
+    var fallback = function () {
+      var area = document.createElement("textarea");
+      area.value = text; area.style.position = "fixed"; area.style.opacity = "0";
+      document.body.appendChild(area); area.select();
+      try { document.execCommand("copy"); done(); } catch (e) {}
+      area.remove();
+    };
+    if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(text).then(done, fallback);
+    else fallback();
+  });
+  pre.appendChild(button);
+});
+</script>
+</body>
+</html>

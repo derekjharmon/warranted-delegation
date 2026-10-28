@@ -1,0 +1,770 @@
+{
+ "U96": {
+  "id": "U96",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T9, T10",
+  "basis": "T9 check 6 compared the memo's account with plan.md and listed the departures; T10: \"I've read the results\"",
+  "confidence": "medium"
+ },
+ "U65": {
+  "id": "U65",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T9, T10",
+  "basis": "T9 check 4: \"plan cells in Table 1 also sum to 20,190\", other numbers match; T10: \"I've read the results\"",
+  "confidence": "low"
+ },
+ "U66": {
+  "id": "U66",
+  "discretion": "none",
+  "certification": "you checked it against the source",
+  "turns": "T11",
+  "basis": "\"I reran the analysis myself and compared the results table with its output\"",
+  "confidence": "high"
+ },
+ "U67": {
+  "id": "U67",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T9, T10",
+  "basis": "T9: \"Table 2a matches output/predicted_by_tested_rate.md\"; T10: \"I've read the results\"",
+  "confidence": "medium"
+ },
+ "U68": {
+  "id": "U68",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T9, T10",
+  "basis": "T9's test run covered only the ratios; the group IRRs were rebuilt in T10 and not checked again",
+  "confidence": "medium"
+ },
+ "U69": {
+  "id": "U69",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T9, T10",
+  "basis": "T9: predicted visits in the Bottom line and Table 2a match; T10: \"I've read the results\"",
+  "confidence": "medium"
+ },
+ "U70": {
+  "id": "U70",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T9, T10",
+  "basis": "T9 check 4/5: 21% figures match key_results; T10: \"I've read the results\"",
+  "confidence": "medium"
+ },
+ "U71": {
+  "id": "U71",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T9, T10",
+  "basis": "T9 check 4/5: text matches the tables; T10: \"I've read the results\"",
+  "confidence": "medium"
+ },
+ "U72": {
+  "id": "U72",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T3, T9, T10",
+  "basis": "T9: \"codes its coinsurance as 0% (4,175 person-years) or 100% (1,074)\"; T10: \"I've read the results\"",
+  "confidence": "medium"
+ },
+ "U73": {
+  "id": "U73",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T9, T10",
+  "basis": "T9 recomputed \"mean 2.86 zero 0.312 var/mean 7.09 p99 21\"; T10: \"I've read the results\"",
+  "confidence": "high"
+ },
+ "U74": {
+  "id": "U74",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T9, T10",
+  "basis": "T9: \"share with any visit falls from 78% to 56% ... hold in Table 1\"; T10: \"I've read the results\"",
+  "confidence": "medium"
+ },
+ "U75": {
+  "id": "U75",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T9, T10",
+  "basis": "T9 cat key_results.csv, results match; T10: \"I've read the results\"",
+  "confidence": "medium"
+ },
+ "U76": {
+  "id": "U76",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T9, T10",
+  "basis": "T9 recomputed \"raw gap 0.4059\"; T10: \"I've read the results\"",
+  "confidence": "high"
+ },
+ "U77": {
+  "id": "U77",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T9, T10",
+  "basis": "T9: \"3,459 flagged person-years (17%) and 183 capped\" match; T10: \"I've read the results\"",
+  "confidence": "medium"
+ },
+ "U78": {
+  "id": "U78",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T9, T10",
+  "basis": "T9: \"\u03b1 = 1.29\" and robustness figures match; T10: \"I've read the results\"",
+  "confidence": "medium"
+ },
+ "U79": {
+  "id": "U79",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T9, T10",
+  "basis": "T9: \"the OLS figures\" match; T10: \"I've read the results\"",
+  "confidence": "medium"
+ },
+ "U80": {
+  "id": "U80",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T9, T10",
+  "basis": "T9 grep 4,555/15,635 and cat exploratory csv; \"15,635 + 4,555 = 20,190\"; T10 read",
+  "confidence": "medium"
+ },
+ "U81": {
+  "id": "U81",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T9, T10",
+  "basis": "T9 test run \"joint 0.3955\", reported \"p = .15 to p = .40\"; T10: \"I've read the results\"",
+  "confidence": "medium"
+ },
+ "U82": {
+  "id": "U82",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T9, T10",
+  "basis": "T9 computed \"z {'lncoins': -7.29, 'idp': -9.21}\"; T10: \"I've read the results\"",
+  "confidence": "high"
+ },
+ "U83": {
+  "id": "U83",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T9, T10",
+  "basis": "T9 computed fmde for idp rows: \"ranges up to 6.16\"; T10: \"I've read the results\"",
+  "confidence": "high"
+ },
+ "U84": {
+  "id": "U84",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T9, T10",
+  "basis": "T9: predicted percentages in the Conclusion match; T10: \"I've read the results\"",
+  "confidence": "medium"
+ },
+ "U85": {
+  "id": "U85",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T9, T10",
+  "basis": "T9: \"'Barely moves under either robustness check' holds\"; T10: \"I've read the results\"",
+  "confidence": "high"
+ },
+ "U86": {
+  "id": "U86",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T9, T10",
+  "basis": "T9 check 5: Table 1 \"monotone across the four rates\"; T10: \"I've read the results\"",
+  "confidence": "low"
+ },
+ "U87": {
+  "id": "U87",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T9, T10",
+  "basis": "T9 check 5: description of the results matches the tables; T10: \"I've read the results\"",
+  "confidence": "low"
+ },
+ "U88": {
+  "id": "U88",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T9, T10",
+  "basis": "T9: OLS figures match the appendix; T10: \"I've read the results\"",
+  "confidence": "low"
+ },
+ "U89": {
+  "id": "U89",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T9, T10",
+  "basis": "T9 test run computed 'lncoins:u 0.992 0.5232 / idp:u 1.065 0.2979 / joint 0.3954'; author replied 'I've read the results'",
+  "confidence": "medium"
+ },
+ "U90": {
+  "id": "U90",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T9, T10",
+  "basis": "T9 check 6 refit the model: 'main Poisson model, HC1 standard errors, regressors ... match the code'; author replied 'I've read the results'",
+  "confidence": "medium"
+ },
+ "U91": {
+  "id": "U91",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T7, T9, T10",
+  "basis": "T9 check 6 said 'code uses an exact transformation'; author replied 'I've read the results'",
+  "confidence": "low"
+ },
+ "U92": {
+  "id": "U92",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T9, T10",
+  "basis": "T9: 'predictions at each rate (everyone set to a non-deductible plan, then averaged) ... match the code'; fmde pairing flagged",
+  "confidence": "medium"
+ },
+ "U93": {
+  "id": "U93",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T9, T10",
+  "basis": "T9: '99th-percentile capping, negative binomial model ... match the code'; 3,459/183 and \u03b1 checked",
+  "confidence": "medium"
+ },
+ "U94": {
+  "id": "U94",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T9, T10, T11",
+  "basis": "T10 reran the code, and the output showed 'Less-healthy indicator (main effect...)'. The author never responded to the T10 reply",
+  "confidence": "low"
+ },
+ "U95": {
+  "id": "U95",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T3, T9, T10",
+  "basis": "T9 flagged that the coinsurance IRR is estimated partly from the 1,074 person-years coded at 100%; author replied 'I've read the results'",
+  "confidence": "medium"
+ },
+ "U44": {
+  "id": "U44",
+  "discretion": "none",
+  "certification": "you checked it against the source",
+  "turns": "T9, T11",
+  "basis": "/attest: 'checked the Aron-Dine, Einav, and Finkelstein reference against its Crossref record'",
+  "confidence": "high"
+ },
+ "U45": {
+  "id": "U45",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T9, T10",
+  "basis": "Crossref lookup in T9 showed it 'Matches'; author replied 'I've read the results'",
+  "confidence": "high"
+ },
+ "U46": {
+  "id": "U46",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T9, T10",
+  "basis": "Crossref showed 601\u2013625 and T10 corrected the pages; author replied 'I've read the results'",
+  "confidence": "high"
+ },
+ "U47": {
+  "id": "U47",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T9, T10",
+  "basis": "T9 fetched PMC3943162, which showed outpatient spending falls and the inpatient response is not rejected; author replied 'I've read the results'",
+  "confidence": "medium"
+ },
+ "U48": {
+  "id": "U48",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T9, T10",
+  "basis": "WebFetch: 'The paper has no table of doctor visits ... reports only spending'",
+  "confidence": "medium"
+ },
+ "U49": {
+  "id": "U49",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T9, T10",
+  "basis": "T9: '\u22120.2 ... \u2705 Accurate', with a quote from the fetched paper",
+  "confidence": "high"
+ },
+ "U50": {
+  "id": "U50",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T9, T10",
+  "basis": "RePEc fetch gave the title 'structure of demand for health care'; the sentence was rewritten to follow it",
+  "confidence": "medium"
+ },
+ "U51": {
+  "id": "U51",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T9, T10",
+  "basis": "WebFetch: 'ran between 1974 and 1981 ... six different locations'; site names came from ICPSR/RAND",
+  "confidence": "medium"
+ },
+ "U52": {
+  "id": "U52",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T9, T10",
+  "basis": "T9: 'Aron-Dine et al.: 95% coinsurance for outpatient ... $150 a person or $450 a family'",
+  "confidence": "medium"
+ },
+ "U53": {
+  "id": "U53",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T9, T10",
+  "basis": "T9 read the statsmodels SOURCE and fetched the Cameron\u2013Trivedi data page",
+  "confidence": "high"
+ },
+ "U54": {
+  "id": "U54",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3, T9",
+  "basis": "T9: 'the controls that Deb and Trivedi use ... \u26a0\ufe0f Not verified'. The paper's text could not be obtained",
+  "confidence": "medium"
+ },
+ "U55": {
+  "id": "U55",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T9, T10",
+  "basis": "T9: 'refusal was 6% on free care against 24% on the 95% plan' \u2705",
+  "confidence": "high"
+ },
+ "U56": {
+  "id": "U56",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T9, T10",
+  "basis": "WebFetch: 'higher cost sharing lowers outpatient s[pending]'; author replied 'I've read the results'",
+  "confidence": "medium"
+ },
+ "U62": {
+  "id": "U62",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T9, T10, T11",
+  "basis": "T9 check 4: 'Person-years are stated the same way everywhere: 20,190'; author replied 'I've read the results'",
+  "confidence": "high"
+ },
+ "U63": {
+  "id": "U63",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T9, T10, T11",
+  "basis": "T9 found the predicted visits and percentages in the Bottom line, Table 2a and Conclusion match; author replied 'I've read the results'",
+  "confidence": "high"
+ },
+ "U64": {
+  "id": "U64",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T9, T10, T11",
+  "basis": "T9: 'Table 2 matches output/results_table.md' and every other number matches; author replied 'I've read the results'",
+  "confidence": "medium"
+ },
+ "U57": {
+  "id": "U57",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T9, T10",
+  "basis": "T9: 'Assignment was at the family level, per Aron-Dine et al.' \u2705",
+  "confidence": "high"
+ },
+ "U58": {
+  "id": "U58",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T9, T10",
+  "basis": "T9: 'Tested rates: free care, 25%, 50%, 95% \u2705 ... also a \"mixed\" 25%/50% plan and an HMO arm'",
+  "confidence": "high"
+ },
+ "U59": {
+  "id": "U59",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T9, T10",
+  "basis": "T9 Bash read randhie SOURCE/DESCRLONG; reply: \"varies slightly compared to that reported\"; T10 \"I've read the results\"",
+  "confidence": "medium"
+ },
+ "U60": {
+  "id": "U60",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T9, T10",
+  "basis": "T9 reply: \"statsmodels says fmde is 0 when idp = 1, but in the data it ranges up to 6.16\"; T10 \"I've read the results\"",
+  "confidence": "high"
+ },
+ "U61": {
+  "id": "U61",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T3, T8",
+  "basis": "T3 Bash d.describe() listed the variables; no reply reported this as a check, and the author's \"without an identifier\" confirms no check",
+  "confidence": "low"
+ },
+ "U36": {
+  "id": "U36",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T3, T7, T8",
+  "basis": "T7 item 22 \"plan came before any model\"; T8 \"Keep the rest of the list\"",
+  "confidence": "medium"
+ },
+ "U37": {
+  "id": "U37",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T3, T7, T8, T9, T10",
+  "basis": "T7 item 14 \"exact transformation... plan said delta-method\"; T8 \"Keep the rest of the list\"",
+  "confidence": "medium"
+ },
+ "U38": {
+  "id": "U38",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T8, T9, T10",
+  "basis": "T8 asked to speak \"only to the coinsurance rates the experiment actually tested\"; T9 fix list \"Say that the 25% and 50% predictions were added\"; T10 \"Fix anything they found wrong\"",
+  "confidence": "medium"
+ },
+ "U21": {
+  "id": "U21",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T3",
+  "basis": "The prompt names only \"doctor visits\", so choosing mdvis was handed over; the T3 reply mentions \"outpatient visits\" but this is not on the T7 list",
+  "confidence": "low"
+ },
+ "U22": {
+  "id": "U22",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T3, T7, T8",
+  "basis": "T7 item 10 \"Cost sharing is entered as lncoins\"; T8 \"Keep the rest of the list\"",
+  "confidence": "medium"
+ },
+ "U23": {
+  "id": "U23",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T3, T7, T8",
+  "basis": "T7 item 10 \"...and idp (individual deductible plan)\"; T8 \"Keep the rest of the list\"",
+  "confidence": "medium"
+ },
+ "U24": {
+  "id": "U24",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T3, T7, T8",
+  "basis": "T7 item 10 \"controls are every other variable in the extract\"; T8 \"Keep the rest of the list\"",
+  "confidence": "medium"
+ },
+ "U25": {
+  "id": "U25",
+  "discretion": "taken",
+  "certification": "elaborated and okayed",
+  "turns": "T3, T7, T8",
+  "basis": "The author's draft said \"linear regression by OLS\" and Claude changed it (T7 item 7); T8 \"Keep the model: visits pile up at zero...\"",
+  "confidence": "medium"
+ },
+ "U26": {
+  "id": "U26",
+  "discretion": "given",
+  "certification": "elaborated and okayed",
+  "turns": "T3, T7, T8",
+  "basis": "T8 \"Keep how you handled repeated years per person too, since without an identifier there's no better option\"",
+  "confidence": "high"
+ },
+ "U27": {
+  "id": "U27",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T1, T2",
+  "basis": "CLAUDE.md: \"Use two-tailed tests at the .05 level.\"",
+  "confidence": "high"
+ },
+ "U31": {
+  "id": "U31",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T3, T7, T8",
+  "basis": "The author asked for the methods-kit:robustness skill, which conflicts with CLAUDE.md; T7 item 11 \"I invented a different check\"; T8 \"Keep the rest of the list\"",
+  "confidence": "medium"
+ },
+ "U32": {
+  "id": "U32",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T3, T7, T8",
+  "basis": "The methods-kit:robustness skill says \"If the outcome is a count, refit with a negative binomial\"; T7 items 3 and 18; T8 \"Keep the rest of the list\"",
+  "confidence": "medium"
+ },
+ "U33": {
+  "id": "U33",
+  "discretion": "given",
+  "certification": "changed",
+  "turns": "T3, T7, T8",
+  "basis": "T7 item 13 headline 0% vs 95%; T8 \"except the interpretation: rewrite it so it speaks only to the coinsurance rates the experiment actually tested\"",
+  "confidence": "medium"
+ },
+ "U34": {
+  "id": "U34",
+  "discretion": "taken",
+  "certification": "okayed",
+  "turns": "T3, T7, T8",
+  "basis": "T7 item 7 \"I kept OLS as a descriptive appendix\"; T8 \"Keep the rest of the list\"",
+  "confidence": "medium"
+ },
+ "U35": {
+  "id": "U35",
+  "discretion": "taken",
+  "certification": "changed",
+  "turns": "T5, T7, T8, T9, T10",
+  "basis": "Only trace is set-aside T5; T7 item 25 okayed in T8; T9 found \"leaves out the 'less healthy' indicator\"; T10 \"Fix anything they found wrong\"",
+  "confidence": "medium"
+ },
+ "U17": {
+  "id": "U17",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3",
+  "basis": "Prompt: \"Using the RAND Health Insurance Experiment data in statsmodels (randhie)\"",
+  "confidence": "high"
+ },
+ "U18": {
+  "id": "U18",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T1, T2",
+  "basis": "CLAUDE.md: \"Keep every person-year in the data; don't drop people with zero visits.\"",
+  "confidence": "high"
+ },
+ "U19": {
+  "id": "U19",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T3, T7, T8",
+  "basis": "T7 item 16 \"Descriptive table by plan cell... 'coded 0%' and 'coded 100%'\"; T8 \"Keep the rest of the list\"",
+  "confidence": "low"
+ },
+ "U20": {
+  "id": "U20",
+  "discretion": "taken",
+  "certification": "okayed",
+  "turns": "T5, T7, T8",
+  "basis": "Only trace is set-aside T5; T7 item 24 \"fair or poor self-rated health, or a physical limitation\"; T8 \"Keep the rest of the list\"",
+  "confidence": "medium"
+ },
+ "U28": {
+  "id": "U28",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T3, T7, T8",
+  "basis": "T7 item 12 \"H1 (coinsurance), H2 (deductible) and H3\"; T8 \"Keep the rest of the list\"",
+  "confidence": "medium"
+ },
+ "U29": {
+  "id": "U29",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T3, T7, T8",
+  "basis": "T7 item 12 \"H2 (deductible)\"; T8 \"Keep the rest of the list\"",
+  "confidence": "medium"
+ },
+ "U30": {
+  "id": "U30",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T3, T7, T8",
+  "basis": "T7 item 12 \"H3 (a joint Wald test of both)\"; T8 \"Keep the rest of the list\"",
+  "confidence": "medium"
+ },
+ "U39": {
+  "id": "U39",
+  "discretion": "given",
+  "certification": "changed",
+  "turns": "T3, T7, T8",
+  "basis": "T3 \"decide everything else as you think best\"; T8 \"Keep the rest of the list, except the interpretation: rewrite it\"",
+  "confidence": "medium"
+ },
+ "U40": {
+  "id": "U40",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T8, T9",
+  "basis": "T8 asked to \"rewrite it so it speaks only to the coinsurance rates\"; reply notes new Table 2a and four predictions; author moved on to checks",
+  "confidence": "low"
+ },
+ "U41": {
+  "id": "U41",
+  "discretion": "given",
+  "certification": "changed",
+  "turns": "T3, T7, T8",
+  "basis": "T7 item 20 \"I never ran a model without fmde\"; T8 \"except the interpretation: rewrite it\"; now \"I have not tested this\"",
+  "confidence": "medium"
+ },
+ "U42": {
+  "id": "U42",
+  "discretion": "taken",
+  "certification": "changed",
+  "turns": "T5, T7, T9, T10",
+  "basis": "Exploratory work only in set-aside T5; T9 found \"'may respond somewhat less to the deductible' is not supported\"; T10 \"Fix anything they found wrong\"",
+  "confidence": "medium"
+ },
+ "U43": {
+  "id": "U43",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T3, T7, T8",
+  "basis": "T7 item 7 \"I kept OLS as a descriptive appendix\"; T8 \"Keep the rest of the list\"",
+  "confidence": "medium"
+ },
+ "U1": {
+  "id": "U1",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3",
+  "basis": "T3 \"a 2 to 3 page memo ... on whether cost sharing reduces doctor visits\"",
+  "confidence": "high"
+ },
+ "U2": {
+  "id": "U2",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T1, T3",
+  "basis": "Author's draft cites Aron-Dine et al. revisiting the experiment and Deb and Trivedi; T3 \"Use the references and the paragraphs I drafted\"",
+  "confidence": "medium"
+ },
+ "U3": {
+  "id": "U3",
+  "discretion": "taken",
+  "certification": "changed",
+  "turns": "T3, T7, T8, T9, T10",
+  "basis": "Draft said \"no effect\"; Claude rewrote (T7 item 4); T10 \"Fix anything they found wrong\" narrowed it to spending",
+  "confidence": "medium"
+ },
+ "U4": {
+  "id": "U4",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T7, T8, T9, T10, T11",
+  "basis": "T10 fix: \"The memo cites that paper, so I used its dates\"; no later response from author",
+  "confidence": "medium"
+ },
+ "U5": {
+  "id": "U5",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T9, T10, T11",
+  "basis": "T9 \"Describe the individual deductible plan\"; T10 \"Fix anything\"; reply reported it with no later response",
+  "confidence": "medium"
+ },
+ "U6": {
+  "id": "U6",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T3, T7, T8",
+  "basis": "T7 item 10 \"roughly follows Deb and Trivedi\"; T8 \"Keep the rest of the list\"",
+  "confidence": "medium"
+ },
+ "U7": {
+  "id": "U7",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T3, T7, T8",
+  "basis": "T7 item 20 \"Aron-Dine et al. document differential refusal and dropout\" + item 21 caveats; T8 \"Keep the rest\"",
+  "confidence": "low"
+ },
+ "U8": {
+  "id": "U8",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T1, T3",
+  "basis": "T3 \"RAND Health Insurance Experiment data in statsmodels (randhie)\"; draft \"as distributed by Cameron and Trivedi (2005)\"",
+  "confidence": "high"
+ },
+ "U9": {
+  "id": "U9",
+  "discretion": "given",
+  "certification": "changed",
+  "turns": "T3, T8",
+  "basis": "T8 \"rewrite it so it speaks only to the coinsurance rates the experiment actually tested\"",
+  "confidence": "high"
+ },
+ "U10": {
+  "id": "U10",
+  "discretion": "given",
+  "certification": "changed",
+  "turns": "T3, T9, T10",
+  "basis": "T9 flagged \"Use of care\" as too broad; T10 \"Fix anything\" \u2192 \"consistent with ... outpatient spending falls\"",
+  "confidence": "medium"
+ },
+ "U11": {
+  "id": "U11",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T3, T7, T8",
+  "basis": "T7 item 19 \"Structure and framing: a 'Bottom line' section first\"; T8 \"Keep the rest of the list\"",
+  "confidence": "high"
+ },
+ "U12": {
+  "id": "U12",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T3, T7, T8",
+  "basis": "T7 item 16 \"Descriptive table by plan cell\"; T8 \"Keep the rest\"",
+  "confidence": "high"
+ },
+ "U13": {
+  "id": "U13",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T3, T7, T8",
+  "basis": "methods-kit:robustness skill (author requested) \"its own column next to the main result\"; T7 item 1; T8 \"Keep the rest\"",
+  "confidence": "medium"
+ },
+ "U14": {
+  "id": "U14",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T8, T9",
+  "basis": "T8 reply \"The Results section has a new Table 2a\"; author never responded to it",
+  "confidence": "medium"
+ },
+ "U15": {
+  "id": "U15",
+  "discretion": "taken",
+  "certification": "okayed",
+  "turns": "T5, T7, T8",
+  "basis": "Exploratory table only in set-aside T5; T7 items 23\u201325 listed; T8 \"Keep the rest of the list\"",
+  "confidence": "medium"
+ },
+ "U16": {
+  "id": "U16",
+  "discretion": "given",
+  "certification": "changed",
+  "turns": "T3, T7, T8, T10",
+  "basis": "T7 item 21 caveats; T8 \"Keep how you handled repeated years ... no better option\" and directed the tested-rates-only boundary",
+  "confidence": "medium"
+ }
+}

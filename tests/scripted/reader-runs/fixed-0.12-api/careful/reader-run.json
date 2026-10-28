@@ -1,0 +1,60 @@
+{
+ "reader": "0.12",
+ "backend": "api",
+ "model": "claude-opus-5-5",
+ "effort": "high",
+ "date": "2026-10-15",
+ "reader_sha256": "446d58842542e407ced0474040d264c5b3e223851bd7d1b045e0935de092e7b3",
+ "checklists_sha256": {
+  "checklists/judgment-decisions.md": "273ca3d890fedc7e529c512bfe5182bfee887747ef93e54c63cccd83ebb43f3c",
+  "checklists/checkable-claims.md": "68ed07106dd05adf56af8fc480db7273dde9d9ced33b657e98349859c6f6196d"
+ },
+ "work": [
+  "memo.md",
+  "analysis/",
+  "output/"
+ ],
+ "packs": [
+  "quantitative"
+ ],
+ "label": null,
+ "converted": null,
+ "fingerprint": {
+  "commit": "370d92e633f17f943990d9bb8c65ad0ae149913c",
+  "logs": [
+   {
+    "log": "simulated-author-2529",
+    "events": 90,
+    "head": "2acae652ff429f867507dd42058744d03391f6b6105a3f34848a28c16b1b8fce",
+    "verifies": true
+   }
+  ]
+ },
+ "work_map": null,
+ "outside": null,
+ "numbers": {
+  "traced": 24,
+  "total": 24,
+  "untraced": [],
+  "per_unit": {}
+ },
+ "typed": {
+  "tool_words": 628,
+  "words": 829,
+  "files": {
+   "memo.md": {
+    "tool": 628,
+    "people": 201
+   }
+  }
+ },
+ "usage": {
+  "input_tokens": 57488,
+  "cache_creation_input_tokens": 30813,
+  "cache_read_input_tokens": 52218,
+  "output_tokens": 38127,
+  "calls": 5,
+  "seconds": 294
+ },
+ "cost_usd": 1.16
+}

@@ -1,0 +1,183 @@
+{
+  "run": "careful",
+  "started": "2026-10-06T14:57:27",
+  "environment": {
+    "claude_code": "2.1.291 (Claude Code)",
+    "model": "claude-opus-5-5",
+    "python": "3.14.7",
+    "statsmodels": "0.14.6",
+    "pandas": "2.2.3"
+  },
+  "attested_versions": {
+    "repo_head": "d3f0c9823e1c256f0903d44315cb1193a08d9d76",
+    "answer_key": "6a074ca321bb95bc3d0d5b44a6e24aef2739ef71 2026-10-06T14:23:50-04:00"
+  },
+  "script_sha256": "dabbe501c740bc5eb4069bb44675e0c710c7fddb90c349edb61fbf96fcfd6dc5",
+  "answer_key_sha256": "29e910cdc0845e2e41605959a701035ce3ebcb79e7b52ee2a4e2dbba92e524e4",
+  "runner_sha256": "6b3e821eb91d52115e88c6775bf1e9c51f3516bbd8255a5c8dfec6f4087de310",
+  "steps": [
+    {
+      "id": "setup",
+      "kind": "attest",
+      "exit": 0,
+      "seconds": 2,
+      "is_error": false,
+      "turns": 0,
+      "cost_usd": 0,
+      "stderr": null,
+      "commit": "c99fe65af1e29b5b0f717b6e24f1ba74c3e153cf"
+    },
+    {
+      "id": "C1",
+      "kind": "prompt",
+      "exit": 0,
+      "seconds": 34,
+      "is_error": false,
+      "turns": 6,
+      "cost_usd": 0.143286,
+      "stderr": null
+    },
+    {
+      "id": "C2",
+      "kind": "prompt",
+      "exit": 0,
+      "seconds": 42,
+      "is_error": false,
+      "turns": 7,
+      "cost_usd": 0.276461,
+      "stderr": null
+    },
+    {
+      "id": "C3",
+      "kind": "prompt",
+      "exit": 0,
+      "seconds": 12,
+      "is_error": false,
+      "turns": 1,
+      "cost_usd": 0.30505940000000004,
+      "stderr": null
+    },
+    {
+      "id": "C4",
+      "kind": "prompt",
+      "exit": 0,
+      "seconds": 29,
+      "is_error": false,
+      "turns": 4,
+      "cost_usd": 0.40494420000000003,
+      "stderr": null
+    },
+    {
+      "id": "C5",
+      "kind": "attest",
+      "exit": 0,
+      "seconds": 2,
+      "is_error": false,
+      "turns": 0,
+      "cost_usd": 0.40494420000000003,
+      "stderr": null,
+      "commit": "51b6386e3b568ae35478807358182c06b5b0779b"
+    },
+    {
+      "id": "C6",
+      "kind": "prompt",
+      "exit": 0,
+      "seconds": 10,
+      "is_error": false,
+      "turns": 1,
+      "cost_usd": 0.43519460000000004,
+      "stderr": null
+    },
+    {
+      "id": "C7",
+      "kind": "prompt",
+      "exit": 0,
+      "seconds": 40,
+      "is_error": false,
+      "turns": 2,
+      "cost_usd": 0.561763,
+      "stderr": null
+    },
+    {
+      "id": "C8",
+      "kind": "prompt",
+      "exit": 0,
+      "seconds": 16,
+      "is_error": false,
+      "turns": 4,
+      "cost_usd": 0.6275054,
+      "stderr": null
+    },
+    {
+      "id": "C9",
+      "kind": "hand edit",
+      "file": "memo.md"
+    },
+    {
+      "id": "C10",
+      "kind": "prompt",
+      "exit": 0,
+      "seconds": 104,
+      "is_error": false,
+      "turns": 13,
+      "cost_usd": 0.9913815999999999,
+      "stderr": null
+    },
+    {
+      "id": "C11",
+      "kind": "prompt",
+      "exit": 0,
+      "seconds": 32,
+      "is_error": false,
+      "turns": 10,
+      "cost_usd": 1.1431445999999998,
+      "stderr": null
+    },
+    {
+      "id": "C12",
+      "kind": "prompt",
+      "exit": 0,
+      "seconds": 37,
+      "is_error": false,
+      "turns": 1,
+      "cost_usd": 1.2282191999999998,
+      "stderr": null
+    },
+    {
+      "id": "C13",
+      "kind": "prompt",
+      "exit": 0,
+      "seconds": 5,
+      "is_error": false,
+      "turns": 1,
+      "cost_usd": 1.2697272,
+      "stderr": null
+    },
+    {
+      "id": "C14",
+      "kind": "author checks",
+      "tobin": "matches Crossref",
+      "table1": "reproduced"
+    },
+    {
+      "id": "C15",
+      "kind": "attest",
+      "exit": 0,
+      "seconds": 2,
+      "is_error": false,
+      "turns": 0,
+      "cost_usd": 1.2697272,
+      "stderr": null,
+      "commit": "370d92e633f17f943990d9bb8c65ad0ae149913c"
+    }
+  ],
+  "session": "82dce991-4937-448f-9513-57b7fa44d1bd",
+  "verify_log": [
+    "OK  91 events  head 3fa0480fcf8ad2332893df6023b6be46f7ea25e383a4eb6ac6ab12af9ce3c1fb  (/private/var/folders/_k/wpbxz8gn451dmsv_93z4yt6r0000gn/T/wd-scripted-careful-4jjjtb82/project/provenance/log/simulated-author-2529/events.jsonl)",
+    "sidecars: 62 checked, 0 withheld",
+    "snapshots: 7 present, 0 withheld"
+  ],
+  "final_commit": "370d92e633f17f943990d9bb8c65ad0ae149913c",
+  "finished": "2026-10-06T15:03:36",
+  "bundle_sha256": "7ef8033997f8d80f7a5c9553543390ef008772c9d0b7014079db799fd1000f91"
+}

@@ -1,0 +1,618 @@
+{
+ "U53": {
+  "id": "U53",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T2, T3",
+  "basis": "pick whatever approach you think is best; table transcribed from script output, never compared; bare /attest final",
+  "confidence": "high"
+ },
+ "U54": {
+  "id": "U54",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T2, T3",
+  "basis": "put a results table in output/; numbers produced by running the script, not checked",
+  "confidence": "high"
+ },
+ "U55": {
+  "id": "U55",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T2, T3",
+  "basis": "11.7 cents produced by script run; no comparison against source",
+  "confidence": "high"
+ },
+ "U56": {
+  "id": "U56",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T2, T3",
+  "basis": "stats.t.ppf(.975,10) recomputed CI, edited 9.1\u21929.0; reply '95% CI 9.0\u201314.3 cents' never answered",
+  "confidence": "medium"
+ },
+ "U57": {
+  "id": "U57",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T2, T3",
+  "basis": "'Mean investment is 133.3, not 155.9' \u2014 133.3 produced by script; author never responded",
+  "confidence": "medium"
+ },
+ "U58": {
+  "id": "U58",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T2, T3",
+  "basis": "median_invest computed by script; no check",
+  "confidence": "high"
+ },
+ "U59": {
+  "id": "U59",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T2, T3",
+  "basis": "min/max firm mean invest computed by script; no check",
+  "confidence": "high"
+ },
+ "U60": {
+  "id": "U60",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T2, T3",
+  "basis": "share_value_variance_between_firms computed by script; reply mentions 94%, no check",
+  "confidence": "high"
+ },
+ "U61": {
+  "id": "U61",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T2, T3",
+  "basis": "SEs from script output (0.0068 \u2192 0.0162); no check",
+  "confidence": "high"
+ },
+ "U62": {
+  "id": "U62",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T2, T3",
+  "basis": "within_sd_value from script; 38 not recomputed by tool",
+  "confidence": "high"
+ },
+ "U63": {
+  "id": "U63",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T2, T3",
+  "basis": "capital coef 0.3514 from script run; no check",
+  "confidence": "high"
+ },
+ "U64": {
+  "id": "U64",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T2, T3",
+  "basis": "'about 2.4\u00d7 too small' derived from script output; no check",
+  "confidence": "high"
+ },
+ "U65": {
+  "id": "U65",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T2, T3",
+  "basis": "0.1005 from script run; no check",
+  "confidence": "high"
+ },
+ "U66": {
+  "id": "U66",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T2, T3",
+  "basis": "log-model p = 0.035 / 0.121 from script run; no check",
+  "confidence": "high"
+ },
+ "U67": {
+  "id": "U67",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T2, T3",
+  "basis": "'This holds after taking out fixed differences' \u2014 interpretation of script output, not checked",
+  "confidence": "high"
+ },
+ "U68": {
+  "id": "U68",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T2, T3",
+  "basis": "'barely changes if we drop the eleventh firm' \u2014 from script output; no check",
+  "confidence": "high"
+ },
+ "U69": {
+  "id": "U69",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T2, T3",
+  "basis": "'stays between 0.10 and 0.12' \u2014 from script output; no check",
+  "confidence": "high"
+ },
+ "U70": {
+  "id": "U70",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T2, T3",
+  "basis": "'still clearly significant' \u2014 from script output; no check",
+  "confidence": "high"
+ },
+ "U71": {
+  "id": "U71",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T2, T3",
+  "basis": "'less precise when everything is measured in logs' \u2014 no check",
+  "confidence": "high"
+ },
+ "U72": {
+  "id": "U72",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T2, T3",
+  "basis": "memo equation vs code formula never compared",
+  "confidence": "high"
+ },
+ "U73": {
+  "id": "U73",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T2, T3",
+  "basis": "bootstrap description written by Claude; not compared with the code",
+  "confidence": "high"
+ },
+ "U74": {
+  "id": "U74",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T2, T3",
+  "basis": "'t distribution with 10 degrees of freedom' \u2014 not compared with the code",
+  "confidence": "high"
+ },
+ "U75": {
+  "id": "U75",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T2, T3",
+  "basis": "table notes generated by script; not compared with the code",
+  "confidence": "high"
+ },
+ "U76": {
+  "id": "U76",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T2, T3",
+  "basis": "robustness descriptions not compared with the code",
+  "confidence": "high"
+ },
+ "U77": {
+  "id": "U77",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T2, T3",
+  "basis": "data loaded and shape (220, 5) printed, but never compared with Grunfeld/Kleiber\u2013Zeileis source",
+  "confidence": "medium"
+ },
+ "U38": {
+  "id": "U38",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T2, T3",
+  "basis": "Crossref lookup of 10.2307/1912538; reply: \"Crossref confirms 1982\"; only a bare /attest followed",
+  "confidence": "high"
+ },
+ "U39": {
+  "id": "U39",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T2, T3",
+  "basis": "Crossref lookup of K&Z DOI; reply: \"The other two references checked out\"; no response",
+  "confidence": "high"
+ },
+ "U40": {
+  "id": "U40",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T2, T3",
+  "basis": "Crossref lookup of 10.2307/1991374; \"checked out\"; no response",
+  "confidence": "high"
+ },
+ "U41": {
+  "id": "U41",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T1, T2",
+  "basis": "copied from author's notes/draft.md; Crossref checked only metadata, not content",
+  "confidence": "high"
+ },
+ "U42": {
+  "id": "U42",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T2",
+  "basis": "Claude reversed draft (\"Hayashi's result was reversed\") with no lookup of the paper's content; reply mentions it",
+  "confidence": "medium"
+ },
+ "U43": {
+  "id": "U43",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T2",
+  "basis": "\"described in detail by Kleiber and Zeileis\" written by Claude using the author's references; no source check",
+  "confidence": "medium"
+ },
+ "U44": {
+  "id": "U44",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T2",
+  "basis": "\"several slightly different versions\" attributed to K&Z; no reading of the paper in the record",
+  "confidence": "medium"
+ },
+ "U45": {
+  "id": "U45",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T2",
+  "basis": "Data shape (220, 5) was produced when loading, not checked against the text; no comparison shown",
+  "confidence": "medium"
+ },
+ "U46": {
+  "id": "U46",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T2",
+  "basis": "Both Hayashi passages were written by Claude; no consistency check in the record",
+  "confidence": "medium"
+ },
+ "U47": {
+  "id": "U47",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T2",
+  "basis": "Grunfeld (1958) cited, but no tool call checked the reference list",
+  "confidence": "medium"
+ },
+ "U48": {
+  "id": "U48",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T2",
+  "basis": "\"Grunfeld's thesis was at the University of Chicago\" asserted with no lookup",
+  "confidence": "medium"
+ },
+ "U49": {
+  "id": "U49",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T2",
+  "basis": "\"millions of 1947 dollars... value at 31 December\" not checked against documentation",
+  "confidence": "medium"
+ },
+ "U50": {
+  "id": "U50",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T2",
+  "basis": "\"Many textbook versions use only 10\" with no source check",
+  "confidence": "medium"
+ },
+ "U51": {
+  "id": "U51",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T2",
+  "basis": "\"do not contain replacement cost\"; dataset columns printed but the claim was not compared",
+  "confidence": "medium"
+ },
+ "U52": {
+  "id": "U52",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T2",
+  "basis": "\"manufacturing and oil firms\" asserted with no check",
+  "confidence": "medium"
+ },
+ "U18": {
+  "id": "U18",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T2, T3",
+  "basis": "\"pick whatever approach you think is best\"; reply: \"11.7 cents of extra investment\"; no response",
+  "confidence": "medium"
+ },
+ "U19": {
+  "id": "U19",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T2, T3",
+  "basis": "open approach request; reply: \"allowing for... each firm's capital stock\"",
+  "confidence": "medium"
+ },
+ "U20": {
+  "id": "U20",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T2, T3",
+  "basis": "open approach request; reply mentions \"each firm's capital stock\"",
+  "confidence": "medium"
+ },
+ "U21": {
+  "id": "U21",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T2, T3",
+  "basis": "\"pick whatever approach\"; draft \"Written before I settled the model\"; reply: \"I didn't keep your pooled-OLS... plan\"",
+  "confidence": "high"
+ },
+ "U22": {
+  "id": "U22",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T2, T3",
+  "basis": "reply: \"I used firm and year fixed effects\"; no response",
+  "confidence": "high"
+ },
+ "U23": {
+  "id": "U23",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T2, T3",
+  "basis": "reply: \"standard errors clustered by firm\"; no response",
+  "confidence": "high"
+ },
+ "U24": {
+  "id": "U24",
+  "discretion": "given",
+  "certification": "wasn't notified",
+  "turns": "T2",
+  "basis": "Part of the open approach request; the reply never mentions t with G\u22121 df",
+  "confidence": "medium"
+ },
+ "U25": {
+  "id": "U25",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T2, T3",
+  "basis": "reply: \"checked significance with a bootstrap method designed for that case\"",
+  "confidence": "medium"
+ },
+ "U26": {
+  "id": "U26",
+  "discretion": "taken",
+  "certification": "ignored",
+  "turns": "T2, T3",
+  "basis": "extra robustness analysis; reply: \"barely moves if I drop American Steel\"",
+  "confidence": "medium"
+ },
+ "U27": {
+  "id": "U27",
+  "discretion": "taken",
+  "certification": "ignored",
+  "turns": "T2, T3",
+  "basis": "extra robustness spec; reply: \"use last year's value instead... (0.10)\"",
+  "confidence": "low"
+ },
+ "U28": {
+  "id": "U28",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T2",
+  "basis": "\"pick whatever approach you think is best\"; reply: \"a log version that weights small firms more evenly\"; no response",
+  "confidence": "high"
+ },
+ "U29": {
+  "id": "U29",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T2",
+  "basis": "reply: \"I didn't keep your pooled-OLS-with-robust-errors plan... about 2.4\u00d7 too small\"; never answered",
+  "confidence": "medium"
+ },
+ "U30": {
+  "id": "U30",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T2",
+  "basis": "open approach; reply only hints via \"those standard errors are about 2.4\u00d7 too small\"",
+  "confidence": "medium"
+ },
+ "U31": {
+  "id": "U31",
+  "discretion": "given",
+  "certification": "wasn't notified",
+  "turns": "T2",
+  "basis": "open approach; reply never mentions a firm-FE-only model",
+  "confidence": "medium"
+ },
+ "U32": {
+  "id": "U32",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T2",
+  "basis": "reply: \"94% of the variation in value is between firms\"; no response",
+  "confidence": "high"
+ },
+ "U13": {
+  "id": "U13",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T2",
+  "basis": "prompt: \"using the Grunfeld data in statsmodels\"",
+  "confidence": "high"
+ },
+ "U14": {
+  "id": "U14",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T2",
+  "basis": "reply: \"The data also has 11 firms, not the ten your draft says\"; no response",
+  "confidence": "medium"
+ },
+ "U15": {
+  "id": "U15",
+  "discretion": "given",
+  "certification": "wasn't notified",
+  "turns": "T2",
+  "basis": "open approach; reply never mentions dropping first-year observations",
+  "confidence": "medium"
+ },
+ "U16": {
+  "id": "U16",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T2",
+  "basis": "reply: \"if I use last year's value instead\"; no response",
+  "confidence": "high"
+ },
+ "U17": {
+  "id": "U17",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T2",
+  "basis": "reply: \"a log version that weights small firms more evenly\"; no response",
+  "confidence": "high"
+ },
+ "U33": {
+  "id": "U33",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T2",
+  "basis": "reply: \"about 11.7 cents of extra investment\"; no response",
+  "confidence": "medium"
+ },
+ "U34": {
+  "id": "U34",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T2",
+  "basis": "reply: \"estimate barely moves\"; \"standard errors are about 2.4\u00d7 too small\"",
+  "confidence": "medium"
+ },
+ "U35": {
+  "id": "U35",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T2",
+  "basis": "reply: \"which is a true prediction (0.10)\"; no response",
+  "confidence": "high"
+ },
+ "U36": {
+  "id": "U36",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T2",
+  "basis": "reply: \"the strong result relies partly on GM and US Steel\"",
+  "confidence": "high"
+ },
+ "U37": {
+  "id": "U37",
+  "discretion": "given",
+  "certification": "wasn't notified",
+  "turns": "T2",
+  "basis": "reply never says which p-values go in the memo table and which go to output",
+  "confidence": "medium"
+ },
+ "U1": {
+  "id": "U1",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T2",
+  "basis": "prompt: \"whether a firm's market value predicts how much it invests\"",
+  "confidence": "high"
+ },
+ "U2": {
+  "id": "U2",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T1, T2",
+  "basis": "draft Background: \"Tobin (1969) argued... Hayashi\"; prompt: \"Use the references and the paragraphs\"",
+  "confidence": "medium"
+ },
+ "U3": {
+  "id": "U3",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T1, T2",
+  "basis": "author's notes/references.md and draft supply Tobin, Hayashi, Kleiber & Zeileis",
+  "confidence": "high"
+ },
+ "U4": {
+  "id": "U4",
+  "discretion": "taken",
+  "certification": "ignored",
+  "turns": "T2",
+  "basis": "draft: \"marginal q and average q are never equal\"; Claude reversed it; reply: \"Hayashi's result was reversed... please check you agree\"; no response",
+  "confidence": "high"
+ },
+ "U5": {
+  "id": "U5",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T1, T2",
+  "basis": "copied from draft: \"Tobin (1969) argued that firms invest\"",
+  "confidence": "high"
+ },
+ "U6": {
+  "id": "U6",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T1, T2",
+  "basis": "draft cites Hayashi for marginal vs average q; claim change counted under U4",
+  "confidence": "medium"
+ },
+ "U7": {
+  "id": "U7",
+  "discretion": "given",
+  "certification": "wasn't notified",
+  "turns": "T2",
+  "basis": "reference list only; citation sentence not copied from draft; reply doesn't mention this citing",
+  "confidence": "low"
+ },
+ "U8": {
+  "id": "U8",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T2",
+  "basis": "reply: \"Answer: yes\"; \"why the q we can measure can guide investment\"",
+  "confidence": "medium"
+ },
+ "U9": {
+  "id": "U9",
+  "discretion": "given",
+  "certification": "wasn't notified",
+  "turns": "T2",
+  "basis": "\"Write a 2 to 3 page memo\"; reply never describes the section structure",
+  "confidence": "medium"
+ },
+ "U10": {
+  "id": "U10",
+  "discretion": "given",
+  "certification": "wasn't notified",
+  "turns": "T2",
+  "basis": "reply mentions output tables only, not the shorter table in the memo",
+  "confidence": "medium"
+ },
+ "U11": {
+  "id": "U11",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T2, T3",
+  "basis": "Prompt asked to \"put a results table in output/\" and \"pick whatever approach you think is best\"; the reply mentions \"the results tables (`output/results_table.md` and `.csv`...)\"; T3 is only a bare \"/attest final\"",
+  "confidence": "high"
+ },
+ "U12": {
+  "id": "U12",
+  "discretion": "given",
+  "certification": "wasn't notified",
+  "turns": "T2, T3",
+  "basis": "The memo request (\"Write a 2 to 3 page memo... pick whatever approach you think is best\") handed over its content; Claude wrote the Limitations section new, not copied from notes/. The reply never mentions the not-causal, value-not-q, or small-sample limitations.",
+  "confidence": "medium"
+ }
+}

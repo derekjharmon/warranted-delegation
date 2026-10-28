@@ -1,0 +1,482 @@
+{
+ "U40": {
+  "id": "U40",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3, T4, T6",
+  "basis": "Table produced by script at author's request; no comparison against a rerun; T5 is a bare /attest",
+  "confidence": "high"
+ },
+ "U41": {
+  "id": "U41",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T2, T6, T7",
+  "basis": "\"This sample gives 145.96\"; author never responded to it; \"/attest final\" names no claim",
+  "confidence": "medium"
+ },
+ "U42": {
+  "id": "U42",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T2, T6",
+  "basis": "\"Tell me how many firms, years, and observations\"; the count was produced, not checked",
+  "confidence": "high"
+ },
+ "U43": {
+  "id": "U43",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3, T6",
+  "basis": "\"Interpret the main result\"; numbers produced by script, not checked",
+  "confidence": "high"
+ },
+ "U44": {
+  "id": "U44",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3, T6",
+  "basis": "Interpretation the author asked for; no check",
+  "confidence": "high"
+ },
+ "U45": {
+  "id": "U45",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T6",
+  "basis": "CI stated in reply; no tool call computed or compared it",
+  "confidence": "high"
+ },
+ "U46": {
+  "id": "U46",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T6",
+  "basis": "Restates within R\u00b2 0.564; no check",
+  "confidence": "high"
+ },
+ "U47": {
+  "id": "U47",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T4, T6",
+  "basis": "\"drops by about 45%\" reported; never checked",
+  "confidence": "high"
+ },
+ "U48": {
+  "id": "U48",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T4, T6",
+  "basis": "Robustness numbers produced by script; no check",
+  "confidence": "high"
+ },
+ "U49": {
+  "id": "U49",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T6",
+  "basis": "\"about \u22120.10 to 0.76\" stated; no tool call checked it",
+  "confidence": "high"
+ },
+ "U50": {
+  "id": "U50",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T4, T6",
+  "basis": "\"0.077, p = .17\" produced; no check",
+  "confidence": "high"
+ },
+ "U51": {
+  "id": "U51",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T6",
+  "basis": "\"Interpret the main result\"; interpretation not checked",
+  "confidence": "high"
+ },
+ "U52": {
+  "id": "U52",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T6",
+  "basis": "Part of the interpretation the author asked for; no check",
+  "confidence": "medium"
+ },
+ "U53": {
+  "id": "U53",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T4, T6",
+  "basis": "\"still positive, but the data can't rule out zero\"; no check",
+  "confidence": "high"
+ },
+ "U54": {
+  "id": "U54",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T4, T6",
+  "basis": "\"Capital stock also loses significance\"; no check",
+  "confidence": "high"
+ },
+ "U55": {
+  "id": "U55",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T6",
+  "basis": "Interpretation paragraph; no check",
+  "confidence": "high"
+ },
+ "U56": {
+  "id": "U56",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T2, T3, T6, T7",
+  "basis": "\"Methods says the wrong estimation method\" after Read of table1.md; author never responded",
+  "confidence": "low"
+ },
+ "U57": {
+  "id": "U57",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T2, T3",
+  "basis": "Asserts ran; \"the panel is balanced\"; T3 prompt does not acknowledge it",
+  "confidence": "medium"
+ },
+ "U58": {
+  "id": "U58",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3, T6",
+  "basis": "Author specified the model; description not checked against code",
+  "confidence": "high"
+ },
+ "U59": {
+  "id": "U59",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T4, T6",
+  "basis": "Description of columns; no check",
+  "confidence": "high"
+ },
+ "U60": {
+  "id": "U60",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T2",
+  "basis": "Data loaded from statsmodels; never compared with original source",
+  "confidence": "high"
+ },
+ "U27": {
+  "id": "U27",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T1, T2, T6",
+  "basis": "Author's reference list; Claude flagged 1982 but made no lookup tool call",
+  "confidence": "high"
+ },
+ "U28": {
+  "id": "U28",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T1, T6",
+  "basis": "Author's reference list copied as written; no lookup",
+  "confidence": "high"
+ },
+ "U29": {
+  "id": "U29",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T1, T6",
+  "basis": "Author's reference list copied as written; no lookup",
+  "confidence": "high"
+ },
+ "U30": {
+  "id": "U30",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T1, T6",
+  "basis": "\"use the paragraphs I drafted... as written\"; no check of Tobin",
+  "confidence": "high"
+ },
+ "U31": {
+  "id": "U31",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T1, T2, T6",
+  "basis": "draft paragraphs 'as written'; Claude flagged it as backwards but made no lookup",
+  "confidence": "high"
+ },
+ "U32": {
+  "id": "U32",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T1, T6",
+  "basis": "author's draft copied as written; no lookup",
+  "confidence": "high"
+ },
+ "U38": {
+  "id": "U38",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T2, T6",
+  "basis": "counts were produced by code, never compared against a source",
+  "confidence": "medium"
+ },
+ "U39": {
+  "id": "U39",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T6",
+  "basis": "author's 'pooled OLS' paragraph used as written; the inconsistency was flagged but never checked",
+  "confidence": "high"
+ },
+ "U33": {
+  "id": "U33",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T1, T6",
+  "basis": "author's draft paragraph, used as written",
+  "confidence": "high"
+ },
+ "U34": {
+  "id": "U34",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T1, T6",
+  "basis": "author's draft paragraph, used as written",
+  "confidence": "high"
+ },
+ "U35": {
+  "id": "U35",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T2, T6",
+  "basis": "author said 'ten-firm version most textbooks use'",
+  "confidence": "high"
+ },
+ "U36": {
+  "id": "U36",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T6",
+  "basis": "'a paragraph on the sample' added in the requested memo; no check",
+  "confidence": "medium"
+ },
+ "U37": {
+  "id": "U37",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T4, T6",
+  "basis": "rationale for the requested robustness check; no source check",
+  "confidence": "medium"
+ },
+ "U15": {
+  "id": "U15",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3",
+  "basis": "'Use log investment as the outcome'",
+  "confidence": "high"
+ },
+ "U16": {
+  "id": "U16",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3",
+  "basis": "'log market value as the predictor'",
+  "confidence": "high"
+ },
+ "U17": {
+  "id": "U17",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3",
+  "basis": "'with log capital stock as the control'",
+  "confidence": "high"
+ },
+ "U18": {
+  "id": "U18",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3",
+  "basis": "'Estimate it with firm fixed effects'",
+  "confidence": "medium"
+ },
+ "U19": {
+  "id": "U19",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T3, T4",
+  "basis": "'I used t-tests with 9 degrees of freedom'; the author never responded",
+  "confidence": "medium"
+ },
+ "U20": {
+  "id": "U20",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3",
+  "basis": "'Use two-tailed tests at the .05 level'",
+  "confidence": "high"
+ },
+ "U21": {
+  "id": "U21",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T4, T6",
+  "basis": "'Pick one robustness check'; then 'with the robustness check as its second column'",
+  "confidence": "high"
+ },
+ "U11": {
+  "id": "U11",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T2",
+  "basis": "'Grunfeld panel bundled with statsmodels'",
+  "confidence": "high"
+ },
+ "U12": {
+  "id": "U12",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T2",
+  "basis": "'keep all years, 1935 to 1954'",
+  "confidence": "high"
+ },
+ "U13": {
+  "id": "U13",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T2",
+  "basis": "'drop American Steel so the sample matches the ten-firm version'",
+  "confidence": "high"
+ },
+ "U14": {
+  "id": "U14",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3",
+  "basis": "'Logs make the coefficients elasticities'",
+  "confidence": "high"
+ },
+ "U22": {
+  "id": "U22",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T2",
+  "basis": "'My hypothesis is that firms with higher market value invest more'",
+  "confidence": "high"
+ },
+ "U23": {
+  "id": "U23",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T6, T7",
+  "basis": "'Interpret the main result'; T6 reply described it; no response, only '/attest final'",
+  "confidence": "medium"
+ },
+ "U24": {
+  "id": "U24",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T6, T7",
+  "basis": "T6 reply described the column 2 interpretation ('interval ... includes zero'); no response",
+  "confidence": "medium"
+ },
+ "U25": {
+  "id": "U25",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T6, T7",
+  "basis": "'So the memo concludes the data are consistent with q theory but...'; no response",
+  "confidence": "medium"
+ },
+ "U26": {
+  "id": "U26",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T3, T4, T6",
+  "basis": "'Report Table 1 as it is, with the robustness check as its second column'",
+  "confidence": "medium"
+ },
+ "U1": {
+  "id": "U1",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T2",
+  "basis": "The question: does a firm's market value predict how much it invests? ... holding their capital stock constant",
+  "confidence": "high"
+ },
+ "U2": {
+  "id": "U2",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T2",
+  "basis": "I'm framing it with q theory, following Tobin and Hayashi",
+  "confidence": "high"
+ },
+ "U3": {
+  "id": "U3",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T1, T2, T6",
+  "basis": "following Tobin and Hayashi; use the paragraphs I drafted ... as written; Take the reference list from notes/references.md",
+  "confidence": "high"
+ },
+ "U4": {
+  "id": "U4",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T1, T6",
+  "basis": "use the paragraphs I drafted in notes/draft.md as written",
+  "confidence": "high"
+ },
+ "U5": {
+  "id": "U5",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T1, T6",
+  "basis": "Tobin (1969) citation is in author's draft paragraph, used as written",
+  "confidence": "high"
+ },
+ "U6": {
+  "id": "U6",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T1, T6",
+  "basis": "Hayashi (1983) citation in author's draft, used as written despite Claude flagging the year",
+  "confidence": "high"
+ },
+ "U7": {
+  "id": "U7",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T1, T6",
+  "basis": "Kleiber and Zeileis (2010) in author's draft Data paragraph, used as written",
+  "confidence": "high"
+ },
+ "U8": {
+  "id": "U8",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T6, T7",
+  "basis": "with whatever structure you think works best; reply: It runs Question, Background, Data, Methods, Results...; no response beyond hand edit and /attest",
+  "confidence": "medium"
+ },
+ "U9": {
+  "id": "U9",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T3, T4, T6",
+  "basis": "Pick one robustness check ... add it to Table 1 as a second column; then Report Table 1 as it is",
+  "confidence": "medium"
+ },
+ "U10": {
+  "id": "U10",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T6, T7",
+  "basis": "I'll write that one myself; author's hand edit added the Limitations text",
+  "confidence": "high"
+ }
+}

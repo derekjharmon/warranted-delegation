@@ -1,0 +1,124 @@
+{
+  "task": "rand",
+  "cell": "low-low",
+  "started": "2026-10-15T21:17:13",
+  "environment": {
+    "claude_code": "2.1.301 (Claude Code)",
+    "model": "claude-opus-5-5",
+    "plugin": "0.7.1",
+    "python": "3.14.7",
+    "statsmodels": "0.14.6",
+    "pandas": "2.2.3"
+  },
+  "attested_versions": {
+    "repo_head": "057f94dbd96313f61872be398e25c0992a6c19c1"
+  },
+  "script_sha256": "97b8a00933403de2a3a6d6eff8b9e013217cda041ebfa6cb33dce870d1126bc6",
+  "key_sha256": "a3ee0a90371e10b3fd230fc596edf011b3aeae97dd204858c82bf380ad2ffe45",
+  "runner_sha256": "bcef30d9233aaf128e8695872ff78bd83de313c97913f56c754740335a2fb6fe",
+  "work": [
+    "memo.md",
+    "plan.md",
+    "analysis/",
+    "output/"
+  ],
+  "steps": [
+    {
+      "id": "setup",
+      "kind": "attest",
+      "exit": 0,
+      "seconds": 2,
+      "is_error": false,
+      "turns": 0,
+      "cost_usd": 0,
+      "stderr": null,
+      "commit": "c0b837f8da679229266057fc90a2ba956c8cb493"
+    },
+    {
+      "id": "C-LL1",
+      "kind": "prompt",
+      "exit": 0,
+      "seconds": 17,
+      "is_error": false,
+      "turns": 3,
+      "cost_usd": 0.0842992,
+      "stderr": null
+    },
+    {
+      "id": "C-LL2",
+      "kind": "prompt",
+      "exit": 0,
+      "seconds": 47,
+      "is_error": false,
+      "turns": 7,
+      "cost_usd": 0.2227322,
+      "stderr": null
+    },
+    {
+      "id": "C-LL3",
+      "kind": "prompt",
+      "exit": 0,
+      "seconds": 27,
+      "is_error": false,
+      "turns": 5,
+      "cost_usd": 0.3156114,
+      "stderr": null
+    },
+    {
+      "id": "C-LL4",
+      "kind": "prompt",
+      "exit": 0,
+      "seconds": 60,
+      "is_error": false,
+      "turns": 9,
+      "cost_usd": 0.541806,
+      "stderr": null
+    },
+    {
+      "id": "C-LL5",
+      "kind": "attest",
+      "exit": 0,
+      "seconds": 2,
+      "is_error": false,
+      "turns": 0,
+      "cost_usd": 0.541806,
+      "stderr": null,
+      "commit": "2bd8d41f9394bc1b542e9622ec3971c5fe0f321b"
+    },
+    {
+      "id": "C-LL6",
+      "kind": "prompt",
+      "exit": 0,
+      "seconds": 67,
+      "is_error": false,
+      "turns": 4,
+      "cost_usd": 0.7551156,
+      "stderr": null
+    },
+    {
+      "id": "C-LL7",
+      "kind": "hand edit",
+      "file": "memo.md"
+    },
+    {
+      "id": "C-LL8",
+      "kind": "attest",
+      "exit": 0,
+      "seconds": 2,
+      "is_error": false,
+      "turns": 0,
+      "cost_usd": 0.7551156,
+      "stderr": null,
+      "commit": "dd44c9fba5686124885a4ea324875171a2029fbb"
+    }
+  ],
+  "session": "98c50cea-10d5-468d-84f0-bf3924df8d6e",
+  "verify_log": [
+    "OK  53 events  head b27441194f01fc59fc9fa6e73677d5aff19d0b9d38239a955011c4a5519078f5  (/private/var/folders/_k/wpbxz8gn451dmsv_93z4yt6r0000gn/T/wd-scripted2-rand-low-low-2vwk8tik/project/provenance/log/simulated-author-c823/events.jsonl)",
+    "sidecars: 35 checked, 0 withheld",
+    "snapshots: 8 present, 0 withheld"
+  ],
+  "final_commit": "dd44c9fba5686124885a4ea324875171a2029fbb",
+  "finished": "2026-10-15T21:20:59",
+  "bundle_sha256": "aec3f2a5d89d1de71da2cb8a972bfe5eaacc65c83f589b59bd6413a0e2b25a26"
+}

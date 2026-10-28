@@ -1,0 +1,1098 @@
+{
+ "U133": {
+  "id": "U133",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T4, T17, T18, T19",
+  "basis": "NBER text: 'initial sample consists of 12,838'; check_paper_numbers 'raw starters' OK; attest '82 of 82 paper numbers match output/'",
+  "confidence": "high"
+ },
+ "U134": {
+  "id": "U134",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T17, T18, T19",
+  "basis": "claim 'main sample' rebuilt from sample_flow.csv; sweep matched per-arm counts; attest '82 of 82 ... match'",
+  "confidence": "high"
+ },
+ "U135": {
+  "id": "U135",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T17, T18, T19",
+  "basis": "claims 'S1/S2/S3 size' and 'S1+S2 total N' OK; author attests 82 of 82 match",
+  "confidence": "high"
+ },
+ "U136": {
+  "id": "U136",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T11, T13",
+  "basis": "author asked 'Run exactly the plan'; no tool call compares the analysis with the plan or registration",
+  "confidence": "medium"
+ },
+ "U137": {
+  "id": "U137",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T4, T6, T14, T15, T19",
+  "basis": "registry quoted '10 minutes', 'paid ... within 24 hours'; NBER grep '$1 flat fee for completing the task'; author 'I read the paper'",
+  "confidence": "medium"
+ },
+ "U93": {
+  "id": "U93",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T12, T13, T17, T19",
+  "basis": "H2 estimates and 'no-piece-rate mean' rebuilt and found; attest '82 of 82 paper numbers match'",
+  "confidence": "high"
+ },
+ "U94": {
+  "id": "U94",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T12, T13, T17, T19",
+  "basis": "H1b estimate and CI claims OK; Welch recomputation matched; attested",
+  "confidence": "high"
+ },
+ "U95": {
+  "id": "U95",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T12, T13, T17, T19",
+  "basis": "H1b: 1.1 - 1.3 estimate and CI claims OK; attested",
+  "confidence": "high"
+ },
+ "U96": {
+  "id": "U96",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T17, T19",
+  "basis": "claims 'arm 2 average bonus' 1.5 cents and 'arm 1.1 average bonus' 20 cents OK; attested",
+  "confidence": "high"
+ },
+ "U97": {
+  "id": "U97",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T12, T13, T17, T19",
+  "basis": "H3 estimate, CI, 'H3 Holm p' claims OK; attested",
+  "confidence": "high"
+ },
+ "U98": {
+  "id": "U98",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T17, T19",
+  "basis": "'% over no pay' claims for arms 9, 7, 2, 1.1 OK; attested",
+  "confidence": "high"
+ },
+ "U99": {
+  "id": "U99",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T17, T19",
+  "basis": "'share of 1c effect' claims for arms 9, 7, 8, 2, 10 OK; attested",
+  "confidence": "high"
+ },
+ "U100": {
+  "id": "U100",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T17, T19",
+  "basis": "'gift estimate in S1/S2/S1+S2', unadjusted and Holm p claims OK; attested",
+  "confidence": "high"
+ },
+ "U101": {
+  "id": "U101",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T12, T13, T17, T19",
+  "basis": "'max Holm p difference' claim OK; T13 'results matched'",
+  "confidence": "high"
+ },
+ "U102": {
+  "id": "U102",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T12, T13, T17, T19",
+  "basis": "T13 'arm means match the NBER paper's Table 4 ... within 4 points'; reproduction claims OK",
+  "confidence": "high"
+ },
+ "U103": {
+  "id": "U103",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T12, T13, T17, T19",
+  "basis": "Table 4 values transcribed and compared; 'gift main mean' and 'gift paper mean' claims OK; attested",
+  "confidence": "high"
+ },
+ "U104": {
+  "id": "U104",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T17, T18, T19",
+  "basis": "exploratory 3.1-1.1, 3.2-1.2, 6.1-1.1 claims; 136 corrected to 135; attested 82 of 82",
+  "confidence": "high"
+ },
+ "U105": {
+  "id": "U105",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T17, T18, T19",
+  "basis": "retention min/max, 'attrition chi-square', 'attrition p' claims OK after T18 rerun; attested",
+  "confidence": "high"
+ },
+ "U106": {
+  "id": "U106",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T17, T19",
+  "basis": "'glitch starters' claim rebuilt from glitch_window.csv; attested",
+  "confidence": "high"
+ },
+ "U107": {
+  "id": "U107",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T5, T7",
+  "basis": "computed in T5 ('rate 0.017', 'fin missing 363'); never rechecked",
+  "confidence": "medium"
+ },
+ "U108": {
+  "id": "U108",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T8, T9",
+  "basis": "tool computed 0.192 while writing plan; producing is not checking",
+  "confidence": "medium"
+ },
+ "U109": {
+  "id": "U109",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T8, T9",
+  "basis": "power computed in T8 ('164.86'); reported in reply, never checked",
+  "confidence": "medium"
+ },
+ "U110": {
+  "id": "U110",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T17, T18, T19",
+  "basis": "sweep flagged 'about 10,000' as deliberate rounding of 10,111; author read and attested",
+  "confidence": "medium"
+ },
+ "U111": {
+  "id": "U111",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T17, T19",
+  "basis": "'dropped at R1...R6' claims and sweep cover table; attested 82 of 82",
+  "confidence": "high"
+ },
+ "U112": {
+  "id": "U112",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T12, T13, T17, T19",
+  "basis": "H1a estimates, CIs, Holm p claims OK; 176 corrected to 175; attested",
+  "confidence": "high"
+ },
+ "U113": {
+  "id": "U113",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T12, T13, T17, T19",
+  "basis": "Welch/Holm recomputation matched; attest 'results matched' and '82 of 82 paper numbers match'",
+  "confidence": "high"
+ },
+ "U114": {
+  "id": "U114",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T12, T13, T17, T19",
+  "basis": "same significance call in all 15 incl. secondary; attest confirms match",
+  "confidence": "medium"
+ },
+ "U115": {
+  "id": "U115",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T12, T13, T17, T19",
+  "basis": "same_call True for 9-2, 8-2, 7-2; attest 'results matched'",
+  "confidence": "medium"
+ },
+ "U116": {
+  "id": "U116",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T12, T13, T17, T19",
+  "basis": "H3 contrast recomputed; number check 82/82 attested",
+  "confidence": "medium"
+ },
+ "U117": {
+  "id": "U117",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T12, T13, T17, T19",
+  "basis": "H1a steps recomputed with Welch; attest 'results matched'",
+  "confidence": "high"
+ },
+ "U118": {
+  "id": "U118",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T17, T19",
+  "basis": "number check '% over no pay, arm 2' OK; attest '82 of 82'",
+  "confidence": "medium"
+ },
+ "U119": {
+  "id": "U119",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T11, T13",
+  "basis": "'I checked the verdicts directly'; attest 'Verdicts don't change across the sensitivity samples'",
+  "confidence": "medium"
+ },
+ "U120": {
+  "id": "U120",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T12, T13, T17, T19",
+  "basis": "verify_contrasts output shown; attest 'recomputed independently... results matched'",
+  "confidence": "high"
+ },
+ "U121": {
+  "id": "U121",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T17, T19",
+  "basis": "number check fixed 136 to 135; attest '82 of 82 paper numbers match'",
+  "confidence": "high"
+ },
+ "U122": {
+  "id": "U122",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T17, T18, T19",
+  "basis": "attrition chi-square and p in number check; attest '82 of 82'",
+  "confidence": "high"
+ },
+ "U123": {
+  "id": "U123",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T17, T19",
+  "basis": "gift S1+S2 unadjusted and Holm p in number check; attest confirms",
+  "confidence": "high"
+ },
+ "U124": {
+  "id": "U124",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T12, T13",
+  "basis": "Welch estimates and SEs identical to HC2 pipeline; attest 'results matched'",
+  "confidence": "medium"
+ },
+ "U125": {
+  "id": "U125",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T12, T13",
+  "basis": "hand-written Holm 'separately for the primary 12 and the secondary 3' matched",
+  "confidence": "medium"
+ },
+ "U126": {
+  "id": "U126",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T8, T10",
+  "basis": "attest 'read clean_data.py and the 17 cleaning decisions and accepted them'; no comparison stated",
+  "confidence": "medium"
+ },
+ "U127": {
+  "id": "U127",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T5, T14",
+  "basis": "'Try the glitch window using only missingness and start times'; no check of description",
+  "confidence": "medium"
+ },
+ "U128": {
+  "id": "U128",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T12, T13",
+  "basis": "'doesn't import analysis.py or statsmodels' stated, never verified",
+  "confidence": "medium"
+ },
+ "U129": {
+  "id": "U129",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T16, T17, T19",
+  "basis": "number check 'arm 2 average bonus' 1.5 cents OK; attest 82/82",
+  "confidence": "medium"
+ },
+ "U130": {
+  "id": "U130",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T8, T9, T11",
+  "basis": "plan's attrition check asked for; no comparison of definition to code",
+  "confidence": "medium"
+ },
+ "U131": {
+  "id": "U131",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T4, T12, T13, T15",
+  "basis": "12,838 matches NBER; means reproduced; attest 'match the NBER paper's Table 4'",
+  "confidence": "medium"
+ },
+ "U132": {
+  "id": "U132",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T11, T17",
+  "basis": "figure generated by code; no comparison with data",
+  "confidence": "medium"
+ },
+ "U60": {
+  "id": "U60",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T6",
+  "basis": "Crossref confirms rdx033; 'Notes edits look right'",
+  "confidence": "high"
+ },
+ "U61": {
+  "id": "U61",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T4, T5, T6, T7",
+  "basis": "Crossref year and DOI; author 'Good catch' and reversal applied",
+  "confidence": "high"
+ },
+ "U62": {
+  "id": "U62",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T6, T7, T8",
+  "basis": "Crossref confirms DOI; 'Accepted, including the Grant DOI'",
+  "confidence": "medium"
+ },
+ "U63": {
+  "id": "U63",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T15, T18, T19",
+  "basis": "'[UNVERIFIED: cited from memory'; attest 'still flagged unverified'",
+  "confidence": "high"
+ },
+ "U64": {
+  "id": "U64",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T9, T10",
+  "basis": "Crossref check of Lee reported; attest 'had... the Lee bounds changed'",
+  "confidence": "medium"
+ },
+ "U65": {
+  "id": "U65",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T6, T7",
+  "basis": "T6 WebFetch of IDEAS abstract: 'performed more poorly'; T7 'Gneezy\u2013Rustichini reversed'",
+  "confidence": "high"
+ },
+ "U66": {
+  "id": "U66",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T4, T6, T7, T10",
+  "basis": "Registry read: 18 treatments, 'as quickly as possible for 10 minutes'; T7 'fix it to 10 minutes'; T10 attest '18 arms\u2026 checked'",
+  "confidence": "medium"
+ },
+ "U67": {
+  "id": "U67",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T4, T5",
+  "basis": "NBER text 'initial sample consists of 12,838'; author replied 'Good catch'",
+  "confidence": "high"
+ },
+ "U68": {
+  "id": "U68",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T4, T12, T13",
+  "basis": "NBER Table 4 read; 'two published means we'd seen earlier\u2026 match this table'; T13 attest",
+  "confidence": "medium"
+ },
+ "U69": {
+  "id": "U69",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T6, T7",
+  "basis": "Tool search of NBER text surfaced abstract; T7 'The plan must disclose\u2026 the abstract'",
+  "confidence": "medium"
+ },
+ "U70": {
+  "id": "U70",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T4, T5",
+  "basis": "NBER text 'added before we analyzed the full data'; T5 'are the paper's later additions'",
+  "confidence": "high"
+ },
+ "U71": {
+  "id": "U71",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T4, T5",
+  "basis": "NBER text read; 'The paper doesn't give its dates'; T5 author responded",
+  "confidence": "medium"
+ },
+ "U72": {
+  "id": "U72",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T4, T5, T10",
+  "basis": "Registry fetched with registered exclusions; T10 attest 'checked against the registry'",
+  "confidence": "medium"
+ },
+ "U73": {
+  "id": "U73",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T4, T5",
+  "basis": "NBER text 'Of these, 721 were dropped'; author responded T5",
+  "confidence": "high"
+ },
+ "U74": {
+  "id": "U74",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T6, T7",
+  "basis": "PubMed fetch confirms 3 field experiments; T7 author responded on Grant",
+  "confidence": "medium"
+ },
+ "U75": {
+  "id": "U75",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T12, T13",
+  "basis": "Transcribed from Table 4 at author's request; transcription not separately compared",
+  "confidence": "low"
+ },
+ "U76": {
+  "id": "U76",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T8, T9",
+  "basis": "Power computed in T8; no tool lookup of registration's MDD; plan accepted",
+  "confidence": "medium"
+ },
+ "U77": {
+  "id": "U77",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T15, T16, T19",
+  "basis": "Registry wording extracted and compared; T19 'quotes checked against the registry'",
+  "confidence": "high"
+ },
+ "U78": {
+  "id": "U78",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T15, T16",
+  "basis": "T15 registry comparison table; T16 'I accept decisions 1\u201317'",
+  "confidence": "high"
+ },
+ "U79": {
+  "id": "U79",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T15, T16",
+  "basis": "T15 registry comparison table; T16 'I accept decisions 1\u201317'",
+  "confidence": "high"
+ },
+ "U80": {
+  "id": "U80",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T4, T15, T16",
+  "basis": "Gift wording from registry, misquote fixed; T16 accepted",
+  "confidence": "high"
+ },
+ "U81": {
+  "id": "U81",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T6, T7",
+  "basis": "Crossref title includes 'boundary conditions'; T7 author responded",
+  "confidence": "medium"
+ },
+ "U82": {
+  "id": "U82",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T11, T12",
+  "basis": "T12 'miscount gets a one-line note'; no tool comparison of quote",
+  "confidence": "medium"
+ },
+ "U83": {
+  "id": "U83",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T4, T5",
+  "basis": "Registry text '(ii) exit then re-enter'; author responded T5",
+  "confidence": "high"
+ },
+ "U84": {
+  "id": "U84",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T4, T5",
+  "basis": "Registry text 'complete the MTurk task within 30 minutes'; T5 'R4 adds the 30-minute rule'",
+  "confidence": "high"
+ },
+ "U85": {
+  "id": "U85",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T4, T5, T10",
+  "basis": "Registry '(iii) score 4000 or more'; T10 attest '4,000 cap\u2026 checked'",
+  "confidence": "high"
+ },
+ "U86": {
+  "id": "U86",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T4, T5",
+  "basis": "NBER text 'over a several-hour period'; author responded T5",
+  "confidence": "medium"
+ },
+ "U87": {
+  "id": "U87",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T8, T11, T12",
+  "basis": "Family counts set by plan/code; no comparison of counts against a source",
+  "confidence": "medium"
+ },
+ "U88": {
+  "id": "U88",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T4, T5, T10",
+  "basis": "Registry lists treatments 1\u201318; T10 attest '18 arms\u2026 checked against the registry'",
+  "confidence": "high"
+ },
+ "U89": {
+  "id": "U89",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T14",
+  "basis": "Framing sentence in paper the author asked for; nothing checked",
+  "confidence": "medium"
+ },
+ "U90": {
+  "id": "U90",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T14, T15",
+  "basis": "Paper framing for 'an organizational audience'; drawn from the author's notes; nobody checked it",
+  "confidence": "medium"
+ },
+ "U91": {
+  "id": "U91",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T8, T12, T13",
+  "basis": "verify_contrasts SEs 'identical'; attest 'recomputed independently with Welch tests... results matched'",
+  "confidence": "medium"
+ },
+ "U92": {
+  "id": "U92",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T8, T9",
+  "basis": "Part of the requested 'explain each choice'; no source check of the Holm/Bonferroni claim",
+  "confidence": "medium"
+ },
+ "U58": {
+  "id": "U58",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T7, T8",
+  "basis": "'write preregistration.md before any outcome is looked at... Include the disclosure'",
+  "confidence": "high"
+ },
+ "U59": {
+  "id": "U59",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T11, T12",
+  "basis": "Decision 4, 'ran all nine'; author: 'I accept decisions 1\u201310. On 4... one-line note'",
+  "confidence": "high"
+ },
+ "U26": {
+  "id": "U26",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T8, T9",
+  "basis": "'You decide... the outcome'; 'I accept the sample, outcome, model'",
+  "confidence": "high"
+ },
+ "U27": {
+  "id": "U27",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3, T8",
+  "basis": "Hypotheses H1\u2013H3 in the author's notes name the pay arms, motivators and gift; 'arm 2... primary'",
+  "confidence": "medium"
+ },
+ "U28": {
+  "id": "U28",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T8, T9",
+  "basis": "'You decide... the model'; 'I accept the... model'",
+  "confidence": "high"
+ },
+ "U29": {
+  "id": "U29",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T8, T9",
+  "basis": "'You decide... the model'; 'I accept the... model'",
+  "confidence": "high"
+ },
+ "U30": {
+  "id": "U30",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T8, T9",
+  "basis": "'You decide... the model'; 'I accept the... model'",
+  "confidence": "high"
+ },
+ "U31": {
+  "id": "U31",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T8, T9",
+  "basis": "'You decide... the multiple-comparison handling'; 'I accept... Holm families'",
+  "confidence": "high"
+ },
+ "U32": {
+  "id": "U32",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T8, T9, T10",
+  "basis": "'State what result would count against each hypothesis'; author accepted the plan after reading it in full",
+  "confidence": "medium"
+ },
+ "U33": {
+  "id": "U33",
+  "discretion": "given",
+  "certification": "changed",
+  "turns": "T8, T9",
+  "basis": "'H2 is a joint claim, so state that H2 counts as supported... only if both'",
+  "confidence": "high"
+ },
+ "U34": {
+  "id": "U34",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T4, T5",
+  "basis": "Claude: 'Your call'; author: 'paper's later additions, so report them as a sensitivity sample'",
+  "confidence": "medium"
+ },
+ "U35": {
+  "id": "U35",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T5, T7",
+  "basis": "'report it as a second sensitivity sample if you can identify it credibly'",
+  "confidence": "medium"
+ },
+ "U36": {
+  "id": "U36",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T6, T7",
+  "basis": "'add dropping them as a small third sensitivity check'",
+  "confidence": "medium"
+ },
+ "U37": {
+  "id": "U37",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T8, T9",
+  "basis": "'You decide... the sensitivity samples'; 'I accept the sample'",
+  "confidence": "high"
+ },
+ "U38": {
+  "id": "U38",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T12",
+  "basis": "'recompute the 15 confirmatory contrasts independently, with Welch t-tests and Holm'",
+  "confidence": "high"
+ },
+ "U39": {
+  "id": "U39",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T12",
+  "basis": "'check our arm means against the paper's published means for all 18 arms'",
+  "confidence": "high"
+ },
+ "U40": {
+  "id": "U40",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T8, T9, T11, T12",
+  "basis": "Claude: 'I'd name Lee bounds'; author: 'Name Lee bounds'; decision 7 (Pearson) accepted",
+  "confidence": "medium"
+ },
+ "U41": {
+  "id": "U41",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T3, T6, T7",
+  "basis": "'check the treatment codes against the notes'; method is decision 14; 'accept all of them'",
+  "confidence": "medium"
+ },
+ "U42": {
+  "id": "U42",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T11, T12",
+  "basis": "'every table and figure (including... the arm means'",
+  "confidence": "medium"
+ },
+ "U43": {
+  "id": "U43",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T8, T9",
+  "basis": "'You decide the tests'; 'I accept... exploratory list'",
+  "confidence": "high"
+ },
+ "U44": {
+  "id": "U44",
+  "discretion": "taken",
+  "certification": "okayed",
+  "turns": "T14, T15, T16",
+  "basis": "'This is new, outside the plan'; decision 4; 'I accept decisions 1\u201317'",
+  "confidence": "medium"
+ },
+ "U45": {
+  "id": "U45",
+  "discretion": "taken",
+  "certification": "okayed",
+  "turns": "T14, T15, T16",
+  "basis": "Cost comparisons were decision 6, Claude's addition; 'I accept decisions 1\u201317... Put the cost arithmetic into an output table'",
+  "confidence": "medium"
+ },
+ "U15": {
+  "id": "U15",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T1, T3, T15",
+  "basis": "author added data/mturk_raw.csv by hand; notes describe it as the replication file; T15 \"Say what you can actually support\"",
+  "confidence": "high"
+ },
+ "U16": {
+  "id": "U16",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T3, T4, T7",
+  "basis": "\"You decide the rules\"; \"I accept R1\u2013R6\" with no reason for R1",
+  "confidence": "high"
+ },
+ "U17": {
+  "id": "U17",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T3, T4, T7",
+  "basis": "\"You decide the rules\"; \"I accept R1\u2013R6\"; \"accept all of them\"",
+  "confidence": "high"
+ },
+ "U18": {
+  "id": "U18",
+  "discretion": "given",
+  "certification": "elaborated and okayed",
+  "turns": "T3, T4, T7",
+  "basis": "\"Reason for R3: dropping every row of a repeated ID avoids arm shopping\"; item A kept \"since the re-entry rule exists to stop people seeing several treatments\"",
+  "confidence": "high"
+ },
+ "U19": {
+  "id": "U19",
+  "discretion": "given",
+  "certification": "changed",
+  "turns": "T3, T4, T5",
+  "basis": "Claude's R4 was finished only; author: \"R4 adds the 30-minute rule\"",
+  "confidence": "medium"
+ },
+ "U20": {
+  "id": "U20",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T3, T5, T6, T7",
+  "basis": "R5 listed as decision 5 with Claude's reason; \"I've gone through the 17 decisions and accept all of them\"",
+  "confidence": "high"
+ },
+ "U21": {
+  "id": "U21",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3, T5",
+  "basis": "cap from author's notes; T5 \"R6 becomes 4,000 or more\"",
+  "confidence": "medium"
+ },
+ "U22": {
+  "id": "U22",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T8, T9",
+  "basis": "\"You decide ... the outcome\"; \"I accept the sample, outcome, model\"",
+  "confidence": "high"
+ },
+ "U23": {
+  "id": "U23",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T5, T6, T7",
+  "basis": "decision 4 \"end time minus start time \u2264 30 minutes\"; \"accept all of them\"",
+  "confidence": "medium"
+ },
+ "U24": {
+  "id": "U24",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T5, T6, T7",
+  "basis": "\"Try the glitch window using only missingness and start times, never scores by arm\"",
+  "confidence": "medium"
+ },
+ "U25": {
+  "id": "U25",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T8, T9, T11, T12",
+  "basis": "decision 9: retention file \"each worker after R1\u2013R3 and whether they stayed in\"; \"I accept decisions 1\u201310\"",
+  "confidence": "medium"
+ },
+ "U46": {
+  "id": "U46",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T7, T8",
+  "basis": "notes H1 \"A higher piece rate raises effort more than a lower one\"",
+  "confidence": "high"
+ },
+ "U47": {
+  "id": "U47",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T7",
+  "basis": "\"H1 reworded so a small piece rate versus none is a question, not a given\"",
+  "confidence": "high"
+ },
+ "U48": {
+  "id": "U48",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T8, T9",
+  "basis": "notes H2; \"'smallest piece rate' means arm 2 ... as the primary comparison\"; joint claim",
+  "confidence": "high"
+ },
+ "U49": {
+  "id": "U49",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T7, T9",
+  "basis": "notes H3 \"unconditional gift\"; author fixed H3 wording",
+  "confidence": "high"
+ },
+ "U50": {
+  "id": "U50",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T14",
+  "basis": "\"Report the results as the plan's verdicts say, including ... the crowd-out non-replication\"",
+  "confidence": "medium"
+ },
+ "U51": {
+  "id": "U51",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T14, T15, T16",
+  "basis": "listed as \"My interpretation\" item 11; decision 8 on third step; \"I accept decisions 1\u201317\"",
+  "confidence": "medium"
+ },
+ "U52": {
+  "id": "U52",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T14, T15, T16",
+  "basis": "decision 11 \"Section 6's management advice is my interpretation\"; \"I accept decisions 1\u201317\"",
+  "confidence": "medium"
+ },
+ "U53": {
+  "id": "U53",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T14, T15, T16",
+  "basis": "decision 11 section 6 advice; \"I accept decisions 1\u201317\"",
+  "confidence": "medium"
+ },
+ "U54": {
+  "id": "U54",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T14, T15, T16",
+  "basis": "item 12 weak test of reciprocity; decision 10 cost contrast; \"I accept decisions 1\u201317\"",
+  "confidence": "medium"
+ },
+ "U55": {
+  "id": "U55",
+  "discretion": "given",
+  "certification": "elaborated and okayed",
+  "turns": "T15, T16, T19",
+  "basis": "\"correct the paper and section 6\"; attest \"paper corrected, since the arm is a request to try hard\"",
+  "confidence": "high"
+ },
+ "U56": {
+  "id": "U56",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T12, T15, T16",
+  "basis": "decision 12 \"The gift-arm gap ... is reported in 5.5, not hidden\"; \"I accept decisions 1\u201317\"",
+  "confidence": "medium"
+ },
+ "U57": {
+  "id": "U57",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T9, T11",
+  "basis": "\"Run exactly the plan ... Anything not in the plan, label as exploratory\"; \"Name Lee bounds\"",
+  "confidence": "medium"
+ },
+ "U1": {
+  "id": "U1",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3, T14",
+  "basis": "notes \"How much effort do these buy, compared with paying people a little more\"; \"how far they get\"",
+  "confidence": "high"
+ },
+ "U2": {
+  "id": "U2",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T14",
+  "basis": "\"for an organizational audience: which motivators managers can use without paying more\"",
+  "confidence": "high"
+ },
+ "U3": {
+  "id": "U3",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3, T6, T7, T14",
+  "basis": "The author's notes.md Literature section, written before the record, already names Gneezy\u2013Rustichini, Grant and gift exchange; T6: 'since I wrote it quickly'",
+  "confidence": "medium"
+ },
+ "U4": {
+  "id": "U4",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T6, T7",
+  "basis": "T7: 'Gneezy\u2013Rustichini reversed, H1 reworded so a small piece rate versus none is a question'",
+  "confidence": "high"
+ },
+ "U5": {
+  "id": "U5",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T7, T14",
+  "basis": "T14: 'Don't cite Grant as established; use it only as flagged'",
+  "confidence": "high"
+ },
+ "U6": {
+  "id": "U6",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T8, T9, T14, T15, T16",
+  "basis": "T8: 'You decide ... the multiple-comparison handling'; T15 decision 14: 'Holm and Lee are cited. Holm is flagged unverified'; T16: 'I accept decisions 1\u201317'",
+  "confidence": "medium"
+ },
+ "U7": {
+  "id": "U7",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T8, T9",
+  "basis": "T8 reply: 'I'd name Lee bounds if you want that fixed in advance'; T9: 'Name Lee bounds for the attrition check'",
+  "confidence": "medium"
+ },
+ "U8": {
+  "id": "U8",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T14",
+  "basis": "T14: 'for an organizational audience ... State that the plan wasn't blind to the published results and that these results reproduce the paper's'",
+  "confidence": "high"
+ },
+ "U9": {
+  "id": "U9",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T14, T15, T16",
+  "basis": "T15 decision 1: 'Structure: question, design, plan and disclosure, sample, results, implications, limits'; T16: 'I accept decisions 1\u201317'",
+  "confidence": "high"
+ },
+ "U10": {
+  "id": "U10",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T11, T12",
+  "basis": "T11: 'code ... that produces every table and figure'. Claude built it with the dataviz skill, which is built into Claude Code, not the author's. T11 decision 8: 'Figure ... dots with 95% CIs, colored by group'. T12: 'I accept decisions 1\u201310'",
+  "confidence": "medium"
+ },
+ "U11": {
+  "id": "U11",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T5, T11, T14",
+  "basis": "T11: 'including the sample-flow table'",
+  "confidence": "medium"
+ },
+ "U12": {
+  "id": "U12",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T14, T16, T18",
+  "basis": "T16 reply: '3 tables (sample flow, H1a steps, H2 motivators)'; T18: 'I read the final paper. One change'",
+  "confidence": "low"
+ },
+ "U13": {
+  "id": "U13",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T14, T16, T18",
+  "basis": "T16 reply: '3 tables (sample flow, H1a steps, H2 motivators)'; T18: 'I read the final paper. One change'",
+  "confidence": "low"
+ },
+ "U14": {
+  "id": "U14",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T14, T15, T16",
+  "basis": "T14 reply item 12 (weak gift test, sentence vs sustained practice); T15 reply adds a new limit in section 7; T16: 'I accept decisions 1\u201317'",
+  "confidence": "medium"
+ }
+}

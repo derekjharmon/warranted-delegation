@@ -1,0 +1,610 @@
+{
+ "U49": {
+  "id": "U49",
+  "discretion": "none",
+  "certification": "you checked it against the source",
+  "turns": "T23",
+  "basis": "I reran analysis.py myself and compared Table 1 with its output",
+  "confidence": "high"
+ },
+ "U50": {
+  "id": "U50",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T19, T20",
+  "basis": "check that the number of districts is stated the same way everywhere; \"I've read the results\"",
+  "confidence": "high"
+ },
+ "U51": {
+  "id": "U51",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T19, T20",
+  "basis": "tool output \"mean share 43.7\"; \"I've read the results\"",
+  "confidence": "high"
+ },
+ "U52": {
+  "id": "U52",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T19, T20",
+  "basis": "tool output \"col1 LOWINC -0.0229 0.002 3.7e-31\"; \"I've read the results\"",
+  "confidence": "high"
+ },
+ "U53": {
+  "id": "U53",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T19, T20",
+  "basis": "tool output \"AME -0.005 0.0004 2.4e-33 | per 10 pts -5.0\"; \"I've read the results\"",
+  "confidence": "high"
+ },
+ "U54": {
+  "id": "U54",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T19, T20",
+  "basis": "tool output \"SD LOWINC 20.5\"; \"I've read the results\"",
+  "confidence": "high"
+ },
+ "U55": {
+  "id": "U55",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T19, T20",
+  "basis": "tool output \"SD x AME (pp) -10.3\"; \"I've read the results\"",
+  "confidence": "high"
+ },
+ "U56": {
+  "id": "U56",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T19, T20",
+  "basis": "tool output \"resources col1 {'PERSPENK': '0.086'...\"; \"I've read the results\"",
+  "confidence": "high"
+ },
+ "U57": {
+  "id": "U57",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T19, T20",
+  "basis": "tool output \"ethnic col1 max p 2.6e-07\"; \"I've read the results\"",
+  "confidence": "high"
+ },
+ "U58": {
+  "id": "U58",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T19, T20",
+  "basis": "tool output \"col2 n 288 | dropped 15\"; \"I've read the results\"",
+  "confidence": "high"
+ },
+ "U59": {
+  "id": "U59",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T19, T20",
+  "basis": "check every number in the memo's text; reply \"\u22120.0227 (p = 2.7e-41)\" matches; \"I've read the results\"",
+  "confidence": "medium"
+ },
+ "U60": {
+  "id": "U60",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T19, T20",
+  "basis": "reply \"\u22120.0173 (p = 7.4e-14), a 24% reduction\"; \"I've read the results\"",
+  "confidence": "medium"
+ },
+ "U61": {
+  "id": "U61",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T19, T20",
+  "basis": "reply \"the p-values .023, .027, .041 and .006\"; \"I've read the results\"",
+  "confidence": "medium"
+ },
+ "U62": {
+  "id": "U62",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T19, T20",
+  "basis": "reply \"the p-values .023, .027, .041 and .006\"; \"I've read the results\"",
+  "confidence": "medium"
+ },
+ "U63": {
+  "id": "U63",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T19, T20",
+  "basis": "reply \"the largest district's 14.5% share of the weight\" matches; \"I've read the results\"",
+  "confidence": "medium"
+ },
+ "U64": {
+  "id": "U64",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T4, T19",
+  "basis": "computed in T4 as part of \"say why for each\"; code comment not covered by T19 memo checks",
+  "confidence": "medium"
+ },
+ "U65": {
+  "id": "U65",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T19, T20",
+  "basis": "Check that the description of the results matches Table 1; \"Everything matches\"; \"I've read the results\"",
+  "confidence": "medium"
+ },
+ "U66": {
+  "id": "U66",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T19, T20",
+  "basis": "\"none of the resource measures is significant at .05 in column 1\"; \"I've read the results\"",
+  "confidence": "medium"
+ },
+ "U67": {
+  "id": "U67",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T19, T20",
+  "basis": "\"the signs for Asian, Black and Hispanic shares\"; \"I've read the results\"",
+  "confidence": "medium"
+ },
+ "U68": {
+  "id": "U68",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T19, T20",
+  "basis": "results description vs Table 1 \"Everything matches\"; \"I've read the results\"",
+  "confidence": "medium"
+ },
+ "U69": {
+  "id": "U69",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T19, T20",
+  "basis": "\"a 24% reduction (\\\"about a quarter\\\")\"; \"I've read the results\"",
+  "confidence": "medium"
+ },
+ "U70": {
+  "id": "U70",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T19, T20",
+  "basis": "\"teacher experience is significant only in columns 2 and 3; spending and year-round schools ... only in column 3\"; \"I've read the results\"",
+  "confidence": "medium"
+ },
+ "U71": {
+  "id": "U71",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T19, T20",
+  "basis": "\"so 'held across every specification' is accurate\"; \"I've read the results\"",
+  "confidence": "medium"
+ },
+ "U72": {
+  "id": "U72",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T8, T19, T20",
+  "basis": "methods vs analysis.py check; \"HC1 standard errors match a hand calculation\"; \"I've read the results\"",
+  "confidence": "medium"
+ },
+ "U73": {
+  "id": "U73",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T7, T19, T20",
+  "basis": "\"The Table 1 note matches the code ... Cook's distance against 4/n using the estimated dispersion\"; \"I've read the results\"",
+  "confidence": "medium"
+ },
+ "U74": {
+  "id": "U74",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T8, T19, T20",
+  "basis": "T19: \"The Table 1 note matches the code... weighting by students tested, and R\u00b2 unweighted\"; T20 \"I've read the results\"",
+  "confidence": "medium"
+ },
+ "U75": {
+  "id": "U75",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T3, T19, T20",
+  "basis": "T19 read star98 data.py: \"compiled by Gill: all match\"; T20 \"I've read the results\"",
+  "confidence": "high"
+ },
+ "U76": {
+  "id": "U76",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T17, T18, T19, T20",
+  "basis": "T17 tested flattening (\u22120.0333 vs \u22120.0225); T18 \"Keep the figure\"; T19 \"Figure 1 caption matches\"; T20 \"I've read the results\"",
+  "confidence": "high"
+ },
+ "U31": {
+  "id": "U31",
+  "discretion": "none",
+  "certification": "you checked it against the source",
+  "turns": "T23",
+  "basis": "/attest: \"I checked the Gill reference against its Crossref record\"",
+  "confidence": "high"
+ },
+ "U32": {
+  "id": "U32",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T19, T20",
+  "basis": "Crossref lookup: \"Hanushek (1997) | All details match\"; T20 \"I've read the results\"",
+  "confidence": "high"
+ },
+ "U33": {
+  "id": "U33",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T19, T20",
+  "basis": "Crossref lookup: \"Krueger (1999) | Matches\"; T20 \"I've read the results\"",
+  "confidence": "high"
+ },
+ "U34": {
+  "id": "U34",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T19, T20",
+  "basis": "Crossref lookup: \"Papke & Wooldridge (1996) | All details match\"; T20 \"I've read the results\"",
+  "confidence": "high"
+ },
+ "U35": {
+  "id": "U35",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T19, T20",
+  "basis": "T19: \"The statsmodels documentation names Gill's book as the source\"; T20 \"I've read the results\"",
+  "confidence": "high"
+ },
+ "U36": {
+  "id": "U36",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T19, T20",
+  "basis": "Crossref abstract: \"not a strong or consistent relationship\"; T20 \"I've read the results\"",
+  "confidence": "high"
+ },
+ "U37": {
+  "id": "U37",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T1, T15, T19",
+  "basis": "T19: \"accurate, but not checked against a source. Crossref has no abstract\"; content from author's draft",
+  "confidence": "medium"
+ },
+ "U38": {
+  "id": "U38",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T19, T20",
+  "basis": "Crossref abstract fetch incl. Papke DOI: \"It's the source of the fractional logit\"; T20 \"I've read the results\"",
+  "confidence": "medium"
+ },
+ "U39": {
+  "id": "U39",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T19, T20",
+  "basis": "T19: \"closer to Hanushek's (1997) summary... is a fair reading of both\" after Hanushek abstract lookup; T20 \"I've read the results\"",
+  "confidence": "low"
+ },
+ "U40": {
+  "id": "U40",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T19, T20",
+  "basis": "T19: \"The district count is consistent. It's 303 in the Data section, Table 1 and the Figure 1 caption\"; T20 read",
+  "confidence": "high"
+ },
+ "U41": {
+  "id": "U41",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T19, T20",
+  "basis": "T19 output \"mean share 43.7\"; \"Every number in the text matches\"; T20 \"I've read the results\"",
+  "confidence": "high"
+ },
+ "U42": {
+  "id": "U42",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T19, T20, T23",
+  "basis": "T19 recomputed \"col1 LOWINC -0.0229 0.002 3.7e-31... AME -0.005\"; T20 \"I've read the results\"",
+  "confidence": "medium"
+ },
+ "U43": {
+  "id": "U43",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3, T4, T19",
+  "basis": "Hypothesis is author's in T3 \"holding school resources constant\"; no T19 check addressed it",
+  "confidence": "medium"
+ },
+ "U44": {
+  "id": "U44",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T19, T20",
+  "basis": "T19: \"1998 STAR, ninth graders, math... all match the statsmodels star98 documentation\"; T20 read",
+  "confidence": "high"
+ },
+ "U45": {
+  "id": "U45",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T15, T21, T22",
+  "basis": "Claude's memo text asked for in T15; T21 lists \"resources 'partly respond to district need'\"; no check",
+  "confidence": "medium"
+ },
+ "U46": {
+  "id": "U46",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T11, T13, T21, T22",
+  "basis": "Written in set-aside T11; T13 \"Keep the 'Another explanation' paragraph\"; T21 mentions it; no check in record",
+  "confidence": "medium"
+ },
+ "U47": {
+  "id": "U47",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T17, T19, T20, T22",
+  "basis": "T19 VIF/correlation check: overlap \"comes from Hispanic share (r = 0.72)\"; T20 \"I've read the results\"",
+  "confidence": "medium"
+ },
+ "U48": {
+  "id": "U48",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T8, T19, T20",
+  "basis": "T8 hand-computed HC0 vs HC1; T19 \"HC1 standard errors match a hand calculation\"; T20 \"I've read the results\"",
+  "confidence": "medium"
+ },
+ "U17": {
+  "id": "U17",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3",
+  "basis": "\"build the outcome as the share of ninth graders above the national median (NABOVE divided by NABOVE plus NBELOW)\"",
+  "confidence": "high"
+ },
+ "U18": {
+  "id": "U18",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3",
+  "basis": "\"My hypothesis is that districts with more low-income students have a smaller share\"",
+  "confidence": "high"
+ },
+ "U19": {
+  "id": "U19",
+  "discretion": "given",
+  "certification": "changed",
+  "turns": "T4, T5",
+  "basis": "T4 \"pick the school-resource and demographic controls\"; T5 \"Use your controls, except leave out teacher salary (AVSALK)\"",
+  "confidence": "high"
+ },
+ "U20": {
+  "id": "U20",
+  "discretion": "given",
+  "certification": "elaborated and okayed",
+  "turns": "T5, T6",
+  "basis": "T5 \"choose one suited to a share\"; T6 \"Keep the model you chose. A model built for shares keeps its predictions between 0 and 1\"",
+  "confidence": "high"
+ },
+ "U21": {
+  "id": "U21",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T1, T8",
+  "basis": "CLAUDE.md: \"Use heteroskedasticity-robust (HC1) standard errors in every model\"",
+  "confidence": "medium"
+ },
+ "U22": {
+  "id": "U22",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T1",
+  "basis": "CLAUDE.md: \"two-tailed tests at the .05 level, and report exact p-values\"",
+  "confidence": "high"
+ },
+ "U23": {
+  "id": "U23",
+  "discretion": "given",
+  "certification": "elaborated and okayed",
+  "turns": "T7, T8",
+  "basis": "methods-kit robustness skill asked for in T7; T8 \"Keep the first check: a few unusual districts could drive the result\"",
+  "confidence": "high"
+ },
+ "U24": {
+  "id": "U24",
+  "discretion": "given",
+  "certification": "changed",
+  "turns": "T7, T8",
+  "basis": "T8 \"Replace the second check with the main model weighted by the number of students tested\"",
+  "confidence": "high"
+ },
+ "U14": {
+  "id": "U14",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3",
+  "basis": "\"The data are the 1998 California STAR results bundled with statsmodels\"",
+  "confidence": "high"
+ },
+ "U15": {
+  "id": "U15",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3",
+  "basis": "\"keep all 303 districts\"",
+  "confidence": "high"
+ },
+ "U16": {
+  "id": "U16",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3",
+  "basis": "\"NABOVE divided by NABOVE plus NBELOW\"",
+  "confidence": "high"
+ },
+ "U25": {
+  "id": "U25",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3",
+  "basis": "\"My hypothesis is that districts with more low-income students have a smaller share\"",
+  "confidence": "high"
+ },
+ "U26": {
+  "id": "U26",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T15, T16",
+  "basis": "T15 \"Interpret the main result\"; T16 \"Keep your interpretation of the main result.\"",
+  "confidence": "high"
+ },
+ "U27": {
+  "id": "U27",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T15, T21, T22",
+  "basis": "T15 \"Now write the memo\"; T21 lists \"comparing the results with Hanushek and Krueger\"; T22 \"Keep them.\"",
+  "confidence": "medium"
+ },
+ "U28": {
+  "id": "U28",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T15, T21, T22",
+  "basis": "T21 lists \"the paragraph on ethnic composition\"; T22 \"Keep them.\"",
+  "confidence": "medium"
+ },
+ "U29": {
+  "id": "U29",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T15, T21, T22",
+  "basis": "T21 lists Robustness framing, \"may reflect a few large districts\"; T22 \"Keep them.\"",
+  "confidence": "medium"
+ },
+ "U30": {
+  "id": "U30",
+  "discretion": "taken",
+  "certification": "okayed",
+  "turns": "T5, T7, T21, T22",
+  "basis": "AME added unasked; T21 \"Average marginal effect of LOWINC: I added it\"; T22 \"Keep them.\"",
+  "confidence": "medium"
+ },
+ "U1": {
+  "id": "U1",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3",
+  "basis": "\"The question: what predicts how well a California school district's ninth graders do in math?\"",
+  "confidence": "high"
+ },
+ "U2": {
+  "id": "U2",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3",
+  "basis": "\"framing it as an education production function... what students bring to school and on school resources\"",
+  "confidence": "high"
+ },
+ "U3": {
+  "id": "U3",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3",
+  "basis": "\"following Hanushek and Krueger\"",
+  "confidence": "high"
+ },
+ "U4": {
+  "id": "U4",
+  "discretion": "taken",
+  "certification": "okayed",
+  "turns": "T15, T21, T22",
+  "basis": "Hanushek finding rewritten despite \"use ... as written\"; T21 listed; T22 \"Keep them.\"",
+  "confidence": "medium"
+ },
+ "U5": {
+  "id": "U5",
+  "discretion": "taken",
+  "certification": "okayed",
+  "turns": "T15, T21, T22",
+  "basis": "T15 \"I changed that to say he found no strong or consistent relationship\"; T22 \"Keep them.\"",
+  "confidence": "medium"
+ },
+ "U6": {
+  "id": "U6",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T1, T15",
+  "basis": "author's draft: \"Krueger (1998), using the Tennessee STAR experiment, found...\"",
+  "confidence": "medium"
+ },
+ "U7": {
+  "id": "U7",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T5, T6, T21, T22",
+  "basis": "T5 \"choose one suited to a share\"; reply \"Papke & Wooldridge 1996\"; T22 \"Keep them.\"",
+  "confidence": "medium"
+ },
+ "U8": {
+  "id": "U8",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T1, T15",
+  "basis": "author's draft: \"as compiled by Gill (2001)\"",
+  "confidence": "high"
+ },
+ "U9": {
+  "id": "U9",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T15, T21, T22",
+  "basis": "T21 \"The Conclusion's last sentence claims more than the tests show\"; T22 \"Keep them.\"",
+  "confidence": "medium"
+ },
+ "U10": {
+  "id": "U10",
+  "discretion": "given",
+  "certification": "changed",
+  "turns": "T14, T15",
+  "basis": "T15 \"Use your outline, but put the data section before the background\"",
+  "confidence": "high"
+ },
+ "U11": {
+  "id": "U11",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T5, T7, T15, T21, T22",
+  "basis": "T5 \"have the script write Table 1\"; T21 lists Table layout; T22 \"Keep them.\"",
+  "confidence": "medium"
+ },
+ "U12": {
+  "id": "U12",
+  "discretion": "given",
+  "certification": "elaborated and okayed",
+  "turns": "T17, T18",
+  "basis": "T17 \"one figure of your choice\"; T18 \"Keep the figure. It shows the relationship more plainly\"",
+  "confidence": "high"
+ },
+ "U13": {
+  "id": "U13",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T11, T13, T17, T19, T20, T21, T22",
+  "basis": "Author wrote the district-averages sentence. Claude replaced 'school resources' with 'ethnic composition' after the T20 request 'Fix anything they found wrong'. The parental-education paragraph came from set-aside T11 and was kept at T13 ('Keep the \"Another explanation\" paragraph'). All of these were listed at T21; T22 'I've read your list. Keep them.'",
+  "confidence": "medium"
+ }
+}

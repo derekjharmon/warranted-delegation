@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Second preregistered test: the fixed reader (preregistration)</title>
+<style>
+:root { --bg: #fbfaf7; --fg: #1d1c1a; --muted: #6b6760; --rule: #e2ded6; --code: #f1eee8; --accent: #2f5d8a; color-scheme: light; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #17171a; --fg: #ecebe8; --muted: #a29f98; --rule: #34343a; --code: #232328; --accent: #8db7e0; color-scheme: dark; }
+}
+body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.6 Charter, "Iowan Old Style", Georgia, serif; }
+main { max-width: 760px; margin: 0 auto; padding: 32px 20px 72px; }
+nav { font: 14px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin-bottom: 24px; }
+h1, h2, h3, h4 { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.25; text-wrap: balance; }
+h1 { font-size: 28px; } h2 { font-size: 21px; margin-top: 40px; } h3 { font-size: 17px; margin-top: 28px; }
+a { color: var(--accent); }
+code { font: 14px ui-monospace, SFMono-Regular, Menlo, monospace; background: var(--code); padding: 1px 4px; border-radius: 4px; overflow-wrap: anywhere; }
+pre { position: relative; background: var(--code); padding: 12px 72px 12px 14px; border-radius: 8px; overflow-x: auto; }
+pre code { padding: 0; background: none; white-space: pre-wrap; }
+.copy { position: absolute; top: 8px; right: 8px; font: 12px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; padding: 3px 9px; border: 1px solid var(--rule); border-radius: 6px; background: var(--bg); color: var(--fg); cursor: pointer; }
+table { border-collapse: collapse; font-size: 14px; display: block; overflow-x: auto; margin: 16px 0; }
+th, td { border-bottom: 1px solid var(--rule); padding: 6px 10px; text-align: left; vertical-align: top; }
+img { max-width: 100%; height: auto; border: 1px solid var(--rule); border-radius: 6px; margin: 12px 0 4px; }
+</style>
+</head>
+<body><main>
+<nav><a href="../../index.html">Start page</a> · <a href="README.md">Markdown source</a></nav>
+<h1>Second preregistered test: the fixed reader (preregistration)</h1>
+<p><em>Drafted by Claude, 2026-10-15, for the author's review. Nothing has run. This becomes the preregistration when the author attests it, with the materials and the frozen reader, before any run exists (Oct 17). The design was settled with The author on Oct 15 (DECISIONS.md).</em></p>
+<h2>What it tests</h2>
+<p>The fixed reader (reader 0.12, <code>plugin/warrant/scripts/reader.py</code>, frozen at the commit that attests this file), on new runs with new answer keys, run two ways: through the API, and through headless Claude Code with no API key. It tests what changed since the first test: every place a call appears, coding rule 9 (calls settled by instructions or skills), coding rule 10 (set-aside brainstorm turns), and the tool pack. The first test's design (<a href="../scripted/README.html"><code>../scripted/README.md</code></a>) carries over except where this says otherwise. Its exploratory run on the first test's four runs (<a href="../scripted/reader-runs/RESULTS.html"><code>../scripted/reader-runs/RESULTS.md</code></a>) was done before this was written and can't count toward it.</p>
+<h2>Hypothesis and bar</h2>
+<p>The fixed reader's codes agree with the settled key at <strong>κ of at least 0.6 on each of the three primary codes</strong> (kept vs handed over; judgment certification; right-answer certification), pooled over the twelve runs, <strong>on each path on its own</strong> (DECISIONS.md, Oct 15). The result is reported whatever it is. A path below 0.6 on any primary code is reported as not validated. Which reader and path the plugin uses for Nov 1 is decided after the results; this test only reports.</p>
+<h2>Design</h2>
+<p><strong>Three tasks</strong>, each with the author's notes, five planted errors, and a CLAUDE.md the author wrote:</p>
+<ul><li><strong>Schools: a quantitative memo.</strong> What predicts how well a California school district's ninth graders do in math? statsmodels' star98: 303 districts, the share above the national median, with demographic, spending, and staffing variables.</li><li><strong>Agreement: a small research tool.</strong> A command-line script that computes percent agreement and Cohen's κ between two coders from a CSV, with tests, a README, and a check against statsmodels' implementation. Its calls fall in the tool pack.</li><li><strong>RAND: an experiment.</strong> Does cost sharing reduce doctor visits? The RAND Health Insurance Experiment, in statsmodels' randhie: 20,190 person-years. The author writes a pre-analysis plan first, so the experiments pack's rows apply, including preregistration and departures from it.</li></ul>
+<p><strong>Twelve runs:</strong> each task in all four cells, named by the two measures (DECISIONS.md, Oct 15).</p>
+<table><thead><tr><th></th><th>Low warrant</th><th>High warrant</th></tr></thead><tbody><tr><td><strong>Low delegation</strong></td><td>Makes most calls; hands some over and never takes them back</td><td>Makes most calls; takes back each one handed over</td></tr><tr><td><strong>High delegation</strong></td><td>Asks for everything at once; never takes anything back</td><td>Asks for everything at once; takes back every call</td></tr></tbody></table>
+<p>The low-delegation scripts hand over about six calls each, and the high-warrant scripts use every response (changed, accepted with a reason, accepted), so each code has cases.</p>
+<p><strong>Instructions in every run</strong> (rule 9): the author's CLAUDE.md settles two or three calls in advance (coded kept), and a skill from the methods-kit plugin, written by someone else, settles one to three (coded handed over). Claude's memory stays off in the runs, so memory notes aren't tested.</p>
+<p><strong>Brainstorm segments in two runs</strong> (rule 10): schools low-high and RAND high-high. The author labels a turn brainstorming, and Claude edits the work during it.</p>
+<p><strong>Units, estimated:</strong> about 160 judgment-certification units in the key (the first test had 37), so that κ is uncertain by about ±0.09 instead of ±0.18; around 350 decisions and 350 claims in all.</p>
+<h2>Order of operations</h2>
+<ol><li>The author attests this file, the materials below, and the frozen reader in one commit. That commit's hash fixes them.</li><li>The twelve runs, by <code>run.py</code>, each saved as a bundle in <code>runs/</code>.</li><li>The after-run labels, by the procedure in <a href="labels/README.html"><code>labels/README.md</code></a>: Claude labels and commits; the author labels every new kind, settles disagreements, and spot-checks a random tenth of the labels applied by precedent (seed 20261017); the settled key is committed.</li><li>Only then, the reader on all twelve runs, both paths: <code>score.py read api</code> and <code>score.py read claude-code</code>. Each refuses to start until the reader, the checklists, the key, and the scorer are committed unchanged.</li><li><code>score.py score</code>, and the results written up.</li></ol>
+<h2>Analysis</h2>
+<p>As in the first test, by <a href="score.py"><code>score.py</code></a>, whose scoring matches the first test's scorer exactly on the same data (checked Oct 15 on the exploratory run). Each key unit is matched to a reader unit of the same kind whose quotes overlap it in the same file, restatements included, preferring the same checklist row. Agreement and κ are reported on each layer, pooled over the twelve runs, for each path:</p>
+<ul><li><strong>Primary, held to the bar:</strong> kept vs handed over; judgment certification, where both say handed over; right-answer certification (you checked / tool checked, you confirmed / tool checked, you didn't see the result / unchecked).</li><li><strong>Second layers, reported:</strong> given vs taken; no check vs wasn't notified. Below 0.6, the disclosure reports only the primary code, as now.</li></ul>
+<p><strong>Also reported:</strong> κ on the primary codes for each task (not held to the bar); listing (key units found, missed, and reader units matching no key unit); each planted error's fate in each run (caught by the checks, fixed by Claude unasked, or survived); and the labeling counts in <a href="labels/README.html"><code>labels/README.md</code></a>.</p>
+<h2>Failures and departures</h2>
+<ul><li><strong>A run that fails for reasons outside the script</strong> (a Claude Code error, a timeout, the network, or an author's check that stops the run) is rerun from scratch with the same script, up to twice. Every failed attempt is reported, with its reason.</li><li><strong>Claude departing from a script's instruction</strong> is not a failure. The run stands; the departure is labeled after the run and overrides the planted code for that unit, and the number of overrides is reported, as in the first test.</li><li><strong>A reader failure on a run</strong> (a crash or a timeout) is retried once. If it fails again, that run is reported as unread for that path and left out of that path's pooled numbers, and the omission is reported.</li><li><strong>Any other departure from this preregistration</strong> is reported with the results, with its reason.</li></ul>
+<h2>Choices settled with the author (Oct 15)</h2>
+<ol><li>Twelve runs, adding the experiment as a third task.</li><li>Each path must clear 0.6 on all three primary codes on its own.</li><li>Matching as frozen, restatements included.</li><li>Claude labels most of the after-run half by applying the author's first-test rulings, citing each (<a href="precedents.md"><code>precedents.md</code></a>); the author labels the new kinds, settles disagreements, and spot-checks a random tenth. Since more of the key is Claude's labeling, the "Claude graded Claude" limit grows, and the limits say so.</li><li>The three tasks as proposed.</li></ol>
+<h2>Materials</h2>
+<p>Fixed by the attesting commit:</p>
+<table><thead><tr><th></th><th>Files</th></tr></thead><tbody><tr><td>Each task's starting materials: the author's notes, with five planted errors each, and the author's CLAUDE.md</td><td><code>schools/start/</code>, <code>agreement/start/</code>, <code>rand/start/</code></td></tr><tr><td>The twelve scripts</td><td><code>TASK/low-high.md</code>, <code>low-low.md</code>, <code>high-low.md</code>, <code>high-high.md</code></td></tr><tr><td>The planted half of each key, with the truth for each planted error, checked against Crossref and the data</td><td><code>TASK/key.md</code></td></tr><tr><td>The other author's plugin, whose skills settle the robustness checks (schools, RAND) and the tool's interface, output, and tests (agreement)</td><td><code>methods-kit/</code></td></tr><tr><td>The first test's rulings, applied to the after-run labels</td><td><code>precedents.md</code></td></tr><tr><td>The labeling procedure and its tools (full transcripts; the seeded spot-check draw)</td><td><code>labels/</code></td></tr><tr><td>The runner, and its smoke test (passed Oct 15: the skill's text captured, brainstorm turns labeled, the CLAUDE.md captured as the project's, one recorder)</td><td><code>run.py</code></td></tr><tr><td>The scorer and reading script</td><td><code>score.py</code></td></tr><tr><td>The frozen reader, its checklists, and the plugin it runs in</td><td><code>plugin/warrant/</code></td></tr></tbody></table>
+<p>The planted keys plant about 77 decisions and 40 claims in the four low-delegation runs alone; the high-delegation runs' units depend on what Claude does (the first test's two had about 58 units each).</p>
+<p><strong>Expected cost.</strong> The twelve runs play through headless Claude Code on the subscription. The reader through the API costs about $1.50–2.50 per run, about $20–30 for the twelve (the exploratory run: $5.87 for four smaller runs); the headless reader bills nothing extra.</p>
+<h2>Schedule</h2>
+<ul><li><strong>Oct 15 (done):</strong> design settled; materials, runner, scorer, and labeling tools drafted; smoke test passed.</li><li><strong>Oct 16:</strong> The author reviews the materials.</li><li><strong>Oct 17:</strong> The author attests this, the materials, and the frozen reader.</li><li><strong>Oct 18–19:</strong> the runs, on the subscription; the after-run labels; the Codex and Gemini adapters built while the runs execute.</li><li><strong>Oct 20:</strong> both paths read and scored; results.</li></ul>
+</main>
+<script>
+// A copy button on every box. The clipboard API can be refused on a page opened
+// from a file, so a hidden text area does the copying then.
+document.querySelectorAll("pre").forEach(function (pre) {
+  var button = document.createElement("button");
+  button.type = "button"; button.className = "copy"; button.textContent = "Copy";
+  button.addEventListener("click", function () {
+    var text = (pre.querySelector("code") || pre).innerText.replace(/\n$/, "");
+    var done = function () { button.textContent = "Copied"; setTimeout(function () { button.textContent = "Copy"; }, 1500); };
+    var fallback = function () {
+      var area = document.createElement("textarea");
+      area.value = text; area.style.position = "fixed"; area.style.opacity = "0";
+      document.body.appendChild(area); area.select();
+      try { document.execCommand("copy"); done(); } catch (e) {}
+      area.remove();
+    };
+    if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(text).then(done, fallback);
+    else fallback();
+  });
+  pre.appendChild(button);
+});
+</script>
+</body>
+</html>

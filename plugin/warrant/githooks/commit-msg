@@ -1,0 +1,59 @@
+#!/bin/sh
+# Reject the commit unless it names who attests to it:
+#   - at least one non-empty Attested-by:
+#   - Stage:, if present, exactly one, with a value from STAGES
+# Verified: and Delegated: are optional. /attest writes Verified: and
+# Attested-by: itself. Activate once per clone: git config core.hooksPath .githooks
+
+STAGES="idea-generation data-collection data-cleaning analysis outlining drafting citation-management reviewer-response tooling"
+
+msg_file="$1"
+
+reject() {
+	{
+		echo "commit rejected: $1"
+		echo
+		echo "  Every commit needs an Attested-by: trailer naming who attests to it."
+		echo "  Verified:, Delegated:, and Stage: are optional. If you add Stage:, use one of:"
+		echo "    $STAGES"
+		echo "  Trailers go in the last paragraph, after a blank line."
+		echo "  Without an editor:  git commit -m \"...\" --trailer \"Attested-by: Your Name\""
+		echo "  Or type /attest <sentence> in Claude Code, which writes the commit for you."
+		echo "  Your message is saved in $msg_file until the next commit attempt."
+	} >&2
+	exit 1
+}
+
+# Drop a `git commit -v` diff and comment lines, then let git find the
+# trailer block (it never treats the subject paragraph as trailers).
+trailers=$(sed '/^# -* >8 -*$/,$d' "$msg_file" | git stripspace --strip-comments | git interpret-trailers --parse)
+
+# Print the value of every trailer named $1 (case-insensitive key), trimmed.
+values() {
+	printf '%s\n' "$trailers" | awk -v key="$1" '
+		{
+			i = index($0, ":")
+			if (i && tolower(substr($0, 1, i - 1)) == tolower(key)) {
+				v = substr($0, i + 1)
+				gsub(/^[ \t]+|[ \t]+$/, "", v)
+				print v
+			}
+		}'
+}
+
+attested=$(values Attested-by | grep -c .)
+[ "$attested" -eq 0 ] && reject "no Attested-by: trailer, or it is empty (or no subject line above the trailers)."
+
+stage_count=$(values Stage | wc -l | tr -d ' ')
+if [ "$stage_count" -gt 0 ]; then
+	[ "$stage_count" -gt 1 ] && reject "more than one Stage: trailer."
+	stage=$(values Stage)
+	[ -z "$stage" ] && reject "Stage: is empty. Fill it in or remove it."
+	valid=no
+	for s in $STAGES; do
+		[ "$stage" = "$s" ] && valid=yes
+	done
+	[ "$valid" = yes ] || reject "unknown Stage: '$stage'."
+fi
+
+exit 0

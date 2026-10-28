@@ -1,0 +1,326 @@
+{
+ "name": "low-high",
+ "paper": "experiment",
+ "run": "experiment-low-high-2026-10-17-0841",
+ "base": "/Users/user/.warranted-delegation/demos/experiment-low-high-2026-10-17-0841",
+ "project": "/Users/user/.warranted-delegation/demos/experiment-low-high-2026-10-17-0841/project",
+ "venv": "/Users/user/.warranted-delegation/demos/experiment-low-high-2026-10-17-0841/venv",
+ "plugin": "/Users/user/.warranted-delegation/demos/experiment-low-high-2026-10-17-0841/plugin",
+ "session": "10baea59-6949-4eef-a307-6766f52373c6",
+ "started": "2026-10-17T08:41:58",
+ "phase": "save",
+ "prompts": 25,
+ "steps": [
+  {
+   "kind": "setup",
+   "commit": "1a3237301de5077688bcf327d61b66e6c5fed112"
+  },
+  {
+   "kind": "prompt",
+   "n": 1,
+   "seconds": 164,
+   "turns": 16,
+   "cost_usd": 0.5624199000000001,
+   "tool_calls": 14,
+   "resent": false
+  },
+  {
+   "kind": "prompt",
+   "n": 2,
+   "seconds": 52,
+   "turns": 6,
+   "cost_usd": 0.7794373,
+   "tool_calls": 3,
+   "resent": false
+  },
+  {
+   "kind": "prompt",
+   "n": 3,
+   "seconds": 81,
+   "turns": 5,
+   "cost_usd": 1.0743689,
+   "tool_calls": 4,
+   "resent": false
+  },
+  {
+   "kind": "prompt",
+   "n": 4,
+   "seconds": 38,
+   "turns": 1,
+   "cost_usd": 1.1703135,
+   "tool_calls": 0,
+   "resent": false
+  },
+  {
+   "kind": "prompt",
+   "n": 5,
+   "seconds": 36,
+   "turns": 8,
+   "cost_usd": 1.3420637,
+   "tool_calls": 7,
+   "resent": false
+  },
+  {
+   "kind": "attest",
+   "sentence": "Stage 1 (data and cleaning): I read 01_clean.py and the log myself, saw the paper's quotes for task length (10 min), gift bonus (40 cents) and the exclusion rules, and saw the sample counts after each step against the paper's. Final N is 9,963 vs the paper's 9,861, and I know the Qualtrics glitch drop can't be reproduced. No outcomes have been looked at.",
+   "commit": "a3d14eb9054a18e64e9b1b9f5cd37c56637cc003"
+  },
+  {
+   "kind": "prompt",
+   "n": 6,
+   "seconds": 62,
+   "turns": 7,
+   "cost_usd": 1.6438547000000001,
+   "tool_calls": 6,
+   "resent": false
+  },
+  {
+   "kind": "prompt",
+   "n": 7,
+   "seconds": 49,
+   "turns": 3,
+   "cost_usd": 1.8317257,
+   "tool_calls": 2,
+   "resent": false
+  },
+  {
+   "kind": "prompt",
+   "n": 8,
+   "seconds": 14,
+   "turns": 3,
+   "cost_usd": 1.9049029,
+   "tool_calls": 2,
+   "resent": false
+  },
+  {
+   "kind": "attest",
+   "sentence": "Stage 2 (analysis plan): preregistration.md was written before any outcome was looked at; only counts, missingness and payout mechanics were examined. I read the whole plan, set the H2 arms, the comparisons, the Holm families and the complete-case definition myself, and the plan is frozen from here.",
+   "commit": "de3daa10e2935b113d3dc559c69d7e848fd1f8d1"
+  },
+  {
+   "kind": "prompt",
+   "n": 9,
+   "seconds": 110,
+   "turns": 8,
+   "cost_usd": 2.3130914999999996,
+   "tool_calls": 6,
+   "resent": false
+  },
+  {
+   "kind": "prompt",
+   "n": 10,
+   "seconds": 53,
+   "turns": 1,
+   "cost_usd": 2.4524828999999997,
+   "tool_calls": 0,
+   "resent": false
+  },
+  {
+   "kind": "prompt",
+   "n": 11,
+   "seconds": 46,
+   "turns": 6,
+   "cost_usd": 2.6776246999999995,
+   "tool_calls": 5,
+   "resent": false
+  },
+  {
+   "kind": "attest",
+   "sentence": "Stage 3 (analysis): I read 02_analysis.py and tests.csv myself, saw the arm Ns asserted against arm_counts.csv, and saw the tests match the plan (families 6/6/3/1). Arm 7 vs 2 is inconclusive, not supported, and that goes in the paper as such. The paper-means check is an unplanned descriptive check, and the preregistration now carries a disclosure that Claude had seen published results first.",
+   "commit": "9de7a9aeb534d489f4f742e5a74d41515c69fd6f"
+  },
+  {
+   "kind": "prompt",
+   "n": 12,
+   "seconds": 95,
+   "turns": 10,
+   "cost_usd": 3.1437852999999993,
+   "tool_calls": 9,
+   "resent": false
+  },
+  {
+   "kind": "prompt",
+   "n": 13,
+   "seconds": 88,
+   "turns": 4,
+   "cost_usd": 3.5116026999999996,
+   "tool_calls": 3,
+   "resent": false
+  },
+  {
+   "kind": "prompt",
+   "n": 14,
+   "seconds": 102,
+   "turns": 9,
+   "cost_usd": 3.9478048999999995,
+   "tool_calls": 8,
+   "resent": false
+  },
+  {
+   "kind": "prompt",
+   "n": 15,
+   "seconds": 103,
+   "turns": 13,
+   "cost_usd": 4.5259377,
+   "tool_calls": 12,
+   "resent": false
+  },
+  {
+   "kind": "prompt",
+   "n": 16,
+   "seconds": 68,
+   "turns": 11,
+   "cost_usd": 4.8841451,
+   "tool_calls": 9,
+   "resent": false
+  },
+  {
+   "kind": "prompt",
+   "n": 17,
+   "seconds": 25,
+   "turns": 2,
+   "cost_usd": 5.0129114999999995,
+   "tool_calls": 1,
+   "resent": false
+  },
+  {
+   "kind": "prompt",
+   "n": 18,
+   "seconds": 53,
+   "turns": 10,
+   "cost_usd": 5.3447387,
+   "tool_calls": 9,
+   "resent": false
+  },
+  {
+   "kind": "prompt",
+   "n": 19,
+   "seconds": 44,
+   "turns": 6,
+   "cost_usd": 5.6078865,
+   "tool_calls": 5,
+   "resent": false
+  },
+  {
+   "kind": "hand edit",
+   "path": "sections/contribution.md"
+  },
+  {
+   "kind": "hand edit",
+   "path": "sections/limitations.md"
+  },
+  {
+   "kind": "prompt",
+   "n": 20,
+   "seconds": 51,
+   "turns": 7,
+   "cost_usd": 5.954308300000001,
+   "tool_calls": 6,
+   "resent": false
+  },
+  {
+   "kind": "prompt",
+   "n": 21,
+   "seconds": 67,
+   "turns": 7,
+   "cost_usd": 6.346337500000002,
+   "tool_calls": 5,
+   "resent": false
+  },
+  {
+   "kind": "prompt",
+   "n": 22,
+   "seconds": 93,
+   "turns": 7,
+   "cost_usd": 6.930655700000003,
+   "tool_calls": 6,
+   "resent": false
+  },
+  {
+   "kind": "prompt",
+   "n": 23,
+   "seconds": 75,
+   "turns": 4,
+   "cost_usd": 7.322867300000003,
+   "tool_calls": 3,
+   "resent": false
+  },
+  {
+   "kind": "prompt",
+   "n": 24,
+   "seconds": 129,
+   "turns": 10,
+   "cost_usd": 8.130619300000003,
+   "tool_calls": 9,
+   "resent": false
+  },
+  {
+   "kind": "prompt",
+   "n": 25,
+   "seconds": 243,
+   "turns": 14,
+   "cost_usd": 9.518886700000001,
+   "tool_calls": 10,
+   "resent": false
+  },
+  {
+   "kind": "attest",
+   "sentence": "Stage 4 (writing and references): I read paper.md in full and wrote the Contribution and Limitations by hand; they are byte-identical to my files. I saw the three DOIs match their Crossref records and the DP quotations checked against the extracted text (three errors found and fixed). The numbers in the text match tests.csv by script, and the tables and figure come from code. I didn't read Gneezy-Rustichini or Grant, so the paper cites them only through DP and says so. The paper is about 8\u20139 pages by estimate, with the appendix on top.",
+   "commit": "d36d28937623a204f94bb8b479227932a54969ae"
+  },
+  {
+   "kind": "hand edit",
+   "path": "provenance/finished-work.md"
+  },
+  {
+   "kind": "attest",
+   "sentence": "I checked the finished-work map against the project and corrected it. The manuscript is paper.md. The plan is listed once, under preregistration, and the references are paper.md only. Cleaning is now code/01_clean.py, which makes data/clean.csv. Collection and materials stay \"none\" because the data and the task instructions are DellaVigna and Pope's, not ours. Packs stay quantitative and experiments.",
+   "commit": "c394c1fa145772ffd9a5efea13191bf6ea237fd6"
+  }
+ ],
+ "author_usage": {
+  "input_tokens": 102,
+  "output_tokens": 20952,
+  "cache_creation_input_tokens": 115157,
+  "cache_read_input_tokens": 2709798,
+  "calls": 49,
+  "seconds": 223
+ },
+ "nudges": 0,
+ "versions": {
+  "plugin": "0.10.2",
+  "claude_code": "2.1.302 (Claude Code)",
+  "python_packages": [
+   "certifi==2026.7.22",
+   "charset-normalizer==3.5.2",
+   "contourpy==1.4.0",
+   "cycler==0.12.1",
+   "fonttools==4.67.0",
+   "formulaic==1.2.2",
+   "idna==3.20",
+   "interface_meta==2.0.1",
+   "kiwisolver==1.5.1",
+   "matplotlib==3.11.2",
+   "narwhals==2.27.1",
+   "numpy==2.5.4",
+   "packaging==26.3",
+   "pandas==3.0.6",
+   "patsy==1.0.3",
+   "pillow==13.0.0",
+   "pyparsing==3.3.3",
+   "pypdf==6.21.1",
+   "pyreadstat==1.3.6",
+   "python-dateutil==2.9.0.post0",
+   "requests==2.34.2",
+   "scipy==1.18.1",
+   "six==1.17.0",
+   "statsmodels==0.15.0",
+   "typing_extensions==4.16.0",
+   "urllib3==2.8.0",
+   "wrapt==2.5.1"
+  ],
+  "runner_commit": "e83806ef426beee69f4c179a92ae96e3ee28c508"
+ },
+ "map": true,
+ "finished": "2026-10-17T09:33:17"
+}

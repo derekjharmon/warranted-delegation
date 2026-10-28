@@ -1,0 +1,113 @@
+{
+  "task": "schools",
+  "cell": "low-low",
+  "started": "2026-10-15T21:09:45",
+  "environment": {
+    "claude_code": "2.1.301 (Claude Code)",
+    "model": "claude-opus-5-5",
+    "plugin": "0.7.1",
+    "python": "3.14.7",
+    "statsmodels": "0.14.6",
+    "pandas": "2.2.3"
+  },
+  "attested_versions": {
+    "repo_head": "057f94dbd96313f61872be398e25c0992a6c19c1"
+  },
+  "script_sha256": "02a143d33b94323f43ab378089bdd963a4f06f8fdaca65acd63dde6af936e401",
+  "key_sha256": "5bd0ca0f718dfbfaff84a0fc0dd4273d6ae2473288e2830cdf1f598078f5e983",
+  "runner_sha256": "bcef30d9233aaf128e8695872ff78bd83de313c97913f56c754740335a2fb6fe",
+  "work": [
+    "memo.md",
+    "analysis/",
+    "output/"
+  ],
+  "steps": [
+    {
+      "id": "setup",
+      "kind": "attest",
+      "exit": 0,
+      "seconds": 2,
+      "is_error": false,
+      "turns": 0,
+      "cost_usd": 0,
+      "stderr": null,
+      "commit": "cb73fa80e8ddd035f6213f4c8a2bfa8e8a078201"
+    },
+    {
+      "id": "A-LL1",
+      "kind": "prompt",
+      "exit": 0,
+      "seconds": 43,
+      "is_error": false,
+      "turns": 8,
+      "cost_usd": 0.18155119999999997,
+      "stderr": null
+    },
+    {
+      "id": "A-LL2",
+      "kind": "prompt",
+      "exit": 0,
+      "seconds": 59,
+      "is_error": false,
+      "turns": 9,
+      "cost_usd": 0.3916219999999999,
+      "stderr": null
+    },
+    {
+      "id": "A-LL3",
+      "kind": "prompt",
+      "exit": 0,
+      "seconds": 65,
+      "is_error": false,
+      "turns": 12,
+      "cost_usd": 0.6583848,
+      "stderr": null
+    },
+    {
+      "id": "A-LL4",
+      "kind": "attest",
+      "exit": 0,
+      "seconds": 2,
+      "is_error": false,
+      "turns": 0,
+      "cost_usd": 0.6583848,
+      "stderr": null,
+      "commit": "4682aa7d10643ccbec2b507002f0ea2a67c36ce4"
+    },
+    {
+      "id": "A-LL5",
+      "kind": "prompt",
+      "exit": 0,
+      "seconds": 74,
+      "is_error": false,
+      "turns": 11,
+      "cost_usd": 0.9759254,
+      "stderr": null
+    },
+    {
+      "id": "A-LL6",
+      "kind": "hand edit",
+      "file": "memo.md"
+    },
+    {
+      "id": "A-LL7",
+      "kind": "attest",
+      "exit": 0,
+      "seconds": 2,
+      "is_error": false,
+      "turns": 0,
+      "cost_usd": 0.9759254,
+      "stderr": null,
+      "commit": "127bdb115cfb340cf0d24218b986763829e4d756"
+    }
+  ],
+  "session": "afd1830e-4c6b-46d0-ba54-5edb8380fee4",
+  "verify_log": [
+    "OK  62 events  head c1302cfa7f72772e23689dd2b5936016e968efd11e60627b9792625970b247b2  (/private/var/folders/_k/wpbxz8gn451dmsv_93z4yt6r0000gn/T/wd-scripted2-schools-low-low-k4u4poql/project/provenance/log/simulated-author-587c/events.jsonl)",
+    "sidecars: 46 checked, 0 withheld",
+    "snapshots: 7 present, 0 withheld"
+  ],
+  "final_commit": "127bdb115cfb340cf0d24218b986763829e4d756",
+  "finished": "2026-10-15T21:13:55",
+  "bundle_sha256": "a81ac3d9bfe91fda5639efc6554cbf6ac5c9fee17ff88e94b8f91386db511f0b"
+}

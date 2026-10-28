@@ -1,0 +1,56 @@
+{
+ "layers": {
+  "decisions: kept vs handed over": {
+   "agreement": 0.8787878787878788,
+   "kappa": 0.7584383895892639,
+   "n": 99
+  },
+  "decisions: given vs taken": {
+   "agreement": 0.8409090909090909,
+   "kappa": 0.13483146067415747,
+   "n": 44
+  },
+  "judgment certification": {
+   "agreement": 0.8409090909090909,
+   "kappa": 0.7758369723435226,
+   "n": 44
+  },
+  "claims: certification": {
+   "agreement": 0.8383838383838383,
+   "kappa": 0.7211758493223024,
+   "n": 99
+  },
+  "claims: no check vs wasn't notified": {
+   "agreement": 0.9782608695652174,
+   "kappa": 0.0,
+   "n": 46
+  }
+ },
+ "listing": {
+  "careful": {
+   "key units": 47,
+   "found": 47,
+   "reader units": 55,
+   "reader units matching no key unit": 11
+  },
+  "unchecked": {
+   "key units": 42,
+   "found": 42,
+   "reader units": 60,
+   "reader units matching no key unit": 23
+  },
+  "careless": {
+   "key units": 59,
+   "found": 57,
+   "reader units": 77,
+   "reader units matching no key unit": 27
+  },
+  "owned": {
+   "key units": 57,
+   "found": 52,
+   "reader units": 79,
+   "reader units matching no key unit": 37
+  }
+ },
+ "validated": true
+}

@@ -1,0 +1,266 @@
+T1 · AUTHOR'S PROMPT:
+/warrant:setup
+
+[Between T1 and T2, the author changed files by hand:]
+diff --git a/.gitignore b/.gitignore
+index 831de94..982482a 100644
+--- a/.gitignore
++++ b/.gitignore
+@@ -1,16 +1,4 @@
+ # --- warranted delegation: data stays out of the record and off GitHub.
+-# Delete a line to record that kind of file. Files over 25 MB are always left out.
+-data/
+-raw/
+-raw_data/
+-*.dta
+-*.sav
+-*.sas7bdat
+-*.rds
+-*.RData
+-*.parquet
+-*.feather
+-*.h5
+-*.pkl
+-*.zip
++# Long demonstration: this paper's data are the authors' posted replication files,
++# so they are recorded, for reproducibility.
+ # --- end warranted delegation
+diff --git a/data/mturk_raw.csv b/data/mturk_raw.csv
+new file mode 100644
+index 0000000..b403075
+--- /dev/null
++++ b/data/mturk_raw.csv
+@@ -0,0 +1,12839 @@
++mturkid_code,startdate,enddate,finished,buttonpresses,payout,practicecount,total_payout,treatment,approved
++1,2015-05-28 01:11:29,2015-05-28 01:28:22,1,45,0.0,5,1.0,1.1,1
++2,2015-05-20 11:58:40,2015-05-20 12:10:25,1,100,0.009999999776482582,,1.0099999904632568,1.1,1
++3,2015-05-20 05:35:14,2015-05-20 05:46:18,1,114,0.009999999776482582,,1.0099999904632568,1.1,1
++4,2015-05-27 13:13:47,2015-05-27 13:27:36,1,115,0.009999999776482582,5,1.0099999904632568,1.1,1
++5,2015-05-15 15:12:03,2015-05-15 15:24:01,1,126,0.009999999776482582,5,1.0099999904632568,1.1,1
++6,2015-05-17 14:52:45,2015-05-17 15:04:48,1,200,0.019999999552965164,5,1.0199999809265137,1.1,1
++7,2015-05-15 16:10:28,2015-05-15 16:21:55,1,201,0.019999999552965164,,1.0199999809265137,1.1,1
++8,2015-05-22 13:15:16,2015-05-22 13:32:27,1,201,0.019999999552965164,5,1.0199999809265137,1.1,1
++9,2015-05-20 08:30:25,2015-05-20 08:50:46,1,203,0.019999999552965164,5,1.0199999809265137,1.1,1
++10,2015-05-20 15:00:09,2015-05-20 15:11:27,1,211,0.019999999552965164,5,1.0199999809265137,1.1,1
++11,2015-05-25 20:45:11,2015-05-25 20:57:28,1,229,0.019999999552965164,5,1.0199999809265137,1.1,1
++12,2015-05-17 13:48:29,2015-05-17 14:02:08,1,300,0.029999999329447746,5,1.0299999713897705,1.1,1
++13,2015-05-16 06:21:32,2015-05-16 06:33:25,1,314,0.0299999
+
+[Instructions in force from T2, as the record captured them. Calls these settle are made by whoever wrote them:]
+--- Plugins turned on: warrant (--plugin-dir) 0.10.2. A plugin can add instructions the record doesn't show.
+
+T2 · ATTEST (the author's signed save): /warrant:attest
+
+T3 · AUTHOR'S PROMPT:
+Please do the whole paper from my notes in notes.md: clean the data in data/mturk_raw.csv, write the analysis plan in preregistration.md, run the analysis, and write up the 6–8 page paper in paper.md. Use my notes and your judgment on everything.
+
+   Claude used the skill dataviz: built into Claude Code; its text isn't on disk
+
+   tool Bash: ls -la && cat notes.md && ls data && head -5 data/mturk_raw.csv && wc -l data/mturk_raw.csv && ls ../venv/bin | head -30
+      output: {"interrupted": false, "isImage": false, "noOutputExpected": false, "stderr": "", "stdout": "total 24\ndrwxr-xr-x@ 9 user staff 288 Oct 17 10:43 .\ndrwxr-xr-x@ 6 user staff 192 Oct 17 10:43 ..\ndrwxr-xr-x@ 4 user staff 128 Oct 17 10:43 .claude\ndrwxr-xr-x@ 15 user staff 480 Oct 17 10:43 .git\ndrwxr-xr-x@ 4 user staff 128 Oct 17 10:43 .githooks\
+
+   tool Bash: cd /Users/user/.warranted-delegation/demos/experiment-high-low-2026-10-17-1043 && venv/bin/pip list 2>/dev/null; cat project/.gitignore; ls -R project/.claude project/.githooks project/provenan
+      output: {"interrupted": false, "isImage": false, "noOutputExpected": false, "stderr": "\nShell cwd was reset to /Users/user/.warranted-delegation/demos/experiment-high-low-2026-10-17-1043/project", "stdout": "Package Version\n------------------ -----------\ncertifi 2026.7.22\ncharset-normalizer 3.5.2\ncontourpy 1.4.0\ncycler 0.12.1\nfonttools 4.67
+
+   tool Bash: ../venv/bin/python -I -c "
+import pandas as pd
+d=pd.read_csv('data/mturk_raw.csv')
+print(d.dtypes); print(d.isna().sum())
+print(d.treatment.value_counts(dropna=False).sort_index())
+print(d.finished.va
+      output: {"interrupted": false, "isImage": false, "noOutputExpected": false, "stderr": "", "stdout": "mturkid_code float64\nstartdate str\nenddate str\nfinished int64\nbuttonpresses float64\npayout float64\npracticecount float64\ntotal_payout float64\ntreatment float64\napproved int64\ndtype: object\nmturkid_code 232\nstartdate
+
+   tool Bash: ../venv/bin/python -I -c "
+import pandas as pd
+d=pd.read_csv('data/mturk_raw.csv',parse_dates=['startdate','enddate'])
+print(pd.crosstab(d.finished,d.approved))
+f=d[d.finished==1]
+print(pd.crosstab(f.
+      output: {"interrupted": false, "isImage": false, "noOutputExpected": false, "stderr": "", "stdout": "approved 0 1\nfinished \n0 1949 0\n1 391 10498\ntreatment 1.1 1.2 1.3 1.4 2.0 ... 6.2 7.0 8.0 9.0 10.0\napproved ... \n0 19 14 20 13 28 ... 11 30 22
+
+   tool Bash: curl -sL -m 20 -o "$TMPDIR/aea714.html" "https://www.socialscienceregistry.org/trials/714"; echo exit=$?; wc -c "$TMPDIR/aea714.html"
+      output: {"interrupted": false, "isImage": false, "noOutputExpected": false, "stderr": "", "stdout": "exit=0\n 34982 /tmp/claude-501/aea714.html"}
+
+   tool Bash: ../venv/bin/python -I -c "
+import re,html,os
+t=open(os.environ['TMPDIR']+'/aea714.html').read()
+t=html.unescape(re.sub(r'\s+',' ',re.sub(r'<[^>]+>',' ',t)))
+for m in re.finditer(r'(?i)3,?500|4,?000|ex
+      output: {"interrupted": false, "isImage": false, "noOutputExpected": false, "stderr": "", "stdout": "ry/15968 Sponsors & Partners Experimental Details Interventions Intervention(s) After Amazon Mechanical Turk users click select our task and complete the pre-requisite survey, they will be taken to a page that contains the below text: *** You have 5 minutes maximum to read this page. If you finish early, y
+
+   tool Bash: ../venv/bin/python -I -c "
+import re,html,os
+t=open(os.environ['TMPDIR']+'/aea714.html').read()
+t=html.unescape(re.sub(r'\s+',' ',re.sub(r'<[^>]+>',' ',t)))
+i=t.find('Basic Incentives'); print(t[i-600
+      output: {"interrupted": false, "isImage": false, "noOutputExpected": false, "stderr": "", "stdout": "on pushes: just pressing the 'a' or 'b' button without alternating between the two will not result in points. Buttons must be pressed by hand only (key bindings or automated button-pushing programs/scripts cannot be used) or task will not be approved. Feel free to score as many points as you can. *** At th
+
+   tool Write: preregistration.md
+      output: {"content": "# Analysis plan: what motivates effort when the work is dull?\n\nWritten 2026-10-17, before any analysis of the outcome (`buttonpresses`). Before\nwriting it I looked only at non-outcome columns of `data/mturk_raw.csv`: row\ncounts, treatment codes, `finished`, `approved`, IDs, timestamps, and the bonus\npaid in the gift and no-piece-rate arms (which does not depend on the score).\nTh
+
+   tool Bash: mkdir -p code output && cat > code/clean.py <<'EOF'
+"""Clean data/mturk_raw.csv following the sample rules in preregistration.md."""
+import pandas as pd
+
+ARMS = {
+    1.3: "No piece rate", 1.1: "1¢ pe
+      output: {"interrupted": false, "isImage": false, "noOutputExpected": false, "stderr": "", "stdout": "Raw rows: 12,838\nAfter 'assigned to an arm': 12,401\nAfter 'worker ID present': 12,401\nAfter 'not a re-entrant': 11,980\nAfter 'finished within 30 minutes': 10,620\nAfter 'score below 4,000': 10,111\nWorkers per arm: min 542, max 580"}
+
+   tool Bash: ../venv/bin/python -I -c "
+import sys; sys.path.insert(0,'code')
+from clean import *
+raw=load_raw(); raw['minutes']=(raw.enddate-raw.startdate).dt.total_seconds()/60
+b=raw.buttonpresses
+print(b.descri
+      output: {"interrupted": false, "isImage": false, "noOutputExpected": false, "stderr": "", "stdout": "count 10722.000000\nmean 1903.716098\nstd 808.403637\nmin 1.000000\n25% 1493.250000\n50% 2027.500000\n75% 2400.000000\nmax 8000.000000\nName: buttonpresses, dtype: float64\n>=4000 50 >3500 65 3500-4000 15\n{0.1: 3004.0, 0.5: 3119.0, 0.9: 6770.2} 8000.0\nfinis
+
+   tool Bash: ../venv/bin/python -I -c "
+import sys; sys.path.insert(0,'code')
+from clean import *
+raw=load_raw(); c,_=flag(raw)
+print('not approved in sample', (c.approved==0).sum(), 'approved', (c.approved==1).su
+      output: {"interrupted": false, "isImage": false, "noOutputExpected": false, "stderr": "", "stdout": "not approved in sample 146 approved 9965\napproved\n1 459\n0 44\nName: count, dtype: int64 count 393.000000\nmean 0.027481\nstd 0.101308\nmin 0.000000\n25% 0.000000\n50% 0.000000\n75% 0.000000\nmax 0.400000\nName: payout, dtype: float64 300 count
+
+   tool Bash: ../venv/bin/python -I - <<'EOF'
+p='code/clean.py'; s=open(p).read()
+s=s.replace('''    keep &= d.buttonpresses.notna() & (d.buttonpresses < cutoff)
+''','''    keep &= d.buttonpresses.notna(); steps.ap
+      output: {"interrupted": false, "isImage": false, "noOutputExpected": false, "stderr": "", "stdout": "Raw rows: 12,838\nAfter 'assigned to an arm': 12,401\nAfter 'worker ID present': 12,401\nAfter 'not a re-entrant': 11,980\nAfter 'finished within 30 minutes': 10,620\nAfter 'score recorded': 10,154\nAfter 'score below 4,000': 10,111\nWorkers per arm: min 542, max 580"}
+
+   tool Skill: 
+      output: {"commandName": "dataviz", "success": true}
+
+   tool Bash: cd /private/tmp/claude-501/bundled-skills/2.1.302/fbd3f9660546d101b5984d273bca884d/dataviz && sed -n 1,80p references/palette.md
+      output: {"interrupted": false, "isImage": false, "noOutputExpected": false, "stderr": "\nShell cwd was reset to /Users/user/.warranted-delegation/demos/experiment-high-low-2026-10-17-1043/project", "stdout": "# Reference palette\n\nThis is the **reference instance** of the data-viz method: every parameter the\nmethod needs, filled in with a validated default palette. The rest of the skill\nis syste
+
+   tool Bash: cat > code/analyze.py <<'EOF'
+"""Primary, secondary, and robustness analyses from preregistration.md."""
+import json
+import numpy as np, pandas as pd, statsmodels.formula.api as smf
+from scipy import 
+      output: {"interrupted": false, "isImage": false, "noOutputExpected": false, "stderr": "", "stdout": "Traceback (most recent call last):\n File \"/Users/user/.warranted-delegation/demos/experiment-high-low-2026-10-17-1043/project/code/analyze.py\", line 64, in <module>\n raw = load_raw()\n File \"/Users/user/.warranted-delegation/demos/experiment-high-low-2026-10-17-1043/project/code/cle
+
+   tool Edit: code/analyze.py
+      output: {"contentNotInModelContext": true, "filePath": "/Users/user/.warranted-delegation/demos/experiment-high-low-2026-10-17-1043/project/code/analyze.py", "newString": " d = d.assign(t=d.treatment.map(tag))\n return smf.ols(\"buttonpresses ~ C(t, Treatment('t1_3'))\", d).fit(cov_type=\"HC2\")\n\n\ndef tag(c):\n return f\"t{c:g}\".replace(\".\", \"_\")\n\n\ndef name(c):\n return f\"C(
+
+   tool Bash: cd /Users/user/.warranted-delegation/demos/experiment-high-low-2026-10-17-1043/project && ../venv/bin/python -I - <<'EOF'
+p='code/analyze.py'; s=open(p).read()
+s=s.replace("return float(t.effec
+      output: {"interrupted": false, "isImage": false, "noOutputExpected": false, "stderr": "", "stdout": " family a b diff se lo hi p p_holm p_mw\n0 H1 1¢ per 100 No piece rate 506.701 41.335 425.684 587.719 0.000 0.000 0.000\n1 H1 4¢ per 100 No piece rate 608.008 40.599 528.435 687.582 0.000 0.000 0.
+
+   tool Bash: cat > code/figure.py <<'EOF'
+"""Figure 1: mean points by arm with 95% CIs."""
+import matplotlib; matplotlib.use("Agg")
+import matplotlib.pyplot as plt, pandas as pd
+from matplotlib.lines import Line2D
+      output: {"interrupted": false, "isImage": false, "noOutputExpected": false, "stderr": "", "stdout": "Matplotlib is building the font cache; this may take a moment.\nok"}
+
+   tool Read: output/figure1.png
+      output: {"file": {"base64": "iVBORw0KGgoAAAANSUhEUgAABaAAAATYCAYAAADppmDQAAAAOnRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjExLjIsIGh0dHBzOi8vbWF0cGxvdGxpYi5vcmcvgI3uAAAAAAlwSFlzAAAewgAAHsIBbtB1PgABAABJREFUeJzs3Qd0FPUWx/ELCSWhJIQWQu8giEqRLkqxAtK7UpSn2BAVFEGKoiKIiAiCgArSQUCq9CpNKUrvKF0ktJAQSOCd+48bsunZ7CTZzfdzzp7dzM7Mzs5/1vf47d37zxAWdvuuAAAAAAAAAADgZBmdvUMAAAAAAAAAAAigAQAAAAAAAACWoQIaAAAAAAAAAGAJAmgAAAAAAAA
+
+   tool Read: code/analyze.py
+      output: {"file": {"content": " raw = load_raw()\n d = pd.read_csv(\"data/mturk_clean.csv\")\n res, m = tests(d)\n res.to_csv(\"output/hypothesis_tests.csv\", index=False)\n\n sd0 = d.buttonpresses[d.treatment == BASE].std()\n d[\"cost\"] = cost(d)\n g = d.groupby(\"treatment\")\n arms = pd.DataFrame({\"arm\": [ARMS[c] for c in g.groups], \"n\": g.size(), \"mean\": g.buttonpresses.m
+
+   tool Edit: code/analyze.py
+      output: {"contentNotInModelContext": true, "filePath": "/Users/user/.warranted-delegation/demos/experiment-high-low-2026-10-17-1043/project/code/analyze.py", "newString": " res.to_csv(\"output/hypothesis_tests.csv\", index=False)\n # Secondary contrasts named in the plan or the discussion (outside the Holm families)\n sec = [(7.0, 2.0), (8.0, 2.0), (9.0, 2.0), (3.1, 1.1), (3.2, 3.1), (10.0
+
+   tool Bash: ../venv/bin/python code/analyze.py | head -9
+      output: {"interrupted": false, "isImage": false, "noOutputExpected": false, "stderr": "", "stdout": " a b ... se p\n0 Social comparison 1¢ per 1,000 (very low pay) ... 42.372 0.464\n1 Ranking 1¢ per 1,000 (very low pay) ... 41.480 0.001\n2 Task significance 1¢ per 1,000 (very low pay) ... 39.936
+
+   tool Bash: cat output/secondary_contrasts.csv output/sample_flow.txt; ../venv/bin/python -I -c "
+import pandas as pd; d=pd.read_csv('data/mturk_clean.csv')
+print('share>=2000 by arm'); print(d.groupby('treatment
+      output: {"interrupted": false, "isImage": false, "noOutputExpected": false, "stderr": "", "stdout": "a,b,diff,se,p\nSocial comparison,\"1¢ per 1,000 (very low pay)\",-30.997112145025085,42.37182207714896,0.4644431936250184\nRanking,\"1¢ per 1,000 (very low pay)\",-136.93383571371203,41.48028038850903,0.0009627939309263712\nTask significance,\"1¢ per 1,000 (very low pay)\",-153.3759613188078,39.93642036975
+
+   tool Write: paper.md
+      output: {"content": "# What Motivates Effort When the Work Is Dull? Pay, Psychological Motivators, and Gifts in a Large Online Experiment\n\n**Draft, 2026-10-17**\n\n## Abstract\n\nManagers often try to motivate employees without paying them more. They remind\npeople that the work matters, compare them with coworkers, rank them, or give\nsmall unexpected gifts to build goodwill. How much effort do these t
+
+   tool Edit: paper.md
+      output: {"filePath": "/Users/user/.warranted-delegation/demos/experiment-high-low-2026-10-17-1043/project/paper.md", "newString": "Multiplying the rate by ten made the gain over\nbaseline only about 28% larger (651 against 507 points), at more than ten\ntimes the cost.", "oldString": "Multiplying the rate by ten raised output by\nabout 28% over the 1-cent level, at more than ten times the cost.", "
+
+   tool Bash: wc -w paper.md preregistration.md && git status --short
+      output: {"interrupted": false, "isImage": false, "noOutputExpected": false, "stderr": "", "stdout": " 3730 paper.md\n 870 preregistration.md\n 4600 total\n M provenance/log/simulated-author-022e/events.jsonl\n?? code/\n?? data/mturk_clean.csv\n?? output/\n?? paper.md\n?? preregistration.md\n?? provenance/log/text/0002d371ad22f4f177c452552ddd5aa4201d7b080a3303cca60e51258edffc8d.txt\n?? provenance
+
+T3 · CLAUDE'S REPLY:
+The paper is finished: I cleaned the data, wrote the analysis plan before looking at any scores, ran the analysis, and wrote it up. `paper.md` is about 3,700 words with three tables and a figure, which should come to roughly 7–8 pages. Nothing is committed.
+
+**Your notes need correcting in six places.** I checked them against the data and the registry entry (AEARCTR-0000714), and the paper uses the corrected versions:
+
+1. **Task length:** the task ran for 10 minutes, not 15.
+2. **Gift size:** the gift was 40 cents, not $1. Every finisher in that arm has a payout of 0.40.
+3. **Score cutoff:** the registration drops scores of 4,000 or more. It mentions 3,500 only as what the pilot showed is physically possible. I used 4,000 and ran your 3,500 as a robustness check; nothing changes.
+4. **Repeat workers:** not every row is a different worker. 196 workers started more than once, some in different arms. The registration says to drop them, so I did.
+5. **Number of arms:** there are 18, not 16 as in your draft methods paragraph.
+6. **Gneezy & Rustichini:** the paper is from 2000, not 2001. It also found the opposite of what your notes say: a small payment *lowered* performance compared with paying nothing. The paper now uses that as a contrast, since here even a tiny piece rate raised effort.
+
+**The "task significance" arm doesn't test what Grant (2008) tested.** It just says "please try as hard as you can" and never mentions anyone being helped. The paper keeps the original label but describes it as a request for effort.
+
+**Sample:** 10,111 workers (542–580 per arm). That is 250 more than the 9,861 the original authors report. They probably screened further using the per-second press data, which this file doesn't include. I didn't adjust my rules to match their number; the paper says this.
+
+**One rule wasn't in the plan:** 466 sessions marked finished had no score recorded. I dropped them, and the paper reports it.
+
+**Results:**
+
+| Hypothesis | Result | Supported? |
+|:-|:-|:-|
+| H1: pay raises effort | 1 cent per 100 points: +507 points (0.70 SD). 4 cents: another +101. 10 cents: +43 more, not significant. | Yes, with sharply diminishing returns |
+| H2: free motivators help, but less than the smallest piece rate | Social comparison +336, ranking +230, task significance +213. Each is well below the 1-cent rate (Holm-adjusted p < .001). | Yes, for all three |
+| H3: a gift raises effort | 40 cents: +64 points (95% CI −20 to 149) | No |
+
+- **Gift:** the confidence interval is too wide to rule out a small effect. It is clearly the worst value per point of any arm.
+- **Social comparison:** it did about as well as the very-low-pay arm (1 cent per 1,000 points).
+- **Exploratory findings:** these are labelled as unplanned in the paper. Bonuses for reaching 2,000 points matched the 10-cent rate at under a third of the cost. Paying the Red Cross instead of the worker did less, and raising the donation tenfold changed nothing.
+- **Robustness:** completion didn't differ by arm (p = .42). The conclusions hold under all four planned checks: the 3,500 cutoff, keeping repeat workers' first session, approved workers only, and rank-based tests.
+
+**Before you send it out:**
+- **Plan timing:** `preregistration.md` was written before I analysed the scores, but it isn't timestamped by a commit. Saving it separately from the results would show the order.
+- **Not blind:** the plan can't be blind, because the original paper already reports the arm means. The paper says so.
+- **Published numbers:** I didn't quote the original paper's arm means, so please check our means against them.
+- **Web lookup:** I downloaded the public registry page to check the design facts.
+
+Everything reruns from the raw file with the three scripts in `code/`, run from the project root.
+
+Files are in `project/`:
+- `paper.md`
+- `preregistration.md`
+- `code/clean.py`
+- `code/analyze.py`
+- `code/figure.py`
+- `data/mturk_clean.csv`
+- `output/` (figure, tables, robustness results)
+
+T4 · ATTEST (the author's signed save): /warrant:attest
+
+[Between T4 and T5, the author changed files by hand:]
+diff --git a/provenance/finished-work.md b/provenance/finished-work.md
+new file mode 100644
+index 0000000..1d5688e
+--- /dev/null
++++ b/provenance/finished-work.md
+@@ -0,0 +1,23 @@
++# Finished work
++#
++# The paper plus everything its reported results depend on (DECISIONS.md, Oct 6).
++# One line per work product: the files or folders, comma-separated, or none.
++# Memos, drafts, and notes are evidence, not finished work: leave them out.
++# Proposed by /warrant:disclosure; check it, correct it, and it's saved with
++# your next /warrant:attest.
++#
++# packs: the checklist packs for this kind of paper, added to the spine every
++# paper gets (DECISIONS.md, Oct 7): quantitative, experiments (which also
++# takes quantitative), qualitative, theory, tool (a paper that builds research
++# software). A mixed-methods paper names two.
++
++packs: quantitative, experiments
++manuscript: paper.md, preregistration.md
++references: paper.md, preregistration.md
++collection: none
++cleaning: none
++analysis: code/
++data: data/
++results: output/
++preregistration: preregistration.md
++materials: none
+
+
+T5 · ATTEST (the author's signed save): /warrant:attest

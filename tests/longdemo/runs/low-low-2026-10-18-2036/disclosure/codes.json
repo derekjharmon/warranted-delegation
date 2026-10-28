@@ -1,0 +1,1410 @@
+{
+ "U108": {
+  "id": "U108",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T11, T13, T14, T15",
+  "basis": "T13 script compared every paper number with output files; author moved on to Stage 6 without acknowledging",
+  "confidence": "medium"
+ },
+ "U109": {
+  "id": "U109",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T11, T13, T14, T15",
+  "basis": "T13 \"checked every number in the paper against the files in output/\"; no author response to that reply",
+  "confidence": "medium"
+ },
+ "U110": {
+  "id": "U110",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T11, T13, T14, T15",
+  "basis": "T13 numeric cross-check against output files; T14 bare attest, T15 new task",
+  "confidence": "medium"
+ },
+ "U111": {
+  "id": "U111",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T11, T13, T14, T15",
+  "basis": "T13 numeric cross-check against regressions_first_institution outputs; not acknowledged",
+  "confidence": "medium"
+ },
+ "U112": {
+  "id": "U112",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T13, T14, T15",
+  "basis": "3,640 compared to collection_log via T13 check script; never acknowledged",
+  "confidence": "medium"
+ },
+ "U113": {
+  "id": "U113",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T13, T14, T15",
+  "basis": "digit counts matched by T13 check script (\"four\" spelled out); reply not responded to",
+  "confidence": "medium"
+ },
+ "U114": {
+  "id": "U114",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T13",
+  "basis": "\"Five\" spelled out, so digit-matching check in T13 could not cover it; part of requested methods text",
+  "confidence": "medium"
+ },
+ "U115": {
+  "id": "U115",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T13",
+  "basis": "\"Fifty-seven\" written in words; T13 regex check only matched digits",
+  "confidence": "medium"
+ },
+ "U116": {
+  "id": "U116",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T13",
+  "basis": "\"Seventy\" written in words; outside the digit-based check",
+  "confidence": "medium"
+ },
+ "U117": {
+  "id": "U117",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T13, T14, T15",
+  "basis": "65 and 37 matched against collection_log by T13 check; no acknowledgment",
+  "confidence": "medium"
+ },
+ "U118": {
+  "id": "U118",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T13, T14, T15",
+  "basis": "85/66/43/1 compared to collection_log by T13 check; not acknowledged",
+  "confidence": "medium"
+ },
+ "U119": {
+  "id": "U119",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T13, T14, T15",
+  "basis": "11, 3, 7 compared to collection_log by T13 check; not acknowledged",
+  "confidence": "medium"
+ },
+ "U120": {
+  "id": "U120",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T13, T14, T15",
+  "basis": "\"removed 2 records\" covered by T13 numeric check; not acknowledged",
+  "confidence": "medium"
+ },
+ "U121": {
+  "id": "U121",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T3, T13, T14, T15",
+  "basis": "830/2,810/per-journal counts matched by T13 check against outputs; author never responded",
+  "confidence": "medium"
+ },
+ "U122": {
+  "id": "U122",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T13, T14, T15",
+  "basis": "\"1 to 17\" covered by T13 digit check; reply not acknowledged",
+  "confidence": "low"
+ },
+ "U123": {
+  "id": "U123",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T13, T14, T15",
+  "basis": "91, 7,102, 84 compared to cleaning_log in T13 check; not acknowledged",
+  "confidence": "medium"
+ },
+ "U124": {
+  "id": "U124",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T5, T13",
+  "basis": "\"Six papers\" written in words, outside T13 digit check; requested methods content",
+  "confidence": "medium"
+ },
+ "U125": {
+  "id": "U125",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T13, T14, T15",
+  "basis": "54/35/14/5 compared to collection_log in T13 check; not acknowledged",
+  "confidence": "medium"
+ },
+ "U126": {
+  "id": "U126",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T9, T13",
+  "basis": "\"Five countries\" in words; no record of comparison with the source",
+  "confidence": "medium"
+ },
+ "U127": {
+  "id": "U127",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T13, T14, T15",
+  "basis": "T13 check output still listed '117' as unmatched; reply said all matched; author never responded",
+  "confidence": "low"
+ },
+ "U128": {
+  "id": "U128",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T11, T13, T14, T15",
+  "basis": "65.82/62.68 etc. in T13 check against descriptives.csv; not acknowledged",
+  "confidence": "medium"
+ },
+ "U129": {
+  "id": "U129",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T11, T13, T14, T15",
+  "basis": "2.53 etc. checked by T13 script; not acknowledged",
+  "confidence": "medium"
+ },
+ "U130": {
+  "id": "U130",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T11, T13, T14, T15",
+  "basis": "0.435/0.057 matched descriptives.csv in T13 check; not acknowledged",
+  "confidence": "medium"
+ },
+ "U131": {
+  "id": "U131",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T11, T13, T14, T15",
+  "basis": "correlations matched correlations.csv in T13 check; not acknowledged",
+  "confidence": "medium"
+ },
+ "U132": {
+  "id": "U132",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T11, T13, T14, T15",
+  "basis": "0.294/0.252 matched correlations.csv in T13 check; not acknowledged",
+  "confidence": "medium"
+ },
+ "U133": {
+  "id": "U133",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T13, T15",
+  "basis": "T13 number check flagged 151/160 unmatched, yet reply said all matched; author moved on without comment",
+  "confidence": "low"
+ },
+ "U134": {
+  "id": "U134",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T11, T13",
+  "basis": "\"I checked every number in the paper against the files in output/\"; author moved on, no confirmation",
+  "confidence": "medium"
+ },
+ "U135": {
+  "id": "U135",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T11, T13",
+  "basis": "\"I checked every number in the paper against the files in output/\"; author moved on, no confirmation",
+  "confidence": "medium"
+ },
+ "U136": {
+  "id": "U136",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T11, T13",
+  "basis": "number-check tool call covered paper numbers (115.00 flagged); author moved on, no confirmation",
+  "confidence": "low"
+ },
+ "U137": {
+  "id": "U137",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T11, T13",
+  "basis": "\"I checked every number in the paper against the files in output/\"; author moved on, no confirmation",
+  "confidence": "medium"
+ },
+ "U138": {
+  "id": "U138",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T11, T13",
+  "basis": "\"I checked every number in the paper against the files in output/\"; author moved on, no confirmation",
+  "confidence": "medium"
+ },
+ "U139": {
+  "id": "U139",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T11, T13",
+  "basis": "\"I checked every number in the paper against the files in output/\"; author moved on, no confirmation",
+  "confidence": "medium"
+ },
+ "U140": {
+  "id": "U140",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T11, T13",
+  "basis": "\"I checked every number in the paper against the files in output/\"; author moved on, no confirmation",
+  "confidence": "medium"
+ },
+ "U141": {
+  "id": "U141",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T11, T13",
+  "basis": "\"I checked every number in the paper against the files in output/\"; author moved on, no confirmation",
+  "confidence": "medium"
+ },
+ "U142": {
+  "id": "U142",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T11, T13",
+  "basis": "\"I checked every number in the paper against the files in output/\"; author moved on, no confirmation",
+  "confidence": "medium"
+ },
+ "U143": {
+  "id": "U143",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T11, T13",
+  "basis": "\"I checked every number in the paper against the files in output/\"; author moved on, no confirmation",
+  "confidence": "medium"
+ },
+ "U144": {
+  "id": "U144",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T11, T13",
+  "basis": "\"I checked every number in the paper against the files in output/\"; author moved on, no confirmation",
+  "confidence": "medium"
+ },
+ "U145": {
+  "id": "U145",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T11, T13",
+  "basis": "number check re-run after minus-sign fix; author moved on, no confirmation",
+  "confidence": "medium"
+ },
+ "U146": {
+  "id": "U146",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T11, T13",
+  "basis": "\"I checked every number in the paper against the files in output/\"; author moved on, no confirmation",
+  "confidence": "medium"
+ },
+ "U147": {
+  "id": "U147",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T11, T13",
+  "basis": "\"I checked every number in the paper against the files in output/\"; author moved on, no confirmation",
+  "confidence": "medium"
+ },
+ "U148": {
+  "id": "U148",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T11, T13",
+  "basis": "\"I checked every number in the paper against the files in output/\"; author moved on, no confirmation",
+  "confidence": "medium"
+ },
+ "U149": {
+  "id": "U149",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T11, T13",
+  "basis": "\"I checked every number in the paper against the files in output/\"; author moved on, no confirmation",
+  "confidence": "medium"
+ },
+ "U150": {
+  "id": "U150",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T13",
+  "basis": "Author asked \"Discussion: what the results say about H1, H2 and the extension\"; no check of interpretation",
+  "confidence": "medium"
+ },
+ "U151": {
+  "id": "U151",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T13",
+  "basis": "Descriptives requested in T13; skew statement never checked",
+  "confidence": "medium"
+ },
+ "U152": {
+  "id": "U152",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T13, T15",
+  "basis": "Interpretation of H1 requested in T13; no check",
+  "confidence": "medium"
+ },
+ "U153": {
+  "id": "U153",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T13, T15",
+  "basis": "Interpretation of H2 requested in T13; no check",
+  "confidence": "medium"
+ },
+ "U154": {
+  "id": "U154",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T11, T13",
+  "basis": "Figure 2 requested; reading of the figure never checked",
+  "confidence": "medium"
+ },
+ "U155": {
+  "id": "U155",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T13",
+  "basis": "Extension interpretation requested in T13; no check",
+  "confidence": "medium"
+ },
+ "U156": {
+  "id": "U156",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T11, T13",
+  "basis": "Robustness interpretation requested; no check of the claim",
+  "confidence": "medium"
+ },
+ "U157": {
+  "id": "U157",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T13",
+  "basis": "Discussion of H1 requested; description of size pattern never checked",
+  "confidence": "medium"
+ },
+ "U158": {
+  "id": "U158",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T11, T13, T14",
+  "basis": "T13 script compared every paper number with output/ files; author gave only a bare /attest",
+  "confidence": "medium"
+ },
+ "U159": {
+  "id": "U159",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T11, T13, T14",
+  "basis": "Figure 2 cell numbers were checked against output/ by the T13 script; no response from the author",
+  "confidence": "medium"
+ },
+ "U160": {
+  "id": "U160",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T11, T13",
+  "basis": "Author asked for the Discussion on the extension; this reading of IRR 0.962 was not compared with any source",
+  "confidence": "medium"
+ },
+ "U161": {
+  "id": "U161",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3, T13",
+  "basis": "\"Describe all of this as it was actually done\"; no tool call compared the prose with the code",
+  "confidence": "medium"
+ },
+ "U162": {
+  "id": "U162",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3, T13",
+  "basis": "Text \"preferring the record with the journal's DOI\" was never compared with the sort key",
+  "confidence": "medium"
+ },
+ "U163": {
+  "id": "U163",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3, T13",
+  "basis": "Length-rule description written in T13 with no comparison to the code",
+  "confidence": "medium"
+ },
+ "U164": {
+  "id": "U164",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3, T13",
+  "basis": "Author specified \"built from counts_by_year\"; the paper's description was not checked",
+  "confidence": "medium"
+ },
+ "U165": {
+  "id": "U165",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T5, T13",
+  "basis": "Author's rule \"taken from their listed institutions\"; the description was not checked",
+  "confidence": "medium"
+ },
+ "U166": {
+  "id": "U166",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T9, T13",
+  "basis": "Thresholds \"are from my own knowledge\" and couldn't be checked; no source comparison",
+  "confidence": "medium"
+ },
+ "U167": {
+  "id": "U167",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T7, T9, T13",
+  "basis": "Author: \"Papers with no country at all stay missing\"; the count was produced, not checked",
+  "confidence": "medium"
+ },
+ "U168": {
+  "id": "U168",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T11, T13",
+  "basis": "Author asked for negative binomial models; the NB2/ML description was not compared with any source",
+  "confidence": "medium"
+ },
+ "U169": {
+  "id": "U169",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T11, T13, T14",
+  "basis": "2,804/2,810 were matched to output/ by the T13 number-check script; author gave a bare /attest",
+  "confidence": "medium"
+ },
+ "U170": {
+  "id": "U170",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T11, T13",
+  "basis": "Author asked for IRRs with standard errors; the delta-method description was never checked",
+  "confidence": "medium"
+ },
+ "U171": {
+  "id": "U171",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T11, T13, T14",
+  "basis": "2,804 was matched to the robustness table by the T13 script; no confirmation from the author",
+  "confidence": "medium"
+ },
+ "U172": {
+  "id": "U172",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T3, T13",
+  "basis": "T3 curl lookups of some records on OpenAlex and the T13 count check; author never responded",
+  "confidence": "low"
+ },
+ "U173": {
+  "id": "U173",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T9",
+  "basis": "GNI file downloaded and used; no comparison of the saved file with the source",
+  "confidence": "medium"
+ },
+ "U174": {
+  "id": "U174",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T9, T10",
+  "basis": "\"I couldn't check those thresholds against a World Bank page\"",
+  "confidence": "medium"
+ },
+ "U175": {
+  "id": "U175",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T11, T12",
+  "basis": "Claude read fig1 PNG in T11; author gave only a bare /attest",
+  "confidence": "medium"
+ },
+ "U176": {
+  "id": "U176",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T11, T12",
+  "basis": "Claude read fig2 PNG twice in T11; no response from the author",
+  "confidence": "medium"
+ },
+ "U75": {
+  "id": "U75",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T13, T17, T18",
+  "basis": "OpenAlex lookup of doi 10.1038/513305a; author gave a bare /attest",
+  "confidence": "medium"
+ },
+ "U76": {
+  "id": "U76",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T13, T17, T18",
+  "basis": "\"I checked the volume, issue and pages against OpenAlex\"; author never responded",
+  "confidence": "high"
+ },
+ "U77": {
+  "id": "U77",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T13, T17, T18",
+  "basis": "OpenAlex lookup of doi 10.1126/science.1136099; author gave only a bare /attest",
+  "confidence": "high"
+ },
+ "U78": {
+  "id": "U78",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T13, T14",
+  "basis": "T13 lookup returned the Wuchty abstract, and the text was revised from it; not confirmed by the author",
+  "confidence": "medium"
+ },
+ "U79": {
+  "id": "U79",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T13, T14",
+  "basis": "T13 title search requested the Larivi\u00e8re abstract; author never responded",
+  "confidence": "low"
+ },
+ "U80": {
+  "id": "U80",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T13, T14",
+  "basis": "Wuchty abstract retrieved in the T13 lookup; author gave only a bare /attest",
+  "confidence": "medium"
+ },
+ "U81": {
+  "id": "U81",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T13, T14, T15",
+  "basis": "T13 OpenAlex title.search 'team size matters' with abstract; reply followed only by bare /attest",
+  "confidence": "medium"
+ },
+ "U82": {
+  "id": "U82",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T13, T14",
+  "basis": "T13 lookup of Larivi\u00e8re record and abstract; no author confirmation",
+  "confidence": "medium"
+ },
+ "U83": {
+  "id": "U83",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T13, T14",
+  "basis": "T13 lookup of Larivi\u00e8re record; reply unanswered, bare /attest",
+  "confidence": "medium"
+ },
+ "U84": {
+  "id": "U84",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T13, T14",
+  "basis": "filter=doi:10.1038/513305a lookup; reply 'Their paper ... finds the opposite'; author never responded",
+  "confidence": "medium"
+ },
+ "U85": {
+  "id": "U85",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T13, T14",
+  "basis": "Freeman & Huang looked up in T13; 'theirs is ethnic diversity' reported, no response",
+  "confidence": "medium"
+ },
+ "U86": {
+  "id": "U86",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T13, T14",
+  "basis": "same T13 lookup of doi 10.1038/513305a; reply not confirmed",
+  "confidence": "medium"
+ },
+ "U87": {
+  "id": "U87",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T13, T14",
+  "basis": "'I checked every number in the paper against the files in output/'; bare /attest",
+  "confidence": "high"
+ },
+ "U88": {
+  "id": "U88",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T13, T14",
+  "basis": "automated number check against output/ in T13; no confirmation",
+  "confidence": "high"
+ },
+ "U89": {
+  "id": "U89",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T13, T15, T16",
+  "basis": "T13 number check covered 151/9/160; T15 'Its two numbers match the outputs'; bare /attest",
+  "confidence": "medium"
+ },
+ "U90": {
+  "id": "U90",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T13, T14",
+  "basis": "T13 script compared paper numbers to output tables; unanswered",
+  "confidence": "high"
+ },
+ "U91": {
+  "id": "U91",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T13, T14",
+  "basis": "T13 number check vs output files; bare /attest",
+  "confidence": "high"
+ },
+ "U92": {
+  "id": "U92",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T13",
+  "basis": "author asked 'teams now dominate knowledge production, management included'; no check",
+  "confidence": "medium"
+ },
+ "U93": {
+  "id": "U93",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T13",
+  "basis": "part of requested exploratory framing of extension; nothing checked",
+  "confidence": "medium"
+ },
+ "U94": {
+  "id": "U94",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T3, T4",
+  "basis": "T3 tool tallied print volumes per journal-year; reply 'Year means first appearance online'; bare /attest",
+  "confidence": "medium"
+ },
+ "U95": {
+  "id": "U95",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T3, T4",
+  "basis": "T3 curl sources/issn lookup; reply 'Wrong ISSN for Organization Science'; never answered",
+  "confidence": "high"
+ },
+ "U96": {
+  "id": "U96",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T3, T4",
+  "basis": "T3 DOI-prefix tally showed 10.11207/soshikikagaku; reported, unanswered",
+  "confidence": "medium"
+ },
+ "U97": {
+  "id": "U97",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T3, T4",
+  "basis": "run output 'counts_by_year coverage starts in 2012'; reply item 3, no response",
+  "confidence": "medium"
+ },
+ "U98": {
+  "id": "U98",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T3, T4",
+  "basis": "T3 tool listed short/unpaginated items and titles; reply 'those were all book reviews, editors' essays'; bare /attest",
+  "confidence": "medium"
+ },
+ "U99": {
+  "id": "U99",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T3, T4",
+  "basis": "T3 title searches returned ssrn DOIs for AMJ articles; reply 'SSRN DOIs' unanswered",
+  "confidence": "medium"
+ },
+ "U100": {
+  "id": "U100",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T3",
+  "basis": "T3 curl 'fog of feedback' showed first_page 12905; never reported to author",
+  "confidence": "medium"
+ },
+ "U101": {
+  "id": "U101",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T9",
+  "basis": "release attribution from Claude's knowledge; no source lookup confirming FY2017 basis",
+  "confidence": "medium"
+ },
+ "U102": {
+  "id": "U102",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T9",
+  "basis": "'I couldn't check those thresholds ... they are from my own knowledge'",
+  "confidence": "high"
+ },
+ "U103": {
+  "id": "U103",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T9, T10",
+  "basis": "T9 queried archive versions for ARG GNI; reported in reply; bare /attest",
+  "confidence": "medium"
+ },
+ "U104": {
+  "id": "U104",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T7, T9",
+  "basis": "author: 'classified as high income if they are generally treated as high income'; no check",
+  "confidence": "high"
+ },
+ "U105": {
+  "id": "U105",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T9, T10",
+  "basis": "T9 archive queries for MAC by version; reply 'Macao: high...' unanswered",
+  "confidence": "medium"
+ },
+ "U106": {
+  "id": "U106",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T9",
+  "basis": "T9 'Use whatever sources you can reach'; Iran value pulled from WB API archive (produced, not compared); reply 'Iran: upper-middle... 2014 value is 6,550'",
+  "confidence": "medium"
+ },
+ "U107": {
+  "id": "U107",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T9",
+  "basis": "Cuba group taken from current WB API country list, a lookup not a check; reply 'this is the World Bank's current group, not an FY2017 figure'",
+  "confidence": "medium"
+ },
+ "U54": {
+  "id": "U54",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3",
+  "basis": "T3 prompt: 'publication year plus the following five calendar years, built from counts_by_year'",
+  "confidence": "high"
+ },
+ "U55": {
+  "id": "U55",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T5, T11",
+  "basis": "T11 prompt: 'Model 1: n_authors_top8 only (H1)'; T5 'top-coded at 8 for the models'",
+  "confidence": "high"
+ },
+ "U56": {
+  "id": "U56",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T5, T11",
+  "basis": "T11 prompt: 'Model 2: international only'; T5 'International team = 2 or more distinct countries'",
+  "confidence": "high"
+ },
+ "U57": {
+  "id": "U57",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T11",
+  "basis": "T11 prompt: 'Model 3: both n_authors_top8 and international (H2, beyond team size)'",
+  "confidence": "high"
+ },
+ "U58": {
+  "id": "U58",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T11, T12, T13",
+  "basis": "Author asked only 'negative binomial regressions'; NB2/ML alpha chosen by Claude, reply 'NB2 negative binomial with dispersion estimated by maximum likelihood'; only bare /attest followed",
+  "confidence": "medium"
+ },
+ "U59": {
+  "id": "U59",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T11",
+  "basis": "T11 prompt: 'all with journal and year fixed effects'",
+  "confidence": "high"
+ },
+ "U60": {
+  "id": "U60",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T11, T12",
+  "basis": "Author asked 'robust (HC) standard errors'; HC1 variant chosen by Claude, reply table 'robust HC1 standard errors'; no response",
+  "confidence": "medium"
+ },
+ "U61": {
+  "id": "U61",
+  "discretion": "taken",
+  "certification": "ignored",
+  "turns": "T11, T12",
+  "basis": "Request asked for IRRs, SEs, N, LL only; Claude added stars; reply shows *** and 'significant at p < 0.01'; no response",
+  "confidence": "low"
+ },
+ "U62": {
+  "id": "U62",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T11",
+  "basis": "T11 prompt: 'rerun Models 3 and 4 counting only each author's first-listed institution'",
+  "confidence": "high"
+ },
+ "U63": {
+  "id": "U63",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T7, T11",
+  "basis": "T11 prompt: 'Model 4: Model 3 plus any_nonhigh (the extension)'",
+  "confidence": "high"
+ },
+ "U64": {
+  "id": "U64",
+  "discretion": "taken",
+  "certification": "ignored",
+  "turns": "T13, T14, T15",
+  "basis": "Claude added summaries.py comparison table; reply 'country_coding_comparison.csv: the 117 and 16 papers that change'; author never addressed it",
+  "confidence": "medium"
+ },
+ "U65": {
+  "id": "U65",
+  "discretion": "taken",
+  "certification": "okayed",
+  "turns": "T9, T13, T15",
+  "basis": "Claude added income_by_international crosstab; author's own T15 paragraph uses it: 'rests on 160 papers, only nine of them single-country'",
+  "confidence": "low"
+ },
+ "U18": {
+  "id": "U18",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3",
+  "basis": "T3 prompt: 'Pull records from the OpenAlex API'",
+  "confidence": "high"
+ },
+ "U19": {
+  "id": "U19",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T9, T10, T11",
+  "basis": "T9 'Use whatever sources you can reach'; reply 'FY2017 income groups are rebuilt from World Bank data'; only bare /attest and unrelated next prompt",
+  "confidence": "high"
+ },
+ "U20": {
+  "id": "U20",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3",
+  "basis": "T3 prompt names the four journals and 'Publication years 2008 to 2017 inclusive'",
+  "confidence": "medium"
+ },
+ "U21": {
+  "id": "U21",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T3, T4, T5",
+  "basis": "Reply T3 'Year means first appearance online... If you'd rather define the sample by print volume'; author never responded",
+  "confidence": "high"
+ },
+ "U22": {
+  "id": "U22",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3",
+  "basis": "T3 prompt: 'Pull records from the OpenAlex API for four journals by ISSN... Publication years 2008 to 2017'",
+  "confidence": "medium"
+ },
+ "U23": {
+  "id": "U23",
+  "discretion": "given",
+  "certification": "wasn't notified",
+  "turns": "T3",
+  "basis": "API select list (is_paratext, biblio, referenced_works_count etc.) chosen by Claude; reply lists only stored fields, not the select",
+  "confidence": "medium"
+ },
+ "U24": {
+  "id": "U24",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T3, T4",
+  "basis": "Reply 'Delete the cached data/raw/works_*.json files to force a fresh pull'; no response",
+  "confidence": "medium"
+ },
+ "U25": {
+  "id": "U25",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3",
+  "basis": "T3 prompt: 'Keep only document type \"article\"'",
+  "confidence": "high"
+ },
+ "U26": {
+  "id": "U26",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T3, T4",
+  "basis": "Author asked to drop front matter; reply 'OpenAlex's own non-research flag and types caught front matter'; no response",
+  "confidence": "medium"
+ },
+ "U27": {
+  "id": "U27",
+  "discretion": "taken",
+  "certification": "ignored",
+  "turns": "T3, T4",
+  "basis": "Author listed retraction notices; reply 'I also dropped 5 records for retracted papers'; no response",
+  "confidence": "medium"
+ },
+ "U28": {
+  "id": "U28",
+  "discretion": "taken",
+  "certification": "wasn't notified",
+  "turns": "T3",
+  "basis": "No-title rule added in code; no reply mentions it",
+  "confidence": "medium"
+ },
+ "U29": {
+  "id": "U29",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3",
+  "basis": "\"drop ... anything with no authors or a title that signals it (e.g., \"Editorial\", \"Erratum\"...)\"",
+  "confidence": "high"
+ },
+ "U30": {
+  "id": "U30",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3",
+  "basis": "\"anything with no authors\"",
+  "confidence": "high"
+ },
+ "U31": {
+  "id": "U31",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T3",
+  "basis": "Prompt asked to drop non-research; reply described dropping Soshiki Kagaku DOIs and keeping SSRN DOIs; no response",
+  "confidence": "medium"
+ },
+ "U32": {
+  "id": "U32",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T3",
+  "basis": "Reply: \"ASQ and AMJ short items: anything of 11 pages or fewer, or with no page numbers, is dropped\"; no response",
+  "confidence": "medium"
+ },
+ "U33": {
+  "id": "U33",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T3",
+  "basis": "Reply: \"SMJ and Organization Science short items: only items of 3 pages or fewer are dropped\"; no response",
+  "confidence": "medium"
+ },
+ "U34": {
+  "id": "U34",
+  "discretion": "given",
+  "certification": "wasn't notified",
+  "turns": "T3, T13",
+  "basis": "Exclusion rule built under the request to drop non-research; no reply mentions virtual-issue intros",
+  "confidence": "medium"
+ },
+ "U35": {
+  "id": "U35",
+  "discretion": "given",
+  "certification": "wasn't notified",
+  "turns": "T3",
+  "basis": "Page-number cutoff at 5000 is part of the page rule; never mentioned in any reply",
+  "confidence": "medium"
+ },
+ "U36": {
+  "id": "U36",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T3",
+  "basis": "Reply: \"Duplicates: where the same title appears twice in a journal, I kept one record\"; no response",
+  "confidence": "medium"
+ },
+ "U37": {
+  "id": "U37",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T5",
+  "basis": "\"Drop exact duplicate papers by DOI.\"",
+  "confidence": "high"
+ },
+ "U38": {
+  "id": "U38",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T5",
+  "basis": "\"keep them in the author count but leave them out of the country count\"",
+  "confidence": "high"
+ },
+ "U39": {
+  "id": "U39",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T5, T11",
+  "basis": "\"set the international variable to missing and drop it from the country models, not from the team-size models\"",
+  "confidence": "high"
+ },
+ "U40": {
+  "id": "U40",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T5",
+  "basis": "\"author count top-coded at 8 for the models only (keep the raw count too)\"",
+  "confidence": "high"
+ },
+ "U41": {
+  "id": "U41",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T5",
+  "basis": "\"Variables: ... number of authors\"",
+  "confidence": "high"
+ },
+ "U42": {
+  "id": "U42",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T3, T5",
+  "basis": "T3 reply item 3 \"Citations before 2012 come from a second query\"; T5 \"five-year citations (as already built)\"",
+  "confidence": "medium"
+ },
+ "U43": {
+  "id": "U43",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T5",
+  "basis": "\"an author with several institutions counts in each of those countries\"",
+  "confidence": "high"
+ },
+ "U44": {
+  "id": "U44",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T5",
+  "basis": "\"International team = 2 or more distinct countries.\"",
+  "confidence": "high"
+ },
+ "U45": {
+  "id": "U45",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T7",
+  "basis": "\"\"any non-high-income author\" = 1 if at least one author's institution is in a country outside the High income group\"",
+  "confidence": "high"
+ },
+ "U46": {
+  "id": "U46",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T7",
+  "basis": "\"fiscal year 2017 ... applied to every paper regardless of year\"",
+  "confidence": "high"
+ },
+ "U47": {
+  "id": "U47",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T7",
+  "basis": "\"convert OpenAlex's two-letter codes to the World Bank's three-letter codes with a mapping saved\"",
+  "confidence": "high"
+ },
+ "U48": {
+  "id": "U48",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T9",
+  "basis": "\"Use whatever sources you can reach\"; reply describes rebuild from GNI thresholds; no response",
+  "confidence": "high"
+ },
+ "U49": {
+  "id": "U49",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T7",
+  "basis": "\"Countries not in the World Bank file (e.g., Taiwan, if absent) should be classified as high income\"",
+  "confidence": "high"
+ },
+ "U50": {
+  "id": "U50",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T9",
+  "basis": "Reply: \"Argentina: upper-middle ... 12,460\"; no response",
+  "confidence": "medium"
+ },
+ "U51": {
+  "id": "U51",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T9",
+  "basis": "Reply: \"Macao: high. Its 2014 value is 76,300\"; no response",
+  "confidence": "medium"
+ },
+ "U52": {
+  "id": "U52",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T9",
+  "basis": "Reply: \"Iran: upper-middle. No 2015 value exists\"; no response",
+  "confidence": "medium"
+ },
+ "U53": {
+  "id": "U53",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T9",
+  "basis": "Reply: \"Cuba: upper-middle ... the World Bank's current group\"; no response",
+  "confidence": "medium"
+ },
+ "U66": {
+  "id": "U66",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T11, T13",
+  "basis": "\"state H1 and H2\"; \"Model 1: n_authors_top8 only (H1)\"",
+  "confidence": "high"
+ },
+ "U67": {
+  "id": "U67",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T11, T13",
+  "basis": "\"Model 3: both ... (H2, beyond team size)\"",
+  "confidence": "high"
+ },
+ "U68": {
+  "id": "U68",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T13",
+  "basis": "\"the extension on authors outside the high-income group, framed as exploratory\"",
+  "confidence": "high"
+ },
+ "U69": {
+  "id": "U69",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T13, T14, T15",
+  "basis": "\"Discussion: what the results say about H1...\"; reply: \"it notes that the pattern by team size isn't smooth\"; no response",
+  "confidence": "medium"
+ },
+ "U70": {
+  "id": "U70",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T13, T15",
+  "basis": "author's prompt \"coauthors in different countries bring different audiences\"; author's paragraph \"reach adds something that headcount alone does not\"",
+  "confidence": "medium"
+ },
+ "U71": {
+  "id": "U71",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T11, T13, T14",
+  "basis": "reply: \"the international effect shrinks under the first-institution coding\"; bare attest only",
+  "confidence": "medium"
+ },
+ "U72": {
+  "id": "U72",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T11, T13, T14",
+  "basis": "reply: \"concentrated in teams of 3 or more authors\"; no response",
+  "confidence": "medium"
+ },
+ "U73": {
+  "id": "U73",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T11, T13, T14",
+  "basis": "Discussion requested; reply T11 \"Extension ... no effect\"; author never responded",
+  "confidence": "medium"
+ },
+ "U74": {
+  "id": "U74",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T11, T13",
+  "basis": "\"one regression table ... report in a second table\"; \"the four models, the robustness table\"",
+  "confidence": "high"
+ },
+ "U1": {
+  "id": "U1",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T13",
+  "basis": "\"ask whether team size or international reach drives citations\"",
+  "confidence": "high"
+ },
+ "U2": {
+  "id": "U2",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T13",
+  "basis": "\"more people, more networks to spread the paper\"; \"coauthors in different countries bring different audiences\"",
+  "confidence": "high"
+ },
+ "U3": {
+  "id": "U3",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T13, T15",
+  "basis": "\"teams now dominate knowledge production, management included\"; author paragraph \"research on team science in management\"",
+  "confidence": "medium"
+ },
+ "U4": {
+  "id": "U4",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T13, T14",
+  "basis": "prompt only pointed to sources; reply mentions Freeman/Huang used as contrast on kind of diversity; no response",
+  "confidence": "low"
+ },
+ "U5": {
+  "id": "U5",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T13, T17",
+  "basis": "\"teams now dominate knowledge production ... Cite Wuchty, Jones, and Uzzi\"",
+  "confidence": "high"
+ },
+ "U6": {
+  "id": "U6",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T13, T17",
+  "basis": "\"H1 on team size ... citing Wuchty et al. and Larivi\u00e8re et al.\"",
+  "confidence": "medium"
+ },
+ "U7": {
+  "id": "U7",
+  "discretion": "taken",
+  "certification": "ignored",
+  "turns": "T13, T14, T17",
+  "basis": "prompt said \"ethnic diversity and fewer citations\"; reply: \"Their paper ... finds the opposite\"; author never responded",
+  "confidence": "high"
+ },
+ "U8": {
+  "id": "U8",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T15",
+  "basis": "author's paragraph \"by separating two features that usually travel together\"",
+  "confidence": "high"
+ },
+ "U9": {
+  "id": "U9",
+  "discretion": "given",
+  "certification": "wasn't notified",
+  "turns": "T13",
+  "basis": "theory section requested; gap claim not mentioned in any reply",
+  "confidence": "medium"
+ },
+ "U10": {
+  "id": "U10",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T13",
+  "basis": "\"with these sections: Introduction; Theory and hypotheses; Data and methods; Results; Discussion\"",
+  "confidence": "high"
+ },
+ "U11": {
+  "id": "U11",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T11",
+  "basis": "\"a table of descriptive statistics (mean, SD, median, min, max ...)\"",
+  "confidence": "high"
+ },
+ "U12": {
+  "id": "U12",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T11",
+  "basis": "\"a correlation table of those variables\"",
+  "confidence": "high"
+ },
+ "U13": {
+  "id": "U13",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T11",
+  "basis": "\"mean five-year citations by number of authors (1 to 8+), with 95% CIs\"",
+  "confidence": "high"
+ },
+ "U14": {
+  "id": "U14",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T11",
+  "basis": "\"Report coefficients as incidence rate ratios with standard errors\"",
+  "confidence": "high"
+ },
+ "U15": {
+  "id": "U15",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T11",
+  "basis": "\"international vs single-country papers, split by team size 2, 3, 4+\"",
+  "confidence": "high"
+ },
+ "U16": {
+  "id": "U16",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T11",
+  "basis": "\"rerun Models 3 and 4 counting only each author's first-listed institution ... second table\"",
+  "confidence": "high"
+ },
+ "U17": {
+  "id": "U17",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T15",
+  "basis": "Author supplied the paragraph verbatim: \"Replace the placeholder... with this paragraph, as I wrote it, without changing its content\"; Claude inserted it word for word.",
+  "confidence": "high"
+ }
+}

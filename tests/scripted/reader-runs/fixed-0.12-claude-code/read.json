@@ -1,0 +1,19 @@
+{
+ "repo_head": "7b3920a285e983458fde325a30a868967dac46d5",
+ "runs": {
+  "careful": "careful-2026-10-06-1457",
+  "unchecked": "unchecked-2026-10-06-1446",
+  "careless": "careless-2026-10-06-1434",
+  "owned": "owned-2026-10-06-1521"
+ },
+ "work": [
+  "memo.md",
+  "analysis/",
+  "output/"
+ ],
+ "packs": [
+  "quantitative"
+ ],
+ "backend": "claude-code",
+ "exploratory": true
+}

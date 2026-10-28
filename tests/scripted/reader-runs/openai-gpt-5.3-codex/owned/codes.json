@@ -1,0 +1,706 @@
+{
+ "U58": {
+  "id": "U58",
+  "discretion": "none",
+  "certification": "you checked it against the source",
+  "turns": "T7",
+  "basis": "Author attested: \"reran the analysis myself and compared the results table with its output\"",
+  "confidence": "high"
+ },
+ "U59": {
+  "id": "U59",
+  "discretion": "none",
+  "certification": "you checked it against the source",
+  "turns": "T7",
+  "basis": "Same attestation covers Table 2 in the results table file: \"compared the results table with its output\"",
+  "confidence": "medium"
+ },
+ "U60": {
+  "id": "U60",
+  "discretion": "none",
+  "certification": "you checked it against the source",
+  "turns": "T7",
+  "basis": "Attested direct comparison of results table to script output",
+  "confidence": "high"
+ },
+ "U61": {
+  "id": "U61",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T6",
+  "basis": "T5 numeric audit reports \"11.7\u00a2 ... \u2705\"; T6 author: \"I've read the results\"",
+  "confidence": "high"
+ },
+ "U62": {
+  "id": "U62",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T6",
+  "basis": "T5 check explicitly includes \"s.e. 0.012 ... \u2705\"; author confirmed reading in T6",
+  "confidence": "high"
+ },
+ "U63": {
+  "id": "U63",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T5, T6, T7",
+  "basis": "T5 checked earlier value \"p = 0.002\"; T6 changed memo to \"p = 0.001\"; no recorded post-edit check of this memo sentence",
+  "confidence": "medium"
+ },
+ "U64": {
+  "id": "U64",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T6",
+  "basis": "T5 computed \"two-way 270.9; implied ... 31.6\" and flagged old values; author read results and adopted fix",
+  "confidence": "high"
+ },
+ "U65": {
+  "id": "U65",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T6",
+  "basis": "T5: \"b ranges from 0.110 to 0.117 \u2705\"; T6 confirms results were read",
+  "confidence": "high"
+ },
+ "U66": {
+  "id": "U66",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T6",
+  "basis": "T5 recomputation: \"HC1/cluster ratio: 0.420\" and \"(0.0068 versus 0.0162) \u2705\"",
+  "confidence": "high"
+ },
+ "U67": {
+  "id": "U67",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T6",
+  "basis": "T5: \"72.5% within R\u00b2 ... \u2705\"",
+  "confidence": "high"
+ },
+ "U68": {
+  "id": "U68",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T6",
+  "basis": "T5: \"leave-one-out range 0.113\u20130.125 ... \u2705\"",
+  "confidence": "high"
+ },
+ "U69": {
+  "id": "U69",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T6",
+  "basis": "T5: \"without GM 0.067 (0.032) ... \u2705\"",
+  "confidence": "high"
+ },
+ "U70": {
+  "id": "U70",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T5, T6",
+  "basis": "T5 reported GM bootstrap around 0.021; T6 memo changed to \"p = 0.023\" (and 0.063). No explicit post-edit memo check recorded",
+  "confidence": "medium"
+ },
+ "U71": {
+  "id": "U71",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T6",
+  "basis": "T5 computed exact elasticity conversion \"1.1**0.4327-1 = 0.0421\" and flagged 4.2%; author confirmed reading",
+  "confidence": "high"
+ },
+ "U72": {
+  "id": "U72",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T6",
+  "basis": "T5: \"bootstrap p 0.12 ... \u2705\"",
+  "confidence": "high"
+ },
+ "U73": {
+  "id": "U73",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T6",
+  "basis": "T5: \"133.3 and 146.0 \u2705\"",
+  "confidence": "high"
+ },
+ "U74": {
+  "id": "U74",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T6",
+  "basis": "T5: \"GM mean 608.0 DM mean 3.08\" and summary marks claim \u2705",
+  "confidence": "high"
+ },
+ "U75": {
+  "id": "U75",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T6",
+  "basis": "T5 recompute: \"N, firms, years: 220 11 20 1935 1954\"; author read results in T6",
+  "confidence": "high"
+ },
+ "U76": {
+  "id": "U76",
+  "discretion": "none",
+  "certification": "you checked it against the source",
+  "turns": "T7",
+  "basis": "Attestation says author reran analysis and compared results table output; this line is in that table output",
+  "confidence": "high"
+ },
+ "U77": {
+  "id": "U77",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T6",
+  "basis": "T5 section 5: \"Findings 1\u20134 match the table\" (includes positive association claim); T6 confirms author read results",
+  "confidence": "medium"
+ },
+ "U78": {
+  "id": "U78",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T6",
+  "basis": "T5 says findings match table and specifically validates stability/within-firm interpretation; author confirmed reading",
+  "confidence": "medium"
+ },
+ "U79": {
+  "id": "U79",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T5, T6",
+  "basis": "T5 checked earlier text at \"p = 0.002\"; T6 changed claim to \"p = 0.001\"; no explicit post-edit memo verification recorded",
+  "confidence": "medium"
+ },
+ "U80": {
+  "id": "U80",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T6",
+  "basis": "T5 recomputation: \"GM-drop reduction: 0.422\" and finding that GM carries weight; author read results",
+  "confidence": "high"
+ },
+ "U81": {
+  "id": "U81",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T6",
+  "basis": "T5: log-spec bootstrap \"0.12\" and note \"cannot rule out zero\"",
+  "confidence": "high"
+ },
+ "U82": {
+  "id": "U82",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T6",
+  "basis": "T5 methods audit: \"equation matches column (4)\" and code-method match \u2705",
+  "confidence": "high"
+ },
+ "U83": {
+  "id": "U83",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T6",
+  "basis": "T5 asked to \"Check that the description of the methods matches what the code does\"; reply says equation/methods match; T6: \"I've read the results.\"",
+  "confidence": "high"
+ },
+ "U84": {
+  "id": "U84",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T6",
+  "basis": "Method-vs-code check was explicitly requested in T5; mismatch on t-inference was identified and then fixed in T6 after author said \"I've read the results.\"",
+  "confidence": "medium"
+ },
+ "U85": {
+  "id": "U85",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T6",
+  "basis": "T5 requested method/code checking; reply discusses restricted wild cluster bootstrap, Webb weights, draw count; T6 confirms author read results.",
+  "confidence": "high"
+ },
+ "U86": {
+  "id": "U86",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T6",
+  "basis": "T5 check included whether methods description matches code; reply notes logs and leave-one-out checks; T6: \"I've read the results.\"",
+  "confidence": "high"
+ },
+ "U87": {
+  "id": "U87",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T6",
+  "basis": "T5 included factual checks on data provenance and direct data/code inspection; author confirmed reading in T6.",
+  "confidence": "high"
+ },
+ "U88": {
+  "id": "U88",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T6",
+  "basis": "T5 tool call merged statsmodels data with corrected Grunfeld file and reported zero mismatches; T6: \"I've read the results.\"",
+  "confidence": "high"
+ },
+ "U42": {
+  "id": "U42",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T6",
+  "basis": "T5 check #1: DOI Crossref lookup and detail comparison for references; T6 confirms author read those results.",
+  "confidence": "high"
+ },
+ "U43": {
+  "id": "U43",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T6",
+  "basis": "T5 Crossref verification covered this reference entry; author acknowledged reading results in T6.",
+  "confidence": "high"
+ },
+ "U44": {
+  "id": "U44",
+  "discretion": "none",
+  "certification": "you checked it against the source",
+  "turns": "T7",
+  "basis": "Attest sentence: \"I checked the Tobin reference against its Crossref record. Both match.\"",
+  "confidence": "high"
+ },
+ "U45": {
+  "id": "U45",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T6",
+  "basis": "T5 check #2 requested verification that citing sentences describe works accurately; T6 says author read results.",
+  "confidence": "medium"
+ },
+ "U46": {
+  "id": "U46",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T6",
+  "basis": "T5 check #2 examined this Hayashi description (reported as only partly verifiable from accessible sources); T6 confirms author read results.",
+  "confidence": "medium"
+ },
+ "U47": {
+  "id": "U47",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T6",
+  "basis": "T5 checks #2/#3 covered K&Z characterization of multiple data versions; author read results in T6.",
+  "confidence": "high"
+ },
+ "U48": {
+  "id": "U48",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T6",
+  "basis": "T5 checks explicitly addressed claim that versions differ and cited K&Z evidence; T6 confirms reading.",
+  "confidence": "high"
+ },
+ "U49": {
+  "id": "U49",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T6",
+  "basis": "T5 check #4 asked for consistency of observations/firms/years everywhere; reply reports consistency; T6: \"I've read the results.\"",
+  "confidence": "high"
+ },
+ "U50": {
+  "id": "U50",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T6",
+  "basis": "T5 checks #4/#5 compared text-number statements to table/results; author confirmed reading in T6 and requested fixes.",
+  "confidence": "medium"
+ },
+ "U51": {
+  "id": "U51",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T6",
+  "basis": "T5 numeric-consistency check explicitly covered 133.3 and 146.0 means; T6 confirms author read results.",
+  "confidence": "high"
+ },
+ "U52": {
+  "id": "U52",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T6",
+  "basis": "T5 check recomputed leave-one-out GM result and reduction magnitude; author read results in T6.",
+  "confidence": "high"
+ },
+ "U53": {
+  "id": "U53",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T6",
+  "basis": "T5 check #3 asked to verify data-origin claims against sources; reply reports thesis/University of Chicago verification; T6 confirms reading.",
+  "confidence": "high"
+ },
+ "U54": {
+  "id": "U54",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T6",
+  "basis": "T5 provenance/data checks included firm roster and sample composition from source/data; T6: \"I've read the results.\"",
+  "confidence": "medium"
+ },
+ "U55": {
+  "id": "U55",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T6",
+  "basis": "T5 numeric check computed GM+US Steel share (reported 69.5%, i.e., over half); author confirmed reading in T6.",
+  "confidence": "high"
+ },
+ "U56": {
+  "id": "U56",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T6",
+  "basis": "T5 source check flagged/verified timing detail for Westinghouse/IBM/Chrysler; corrected text added in T6 after author read results.",
+  "confidence": "high"
+ },
+ "U57": {
+  "id": "U57",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T2, T5",
+  "basis": "Added as narrative interpretation in T2; no recorded source-comparison tool call specifically checking Depression/war/reconversion claim.",
+  "confidence": "medium"
+ },
+ "U25": {
+  "id": "U25",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T2, T4",
+  "basis": "T2: \"pick whatever approach you think is best\" delegates model-spec choices; T4: \"Keep the estimator...\" accepts it.",
+  "confidence": "high"
+ },
+ "U26": {
+  "id": "U26",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T2, T3, T4",
+  "basis": "Delegated in T2 open request; T3 identifies \"Investment on market value... in levels\" as tool choice; T4: \"Keep the rest of the list too.\"",
+  "confidence": "high"
+ },
+ "U27": {
+  "id": "U27",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T2, T3, T4",
+  "basis": "Delegated by T2 \"pick whatever approach\"; T3 lists log specification as tool-added check; T4: \"Keep the rest of the list too.\"",
+  "confidence": "high"
+ },
+ "U28": {
+  "id": "U28",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T2, T3, T4",
+  "basis": "T2: \"pick whatever approach you think is best\"; T3 lists FE model choice; T4: \"Keep ... Keep the rest of the list too\".",
+  "confidence": "high"
+ },
+ "U29": {
+  "id": "U29",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T2, T3, T4",
+  "basis": "Estimator was part of open-method request (T2) and then accepted in T4: \"Keep the estimator\".",
+  "confidence": "medium"
+ },
+ "U30": {
+  "id": "U30",
+  "discretion": "given",
+  "certification": "changed",
+  "turns": "T2, T5, T6",
+  "basis": "Tool chose FE+cluster; T5 check found mismatch on clustered t-tests; T6 author: \"Fix anything they found wrong\" and code changed to `use_t=True`.",
+  "confidence": "high"
+ },
+ "U31": {
+  "id": "U31",
+  "discretion": "given",
+  "certification": "changed",
+  "turns": "T2, T5, T6",
+  "basis": "Bootstrap/stars rule initially set by tool; T5 flagged star/p-value mismatch; T6 \"Fix anything...\" led to revised star rule and reporting.",
+  "confidence": "high"
+ },
+ "U32": {
+  "id": "U32",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T2, T3, T4",
+  "basis": "Log robustness was tool choice under open request; T3 lists it; T4: \"Keep the rest of the list too\".",
+  "confidence": "high"
+ },
+ "U33": {
+  "id": "U33",
+  "discretion": "given",
+  "certification": "changed",
+  "turns": "T2, T5, T6",
+  "basis": "Leave-one-out added by tool; T5 flagged p-value basis issue; T6 fix request produced \"again with bootstrap p-values\".",
+  "confidence": "high"
+ },
+ "U34": {
+  "id": "U34",
+  "discretion": "given",
+  "certification": "changed",
+  "turns": "T2, T5, T6",
+  "basis": "Within-variation add-on chosen by tool; T5 flagged SD definition mismatch; T6 fix request changed reported within-SD/magnitude basis.",
+  "confidence": "high"
+ },
+ "U35": {
+  "id": "U35",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T2, T3, T4",
+  "basis": "Firm-means table was extra analysis from tool; included in T3 decision list and accepted in T4 (\"Keep the rest...\").",
+  "confidence": "high"
+ },
+ "U14": {
+  "id": "U14",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T2",
+  "basis": "Author specified source directly: \"using the Grunfeld data in statsmodels.\"",
+  "confidence": "high"
+ },
+ "U15": {
+  "id": "U15",
+  "discretion": "given",
+  "certification": "changed",
+  "turns": "T2, T5, T6",
+  "basis": "Tool set/report sample frame details; after checks author asked to fix errors, and framing sentence was rewritten in T6.",
+  "confidence": "medium"
+ },
+ "U16": {
+  "id": "U16",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T2, T3, T4",
+  "basis": "Reporting N/firms came from tool\u2019s setup; author accepted listed choices in T4.",
+  "confidence": "high"
+ },
+ "U17": {
+  "id": "U17",
+  "discretion": "given",
+  "certification": "changed",
+  "turns": "T2, T5, T6",
+  "basis": "Variable definitions written by tool; T5 found value-definition issue; T6 fix request added Westinghouse/IBM/Chrysler detail.",
+  "confidence": "high"
+ },
+ "U18": {
+  "id": "U18",
+  "discretion": "given",
+  "certification": "changed",
+  "turns": "T2, T5, T6",
+  "basis": "How data were pulled/positioned versus corrected archive was tool-specified; after T5 checks, T6 added \"matches ... corrected 11-firm data\".",
+  "confidence": "medium"
+ },
+ "U19": {
+  "id": "U19",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T2, T3, T4",
+  "basis": "Log transform chosen by tool under open-method request; no override, and T4 accepted list choices.",
+  "confidence": "high"
+ },
+ "U20": {
+  "id": "U20",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T2, T3, T4",
+  "basis": "Same as above for `log_value`; delegated in T2 and accepted in T4.",
+  "confidence": "high"
+ },
+ "U21": {
+  "id": "U21",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T2, T3, T4",
+  "basis": "Same as above for `log_capital`; delegated and then accepted.",
+  "confidence": "high"
+ },
+ "U22": {
+  "id": "U22",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T2, T3, T4",
+  "basis": "Cluster-index construction was implementation choice inside delegated method; accepted via T4 keep instruction.",
+  "confidence": "high"
+ },
+ "U23": {
+  "id": "U23",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T2, T3, T4",
+  "basis": "Within-R2 construction was tool-defined (T3 itemized); author: \"Keep the rest of the list too.\"",
+  "confidence": "high"
+ },
+ "U24": {
+  "id": "U24",
+  "discretion": "given",
+  "certification": "changed",
+  "turns": "T3, T5, T6",
+  "basis": "Tool\u2019s earlier SD definition was questioned in checks; T6 fix request changed it to net of firm and year means.",
+  "confidence": "high"
+ },
+ "U36": {
+  "id": "U36",
+  "discretion": "given",
+  "certification": "changed",
+  "turns": "T2, T4",
+  "basis": "Conclusion wording was tool-written; author required reinterpretation: \"except the interpretation. Rewrite it ... these firms in this period only.\"",
+  "confidence": "high"
+ },
+ "U37": {
+  "id": "U37",
+  "discretion": "given",
+  "certification": "changed",
+  "turns": "T2, T4",
+  "basis": "Interpretive framing falls under T4 rewrite instruction limiting claims to this sample/period.",
+  "confidence": "medium"
+ },
+ "U38": {
+  "id": "U38",
+  "discretion": "given",
+  "certification": "changed",
+  "turns": "T2, T4, T6",
+  "basis": "Interpretive claim on inference was tool-originated; interpretation was revised per T4, with later method-alignment fixes in T6.",
+  "confidence": "medium"
+ },
+ "U39": {
+  "id": "U39",
+  "discretion": "given",
+  "certification": "changed",
+  "turns": "T2, T4, T6",
+  "basis": "GM-influence interpretation came from tool; interpretation was subject to T4 rewrite and later corrected p-value framing in T6.",
+  "confidence": "medium"
+ },
+ "U40": {
+  "id": "U40",
+  "discretion": "given",
+  "certification": "changed",
+  "turns": "T2, T5, T6",
+  "basis": "Log-interpretation wording/number was tool\u2019s; T5 found 4.3% approximation issue and T6 changed to 4.2%.",
+  "confidence": "high"
+ },
+ "U41": {
+  "id": "U41",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T2, T3, T4",
+  "basis": "Reporting placement/recommendation structure was tool choice (T3 lists structure); author accepted rest of list in T4.",
+  "confidence": "high"
+ },
+ "U1": {
+  "id": "U1",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T2",
+  "basis": "Author asked for a memo \"on whether a firm's market value predicts how much it invests.\"",
+  "confidence": "high"
+ },
+ "U2": {
+  "id": "U2",
+  "discretion": "taken",
+  "certification": "changed",
+  "turns": "T2, T3, T6",
+  "basis": "Claude said it \"rewrote\" the draft's Hayashi claim; later author said \"Fix anything they found wrong,\" and Claude revised wording again.",
+  "confidence": "medium"
+ },
+ "U3": {
+  "id": "U3",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T2, T3, T4",
+  "basis": "Open delegation: \"pick whatever approach you think is best\"; Claude identified this framing as its own; author: \"Keep the rest of the list too.\"",
+  "confidence": "high"
+ },
+ "U4": {
+  "id": "U4",
+  "discretion": "given",
+  "certification": "changed",
+  "turns": "T2, T5, T6",
+  "basis": "Synthesis sentence was Claude-authored; checks flagged wording issue; author instructed \"Fix anything they found wrong,\" and Claude edited it.",
+  "confidence": "medium"
+ },
+ "U5": {
+  "id": "U5",
+  "discretion": "given",
+  "certification": "elaborated and okayed",
+  "turns": "T2, T4, T7",
+  "basis": "Author delegated writing/citation use; then attested: \"I checked the Tobin reference against its Crossref record. Both match.\"",
+  "confidence": "medium"
+ },
+ "U6": {
+  "id": "U6",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T2, T3, T4",
+  "basis": "Claude chose/rewrote the Hayashi linkage and year; author responded \"Keep the rest of the list too.\"",
+  "confidence": "medium"
+ },
+ "U7": {
+  "id": "U7",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T2, T3, T4",
+  "basis": "Claim-to-source linking was done in Claude\u2019s memo writing; author accepted listed non-author choices: \"Keep the rest...\"",
+  "confidence": "medium"
+ },
+ "U8": {
+  "id": "U8",
+  "discretion": "given",
+  "certification": "changed",
+  "turns": "T2, T4",
+  "basis": "Core claim wording was revised after author override: \"except the interpretation... statement about these firms in this period only.\"",
+  "confidence": "high"
+ },
+ "U9": {
+  "id": "U9",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T2, T3, T4",
+  "basis": "Claude supplied overall section structure; author accepted listed choices: \"Keep the rest of the list too.\"",
+  "confidence": "high"
+ },
+ "U10": {
+  "id": "U10",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T2, T4",
+  "basis": "Author delegated table design via \"put a results table in output\" plus \"pick whatever approach\"; later accepted retained choices.",
+  "confidence": "medium"
+ },
+ "U11": {
+  "id": "U11",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T2, T3, T4",
+  "basis": "Leave-one-out presentation came from Claude\u2019s chosen checks; author accepted keeping the listed decisions.",
+  "confidence": "high"
+ },
+ "U12": {
+  "id": "U12",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T2",
+  "basis": "Claude exposed multi-table output (\"results tables are in output\"), but there is no explicit author response to the Table 3 presentation choice.",
+  "confidence": "low"
+ },
+ "U13": {
+  "id": "U13",
+  "discretion": "given",
+  "certification": "changed",
+  "turns": "T2, T4",
+  "basis": "Limitations were Claude-authored, then author directed interpretation rewrite to be sample-bounded (\"no general claim about firms\").",
+  "confidence": "high"
+ }
+}

@@ -1,0 +1,309 @@
+T1 · AUTHOR'S PROMPT:
+/warrant:setup
+
+[Between T1 and T2, the author changed files by hand:]
+diff --git a/.gitignore b/.gitignore
+index 831de94..2445ab0 100644
+--- a/.gitignore
++++ b/.gitignore
+@@ -1,16 +1,4 @@
+ # --- warranted delegation: data stays out of the record and off GitHub.
+-# Delete a line to record that kind of file. Files over 25 MB are always left out.
+-data/
+-raw/
+-raw_data/
+-*.dta
+-*.sav
+-*.sas7bdat
+-*.rds
+-*.RData
+-*.parquet
+-*.feather
+-*.h5
+-*.pkl
+-*.zip
++# Long demonstration: this paper's transcripts are public domain (NASA),
++# so they are recorded, for reproducibility.
+ # --- end warranted delegation
+
+
+[Instructions in force from T2, as the record captured them. Calls these settle are made by whoever wrote them:]
+--- Plugins turned on: warrant (--plugin-dir) 0.10.2. A plugin can add instructions the record doesn't show.
+
+T2 · ATTEST (the author's signed save): /warrant:attest
+
+T3 · AUTHOR'S PROMPT:
+Please write the whole paper for me, using notes.md. Pick and collect the interviews from the candidate list, code them, build the data structure and the grounded model, and write it all up in paper.md (8–10 pages). Use my notes and your own judgment on everything else.
+
+   tool Bash: ls -la && cat notes.md && git log --oneline | head
+      output: {"interrupted": false, "isImage": false, "noOutputExpected": false, "stderr": "", "stdout": "total 24\ndrwxr-xr-x@ 8 user staff 256 Oct 17 10:28 .\ndrwxr-xr-x@ 6 user staff 192 Oct 17 10:28 ..\ndrwxr-xr-x@ 4 user staff 128 Oct 17 10:28 .claude\ndrwxr-xr-x@ 15 user staff 480 Oct 17 10:28 .git\ndrwxr-xr-x@ 4 user staff 128 Oct 17 10:28 .githooks\
+
+   tool Bash: ls -R provenance | head -30; cat .gitignore; ls .claude; which pdftotext python3; ls ../venv/bin | head
+      output: {"interrupted": false, "isImage": false, "noOutputExpected": false, "stderr": "", "stdout": "log\nsettings.json\nverify_log.py\n\nprovenance/log:\nsimulated-author-7545\ntext\n\nprovenance/log/simulated-author-7545:\nevents.jsonl\n\nprovenance/log/text:\naac01a2c02c9678a4bd38f8cbf495f0a531d1cdd77b46484cfaf62fb5b97259b.txt\nbac5d4007919b4270dc8e501ec5440fa417a4f891f5d1ba807d47d2ff60de775.txt\nc74d0
+
+   tool Bash: mkdir -p data/pdf data/text && cd data/pdf && for u in mitchellre-6-30-10 thomasjw-6-29-10 smithgw-5-12-11 singerja-7-21-10 pessinma-6-30-10 odomjb-7-20-10 sheehangd-7-12-11 whitetr-7-12-11 mosertl-4-
+      output: {"interrupted": false, "isImage": false, "noOutputExpected": false, "stderr": "", "stdout": "total 3040\ndrwxr-xr-x@ 12 user staff 384 Oct 17 10:29 .\ndrwxr-xr-x@ 4 user staff 128 Oct 17 10:29 ..\n-rw-r--r--@ 1 user staff 157620 Oct 17 10:29 blackburnga-8-24-10.pdf\n-rw-r--r--@ 1 user staff 161802 Oct 17 10:29 mitchellre-6-30-10.pdf\n-rw-r--r--@ 1 dere
+
+   tool Bash: cd /Users/user/.warranted-delegation/demos/qualitative-high-low-2026-10-17-1028/project/data && for f in pdf/*.pdf; do b=$(basename $f .pdf); pdftotext -layout $f text/$b.txt; done; wc -w text/
+      output: {"interrupted": false, "isImage": false, "noOutputExpected": false, "stderr": "", "stdout": " 14747 text/blackburnga-8-24-10.txt\n 15099 text/mitchellre-6-30-10.txt\n 15965 text/mosertl-4-9-10.txt\n 9400 text/odomjb-7-20-10.txt\n 20842 text/pessinma-6-30-10.txt\n 14679 text/sheehangd-7-12-11.txt\n 5884 text/singerja-7-21-10.txt\n 17447 text/smithgw-5-12-11.txt\n 7703 text/thom
+
+   tool Bash: mkdir -p clean && cat > ../scripts_clean.py <<'EOF'
+import re,sys,pathlib
+src,dst=sys.argv[1],sys.argv[2]
+for p in sorted(pathlib.Path(src).glob('*.txt')):
+    lines=p.read_text().splitlines()
+    out
+      output: {"interrupted": false, "isImage": false, "noOutputExpected": false, "stderr": "", "stdout": " 14529 clean/blackburnga-8-24-10.txt\n 14870 clean/mitchellre-6-30-10.txt\n 15962 clean/mosertl-4-9-10.txt\n 9253 clean/odomjb-7-20-10.txt\n 20838 clean/pessinma-6-30-10.txt\n 14676 clean/sheehangd-7-12-11.txt\n 5786 clean/singerja-7-21-10.txt\n 17444 clean/smithgw-5-12-11.txt\n 7561 c
+
+   tool Bash: for f in text/*.txt; do sed -n '1,40p' $f | grep -nE '^[0-9]{1,2} [A-Z][a-z]+ [0-9]{4}$' | head -2; grep -A3 -m1 -E '^[0-9]{1,2} [A-Z][a-z]+ [0-9]{4}$' $f | head -4; echo ---; done 2>/dev/null | head 
+      output: {"interrupted": false, "isImage": false, "noOutputExpected": false, "stderr": "", "stdout": "30:24 August 2010\n24 August 2010\n\n1\n\n---\n27:30 June 2010\n30 June 2010\n\n1\n\n---\n25:9 April 2010\n9 April 2010\n\n1\n\n---\n27:20 July 2010\n20 July 2010\n\n1\n\n---\n27:30 June 2010\n30 June 2010\n\n1\n\n---\n27:12 July 2011\n12 July 2011\n\n1\n\n---\n26:21 July 2010\n21 July 2010\n\n1\n\n---\n26
+
+   tool Write: scripts/clean.py
+      output: {"content": "\"\"\"Turn pdftotext output into one paragraph per speaker turn, page furniture removed.\n\nUsage: python3 -I scripts/clean.py data/text data/clean\n\"\"\"\nimport pathlib\nimport re\nimport sys\n\nMONTHS = \"January|February|March|April|May|June|July|August|September|October|November|December\"\nsrc, dst = sys.argv[1], sys.argv[2]\nfor p in sorted(pathlib.Path(src).glob(\"*.txt\")):\
+
+   tool Bash: cd /Users/user/.warranted-delegation/demos/qualitative-high-low-2026-10-17-1028/project && python3 -I scripts/clean.py data/text data/clean && grep -c "June 2010" data/clean/thomasjw-6-29-10.tx
+      output: {"interrupted": false, "isImage": false, "noOutputExpected": false, "stderr": "", "stdout": "0"}
+
+   tool Read: data/clean/thomasjw-6-29-10.txt
+      output: {"file": {"content": "NASA STS RECORDATION ORAL HISTORY PROJECT EDITED ORAL HISTORY TRANSCRIPT JOHN W. THOMAS INTERVIEWED BY JENNIFER ROSS-NAZZAL HUNTSVILLE, ALABAMA – 29 JUNE 2010\n\nROSS-NAZZAL: Today is June 29th, 2010. This interview is being conducted with John Thomas in Huntsville, Alabama, as part of the STS Recordation Oral History Project. The interviewer is Jennifer Ross-Nazzal, assisted
+
+   tool Read: data/clean/singerja-7-21-10.txt
+      output: {"file": {"content": "NASA STS RECORDATION ORAL HISTORY PROJECT EDITED ORAL HISTORY TRANSCRIPT JODY A. SINGER INTERVIEWED BY JENNIFER ROSS-NAZZAL HUNTSVILLE, ALABAMA – 21 JULY 2010\n\nROSS-NAZZAL: Today is July 21st, 2010. This interview is being conducted with Jody Singer in Huntsville, Alabama as part of the STS Recordation Oral History Project. The interviewer is Jennifer Ross-Nazzal. Thanks ag
+
+   tool Bash: grep -n -B2 -A6 "^29 June 2010$" data/text/thomasjw-6-29-10.txt | sed -n '1,25p'
+      output: {"interrupted": false, "isImage": false, "noOutputExpected": false, "stderr": "", "stdout": "25-chief engineer, deputy program manager, and finally program manager. In addition to the\n26-\n27:29 June 2010\n28-\n29-1\n30-\n31-\fSTS Recordation Oral History Project\n32-\n33-John W. Thomas\n--\n57-Florida to Iuka, Mississippi to be ASRM vice president and program manager to design, develop,\n58-\n59
+
+   tool Bash: sed -i '' 's/seen < 2/seen < 3/; s/# Footer: date line, page number, running name (blank lines between)./# Footer and header: date, page number, project name, interviewee name./' scripts/clean.py && p
+      output: {"interrupted": false, "isImage": false, "noOutputExpected": false, "stderr": "", "stdout": "1\n 3 data/clean/mitchellre-6-30-10.txt:Royce Mitchell\n 1 data/clean/smithgw-5-12-11.txt:Royce Mitchell\n 1 data/clean/thomasjw-6-29-10.txt:Royce Mitchell\n 1 data/clean/singerja-7-21-10.txt:Jody A. Singer\n 1 data/clean/smithgw-5-12-11.txt:Gerald W. Smith"}
+
+   tool Read: data/clean/mitchellre-6-30-10.txt
+      output: {"file": {"content": "NASA STS RECORDATION ORAL HISTORY PROJECT EDITED ORAL HISTORY TRANSCRIPT ROYCE MITCHELL INTERVIEWED BY JENNIFER ROSS-NAZZAL HUNTSVILLE, ALABAMA – 30 JUNE 2010\n\nROSS-NAZZAL: Today is June 30th, 2010. This interview is being conducted with Royce Mitchell in Huntsville, Alabama, as part of the STS Recordation Oral History Project. The interviewer is Jennifer Ross-Nazzal. Thank
+
+   tool Read: data/clean/mitchellre-6-30-10.txt
+      output: {"file": {"content": "\nROSS-NAZZAL: How did the motors perform on that flight?\n\nMITCHELL: The motors performed wonderfully. There were two minor discrepancies. One, when we took the joints apart, this new so-called capture feature really had [a tight fit and had] rubbed against the clevis that it was holding in place. This capture feature—where it had rubbed the clevis—there were little tiny sc
+
+   tool Read: data/clean/smithgw-5-12-11.txt
+      output: {"file": {"content": "NASA STS RECORDATION ORAL HISTORY PROJECT EDITED ORAL HISTORY TRANSCRIPT GERALD W. SMITH INTERVIEWED BY REBECCA WRIGHT HUNTSVILLE, ALABAMA – 12 MAY 2011\n\nWRIGHT: Today is May 12, 2011. This interview is being conducted with Gerald Smith in Huntsville, Alabama, for the STS Recordation Oral History Project. Interviewer is Rebecca Wright, assisted by Jennifer Ross-Nazzal. Than
+
+   tool Read: data/clean/pessinma-6-30-10.txt
+      output: {"file": {"content": "NASA STS RECORDATION ORAL HISTORY PROJECT EDITED ORAL HISTORY TRANSCRIPT MYRON “MIKE” A. PESSIN INTERVIEWED BY REBECCA WRIGHT HUNTSVILLE, ALABAMA – 30 JUNE 2010\n\nWRIGHT: Today is June 30, 2010. This interview is being conducted with Myron (Mike) Pessin in Huntsville, Alabama, for the STS Recordation Oral History Project. The interviewer is Rebecca Wright.\n\nPESSIN: After I
+
+   tool Read: data/clean/odomjb-7-20-10.txt
+      output: {"file": {"content": "NASA STS RECORDATION ORAL HISTORY PROJECT EDITED ORAL HISTORY TRANSCRIPT JAMES B. ODOM INTERVIEWED BY REBECCA WRIGHT HUNTSVILLE, ALABAMA – JULY 20, 2010\n\nWRIGHT: Today is July 20th, 2010, and this interview is being conducted with Jim Odom in Huntsville, Alabama as a part of the NASA STS [Space Transportation System] Recordation Oral History Project. The interviewer is Rebe
+
+   tool Read: data/clean/sheehangd-7-12-11.txt
+      output: {"file": {"content": "NASA STS RECORDATION ORAL HISTORY PROJECT EDITED ORAL HISTORY TRANSCRIPT GERALD D. SHEEHAN INTERVIEWED BY JENNIFER ROSS-NAZZAL KENNEDY SPACE CENTER, FLORIDA – 12 JULY 2011\n\nROSS-NAZZAL: Today is July 12, 2011. This interview is being conducted with Jerry Sheehan at the Kennedy Space Center [KSC] in Florida as part of the NASA STS Recordation Oral History Project. The interv
+
+   tool Read: data/clean/sheehangd-7-12-11.txt
+      output: {"file": {"content": "SHEEHAN: Absolutely, yes. It’s been my experience that you can’t help but develop some relationship with people that you work with every day. If you have to wait, “Oh, I can’t call Joe because he’s not in for another three hours, and I got to leave early today, a half hour or so, to get my kid from school,” you wind up with about two hours that you can talk to people on the W
+
+   tool Read: data/clean/whitetr-7-12-11.txt
+      output: {"file": {"content": "STS RECORDATION ORAL HISTORY PROJECT EDITED ORAL HISTORY TRANSCRIPT TERRENCE R. WHITE INTERVIEWED BY REBECCA WRIGHT KENNEDY SPACE CENTER, FLORIDA – JULY 12, 2011\n\nWRIGHT: Today is July 12, 2011. This interview is being conducted with Terry White at the Kennedy Space Center [KSC] in Florida in the Orbital Processing Facility One [OPF-1], as part the NASA STS Recordation Oral
+
+   tool Read: data/clean/whitetr-7-12-11.txt
+      output: {"file": {"content": "ROSS-NAZZAL: Were there significant changes made to the TPS during those times?\n\nWHITE: Yes, and when they started doing the OMMs, they wanted more weight taken off the Orbiters, so one of the things we could do was we lightened the TPS. We didn’t do any lighter for the tiles, but then we had the flexible insulation blankets, and we had areas of the FRSI [Flexible Reusable
+
+   tool Read: data/clean/mosertl-4-9-10.txt
+      output: {"file": {"content": "NASA JOHNSON SPACE CENTER ORAL HISTORY PROJECT EDITED ORAL HISTORY TRANSCRIPT THOMAS L. MOSER INTERVIEWED BY REBECCA WRIGHT THE WOODLANDS, TEXAS – 9 APRIL 2010\n\nWRIGHT: Today is April 9th, 2010. This oral history interview with Thomas Moser is being conducted for the NASA Johnson Space Center Oral History Project in The Woodlands, Texas. Interviewer is Rebecca Wright, assis
+
+   tool Read: data/clean/mosertl-4-9-10.txt
+      output: {"file": {"content": "WRIGHT: Let me ask you, if you don’t mind, could you provide a little more background. They said you were stretching it but it was okay, but why was it okay? What was your main reason to move it back?\n\nMOSER: Well, the main reason to move it back is for weight. Let me back up one. In the design of a structure you design it to what you think is the maximum reasonable load th
+
+   tool Read: data/clean/blackburnga-8-24-10.txt
+      output: {"file": {"content": "NASA STS RECORDATION ORAL HISTORY PROJECT EDITED ORAL HISTORY TRANSCRIPT GERALD BLACKBURN INTERVIEWED BY REBECCA WRIGHT DOWNEY, CALIFORNIA – AUGUST 24, 2010\n\nWRIGHT: Today is August 24th, 2010. This interview is being conducted with Jerry Blackburn in Downey, California as part of the NASA STS Recordation Oral History Project. Interviewer is Rebecca Wright, with Jennifer Ro
+
+   tool Write: scripts/quotes.py
+      output: {"content": "\"\"\"Locate quotes in the transcripts and report the PDF page each one starts on.\n\nThe PDFs were converted with `pdftotext` (no -layout), which separates pages with\nform feeds. Running headers and footers are stripped before matching, and\nwhitespace and quote characters are normalized, so a quote matches the\ntranscript text exactly apart from line breaks.\n\nUsage:\n python3 -I
+
+   tool Edit: scripts/quotes.py
+      output: {"filePath": "/Users/user/.warranted-delegation/demos/qualitative-high-low-2026-10-17-1028/project/scripts/quotes.py", "newString": " keep, skip_name = [], False\n for l in lines:\n if not l:\n continue\n if skip_name: # running interviewee name follows the project header\n skip_name = False\n continue\n
+
+   tool Edit: scripts/quotes.py
+      output: {"filePath": "/Users/user/.warranted-delegation/demos/qualitative-high-low-2026-10-17-1028/project/scripts/quotes.py", "newString": " i = text.find(q)\n return page_of(starts, i) if i >= 0 else None", "oldString": " i = text.find(q)\n if i < 0:\n # Running names can sit inside a sentence at a page break; retry with them removed.\n name_free = re.sub(r\" (?:[A-Z][a-
+
+   tool Bash: for f in whitetr-7-12-11 blackburnga-8-24-10 sheehangd-7-12-11 pessinma-6-30-10; do echo "== $f"; awk 'BEGIN{RS="\f"} NR==3{print}' data/text/$f.txt | grep -v '^$' | head -4; awk 'BEGIN{RS="\f"} NR==3
+      output: {"interrupted": false, "isImage": false, "noOutputExpected": false, "stderr": "", "stdout": "== whitetr-7-12-11\nSTS Recordation Oral History Project\nTerrence R. White\nWHITE: Those initial tiles were shipped mostly in large shipping containers containing 40 or\nmore tiles, individually packaged in small, basically, twelve-by-twelve boxes.\nareas that had not yet had a tile installed. There were
+
+   tool Bash: sed -i '' 's/l.startswith(("STS Recordation Oral History Project", "Johnson Space Center Oral History Project"))/l.startswith(("STS Recordation Oral History Project", "NASA STS Recordation Oral Histor
+      output: {"interrupted": false, "isImage": false, "noOutputExpected": false, "stderr": "", "stdout": "scripts/clean.py:28: if s.startswith((\"STS Recordation Oral History Project\", \"NASA STS Recordation Oral History Project\")):\nscripts/quotes.py:57: if l.startswith((\"STS Recordation Oral History Project\", \"NASA STS Recordation Oral History Project\", \"Johnson Space Center Oral His
+
+   tool Write: coding/excerpts.tsv
+      output: {"content": "id\tinformant\tconcept\tquote\nE01\tSheehan\tFO1\tSo it took about—oh, it was at least six months or maybe a year before we had briefed the Program with enough data that they actually recognized that there was a necessity to recognize an anti-icing requirement\nE02\tSheehan\tFO1\tThey weren’t interested in volunteering a couple thousand pounds of insulation to help those other [Orbite
+
+   tool Bash: python3 -I scripts/quotes.py excerpts coding/excerpts.tsv
+      output: {"interrupted": false, "isImage": false, "noOutputExpected": false, "stderr": "", "stdout": " E01 Sheehan p. 7 So it took about—oh, it was at least six months or maybe a year before\n E02 Sheehan p. 7 They weren’t interested in volunteering a couple thousand pounds of in\n E03 White p. 8 I had a couple of people tell me in their earlier history that they we\n E04 Pessin
+
+   tool Bash: for spec in "blackburnga-8-24-10 29 safest period" "pessinma-6-30-10 28 Program Requirements Change Board" "singerja-7-21-10 15 demonstrate it" "smithgw-5-12-11 50 cast a cloud"; do set -- $spec; f=$1
+      output: {"interrupted": false, "isImage": false, "noOutputExpected": false, "stderr": "", "stdout": "(eval):shift:1: shift count must be <= $#\npdftotext version 26.03.0\nCopyright 2005-2026 The Poppler Developers - http://poppler.freedesktop.org\nCopyright 1996-2011, 2022 Glyph & Cog, LLC\nUsage: pdftotext [options] <PDF-file> [<text-file>]\n -f <int> : first page to convert\n -l <int>
+
+   tool Bash: chk(){ pdftotext -q -f $2 -l $2 data/pdf/$1.pdf - | tr '\n' ' ' | grep -o "$3" | head -1 | sed "s/^/$1 p$2: /"; }; chk blackburnga-8-24-10 29 "safest period"; chk pessinma-6-30-10 28 "Requirements Cha
+      output: {"interrupted": false, "isImage": false, "noOutputExpected": false, "stderr": "", "stdout": "blackburnga-8-24-10 p29: safest period\npessinma-6-30-10 p28: Requirements Change Board\nsingerja-7-21-10 p15: demonstrate it\nsmithgw-5-12-11 p50: cast a cloud\nwhitetr-7-12-11 p35: that was the proof"}
+
+   tool Bash: python3 -I -c "
+import csv,collections
+d=collections.defaultdict(set);n=collections.Counter()
+for r in csv.DictReader(open('coding/excerpts.tsv'),delimiter='\t'):
+    d[r['concept']].add(r['informant'
+      output: {"interrupted": false, "isImage": false, "noOutputExpected": false, "stderr": "", "stdout": "FO1 4 ['Pessin', 'Sheehan', 'White']\nFO2 7 ['Mitchell', 'Pessin', 'Smith', 'White']\nFO3 3 ['Pessin']\nFO4 6 ['Mitchell', 'Pessin', 'Sheehan', 'Smith']\nFO5 3 ['Sheehan']\nFO6 5 ['Blackburn', 'Smith']\nFO7 3 ['Blackburn', 'Mitchell']\nFO8 3 ['Smith']\nFO9 5 ['Mitchell', 'Smith', 'Thomas', 'White']\nFO10 3
+
+   tool Bash: grep -o "We must fly safely as we transition[^.]*\." data/clean/singerja-7-21-10.txt; grep -o "Well, we’ve lost a lot of folks[^.]*\." data/clean/whitetr-7-12-11.txt; grep -o "so they’ve been leaving 
+      output: {"interrupted": false, "isImage": false, "noOutputExpected": false, "stderr": "", "stdout": "We must fly safely as we transition and retire our asset and as we lose our workforce.\nWell, we’ve lost a lot of folks.\nso they’ve been leaving ever since that announcement\nJust bad, bad communication."}
+
+   tool Bash: python3 -I - <<'EOF'
+import csv
+p='coding/excerpts.tsv'
+rows=list(csv.DictReader(open(p),delimiter='\t'))
+recode={'E06':'FO3','E07':'FO3','E09':'FO8','E10':'FO8','E21':'FO4','E22':'FO4','E23':'FO4','E
+      output: {"interrupted": false, "isImage": false, "noOutputExpected": false, "stderr": "", "stdout": "0 excerpt(s) not found\nFO1 4 ['Pessin', 'Sheehan', 'White']\nFO2 3 ['Pessin', 'White']\nFO3 5 ['Mitchell', 'Pessin', 'Smith']\nFO4 11 ['Blackburn', 'Mitchell', 'Pessin', 'Sheehan', 'Smith']\nFO6 5 ['Blackburn', 'Smith']\nFO7 3 ['Blackburn', 'Mitchell']\nFO8 5 ['Mitchell', 'Smith']\nFO9 5 ['Mitchell', 'Smi
+
+   tool Edit: scripts/quotes.py
+      output: {"contentNotInModelContext": true, "filePath": "/Users/user/.warranted-delegation/demos/qualitative-high-low-2026-10-17-1028/project/scripts/quotes.py", "newString": " # The paper uses straight quotes for its own quotations; curly quotes inside\n # them are the transcript's, so extract before normalizing.\n text = re.sub(r\"\\s+\", \" \", pathlib.Path(path).read_text()).replace(\">
+
+   tool Edit: scripts/quotes.py
+      output: {"contentNotInModelContext": true, "filePath": "/Users/user/.warranted-delegation/demos/qualitative-high-low-2026-10-17-1028/project/scripts/quotes.py", "newString": " # Long quotations with no citation are probably transcript text missing one.\n for m in re.finditer(r'\"([^\"]{40,}?)\"(?!\\s*\\()', text):\n print(f\"UNCITED? {m.group(1)[:80]}\")\n print(f\"{n} cited quotati
+
+   tool Write: coding/codebook.md
+      output: {"content": "# Codebook and data structure\n\nSource: eight edited transcripts from NASA's STS Recordation Oral History Project\n(see `paper.md`, Table 1). Excerpt IDs refer to `coding/excerpts.tsv`; every\nexcerpt is checked verbatim against the transcript text, and its PDF page located,\nby `python3 -I scripts/quotes.py excerpts coding/excerpts.tsv`.\n\n## Procedure\n\n1. **Open reading.** Each
+
+   tool Bash: for f in thomasjw-6-29-10 mitchellre-6-30-10 smithgw-5-12-11 blackburnga-8-24-10 singerja-7-21-10 pessinma-6-30-10 whitetr-7-12-11 sheehangd-7-12-11; do echo "$f $(pdfinfo data/pdf/$f.pdf | awk '/^Pag
+      output: {"interrupted": false, "isImage": false, "noOutputExpected": false, "stderr": "", "stdout": "thomasjw-6-29-10 29 pages, 7363 words\nmitchellre-6-30-10 46 pages, 14592 words\nsmithgw-5-12-11 52 pages, 16779 words\nblackburnga-8-24-10 44 pages, 14259 words\nsingerja-7-21-10 20 pages, 5651 words\npessinma-6-30-10 60 pages, 20008 words\nwhitetr-7-12-11 52 pages, 16537 words\nshe
+
+   tool Bash: python3 -I - <<'EOF'
+import sys; sys.path.insert(0,'scripts')
+EOF
+python3 -I -c "
+import sys; sys.path.insert(0,'scripts')
+import quotes
+for who,q in [('Mitchell','Speaking of “what was going on,” I l
+      output: {"interrupted": false, "isImage": false, "noOutputExpected": false, "stderr": "", "stdout": "Mitchell 31 Speaking of “what was going on,” I learned of a tr\nMitchell 31 that seemed almost criminal\nThomas 23 I was asked to form a team and determine the culpr\nThomas 23 insulation material shedding off the SRB nose cap \nSinger 15 I think the way we present our risk have made us b\nPessin 21 so tha
+
+   tool Write: paper.md
+      output: {"content": "# Bounding, Reopening, Re-closing: How Space Shuttle Engineers and Managers Raised and Settled Technical Concerns Across Two Accidents\n\n[Author]\n\nDraft, 17 October 2026\n\n## Abstract\n\nStudies of the Challenger and Columbia accidents have focused on the launch and mission decisions that preceded them. Less is known about how people in the Space Shuttle program raised, escalated,
+
+   tool Bash: python3 -I scripts/quotes.py paper paper.md; wc -w paper.md
+      output: {"interrupted": false, "isImage": false, "noOutputExpected": false, "stderr": "", "stdout": "UNCITED? Square brackets mark material added in editing, and some bracketed passages run\nUNCITED? reflects the informant's role in the episodes they recount; several engineers l\nUNCITED? : attribution, hand-offs, --A1 Concerns owned by elements -┐ risk assigned to an\nUNCITED? -┐ | Debris damage frame
+
+   tool Edit: scripts/quotes.py
+      output: {"contentNotInModelContext": true, "filePath": "/Users/user/.warranted-delegation/demos/qualitative-high-low-2026-10-17-1028/project/scripts/quotes.py", "newString": " # Pair straight quotes in order (outside code blocks); a long quotation with no\n # citation after it is probably transcript text missing one.\n prose = re.sub(r\"```.*?```\", \"\", text)\n marks = [m.start() for
+
+   tool Write: paper.md
+      output: {"content": "# Bounding, Reopening, Re-closing: How Space Shuttle Engineers and Managers Raised and Settled Technical Concerns Across Two Accidents\n\n[Author]\n\nDraft, 17 October 2026\n\n## Abstract\n\nStudies of the Challenger and Columbia accidents have focused on the decisions that immediately preceded them. Less is known about how people in the Space Shuttle program raised, escalated, and se
+
+   tool Bash: python3 -I scripts/quotes.py paper paper.md; wc -w paper.md; which pandoc
+      output: {"interrupted": false, "isImage": false, "noOutputExpected": false, "stderr": "", "stdout": "UNBALANCED straight double quotes\nUNCITED? go ahead and wake the crew,\nUNCITED? (Smith, p. 41). Near the end of the program, raising a concern meant asking \nUNCITED? (Singer, p. 9). After Columbia, Blackburn returned as a consultant and asked wh\nUNCITED? (Blackburn, p. 33). He put the dynamic in one
+
+   tool Bash: cat > $TMPDIR/p.css <<'EOF'
+@page { size: letter; margin: 1in; }
+body { font-family: "Times New Roman", Times, serif; font-size: 11pt; line-height: 1.25; }
+h1 { font-size: 15pt; } h2 { font-size: 12.5
+      output: {"interrupted": false, "isImage": false, "noOutputExpected": false, "stderr": "", "stdout": " File \"/opt/homebrew/Caskroom/miniforge/base/lib/python3.12/site-packages/cffi/api.py\", line 829, in _load_backend_lib\n raise OSError(msg)\nOSError: cannot load library 'libgobject-2.0-0': dlopen(libgobject-2.0-0, 0x0002): tried: 'libgobject-2.0-0' (no such file), '/System/Volumes/Preboot/Cryptexes/
+
+   tool Bash: ls -la $TMPDIR/paper.pdf $TMPDIR/paper.html 2>&1; date
+      output: {"interrupted": false, "isImage": false, "noOutputExpected": false, "stderr": "", "stdout": "-rw-r--r--@ 1 user wheel 46135 Oct 17 10:41 /tmp/claude-501/paper.html\n-rw-r--r--@ 1 user wheel 196777 Oct 16 15:49 /tmp/claude-501/paper.pdf\nSat Oct 17 10:41:15 EDT 2026"}
+
+   tool Bash: ls "/Applications/Google Chrome.app/Contents/MacOS/" 2>&1 | head -2; cd $TMPDIR && timeout 60 "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless=new --disable-gpu --no-pdf-heade
+      output: {"interrupted": false, "isImage": false, "noOutputExpected": false, "returnCodeInterpretation": "No matches found", "stderr": "", "stdout": "Google Chrome\n(eval):1: command not found: timeout"}
+
+   tool Bash: cd $TMPDIR && "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless=new --disable-gpu --no-pdf-header-footer --user-data-dir=$TMPDIR/chrome-prof --print-to-pdf=$TMPDIR/paper-measur
+      output: {"interrupted": false, "isImage": false, "noOutputExpected": false, "stderr": "\nShell cwd was reset to /Users/user/.warranted-delegation/demos/qualitative-high-low-2026-10-17-1028/project", "stdout": "(eval):1: nice(5) failed: operation not permitted\nI/O Error: Couldn't open file '/tmp/claude-501/paper-measure.pdf': No such file or directory.\n[1017/104130.004170:ERROR:third_party/crashpa
+
+   tool Bash: python3 -I -c "
+import re
+s=open('paper.md').read()
+body,refs=s.split('## References')
+code=re.findall(r'\`\`\`.*?\`\`\`',body,re.S)
+nocode=re.sub(r'\`\`\`.*?\`\`\`','',body,flags=re.S)
+tables=[l for 
+      output: {"interrupted": false, "isImage": false, "noOutputExpected": false, "stderr": "", "stdout": "prose words 5050 table words 240 code lines 48 ref words 377"}
+
+   tool Bash: python3 -I - <<'EOF'
+p='paper.md'; s=open(p).read()
+edits=[
+# Abstract
+("Studies of the Challenger and Columbia accidents have focused on the decisions that immediately preceded them. Less is known ab
+      output: {"interrupted": false, "isImage": false, "noOutputExpected": false, "stderr": "", "stdout": "52 cited quotations checked, 0 problem(s)\n4858"}
+
+   tool Bash: python3 -I - <<'EOF'
+p='paper.md'; s=open(p).read()
+edits=[
+("Three worked for the orbiter contractor (Rockwell, later Boeing and United Space Alliance) in California and at Kennedy Space Center.",
+ "
+      output: {"interrupted": false, "isImage": false, "noOutputExpected": false, "stderr": "", "stdout": "52 cited quotations checked, 0 problem(s)"}
+
+   tool Read: paper.md
+      output: {"file": {"content": "# Bounding, Reopening, Re-closing: How Space Shuttle Engineers and Managers Raised and Settled Technical Concerns Across Two Accidents\n\n[Author]\n\nDraft, 17 October 2026\n\n## Abstract\n\nStudies of the Challenger and Columbia accidents focus on the decisions that immediately preceded them. Less is known about how Shuttle engineers and managers raised and settled technical
+
+   tool Edit: paper.md
+      output: {"contentNotInModelContext": true, "filePath": "/Users/user/.warranted-delegation/demos/qualitative-high-low-2026-10-17-1028/project/paper.md", "newString": "not the STS Recordation project, and it covers mainly Apollo and early Shuttle design.", "oldString": "not the STS Recordation project, and its first session covers early design.", "originalFile": "# Bounding, Reopening, Re-closing: Ho
+
+   tool Write: README.md
+      output: {"content": "# Raising safety concerns in the Space Shuttle program\n\n- `paper.md`: the paper.\n- `notes.md`: the original notes.\n- `data/pdf/`: the ten candidate transcripts, as downloaded from nasa.gov.\n- `data/text/`: `pdftotext` output (page breaks preserved; used for page lookup).\n- `data/clean/`: one paragraph per speaker turn, with page furniture removed (for reading).\n- `coding/codebo
+
+   tool Bash: python3 -I scripts/quotes.py excerpts coding/excerpts.tsv | tail -1 && python3 -I scripts/quotes.py paper paper.md && git status --short
+      output: {"interrupted": false, "isImage": false, "noOutputExpected": false, "stderr": "", "stdout": "0 excerpt(s) not found\n52 cited quotations checked, 0 problem(s)\n M provenance/log/simulated-author-7545/events.jsonl\n?? README.md\n?? coding/\n?? data/\n?? paper.md\n?? provenance/log/text/0034f6ce3ecd9ce7e452271538374d3c1e4c51e71ab89a118089b751138ca911.txt\n?? provenance/log/text/016f23258ab3749659781
+
+T3 · CLAUDE'S REPLY:
+I've written the full paper in `paper.md`. It runs about 4,900 words of prose plus a table, two figures and references, which comes to roughly 10 single-spaced pages. I couldn't render a PDF to confirm the count because the sandbox blocks the PDF tools. Every quotation (52 in the paper, 88 coded excerpts) matches the NASA transcripts word for word at the cited page; a script I wrote checks this, and I compared several page numbers against the PDFs by hand.
+
+**The argument.** Three aggregate dimensions came out of the data:
+- **Bounding:** before each accident, concerns sat with whichever part of the vehicle owned them, recurring problems were classed as "known" or as maintenance, and whoever raised a concern had to prove it.
+- **Reopening:** each accident put everything back in question. Claims of safety now had to be demonstrated, and people were licensed to challenge.
+- **Re-closing:** the flood of concerns was settled again by managers' judgment and by practitioners pruning precautions, while schedule pressure and loss of experience came back.
+
+The main claim is that what an accident reopens follows how the failure is blamed. Challenger was blamed on the solid rocket motor, so the reopening stayed inside the motor, and debris hitting the orbiter stayed "known" until Columbia.
+
+**Sample.** I read all ten candidates and kept eight: four engineers or technicians and four managers, covering both accidents. I dropped Odom, who says little about raising concerns. I dropped Moser because his transcript is from a different NASA oral history project and is mostly about Apollo and early design.
+
+**Where I departed from your notes.** These items in `notes.md` were wrong, so the paper doesn't follow them:
+1. **Vaughan (1996)** argued the opposite of amoral calculation. Her case is normalization of deviance: managers followed the rules and still made a mistake. The paper says this, and the data support it.
+2. **Edmondson's** psychological safety paper is 1999, not 2001. ASQ 44(2), 350–383 is the 1999 paper.
+3. **Columbia** was hit by foam from the External Tank's bipod ramp, not ice. Pessin even explains that the tank's insulation requirement was written to stop ice, not foam.
+4. **The draft methods paragraph** says "we conducted ten interviews." We didn't: NASA historians did, and this is a secondary analysis of eight archival transcripts. I rewrote it.
+5. **The Gioia method** works the other way round from your notes. It starts from informants' own terms and builds up to the aggregate dimensions; starting from literature categories is a deductive template. I did it inductively and compared the result with voice, normalization and learning afterward.
+6. **"Verbatim" transcripts:** every PDF is headed "Edited Oral History Transcript," and some bracketed editorial additions run a full paragraph. The paper treats them as edited accounts.
+7. **Roles in the candidate table:** Mitchell was the solid rocket motor project manager, not External Tank; Smith was the booster project manager rather than a redesign engineer; Sheehan was Columbia's vehicle manager before its first flight in 1981, not in 2003.
+
+**Before you use it:**
+- **Disclosure:** the methods section states that one coder did the analysis with an AI assistant (Claude) and that no second coder checked it. Revise that if you re-code.
+- **Author line:** it is still a placeholder, `[Author]`.
+- **References:** check the Edmondson et al. (2005) chapter; I left out its page numbers because I wasn't sure of them. I added several references beyond your three, and they're worth a quick look too.
+
+I haven't committed anything. Everything is in the project folder:
+- `paper.md`
+- `coding/codebook.md`
+- `coding/excerpts.tsv`
+- `scripts/quotes.py`
+- `README.md`
+- `data/` (the transcripts)
+
+T4 · ATTEST (the author's signed save): /warrant:attest
+
+[Between T4 and T5, the author changed files by hand:]
+diff --git a/provenance/finished-work.md b/provenance/finished-work.md
+new file mode 100644
+index 0000000..f541fa7
+--- /dev/null
++++ b/provenance/finished-work.md
+@@ -0,0 +1,19 @@
++# Finished work
++#
++# The paper plus everything its reported results depend on (DECISIONS.md, Oct 6).
++# One line per work product: the files or folders, comma-separated, or none.
++# Memos, drafts, and notes are evidence, not finished work: leave them out.
++# Proposed by /warrant:disclosure; check it, correct it, and it's saved with
++# your next /warrant:attest.
++#
++# packs: the checklist packs for this kind of paper, added to the spine every
++# paper gets (DECISIONS.md, Oct 7): quantitative, experiments (which also
++# takes quantitative), qualitative, theory, tool (a paper that builds research
++# software). A mixed-methods paper names two.
++
++packs: qualitative
++manuscript: paper.md
++references: paper.md
++protocol: none
++codebook: none
++data: data/
+
+
+T5 · ATTEST (the author's signed save): /warrant:attest

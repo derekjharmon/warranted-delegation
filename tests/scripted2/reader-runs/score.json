@@ -1,0 +1,317 @@
+{
+ "api": {
+  "layers": {
+   "decisions: kept vs handed over": {
+    "agreement": 0.8720238095238095,
+    "kappa": 0.7281553398058253,
+    "n": 336
+   },
+   "decisions: given vs taken": {
+    "agreement": 0.9042553191489362,
+    "kappa": 0.6634844868735085,
+    "n": 188
+   },
+   "judgment certification": {
+    "agreement": 0.8457446808510638,
+    "kappa": 0.7790117952251632,
+    "n": 188
+   },
+   "claims: certification": {
+    "agreement": 0.8419540229885057,
+    "kappa": 0.7194782353803313,
+    "n": 348
+   },
+   "claims: no check vs wasn't notified": {
+    "agreement": 0.9746835443037974,
+    "kappa": 0.0,
+    "n": 158
+   }
+  },
+  "by_task": {
+   "schools": {
+    "decisions: kept vs handed over": {
+     "agreement": 0.875,
+     "kappa": 0.7347767253044655,
+     "n": 112
+    },
+    "judgment certification": {
+     "agreement": 0.873015873015873,
+     "kappa": 0.8313817330210773,
+     "n": 63
+    },
+    "claims: certification": {
+     "agreement": 0.8768115942028986,
+     "kappa": 0.7697742885181551,
+     "n": 138
+    }
+   },
+   "agreement": {
+    "decisions: kept vs handed over": {
+     "agreement": 0.8705882352941177,
+     "kappa": 0.710794927312094,
+     "n": 85
+    },
+    "judgment certification": {
+     "agreement": 0.8235294117647058,
+     "kappa": 0.7187499999999999,
+     "n": 51
+    },
+    "claims: certification": {
+     "agreement": 0.7671232876712328,
+     "kappa": 0.6319691577698695,
+     "n": 73
+    }
+   },
+   "rand": {
+    "decisions: kept vs handed over": {
+     "agreement": 0.8705035971223022,
+     "kappa": 0.7310834049871023,
+     "n": 139
+    },
+    "judgment certification": {
+     "agreement": 0.8378378378378378,
+     "kappa": 0.7568455640744796,
+     "n": 74
+    },
+    "claims: certification": {
+     "agreement": 0.8467153284671532,
+     "kappa": 0.7214908034849951,
+     "n": 137
+    }
+   }
+  },
+  "listing": {
+   "schools-low-high": {
+    "key units": 61,
+    "found": 59,
+    "reader units": 76,
+    "reader units matching no key unit": 23
+   },
+   "schools-low-low": {
+    "key units": 61,
+    "found": 59,
+    "reader units": 77,
+    "reader units matching no key unit": 27
+   },
+   "schools-high-low": {
+    "key units": 68,
+    "found": 67,
+    "reader units": 87,
+    "reader units matching no key unit": 26
+   },
+   "schools-high-high": {
+    "key units": 69,
+    "found": 65,
+    "reader units": 86,
+    "reader units matching no key unit": 25
+   },
+   "agreement-low-high": {
+    "key units": 39,
+    "found": 38,
+    "reader units": 72,
+    "reader units matching no key unit": 37
+   },
+   "agreement-low-low": {
+    "key units": 40,
+    "found": 39,
+    "reader units": 50,
+    "reader units matching no key unit": 15
+   },
+   "agreement-high-low": {
+    "key units": 46,
+    "found": 40,
+    "reader units": 53,
+    "reader units matching no key unit": 19
+   },
+   "agreement-high-high": {
+    "key units": 44,
+    "found": 41,
+    "reader units": 57,
+    "reader units matching no key unit": 25
+   },
+   "rand-low-high": {
+    "key units": 71,
+    "found": 68,
+    "reader units": 76,
+    "reader units matching no key unit": 16
+   },
+   "rand-low-low": {
+    "key units": 66,
+    "found": 63,
+    "reader units": 67,
+    "reader units matching no key unit": 13
+   },
+   "rand-high-low": {
+    "key units": 66,
+    "found": 61,
+    "reader units": 81,
+    "reader units matching no key unit": 28
+   },
+   "rand-high-high": {
+    "key units": 94,
+    "found": 84,
+    "reader units": 103,
+    "reader units matching no key unit": 27
+   }
+  },
+  "validated": true
+ },
+ "claude-code": {
+  "layers": {
+   "decisions: kept vs handed over": {
+    "agreement": 0.8654970760233918,
+    "kappa": 0.7135052447552447,
+    "n": 342
+   },
+   "decisions: given vs taken": {
+    "agreement": 0.8900523560209425,
+    "kappa": 0.631443535789764,
+    "n": 191
+   },
+   "judgment certification": {
+    "agreement": 0.8429319371727748,
+    "kappa": 0.7733206741039639,
+    "n": 191
+   },
+   "claims: certification": {
+    "agreement": 0.8450704225352113,
+    "kappa": 0.7273844263553985,
+    "n": 355
+   },
+   "claims: no check vs wasn't notified": {
+    "agreement": 0.9745222929936306,
+    "kappa": 0.0,
+    "n": 157
+   }
+  },
+  "by_task": {
+   "schools": {
+    "decisions: kept vs handed over": {
+     "agreement": 0.868421052631579,
+     "kappa": 0.7241045498547919,
+     "n": 114
+    },
+    "judgment certification": {
+     "agreement": 0.9032258064516129,
+     "kappa": 0.8685976686683152,
+     "n": 62
+    },
+    "claims: certification": {
+     "agreement": 0.9078014184397163,
+     "kappa": 0.8216231996885948,
+     "n": 141
+    }
+   },
+   "agreement": {
+    "decisions: kept vs handed over": {
+     "agreement": 0.8409090909090909,
+     "kappa": 0.6352871521610421,
+     "n": 88
+    },
+    "judgment certification": {
+     "agreement": 0.8301886792452831,
+     "kappa": 0.7330721880246224,
+     "n": 53
+    },
+    "claims: certification": {
+     "agreement": 0.7916666666666666,
+     "kappa": 0.6635514018691587,
+     "n": 72
+    }
+   },
+   "rand": {
+    "decisions: kept vs handed over": {
+     "agreement": 0.8785714285714286,
+     "kappa": 0.7465928449744463,
+     "n": 140
+    },
+    "judgment certification": {
+     "agreement": 0.8026315789473685,
+     "kappa": 0.7068655181280535,
+     "n": 76
+    },
+    "claims: certification": {
+     "agreement": 0.8098591549295775,
+     "kappa": 0.6741735361604487,
+     "n": 142
+    }
+   }
+  },
+  "listing": {
+   "schools-low-high": {
+    "key units": 61,
+    "found": 60,
+    "reader units": 81,
+    "reader units matching no key unit": 26
+   },
+   "schools-low-low": {
+    "key units": 61,
+    "found": 58,
+    "reader units": 73,
+    "reader units matching no key unit": 22
+   },
+   "schools-high-low": {
+    "key units": 68,
+    "found": 68,
+    "reader units": 108,
+    "reader units matching no key unit": 49
+   },
+   "schools-high-high": {
+    "key units": 69,
+    "found": 69,
+    "reader units": 88,
+    "reader units matching no key unit": 28
+   },
+   "agreement-low-high": {
+    "key units": 39,
+    "found": 37,
+    "reader units": 67,
+    "reader units matching no key unit": 32
+   },
+   "agreement-low-low": {
+    "key units": 40,
+    "found": 39,
+    "reader units": 58,
+    "reader units matching no key unit": 21
+   },
+   "agreement-high-low": {
+    "key units": 46,
+    "found": 45,
+    "reader units": 51,
+    "reader units matching no key unit": 14
+   },
+   "agreement-high-high": {
+    "key units": 44,
+    "found": 39,
+    "reader units": 46,
+    "reader units matching no key unit": 16
+   },
+   "rand-low-high": {
+    "key units": 71,
+    "found": 68,
+    "reader units": 73,
+    "reader units matching no key unit": 12
+   },
+   "rand-low-low": {
+    "key units": 66,
+    "found": 65,
+    "reader units": 73,
+    "reader units matching no key unit": 16
+   },
+   "rand-high-low": {
+    "key units": 66,
+    "found": 62,
+    "reader units": 81,
+    "reader units matching no key unit": 26
+   },
+   "rand-high-high": {
+    "key units": 94,
+    "found": 87,
+    "reader units": 96,
+    "reader units matching no key unit": 19
+   }
+  },
+  "validated": true
+ },
+ "validated": true
+}

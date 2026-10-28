@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Warranted delegation: review copy</title>
+<style>
+:root { --bg: #fbfaf7; --fg: #1d1c1a; --muted: #6b6760; --rule: #e2ded6; --card: #ffffff; --accent: #2f5d8a; color-scheme: light; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #17171a; --fg: #ecebe8; --muted: #a29f98; --rule: #34343a; --card: #1f1f23; --accent: #8db7e0; color-scheme: dark; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+main { max-width: 1080px; margin: 0 auto; padding: 40px 20px 64px; }
+h1 { font-size: 28px; line-height: 1.2; margin: 0 0 8px; text-wrap: balance; }
+h2 { font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin: 40px 0 12px; font-weight: 600; }
+p { margin: 0 0 12px; max-width: 68ch; }
+a { color: var(--accent); }
+code { font: 13px ui-monospace, SFMono-Regular, Menlo, monospace; }
+.lede { color: var(--muted); }
+.wrap { overflow-x: auto; border: 1px solid var(--rule); border-radius: 10px; background: var(--card); }
+table { border-collapse: collapse; width: 100%; }
+th, td { text-align: left; vertical-align: top; padding: 12px 14px; border-bottom: 1px solid var(--rule); }
+tr:last-child th, tr:last-child td { border-bottom: 0; }
+thead th { font-size: 13px; color: var(--muted); font-weight: 600; }
+tbody th { font-weight: 600; white-space: nowrap; }
+.grid td { min-width: 190px; }
+.grid .t { font-size: 14px; margin: 0 0 6px; }
+.grid .l { font-size: 14px; margin: 0; }
+.levels td:first-child { font-weight: 600; white-space: nowrap; }
+.note { font-size: 14px; color: var(--muted); margin-top: 12px; }
+</style>
+</head>
+<body>
+<main>
+<h1>Warranted delegation: the review copy</h1>
+<p>The proposal: <a href="draft/proposal.html">draft/proposal.md</a> · the appendix: <a href="draft/appendix.html">draft/appendix.md</a></p>
+<p>To check the numbers or try the tool, see <a href="README.html">how to review this copy</a>, or go straight to <a href="reviewer/GUIDE.html">the guide</a>.</p>
+
+<h2>The two tests of the reader</h2>
+<p>The reader was tested twice against preregistered answer keys, on simulated authors whose every move was scripted, so the right codes were known in advance (Appendix A5).</p>
+<p><strong>Second test, the fixed reader.</strong> Simulated authors carried out three small projects, one author in each of the four cells (high or low delegation, crossed with high or low warrant), for twelve runs and 725 units in the key. The preregistered bar was κ of 0.6 on three codes: whether the author made each call or handed it over, how each handed-over call ended, and how each claim was checked. The reader cleared the bar on all three, with κ of 0.71 to 0.78, both through the API and on an author's own subscription. It found 94% to 96% of the key's units. <a href="tests/scripted2/README.html">Preregistration</a> · <a href="tests/scripted2/RESULTS.html">Results</a> · <a href="tests/scripted2/reader-runs/score.html">Scores</a> · <a href="tests/scripted2/labels/README.html">The key</a></p>
+<div class="wrap"><table class="grid">
+<thead><tr><th scope="col"></th><th scope="col">Low delegation, high warrant</th><th scope="col">High delegation, high warrant</th><th scope="col">High delegation, low warrant</th><th scope="col">Low delegation, low warrant</th></tr></thead>
+<tbody>
+<tr><th scope="row">Schools: a quantitative memo</th><td><p class="l"><a href="tests/scripted2/reader-runs/api/schools-low-high/disclosure.html">API</a> · <a href="tests/scripted2/reader-runs/claude-code/schools-low-high/disclosure.html">Subscription</a></p></td><td><p class="l"><a href="tests/scripted2/reader-runs/api/schools-high-high/disclosure.html">API</a> · <a href="tests/scripted2/reader-runs/claude-code/schools-high-high/disclosure.html">Subscription</a></p></td><td><p class="l"><a href="tests/scripted2/reader-runs/api/schools-high-low/disclosure.html">API</a> · <a href="tests/scripted2/reader-runs/claude-code/schools-high-low/disclosure.html">Subscription</a></p></td><td><p class="l"><a href="tests/scripted2/reader-runs/api/schools-low-low/disclosure.html">API</a> · <a href="tests/scripted2/reader-runs/claude-code/schools-low-low/disclosure.html">Subscription</a></p></td></tr>
+<tr><th scope="row">RAND: an experiment</th><td><p class="l"><a href="tests/scripted2/reader-runs/api/rand-low-high/disclosure.html">API</a> · <a href="tests/scripted2/reader-runs/claude-code/rand-low-high/disclosure.html">Subscription</a></p></td><td><p class="l"><a href="tests/scripted2/reader-runs/api/rand-high-high/disclosure.html">API</a> · <a href="tests/scripted2/reader-runs/claude-code/rand-high-high/disclosure.html">Subscription</a></p></td><td><p class="l"><a href="tests/scripted2/reader-runs/api/rand-high-low/disclosure.html">API</a> · <a href="tests/scripted2/reader-runs/claude-code/rand-high-low/disclosure.html">Subscription</a></p></td><td><p class="l"><a href="tests/scripted2/reader-runs/api/rand-low-low/disclosure.html">API</a> · <a href="tests/scripted2/reader-runs/claude-code/rand-low-low/disclosure.html">Subscription</a></p></td></tr>
+<tr><th scope="row">Agreement: a small research tool</th><td><p class="l"><a href="tests/scripted2/reader-runs/api/agreement-low-high/disclosure.html">API</a> · <a href="tests/scripted2/reader-runs/claude-code/agreement-low-high/disclosure.html">Subscription</a></p></td><td><p class="l"><a href="tests/scripted2/reader-runs/api/agreement-high-high/disclosure.html">API</a> · <a href="tests/scripted2/reader-runs/claude-code/agreement-high-high/disclosure.html">Subscription</a></p></td><td><p class="l"><a href="tests/scripted2/reader-runs/api/agreement-high-low/disclosure.html">API</a> · <a href="tests/scripted2/reader-runs/claude-code/agreement-high-low/disclosure.html">Subscription</a></p></td><td><p class="l"><a href="tests/scripted2/reader-runs/api/agreement-low-low/disclosure.html">API</a> · <a href="tests/scripted2/reader-runs/claude-code/agreement-low-low/disclosure.html">Subscription</a></p></td></tr>
+</tbody></table></div>
+<p class="note">Each link opens that run's disclosure, as the reader produced it on that path. Each run's full record is in <code>tests/scripted2/runs/</code>.</p>
+<p><strong>First test.</strong> Four scripted runs of one project, held to the same bar on the same three codes. The reader cleared it, with κ of 0.70 to 0.75. To check that Claude was not simply grading Claude, OpenAI's model (gpt-5.3-codex) read the same runs and cleared the same bar, with κ of 0.66 to 0.79. <a href="tests/scripted/README.html">Preregistration</a> · <a href="tests/scripted/answer-key.html">Answer key</a> · <a href="tests/scripted/reader-runs/RESULTS.html">Results</a> · <a href="tests/scripted/reader-runs/score.html">Scores</a></p>
+
+<h2>The twelve demonstrations</h2>
+<p>Three papers, each written by four simulated authors from the same notes, one author in each cell of the two measures (Appendix A6). Each link opens what the tool produced for that author's paper: the disclosure, and the paper trail behind it.</p>
+<div class="wrap"><table class="grid">
+<thead><tr><th scope="col"></th><th scope="col">Low delegation, high warrant</th><th scope="col">High delegation, high warrant</th><th scope="col">High delegation, low warrant</th><th scope="col">Low delegation, low warrant</th></tr></thead>
+<tbody>
+<tr><th scope="row">Archival study</th><td><p class="t">Team size, international reach, and citations in four management journals, 2008–2017</p><p class="l"><a href="tests/longdemo/runs/low-high-2026-10-17-2006/disclosure/disclosure.html">Disclosure</a> · <a href="tests/longdemo/runs/low-high-2026-10-17-2006/disclosure/trail.html">Paper trail</a></p></td><td><p class="t">Team Size, International Reach, and Citations in Management Research</p><p class="l"><a href="tests/longdemo/runs/high-high-2026-10-17-0857/disclosure/disclosure.html">Disclosure</a> · <a href="tests/longdemo/runs/high-high-2026-10-17-0857/disclosure/trail.html">Paper trail</a></p></td><td><p class="t">Size or Reach? Team Composition and Citations in Management Research</p><p class="l"><a href="tests/longdemo/runs/high-low-2026-10-18-2005/disclosure/disclosure.html">Disclosure</a> · <a href="tests/longdemo/runs/high-low-2026-10-18-2005/disclosure/trail.html">Paper trail</a></p></td><td><p class="t">Team Size, International Reach, and Citations in Management Research</p><p class="l"><a href="tests/longdemo/runs/low-low-2026-10-18-2036/disclosure/disclosure.html">Disclosure</a> · <a href="tests/longdemo/runs/low-low-2026-10-18-2036/disclosure/trail.html">Paper trail</a></p></td></tr>
+<tr><th scope="row">Experiment</th><td><p class="t">What Motivates Effort on Dull Work? A Preregistered Reanalysis of DellaVigna and Pope (2018)</p><p class="l"><a href="tests/longdemo/runs/experiment-low-high-2026-10-17-0841/disclosure/disclosure.html">Disclosure</a> · <a href="tests/longdemo/runs/experiment-low-high-2026-10-17-0841/disclosure/trail.html">Paper trail</a></p></td><td><p class="t">Motivating dull work without paying more: a preregistered reanalysis of an 18-arm experiment</p><p class="l"><a href="tests/longdemo/runs/experiment-high-high-2026-10-17-0933/disclosure/disclosure.html">Disclosure</a> · <a href="tests/longdemo/runs/experiment-high-high-2026-10-17-0933/disclosure/trail.html">Paper trail</a></p></td><td><p class="t">What Motivates Effort When the Work Is Dull? Pay, Psychological Motivators, and Gifts in a Large Online Experiment</p><p class="l"><a href="tests/longdemo/runs/experiment-high-low-2026-10-17-1043/disclosure/disclosure.html">Disclosure</a> · <a href="tests/longdemo/runs/experiment-high-low-2026-10-17-1043/disclosure/trail.html">Paper trail</a></p></td><td><p class="t">How Far Do Non-Pay Motivators Get? A Reanalysis of a Large Online Effort Experiment</p><p class="l"><a href="tests/longdemo/runs/experiment-low-low-2026-10-17-1022/disclosure/disclosure.html">Disclosure</a> · <a href="tests/longdemo/runs/experiment-low-low-2026-10-17-1022/disclosure/trail.html">Paper trail</a></p></td></tr>
+<tr><th scope="row">Qualitative study</th><td><p class="t">Raising and Settling Technical Concerns in the Space Shuttle Program: An Analysis of NASA Oral Histories</p><p class="l"><a href="tests/longdemo/runs/qualitative-low-high-2026-10-17-1528/disclosure/disclosure.html">Disclosure</a> · <a href="tests/longdemo/runs/qualitative-low-high-2026-10-17-1528/disclosure/trail.html">Paper trail</a></p></td><td><p class="t">Raising and closing technical concerns in the Space Shuttle program: A recurring cycle, reset twice</p><p class="l"><a href="tests/longdemo/runs/qualitative-high-high-2026-10-17-0841/disclosure/disclosure.html">Disclosure</a> · <a href="tests/longdemo/runs/qualitative-high-high-2026-10-17-0841/disclosure/trail.html">Paper trail</a></p></td><td><p class="t">Bounding, Reopening, Re-closing: How Space Shuttle Engineers and Managers Raised and Settled Technical Concerns Across Two Accidents</p><p class="l"><a href="tests/longdemo/runs/qualitative-high-low-2026-10-17-1028/disclosure/disclosure.html">Disclosure</a> · <a href="tests/longdemo/runs/qualitative-high-low-2026-10-17-1028/disclosure/trail.html">Paper trail</a></p></td><td><p class="t">Raising Safety Concerns in the Space Shuttle Program: Evidence from Oral Histories</p><p class="l"><a href="tests/longdemo/runs/qualitative-low-low-2026-10-17-1528/disclosure/disclosure.html">Disclosure</a> · <a href="tests/longdemo/runs/qualitative-low-low-2026-10-17-1528/disclosure/trail.html">Paper trail</a></p></td></tr>
+</tbody></table></div>
+<p class="note">Each run's full record is beside its folder, as <code>tests/longdemo/runs/&lt;run&gt;.bundle</code>. The proposal's own disclosure and paper trail are added at the final release.</p>
+</main>
+</body>
+</html>

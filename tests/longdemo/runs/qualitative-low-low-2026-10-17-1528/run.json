@@ -1,0 +1,195 @@
+{
+ "name": "low-low",
+ "paper": "qualitative",
+ "run": "qualitative-low-low-2026-10-17-1528",
+ "base": "/Users/user/.warranted-delegation/demos/qualitative-low-low-2026-10-17-1528",
+ "project": "/Users/user/.warranted-delegation/demos/qualitative-low-low-2026-10-17-1528/project",
+ "venv": "/Users/user/.warranted-delegation/demos/qualitative-low-low-2026-10-17-1528/venv",
+ "plugin": "/Users/user/.warranted-delegation/demos/qualitative-low-low-2026-10-17-1528/plugin",
+ "session": "49c9eb78-263a-4980-97b5-8d728b2f76e8",
+ "started": "2026-10-17T15:28:35",
+ "phase": "save",
+ "prompts": 9,
+ "steps": [
+  {
+   "kind": "setup",
+   "commit": "3f232c77c27a0910c486606b594d49bd9d952a12"
+  },
+  {
+   "kind": "prompt",
+   "n": 1,
+   "seconds": 35,
+   "turns": 6,
+   "cost_usd": 0.20219539999999997,
+   "tool_calls": 4,
+   "resent": false
+  },
+  {
+   "kind": "attest",
+   "sentence": "",
+   "commit": "81988aa35b3b0e656e16d031f905f104625a0ef4"
+  },
+  {
+   "kind": "prompt",
+   "n": 2,
+   "seconds": 416,
+   "turns": 36,
+   "cost_usd": 5.3443326,
+   "tool_calls": 66,
+   "resent": false
+  },
+  {
+   "kind": "attest",
+   "sentence": "",
+   "commit": "f25d0fd0bf3b2793b1029dd7ceff4b6eb12ae29b"
+  },
+  {
+   "kind": "prompt",
+   "n": 3,
+   "seconds": 47,
+   "turns": 3,
+   "cost_usd": 5.562208,
+   "tool_calls": 2,
+   "resent": false
+  },
+  {
+   "kind": "attest",
+   "sentence": "",
+   "commit": "f783ff620799bf9a8dbf0f923270cdd15f07ab80"
+  },
+  {
+   "kind": "prompt",
+   "n": 4,
+   "seconds": 34,
+   "turns": 2,
+   "cost_usd": 5.717872,
+   "tool_calls": 1,
+   "resent": false
+  },
+  {
+   "kind": "attest",
+   "sentence": "",
+   "commit": "a9112aeaa99d82b37acc186e4f0d97c497b253b8"
+  },
+  {
+   "kind": "prompt",
+   "n": 5,
+   "seconds": 76,
+   "turns": 3,
+   "cost_usd": 6.0033302,
+   "tool_calls": 2,
+   "resent": false
+  },
+  {
+   "kind": "attest",
+   "sentence": "",
+   "commit": "7e4a25f42d468c8d5565dbc4cc4e37dea8eb6625"
+  },
+  {
+   "kind": "prompt",
+   "n": 6,
+   "seconds": 94,
+   "turns": 4,
+   "cost_usd": 6.3934942,
+   "tool_calls": 3,
+   "resent": false
+  },
+  {
+   "kind": "attest",
+   "sentence": "",
+   "commit": "02c2d66b1acb2c5cafffe42da615e2406dc2c695"
+  },
+  {
+   "kind": "prompt",
+   "n": 7,
+   "seconds": 55,
+   "turns": 3,
+   "cost_usd": 6.6364654000000005,
+   "tool_calls": 2,
+   "resent": false
+  },
+  {
+   "kind": "attest",
+   "sentence": "",
+   "commit": "4adc785cb79d2b02bd08964965f3c8d8e14d4d1c"
+  },
+  {
+   "kind": "prompt",
+   "n": 8,
+   "seconds": 17,
+   "turns": 2,
+   "cost_usd": 6.7453574000000005,
+   "tool_calls": 1,
+   "resent": false
+  },
+  {
+   "kind": "attest",
+   "sentence": "",
+   "commit": "c1235c9966c74fdd42f35a2a0cdf5000c35b4067"
+  },
+  {
+   "kind": "prompt",
+   "n": 9,
+   "seconds": 35,
+   "turns": 3,
+   "cost_usd": 6.938386000000001,
+   "tool_calls": 2,
+   "resent": false
+  },
+  {
+   "kind": "attest",
+   "sentence": "",
+   "commit": "398e29ed560bff71b8acbecf5e3e092f760c9fe7"
+  },
+  {
+   "kind": "attest",
+   "sentence": "",
+   "commit": "36a76ee01cb124767fb8f5b5482b3169c75bf286"
+  }
+ ],
+ "author_usage": {
+  "input_tokens": 56,
+  "output_tokens": 19797,
+  "cache_creation_input_tokens": 226759,
+  "cache_read_input_tokens": 2170682,
+  "calls": 26,
+  "seconds": 170
+ },
+ "nudges": 0,
+ "versions": {
+  "plugin": "0.10.2",
+  "claude_code": "2.1.302 (Claude Code)",
+  "python_packages": [
+   "certifi==2026.7.22",
+   "charset-normalizer==3.5.2",
+   "contourpy==1.4.0",
+   "cycler==0.12.1",
+   "fonttools==4.67.0",
+   "formulaic==1.2.2",
+   "idna==3.20",
+   "interface_meta==2.0.1",
+   "kiwisolver==1.5.1",
+   "matplotlib==3.11.2",
+   "narwhals==2.27.1",
+   "numpy==2.5.4",
+   "packaging==26.3",
+   "pandas==3.0.6",
+   "patsy==1.0.3",
+   "pillow==13.0.0",
+   "pyparsing==3.3.3",
+   "pypdf==6.21.1",
+   "pyreadstat==1.3.6",
+   "python-dateutil==2.9.0.post0",
+   "requests==2.34.2",
+   "scipy==1.18.1",
+   "six==1.17.0",
+   "statsmodels==0.15.0",
+   "typing_extensions==4.16.0",
+   "urllib3==2.8.0",
+   "wrapt==2.5.1"
+  ],
+  "runner_commit": "fc167651abed4a3c639cbcd17a77adfa433a324c"
+ },
+ "map": true,
+ "finished": "2026-10-17T16:09:09"
+}

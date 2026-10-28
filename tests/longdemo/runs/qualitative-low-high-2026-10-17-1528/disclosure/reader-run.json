@@ -1,0 +1,89 @@
+{
+ "reader": "0.13.3",
+ "backend": "api",
+ "model": "claude-opus-5-5",
+ "effort": "high",
+ "date": "2026-10-17",
+ "reader_sha256": "795733ac39d9f2e963b33e7eab65e86f62d2dc64d11316b8389fc89317fff4a7",
+ "checklists_sha256": {
+  "checklists/judgment-decisions.md": "273ca3d890fedc7e529c512bfe5182bfee887747ef93e54c63cccd83ebb43f3c",
+  "checklists/checkable-claims.md": "68ed07106dd05adf56af8fc480db7273dde9d9ced33b657e98349859c6f6196d"
+ },
+ "work": [
+  "paper.md",
+  "references.md",
+  "codebook.md",
+  "data_structure.md",
+  "transcripts/",
+  "reading/",
+  "coded_segments.csv",
+  "set_aside.csv",
+  "uncoded_segments.csv",
+  "scripts/"
+ ],
+ "packs": [
+  "qualitative"
+ ],
+ "label": "Demonstration run (low delegation, high warrant), last save 3f1813a",
+ "converted": null,
+ "fingerprint": {
+  "commit": "3f1813a6c00eded4460ea855a7ee4d14b6a17fa2",
+  "logs": [
+   {
+    "log": "simulated-author-7ac8",
+    "events": 384,
+    "head": "c72d53b0ec746762245659664308e6d5df1fe85cf7a53bf7744e68e000980626",
+    "verifies": true
+   }
+  ]
+ },
+ "work_map": {
+  "packs": "qualitative",
+  "manuscript": "paper.md",
+  "references": "references.md",
+  "protocol": "none",
+  "codebook": "codebook.md, data_structure.md",
+  "data": "transcripts/, reading/, coded_segments.csv, set_aside.csv, uncoded_segments.csv, scripts/"
+ },
+ "outside": [
+  "citation_claims.md",
+  "model.md",
+  "my_sections.md",
+  "notes.md",
+  "open_items.md",
+  "review/coded_sheehan_white.md",
+  "review/dim3_view.md",
+  "review/new_pages.md",
+  "review/paper_tail_view.md",
+  "review/rep_quotes_check_part1.md",
+  "review/rep_quotes_check_part2.md",
+  "sample.md",
+  "sources_check.md"
+ ],
+ "numbers": {
+  "traced": 7,
+  "total": 7,
+  "untraced": [],
+  "per_unit": {}
+ },
+ "typed": {
+  "tool_words": 4522,
+  "words": 5427,
+  "files": {
+   "paper.md": {
+    "tool": 4522,
+    "people": 905
+   }
+  }
+ },
+ "usage": {
+  "input_tokens": 230141,
+  "cache_creation_input_tokens": 275615,
+  "cache_read_input_tokens": 1609709,
+  "output_tokens": 150054,
+  "calls": 13,
+  "seconds": 1207
+ },
+ "cost_usd": 5.62,
+ "title": "Raising and Settling Technical Concerns in the Space Shuttle Program: An Analysis of NASA Oral Histories"
+}

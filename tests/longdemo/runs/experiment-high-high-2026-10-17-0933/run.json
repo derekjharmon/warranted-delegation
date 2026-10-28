@@ -1,0 +1,214 @@
+{
+ "name": "high-high",
+ "paper": "experiment",
+ "run": "experiment-high-high-2026-10-17-0933",
+ "base": "/Users/user/.warranted-delegation/demos/experiment-high-high-2026-10-17-0933",
+ "project": "/Users/user/.warranted-delegation/demos/experiment-high-high-2026-10-17-0933/project",
+ "venv": "/Users/user/.warranted-delegation/demos/experiment-high-high-2026-10-17-0933/venv",
+ "plugin": "/Users/user/.warranted-delegation/demos/experiment-high-high-2026-10-17-0933/plugin",
+ "session": "f24cd3ba-baac-4ae9-bc15-842bbd9347c4",
+ "started": "2026-10-17T09:33:29",
+ "phase": "save",
+ "prompts": 14,
+ "steps": [
+  {
+   "kind": "setup",
+   "commit": "b1c0ab29b3af2f5e1ced07e5163013d171c3a889"
+  },
+  {
+   "kind": "prompt",
+   "n": 1,
+   "seconds": 140,
+   "turns": 14,
+   "cost_usd": 0.5869474,
+   "tool_calls": 12,
+   "resent": false
+  },
+  {
+   "kind": "prompt",
+   "n": 2,
+   "seconds": 113,
+   "turns": 19,
+   "cost_usd": 1.1849672,
+   "tool_calls": 16,
+   "resent": false
+  },
+  {
+   "kind": "prompt",
+   "n": 3,
+   "seconds": 111,
+   "turns": 18,
+   "cost_usd": 1.8073338000000003,
+   "tool_calls": 17,
+   "resent": false
+  },
+  {
+   "kind": "prompt",
+   "n": 4,
+   "seconds": 100,
+   "turns": 10,
+   "cost_usd": 2.2386773000000004,
+   "tool_calls": 8,
+   "resent": false
+  },
+  {
+   "kind": "prompt",
+   "n": 5,
+   "seconds": 58,
+   "turns": 13,
+   "cost_usd": 2.563439900000001,
+   "tool_calls": 11,
+   "resent": false
+  },
+  {
+   "kind": "prompt",
+   "n": 6,
+   "seconds": 78,
+   "turns": 5,
+   "cost_usd": 2.8853829000000015,
+   "tool_calls": 4,
+   "resent": false
+  },
+  {
+   "kind": "prompt",
+   "n": 7,
+   "seconds": 33,
+   "turns": 6,
+   "cost_usd": 3.0779855000000014,
+   "tool_calls": 5,
+   "resent": false
+  },
+  {
+   "kind": "attest",
+   "sentence": "Data and plan stages: I read clean_data.py and the 17 cleaning decisions and accepted them. I saw the 4,000 cap, 18 arms, 40-cent gift and the 9,861 sample checked against the registry and NBER paper. I read the full preregistration.md and had H3, H2 and the Lee bounds changed. No outcomes compared yet. Grant's abstract is still unverified.",
+   "commit": "36c08ab69d82d8cc10a2ddf151d88a549642b6c3"
+  },
+  {
+   "kind": "prompt",
+   "n": 8,
+   "seconds": 223,
+   "turns": 19,
+   "cost_usd": 4.143859300000001,
+   "tool_calls": 17,
+   "resent": false
+  },
+  {
+   "kind": "prompt",
+   "n": 9,
+   "seconds": 67,
+   "turns": 7,
+   "cost_usd": 4.5644917000000005,
+   "tool_calls": 6,
+   "resent": false
+  },
+  {
+   "kind": "attest",
+   "sentence": "Analysis stage: I read output/results.md in full. I saw the 15 confirmatory contrasts recomputed independently with Welch tests and a hand-written Holm correction, and the results matched. I saw our arm means match the NBER paper's Table 4 for all 18 arms, within 4 points in the S1+S2 sample. Verdicts don't change across the sensitivity samples.",
+   "commit": "d402428e59a31bf1ce1599405dc6a212e2ae72f1"
+  },
+  {
+   "kind": "prompt",
+   "n": 10,
+   "seconds": 201,
+   "turns": 19,
+   "cost_usd": 5.541125699999999,
+   "tool_calls": 17,
+   "resent": false
+  },
+  {
+   "kind": "prompt",
+   "n": 11,
+   "seconds": 129,
+   "turns": 20,
+   "cost_usd": 6.305622399999999,
+   "tool_calls": 18,
+   "resent": false
+  },
+  {
+   "kind": "prompt",
+   "n": 12,
+   "seconds": 111,
+   "turns": 20,
+   "cost_usd": 7.0998415999999995,
+   "tool_calls": 18,
+   "resent": false
+  },
+  {
+   "kind": "prompt",
+   "n": 13,
+   "seconds": 170,
+   "turns": 27,
+   "cost_usd": 8.389251400000001,
+   "tool_calls": 24,
+   "resent": false
+  },
+  {
+   "kind": "prompt",
+   "n": 14,
+   "seconds": 49,
+   "turns": 10,
+   "cost_usd": 8.891292500000002,
+   "tool_calls": 8,
+   "resent": false
+  },
+  {
+   "kind": "attest",
+   "sentence": "Final stage: I read the full paper.md and the sources file list. I had the task-significance quotes checked against the registry and the paper corrected, since the arm is a request to try hard. I saw the PDF render at 8 pages, a full rebuild from raw data pass, and 82 of 82 paper numbers match output/. Holm (1979) and Grant (2008) are still flagged unverified in the paper.",
+   "commit": "adabdee71d68821281afbeaa26f2ffcfddff1c2d"
+  },
+  {
+   "kind": "hand edit",
+   "path": "provenance/finished-work.md"
+  },
+  {
+   "kind": "attest",
+   "sentence": "I checked the finished-work map against the project folder. I corrected two lines. Cleaning now points to scripts/clean_data.py, because the cleaning rules live there. The manuscript is paper.md only, since the plan is listed on its own line. The data, analysis and results folders and the two packs look right. Collection and materials stay \"none\" because we didn't run the experiment.",
+   "commit": "4b094be605a6a9d349f2a58d1770b105f762c16b"
+  }
+ ],
+ "author_usage": {
+  "input_tokens": 64,
+  "output_tokens": 9101,
+  "cache_creation_input_tokens": 71092,
+  "cache_read_input_tokens": 1096024,
+  "calls": 30,
+  "seconds": 127
+ },
+ "nudges": 0,
+ "versions": {
+  "plugin": "0.10.2",
+  "claude_code": "2.1.302 (Claude Code)",
+  "python_packages": [
+   "certifi==2026.7.22",
+   "charset-normalizer==3.5.2",
+   "contourpy==1.4.0",
+   "cycler==0.12.1",
+   "fonttools==4.67.0",
+   "formulaic==1.2.2",
+   "idna==3.20",
+   "interface_meta==2.0.1",
+   "kiwisolver==1.5.1",
+   "matplotlib==3.11.2",
+   "narwhals==2.27.1",
+   "numpy==2.5.4",
+   "packaging==26.3",
+   "pandas==3.0.6",
+   "patsy==1.0.3",
+   "pillow==13.0.0",
+   "pyparsing==3.3.3",
+   "pypdf==6.21.1",
+   "pyreadstat==1.3.6",
+   "python-dateutil==2.9.0.post0",
+   "requests==2.34.2",
+   "scipy==1.18.1",
+   "six==1.17.0",
+   "statsmodels==0.15.0",
+   "typing_extensions==4.16.0",
+   "urllib3==2.8.0",
+   "wrapt==2.5.1"
+  ],
+  "runner_commit": "e83806ef426beee69f4c179a92ae96e3ee28c508"
+ },
+ "map": true,
+ "finished": "2026-10-17T10:20:26"
+}

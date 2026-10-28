@@ -1,0 +1,315 @@
+{
+ "name": "low-high",
+ "paper": "archival",
+ "run": "low-high-2026-10-17-2006",
+ "base": "/Users/user/.warranted-delegation/demos/low-high-2026-10-17-2006",
+ "project": "/Users/user/.warranted-delegation/demos/low-high-2026-10-17-2006/project",
+ "venv": "/Users/user/.warranted-delegation/demos/low-high-2026-10-17-2006/venv",
+ "plugin": "/Users/user/.warranted-delegation/demos/low-high-2026-10-17-2006/plugin",
+ "session": "8ce80c45-e2db-4eac-b825-c4127944c368",
+ "started": "2026-10-17T20:06:00",
+ "phase": "save",
+ "prompts": 22,
+ "steps": [
+  {
+   "kind": "setup",
+   "commit": "302b923eef2865770dec404e01ff6f818becb79b"
+  },
+  {
+   "kind": "prompt",
+   "n": 1,
+   "seconds": 74,
+   "turns": 11,
+   "cost_usd": 0.2935368,
+   "tool_calls": 10,
+   "resent": false
+  },
+  {
+   "kind": "prompt",
+   "n": 2,
+   "seconds": 427,
+   "turns": 10,
+   "cost_usd": 0.7777334000000002,
+   "tool_calls": 9,
+   "resent": false
+  },
+  {
+   "kind": "prompt",
+   "n": 3,
+   "seconds": 346,
+   "turns": 24,
+   "cost_usd": 2.1199944,
+   "tool_calls": 23,
+   "resent": false
+  },
+  {
+   "kind": "prompt",
+   "n": 4,
+   "seconds": 348,
+   "turns": 24,
+   "cost_usd": 4.0493688,
+   "tool_calls": 23,
+   "resent": false
+  },
+  {
+   "kind": "prompt",
+   "n": 5,
+   "seconds": 168,
+   "turns": 13,
+   "cost_usd": 5.127178200000002,
+   "tool_calls": 12,
+   "resent": false
+  },
+  {
+   "kind": "prompt",
+   "n": 6,
+   "seconds": 77,
+   "turns": 5,
+   "cost_usd": 5.621946800000003,
+   "tool_calls": 4,
+   "resent": false
+  },
+  {
+   "kind": "prompt",
+   "n": 7,
+   "seconds": 35,
+   "turns": 3,
+   "cost_usd": 5.8833372000000015,
+   "tool_calls": 2,
+   "resent": false
+  },
+  {
+   "kind": "attest",
+   "sentence": "Stages 1\u20132 (collection and cleaning): I read the review files (editorial flags, non-publisher DOIs, short items, 7\u20139 page items), checked the per-journal-year counts against OpenAlex's group_by and the Crossref print-year check, and made the keep/drop calls myself. Final N is 2,804. I only skimmed the top of works_clean.csv (the file is cut off), and I haven't verified the Crossref classifications of the short items myself.",
+   "commit": "7824dcb4b3fabd955b458d97ec07e27f23c656f4"
+  },
+  {
+   "kind": "prompt",
+   "n": 8,
+   "seconds": 63,
+   "turns": 4,
+   "cost_usd": 6.251797800000001,
+   "tool_calls": 3,
+   "resent": false
+  },
+  {
+   "kind": "prompt",
+   "n": 9,
+   "seconds": 72,
+   "turns": 5,
+   "cost_usd": 6.7796098,
+   "tool_calls": 4,
+   "resent": false
+  },
+  {
+   "kind": "prompt",
+   "n": 10,
+   "seconds": 100,
+   "turns": 5,
+   "cost_usd": 7.3732978000000005,
+   "tool_calls": 3,
+   "resent": false
+  },
+  {
+   "kind": "prompt",
+   "n": 11,
+   "seconds": 104,
+   "turns": 5,
+   "cost_usd": 7.948372,
+   "tool_calls": 4,
+   "resent": false
+  },
+  {
+   "kind": "attest",
+   "sentence": "Stage 3 (country mapping): I read the gaps summary and match rates myself. The World Bank's historical file couldn't be fetched, so the main coding uses the API's current classification, and the paper will say it isn't the 2012 edition. The GNI rebuild and Taiwan-as-high-income are sensitivity checks only. I saw the Ivey and run-together-affiliation diagnostics (2 articles' international flag affected by the Ivey gap, 0 by the run-together strings), but I haven't checked those diagnostics by hand.",
+   "commit": "9734ca97d14748c6bdae5909d1b9e0fc765dc89a"
+  },
+  {
+   "kind": "prompt",
+   "n": 12,
+   "seconds": 97,
+   "turns": 5,
+   "cost_usd": 8.449128400000001,
+   "tool_calls": 4,
+   "resent": false
+  },
+  {
+   "kind": "prompt",
+   "n": 13,
+   "seconds": 100,
+   "turns": 8,
+   "cost_usd": 9.221601600000001,
+   "tool_calls": 6,
+   "resent": false
+  },
+  {
+   "kind": "attest",
+   "sentence": "Stage 4 (analysis): I read analyze.py and the output tables, and I checked 5 random articles by hand against the raw OpenAlex records and citing-works counts (all five match). The models were fit with NB, and a Poisson cross-check gave the same signs and significance. H2 holds across the checks. H1 comes mostly from solo vs. team papers and is not significant among multi-author papers only. I haven't verified the NB code beyond reading it, and the World Bank classification is the current one, not the 2012 edition.",
+   "commit": "88465f24d5546ca64ffacd619abdc64dced0b67c"
+  },
+  {
+   "kind": "prompt",
+   "n": 14,
+   "seconds": 135,
+   "turns": 12,
+   "cost_usd": 10.1952732,
+   "tool_calls": 10,
+   "resent": false
+  },
+  {
+   "kind": "prompt",
+   "n": 15,
+   "seconds": 218,
+   "turns": 8,
+   "cost_usd": 11.446529800000002,
+   "tool_calls": 7,
+   "resent": false
+  },
+  {
+   "kind": "hand edit",
+   "path": "draft_contribution.md"
+  },
+  {
+   "kind": "hand edit",
+   "path": "draft_limitations.md"
+  },
+  {
+   "kind": "prompt",
+   "n": 16,
+   "seconds": 87,
+   "turns": 8,
+   "cost_usd": 12.353657400000003,
+   "tool_calls": 6,
+   "resent": false
+  },
+  {
+   "kind": "hand edit",
+   "path": "draft_contribution.md"
+  },
+  {
+   "kind": "hand edit",
+   "path": "draft_limitations.md"
+  },
+  {
+   "kind": "hand edit",
+   "path": "draft_limitations.md"
+  },
+  {
+   "kind": "prompt",
+   "n": 17,
+   "seconds": 57,
+   "turns": 8,
+   "cost_usd": 13.075680600000002,
+   "tool_calls": 6,
+   "resent": false
+  },
+  {
+   "kind": "prompt",
+   "n": 18,
+   "seconds": 74,
+   "turns": 6,
+   "cost_usd": 13.839686200000001,
+   "tool_calls": 4,
+   "resent": false
+  },
+  {
+   "kind": "prompt",
+   "n": 19,
+   "seconds": 49,
+   "turns": 4,
+   "cost_usd": 14.367864200000001,
+   "tool_calls": 3,
+   "resent": false
+  },
+  {
+   "kind": "prompt",
+   "n": 20,
+   "seconds": 115,
+   "turns": 13,
+   "cost_usd": 15.773885199999997,
+   "tool_calls": 12,
+   "resent": false
+  },
+  {
+   "kind": "prompt",
+   "n": 21,
+   "seconds": 16,
+   "turns": 2,
+   "cost_usd": 16.019522199999997,
+   "tool_calls": 1,
+   "resent": false
+  },
+  {
+   "kind": "hand edit",
+   "path": "draft_limitations.md"
+  },
+  {
+   "kind": "prompt",
+   "n": 22,
+   "seconds": 12,
+   "turns": 2,
+   "cost_usd": 16.252614199999996,
+   "tool_calls": 1,
+   "resent": false
+  },
+  {
+   "kind": "attest",
+   "sentence": "Final stage (writing and references): I wrote the contribution paragraph and the limitations myself, and checked that they sit in paper.md word for word. I saw all three references matched against Crossref records (the Wuchty year is corrected to 2007). The sentences describing cited works are checked against OpenAlex's stored copies of the abstracts, not the publishers' pages. Freeman & Huang was removed because its content couldn't be reached. I saw a full re-run of the pipeline reproduce the numbers, and 26 numbers checked against their source files. The page count is an estimate of about 10 pages single-spaced, and I haven't rendered the paper.",
+   "commit": "c7e86071f6cf973068cf9bb1661095c2f05620c0"
+  },
+  {
+   "kind": "hand edit",
+   "path": "provenance/finished-work.md"
+  },
+  {
+   "kind": "attest",
+   "sentence": "Corrected the finished-work map. The manuscript is paper.md only. draft_contribution.md and draft_limitations.md are drafts, now inside paper.md, so I removed them. Collection, cleaning and analysis were listed as \"none\", and I filled them in with the scripts and data folders that produce the results. I checked the file names against the project listing.",
+   "commit": "a2c4bf71e882dbd8a6b150b3cde7a26cfe02d408"
+  }
+ ],
+ "author_usage": {
+  "input_tokens": 102,
+  "output_tokens": 23051,
+  "cache_creation_input_tokens": 232460,
+  "cache_read_input_tokens": 4687931,
+  "calls": 49,
+  "seconds": 216
+ },
+ "nudges": 0,
+ "versions": {
+  "plugin": "0.10.2",
+  "claude_code": "2.1.302 (Claude Code)",
+  "python_packages": [
+   "certifi==2026.7.22",
+   "charset-normalizer==3.5.2",
+   "contourpy==1.4.0",
+   "cycler==0.12.1",
+   "fonttools==4.67.0",
+   "formulaic==1.2.2",
+   "idna==3.20",
+   "interface_meta==2.0.1",
+   "kiwisolver==1.5.1",
+   "matplotlib==3.11.2",
+   "narwhals==2.27.1",
+   "numpy==2.5.4",
+   "packaging==26.3",
+   "pandas==3.0.6",
+   "patsy==1.0.3",
+   "pillow==13.0.0",
+   "pyparsing==3.3.3",
+   "pypdf==6.21.1",
+   "pyreadstat==1.3.6",
+   "python-dateutil==2.9.0.post0",
+   "requests==2.34.2",
+   "scipy==1.18.1",
+   "six==1.17.0",
+   "statsmodels==0.15.0",
+   "typing_extensions==4.16.0",
+   "urllib3==2.8.0",
+   "wrapt==2.5.1"
+  ],
+  "runner_commit": "e20ff555099316a676da4f092480866bb3c55e49"
+ },
+ "map": true,
+ "finished": "2026-10-18T08:02:47"
+}

@@ -1,0 +1,62 @@
+{
+ "reader": "0.12",
+ "backend": "claude-code",
+ "model": "claude-opus-5-5",
+ "effort": "high",
+ "date": "2026-10-15",
+ "reader_sha256": "446d58842542e407ced0474040d264c5b3e223851bd7d1b045e0935de092e7b3",
+ "checklists_sha256": {
+  "checklists/judgment-decisions.md": "273ca3d890fedc7e529c512bfe5182bfee887747ef93e54c63cccd83ebb43f3c",
+  "checklists/checkable-claims.md": "68ed07106dd05adf56af8fc480db7273dde9d9ced33b657e98349859c6f6196d"
+ },
+ "work": [
+  "README.md",
+  "agree.py",
+  "tests/",
+  "validation/"
+ ],
+ "packs": [
+  "tool"
+ ],
+ "label": null,
+ "converted": null,
+ "fingerprint": {
+  "commit": "f03dbf7a3a97bcbf11ddfd767857198f5c98ebc8",
+  "logs": [
+   {
+    "log": "simulated-author-8f5c",
+    "events": 44,
+    "head": "63a00016cda92a66a103424dec473269cc90fc319187096882796117d5f4656d",
+    "verifies": true
+   }
+  ]
+ },
+ "work_map": null,
+ "outside": null,
+ "numbers": {
+  "traced": 14,
+  "total": 14,
+  "untraced": [],
+  "per_unit": {}
+ },
+ "typed": {
+  "tool_words": 579,
+  "words": 764,
+  "files": {
+   "README.md": {
+    "tool": 579,
+    "people": 185
+   }
+  }
+ },
+ "usage": {
+  "input_tokens": 10,
+  "cache_creation_input_tokens": 134214,
+  "cache_read_input_tokens": 11709,
+  "output_tokens": 47591,
+  "calls": 5,
+  "seconds": 392,
+  "subscription_list_usd": 2.0279
+ },
+ "cost_usd": 1.63
+}

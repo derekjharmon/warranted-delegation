@@ -1,0 +1,938 @@
+{
+ "U114": {
+  "id": "U114",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T7, T8, T30, T31",
+  "basis": "06_check_paper rebuilds 'against the authors' 9,861' from sample_steps.csv; T31: 'numbers in the text match tests.csv by script'",
+  "confidence": "medium"
+ },
+ "U115": {
+  "id": "U115",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T13, T16, T19, T31",
+  "basis": "02_analysis asserts family sizes vs plan; T16: 'saw the tests match the plan (families 6/6/3/1)'",
+  "confidence": "medium"
+ },
+ "U116": {
+  "id": "U116",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T4, T8, T30, T31",
+  "basis": "T4 verbatim quotes 'for ten minutes', 'a point for each a-b alternation'; T8: 'saw the paper's quotes for task length (10 min)'",
+  "confidence": "high"
+ },
+ "U117": {
+  "id": "U117",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T4, T8, T23, T30, T31",
+  "basis": "arm 9 wording quoted verbatim from DP p. 11 and quote-checked; T31 'DP quotations checked against the extracted text'",
+  "confidence": "medium"
+ },
+ "U81": {
+  "id": "U81",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T17, T30, T31",
+  "basis": "06 provenance check: inlined table equals generated file; T31 'the tables and figure come from code'",
+  "confidence": "medium"
+ },
+ "U82": {
+  "id": "U82",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T29, T30, T31",
+  "basis": "06 provenance check of table2 vs output; T31 'tables and figure come from code'",
+  "confidence": "medium"
+ },
+ "U83": {
+  "id": "U83",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T29, T30, T31",
+  "basis": "06 provenance check of tableA1 vs output; T31 'tables and figure come from code'",
+  "confidence": "medium"
+ },
+ "U84": {
+  "id": "U84",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T29, T30, T31",
+  "basis": "06 provenance check of tableA2 vs output; T31 'tables and figure come from code'",
+  "confidence": "medium"
+ },
+ "U85": {
+  "id": "U85",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T19, T20",
+  "basis": "Claude computed min/max startdate (producing, not checking); Section 2 outside 06 number check",
+  "confidence": "medium"
+ },
+ "U86": {
+  "id": "U86",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T5, T8",
+  "basis": "per-arm counts produced by 01_clean log; Section 2 not covered by 06; author asked 'versus ... ~550 per arm'",
+  "confidence": "medium"
+ },
+ "U87": {
+  "id": "U87",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T30, T31",
+  "basis": "06 statement 'no-piece-rate arm scored {ref_mean}' from arm_stats.csv; T31 confirms",
+  "confidence": "high"
+ },
+ "U88": {
+  "id": "U88",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T30, T31",
+  "basis": "06 rebuilds '4 cents raised effort over 1 cent by...' from tests.csv; T31 'match tests.csv by script'",
+  "confidence": "high"
+ },
+ "U89": {
+  "id": "U89",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T30, T31",
+  "basis": "06 statement 'not significant: {ci(b)} p = ...'; T31 confirms",
+  "confidence": "high"
+ },
+ "U90": {
+  "id": "U90",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T30, T31",
+  "basis": "06 statement '(Holm p = ... and Holm p < 0.001)' plus claim check; T31 confirms",
+  "confidence": "high"
+ },
+ "U91": {
+  "id": "U91",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T30, T31",
+  "basis": "06 statement 'relative to no piece rate by {estimate} (95% CI'; T31 confirms",
+  "confidence": "high"
+ },
+ "U92": {
+  "id": "U92",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T30, T31",
+  "basis": "06 statements for 7 vs 2 CI, Holm p, 'shortfall of up to about', 'advantage of up to about'",
+  "confidence": "high"
+ },
+ "U93": {
+  "id": "U93",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T30, T31",
+  "basis": "06 statements for gift CI, p, 'gains of up to about', discussion CI; T31 confirms",
+  "confidence": "high"
+ },
+ "U94": {
+  "id": "U94",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T11, T30, T31",
+  "basis": "06 statements 'complete-case sample (N = ...)', 'trimmed at 3,500 points (N = ...)'",
+  "confidence": "medium"
+ },
+ "U95": {
+  "id": "U95",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T30, T31",
+  "basis": "06 cc82 statements and claim 'ranking vs arm 2 not significant after Holm'",
+  "confidence": "high"
+ },
+ "U96": {
+  "id": "U96",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T30, T31",
+  "basis": "06 statement '{ci(ccg)} p = ...'; T31 confirms",
+  "confidence": "high"
+ },
+ "U97": {
+  "id": "U97",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T30, T31",
+  "basis": "06 statements 'Holm p = ... and ...' for 1.2 vs 1.4 and 1.4 vs 1.1 robustness",
+  "confidence": "high"
+ },
+ "U98": {
+  "id": "U98",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T15, T16, T19",
+  "basis": "Section 6 excluded from 06 check; figure derived from paper_check output, not checked",
+  "confidence": "medium"
+ },
+ "U99": {
+  "id": "U99",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T15, T16, T19",
+  "basis": "Section 6 excluded from 06 check; gaps produced by 03_paper_check only",
+  "confidence": "medium"
+ },
+ "U100": {
+  "id": "U100",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T30, T31",
+  "basis": "06 claim 'every piece rate > no piece rate, all p and Holm p < 0.001'; T31 confirms",
+  "confidence": "high"
+ },
+ "U101": {
+  "id": "U101",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T30, T31",
+  "basis": "06 claim 'each psychological arm > no piece rate'; T31 confirms",
+  "confidence": "high"
+ },
+ "U102": {
+  "id": "U102",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T30, T31",
+  "basis": "06_check_paper claim 'all three < 1 cent per 100' passed; attest: 'numbers in the text match tests.csv by script'",
+  "confidence": "high"
+ },
+ "U103": {
+  "id": "U103",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T26, T30, T31",
+  "basis": "Script checks abstract/Discussion statements and qualitative claims against tests.csv; attest confirms 'match tests.csv by script'",
+  "confidence": "medium"
+ },
+ "U104": {
+  "id": "U104",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T30, T31",
+  "basis": "Claims 'trimmed: every conclusion unchanged' and complete-case exemption checked by script; author attested script result",
+  "confidence": "high"
+ },
+ "U105": {
+  "id": "U105",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T15, T29",
+  "basis": "Author asked to 'say arm 7 matches the published social comparison mean'; paper_check only computes the diff, published constant never re-verified",
+  "confidence": "low"
+ },
+ "U106": {
+  "id": "U106",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T3, T4",
+  "basis": "T3 payout-by-code checks in tool output ('Confirmed by the payouts'); author replied 'Good.'",
+  "confidence": "high"
+ },
+ "U107": {
+  "id": "U107",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T7, T8",
+  "basis": "Author asked to log the finished==1/0 breakdown; the log produced the number, no separate comparison",
+  "confidence": "medium"
+ },
+ "U108": {
+  "id": "U108",
+  "discretion": "none",
+  "certification": "you checked it against the source",
+  "turns": "T14, T16, T31",
+  "basis": "Attest: 'I read 02_analysis.py and tests.csv myself... saw the tests match the plan'; 'I read paper.md in full'",
+  "confidence": "medium"
+ },
+ "U109": {
+  "id": "U109",
+  "discretion": "none",
+  "certification": "you checked it against the source",
+  "turns": "T6, T8, T31",
+  "basis": "Attest: 'I read 01_clean.py and the log myself'; 'I read paper.md in full'",
+  "confidence": "medium"
+ },
+ "U110": {
+  "id": "U110",
+  "discretion": "none",
+  "certification": "you checked it against the source",
+  "turns": "T11, T14, T16",
+  "basis": "Author set complete-case definition and attested 'I read 02_analysis.py and tests.csv myself'",
+  "confidence": "medium"
+ },
+ "U111": {
+  "id": "U111",
+  "discretion": "none",
+  "certification": "you checked it against the source",
+  "turns": "T16",
+  "basis": "Attest: 'saw the tests match the plan (families 6/6/3/1)'",
+  "confidence": "high"
+ },
+ "U112": {
+  "id": "U112",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T18, T19",
+  "basis": "'the \"they posted their data\" claim is the notes' only; keep it but as \"the authors' replication package\"'",
+  "confidence": "high"
+ },
+ "U113": {
+  "id": "U113",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T30, T31",
+  "basis": "06_check provenance: figure exists and written by 02_analysis.py; attest 'the tables and figure come from code'",
+  "confidence": "medium"
+ },
+ "U50": {
+  "id": "U50",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T20, T21, T31",
+  "basis": "Crossref lookup table shown; author 'Good.' and attest 'saw the three DOIs match their Crossref records'",
+  "confidence": "high"
+ },
+ "U51": {
+  "id": "U51",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T20, T21, T31",
+  "basis": "Crossref lookup table shown; attest 'saw the three DOIs match their Crossref records'",
+  "confidence": "high"
+ },
+ "U52": {
+  "id": "U52",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T20, T21, T31",
+  "basis": "Crossref lookup table shown; attest 'saw the three DOIs match their Crossref records'",
+  "confidence": "high"
+ },
+ "U67": {
+  "id": "U67",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T3, T4",
+  "basis": "grep of PDF: 'The 18 treatments attempt...'; reply 'the paper, the registration and the data all have 18'; author 'Good.'",
+  "confidence": "high"
+ },
+ "U68": {
+  "id": "U68",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T9, T18, T19",
+  "basis": "Quoted p. 6 '$1 flat fee'; T18 table marks design sentences verified against DP; author 'I read paper.md; it's good'",
+  "confidence": "medium"
+ },
+ "U69": {
+  "id": "U69",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T3, T4",
+  "basis": "Registry page AEARCTR-0000714 fetched in T3; author 'Good.'",
+  "confidence": "medium"
+ },
+ "U70": {
+  "id": "U70",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T3, T4, T8",
+  "basis": "Quoted p. 14 'initial sample consists of 12,838'; data shape 12,838; attest saw quotes and counts",
+  "confidence": "high"
+ },
+ "U71": {
+  "id": "U71",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T4, T8",
+  "basis": "Verbatim quotes pp. 14\u201315; attest 'saw the paper's quotes for... the exclusion rules'",
+  "confidence": "high"
+ },
+ "U72": {
+  "id": "U72",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T4, T8, T30, T31",
+  "basis": "Registration quote p. 14; 'physically impossible' passed quote check; attest confirms",
+  "confidence": "high"
+ },
+ "U73": {
+  "id": "U73",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T4, T8",
+  "basis": "Quoted p. 14 721 glitch drop; attest 'I know the Qualtrics glitch drop can't be reproduced'",
+  "confidence": "high"
+ },
+ "U74": {
+  "id": "U74",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T30, T31",
+  "basis": "Quote check p. 11 match yes; attest 'DP quotations checked against the extracted text'",
+  "confidence": "high"
+ },
+ "U75": {
+  "id": "U75",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T14, T15, T19",
+  "basis": "Table 4 means typed as constants; 21-point gap never compared with the source",
+  "confidence": "medium"
+ },
+ "U76": {
+  "id": "U76",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T4, T8",
+  "basis": "Quoted counts and '12,838 \u2212 721 \u2212 ... = 9,861 exactly'; attest 'saw the sample counts after each step against the paper's'",
+  "confidence": "high"
+ },
+ "U77": {
+  "id": "U77",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T14, T15, T30, T31",
+  "basis": "T15 author asked for \"the nine paper means typed in as constants and cited to Table 4 p. 52\"; no tool call compared these means with the PDF; the T31 attest names only the quotations",
+  "confidence": "medium"
+ },
+ "U78": {
+  "id": "U78",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T5, T8",
+  "basis": "T5 asked for N \"versus 9,861 and ~550 per arm\"; Claude typed in paper_n from Table 4 and nothing rechecked it; the T8 attest covers the step counts only",
+  "confidence": "medium"
+ },
+ "U53": {
+  "id": "U53",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T29, T30, T31",
+  "basis": "T30 quote table: p. 1 cited, p. 1 found, \"yes\"; T31: \"DP quotations checked against the extracted text\"",
+  "confidence": "high"
+ },
+ "U54": {
+  "id": "U54",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T30, T31",
+  "basis": "T30 check found the wrong page and fixed it to p. 8, \"yes\"; T31: \"three errors found and fixed\"",
+  "confidence": "high"
+ },
+ "U55": {
+  "id": "U55",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T30, T31",
+  "basis": "T30 table: cited 11, found 11, \"yes\"; T31 attest confirms the DP quotations were checked",
+  "confidence": "high"
+ },
+ "U56": {
+  "id": "U56",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T19, T30, T31",
+  "basis": "T30 table: cited 14, found 14, \"yes\"; T31: \"DP quotations checked against the extracted text\"",
+  "confidence": "high"
+ },
+ "U57": {
+  "id": "U57",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T30, T31",
+  "basis": "T30 table: gift wording cited 8, found \"8, 52\", \"yes\"; T31 attest confirms",
+  "confidence": "high"
+ },
+ "U58": {
+  "id": "U58",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T30, T31",
+  "basis": "T30 table: cited 52, found 52, \"yes\"; T31 attest confirms",
+  "confidence": "high"
+ },
+ "U59": {
+  "id": "U59",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T30, T31",
+  "basis": "T30 table: cited 52, found 52, \"yes\"; T31 attest confirms",
+  "confidence": "high"
+ },
+ "U60": {
+  "id": "U60",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T30, T31",
+  "basis": "T30 table: cited 11, found \"11, 52\", \"yes\"; T31 attest confirms",
+  "confidence": "high"
+ },
+ "U61": {
+  "id": "U61",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T30, T31",
+  "basis": "T30 check found this quote \"Not exact\" and fixed it to the heading wording, \"yes\"; T31: \"three errors found and fixed\"",
+  "confidence": "high"
+ },
+ "U62": {
+  "id": "U62",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T30, T31",
+  "basis": "T30 fixed the capitalization of \"second social-comparison treatment\", then \"yes\"; T31 attest confirms",
+  "confidence": "high"
+ },
+ "U63": {
+  "id": "U63",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T30, T31",
+  "basis": "T30 table: \"physically impossible\" cited 14, found 14, \"yes\"; T31 attest confirms",
+  "confidence": "high"
+ },
+ "U64": {
+  "id": "U64",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T30, T31",
+  "basis": "T30 table: \"about 550\" cited 15, found \"15, 39, 43\", \"yes\"; T31 attest confirms",
+  "confidence": "high"
+ },
+ "U65": {
+  "id": "U65",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T24, T30, T31",
+  "basis": "T30 checked \"only loosely\" against preregistration.md (\"yes\"); the T31 attest names only the \"DP quotations\"",
+  "confidence": "medium"
+ },
+ "U66": {
+  "id": "U66",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T30, T31",
+  "basis": "T30 checked the quote against notes.md (\"yes\"); the T31 attest names only the DP quotations",
+  "confidence": "medium"
+ },
+ "U79": {
+  "id": "U79",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T7, T8, T30, T31",
+  "basis": "T30 script rebuilds \"Our sample has 9,963 workers, against the authors' 9,861\" from CSVs; T31: \"The numbers in the text match tests.csv by script\"",
+  "confidence": "medium"
+ },
+ "U80": {
+  "id": "U80",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3, T10, T12",
+  "basis": "T10 author asked to \"Note that four groups of arm codes can't be told apart from payouts\"; payouts were computed in T3 but no later tool call compared the stated groups with their source",
+  "confidence": "medium"
+ },
+ "U45": {
+  "id": "U45",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T9, T10, T12",
+  "basis": "T10: \"Draft preregistration.md, and state at the top that it was written before any outcome was examined\"; T12: \"the plan is frozen from here\"",
+  "confidence": "high"
+ },
+ "U46": {
+  "id": "U46",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T13, T14, T19, T20",
+  "basis": "T13 asked to implement the plan \"exactly\"; T14 item 2 \"t-test on the difference, not a Wald F-test\"; T19 reply lists it under Implementation; T20 \"Results read fine.\"",
+  "confidence": "medium"
+ },
+ "U47": {
+  "id": "U47",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T15",
+  "basis": "T15: \"append a dated 'Disclosure (added after attestation)' section at the bottom of preregistration.md\"",
+  "confidence": "high"
+ },
+ "U48": {
+  "id": "U48",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T17, T18",
+  "basis": "T17 asked for Table 1 built from output/*.csv; the reply says \"01_clean.py now also writes output/sample_steps.csv\"; T18: \"Tables look right\"",
+  "confidence": "medium"
+ },
+ "U49": {
+  "id": "U49",
+  "discretion": "given",
+  "certification": "elaborated and okayed",
+  "turns": "T23, T24",
+  "basis": "T23 reply: \"the earlier draft said arm 9 tests task significance 'only loosely', and that wording is gone\"; T24: \"Yes, add a line ... because we couldn't check Grant's definition\"",
+  "confidence": "medium"
+ },
+ "U24": {
+  "id": "U24",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T10",
+  "basis": "T10: \"Outcome: buttonpresses.\"",
+  "confidence": "high"
+ },
+ "U25": {
+  "id": "U25",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T10, T11",
+  "basis": "T10: \"OLS of points on arm indicators ... Reference arm is 1.3 (no piece rate)\"; Claude's decision 2 (one regression with all 18 arms) was kept by the author in T11",
+  "confidence": "medium"
+ },
+ "U26": {
+  "id": "U26",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T10",
+  "basis": "\"no covariates in the primary models\"",
+  "confidence": "high"
+ },
+ "U27": {
+  "id": "U27",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T10, T11",
+  "basis": "\"Estimation: OLS of points on arm indicators\"",
+  "confidence": "medium"
+ },
+ "U28": {
+  "id": "U28",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T10, T11",
+  "basis": "author said \"HC robust SEs\"; Claude's decision 1 HC1; \"I keep decisions 1\u20138\"",
+  "confidence": "high"
+ },
+ "U29": {
+  "id": "U29",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T10, T11",
+  "basis": "\u03b1 and H2 two-sided were Claude decisions 4\u20135; \"I keep decisions 1\u20138\"",
+  "confidence": "high"
+ },
+ "U30": {
+  "id": "U30",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T10",
+  "basis": "\"Holm correction within each hypothesis family ... report unadjusted and Holm-adjusted\"",
+  "confidence": "high"
+ },
+ "U31": {
+  "id": "U31",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T10, T11, T14, T15",
+  "basis": "Claude decision 7 \"separate Holm family of 3\"; \"I keep decisions 1\u20138\"",
+  "confidence": "medium"
+ },
+ "U32": {
+  "id": "U32",
+  "discretion": "given",
+  "certification": "changed",
+  "turns": "T10, T11",
+  "basis": "\"On 9, I'm changing it: complete-case should mean no missing buttonpresses, treatment, or practicecount\"",
+  "confidence": "high"
+ },
+ "U33": {
+  "id": "U33",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T10, T11",
+  "basis": "\"instead add a version that trims at 3,500\"",
+  "confidence": "high"
+ },
+ "U34": {
+  "id": "U34",
+  "discretion": "taken",
+  "certification": "okayed",
+  "turns": "T13, T14, T15",
+  "basis": "Claude compared to Table 4 unasked; \"keep the Table 4 comparison labeled as an unplanned descriptive check\"",
+  "confidence": "medium"
+ },
+ "U35": {
+  "id": "U35",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T13, T19, T20",
+  "basis": "\"one figure: mean points by arm with 95% CIs\"; listed in Deviations T19; \"Results read fine\"",
+  "confidence": "medium"
+ },
+ "U15": {
+  "id": "U15",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3, T19",
+  "basis": "\"load data/mturk_raw.csv\"; \"keep it but as 'the authors' replication package'\"",
+  "confidence": "high"
+ },
+ "U17": {
+  "id": "U17",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T5",
+  "basis": "\"For the Qualtrics glitch, do NOT guess a window\"",
+  "confidence": "high"
+ },
+ "U18": {
+  "id": "U18",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T5",
+  "basis": "\"drop scores of 4,000 or more (not 3,500)\"",
+  "confidence": "high"
+ },
+ "U19": {
+  "id": "U19",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T5, T6, T7",
+  "basis": "\"drop anyone not finishing within 30 minutes\"; operational details okayed \"keep 1\u201313\"",
+  "confidence": "medium"
+ },
+ "U20": {
+  "id": "U20",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T5",
+  "basis": "\"drop re-entrants (every row of an ID seen more than once\"",
+  "confidence": "high"
+ },
+ "U21": {
+  "id": "U21",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T5",
+  "basis": "\"then the two added rules (not approved, zero presses)\"",
+  "confidence": "high"
+ },
+ "U22": {
+  "id": "U22",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T5, T6, T7",
+  "basis": "Claude counted missing as zero (decision 13); \"Keep the missing-as-zero-presses rule (13)\"",
+  "confidence": "high"
+ },
+ "U23": {
+  "id": "U23",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T7",
+  "basis": "\"For 14, drop the 4 rows with no treatment code, as a separate, labeled step 6\"",
+  "confidence": "high"
+ },
+ "U16": {
+  "id": "U16",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3, T5",
+  "basis": "labels taken from author's notes.md code table",
+  "confidence": "medium"
+ },
+ "U36": {
+  "id": "U36",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T10",
+  "basis": "\"H1: arms 1.1, 1.4, 1.2 and 2 each vs 1.3; plus ordering tests\"",
+  "confidence": "high"
+ },
+ "U37": {
+  "id": "U37",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T10",
+  "basis": "\"H2: psychological arms are 7, 8 and 9 only ... each vs arm 2\"",
+  "confidence": "high"
+ },
+ "U38": {
+  "id": "U38",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T10, T23",
+  "basis": "\"H3: gift exchange (10) vs 1.3\"; \"H3 is the plan's hypothesis ... with no citation\"",
+  "confidence": "high"
+ },
+ "U39": {
+  "id": "U39",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T19, T28, T29",
+  "basis": "Claude decision 22 \"summary sentences for H1 are mine\"; \"Keep ... 22\"",
+  "confidence": "medium"
+ },
+ "U40": {
+  "id": "U40",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T14, T15, T16",
+  "basis": "\"That's not evidence of 'less than'; it's inconclusive\"",
+  "confidence": "medium"
+ },
+ "U41": {
+  "id": "U41",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T19, T29",
+  "basis": "\"H3 as not significant (CI included), not as 'weak support'\"",
+  "confidence": "medium"
+ },
+ "U42": {
+  "id": "U42",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T13, T19, T20, T24, T28, T29",
+  "basis": "T19 asked for Results with Table 4 inserted; Claude wrote the robustness reading; author: \"Results read fine\"; decisions list kept in T29",
+  "confidence": "medium"
+ },
+ "U43": {
+  "id": "U43",
+  "discretion": "given",
+  "certification": "changed",
+  "turns": "T19, T28, T29",
+  "basis": "T19 \"a short paragraph on the unplanned Table 4 comparison\"; T29 \"soften... 'in these nine arms', and drop the claim that the match 'supports the labels'\"",
+  "confidence": "high"
+ },
+ "U44": {
+  "id": "U44",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T10, T11, T17, T28, T29",
+  "basis": "Claude decision 6 \"Arms outside the hypotheses are described only\"; T11 \"I keep decisions 1\u20138\"; decision 24 \"(not tabulated)\" kept in T29; T17 author limited Table 4 to H2/H3",
+  "confidence": "medium"
+ },
+ "U1": {
+  "id": "U1",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3, T18, T25",
+  "basis": "notes.md idea: how much effort these buy \"compared with paying people a little more\"; author's sections/contribution.md",
+  "confidence": "high"
+ },
+ "U2": {
+  "id": "U2",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3, T18, T25",
+  "basis": "notes.md \"Organizations lean on more than pay\"; author's contribution.md \"adds a managerial reading\"",
+  "confidence": "high"
+ },
+ "U3": {
+  "id": "U3",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3, T18, T28, T29",
+  "basis": "Intro \"paraphrases the notes\" (decision 9); notes' opening on organizations and non-pay motivators",
+  "confidence": "medium"
+ },
+ "U4": {
+  "id": "U4",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T18, T28, T29, T30",
+  "basis": "T29 author: \"attribute that sentence to DP (p. 1) or cut it; check p. 1 supports it first\"",
+  "confidence": "medium"
+ },
+ "U5": {
+  "id": "U5",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T23",
+  "basis": "T23 \"cite Gneezy-Rustichini (2000)... only for what DellaVigna and Pope say... modeled 'as in' G&R\"",
+  "confidence": "high"
+ },
+ "U6": {
+  "id": "U6",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T23",
+  "basis": "T23 \"the task-significance arm based on Grant, attributed to DP, with no claim about what either article found\"",
+  "confidence": "high"
+ },
+ "U7": {
+  "id": "U7",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T18, T25",
+  "basis": "author's hand-written sections/contribution.md; T25 asked for \"one-sentence pointer to Section 7 (Contribution)\"",
+  "confidence": "high"
+ },
+ "U8": {
+  "id": "U8",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T11, T18, T19, T20",
+  "basis": "T18 listed sections; T19 \"a short 'Deviations from the plan' section... and a short paragraph on the unplanned Table 4 comparison\"",
+  "confidence": "medium"
+ },
+ "U9": {
+  "id": "U9",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T17, T29",
+  "basis": "T17 \"(Table 1) the sample-construction steps with our counts vs the paper's\"",
+  "confidence": "high"
+ },
+ "U10": {
+  "id": "U10",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T17, T29",
+  "basis": "T17 \"all primary-sample tests grouped by H1/H2/H3 with estimate, 95% CI, unadjusted p, Holm p\"; T29 renumber to Table 2",
+  "confidence": "high"
+ },
+ "U11": {
+  "id": "U11",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T13",
+  "basis": "T13 \"one figure: mean points by arm with 95% CIs, with the H2 arms and arm 2 marked\"",
+  "confidence": "high"
+ },
+ "U12": {
+  "id": "U12",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T17, T28, T29",
+  "basis": "T17 \"(Table 2) arm N, mean, SD for all 18 arms\"; T28 move to appendix; T29 \"Table A1 (arms)\"",
+  "confidence": "high"
+ },
+ "U13": {
+  "id": "U13",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T17, T27, T29",
+  "basis": "T17 \"(Table 4) the robustness comparison for the H2 and H3 tests across the three samples\"; T27 move to appendix",
+  "confidence": "high"
+ },
+ "U14": {
+  "id": "U14",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T24, T25, T26",
+  "basis": "author's hand-written sections/limitations.md; T24 \"no claims about other tasks or real workplaces\"; T26 asked for the plan-after-results disclosure",
+  "confidence": "high"
+ }
+}

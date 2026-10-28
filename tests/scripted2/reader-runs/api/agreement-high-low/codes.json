@@ -1,0 +1,426 @@
+{
+ "U47": {
+  "id": "U47",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T3, T4",
+  "basis": "test_keeps_codes_exactly in unittest run 'OK'; T4 is a bare /attest",
+  "confidence": "medium"
+ },
+ "U48": {
+  "id": "U48",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T3, T4",
+  "basis": "test_splits/test_whitespace_is_not_missing passed in T3 run; no author response",
+  "confidence": "medium"
+ },
+ "U49": {
+  "id": "U49",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T3, T4",
+  "basis": "test_undefined_when_one_category ran, 'OK'; bare /attest only",
+  "confidence": "medium"
+ },
+ "U50": {
+  "id": "U50",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T3, T4",
+  "basis": "test_error_to_stderr and bad-input tests ran, 'OK'",
+  "confidence": "medium"
+ },
+ "U51": {
+  "id": "U51",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T3, T4",
+  "basis": "ran check_kappa.py: '201 datasets compared, 0 mismatches'",
+  "confidence": "medium"
+ },
+ "U44": {
+  "id": "U44",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T3, T4",
+  "basis": "'example.csv: agree.py 0.6226\u2026, statsmodels 0.6226\u2026'; author never responded",
+  "confidence": "medium"
+ },
+ "U45": {
+  "id": "U45",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T3, T4",
+  "basis": "statsmodels comparison and test_example passed; no author reply",
+  "confidence": "medium"
+ },
+ "U46": {
+  "id": "U46",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3",
+  "basis": "0.5416 only produced by inline statsmodels run, not compared; mentioned in reply 'drops the example's \u03ba to 0.54'",
+  "confidence": "medium"
+ },
+ "U52": {
+  "id": "U52",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T1, T3",
+  "basis": "CLAUDE.md 'Use only Python's standard library'; no check of imports in record",
+  "confidence": "medium"
+ },
+ "U53": {
+  "id": "U53",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T3, T4",
+  "basis": "ran 'python3 agree.py notes/example.csv', 'python3 -m unittest' OK, check_kappa.py",
+  "confidence": "medium"
+ },
+ "U33": {
+  "id": "U33",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T1, T3",
+  "basis": "copied from notes/references.md; 'volume 20, not 21' stated with no lookup tool call",
+  "confidence": "medium"
+ },
+ "U34": {
+  "id": "U34",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T1, T3",
+  "basis": "copied from notes/references.md; no lookup",
+  "confidence": "high"
+ },
+ "U35": {
+  "id": "U35",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T1, T3",
+  "basis": "copied from notes/references.md; no lookup",
+  "confidence": "high"
+ },
+ "U36": {
+  "id": "U36",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T1, T3",
+  "basis": "author's draft 'corrects percent agreement for\u2026 chance alone'; no source read",
+  "confidence": "high"
+ },
+ "U37": {
+  "id": "U37",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3",
+  "basis": "Claude corrected 'they call 0.61\u20130.80 \"substantial\"' with no lookup; told in reply",
+  "confidence": "medium"
+ },
+ "U38": {
+  "id": "U38",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3",
+  "basis": "'They also described their cutoffs as arbitrary, and the README says so' \u2014 no lookup",
+  "confidence": "medium"
+ },
+ "U39": {
+  "id": "U39",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T1, T3",
+  "basis": "author's draft 'Hallgren (2012) is a practical tutorial'",
+  "confidence": "high"
+ },
+ "U40": {
+  "id": "U40",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3",
+  "basis": "Landis-Koch ranges stated in reply, no source lookup",
+  "confidence": "medium"
+ },
+ "U43": {
+  "id": "U43",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T3, T4",
+  "basis": "test_example asserts 22/20/75.0/0.6226 and passed; no author response",
+  "confidence": "medium"
+ },
+ "U41": {
+  "id": "U41",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T3, T4",
+  "basis": "test_perfect_agreement, test_can_be_negative ran OK; reply '\u03ba isn't limited to 0\u20131' never answered",
+  "confidence": "low"
+ },
+ "U42": {
+  "id": "U42",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3",
+  "basis": "'That's the usual treatment for \u03ba' \u2014 no source consulted",
+  "confidence": "medium"
+ },
+ "U2": {
+  "id": "U2",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T1, T3",
+  "basis": "author's readme-draft and references.md cite Cohen, Landis & Koch, Hallgren",
+  "confidence": "high"
+ },
+ "U3": {
+  "id": "U3",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T1",
+  "basis": "draft: 'Cohen's \u03ba (Cohen, 1960) corrects percent agreement'",
+  "confidence": "high"
+ },
+ "U4": {
+  "id": "U4",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T1",
+  "basis": "draft: 'Landis and Koch (1977) call any \u03ba above 0.60\u2026'",
+  "confidence": "high"
+ },
+ "U5": {
+  "id": "U5",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T1",
+  "basis": "draft: 'Hallgren (2012) is a practical tutorial'",
+  "confidence": "high"
+ },
+ "U6": {
+  "id": "U6",
+  "discretion": "taken",
+  "certification": "ignored",
+  "turns": "T1, T3, T4",
+  "basis": "Draft said >0.60 'almost perfect'; reply: 'They also described their cutoffs as arbitrary, and the README says so.' The author never responded; T4 is a bare attest.",
+  "confidence": "medium"
+ },
+ "U7": {
+  "id": "U7",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T1, T3",
+  "basis": "CLAUDE.md: 'Treat codes as case-sensitive text, and never recode them.'",
+  "confidence": "medium"
+ },
+ "U1": {
+  "id": "U1",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T1, T3",
+  "basis": "T3: 'Build the command-line tool described in notes/spec.md'; CLAUDE.md: 'Use only Python's standard library'",
+  "confidence": "high"
+ },
+ "U29": {
+  "id": "U29",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T3, T4",
+  "basis": "T3 asked for 'a check... that it gives the same \u03ba'; reply: 'on notes/example.csv and on 200 random datasets'. No response.",
+  "confidence": "high"
+ },
+ "U30": {
+  "id": "U30",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T3, T4",
+  "basis": "T3: 'an established implementation'; reply: 'matches statsmodels'. No response.",
+  "confidence": "high"
+ },
+ "U31": {
+  "id": "U31",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T3, T4",
+  "basis": "Reply: 'runs the tool as a command and compares its \u03ba with statsmodels'. No response.",
+  "confidence": "medium"
+ },
+ "U32": {
+  "id": "U32",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T3, T4",
+  "basis": "Reply: 'matches statsmodels... to within 1e-12'. No response.",
+  "confidence": "high"
+ },
+ "U8": {
+  "id": "U8",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T3, T4",
+  "basis": "T3: 'decide everything else as you think best'. Reply lists 'wrong header' as bad input. The spec's content is not visible.",
+  "confidence": "low"
+ },
+ "U9": {
+  "id": "U9",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T3, T4",
+  "basis": "Reply: 'Percent agreement is 75%... 15 of the 20 items both coders coded'. No response.",
+  "confidence": "medium"
+ },
+ "U10": {
+  "id": "U10",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T1, T3",
+  "basis": "The author's draft names 'Cohen's \u03ba (Cohen, 1960) corrects percent agreement for... chance'.",
+  "confidence": "medium"
+ },
+ "U11": {
+  "id": "U11",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T1",
+  "basis": "CLAUDE.md: 'Treat codes as case-sensitive text, and never recode them.'",
+  "confidence": "high"
+ },
+ "U12": {
+  "id": "U12",
+  "discretion": "taken",
+  "certification": "ignored",
+  "turns": "T1, T3, T4",
+  "basis": "Draft: 'blank... count as disagreements'; reply: 'Decision for you: blank codes... I went the other way'. The author never responded.",
+  "confidence": "high"
+ },
+ "U13": {
+  "id": "U13",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T3, T4",
+  "basis": "Reply: 'A code that is only spaces counts as a code, not as missing'. No response.",
+  "confidence": "medium"
+ },
+ "U14": {
+  "id": "U14",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T3, T4",
+  "basis": "Reply: '\u03ba is reported as null when it can't be calculated'. No response.",
+  "confidence": "high"
+ },
+ "U15": {
+  "id": "U15",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T1",
+  "basis": "CLAUDE.md: 'Use only Python's standard library, in the tool and in its tests.'",
+  "confidence": "high"
+ },
+ "U16": {
+  "id": "U16",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T3, T4",
+  "basis": "Reply: 'the only file that needs numpy and statsmodels'. No response.",
+  "confidence": "high"
+ },
+ "U17": {
+  "id": "U17",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T3, T4",
+  "basis": "The author asked for the methods-kit tool-conventions skill: 'Print results as JSON'. Reply mentions JSON on stdout and missing_items. No response.",
+  "confidence": "medium"
+ },
+ "U18": {
+  "id": "U18",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T3, T4",
+  "basis": "The author asked for the methods-kit tool-conventions skill: 'Errors go to standard error'. Reply: 'errors on stderr with exit code 1'.",
+  "confidence": "high"
+ },
+ "U19": {
+  "id": "U19",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T3, T4",
+  "basis": "Reply lists 'missing file, empty file' as bad input. No response.",
+  "confidence": "high"
+ },
+ "U20": {
+  "id": "U20",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T3, T4",
+  "basis": "Reply lists 'wrong header'. No response.",
+  "confidence": "high"
+ },
+ "U21": {
+  "id": "U21",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T3, T4",
+  "basis": "Reply lists 'wrong number of fields'. No response.",
+  "confidence": "high"
+ },
+ "U22": {
+  "id": "U22",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T3, T4",
+  "basis": "Reply lists 'blank item'. No response.",
+  "confidence": "high"
+ },
+ "U23": {
+  "id": "U23",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T3, T4",
+  "basis": "Reply: 'A repeated item ID is an error.' No response.",
+  "confidence": "high"
+ },
+ "U24": {
+  "id": "U24",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T3, T4",
+  "basis": "Reply lists 'no item coded by both coders'. No response.",
+  "confidence": "medium"
+ },
+ "U25": {
+  "id": "U25",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T3, T4",
+  "basis": "Reply lists 'text that isn't UTF-8, and badly quoted CSV'. No response.",
+  "confidence": "high"
+ },
+ "U26": {
+  "id": "U26",
+  "discretion": "given",
+  "certification": "wasn't notified",
+  "turns": "T3, T4",
+  "basis": "T3 prompt: \"decide everything else as you think best\". The T3 reply's list of smaller choices covers whitespace codes, null \u03ba and repeated IDs, but never mentions skipping blank lines. T4 is a bare attest.",
+  "confidence": "medium"
+ },
+ "U27": {
+  "id": "U27",
+  "discretion": "given",
+  "certification": "wasn't notified",
+  "turns": "T3, T4",
+  "basis": "The methods-kit tool-conventions skill (plugin, not the author's) says \"A single script run from the command line\", and the author asked for that skill. The reply mentions argparse, JSON and stderr, but not running the script directly with no installation.",
+  "confidence": "low"
+ },
+ "U28": {
+  "id": "U28",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T2, T3",
+  "basis": "CLAUDE.md (project's instructions): \"Use only Python's standard library, in the tool and in its tests\". The T3 prompt asked \"with tests\".",
+  "confidence": "medium"
+ }
+}

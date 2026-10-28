@@ -1,0 +1,269 @@
+{
+  "task": "schools",
+  "cell": "low-high",
+  "started": "2026-10-15T20:55:15",
+  "environment": {
+    "claude_code": "2.1.301 (Claude Code)",
+    "model": "claude-opus-5-5",
+    "plugin": "0.7.1",
+    "python": "3.14.7",
+    "statsmodels": "0.14.6",
+    "pandas": "2.2.3"
+  },
+  "attested_versions": {
+    "repo_head": "057f94dbd96313f61872be398e25c0992a6c19c1"
+  },
+  "script_sha256": "dc85c34dd354b3cffc8f43d5ea844ec0b8401b8e6347c95fdc9faae0ae64a63a",
+  "key_sha256": "5bd0ca0f718dfbfaff84a0fc0dd4273d6ae2473288e2830cdf1f598078f5e983",
+  "runner_sha256": "bcef30d9233aaf128e8695872ff78bd83de313c97913f56c754740335a2fb6fe",
+  "work": [
+    "memo.md",
+    "analysis/",
+    "output/"
+  ],
+  "steps": [
+    {
+      "id": "setup",
+      "kind": "attest",
+      "exit": 0,
+      "seconds": 3,
+      "is_error": false,
+      "turns": 0,
+      "cost_usd": 0,
+      "stderr": null,
+      "commit": "a9d71750261f97a9b255579d90422af4134aca9d"
+    },
+    {
+      "id": "A-LH1",
+      "kind": "prompt",
+      "exit": 0,
+      "seconds": 41,
+      "is_error": false,
+      "turns": 6,
+      "cost_usd": 0.1454864,
+      "stderr": null
+    },
+    {
+      "id": "A-LH2",
+      "kind": "prompt",
+      "exit": 0,
+      "seconds": 41,
+      "is_error": false,
+      "turns": 4,
+      "cost_usd": 0.267121,
+      "stderr": null
+    },
+    {
+      "id": "A-LH3",
+      "kind": "prompt",
+      "exit": 0,
+      "seconds": 44,
+      "is_error": false,
+      "turns": 4,
+      "cost_usd": 0.443372,
+      "stderr": null
+    },
+    {
+      "id": "A-LH4",
+      "kind": "prompt",
+      "exit": 0,
+      "seconds": 15,
+      "is_error": false,
+      "turns": 2,
+      "cost_usd": 0.4866466,
+      "stderr": null
+    },
+    {
+      "id": "A-LH5",
+      "kind": "prompt",
+      "exit": 0,
+      "seconds": 61,
+      "is_error": false,
+      "turns": 9,
+      "cost_usd": 0.7372988,
+      "stderr": null
+    },
+    {
+      "id": "A-LH6",
+      "kind": "prompt",
+      "exit": 0,
+      "seconds": 63,
+      "is_error": false,
+      "turns": 7,
+      "cost_usd": 0.9887384000000002,
+      "stderr": null
+    },
+    {
+      "id": "A-LH7",
+      "kind": "attest",
+      "exit": 0,
+      "seconds": 2,
+      "is_error": false,
+      "turns": 0,
+      "cost_usd": 0.9887384000000002,
+      "stderr": null,
+      "commit": "70785a5f78d46867011318d2f886e318b2b1ba8f"
+    },
+    {
+      "id": "A-LH8",
+      "kind": "command",
+      "exit": 0,
+      "seconds": 2,
+      "is_error": false,
+      "turns": 0,
+      "cost_usd": 0.9887384000000002,
+      "stderr": null
+    },
+    {
+      "id": "A-LH9",
+      "kind": "prompt",
+      "exit": 0,
+      "seconds": 16,
+      "is_error": false,
+      "turns": 3,
+      "cost_usd": 1.0621480000000003,
+      "stderr": null
+    },
+    {
+      "id": "A-LH10",
+      "kind": "command",
+      "exit": 0,
+      "seconds": 2,
+      "is_error": false,
+      "turns": 0,
+      "cost_usd": 1.0621480000000003,
+      "stderr": null
+    },
+    {
+      "id": "A-LH11",
+      "kind": "prompt",
+      "exit": 0,
+      "seconds": 15,
+      "is_error": false,
+      "turns": 1,
+      "cost_usd": 1.0772326000000003,
+      "stderr": null
+    },
+    {
+      "id": "A-LH12",
+      "kind": "prompt",
+      "exit": 0,
+      "seconds": 17,
+      "is_error": false,
+      "turns": 2,
+      "cost_usd": 1.1406526000000003,
+      "stderr": null
+    },
+    {
+      "id": "A-LH13",
+      "kind": "prompt",
+      "exit": 0,
+      "seconds": 59,
+      "is_error": false,
+      "turns": 3,
+      "cost_usd": 1.3401966000000005,
+      "stderr": null
+    },
+    {
+      "id": "A-LH14",
+      "kind": "prompt",
+      "exit": 0,
+      "seconds": 4,
+      "is_error": false,
+      "turns": 1,
+      "cost_usd": 1.3623548000000005,
+      "stderr": null
+    },
+    {
+      "id": "A-LH15",
+      "kind": "prompt",
+      "exit": 0,
+      "seconds": 49,
+      "is_error": false,
+      "turns": 10,
+      "cost_usd": 1.6425736000000006,
+      "stderr": null
+    },
+    {
+      "id": "A-LH16",
+      "kind": "prompt",
+      "exit": 0,
+      "seconds": 4,
+      "is_error": false,
+      "turns": 1,
+      "cost_usd": 1.6625970000000005,
+      "stderr": null
+    },
+    {
+      "id": "A-LH17",
+      "kind": "hand edit",
+      "file": "memo.md"
+    },
+    {
+      "id": "A-LH18",
+      "kind": "prompt",
+      "exit": 0,
+      "seconds": 90,
+      "is_error": false,
+      "turns": 8,
+      "cost_usd": 2.0219418000000005,
+      "stderr": null
+    },
+    {
+      "id": "A-LH19",
+      "kind": "prompt",
+      "exit": 0,
+      "seconds": 25,
+      "is_error": false,
+      "turns": 2,
+      "cost_usd": 2.1298432000000003,
+      "stderr": null
+    },
+    {
+      "id": "A-LH20",
+      "kind": "prompt",
+      "exit": 0,
+      "seconds": 37,
+      "is_error": false,
+      "turns": 1,
+      "cost_usd": 2.2268714000000003,
+      "stderr": null
+    },
+    {
+      "id": "A-LH21",
+      "kind": "prompt",
+      "exit": 0,
+      "seconds": 4,
+      "is_error": false,
+      "turns": 1,
+      "cost_usd": 2.2764282000000002,
+      "stderr": null
+    },
+    {
+      "id": "A-LH22",
+      "kind": "author checks",
+      "crossref:10.4135/9781412984348": "matches Crossref",
+      "rerun": "reproduced 1 output files from 1 scripts"
+    },
+    {
+      "id": "A-LH23",
+      "kind": "attest",
+      "exit": 0,
+      "seconds": 2,
+      "is_error": false,
+      "turns": 0,
+      "cost_usd": 2.2764282000000002,
+      "stderr": null,
+      "commit": "71a3f9bfe6e8a74ad43ad3ad5d202facf19162ed"
+    }
+  ],
+  "session": "709ac12f-8a28-45d6-94c7-6723855f2c2d",
+  "verify_log": [
+    "OK  131 events  head 38aff1a835e2539e3d27818ad1671b62b63c85cffb191ce6bb123d6c2f4c1848  (/private/var/folders/_k/wpbxz8gn451dmsv_93z4yt6r0000gn/T/wd-scripted2-schools-low-high-7tqserxg/project/provenance/log/simulated-author-8f34/events.jsonl)",
+    "sidecars: 85 checked, 0 withheld",
+    "snapshots: 14 present, 0 withheld"
+  ],
+  "final_commit": "71a3f9bfe6e8a74ad43ad3ad5d202facf19162ed",
+  "finished": "2026-10-15T21:05:17",
+  "bundle_sha256": "5add947e1becb417c9cee1b42d640eb51d1187528c6cc3a850830d83104add1f"
+}

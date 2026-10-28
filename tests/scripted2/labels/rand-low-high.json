@@ -1,0 +1,1577 @@
+{
+ "run": "rand-low-high",
+ "status": "settled: Claude's labels (committed in cec27cb), with the author's rulings on the 11 new kinds and his spot-check of a random tenth of the labels applied by precedent (33 drawn, none changed), 2026-10-15",
+ "labeled_by": "Claude",
+ "date": "2026-10-15",
+ "units": [
+  {
+   "id": "K1",
+   "kind": "decision",
+   "row": "S1",
+   "label": "Research question",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "Does cost sharing reduce doctor visits? Evidence from the RAND Health Insurance Experiment"
+    }
+   ],
+   "discretion": "kept",
+   "certification": null,
+   "basis": "C-LH1 (T3): 'I'm studying whether cost sharing reduces doctor visits'",
+   "labeled": [],
+   "labeled_by": "planted",
+   "precedent": null
+  },
+  {
+   "id": "K2",
+   "kind": "decision",
+   "row": "S4",
+   "label": "Background synthesis (the author's paragraph, corrected at the author's request)",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "Aron-Dine, Einav, and Finkelstein (2013) revisit the experiment and conclude"
+    },
+    {
+     "file": "memo.md",
+     "quote": "RAND Health Insurance Experiment answered this by assigning families at"
+    }
+   ],
+   "discretion": "kept",
+   "certification": null,
+   "basis": "C-LH12 (T14) 'use the paragraphs I drafted ... as written'; the Aron-Dine sentence corrected in T17 because the author asked ('Fix anything they found wrong')",
+   "labeled": [],
+   "labeled_by": "planted",
+   "precedent": null
+  },
+  {
+   "id": "K3",
+   "kind": "decision",
+   "row": "S5a",
+   "label": "Sources for the background claims: Aron-Dine et al., Deb and Trivedi",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "Trivedi (2002) use the same data to model the demand for doctor visits."
+    },
+    {
+     "file": "memo.md",
+     "quote": "Aron-Dine, Einav, and Finkelstein (2013) revisit the experiment and conclude"
+    }
+   ],
+   "discretion": "kept",
+   "certification": null,
+   "basis": "C-LH12 (T14): the author's draft paragraph sets the citing",
+   "labeled": [],
+   "labeled_by": "planted",
+   "precedent": null
+  },
+  {
+   "id": "K4",
+   "kind": "decision",
+   "row": "S5b",
+   "label": "Source for the data description: Cameron and Trivedi",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "Cameron and Trivedi (2005), have one row per person-year, with the number of"
+    }
+   ],
+   "discretion": "kept",
+   "certification": null,
+   "basis": "C-LH12 (T14): the author's draft paragraph sets the citing",
+   "labeled": [],
+   "labeled_by": "planted",
+   "precedent": null
+  },
+  {
+   "id": "K5",
+   "kind": "decision",
+   "row": "S7",
+   "label": "Structure of the memo",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "## Pre-analysis plan"
+    },
+    {
+     "file": "memo.md",
+     "quote": "## Departures from the plan"
+    }
+   ],
+   "discretion": "given",
+   "certification": "okayed",
+   "basis": "C-LH11 (T13) 'Propose an outline'; C-LH12 (T14) 'Use your outline.'",
+   "labeled": [],
+   "labeled_by": "planted",
+   "precedent": null
+  },
+  {
+   "id": "K6",
+   "kind": "decision",
+   "row": "S8a",
+   "label": "What Table 1 shows: rate ratios, main model and robustness columns",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "**Table 1. Outpatient visits: main model and robustness checks**"
+    },
+    {
+     "file": "output/table1.md",
+     "quote": "# Table 1. Outpatient visits (mdvis): main model and robustness checks"
+    }
+   ],
+   "discretion": "kept",
+   "certification": null,
+   "basis": "C-LH2 (T4) 'each estimate, its standard error, and the number of person-years'; rate ratios from CLAUDE.md (rule 9); columns from C-LH6. Claude's stacked layout and starring are presentation inside it (T8 reply)",
+   "labeled": [],
+   "labeled_by": "planted",
+   "precedent": null
+  },
+  {
+   "id": "K7",
+   "kind": "decision",
+   "row": "S9",
+   "label": "Limitations",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "Without a person identifier, the standard errors treat each person-year as independent, so they are too small."
+    }
+   ],
+   "discretion": "kept",
+   "certification": null,
+   "basis": "C-LH14, the author's hand edit between T15 and T16",
+   "labeled": [],
+   "labeled_by": "planted",
+   "precedent": null
+  },
+  {
+   "id": "K8",
+   "kind": "decision",
+   "row": "QC1",
+   "label": "Data source: randhie in statsmodels",
+   "anchors": [
+    {
+     "file": "plan.md",
+     "quote": "Data: RAND Health Insurance Experiment, as bundled with statsmodels (`statsmodels.datasets.randhie`)."
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "data = sm.datasets.randhie.load_pandas().data"
+    }
+   ],
+   "discretion": "kept",
+   "certification": null,
+   "basis": "C-LH1 (T3): 'using the RAND Health Insurance Experiment data bundled with statsmodels'",
+   "labeled": [],
+   "labeled_by": "planted",
+   "precedent": null
+  },
+  {
+   "id": "K9",
+   "kind": "decision",
+   "row": "QK1",
+   "label": "Every person-year kept (main model)",
+   "anchors": [
+    {
+     "file": "analysis/analysis.py",
+     "quote": "# Keep every person-year, including those with zero visits."
+    },
+    {
+     "file": "memo.md",
+     "quote": "We report incidence-rate ratios and keep every person-year,"
+    }
+   ],
+   "discretion": "kept",
+   "certification": null,
+   "basis": "CLAUDE.md 'Keep every person-year in the data' (rule 9); the influential-observations check is the author-approved exception for that check only (T9)",
+   "labeled": [],
+   "labeled_by": "planted",
+   "precedent": null
+  },
+  {
+   "id": "K10",
+   "kind": "decision",
+   "row": "QA1",
+   "label": "Outcome: outpatient visits (mdvis)",
+   "anchors": [
+    {
+     "file": "analysis/analysis.py",
+     "quote": "OUTCOME = \"mdvis\""
+    },
+    {
+     "file": "plan.md",
+     "quote": "Number of outpatient visits (`mdvis`)."
+    }
+   ],
+   "discretion": "kept",
+   "certification": null,
+   "basis": "C-LH1 (T3): 'the outcome, the number of outpatient visits (mdvis)'",
+   "labeled": [],
+   "labeled_by": "planted",
+   "precedent": null
+  },
+  {
+   "id": "K11",
+   "kind": "decision",
+   "row": "QA2a",
+   "label": "Treatment: log coinsurance",
+   "anchors": [
+    {
+     "file": "plan.md",
+     "quote": "Plan's log coinsurance (`lncoins`)"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "TREATMENT = [\"lncoins\", \"idp\"]"
+    }
+   ],
+   "discretion": "kept",
+   "certification": null,
+   "basis": "C-LH1 (T3): 'the plan's log coinsurance (lncoins)'",
+   "labeled": [],
+   "labeled_by": "planted",
+   "precedent": null
+  },
+  {
+   "id": "K12",
+   "kind": "decision",
+   "row": "QA2b",
+   "label": "Treatment: individual deductible plan",
+   "anchors": [
+    {
+     "file": "plan.md",
+     "quote": "Whether the plan has an individual deductible (`idp`)"
+    }
+   ],
+   "discretion": "kept",
+   "certification": null,
+   "basis": "C-LH1 (T3): 'whether it has an individual deductible (idp)'",
+   "labeled": [],
+   "labeled_by": "planted",
+   "precedent": null
+  },
+  {
+   "id": "K13",
+   "kind": "decision",
+   "row": "QA3a",
+   "label": "Controls: health measures",
+   "anchors": [
+    {
+     "file": "plan.md",
+     "quote": "Self-rated health: `hlthg`, `hlthf`, `hlthp`"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "CONTROLS = [\"hlthg\", \"hlthf\", \"hlthp\", \"physlm\", \"disea\", \"lpi\"]"
+    }
+   ],
+   "discretion": "kept",
+   "certification": null,
+   "basis": "C-LH1 (T3): 'the controls, self-rated health (hlthg, hlthf, hlthp), physical limitation (physlm), and ... (disea)'",
+   "labeled": [],
+   "labeled_by": "planted",
+   "precedent": null
+  },
+  {
+   "id": "K14",
+   "kind": "decision",
+   "row": "QA3b",
+   "label": "Control added: participation incentive",
+   "anchors": [
+    {
+     "file": "plan.md",
+     "quote": "The model now also controls for the participation incentive (`lpi`). The"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "# lpi (participation incentive) is a departure from plan.md; see its"
+    }
+   ],
+   "discretion": "kept",
+   "certification": null,
+   "basis": "C-LH5 (T7): 'add the participation incentive (lpi) as a control'",
+   "labeled": [],
+   "labeled_by": "planted",
+   "precedent": null
+  },
+  {
+   "id": "K15",
+   "kind": "decision",
+   "row": "QA4",
+   "label": "Estimator: Poisson",
+   "anchors": [
+    {
+     "file": "plan.md",
+     "quote": "Poisson regression of `mdvis` on the treatment variables and controls."
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "\"Main: Poisson\": (sm.Poisson, y, X),"
+    },
+    {
+     "file": "memo.md",
+     "quote": "We estimate the number of outpatient visits with a Poisson regression on the"
+    }
+   ],
+   "discretion": "kept",
+   "certification": null,
+   "basis": "C-LH1 (T3): 'the model, a Poisson regression'",
+   "labeled": [],
+   "labeled_by": "planted",
+   "precedent": null
+  },
+  {
+   "id": "K16",
+   "kind": "decision",
+   "row": "QA6",
+   "label": "Inference: two-tailed at .05",
+   "anchors": [
+    {
+     "file": "analysis/analysis.py",
+     "quote": "ALPHA = 0.05  # two-tailed"
+    },
+    {
+     "file": "memo.md",
+     "quote": "* p < .05, two-tailed, using the worst-case standard error."
+    }
+   ],
+   "discretion": "kept",
+   "certification": null,
+   "basis": "CLAUDE.md 'Use two-tailed tests at the .05 level' (rule 9). Claude's stars on the worst-case SE (T8 reply; T18 item 17) refine it, as careful K20's t with G-1 df did",
+   "labeled": [],
+   "labeled_by": "planted",
+   "precedent": null
+  },
+  {
+   "id": "K17",
+   "kind": "decision",
+   "row": "QA7a",
+   "label": "Robustness: without influential observations (the skill's)",
+   "anchors": [
+    {
+     "file": "analysis/analysis.py",
+     "quote": "\"Robustness: without influential obs.\": (sm.Poisson, y[keep], X[keep]),"
+    },
+    {
+     "file": "memo.md",
+     "quote": "The model **without influential observations** gives larger effects (0.885"
+    },
+    {
+     "file": "plan.md",
+     "quote": "**Without influential observations.** The main model is refit without the"
+    }
+   ],
+   "discretion": "given",
+   "certification": "okayed",
+   "basis": "C-LH6 (T8) asked for the methods-kit robustness skill (rule 9: handed over); Claude first skipped this check for CLAUDE.md and offered options; C-LH7 (T9) 'Keep both checks', no reason for this one; T18 item 19, T19 'Keep them'",
+   "labeled": [],
+   "labeled_by": "planted",
+   "precedent": null
+  },
+  {
+   "id": "K18",
+   "kind": "decision",
+   "row": "QA7b",
+   "label": "Robustness: negative binomial (the skill's)",
+   "anchors": [
+    {
+     "file": "analysis/analysis.py",
+     "quote": "\"Robustness: negative binomial\": (sm.NegativeBinomial, y, X),"
+    },
+    {
+     "file": "memo.md",
+     "quote": "The **negative binomial** model allows visits to vary more than the Poisson"
+    }
+   ],
+   "discretion": "given",
+   "certification": "elaborated and okayed",
+   "basis": "C-LH6 (T8) the skill (rule 9); C-LH7 (T9) 'The negative binomial one matters here, because visits vary far more than a Poisson model allows'",
+   "labeled": [],
+   "labeled_by": "planted",
+   "precedent": null
+  },
+  {
+   "id": "K19",
+   "kind": "decision",
+   "row": "QM1",
+   "label": "Hypothesis",
+   "anchors": [
+    {
+     "file": "plan.md",
+     "quote": "People in plans with higher coinsurance make fewer outpatient doctor visits."
+    },
+    {
+     "file": "memo.md",
+     "quote": "The hypothesis was that people in plans with higher coinsurance make fewer"
+    }
+   ],
+   "discretion": "kept",
+   "certification": null,
+   "basis": "C-LH1 (T3): 'the hypothesis, that people in plans with higher coinsurance make fewer outpatient doctor visits'",
+   "labeled": [],
+   "labeled_by": "planted",
+   "precedent": null
+  },
+  {
+   "id": "K20",
+   "kind": "decision",
+   "row": "QM2",
+   "label": "Interpretation of the main result (coinsurance by tested plan, the deductible, the causal reading)",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "only by comparing free care with the 25%, 50%, and 95% plans."
+    },
+    {
+     "file": "memo.md",
+     "quote": "Two cautions keep this reading within what was tested."
+    },
+    {
+     "file": "memo.md",
+     "quote": "Plans with an individual deductible had about a quarter fewer visits than"
+    }
+   ],
+   "discretion": "given",
+   "certification": "changed",
+   "basis": "C-LH12 (T14) 'Interpret the main result'; C-LH13 (T15) 'Rewrite the interpretation so it speaks only to the coinsurance rates the experiment actually tested'",
+   "labeled": [],
+   "labeled_by": "planted",
+   "precedent": null
+  },
+  {
+   "id": "K21",
+   "kind": "decision",
+   "row": "QM3",
+   "label": "What gets reported",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "Table 1 reports the main model in its first column."
+    }
+   ],
+   "discretion": "kept",
+   "certification": null,
+   "basis": "C-LH12 (T14): 'Report Table 1 and the exploratory analysis, labeled as such'",
+   "labeled": [],
+   "labeled_by": "planted",
+   "precedent": null
+  },
+  {
+   "id": "K22",
+   "kind": "decision",
+   "row": "EX1",
+   "label": "Plans compared: all plans in the data",
+   "anchors": [
+    {
+     "file": "plan.md",
+     "quote": "Plan's log coinsurance (`lncoins`)"
+    },
+    {
+     "file": "memo.md",
+     "quote": "fewer outpatient visits. The plans in these data have coinsurance rates of"
+    }
+   ],
+   "discretion": "kept",
+   "certification": null,
+   "basis": "C-LH1 (T3): the randhie data and its treatment measures; no plan dropped",
+   "labeled": [],
+   "labeled_by": "planted",
+   "precedent": null
+  },
+  {
+   "id": "K23",
+   "kind": "decision",
+   "row": "EX4",
+   "label": "Repeated years per person, with no identifier: worst-case bound (robust SE x sqrt 5)",
+   "anchors": [
+    {
+     "file": "analysis/analysis.py",
+     "quote": "# The data have no person identifier, so SEs cannot be clustered by person."
+    },
+    {
+     "file": "memo.md",
+     "quote": "standard errors by person, and with these data there is no better option. We"
+    },
+    {
+     "file": "plan.md",
+     "quote": "**Bound for repeated people.** Most people appear in several years, but the"
+    }
+   ],
+   "discretion": "given",
+   "certification": "elaborated and okayed",
+   "basis": "C-LH3 (T5) 'Decide how the analysis should handle that'; C-LH4 (T6) 'Keep your approach. Without an identifier there's no better option'. Claude moved the bound from sqrt(3-4) to sqrt(5) after the approval and said so (T6 reply; T18 item 13)",
+   "labeled": [],
+   "labeled_by": "planted",
+   "precedent": null
+  },
+  {
+   "id": "K24",
+   "kind": "decision",
+   "row": "EX8",
+   "label": "The pre-analysis plan",
+   "anchors": [
+    {
+     "file": "plan.md",
+     "quote": "# Pre-analysis plan: Cost sharing and doctor visits (RAND HIE)"
+    },
+    {
+     "file": "memo.md",
+     "quote": "Before looking at the outcome data, we fixed the analysis in a written plan."
+    }
+   ],
+   "discretion": "kept",
+   "certification": null,
+   "basis": "C-LH1 (T3): 'a short pre-analysis plan in plan.md, with exactly these'",
+   "labeled": [],
+   "labeled_by": "planted",
+   "precedent": null
+  },
+  {
+   "id": "K25",
+   "kind": "decision",
+   "row": "EX9",
+   "label": "Departure: the participation incentive added",
+   "anchors": [
+    {
+     "file": "plan.md",
+     "quote": "### Added control: participation incentive"
+    },
+    {
+     "file": "memo.md",
+     "quote": "**Participation incentive.** We added the participation incentive as a"
+    }
+   ],
+   "discretion": "kept",
+   "certification": null,
+   "basis": "C-LH5 (T7): 'record the departure in plan.md under the heading \"Departures from the plan\", with the reason'",
+   "labeled": [],
+   "labeled_by": "planted",
+   "precedent": null
+  },
+  {
+   "id": "K26",
+   "kind": "decision",
+   "row": "EX11",
+   "label": "Exploratory analysis: coinsurance effect by poor health",
+   "anchors": [
+    {
+     "file": "analysis/exploratory.py",
+     "quote": "INTERACTION = \"lncoins_x_hlthp\""
+    },
+    {
+     "file": "memo.md",
+     "quote": "## Exploratory analysis: people in poor health"
+    },
+    {
+     "file": "plan.md",
+     "quote": "**Coinsurance effect by poor health.** People in poor health may have less"
+    }
+   ],
+   "discretion": "given",
+   "certification": "changed",
+   "basis": "C-LH8 (T10) 'Propose one exploratory analysis'; Claude proposed chronic disease; C-LH9 (T11) 'Use a different one: whether the effect of coinsurance differs for people in poor health'",
+   "labeled": [],
+   "labeled_by": "planted",
+   "precedent": null
+  },
+  {
+   "id": "K27",
+   "kind": "decision",
+   "row": "QA5",
+   "label": "Standard errors: robust (HC0) for overdispersion",
+   "anchors": [
+    {
+     "file": "analysis/analysis.py",
+     "quote": "label: model(y_, X_).fit(disp=False, cov_type=\"HC0\", maxiter=200)"
+    },
+    {
+     "file": "memo.md",
+     "quote": "heteroskedasticity-robust standard errors."
+    },
+    {
+     "file": "plan.md",
+     "quote": "**Robust standard errors.** The outcome is strongly overdispersed (Pearson"
+    }
+   ],
+   "discretion": "given",
+   "certification": "okayed",
+   "basis": "Which SEs is inside C-LH2's request for estimates with SEs and C-LH3's open request (T5 proposal); T6 'Keep your approach' (its reason is about the identifier, not overdispersion); T18 item 12, T19 'Keep them'",
+   "labeled": [
+    "discretion",
+    "certification"
+   ],
+   "labeled_by": "Claude, by precedent",
+   "precedent": "P1, P7"
+  },
+  {
+   "id": "K28",
+   "kind": "decision",
+   "row": "QA8",
+   "label": "Overdispersion diagnostic (Pearson chi2/df)",
+   "anchors": [
+    {
+     "file": "plan.md",
+     "quote": "χ²/df ≈ 6.3), so model-based Poisson standard errors are too small. The"
+    },
+    {
+     "file": "memo.md",
+     "quote": "Visits vary about six times as much as a Poisson model assumes, so we"
+    }
+   ],
+   "discretion": "taken",
+   "certification": "okayed",
+   "basis": "Run unasked in T4 (only the planned model was asked for); T4 reply reports it; T18 item 11 'Checking for overdispersion ... without being asked'; T19 'Keep them'",
+   "labeled": [
+    "discretion",
+    "certification"
+   ],
+   "labeled_by": "Claude, by precedent",
+   "precedent": "P2, P8"
+  },
+  {
+   "id": "K29",
+   "kind": "decision",
+   "row": "EX9",
+   "label": "Departure: the standard-error changes recorded as a departure from the plan",
+   "anchors": [
+    {
+     "file": "plan.md",
+     "quote": "The plan did not say which standard errors to use. The first run used"
+    },
+    {
+     "file": "memo.md",
+     "quote": "**Standard errors.** The plan did not say which standard errors to use."
+    }
+   ],
+   "discretion": "taken",
+   "certification": "okayed",
+   "basis": "Not asked: Claude's T5 'One process point ... I'd add a dated \"Deviations\" section'; T6 'Keep your approach' (reason about the identifier only); T18 items 3-4; T19 'Keep them'",
+   "labeled": [
+    "discretion",
+    "certification"
+   ],
+   "labeled_by": "Claude, by precedent",
+   "precedent": "P2, P7"
+  },
+  {
+   "id": "K30",
+   "kind": "decision",
+   "row": "EX9",
+   "label": "Departure: the robustness checks recorded as a departure, with the check-only exception",
+   "anchors": [
+    {
+     "file": "plan.md",
+     "quote": "The plan did not specify robustness checks. Two were added, chosen by a"
+    },
+    {
+     "file": "memo.md",
+     "quote": "**Robustness checks.** The plan named none. We added two (see below). One"
+    }
+   ],
+   "discretion": "taken",
+   "certification": "okayed",
+   "basis": "C-LH6 asked only to run the checks and add them to Table 1; Claude added the plan.md subsection in T9 (T9 reply says so); T18 item 6; T19 'Keep them'",
+   "labeled": [
+    "discretion",
+    "certification"
+   ],
+   "labeled_by": "Claude, by precedent",
+   "precedent": "P2, P8"
+  },
+  {
+   "id": "K31",
+   "kind": "decision",
+   "row": "S8b",
+   "label": "What Table 2 (exploratory) shows",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "**Table 2 (exploratory). Coinsurance effect by poor self-rated health**"
+    },
+    {
+     "file": "output/exploratory_poor_health.md",
+     "quote": "# Exploratory: coinsurance effect by poor self-rated health"
+    }
+   ],
+   "discretion": "given",
+   "certification": "okayed",
+   "basis": "Inside C-LH9/C-LH12 ('it goes in the memo, labeled exploratory'); T11 reply shows it; T14 reply 'its own Table 2'; T18 item 33 'Table 2 and its framing'; T19 'Keep them'",
+   "labeled": [
+    "discretion",
+    "certification"
+   ],
+   "labeled_by": "Claude, by precedent",
+   "precedent": "P1, P8"
+  },
+  {
+   "id": "K32",
+   "kind": "decision",
+   "row": "S8c",
+   "label": "Table of rate ratios by tested plan in the interpretation",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "| Plan | Rate ratio vs. free care | 95% CI (worst case) |"
+    }
+   ],
+   "discretion": "given",
+   "certification": "okayed",
+   "basis": "Made in T15 while rewriting the interpretation (inside C-LH12/C-LH13); T15 reply shows it; T18 item 34 'Converting the coinsurance estimate to plan-level rate ratios'; T19 'Keep them'",
+   "labeled": [
+    "discretion",
+    "certification"
+   ],
+   "labeled_by": "Claude, by precedent",
+   "precedent": "P1, P8"
+  },
+  {
+   "id": "K33",
+   "kind": "decision",
+   "row": "QM2",
+   "label": "Reading of the robustness checks (the influential-observations check describes lighter users)",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "It describes the effect among lighter users more than it tests the stability of the main estimate."
+    },
+    {
+     "file": "memo.md",
+     "quote": "so the main result does not depend on the Poisson assumption"
+    }
+   ],
+   "discretion": "given",
+   "certification": "okayed",
+   "basis": "The outline the author accepted (T13, T14 'Use your outline') names 'how to read the second check'; T18 item 39; T19 'Keep them'",
+   "labeled": [
+    "discretion",
+    "certification"
+   ],
+   "labeled_by": "Claude, by precedent",
+   "precedent": "P1, P8"
+  },
+  {
+   "id": "K34",
+   "kind": "decision",
+   "row": "QM2",
+   "label": "Reading of the exploratory result (the evidence is weak)",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "This evidence is weak."
+    },
+    {
+     "file": "memo.md",
+     "quote": "is consistent with the idea that sicker people cut back less, but it would"
+    }
+   ],
+   "discretion": "given",
+   "certification": "okayed",
+   "basis": "C-LH9 (T11) 'it goes in the memo, labeled exploratory'; accepted outline 'why the evidence is weak' (T14); T18 item 40; T19 'Keep them'",
+   "labeled": [
+    "discretion",
+    "certification"
+   ],
+   "labeled_by": "Claude, by precedent",
+   "precedent": "P1, P8"
+  },
+  {
+   "id": "K35",
+   "kind": "decision",
+   "row": "QM2",
+   "label": "Reading of the controls",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "The controls behave as expected: people with physical limitations or more chronic diseases see the doctor more often."
+    }
+   ],
+   "discretion": "taken",
+   "certification": "okayed",
+   "basis": "Only the main result was to be interpreted (C-LH12), and the outline's Results line names only the cost-sharing effects; T18 item 38 'the controls behave as expected'; T19 'Keep them'",
+   "labeled": [
+    "discretion",
+    "certification"
+   ],
+   "labeled_by": "Claude, by precedent",
+   "precedent": "P2, P8"
+  },
+  {
+   "id": "K36",
+   "kind": "claim",
+   "row": "V1",
+   "label": "Reference entry: Aron-Dine, Einav, and Finkelstein",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "Aron-Dine, A., Einav, L., & Finkelstein, A. (2013). The RAND Health Insurance Experiment, three decades later."
+    }
+   ],
+   "discretion": null,
+   "certification": "you checked it against the source",
+   "basis": "C-LH19, C-LH20 (T20): 'I checked the Aron-Dine, Einav, and Finkelstein reference against its Crossref record'",
+   "labeled": [],
+   "labeled_by": "planted",
+   "precedent": null
+  },
+  {
+   "id": "K37",
+   "kind": "claim",
+   "row": "V1",
+   "label": "Reference entry: Cameron and Trivedi",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "Cameron, A. C., & Trivedi, P. K. (2005). *Microeconometrics: Methods and applications*."
+    }
+   ],
+   "discretion": null,
+   "certification": "tool checked, you confirmed",
+   "basis": "Crossref lookup T16 (check 1); T17 'I've read the results'",
+   "labeled": [],
+   "labeled_by": "planted",
+   "precedent": null
+  },
+  {
+   "id": "K38",
+   "kind": "claim",
+   "row": "V1",
+   "label": "Reference entry: Deb and Trivedi (error 1)",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "Deb, P., & Trivedi, P. K. (2002). The structure of demand for health care: Latent class versus two-part models."
+    }
+   ],
+   "discretion": null,
+   "certification": "tool checked, you confirmed",
+   "basis": "Crossref lookup T16 found 601-625; T17 'I've read the results. Fix anything'; fixed T17",
+   "labeled": [],
+   "labeled_by": "planted",
+   "precedent": null
+  },
+  {
+   "id": "K39",
+   "kind": "claim",
+   "row": "V2",
+   "label": "Citation description: Aron-Dine et al. (error 2)",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "that its data still reject the hypothesis that use of care does not respond"
+    }
+   ],
+   "discretion": null,
+   "certification": "tool checked, you confirmed",
+   "basis": "PMC full text fetched T16 ('still reject the null hypothesis of no utilization response'); T17 'I've read the results'; rewritten T17",
+   "labeled": [],
+   "labeled_by": "planted",
+   "precedent": null
+  },
+  {
+   "id": "K40",
+   "kind": "claim",
+   "row": "V2",
+   "label": "Citation description: Deb and Trivedi",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "Trivedi (2002) use the same data to model the demand for doctor visits."
+    }
+   ],
+   "discretion": null,
+   "certification": "tool checked, you confirmed",
+   "basis": "T16 lookups (IDEAS page; search returning a description of the paper's RAND HIE data); T17 'I've read the results'",
+   "labeled": [],
+   "labeled_by": "planted",
+   "precedent": null
+  },
+  {
+   "id": "K41",
+   "kind": "claim",
+   "row": "V2",
+   "label": "Citation description: Cameron and Trivedi as the data's source",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "The data, a subset of those distributed by"
+    }
+   ],
+   "discretion": null,
+   "certification": "tool checked, you confirmed",
+   "basis": "statsmodels SOURCE printed T16 ('obtained from' Cameron and Trivedi; 'only a subset'); T17; reworded T17 from that output",
+   "labeled": [],
+   "labeled_by": "planted",
+   "precedent": null
+  },
+  {
+   "id": "K42",
+   "kind": "claim",
+   "row": "V5",
+   "label": "Where the experiment ran (error 3)",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "The experiment ran at six sites: Dayton, Ohio; Seattle, Washington;"
+    }
+   ],
+   "discretion": null,
+   "certification": "tool checked, you confirmed",
+   "basis": "T16 searches (ICPSR 6439 names the six sites); T17 'I've read the results'; fixed T17",
+   "labeled": [],
+   "labeled_by": "planted",
+   "precedent": null
+  },
+  {
+   "id": "K43",
+   "kind": "claim",
+   "row": "V5",
+   "label": "Random assignment of families to plans",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "RAND Health Insurance Experiment answered this by assigning families at"
+    }
+   ],
+   "discretion": null,
+   "certification": "tool checked, you confirmed",
+   "basis": "T16 check 3 (Aron-Dine et al. full text, search results); T17 'I've read the results'",
+   "labeled": [],
+   "labeled_by": "planted",
+   "precedent": null
+  },
+  {
+   "id": "K44",
+   "kind": "claim",
+   "row": "V4",
+   "label": "Number of person-years stated the same way throughout",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "outpatient doctor visits, using 20,190 person-years from the RAND Health"
+    },
+    {
+     "file": "memo.md",
+     "quote": "| Person-years | 20,190 | 16,844 | 20,190 |"
+    }
+   ],
+   "discretion": null,
+   "certification": "tool checked, you confirmed",
+   "basis": "Memo read T16 (check 4, 'stated the same way throughout'); T17",
+   "labeled": [],
+   "labeled_by": "planted",
+   "precedent": null
+  },
+  {
+   "id": "K45",
+   "kind": "claim",
+   "row": "QV1",
+   "label": "Mean visits in the text (error 4)",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "average is 2.86 outpatient visits."
+    }
+   ],
+   "discretion": null,
+   "certification": "tool checked, you confirmed",
+   "basis": "Mean recomputed from the data T16 (2.86; first computed T6 after the draft's 3.9 existed); T17; fixed T17",
+   "labeled": [],
+   "labeled_by": "planted",
+   "precedent": null
+  },
+  {
+   "id": "K46",
+   "kind": "claim",
+   "row": "QV1",
+   "label": "Table 1's numbers",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "| Log coinsurance | 0.916* | 0.885* | 0.917* |"
+    },
+    {
+     "file": "output/table1.md",
+     "quote": "| lncoins | 0.916* | 0.885* | 0.917* |"
+    }
+   ],
+   "discretion": null,
+   "certification": "you checked it against the source",
+   "basis": "C-LH19, C-LH20 (T20): 'I reran analysis.py myself and compared Table 1 with its output'",
+   "labeled": [],
+   "labeled_by": "planted",
+   "precedent": null
+  },
+  {
+   "id": "K47",
+   "kind": "claim",
+   "row": "QV2",
+   "label": "Description of the main result",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "The results support the hypothesis. Holding health and the"
+    },
+    {
+     "file": "memo.md",
+     "quote": "2.2 a year on average. Both effects are significant at the .05 level"
+    }
+   ],
+   "discretion": null,
+   "certification": "tool checked, you confirmed",
+   "basis": "T16 check 5 (memo read, output/table1.md printed); T17 'I've read the results'",
+   "labeled": [],
+   "labeled_by": "planted",
+   "precedent": null
+  },
+  {
+   "id": "K48",
+   "kind": "claim",
+   "row": "QV3",
+   "label": "Description of the methods (error 5)",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "We estimate the number of outpatient visits with a Poisson regression on the"
+    },
+    {
+     "file": "memo.md",
+     "quote": "heteroskedasticity-robust standard errors."
+    }
+   ],
+   "discretion": null,
+   "certification": "no check",
+   "basis": "T16 check 6: refit with analysis.py's own variable lists (Poisson, HC0, n = 20,190) matched its output; T17. The OLS sentence was gone since T6 Harmonized on review (Claude, Oct 15): no tool call read analysis.py during the checks; refitting the model from the script's variable lists doesn't compare the description with the code (P13; the first test's careful K47; schools-low-high K49).",
+   "labeled": [
+    "override"
+   ],
+   "labeled_by": "Claude, by precedent",
+   "precedent": "P13"
+  },
+  {
+   "id": "K49",
+   "kind": "claim",
+   "row": "EXV3",
+   "label": "The memo's account of the plan and its departures",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "Before looking at the outcome data, we fixed the analysis in a written plan."
+    },
+    {
+     "file": "memo.md",
+     "quote": "All of the following were decided after the first results had been seen."
+    }
+   ],
+   "discretion": null,
+   "certification": "no check",
+   "basis": "Planted 'tool checked, you confirmed'. No tool call in T16 (or after the memo was written) read plan.md; the T16 'matches' is from Claude's own knowledge (rule 9 of the first test; careful K47)",
+   "labeled": [
+    "override"
+   ],
+   "labeled_by": "Claude, by precedent",
+   "precedent": "P13"
+  },
+  {
+   "id": "K50",
+   "kind": "claim",
+   "row": "V5",
+   "label": "What the data contain (one row per person-year; visits, coinsurance, deductible, health)",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "outpatient doctor visits, the plan's coinsurance rate, whether the plan had"
+    }
+   ],
+   "discretion": null,
+   "certification": "tool checked, you confirmed",
+   "basis": "The author's sentence; statsmodels documentation printed T16 (check 3); T17 'I've read the results'",
+   "labeled": [
+    "certification"
+   ],
+   "labeled_by": "Claude, by precedent",
+   "precedent": "P13, P14"
+  },
+  {
+   "id": "K51",
+   "kind": "claim",
+   "row": "V5",
+   "label": "No one was enrolled for more than five years",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "instead report a worst case: since no one was enrolled for more than five"
+    },
+    {
+     "file": "plan.md",
+     "quote": "one was enrolled for more than 5 years, standard errors clustered by person"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "# HIE enrollment lasted at most 5 years, so no person contributes more than"
+    }
+   ],
+   "discretion": null,
+   "certification": "tool checked, you confirmed",
+   "basis": "Claude's claim (T6); T16 PMC fetch 'Families were covered for three to five years' (check 3); T17",
+   "labeled": [
+    "certification"
+   ],
+   "labeled_by": "Claude, by precedent",
+   "precedent": "P13, P14"
+  },
+  {
+   "id": "K52",
+   "kind": "claim",
+   "row": "V5",
+   "label": "The plans ran for three or five years (the author's limitations)",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "The plans ran for three or five years, and people may have delayed or moved care around the plan's start and end."
+    }
+   ],
+   "discretion": null,
+   "certification": "tool checked, you confirmed",
+   "basis": "The author's hand edit; T16 check 3 row 'plans ran 3 or 5 years (Limitations)', PMC source; T17",
+   "labeled": [
+    "certification"
+   ],
+   "labeled_by": "Claude, by precedent",
+   "precedent": "P13, P14"
+  },
+  {
+   "id": "K53",
+   "kind": "claim",
+   "row": "V5",
+   "label": "Incentive payments differed by plan",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "Incentive payments differed by plan and could themselves affect"
+    },
+    {
+     "file": "plan.md",
+     "quote": "incentive payments differed by plan and could themselves affect visits, so"
+    }
+   ],
+   "discretion": null,
+   "certification": "tool checked, you confirmed",
+   "basis": "The author's reason (C-LH5); T16 PMC fetch 'higher lump-sum payment to families assigned to less comprehensive plans'; T17",
+   "labeled": [
+    "certification"
+   ],
+   "labeled_by": "Claude, by precedent",
+   "precedent": "P13, P14"
+  },
+  {
+   "id": "K54",
+   "kind": "claim",
+   "row": "QV1",
+   "label": "Main-result numbers in the summary",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "coinsurance goes with about 8% fewer visits (incidence-rate ratio [IRR] 0.916),"
+    },
+    {
+     "file": "memo.md",
+     "quote": "free care to 95% coinsurance goes with about a third fewer visits, from 3.3 to"
+    }
+   ],
+   "discretion": null,
+   "certification": "tool checked, you confirmed",
+   "basis": "Recomputed T16 (IRR 0.9163, 0.7387; 3.325 to 2.231); T17",
+   "labeled": [
+    "certification"
+   ],
+   "labeled_by": "Claude, by precedent",
+   "precedent": "P13, P14"
+  },
+  {
+   "id": "K55",
+   "kind": "claim",
+   "row": "QV1",
+   "label": "Overdispersion figure (about six times; chi2/df 6.3)",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "Visits vary about six times as much as a Poisson model assumes, so we"
+    },
+    {
+     "file": "plan.md",
+     "quote": "χ²/df ≈ 6.3), so model-based Poisson standard errors are too small. The"
+    }
+   ],
+   "discretion": null,
+   "certification": "tool checked, you confirmed",
+   "basis": "Recomputed T16 ('Pearson chi2/df (with lpi) 6.3'); T17",
+   "labeled": [
+    "certification"
+   ],
+   "labeled_by": "Claude, by precedent",
+   "precedent": "P13, P14"
+  },
+  {
+   "id": "K56",
+   "kind": "claim",
+   "row": "QV1",
+   "label": "Rate ratios by tested plan (table in the interpretation)",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "| 25% coinsurance | 0.75 | [0.69, 0.82] |"
+    }
+   ],
+   "discretion": null,
+   "certification": "tool checked, you confirmed",
+   "basis": "Each ratio and worst-case interval recomputed T16; T17",
+   "labeled": [
+    "certification"
+   ],
+   "labeled_by": "Claude, by precedent",
+   "precedent": "P13, P14, P15"
+  },
+  {
+   "id": "K57",
+   "kind": "claim",
+   "row": "QV1",
+   "label": "Interpretation numbers: 25%, 29%, 33% fewer; 3.3 to 2.2 visits",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "That is, about 25%, 29%, and 33% fewer visits than under free care. Averaged"
+    },
+    {
+     "file": "memo.md",
+     "quote": "over the sample, expected visits fall from 3.3 a year under free care to 2.2"
+    }
+   ],
+   "discretion": null,
+   "certification": "tool checked, you confirmed",
+   "basis": "Recomputed T16; T17",
+   "labeled": [
+    "certification"
+   ],
+   "labeled_by": "Claude, by precedent",
+   "precedent": "P13, P14"
+  },
+  {
+   "id": "K58",
+   "kind": "claim",
+   "row": "QV1",
+   "label": "Worst-case minimum reductions (at least 17% and 23%)",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "fewer visits than under free care in each of these plans, by at least 17% in"
+    }
+   ],
+   "discretion": null,
+   "certification": "tool checked, you confirmed",
+   "basis": "T16 recomputed 17.5% and 23.7% and flagged the old 18%/24%; T17 'I've read the results. Fix'; written T17 from the check's figures",
+   "labeled": [
+    "certification"
+   ],
+   "labeled_by": "Claude, by precedent",
+   "precedent": "P14"
+  },
+  {
+   "id": "K59",
+   "kind": "claim",
+   "row": "QV1",
+   "label": "Deductible numbers (0.74; 3.1 vs 2.3 visits)",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "3.1 visits a year without a deductible and 2.3 with one)."
+    }
+   ],
+   "discretion": null,
+   "certification": "tool checked, you confirmed",
+   "basis": "Recomputed T16 (3.088, 2.281); T17",
+   "labeled": [
+    "certification"
+   ],
+   "labeled_by": "Claude, by precedent",
+   "precedent": "P13, P14"
+  },
+  {
+   "id": "K60",
+   "kind": "claim",
+   "row": "QV1",
+   "label": "Negative binomial numbers in the text",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "(0.917 for coinsurance, 0.749 for the deductible), so the main result does"
+    }
+   ],
+   "discretion": null,
+   "certification": "tool checked, you confirmed",
+   "basis": "Compared with output/table1.md printed T16 (check 5); T17",
+   "labeled": [
+    "certification"
+   ],
+   "labeled_by": "Claude, by precedent",
+   "precedent": "P13, P14"
+  },
+  {
+   "id": "K61",
+   "kind": "claim",
+   "row": "QV1",
+   "label": "Influential-observations numbers (0.885, 0.618; 3,346 dropped, 17%, 8.1 visits, 737 zeros)",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "and 0.618). This check should be read with care: it drops 3,346 person-years"
+    },
+    {
+     "file": "memo.md",
+     "quote": "(17%), mostly heavy users averaging 8.1 visits a year, along with 737"
+    },
+    {
+     "file": "plan.md",
+     "quote": "person-years, 737 of them with zero visits."
+    }
+   ],
+   "discretion": null,
+   "certification": "tool checked, you confirmed",
+   "basis": "Recomputed T16 ('dropped 3346 0.1657 ... mean visits dropped 8.12 zeros 737'); T17",
+   "labeled": [
+    "certification"
+   ],
+   "labeled_by": "Claude, by precedent",
+   "precedent": "P13, P14"
+  },
+  {
+   "id": "K62",
+   "kind": "claim",
+   "row": "QV1",
+   "label": "Table 2's numbers (exploratory)",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "| Log coinsurance, in poor health | 1.014 | [0.945, 1.088] | .70 | [0.866, 1.188] | .86 |"
+    },
+    {
+     "file": "output/exploratory_poor_health.md",
+     "quote": "| lncoins, in poor health | 1.014 | 0.037 | [0.945, 1.088] | 0.697 | [0.866, 1.188] | 0.862 |"
+    }
+   ],
+   "discretion": null,
+   "certification": "tool checked, you confirmed",
+   "basis": "output/exploratory_poor_health.md printed T16 and compared with the memo (checks 4-5); T17",
+   "labeled": [
+    "certification"
+   ],
+   "labeled_by": "Claude, by precedent",
+   "precedent": "P13, P14, P15"
+  },
+  {
+   "id": "K63",
+   "kind": "claim",
+   "row": "QV1",
+   "label": "Exploratory effect numbers (9% fewer; 1.1 fewer vs 0.4 more)",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "Among people not in poor health, each unit of log coinsurance goes with about"
+    },
+    {
+     "file": "memo.md",
+     "quote": "goes with 1.1 fewer visits a year for people not in poor health, and 0.4 more for people in poor health."
+    }
+   ],
+   "discretion": null,
+   "certification": "tool checked, you confirmed",
+   "basis": "Compared with the exploratory output printed T16; T17",
+   "labeled": [
+    "certification"
+   ],
+   "labeled_by": "Claude, by precedent",
+   "precedent": "P13, P14"
+  },
+  {
+   "id": "K64",
+   "kind": "claim",
+   "row": "QV1",
+   "label": "Poor-health counts (302, 1.5%, 207, fewer than 100)",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "This evidence is weak. Only 302 of 20,190 person-years (1.5%) are in poor"
+    },
+    {
+     "file": "memo.md",
+     "quote": "health, and 207 of those are in the free-care plan, so the poor-health"
+    }
+   ],
+   "discretion": null,
+   "certification": "tool checked, you confirmed",
+   "basis": "Recomputed T16 ('poor 302 0.015 poor free 207 poor with coins 95'); T17",
+   "labeled": [
+    "certification"
+   ],
+   "labeled_by": "Claude, by precedent",
+   "precedent": "P13, P14"
+  },
+  {
+   "id": "K65",
+   "kind": "claim",
+   "row": "QV1",
+   "label": "Coinsurance levels in the data and the 1,074 person-years coded at 100%",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "0% (free care), 25%, 50%, and 95%; another 1,074 person-years, all in plans"
+    }
+   ],
+   "discretion": null,
+   "certification": "no check",
+   "basis": "Produced from the T15 crosstab and written in T17 as a fix the author asked for; no later tool call compared it",
+   "labeled": [
+    "certification"
+   ],
+   "labeled_by": "Claude, by precedent",
+   "precedent": "P12, P13"
+  },
+  {
+   "id": "K66",
+   "kind": "claim",
+   "row": "QV1",
+   "label": "Conclusion's numbers (a third fewer; a quarter fewer)",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "Experiment. People facing 95% coinsurance made about a third fewer visits"
+    },
+    {
+     "file": "memo.md",
+     "quote": "than people with free care, and an individual deductible reduced visits by"
+    }
+   ],
+   "discretion": null,
+   "certification": "tool checked, you confirmed",
+   "basis": "Same values recomputed T16 (0.671, 0.739) against the memo read in T16; T17",
+   "labeled": [
+    "certification"
+   ],
+   "labeled_by": "Claude, by precedent",
+   "precedent": "P13, P14"
+  },
+  {
+   "id": "K67",
+   "kind": "claim",
+   "row": "QV2",
+   "label": "Description of the robustness results",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "as a Poisson model assumes. It gives almost the same cost-sharing estimates"
+    },
+    {
+     "file": "memo.md",
+     "quote": "cost-sharing effects point the same way and are significant under the"
+    }
+   ],
+   "discretion": null,
+   "certification": "tool checked, you confirmed",
+   "basis": "T16 check 5 against output/table1.md; T17",
+   "labeled": [
+    "certification"
+   ],
+   "labeled_by": "Claude, by precedent",
+   "precedent": "P13, P14"
+  },
+  {
+   "id": "K68",
+   "kind": "claim",
+   "row": "QV2",
+   "label": "Description of the exploratory result",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "effect. The difference between the two is significant with robust standard"
+    },
+    {
+     "file": "memo.md",
+     "quote": "9% fewer visits. Among people in poor health, the estimate is close to no"
+    }
+   ],
+   "discretion": null,
+   "certification": "tool checked, you confirmed",
+   "basis": "Table 2 p-values compared with the output T16 (check 4); T17",
+   "labeled": [
+    "certification"
+   ],
+   "labeled_by": "Claude, by precedent",
+   "precedent": "P13, P14"
+  },
+  {
+   "id": "K69",
+   "kind": "claim",
+   "row": "QV2",
+   "label": "Description of the controls' results",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "The controls behave as expected: people with physical limitations or more chronic diseases see the doctor more often."
+    }
+   ],
+   "discretion": null,
+   "certification": "tool checked, you confirmed",
+   "basis": "Claude's added sentence; T16 check 5 'Physical limitation and chronic diseases go with more visits'; T17",
+   "labeled": [
+    "certification"
+   ],
+   "labeled_by": "Claude, by precedent",
+   "precedent": "P13, P14"
+  },
+  {
+   "id": "K70",
+   "kind": "claim",
+   "row": "QV3",
+   "label": "Description of the robustness methods",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "check without influential observations drops the 3,346 person-years whose"
+    },
+    {
+     "file": "memo.md",
+     "quote": "Cook's distance in the main model exceeds 4/n."
+    }
+   ],
+   "discretion": null,
+   "certification": "no check",
+   "basis": "T16 check 6; the Cook's distance cut recomputed in T16 (3,346 dropped); T17 Harmonized on review (Claude, Oct 15): no tool call read analysis.py during the checks; refitting the model from the script's variable lists doesn't compare the description with the code (P13; the first test's careful K47; schools-low-high K49).",
+   "labeled": [
+    "certification"
+   ],
+   "labeled_by": "Claude, by precedent",
+   "precedent": "P13"
+  },
+  {
+   "id": "K71",
+   "kind": "claim",
+   "row": "QV3",
+   "label": "Description of the exploratory method",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "log coinsurance and poor self-rated health to the main Poisson model, keeping"
+    }
+   ],
+   "discretion": null,
+   "certification": "no check",
+   "basis": "exploratory.py was not read or rerun in T16 (only its output was printed); part of what was asked",
+   "labeled": [
+    "certification"
+   ],
+   "labeled_by": "Claude, by precedent",
+   "precedent": "P12, P13"
+  }
+ ]
+}

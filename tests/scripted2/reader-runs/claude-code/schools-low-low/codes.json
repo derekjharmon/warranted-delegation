@@ -1,0 +1,586 @@
+{
+ "U50": {
+  "id": "U50",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T4, T5, T7",
+  "basis": "table produced by script; no comparison with a source; T7 copy of table1.md",
+  "confidence": "high"
+ },
+ "U51": {
+  "id": "U51",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T3",
+  "basis": "tool loaded data: \"Districts: 303\", assert len(df)==303; T4 prompt doesn't acknowledge",
+  "confidence": "medium"
+ },
+ "U52": {
+  "id": "U52",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3, T7",
+  "basis": "mean computed by script (producing, not checking); \"Mean of the outcome: 0.437\"",
+  "confidence": "medium"
+ },
+ "U53": {
+  "id": "U53",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T5",
+  "basis": "\"dropped 15 districts\" produced by the refit; no independent check",
+  "confidence": "medium"
+ },
+ "U54": {
+  "id": "U54",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T4, T7",
+  "basis": "text copies table value; no comparison tool call",
+  "confidence": "high"
+ },
+ "U55": {
+  "id": "U55",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T4, T7",
+  "basis": "AME computed by script; no check",
+  "confidence": "high"
+ },
+ "U56": {
+  "id": "U56",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T7",
+  "basis": "bash computed \"26.7 51.2\"; producing, not checking; T7 reply unanswered",
+  "confidence": "high"
+ },
+ "U57": {
+  "id": "U57",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T7",
+  "basis": "bash computed \"55.5 35.3\"; no check",
+  "confidence": "high"
+ },
+ "U58": {
+  "id": "U58",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T7",
+  "basis": "\"a gap of about 16 points\" derived from computed predictions",
+  "confidence": "high"
+ },
+ "U59": {
+  "id": "U59",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T5, T7",
+  "basis": "text copies robustness columns; no check",
+  "confidence": "high"
+ },
+ "U60": {
+  "id": "U60",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T5, T7",
+  "basis": "\"p from 0.13 to 0.92\" summarizes the table; no check",
+  "confidence": "high"
+ },
+ "U61": {
+  "id": "U61",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T5, T7",
+  "basis": "year-round p-values copied from table; no check",
+  "confidence": "high"
+ },
+ "U62": {
+  "id": "U62",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T4, T7",
+  "basis": "R\u00b2 computed by script; no check",
+  "confidence": "high"
+ },
+ "U63": {
+  "id": "U63",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T5, T7",
+  "basis": "interpretation asked for (\"Interpret the main result\"); no check",
+  "confidence": "high"
+ },
+ "U64": {
+  "id": "U64",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T5, T7",
+  "basis": "\"Both results hold in two robustness checks\"; no check",
+  "confidence": "high"
+ },
+ "U65": {
+  "id": "U65",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T7",
+  "basis": "\"significant at p < .001 in every column\" written in an open-structure memo; no check",
+  "confidence": "medium"
+ },
+ "U66": {
+  "id": "U66",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T5, T7",
+  "basis": "\"not statistically significant in any column\"; no check",
+  "confidence": "high"
+ },
+ "U67": {
+  "id": "U67",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T5, T7",
+  "basis": "year-round reading from table; no check",
+  "confidence": "high"
+ },
+ "U68": {
+  "id": "U68",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T4, T7",
+  "basis": "methods description of code written by Claude; no comparison",
+  "confidence": "high"
+ },
+ "U69": {
+  "id": "U69",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3, T4, T7",
+  "basis": "outcome/covariate description; no comparison against code",
+  "confidence": "high"
+ },
+ "U70": {
+  "id": "U70",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5",
+  "basis": "tool compared scale 1.0 vs \"pearson/df 0.032\", \"X2 scale ... n over 15 True\"; author didn't respond to T5 reply",
+  "confidence": "medium"
+ },
+ "U71": {
+  "id": "U71",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T3, T5",
+  "basis": "assert ((y > 0) & (y < 1)).all() ran; \"All 303 shares are strictly between 0 and 1\"",
+  "confidence": "medium"
+ },
+ "U72": {
+  "id": "U72",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T3, T4",
+  "basis": "assert notna ran; \"303, with no missing values\"; author didn't confirm",
+  "confidence": "medium"
+ },
+ "U48": {
+  "id": "U48",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T3",
+  "basis": "compared loader to raw CSV, output \"True\"; \"I compared the result with the raw CSV\"; T4 doesn't acknowledge",
+  "confidence": "medium"
+ },
+ "U73": {
+  "id": "U73",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T7",
+  "basis": "tool Read output/figure1.png; T7 reply unanswered (only bare /attest final)",
+  "confidence": "low"
+ },
+ "U36": {
+  "id": "U36",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T1, T7",
+  "basis": "copied from author's notes/references.md and draft 'as compiled by Gill (2001)'; no lookup",
+  "confidence": "high"
+ },
+ "U37": {
+  "id": "U37",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T1, T7",
+  "basis": "reference from author's notes/references.md; no tool looked it up",
+  "confidence": "medium"
+ },
+ "U38": {
+  "id": "U38",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T4, T7",
+  "basis": "Claude changed year to 1999 from memory ('QJE volume 114(2) is the 1999 issue'); no lookup; author never replied",
+  "confidence": "medium"
+ },
+ "U39": {
+  "id": "U39",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T4, T7",
+  "basis": "'already in your references'; no lookup of source",
+  "confidence": "high"
+ },
+ "U40": {
+  "id": "U40",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3, T7",
+  "basis": "Claude reversed draft wording ('That review is known for the opposite'); reported, no tool check",
+  "confidence": "medium"
+ },
+ "U41": {
+  "id": "U41",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T1, T7",
+  "basis": "author's draft sentence kept, year corrected; no source check",
+  "confidence": "medium"
+ },
+ "U42": {
+  "id": "U42",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T4, T7",
+  "basis": "'keeps predicted shares between 0 and 1'; Claude's description of requested model, not checked",
+  "confidence": "medium"
+ },
+ "U43": {
+  "id": "U43",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T1, T7",
+  "basis": "author's draft 'as compiled by Gill (2001)'; not checked",
+  "confidence": "high"
+ },
+ "U44": {
+  "id": "U44",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T4, T7",
+  "basis": "'That fits Hanushek's (1997) finding' \u2014 interpretation asked for; no source check",
+  "confidence": "medium"
+ },
+ "U45": {
+  "id": "U45",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T4, T7",
+  "basis": "memo interpretation under open request 'whatever structure'; no check of Krueger",
+  "confidence": "low"
+ },
+ "U46": {
+  "id": "U46",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3, T5, T7",
+  "basis": "counts produced by script runs ('dropped 15 districts'); no comparison of text against table",
+  "confidence": "low"
+ },
+ "U47": {
+  "id": "U47",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T4, T7",
+  "basis": "AME produced by script; nothing compared memo wording to note",
+  "confidence": "medium"
+ },
+ "U49": {
+  "id": "U49",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3, T7",
+  "basis": "author: 'data are the 1998 California STAR results'; district rows Claude's correction, not checked against documentation",
+  "confidence": "medium"
+ },
+ "U17": {
+  "id": "U17",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3",
+  "basis": "'share of ninth graders above the national median (NABOVE divided by NABOVE plus NBELOW)'",
+  "confidence": "high"
+ },
+ "U18": {
+  "id": "U18",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3",
+  "basis": "'hypothesis is that districts with more low-income students have a smaller share'",
+  "confidence": "high"
+ },
+ "U19": {
+  "id": "U19",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T4",
+  "basis": "'Pick the school-resource and demographic controls'; reply listed controls and PCTAF exclusion; no response",
+  "confidence": "high"
+ },
+ "U20": {
+  "id": "U20",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T4",
+  "basis": "'choose a model suited to a share'; reply 'Model: a fractional logit'; no response",
+  "confidence": "high"
+ },
+ "U21": {
+  "id": "U21",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T4",
+  "basis": "part of model choice; reply 'Each district counts equally'; no response",
+  "confidence": "medium"
+ },
+ "U22": {
+  "id": "U22",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T1, T2",
+  "basis": "CLAUDE.md: 'Use heteroskedasticity-robust (HC1) standard errors in every model'",
+  "confidence": "high"
+ },
+ "U23": {
+  "id": "U23",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T1, T2",
+  "basis": "CLAUDE.md: 'two-tailed tests at the .05 level, and report exact p-values'",
+  "confidence": "medium"
+ },
+ "U24": {
+  "id": "U24",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T5",
+  "basis": "author asked for methods-kit robustness skill (plugin-written): 'Cook's distance exceeds 4/n'; Pearson dispersion fix reported, no response",
+  "confidence": "high"
+ },
+ "U25": {
+  "id": "U25",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T5",
+  "basis": "methods-kit robustness skill (plugin-written): 'log-odds of the outcome ... in a linear model'; reported, no response",
+  "confidence": "high"
+ },
+ "U26": {
+  "id": "U26",
+  "discretion": "taken",
+  "certification": "ignored",
+  "turns": "T4, T7",
+  "basis": "T4 asked only coefficients, SEs, N, fit statistic; reply 'Converted to a change in the share... 0.50'; no response",
+  "confidence": "medium"
+ },
+ "U27": {
+  "id": "U27",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T4, T5",
+  "basis": "'and a fit statistic'; reply 'R\u00b2 = 0.80, measured as the squared correlation'; no response",
+  "confidence": "high"
+ },
+ "U28": {
+  "id": "U28",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T7",
+  "basis": "'Interpret the main result'; reply '51.2% ... 35.3% ... gap of about 16 points'; author never responded",
+  "confidence": "high"
+ },
+ "U13": {
+  "id": "U13",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3",
+  "basis": "\"1998 California STAR results bundled with statsmodels\"; Gill (2001) from author's draft",
+  "confidence": "high"
+ },
+ "U14": {
+  "id": "U14",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3",
+  "basis": "\"California school district's ninth graders do in math\"; \"keep all 303 districts\"",
+  "confidence": "high"
+ },
+ "U15": {
+  "id": "U15",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3",
+  "basis": "\"keep all 303 districts\"",
+  "confidence": "high"
+ },
+ "U16": {
+  "id": "U16",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3",
+  "basis": "\"NABOVE divided by NABOVE plus NBELOW\"",
+  "confidence": "high"
+ },
+ "U29": {
+  "id": "U29",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3",
+  "basis": "\"My hypothesis is that districts with more low-income students have a smaller share\"",
+  "confidence": "high"
+ },
+ "U30": {
+  "id": "U30",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T7",
+  "basis": "\"Interpret the main result\"; T7 reply described interpretation, no response",
+  "confidence": "medium"
+ },
+ "U31": {
+  "id": "U31",
+  "discretion": "taken",
+  "certification": "ignored",
+  "turns": "T4, T5, T7",
+  "basis": "only main result asked; T4 reply \"Racial composition: all three shares matter\", never answered",
+  "confidence": "medium"
+ },
+ "U32": {
+  "id": "U32",
+  "discretion": "taken",
+  "certification": "ignored",
+  "turns": "T4, T5, T7",
+  "basis": "T4 reply \"fits Hanushek's (1997) finding\"; author never responded",
+  "confidence": "medium"
+ },
+ "U33": {
+  "id": "U33",
+  "discretion": "taken",
+  "certification": "ignored",
+  "turns": "T4, T5, T7",
+  "basis": "T5 reply \"the memo shouldn't present it as a finding\"; no response",
+  "confidence": "medium"
+ },
+ "U34": {
+  "id": "U34",
+  "discretion": "taken",
+  "certification": "ignored",
+  "turns": "T4, T7",
+  "basis": "T4 reply \"R\u00b2 = 0.80\"; fit interpretation beyond main result, no response",
+  "confidence": "low"
+ },
+ "U35": {
+  "id": "U35",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T4, T5, T7",
+  "basis": "\"coefficients with standard errors, the number of districts, and a fit statistic\"; AME mentioned T4, no response",
+  "confidence": "medium"
+ },
+ "U1": {
+  "id": "U1",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3",
+  "basis": "\"what predicts how well a California school district's ninth graders do in math\"",
+  "confidence": "high"
+ },
+ "U2": {
+  "id": "U2",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3",
+  "basis": "\"framing it as an education production function\"",
+  "confidence": "high"
+ },
+ "U3": {
+  "id": "U3",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3",
+  "basis": "\"following Hanushek and Krueger\"",
+  "confidence": "high"
+ },
+ "U4": {
+  "id": "U4",
+  "discretion": "taken",
+  "certification": "ignored",
+  "turns": "T7",
+  "basis": "draft put both on same side; Claude rewrote as contrast despite \"as written\"; T7 reply table, no response",
+  "confidence": "medium"
+ },
+ "U5": {
+  "id": "U5",
+  "discretion": "taken",
+  "certification": "ignored",
+  "turns": "T3, T7",
+  "basis": "\"use the paragraphs ... as written\" yet Claude reversed Hanushek claim; reported T7, no response",
+  "confidence": "high"
+ },
+ "U6": {
+  "id": "U6",
+  "discretion": "taken",
+  "certification": "ignored",
+  "turns": "T4, T7",
+  "basis": "Claude changed \"Krueger (1998)\" to 1999; reported in T7 table, no response",
+  "confidence": "medium"
+ },
+ "U7": {
+  "id": "U7",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T4",
+  "basis": "\"choose a model suited to a share\"; reply named Papke & Wooldridge, no okay",
+  "confidence": "high"
+ },
+ "U8": {
+  "id": "U8",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T1, T7",
+  "basis": "author's draft: \"as compiled by Gill (2001)\"",
+  "confidence": "high"
+ },
+ "U9": {
+  "id": "U9",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T7",
+  "basis": "\"with whatever structure you think works best\"; reply listed sections, no response",
+  "confidence": "medium"
+ },
+ "U10": {
+  "id": "U10",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T4, T5, T7",
+  "basis": "\"have the script write Table 1\"; later \"Report Table 1 as it is\"",
+  "confidence": "medium"
+ },
+ "U11": {
+  "id": "U11",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T7",
+  "basis": "\"Add one figure of your choice\" (dataviz skill, built-in); reply described figure, no response",
+  "confidence": "high"
+ },
+ "U12": {
+  "id": "U12",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T7, T8",
+  "basis": "author wrote Limitations by hand: \"I'll write that one myself\"",
+  "confidence": "high"
+ }
+}

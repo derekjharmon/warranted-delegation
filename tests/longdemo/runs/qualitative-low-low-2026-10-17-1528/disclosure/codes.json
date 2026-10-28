@@ -1,0 +1,2074 @@
+{
+ "U113": {
+  "id": "U113",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T16, T18, T24, T26",
+  "basis": "Author-supplied anchor; T16 \"I checked every quote by script... all 106 match\"; T18 answers that reply (\"Don't use the 'Added' passages\")",
+  "confidence": "medium"
+ },
+ "U114": {
+  "id": "U114",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T16, T18, T24, T26",
+  "basis": "Script \"EXACT found [11]\"; reported in T16, followed by T18 prompt",
+  "confidence": "medium"
+ },
+ "U115": {
+  "id": "U115",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T16, T18, T24",
+  "basis": "Script \"EXACT found [9]\"; \"all 106 match\" reported in T16; T18 responds",
+  "confidence": "medium"
+ },
+ "U116": {
+  "id": "U116",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T16, T18",
+  "basis": "Anchor quote checked by script against p.14; T16 \"all 106 match\"",
+  "confidence": "medium"
+ },
+ "U117": {
+  "id": "U117",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T16, T18, T24, T26",
+  "basis": "Quote checked by script; T24 \"checked every quotation... all of them match\"",
+  "confidence": "medium"
+ },
+ "U118": {
+  "id": "U118",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T16, T18, T24",
+  "basis": "Script check of anchors, including context read of the Pessin p.14 pages; reported in T16",
+  "confidence": "medium"
+ },
+ "U119": {
+  "id": "U119",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T16, T18, T24",
+  "basis": "Anchor checked by script; \"all 106 match\"",
+  "confidence": "medium"
+ },
+ "U120": {
+  "id": "U120",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T16, T18",
+  "basis": "Anchor checked by script against p.17; reported in T16",
+  "confidence": "medium"
+ },
+ "U121": {
+  "id": "U121",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T16, T18, T24, T26",
+  "basis": "Script check reported in T16 and T24; author's next prompts respond",
+  "confidence": "medium"
+ },
+ "U122": {
+  "id": "U122",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T16, T18, T24, T26",
+  "basis": "Script \"EXACT found\"; \"all 106 match\"",
+  "confidence": "medium"
+ },
+ "U123": {
+  "id": "U123",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T16, T18",
+  "basis": "Anchor checked by script against p.14",
+  "confidence": "medium"
+ },
+ "U124": {
+  "id": "U124",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T16, T18, T24",
+  "basis": "grep \"At their risk\" plus script check; T16 notes the truncation \"[\u2026]\"",
+  "confidence": "medium"
+ },
+ "U125": {
+  "id": "U125",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T16, T18, T24",
+  "basis": "Anchor checked by script; \"all 106 match\"",
+  "confidence": "medium"
+ },
+ "U126": {
+  "id": "U126",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T16, T18, T24, T26",
+  "basis": "ctx.py context read of Smith p2; script match reported in T16",
+  "confidence": "medium"
+ },
+ "U127": {
+  "id": "U127",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T16, T18, T24",
+  "basis": "ctx.py of Sheehan p11; T16 \"all 106 match\"",
+  "confidence": "medium"
+ },
+ "U128": {
+  "id": "U128",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T16, T18",
+  "basis": "Anchor checked by script against p.7",
+  "confidence": "medium"
+ },
+ "U129": {
+  "id": "U129",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T16, T18, T24, T26",
+  "basis": "Script check reported in T16 and T24; T26 \"all 22 match\"",
+  "confidence": "medium"
+ },
+ "U130": {
+  "id": "U130",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T16, T18, T24, T26",
+  "basis": "Anchor checked by script; reported in T16",
+  "confidence": "medium"
+ },
+ "U131": {
+  "id": "U131",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T16, T18, T24, T26",
+  "basis": "grep Boisjoly plus script check; T16 notes \"carefully considered [\u2026]\"",
+  "confidence": "medium"
+ },
+ "U132": {
+  "id": "U132",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T16, T18, T24, T26",
+  "basis": "Anchor checked by script against p.19",
+  "confidence": "medium"
+ },
+ "U133": {
+  "id": "U133",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T16, T18, T24",
+  "basis": "T24 \"Smith p. 8 says 'It was a gutsy test'\", from a script lookup",
+  "confidence": "medium"
+ },
+ "U134": {
+  "id": "U134",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T16, T18, T24, T26",
+  "basis": "Script check of the anchor; reported in T16 and T24",
+  "confidence": "medium"
+ },
+ "U135": {
+  "id": "U135",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T16, T18, T24",
+  "basis": "sed of Moser lines plus script match; \"all 106 match\"",
+  "confidence": "medium"
+ },
+ "U136": {
+  "id": "U136",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T16, T18, T24",
+  "basis": "Anchor checked by script; T24 page note \"'Bold and aggressive' is on p. 18\"",
+  "confidence": "medium"
+ },
+ "U137": {
+  "id": "U137",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T16, T18, T24, T26",
+  "basis": "T16 \"spans pp. 18\u201319\" from the script check; author proceeds in T18",
+  "confidence": "medium"
+ },
+ "U138": {
+  "id": "U138",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T24, T26",
+  "basis": "T16: \"I checked every quote by script... all 106 match\"; T26 \"22 checked 0 miss\"; author moved on without acknowledging",
+  "confidence": "medium"
+ },
+ "U139": {
+  "id": "U139",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T24, T26",
+  "basis": "Script quote check (106 match; 45 checked 0 miss) reported, never acknowledged",
+  "confidence": "medium"
+ },
+ "U140": {
+  "id": "U140",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T24",
+  "basis": "Script quote check reported in T16/T24 replies; next prompts don't respond to it",
+  "confidence": "medium"
+ },
+ "U141": {
+  "id": "U141",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T24, T26",
+  "basis": "\"all 106 match\"; \"45 checked 0 miss\"; no author confirmation",
+  "confidence": "medium"
+ },
+ "U142": {
+  "id": "U142",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T24, T26",
+  "basis": "Script check of quotes reported; author never confirmed reading",
+  "confidence": "medium"
+ },
+ "U143": {
+  "id": "U143",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T24, T26",
+  "basis": "\"I checked every quote by script against the stated page\"; unacknowledged",
+  "confidence": "medium"
+ },
+ "U144": {
+  "id": "U144",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T24, T26",
+  "basis": "Script quote checks in T5/T24/T26; author never responded to them",
+  "confidence": "medium"
+ },
+ "U145": {
+  "id": "U145",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T24",
+  "basis": "\"all 106 match\"; \"45 checked 0 miss\"; no confirmation",
+  "confidence": "medium"
+ },
+ "U146": {
+  "id": "U146",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T24",
+  "basis": "Script quote check reported, not acknowledged",
+  "confidence": "medium"
+ },
+ "U147": {
+  "id": "U147",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T24, T26",
+  "basis": "Quotes checked by script; replies T16/T24/T26 not responded to",
+  "confidence": "medium"
+ },
+ "U148": {
+  "id": "U148",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T24",
+  "basis": "\"all 106 match\"; author went on to next stage",
+  "confidence": "medium"
+ },
+ "U149": {
+  "id": "U149",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T24, T26",
+  "basis": "Script quote checks reported; no author confirmation",
+  "confidence": "medium"
+ },
+ "U150": {
+  "id": "U150",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T24, T26",
+  "basis": "Script quote checks reported; no author confirmation",
+  "confidence": "medium"
+ },
+ "U151": {
+  "id": "U151",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T24, T26",
+  "basis": "Script quote checks reported; no author confirmation",
+  "confidence": "medium"
+ },
+ "U152": {
+  "id": "U152",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T24, T26",
+  "basis": "Script quote checks reported; no author confirmation",
+  "confidence": "medium"
+ },
+ "U153": {
+  "id": "U153",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T24",
+  "basis": "T24: \"I checked every quotation in the two sections by script\" (45 checked 0 miss); T26 prompt doesn't acknowledge",
+  "confidence": "medium"
+ },
+ "U154": {
+  "id": "U154",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T18",
+  "basis": "Added passage from requested full coding; \"all 106 match\" reported, never confirmed",
+  "confidence": "medium"
+ },
+ "U155": {
+  "id": "U155",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T18",
+  "basis": "Added passage; script check \"all 106 match\" unacknowledged",
+  "confidence": "medium"
+ },
+ "U156": {
+  "id": "U156",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T18",
+  "basis": "Added passage; script check \"all 106 match\" unacknowledged",
+  "confidence": "medium"
+ },
+ "U157": {
+  "id": "U157",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T18",
+  "basis": "Added passage; script check \"all 106 match\" unacknowledged",
+  "confidence": "medium"
+ },
+ "U158": {
+  "id": "U158",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T18",
+  "basis": "Added passage; script check \"all 106 match\" unacknowledged",
+  "confidence": "medium"
+ },
+ "U159": {
+  "id": "U159",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T18",
+  "basis": "Added passage; script check \"all 106 match\" unacknowledged",
+  "confidence": "medium"
+ },
+ "U160": {
+  "id": "U160",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T18",
+  "basis": "Added passage; script check \"all 106 match\" unacknowledged",
+  "confidence": "medium"
+ },
+ "U161": {
+  "id": "U161",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T18",
+  "basis": "Added passage; script check \"all 106 match\" unacknowledged",
+  "confidence": "medium"
+ },
+ "U162": {
+  "id": "U162",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T18",
+  "basis": "Added passage; script check \"all 106 match\" unacknowledged",
+  "confidence": "medium"
+ },
+ "U163": {
+  "id": "U163",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T17, T18",
+  "basis": "\"106 quotes checked, 0 missing\"; T17 bare /attest; T18 only says \"Don't use the 'Added' passages\"",
+  "confidence": "medium"
+ },
+ "U164": {
+  "id": "U164",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T17, T18",
+  "basis": "\"I checked every quote by script... all 106 match\"; never confirmed",
+  "confidence": "medium"
+ },
+ "U165": {
+  "id": "U165",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T17, T18",
+  "basis": "\"I checked every quote by script... all 106 match\"; never confirmed",
+  "confidence": "medium"
+ },
+ "U166": {
+  "id": "U166",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T12, T16, T17",
+  "basis": "script \"27 [27] We had a redesign team\"; reply reported check; bare /attest",
+  "confidence": "medium"
+ },
+ "U167": {
+  "id": "U167",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T12, T16, T17",
+  "basis": "\"106 quotes checked, 0 missing\"; never confirmed",
+  "confidence": "medium"
+ },
+ "U168": {
+  "id": "U168",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T14, T16, T17",
+  "basis": "\"106 quotes checked, 0 missing\"; never confirmed",
+  "confidence": "medium"
+ },
+ "U169": {
+  "id": "U169",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T15, T16, T17, T26",
+  "basis": "\"moser claimed p18 EXACT\"; \"all 106 match\"; never confirmed",
+  "confidence": "medium"
+ },
+ "U170": {
+  "id": "U170",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T15, T16, T17",
+  "basis": "\"106 quotes checked, 0 missing\"; never confirmed",
+  "confidence": "medium"
+ },
+ "U171": {
+  "id": "U171",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T12, T16, T17",
+  "basis": "\"106 quotes checked, 0 missing\"; never confirmed",
+  "confidence": "medium"
+ },
+ "U172": {
+  "id": "U172",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T14, T16, T17",
+  "basis": "chk.py \"30 OK We had to pitch the changes\"; never confirmed",
+  "confidence": "medium"
+ },
+ "U173": {
+  "id": "U173",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T12, T16, T17",
+  "basis": "\"106 quotes checked, 0 missing\"; never confirmed",
+  "confidence": "medium"
+ },
+ "U174": {
+  "id": "U174",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T15, T16, T17",
+  "basis": "\"106 quotes checked, 0 missing\"; never confirmed",
+  "confidence": "medium"
+ },
+ "U175": {
+  "id": "U175",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T15, T16, T17",
+  "basis": "\"106 quotes checked, 0 missing\"; never confirmed",
+  "confidence": "medium"
+ },
+ "U176": {
+  "id": "U176",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T12, T16, T17",
+  "basis": "\"9 smith claimed p33 EXACT\"; never confirmed",
+  "confidence": "medium"
+ },
+ "U177": {
+  "id": "U177",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T12, T16, T17",
+  "basis": "\"106 quotes checked, 0 missing\"; never confirmed",
+  "confidence": "medium"
+ },
+ "U178": {
+  "id": "U178",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T14, T16, T17",
+  "basis": "\"106 quotes checked, 0 missing\"; never confirmed",
+  "confidence": "medium"
+ },
+ "U179": {
+  "id": "U179",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T15, T16, T17",
+  "basis": "\"106 quotes checked, 0 missing\"; never confirmed",
+  "confidence": "medium"
+ },
+ "U180": {
+  "id": "U180",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T12, T16, T17",
+  "basis": "script \"23 [23] So we tested\"; never confirmed",
+  "confidence": "medium"
+ },
+ "U181": {
+  "id": "U181",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T13, T16, T17",
+  "basis": "\"106 quotes checked, 0 missing\"; never confirmed",
+  "confidence": "medium"
+ },
+ "U182": {
+  "id": "U182",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T17",
+  "basis": "chk.py \"7 OK They weren't interested in volunteering\"; never confirmed",
+  "confidence": "medium"
+ },
+ "U183": {
+  "id": "U183",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T13, T16, T17",
+  "basis": "\"14 pessin claimed p28 EXACT\"; never confirmed",
+  "confidence": "medium"
+ },
+ "U184": {
+  "id": "U184",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T13, T16, T17",
+  "basis": "\"106 quotes checked, 0 missing\"; never confirmed",
+  "confidence": "medium"
+ },
+ "U185": {
+  "id": "U185",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T17",
+  "basis": "chk.py \"31 OK That job forced me\"; never confirmed",
+  "confidence": "medium"
+ },
+ "U186": {
+  "id": "U186",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T13, T16, T17",
+  "basis": "\"16 pessin claimed p20 EXACT\"; never confirmed",
+  "confidence": "medium"
+ },
+ "U187": {
+  "id": "U187",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T13, T16, T17",
+  "basis": "\"16 pessin claimed p21 EXACT\"; never confirmed",
+  "confidence": "medium"
+ },
+ "U188": {
+  "id": "U188",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T17, T18",
+  "basis": "\"106 quotes checked, 0 missing\"; T17 bare attest; T18 only says \"Don't use the 'Added' passages\"",
+  "confidence": "medium"
+ },
+ "U189": {
+  "id": "U189",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T17, T18",
+  "basis": "\"106 quotes checked, 0 missing\"; T17 bare attest; T18 only says \"Don't use the 'Added' passages\"",
+  "confidence": "medium"
+ },
+ "U190": {
+  "id": "U190",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T17, T18",
+  "basis": "\"106 quotes checked, 0 missing\"; T17 bare attest; T18 only says \"Don't use the 'Added' passages\"",
+  "confidence": "medium"
+ },
+ "U191": {
+  "id": "U191",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T17, T18",
+  "basis": "\"106 quotes checked, 0 missing\"; T17 bare attest; T18 only says \"Don't use the 'Added' passages\"",
+  "confidence": "medium"
+ },
+ "U192": {
+  "id": "U192",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T17, T18",
+  "basis": "\"106 quotes checked, 0 missing\"; T17 bare attest; T18 only says \"Don't use the 'Added' passages\"",
+  "confidence": "medium"
+ },
+ "U193": {
+  "id": "U193",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T17, T18",
+  "basis": "\"106 quotes checked, 0 missing\"; T17 bare attest; T18 only says \"Don't use the 'Added' passages\"",
+  "confidence": "medium"
+ },
+ "U194": {
+  "id": "U194",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T17, T18",
+  "basis": "\"106 quotes checked, 0 missing\"; T17 bare attest; T18 only says \"Don't use the 'Added' passages\"",
+  "confidence": "medium"
+ },
+ "U195": {
+  "id": "U195",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T17, T18",
+  "basis": "\"106 quotes checked, 0 missing\"; T17 bare attest; T18 only says \"Don't use the 'Added' passages\"",
+  "confidence": "medium"
+ },
+ "U196": {
+  "id": "U196",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T17, T18",
+  "basis": "\"106 quotes checked, 0 missing\"; T17 bare attest; T18 only says \"Don't use the 'Added' passages\"",
+  "confidence": "medium"
+ },
+ "U197": {
+  "id": "U197",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T17, T18",
+  "basis": "\"106 quotes checked, 0 missing\"; T17 bare attest; T18 only says \"Don't use the 'Added' passages\"",
+  "confidence": "medium"
+ },
+ "U198": {
+  "id": "U198",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T17, T18",
+  "basis": "\"106 quotes checked, 0 missing\"; T17 bare attest; T18 only says \"Don't use the 'Added' passages\"",
+  "confidence": "medium"
+ },
+ "U199": {
+  "id": "U199",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T17, T18",
+  "basis": "\"106 quotes checked, 0 missing\"; T17 bare attest; T18 only says \"Don't use the 'Added' passages\"",
+  "confidence": "medium"
+ },
+ "U200": {
+  "id": "U200",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T17, T18",
+  "basis": "\"106 quotes checked, 0 missing\"; T17 bare attest; T18 only says \"Don't use the 'Added' passages\"",
+  "confidence": "medium"
+ },
+ "U201": {
+  "id": "U201",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T17, T18",
+  "basis": "\"106 quotes checked, 0 missing\"; T17 bare attest; T18 only says \"Don't use the 'Added' passages\"",
+  "confidence": "medium"
+ },
+ "U202": {
+  "id": "U202",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T17, T18",
+  "basis": "\"106 quotes checked, 0 missing\"; T17 bare attest; T18 only says \"Don't use the 'Added' passages\"",
+  "confidence": "medium"
+ },
+ "U203": {
+  "id": "U203",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T17, T18",
+  "basis": "\"106 quotes checked, 0 missing\"; T17 bare attest; T18 only says \"Don't use the 'Added' passages\"",
+  "confidence": "medium"
+ },
+ "U204": {
+  "id": "U204",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T17, T18",
+  "basis": "\"106 quotes checked, 0 missing\"; T17 bare attest; T18 only says \"Don't use the 'Added' passages\"",
+  "confidence": "medium"
+ },
+ "U205": {
+  "id": "U205",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T17, T18",
+  "basis": "\"106 quotes checked, 0 missing\"; T17 bare attest; T18 only says \"Don't use the 'Added' passages\"",
+  "confidence": "medium"
+ },
+ "U206": {
+  "id": "U206",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T17, T18",
+  "basis": "\"106 quotes checked, 0 missing\"; T17 bare attest; T18 only says \"Don't use the 'Added' passages\"",
+  "confidence": "medium"
+ },
+ "U207": {
+  "id": "U207",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T17, T18",
+  "basis": "\"106 quotes checked, 0 missing\"; T17 bare attest; T18 only says \"Don't use the 'Added' passages\"",
+  "confidence": "medium"
+ },
+ "U208": {
+  "id": "U208",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T17, T18",
+  "basis": "\"106 quotes checked, 0 missing\"; T17 bare attest; T18 only says \"Don't use the 'Added' passages\"",
+  "confidence": "medium"
+ },
+ "U209": {
+  "id": "U209",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T17, T18",
+  "basis": "\"106 quotes checked, 0 missing\"; T17 bare attest; T18 only says \"Don't use the 'Added' passages\"",
+  "confidence": "medium"
+ },
+ "U210": {
+  "id": "U210",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T17, T18",
+  "basis": "\"106 quotes checked, 0 missing\"; T17 bare attest; T18 only says \"Don't use the 'Added' passages\"",
+  "confidence": "medium"
+ },
+ "U211": {
+  "id": "U211",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T17, T18",
+  "basis": "\"106 quotes checked, 0 missing\"; T17 bare attest; T18 only says \"Don't use the 'Added' passages\"",
+  "confidence": "medium"
+ },
+ "U212": {
+  "id": "U212",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T17, T18",
+  "basis": "\"106 quotes checked, 0 missing\"; T17 bare attest; T18 only says \"Don't use the 'Added' passages\"",
+  "confidence": "medium"
+ },
+ "U213": {
+  "id": "U213",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T15, T16, T17, T18",
+  "basis": "T16: 'I checked every quote by script... all 106 match'; T17 bare attest; T18 moves on without confirming",
+  "confidence": "medium"
+ },
+ "U214": {
+  "id": "U214",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T12, T16, T17, T18",
+  "basis": "add_smith check 'EXACT found [30]'; T16 '106 quotes checked, 0 missing'; never confirmed",
+  "confidence": "medium"
+ },
+ "U215": {
+  "id": "U215",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T13, T14, T16, T18",
+  "basis": "add_pessin check 'EXACT found'; T16 reply reports check; no confirmation",
+  "confidence": "medium"
+ },
+ "U216": {
+  "id": "U216",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T13, T14, T16, T18",
+  "basis": "Script check of all 106 quotes reported in T16; author never confirmed",
+  "confidence": "medium"
+ },
+ "U217": {
+  "id": "U217",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T15, T16, T18",
+  "basis": "add_moser 'EXACT found [17]'; T16 reply; no confirmation",
+  "confidence": "medium"
+ },
+ "U218": {
+  "id": "U218",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T15, T16, T18",
+  "basis": "add_moser check; T16 'all 106 match'; no confirmation",
+  "confidence": "medium"
+ },
+ "U219": {
+  "id": "U219",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T15, T16, T18",
+  "basis": "add_moser check; T16 'all 106 match'; no confirmation",
+  "confidence": "medium"
+ },
+ "U109": {
+  "id": "U109",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T3, T22, T24",
+  "basis": "T3 header read: 'Moser comes from a different project'; T22 header check; author never responded",
+  "confidence": "medium"
+ },
+ "U110": {
+  "id": "U110",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3, T22",
+  "basis": "'Roles are as recorded in the study's candidate table'; roles never checked; weakest part governs",
+  "confidence": "medium"
+ },
+ "U111": {
+  "id": "U111",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T18, T22",
+  "basis": "grep -c '^| Anchor' gave 40; never confirmed by author",
+  "confidence": "medium"
+ },
+ "U112": {
+  "id": "U112",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T5, T22",
+  "basis": "Method description requested in T22; no check compares procedure claims to source",
+  "confidence": "medium"
+ },
+ "U220": {
+  "id": "U220",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T24, T26",
+  "basis": "anchors script 'EXACT found [15]'; T24 'all of them match'; never confirmed",
+  "confidence": "medium"
+ },
+ "U221": {
+  "id": "U221",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T24, T26",
+  "basis": "anchors script 'thomas claimed p11 EXACT found'; no confirmation",
+  "confidence": "medium"
+ },
+ "U222": {
+  "id": "U222",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T24, T26",
+  "basis": "anchors script 'mitchell claimed p9 EXACT'; reported, not confirmed",
+  "confidence": "medium"
+ },
+ "U223": {
+  "id": "U223",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16",
+  "basis": "anchor quotes checked by script in T5; T16 report never confirmed",
+  "confidence": "medium"
+ },
+ "U224": {
+  "id": "U224",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T24, T26",
+  "basis": "Script check of anchors; T24/T26 reports; no confirmation",
+  "confidence": "medium"
+ },
+ "U225": {
+  "id": "U225",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T24",
+  "basis": "Script check of anchors; T24 '45 checked 0 miss'; no confirmation",
+  "confidence": "medium"
+ },
+ "U226": {
+  "id": "U226",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T24",
+  "basis": "Script check of anchors; T24 report; no confirmation",
+  "confidence": "medium"
+ },
+ "U227": {
+  "id": "U227",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16",
+  "basis": "anchor quote checked by script T5; T16 report never confirmed",
+  "confidence": "medium"
+ },
+ "U228": {
+  "id": "U228",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T24, T26",
+  "basis": "Script check; T24/T26 'all match'; no confirmation",
+  "confidence": "medium"
+ },
+ "U229": {
+  "id": "U229",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T24, T26",
+  "basis": "Script check; T24/T26 reports; no confirmation",
+  "confidence": "medium"
+ },
+ "U230": {
+  "id": "U230",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16",
+  "basis": "anchor quote checked by script T5; never confirmed",
+  "confidence": "medium"
+ },
+ "U231": {
+  "id": "U231",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T24",
+  "basis": "grep 'At their risk' and script check; T16 notes '[\u2026]'; no confirmation",
+  "confidence": "medium"
+ },
+ "U232": {
+  "id": "U232",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T24",
+  "basis": "Script check of anchors; reports never confirmed",
+  "confidence": "medium"
+ },
+ "U233": {
+  "id": "U233",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T24, T26",
+  "basis": "ctx.py '### 12 smith p2' and script check; no confirmation",
+  "confidence": "medium"
+ },
+ "U234": {
+  "id": "U234",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T17, T18",
+  "basis": "Author's anchor and concept ('these are my calls'); T16 script: 'all 106 match'; T17 bare /attest; T18 gives no confirmation",
+  "confidence": "medium"
+ },
+ "U235": {
+  "id": "U235",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T17, T18",
+  "basis": "Author's anchor and concept; quote matched to page by script ('all 106 match'); never confirmed",
+  "confidence": "medium"
+ },
+ "U236": {
+  "id": "U236",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T18, T24",
+  "basis": "Author's anchor; script page checks in T5 and T24 ('45 checked 0 miss'); author never confirmed reading them",
+  "confidence": "medium"
+ },
+ "U237": {
+  "id": "U237",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T18, T24",
+  "basis": "Author's anchor; script page checks reported; no author confirmation",
+  "confidence": "medium"
+ },
+ "U238": {
+  "id": "U238",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T24, T26",
+  "basis": "Author placed it in A3; script check reported; T24 flagged 'Two A3 passages aren't stalls'; author never responded",
+  "confidence": "medium"
+ },
+ "U239": {
+  "id": "U239",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T18, T24",
+  "basis": "Author placed it in A3; quote verified by script; Claude's misfit flags in T18/T24 got no reply",
+  "confidence": "medium"
+ },
+ "U240": {
+  "id": "U240",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T24",
+  "basis": "Author's anchor; script check; T24: 'Smith p. 8 says gutsy test'; no author confirmation",
+  "confidence": "medium"
+ },
+ "U241": {
+  "id": "U241",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T18, T24",
+  "basis": "Author's anchor; script page check; never confirmed",
+  "confidence": "medium"
+ },
+ "U242": {
+  "id": "U242",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T20, T24",
+  "basis": "Author's anchor; script check; flag 'Moser p. 12 is about Apollo' got no reply",
+  "confidence": "medium"
+ },
+ "U243": {
+  "id": "U243",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T24",
+  "basis": "Author's anchor; script page check; no confirmation",
+  "confidence": "medium"
+ },
+ "U244": {
+  "id": "U244",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T24, T26",
+  "basis": "Author's anchor spanning pp. 18\u201319; script check; no confirmation",
+  "confidence": "medium"
+ },
+ "U245": {
+  "id": "U245",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T24",
+  "basis": "Author's anchor; script check; never confirmed",
+  "confidence": "medium"
+ },
+ "U246": {
+  "id": "U246",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T24",
+  "basis": "Author's anchor; script check; no confirmation",
+  "confidence": "medium"
+ },
+ "U247": {
+  "id": "U247",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T24",
+  "basis": "Author's anchor; script check; no confirmation",
+  "confidence": "medium"
+ },
+ "U248": {
+  "id": "U248",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T24",
+  "basis": "Author's anchor; script check; no confirmation",
+  "confidence": "medium"
+ },
+ "U249": {
+  "id": "U249",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T18, T24",
+  "basis": "Author placed it in B2; script check; flag 'Nothing in the passage is refused' got no reply",
+  "confidence": "medium"
+ },
+ "U250": {
+  "id": "U250",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T24",
+  "basis": "Author's anchor; script check; no confirmation",
+  "confidence": "medium"
+ },
+ "U251": {
+  "id": "U251",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T24",
+  "basis": "Author's anchor; script check; no confirmation",
+  "confidence": "medium"
+ },
+ "U252": {
+  "id": "U252",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T24",
+  "basis": "Author's anchor; script check; no confirmation",
+  "confidence": "medium"
+ },
+ "U253": {
+  "id": "U253",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T24",
+  "basis": "Author's anchor; script check; no confirmation",
+  "confidence": "medium"
+ },
+ "U254": {
+  "id": "U254",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T24",
+  "basis": "Author's anchor; script check; no confirmation",
+  "confidence": "medium"
+ },
+ "U255": {
+  "id": "U255",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T24",
+  "basis": "Author's anchor; script check; no confirmation",
+  "confidence": "medium"
+ },
+ "U256": {
+  "id": "U256",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T24",
+  "basis": "Author's anchor; script check; no confirmation",
+  "confidence": "medium"
+ },
+ "U257": {
+  "id": "U257",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T24",
+  "basis": "Author's anchor; script check; no confirmation",
+  "confidence": "medium"
+ },
+ "U258": {
+  "id": "U258",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T18, T24",
+  "basis": "Author placed it in C2; script check; flag 'isn't tied to either accident' got no reply",
+  "confidence": "medium"
+ },
+ "U259": {
+  "id": "U259",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T17, T18, T24",
+  "basis": "Author set the anchor and concept (T5, T18). Script check 'all 106 match' (T16) and '45 checked 0 miss' (T24) never confirmed; T17 was a bare attest.",
+  "confidence": "medium"
+ },
+ "U71": {
+  "id": "U71",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T22, T30",
+  "basis": "Reference supplied by the author from notes.md ('in the form I have in notes.md'). Claude only asserted the year was 1999, with no lookup tool call.",
+  "confidence": "high"
+ },
+ "U72": {
+  "id": "U72",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T22, T30",
+  "basis": "Author-supplied reference ('Gioia, D. A., Corley, K. G., & Hamilton'); no lookup in the record.",
+  "confidence": "high"
+ },
+ "U73": {
+  "id": "U73",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T22, T30",
+  "basis": "Author-supplied reference ('Vaughan, D. (1996)'); no lookup in the record.",
+  "confidence": "high"
+ },
+ "U74": {
+  "id": "U74",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T3, T22, T30",
+  "basis": "Transcript headers compared by tool ('name and interview date matches your table'; T22 sed of 'INTERVIEWED BY'). The author never confirmed.",
+  "confidence": "medium"
+ },
+ "U75": {
+  "id": "U75",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T3, T22, T30",
+  "basis": "Tool read the headers (T3, T22). Reply noted the 'Johnson Space Center Oral History Project'; no author confirmation.",
+  "confidence": "medium"
+ },
+ "U76": {
+  "id": "U76",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T3, T22, T30",
+  "basis": "Header check by tool in T3 and T22; the author never confirmed reading it.",
+  "confidence": "medium"
+ },
+ "U77": {
+  "id": "U77",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T3, T22, T30",
+  "basis": "Header check by tool in T3 and T22; the author never confirmed reading it.",
+  "confidence": "medium"
+ },
+ "U78": {
+  "id": "U78",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T3, T22, T30",
+  "basis": "Header check by tool in T3 and T22; the author never confirmed reading it.",
+  "confidence": "medium"
+ },
+ "U79": {
+  "id": "U79",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T3, T22, T30",
+  "basis": "Header check by tool in T3 and T22; the author never confirmed reading it.",
+  "confidence": "medium"
+ },
+ "U80": {
+  "id": "U80",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T3, T22, T30",
+  "basis": "Header check by tool in T3 and T22; the author never confirmed reading it.",
+  "confidence": "medium"
+ },
+ "U81": {
+  "id": "U81",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T3, T22, T30",
+  "basis": "Header check by tool in T3 and T22; the author never confirmed reading it.",
+  "confidence": "medium"
+ },
+ "U82": {
+  "id": "U82",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T22, T26",
+  "basis": "Author asked to 'Cite Vaughan (1996) for the Challenger launch decision'; Vaughan not looked up.",
+  "confidence": "medium"
+ },
+ "U83": {
+  "id": "U83",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T22, T26",
+  "basis": "Part of the requested Vaughan citation; no check of the source.",
+  "confidence": "medium"
+ },
+ "U84": {
+  "id": "U84",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T22, T26",
+  "basis": "Author asked to cite 'Edmondson (2001) for psychological safety and speaking up'; no check.",
+  "confidence": "high"
+ },
+ "U85": {
+  "id": "U85",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T22",
+  "basis": "Author asked for 'An inductive study in the Gioia tradition'; Gioia not looked up.",
+  "confidence": "medium"
+ },
+ "U86": {
+  "id": "U86",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T18, T22",
+  "basis": "Author's own wording: 'how departures from the rules were accepted or refused'.",
+  "confidence": "high"
+ },
+ "U87": {
+  "id": "U87",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T26, T30",
+  "basis": "Author asked to 'Set this against Edmondson (2001) on psychological safety'; no check.",
+  "confidence": "high"
+ },
+ "U88": {
+  "id": "U88",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T26",
+  "basis": "Author's prompt: 'Challenger came out of routine decisions'.",
+  "confidence": "high"
+ },
+ "U89": {
+  "id": "U89",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T26",
+  "basis": "Part of the requested relation to Vaughan; no source check.",
+  "confidence": "medium"
+ },
+ "U90": {
+  "id": "U90",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T26",
+  "basis": "Author's prompt: 'her point that rules were followed in the decisions taken'.",
+  "confidence": "high"
+ },
+ "U91": {
+  "id": "U91",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T26",
+  "basis": "Author's prompt: 'inside a culture of production pressure'.",
+  "confidence": "high"
+ },
+ "U92": {
+  "id": "U92",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T26",
+  "basis": "Author's prompt: 'rules were followed in the decisions taken'.",
+  "confidence": "high"
+ },
+ "U93": {
+  "id": "U93",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T26",
+  "basis": "Author asked to 'Relate this to Vaughan (1996)'; no check.",
+  "confidence": "medium"
+ },
+ "U94": {
+  "id": "U94",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T26",
+  "basis": "Part of the requested 'Set this against Edmondson'; no source check.",
+  "confidence": "medium"
+ },
+ "U105": {
+  "id": "U105",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T5, T18, T20, T22",
+  "basis": "author's prompts: \"28 concepts... 8 second-order themes and 3 aggregate dimensions\"",
+  "confidence": "high"
+ },
+ "U106": {
+  "id": "U106",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T3, T22",
+  "basis": "T3 header check: \"Moser comes from a different project\"; author then wrote \"NASA's oral history projects\"",
+  "confidence": "medium"
+ },
+ "U107": {
+  "id": "U107",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T3, T5, T22",
+  "basis": "author T3: \"Thomas, Smith, Singer and Mitchell cover Challenger... Sheehan, White, Moser and Pessin cover Columbia\"",
+  "confidence": "medium"
+ },
+ "U108": {
+  "id": "U108",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T20, T24",
+  "basis": "author's model and \"three propositions in my words\"",
+  "confidence": "high"
+ },
+ "U95": {
+  "id": "U95",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T22",
+  "basis": "author: \"Challenger (1986) and Columbia (2003)\"; months added in requested intro, never checked",
+  "confidence": "medium"
+ },
+ "U96": {
+  "id": "U96",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T22, T26",
+  "basis": "intro requested \"classic cases of how organizations handle warning signs\"; no lookup",
+  "confidence": "medium"
+ },
+ "U97": {
+  "id": "U97",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T22",
+  "basis": "written in requested Data section; no tool check",
+  "confidence": "medium"
+ },
+ "U98": {
+  "id": "U98",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T22, T24",
+  "basis": "T22 grep \"INTERVIEWED BY\" headers; reply did not report it, no confirmation",
+  "confidence": "medium"
+ },
+ "U99": {
+  "id": "U99",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T3, T22",
+  "basis": "T3: \"Every transcript is headed EDITED ORAL HISTORY TRANSCRIPT\"; author T22: \"published edited transcripts\"",
+  "confidence": "medium"
+ },
+ "U100": {
+  "id": "U100",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T22",
+  "basis": "author: \"Say why Odom and Blackburn from the candidate table are not used\"",
+  "confidence": "medium"
+ },
+ "U101": {
+  "id": "U101",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T22, T26",
+  "basis": "Pessin p.28 \"basically was the cause of the Columbia failure\" read and reported; author never responded",
+  "confidence": "low"
+ },
+ "U102": {
+  "id": "U102",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T28",
+  "basis": "author's paragraph \"exactly as I've written it\"; Claude flagged but no response",
+  "confidence": "high"
+ },
+ "U103": {
+  "id": "U103",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T15, T16, T26",
+  "basis": "script \"moser claimed p18 EXACT found [18]\"; reported \"all 106 match\", no confirmation",
+  "confidence": "medium"
+ },
+ "U104": {
+  "id": "U104",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T5, T16, T24",
+  "basis": "ctx.py read anchor contexts; reply \"Most of them describe 1970s development\"; author never responded",
+  "confidence": "low"
+ },
+ "U17": {
+  "id": "U17",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T22",
+  "basis": "author: \"An inductive study in the Gioia tradition, citing Gioia, Corley and Hamilton (2013)\"",
+  "confidence": "high"
+ },
+ "U25": {
+  "id": "U25",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T5",
+  "basis": "author: \"1. 'Testing was the ultimate referee': Mitchell p.15...\"",
+  "confidence": "medium"
+ },
+ "U26": {
+  "id": "U26",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T5",
+  "basis": "author: \"2. 'Fresh eyeballs': Mitchell p.9...\"",
+  "confidence": "medium"
+ },
+ "U27": {
+  "id": "U27",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T5",
+  "basis": "author: \"3. 'An independent voice that could holler Stop'\"",
+  "confidence": "medium"
+ },
+ "U28": {
+  "id": "U28",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T5",
+  "basis": "author: \"4. 'A little cleanliness': leaders brought in from outside the accident project\"",
+  "confidence": "high"
+ },
+ "U29": {
+  "id": "U29",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T5",
+  "basis": "author: \"5. 'Look those people in the eye': being on site\"",
+  "confidence": "high"
+ },
+ "U30": {
+  "id": "U30",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T5",
+  "basis": "author: \"6. 'I had the final vote': Thomas p.9\"",
+  "confidence": "medium"
+ },
+ "U31": {
+  "id": "U31",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T5",
+  "basis": "author: \"7. 'You mean what?': Thomas p.12\"",
+  "confidence": "medium"
+ },
+ "U32": {
+  "id": "U32",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T5",
+  "basis": "author: \"8. 'It was changed': fixing what had no problem on paper\"",
+  "confidence": "high"
+ },
+ "U33": {
+  "id": "U33",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T5",
+  "basis": "author: \"9. 'Overzealous': Thomas p.20\"",
+  "confidence": "medium"
+ },
+ "U34": {
+  "id": "U34",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T5",
+  "basis": "author: \"10. 'A very personal beating': the cost of dissent\"",
+  "confidence": "high"
+ },
+ "U35": {
+  "id": "U35",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T5, T24",
+  "basis": "T5 author: \"At their risk\": the contractor acting before approval. Mitchell p.9; T24 lists Mitchell p.9 under A2",
+  "confidence": "medium"
+ },
+ "U36": {
+  "id": "U36",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T5, T16, T18",
+  "basis": "Author gave label and anchors but asked 'For each concept give a one-line definition'; T16 'each with a one-line definition', with no response",
+  "confidence": "medium"
+ },
+ "U37": {
+  "id": "U37",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T5, T16, T18",
+  "basis": "Label and anchors are the author's; Claude wrote the definition on request ('give a one-line definition'); T16 mentioned it, with no response",
+  "confidence": "medium"
+ },
+ "U38": {
+  "id": "U38",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T5, T16, T18",
+  "basis": "Author supplied the label and Pessin p.16; the definition was handed over ('give a one-line definition'); T16 reported it, with no response",
+  "confidence": "medium"
+ },
+ "U39": {
+  "id": "U39",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T5, T16, T18, T24",
+  "basis": "Author's label and anchor; definition requested of Claude; T16 'each with a one-line definition' with no response",
+  "confidence": "medium"
+ },
+ "U40": {
+  "id": "U40",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T5, T16, T18, T24",
+  "basis": "Author's label and Pessin p.18; definition requested ('give a one-line definition'); T18 flagged 'Nothing in the passage is refused', with no response",
+  "confidence": "medium"
+ },
+ "U41": {
+  "id": "U41",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T5, T16, T18",
+  "basis": "Author's label and White p.8; the one-line definition was handed to Claude; T16 mentioned it, with no response",
+  "confidence": "medium"
+ },
+ "U42": {
+  "id": "U42",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T5, T16",
+  "basis": "Author's label and White p.10; definition requested of Claude; T16 reported it, with no response",
+  "confidence": "medium"
+ },
+ "U43": {
+  "id": "U43",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T5, T16, T18, T24",
+  "basis": "Author's label and White p.15; definition handed over; T18/T24 flagged 'isn't tied to either accident', with no response",
+  "confidence": "medium"
+ },
+ "U44": {
+  "id": "U44",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T5, T16",
+  "basis": "Author's label and White pp.18\u201320; Claude wrote the definition on request; T16 mentioned it, with no response",
+  "confidence": "medium"
+ },
+ "U45": {
+  "id": "U45",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T5, T16",
+  "basis": "Author's label and Singer p.15; definition requested ('give a one-line definition'); no response",
+  "confidence": "medium"
+ },
+ "U46": {
+  "id": "U46",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T5, T16",
+  "basis": "Author's label and Singer p.13 anchors; definition handed to Claude; T16 mentioned it, with no response",
+  "confidence": "medium"
+ },
+ "U47": {
+  "id": "U47",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T5, T16",
+  "basis": "Author's label and Singer pp.9, 11; definition written by Claude on request; no response",
+  "confidence": "medium"
+ },
+ "U48": {
+  "id": "U48",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T5, T16, T18",
+  "basis": "Author's label and Smith pp.9, 17; definition requested; T18 noted 'NASA's own engineers', with no response",
+  "confidence": "medium"
+ },
+ "U49": {
+  "id": "U49",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T5, T16, T24",
+  "basis": "Author's label and Smith p.8; definition handed over; T24 noted 'gutsy test' vs. label, with no response",
+  "confidence": "medium"
+ },
+ "U50": {
+  "id": "U50",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T5, T16",
+  "basis": "Author's label and Smith p.14; definition requested of Claude; no response",
+  "confidence": "medium"
+ },
+ "U51": {
+  "id": "U51",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T5, T16, T18",
+  "basis": "Author's label and Smith p.19; definition handed over; T18 'a presenter overruled', with no response",
+  "confidence": "medium"
+ },
+ "U52": {
+  "id": "U52",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T5, T16, T18",
+  "basis": "Author's label and Moser pp.12, 18, 18\u201319; definition requested; T18 'design trade-offs' flagged, with no response",
+  "confidence": "medium"
+ },
+ "U23": {
+  "id": "U23",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T5, T18, T28",
+  "basis": "T5 'Use my quotes as the anchors'; T18 'using only my 40 anchor passages... Don't use the \"Added\" passages'; T28 author text 'chosen by me... no second coder'",
+  "confidence": "high"
+ },
+ "U24": {
+  "id": "U24",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T18",
+  "basis": "T18 'These are my calls' listing every theme and dimension with its concepts",
+  "confidence": "high"
+ },
+ "U53": {
+  "id": "U53",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T18, T20, T24, T26",
+  "basis": "T24 '4.1 Voice. Concerns got settled where a test or someone with authority could rule on them. A1...' with its quotes specified",
+  "confidence": "high"
+ },
+ "U54": {
+  "id": "U54",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T20, T24, T26",
+  "basis": "T20/T24 'someone with the authority to act on it (A2, \"I had the final vote\")'",
+  "confidence": "high"
+ },
+ "U55": {
+  "id": "U55",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T18, T20, T24, T26",
+  "basis": "T20 'Where it meets neither... it stalls (A3)'; T26 'Where there was neither test nor owner, speaking up did not settle anything'",
+  "confidence": "high"
+ },
+ "U56": {
+  "id": "U56",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T18, T20, T24, T26",
+  "basis": "T20 'Schedule and weight pressure push the same way, toward leaving a deviation alone (B1)'; T26 6.2 specified",
+  "confidence": "high"
+ },
+ "U57": {
+  "id": "U57",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T18, T20, T24, T26",
+  "basis": "T20 'refused only when someone is willing to change a part that has no problem in practice but fails on paper'",
+  "confidence": "high"
+ },
+ "U58": {
+  "id": "U58",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T18, T20, T24",
+  "basis": "C1 \"Re-asking why after an accident\": concepts 22, 23, 21; \"people re-ask why (C1, 'ask 'Why?'')\"",
+  "confidence": "high"
+ },
+ "U59": {
+  "id": "U59",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T18, T20, T24",
+  "basis": "C2 \"Changing criteria and spreading the fix\"; \"criteria change and the fix is spread to other vehicles\"",
+  "confidence": "high"
+ },
+ "U60": {
+  "id": "U60",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T18, T20, T24",
+  "basis": "C3 \"Bringing in people from outside\": concept 4; \"people from outside are brought in\"",
+  "confidence": "high"
+ },
+ "U61": {
+  "id": "U61",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T5, T18, T24",
+  "basis": "A1 ... Mitchell p.15, Thomas p.11, Mitchell p.9, Mitchell p.13, Pessin p.14, Smith p.9",
+  "confidence": "high"
+ },
+ "U62": {
+  "id": "U62",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T5, T18, T24",
+  "basis": "A2 ... Mitchell p.6, Thomas p.9, Mitchell p.9, White p.10",
+  "confidence": "high"
+ },
+ "U63": {
+  "id": "U63",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T5, T18, T24",
+  "basis": "A3 ... Smith p.2, Sheehan p.11, White p.8, Mitchell p.10, Smith p.19",
+  "confidence": "high"
+ },
+ "U64": {
+  "id": "U64",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T5, T18, T24",
+  "basis": "B1 ... Smith p.8, Smith p.14, Moser pp.18\u201319, Pessin p.16",
+  "confidence": "high"
+ },
+ "U65": {
+  "id": "U65",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T5, T18, T24",
+  "basis": "B2 ... Mitchell p.16, Thomas p.12, Thomas p.20, Pessin p.18",
+  "confidence": "high"
+ },
+ "U66": {
+  "id": "U66",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T5, T18, T24",
+  "basis": "C1 ... Singer p.13, Singer p.9 and p.11, Singer p.15",
+  "confidence": "high"
+ },
+ "U67": {
+  "id": "U67",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T5, T18, T24",
+  "basis": "C2 ... White pp.18\u201320, White p.15",
+  "confidence": "high"
+ },
+ "U68": {
+  "id": "U68",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T5, T18, T24",
+  "basis": "C3 ... Mitchell p.5 (\"a little cleanliness\")",
+  "confidence": "high"
+ },
+ "U69": {
+  "id": "U69",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T18, T20, T24",
+  "basis": "\"Add three propositions in my words\"; \"A and B feed whether a concern is settled or stalled\"",
+  "confidence": "high"
+ },
+ "U70": {
+  "id": "U70",
+  "discretion": "taken",
+  "certification": "okayed",
+  "turns": "T24, T26, T28",
+  "basis": "T26 reply \"Proposition 3 is presented as a conjecture\"; author's T28 text \"Proposition 3 is a conjecture that the data here do not test\"",
+  "confidence": "medium"
+ },
+ "U18": {
+  "id": "U18",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3, T22",
+  "basis": "\"I'm leaving out Odom and Blackburn ... That gives me engineers and managers on both accidents\"",
+  "confidence": "high"
+ },
+ "U19": {
+  "id": "U19",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T22",
+  "basis": "reply: \"the notes asked for six to eight interviews\" (author's notes.md)",
+  "confidence": "medium"
+ },
+ "U20": {
+  "id": "U20",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T3, T22",
+  "basis": "\"save the full text ... Keep the page markers\"; \"published edited transcripts\"",
+  "confidence": "high"
+ },
+ "U21": {
+  "id": "U21",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T22",
+  "basis": "\"interviews were done by NASA historians in 2010 and 2011, not by me\"",
+  "confidence": "high"
+ },
+ "U22": {
+  "id": "U22",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T5, T22",
+  "basis": "\"Coding unit: a passage of one to a few consecutive sentences\"; \"Concept labels use the informants' own words\"",
+  "confidence": "high"
+ },
+ "U1": {
+  "id": "U1",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T22",
+  "basis": "\"State the research question: how did engineers and managers ... raise and handle\"",
+  "confidence": "high"
+ },
+ "U2": {
+  "id": "U2",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T18, T22",
+  "basis": "\"Aggregate dimension A: VOICE ... B: NORMALIZATION OF DEVIANCE ... C: LEARNING\"",
+  "confidence": "high"
+ },
+ "U3": {
+  "id": "U3",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T22, T26",
+  "basis": "\"classic cases of how organizations handle warning signs\"; \"Cite Vaughan ... Edmondson\"",
+  "confidence": "high"
+ },
+ "U4": {
+  "id": "U4",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T22",
+  "basis": "\"We know a lot about the launch decisions and little about how the engineers ... talk about\"",
+  "confidence": "high"
+ },
+ "U5": {
+  "id": "U5",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T22, T26",
+  "basis": "\"Cite Vaughan (1996) for the Challenger launch decision\"; \"routine decisions ... rules were followed\"",
+  "confidence": "medium"
+ },
+ "U6": {
+  "id": "U6",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T22, T30",
+  "basis": "\"Edmondson (2001) for psychological safety\"; \"Make every in-text citation in the paper match this list\"",
+  "confidence": "medium"
+ },
+ "U7": {
+  "id": "U7",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T22",
+  "basis": "\"in the Gioia tradition, citing Gioia, Corley and Hamilton (2013)\"",
+  "confidence": "high"
+ },
+ "U8": {
+  "id": "U8",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T28",
+  "basis": "\"Put this paragraph into paper.md ... exactly as I've written it, with no changes to the wording\"",
+  "confidence": "high"
+ },
+ "U9": {
+  "id": "U9",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T26, T27, T28",
+  "basis": "Author asked to \"Set this against Edmondson\"; reply: \"I framed this as a complement to Edmondson, not a refutation\"; author never responded (bare attest, next prompt moves on)",
+  "confidence": "medium"
+ },
+ "U10": {
+  "id": "U10",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T26, T27, T28",
+  "basis": "Author asked to relate B to \"her point that rules were followed\"; reply: \"It ties B2's igniter case to her point about rules\"; no response",
+  "confidence": "medium"
+ },
+ "U11": {
+  "id": "U11",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T20, T24",
+  "basis": "\"Findings. One subsection per aggregate dimension\"; \"Write the model into model.md, built from the data structure\"",
+  "confidence": "medium"
+ },
+ "U12": {
+  "id": "U12",
+  "discretion": "given",
+  "certification": "wasn't notified",
+  "turns": "T22",
+  "basis": "Author asked for interviewees \"with their roles and dates as in my table in notes.md\"; the table format and columns were Claude's, and the reply does not mention Table 1",
+  "confidence": "medium"
+ },
+ "U13": {
+  "id": "U13",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T18, T22",
+  "basis": "\"Write the result to data_structure.md as a tree\"; \"Refer to the data structure figure\"",
+  "confidence": "high"
+ },
+ "U14": {
+  "id": "U14",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T18, T22",
+  "basis": "\"plus a table with representative quotes and pages\"; \"and to the quote table\"",
+  "confidence": "high"
+ },
+ "U15": {
+  "id": "U15",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T20, T24",
+  "basis": "\"Draw it as a figure in text form ... A and B feed whether a concern is settled or stalled, and C is what an accident does to A and B\"",
+  "confidence": "high"
+ },
+ "U16": {
+  "id": "U16",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T28, T22",
+  "basis": "Author's verbatim section 7: \"edited oral history transcripts ... no second coder ... sample is small ... Proposition 3 is a conjecture\"",
+  "confidence": "medium"
+ }
+}

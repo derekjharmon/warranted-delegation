@@ -1,0 +1,83 @@
+{
+ "name": "high-low",
+ "paper": "experiment",
+ "run": "experiment-high-low-2026-10-17-1043",
+ "base": "/Users/user/.warranted-delegation/demos/experiment-high-low-2026-10-17-1043",
+ "project": "/Users/user/.warranted-delegation/demos/experiment-high-low-2026-10-17-1043/project",
+ "venv": "/Users/user/.warranted-delegation/demos/experiment-high-low-2026-10-17-1043/venv",
+ "plugin": "/Users/user/.warranted-delegation/demos/experiment-high-low-2026-10-17-1043/plugin",
+ "session": "ca2c5bad-06a7-401d-85d9-d3daaa17d207",
+ "started": "2026-10-17T10:43:30",
+ "phase": "save",
+ "prompts": 1,
+ "steps": [
+  {
+   "kind": "setup",
+   "commit": "e49843e184a0af45335ed1b07355dc00fe221eb4"
+  },
+  {
+   "kind": "prompt",
+   "n": 1,
+   "seconds": 334,
+   "turns": 32,
+   "cost_usd": 1.3534854,
+   "tool_calls": 26,
+   "resent": false
+  },
+  {
+   "kind": "attest",
+   "sentence": "",
+   "commit": "49eec79fa222254b0078a02dc38031f9f9f9fe15"
+  },
+  {
+   "kind": "attest",
+   "sentence": "",
+   "commit": "d0128082ddf20bf83b68b6ff6f59a6915ee1d5d9"
+  }
+ ],
+ "author_usage": {
+  "input_tokens": 14,
+  "output_tokens": 258,
+  "cache_creation_input_tokens": 8956,
+  "cache_read_input_tokens": 18045,
+  "calls": 5,
+  "seconds": 7
+ },
+ "nudges": 0,
+ "versions": {
+  "plugin": "0.10.2",
+  "claude_code": "2.1.302 (Claude Code)",
+  "python_packages": [
+   "certifi==2026.7.22",
+   "charset-normalizer==3.5.2",
+   "contourpy==1.4.0",
+   "cycler==0.12.1",
+   "fonttools==4.67.0",
+   "formulaic==1.2.2",
+   "idna==3.20",
+   "interface_meta==2.0.1",
+   "kiwisolver==1.5.1",
+   "matplotlib==3.11.2",
+   "narwhals==2.27.1",
+   "numpy==2.5.4",
+   "packaging==26.3",
+   "pandas==3.0.6",
+   "patsy==1.0.3",
+   "pillow==13.0.0",
+   "pyparsing==3.3.3",
+   "pypdf==6.21.1",
+   "pyreadstat==1.3.6",
+   "python-dateutil==2.9.0.post0",
+   "requests==2.34.2",
+   "scipy==1.18.1",
+   "six==1.17.0",
+   "statsmodels==0.15.0",
+   "typing_extensions==4.16.0",
+   "urllib3==2.8.0",
+   "wrapt==2.5.1"
+  ],
+  "runner_commit": "e83806ef426beee69f4c179a92ae96e3ee28c508"
+ },
+ "map": true,
+ "finished": "2026-10-17T11:03:55"
+}

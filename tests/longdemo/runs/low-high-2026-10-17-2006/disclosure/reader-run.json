@@ -1,0 +1,108 @@
+{
+ "reader": "0.13.4",
+ "backend": "api",
+ "model": "claude-opus-5-5",
+ "effort": "high",
+ "date": "2026-10-18",
+ "reader_sha256": "74accd83c59ee70b4e341ea22800f9148b3d97f977a616d6e17a16ee81e0024b",
+ "checklists_sha256": {
+  "checklists/judgment-decisions.md": "273ca3d890fedc7e529c512bfe5182bfee887747ef93e54c63cccd83ebb43f3c",
+  "checklists/checkable-claims.md": "68ed07106dd05adf56af8fc480db7273dde9d9ced33b657e98349859c6f6196d"
+ },
+ "work": [
+  "paper.md",
+  "scripts/pull_openalex.py",
+  "scripts/pull_crossref.py",
+  "scripts/crossref_search.py",
+  "data/raw/",
+  "data/works.csv",
+  "data/authorships.csv",
+  "data/citations_by_year.csv",
+  "data/check_counts.csv",
+  "data/pull_log.json",
+  "scripts/clean.py",
+  "scripts/join_countries.py",
+  "scripts/diagnose_affiliations.py",
+  "data/clean/",
+  "data/countries/",
+  "scripts/analyze.py",
+  "scripts/supplementary.py",
+  "scripts/text_numbers.py",
+  "scripts/make_figures.py",
+  "scripts/check_paper.py",
+  "data/",
+  "output/"
+ ],
+ "packs": [
+  "quantitative"
+ ],
+ "label": "Demonstration run (low delegation, high warrant), last save a2c4bf7",
+ "converted": null,
+ "fingerprint": {
+  "commit": "a2c4bf71e882dbd8a6b150b3cde7a26cfe02d408",
+  "logs": [
+   {
+    "log": "simulated-author-d674",
+    "events": 265,
+    "head": "95be44c745d45af82b08e946fe3c1ba9c96430061b7399b6e324ac26387a0113",
+    "verifies": true
+   }
+  ]
+ },
+ "work_map": {
+  "packs": "quantitative",
+  "manuscript": "paper.md",
+  "references": "paper.md",
+  "collection": "scripts/pull_openalex.py, scripts/pull_crossref.py, scripts/crossref_search.py, data/raw/, data/works.csv, data/authorships.csv, data/citations_by_year.csv, data/check_counts.csv, data/pull_log.json",
+  "cleaning": "scripts/clean.py, scripts/join_countries.py, scripts/diagnose_affiliations.py, data/clean/, data/countries/",
+  "analysis": "scripts/analyze.py, scripts/supplementary.py, scripts/text_numbers.py, scripts/make_figures.py, scripts/check_paper.py",
+  "data": "data/",
+  "results": "output/"
+ },
+ "outside": [
+  "draft_contribution.md",
+  "draft_limitations.md",
+  "notes.md",
+  "scripts/__pycache__/analyze.cpython-314.pyc",
+  "scripts/__pycache__/clean.cpython-314.pyc",
+  "scripts/__pycache__/crossref_search.cpython-314.pyc",
+  "scripts/__pycache__/diagnose_affiliations.cpython-314.pyc",
+  "scripts/__pycache__/pull_crossref.cpython-314.pyc",
+  "scripts/__pycache__/pull_openalex.cpython-314.pyc"
+ ],
+ "numbers": {
+  "traced": 232,
+  "total": 233,
+  "untraced": [
+   "4.3"
+  ],
+  "per_unit": {
+   "U128": [
+    "47,140"
+   ],
+   "U181": [
+    "134,134"
+   ]
+  }
+ },
+ "typed": {
+  "tool_words": 4539,
+  "words": 5370,
+  "files": {
+   "paper.md": {
+    "tool": 4539,
+    "people": 831
+   }
+  }
+ },
+ "usage": {
+  "input_tokens": 468378,
+  "cache_creation_input_tokens": 712825,
+  "cache_read_input_tokens": 3748887,
+  "output_tokens": 165783,
+  "calls": 13,
+  "seconds": 1366
+ },
+ "cost_usd": 9.5,
+ "title": "Team size, international reach, and citations in four management journals, 2008–2017"
+}

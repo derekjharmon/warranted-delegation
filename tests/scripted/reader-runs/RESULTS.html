@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reader results on the four scored runs</title>
+<style>
+:root { --bg: #fbfaf7; --fg: #1d1c1a; --muted: #6b6760; --rule: #e2ded6; --code: #f1eee8; --accent: #2f5d8a; color-scheme: light; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #17171a; --fg: #ecebe8; --muted: #a29f98; --rule: #34343a; --code: #232328; --accent: #8db7e0; color-scheme: dark; }
+}
+body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.6 Charter, "Iowan Old Style", Georgia, serif; }
+main { max-width: 760px; margin: 0 auto; padding: 32px 20px 72px; }
+nav { font: 14px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin-bottom: 24px; }
+h1, h2, h3, h4 { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.25; text-wrap: balance; }
+h1 { font-size: 28px; } h2 { font-size: 21px; margin-top: 40px; } h3 { font-size: 17px; margin-top: 28px; }
+a { color: var(--accent); }
+code { font: 14px ui-monospace, SFMono-Regular, Menlo, monospace; background: var(--code); padding: 1px 4px; border-radius: 4px; overflow-wrap: anywhere; }
+pre { position: relative; background: var(--code); padding: 12px 72px 12px 14px; border-radius: 8px; overflow-x: auto; }
+pre code { padding: 0; background: none; white-space: pre-wrap; }
+.copy { position: absolute; top: 8px; right: 8px; font: 12px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; padding: 3px 9px; border: 1px solid var(--rule); border-radius: 6px; background: var(--bg); color: var(--fg); cursor: pointer; }
+table { border-collapse: collapse; font-size: 14px; display: block; overflow-x: auto; margin: 16px 0; }
+th, td { border-bottom: 1px solid var(--rule); padding: 6px 10px; text-align: left; vertical-align: top; }
+img { max-width: 100%; height: auto; border: 1px solid var(--rule); border-radius: 6px; margin: 12px 0 4px; }
+</style>
+</head>
+<body><main>
+<nav><a href="../../../index.html">Start page</a> · <a href="RESULTS.md">Markdown source</a></nav>
+<h1>Reader results on the four scored runs</h1>
+<p><em>Redrawn 2026-10-23: the disclosures in <code>reader-runs/</code> were drawn again from their saved codes with plugin 0.10.7, in the layout the demonstrations use, which leaves out the section outside the two measures (DECISIONS.md, Oct 22). No codes or scores changed.</em></p>
+<p><em>2026-10-06. Reader 0.6, frozen and attested with the settled key and the scoring script in <code>23abd4b</code> before it saw any scored run. Run with <code>tests/scripted/score.py read</code>, scored with <code>score.py score</code> (<a href="score.html"><code>score.md</code></a>). Written up by Claude.</em></p>
+<p><em>Note added 2026-10-07: the frozen reader reads the live <code>checklists/</code> folder, which gained packs for experiments, qualitative work, and theory on Oct 7. To reproduce these runs exactly, run <code>provenance/reader.py</code> from commit <code>23abd4b</code>. Each run recorded the checklists' hashes in <code>reader-run.json</code>, so a run on different checklists shows.</em></p>
+<h2>Validation (PLAN criterion 5)</h2>
+<p><strong>The reader is validated:</strong> κ is at least 0.6 on all three primary codes.</p>
+<table><thead><tr><th>Code</th><th>Layer</th><th>n</th><th>Agreement</th><th>κ</th></tr></thead><tbody><tr><td>Discretion: kept vs handed over</td><td>primary</td><td>83</td><td>86%</td><td>0.71</td></tr><tr><td>Judgment certification</td><td>primary</td><td>37</td><td>78%</td><td>0.70</td></tr><tr><td>Right-answer certification</td><td>primary</td><td>92</td><td>85%</td><td>0.75</td></tr><tr><td>Discretion: given vs taken</td><td>second</td><td>37</td><td>86%</td><td>0.47</td></tr><tr><td>Unchecked claims: no check vs wasn't notified</td><td>second</td><td>42</td><td>98%</td><td>0.00</td></tr></tbody></table>
+<p><strong>Second layers.</strong></p>
+<ul><li><strong>Given vs taken</strong> falls below 0.6. Under PLAN's Deviations item 9, the disclosures report "handed over" without the split.</li><li><strong>"No check" vs "wasn't notified" can't be estimated yet.</strong> The key has only one claim coded "wasn't notified," so κ is 0 even at 98% agreement. The category stays in the codebook, but it is unvalidated until runs produce more cases.</li></ul>
+<p><strong>Listing.</strong> The reader's quotes overlapped 175 of the key's 205 units (85%). Most of the other 30 it did list, but it quoted a different spot (for example, the interpretation anchored on "in years when a firm's market value is 10 percent higher" instead of "The results support the hypothesis"), so the pre-registered overlap rule doesn't pair them. The reader also lists at a finer grain, especially numbers in the text: it listed 282 units against the key's 205.</p>
+<p><strong>Sensitivity check, not pre-registered.</strong> Matching by checklist row first, then by overlap, pairs 171 units, with κ of 0.74, 0.75, and 0.79 on the primary codes, and 0.55 for given vs taken. The conclusion doesn't depend on the matching rule.</p>
+<p><strong>Cost:</strong> $3.21 of API usage for all four runs (14 model calls, about 14 minutes); about $3.30 per full pass across three runs.</p>
+<h2>Stability across three runs</h2>
+<p>The frozen reader was run twice more on the same four records (<code>tests/scripted/replicate.py</code>, outputs in <code>rep2/</code> and <code>rep3/</code>), since current models take no temperature setting.</p>
+<table><thead><tr><th>Run</th><th>Kept vs handed over</th><th>Judgment certification</th><th>Right-answer certification</th><th>Given vs taken (second layer)</th><th>Key units found</th><th>Cost</th></tr></thead><tbody><tr><td>1</td><td>0.71</td><td>0.70</td><td>0.75</td><td>0.47</td><td>175</td><td>$3.21</td></tr><tr><td>2</td><td>0.76</td><td>0.78</td><td>0.82</td><td>0.37</td><td>171</td><td>$3.37</td></tr><tr><td>3</td><td>0.81</td><td>0.78</td><td>0.77</td><td>0.18</td><td>172</td><td>$3.32</td></tr></tbody></table>
+<ul><li><strong>All three runs validate</strong>, with every primary κ between 0.70 and 0.82.</li><li><strong>Given vs taken is unstable as well as low</strong> (0.18 to 0.47), which confirms dropping that split from the disclosures.</li><li><strong>The disclosures' headline numbers barely move</strong> (decisions handed over / handed-over decisions taken back / claims checked, in percent):</li></ul>
+<table><thead><tr><th>Author</th><th>Run 1</th><th>Run 2</th><th>Run 3</th></tr></thead><tbody><tr><td>Careful</td><td>35 / 100 / 40</td><td>33 / 100 / 32</td><td>30 / 100 / 29</td></tr><tr><td>Unchecked</td><td>23 / 33 / 0</td><td>31 / 38 / 0</td><td>25 / 29 / 0</td></tr><tr><td>Careless</td><td>83 / 0 / 0</td><td>84 / 0 / 0</td><td>87 / 0 / 0</td></tr><tr><td>Owned</td><td>93 / 88 / 79</td><td>88 / 92 / 85</td><td>90 / 92 / 87</td></tr></tbody></table>
+<p>The separation of the four cells holds in every run.</p>
+<h2>What the disclosures show</h2>
+<p>These are the reader's own disclosures, before any comparison with the key (<a href="careful/disclosure.md">careful</a>, <a href="unchecked/disclosure.md">unchecked</a>, <a href="careless/disclosure.md">careless</a>, <a href="owned/disclosure.md">owned</a>).</p>
+<table><thead><tr><th>Run</th><th>Cell</th><th>Decisions handed over</th><th>Handed-over decisions the author took back*</th><th>Claims checked against a source**</th></tr></thead><tbody><tr><td>Careful</td><td>Directed tightly, followed up</td><td>35%</td><td>100%</td><td>40%</td></tr><tr><td>Unchecked</td><td>Directed tightly, let additions pass</td><td>23%</td><td>33%</td><td>0%</td></tr><tr><td>Careless</td><td>Abdicated</td><td>83%</td><td>0%</td><td>0%</td></tr><tr><td>Owned</td><td>Delegated a lot, checked and owned</td><td>93%</td><td>88%</td><td>79%</td></tr></tbody></table>
+<p>\* Changed, elaborated and okayed, or okayed. \** By the author, or by a tool with the author confirming.</p>
+<p>The two measures move independently, as the 2×2 predicts:</p>
+<ul><li><strong>Direction</strong> splits careful and unchecked (little handed over) from careless and owned (most handed over).</li><li><strong>Follow-up</strong> splits careful and owned (taken back and checked) from unchecked and careless (neither).</li></ul>
+<p>The finished memos can't show this. The careless memo is as correct as the careful one, and the unchecked memo, the most tightly directed, is the one that kept all five planted errors.</p>
+<h2>A non-Claude reader (Oct 8)</h2>
+<p>To test whether the agreement holds when Claude isn't grading Claude, the frozen reader (0.6.1, the same prompts and schemas) was run with OpenAI's <code>gpt-5.3-codex</code> in place of Claude, on the same four records, with the checklists as they stood at the frozen commit (<code>23abd4b</code>), and scored by the same <code>score.py</code> against the same key (<code>tests/scripted/reader_openai.py</code>; outputs in <a href="openai-gpt-5.3-codex/score.md"><code>openai-gpt-5.3-codex/</code></a>).</p>
+<table><thead><tr><th>Code</th><th>Claude, run 1</th><th>Claude, run 2</th><th>Claude, run 3</th><th>gpt-5.3-codex</th></tr></thead><tbody><tr><td>Kept vs handed over (primary)</td><td>0.71</td><td>0.76</td><td>0.81</td><td>0.66</td></tr><tr><td>Judgment certification (primary)</td><td>0.70</td><td>0.78</td><td>0.78</td><td>0.68</td></tr><tr><td>Claims certification (primary)</td><td>0.75</td><td>0.82</td><td>0.77</td><td>0.79</td></tr><tr><td>Given vs taken (second layer)</td><td>0.47</td><td>0.37</td><td>0.18</td><td>0.65</td></tr></tbody></table>
+<p>It also passes criterion 5's bar (κ ≥ 0.6 on all three primary codes): a little lower than Claude on the two decision codes and on par for claims. It found 172 of the key's 205 units (84%; Claude's first run, 85%) and listed at a finer grain. Given vs taken came out higher than in any Claude run; one run is not enough to restore that split to the disclosures. The key itself was half labeled by Claude, so this narrows the "Claude graded Claude" objection without removing it. 19 model calls, about 41 minutes, 406,851 input and 189,805 output tokens (147,129 of them reasoning).</p>
+<h2>The fixed reader on the same four runs (exploratory)</h2>
+<p><em>Added 2026-10-15 by Claude. Exploratory, not a test: the fix was designed from these runs' misses (<a href="misses-checked.md"><code>misses-checked.md</code></a>), so these numbers can't validate it; the frozen reader's preregistered result above stays the headline (DECISIONS.md, Oct 12). The fixed reader gets its own preregistered test on new runs (<a href="../../scripted2/README.html"><code>../../scripted2/README.md</code></a>).</em></p>
+<p>Reader 0.12 (<code>plugin/warrant/scripts/reader.py</code> at <code>7b3920a</code>): a places step adds every other place each unit appears, the transcript shows the instructions the record captured and sets brainstorm turns aside (neither occurs in these runs), and coding rules 9 and 10 are new. Run with the spine and the quantitative pack, the checklist the frozen reader saw, by <a href="../explore_fixed.py"><code>../explore_fixed.py</code></a>, through the API and through headless Claude Code with no key, and scored by the same frozen <code>score.py</code> and key. Outputs: <a href="fixed-0.12-api/"><code>fixed-0.12-api/</code></a> and <a href="fixed-0.12-claude-code/"><code>fixed-0.12-claude-code/</code></a>.</p>
+<table><thead><tr><th></th><th>Frozen reader (Oct 6)</th><th>Fixed, API</th><th>Fixed, headless</th></tr></thead><tbody><tr><td>Key units found (of 205)</td><td>175</td><td>198</td><td>198</td></tr><tr><td>κ, kept vs handed over</td><td>0.71</td><td>0.80</td><td>0.76</td></tr><tr><td>κ, judgment certification</td><td>0.70</td><td>0.81</td><td>0.78</td></tr><tr><td>κ, right-answer certification</td><td>0.75</td><td>0.73</td><td>0.72</td></tr><tr><td>κ, given vs taken (second layer)</td><td>0.47</td><td>0.37</td><td>0.13</td></tr><tr><td>n, judgment certification</td><td>37</td><td>45</td><td>44</td></tr><tr><td>Time, all four runs</td><td>about 14 min</td><td>26 min</td><td>27 min</td></tr><tr><td>Cost</td><td>$3.21 (API)</td><td>$5.87 (API)</td><td>none billed; $9.22 at list prices, on the subscription</td></tr></tbody></table>
+<ul><li><strong>Listing:</strong> the misses the hand check found, mostly the same call quoted elsewhere, are nearly gone: 7 key units unfound on each path, against 30.</li><li><strong>Codes:</strong> both primary decision codes rose by about 0.1 on both paths; right-answer certification held. Given vs taken stays below 0.6, so the disclosures keep reporting "handed over" without the split.</li><li><strong>The two paths</strong> agree closely, the headless path a little lower on every code; the new test scores each against the bar on its own.</li><li><strong>Cost:</strong> the places step adds a model call per 60 units, so a run costs about 80% more than the frozen reader's.</li></ul>
+</main>
+<script>
+// A copy button on every box. The clipboard API can be refused on a page opened
+// from a file, so a hidden text area does the copying then.
+document.querySelectorAll("pre").forEach(function (pre) {
+  var button = document.createElement("button");
+  button.type = "button"; button.className = "copy"; button.textContent = "Copy";
+  button.addEventListener("click", function () {
+    var text = (pre.querySelector("code") || pre).innerText.replace(/\n$/, "");
+    var done = function () { button.textContent = "Copied"; setTimeout(function () { button.textContent = "Copy"; }, 1500); };
+    var fallback = function () {
+      var area = document.createElement("textarea");
+      area.value = text; area.style.position = "fixed"; area.style.opacity = "0";
+      document.body.appendChild(area); area.select();
+      try { document.execCommand("copy"); done(); } catch (e) {}
+      area.remove();
+    };
+    if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(text).then(done, fallback);
+    else fallback();
+  });
+  pre.appendChild(button);
+});
+</script>
+</body>
+</html>

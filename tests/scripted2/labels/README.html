@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The settled key: how the labels are made</title>
+<style>
+:root { --bg: #fbfaf7; --fg: #1d1c1a; --muted: #6b6760; --rule: #e2ded6; --code: #f1eee8; --accent: #2f5d8a; color-scheme: light; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #17171a; --fg: #ecebe8; --muted: #a29f98; --rule: #34343a; --code: #232328; --accent: #8db7e0; color-scheme: dark; }
+}
+body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.6 Charter, "Iowan Old Style", Georgia, serif; }
+main { max-width: 760px; margin: 0 auto; padding: 32px 20px 72px; }
+nav { font: 14px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin-bottom: 24px; }
+h1, h2, h3, h4 { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.25; text-wrap: balance; }
+h1 { font-size: 28px; } h2 { font-size: 21px; margin-top: 40px; } h3 { font-size: 17px; margin-top: 28px; }
+a { color: var(--accent); }
+code { font: 14px ui-monospace, SFMono-Regular, Menlo, monospace; background: var(--code); padding: 1px 4px; border-radius: 4px; overflow-wrap: anywhere; }
+pre { position: relative; background: var(--code); padding: 12px 72px 12px 14px; border-radius: 8px; overflow-x: auto; }
+pre code { padding: 0; background: none; white-space: pre-wrap; }
+.copy { position: absolute; top: 8px; right: 8px; font: 12px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; padding: 3px 9px; border: 1px solid var(--rule); border-radius: 6px; background: var(--bg); color: var(--fg); cursor: pointer; }
+table { border-collapse: collapse; font-size: 14px; display: block; overflow-x: auto; margin: 16px 0; }
+th, td { border-bottom: 1px solid var(--rule); padding: 6px 10px; text-align: left; vertical-align: top; }
+img { max-width: 100%; height: auto; border: 1px solid var(--rule); border-radius: 6px; margin: 12px 0 4px; }
+</style>
+</head>
+<body><main>
+<nav><a href="../../../index.html">Start page</a> · <a href="README.md">Markdown source</a></nav>
+<h1>The settled key: how the labels are made</h1>
+<p><em>Drafted by Claude, 2026-10-15, for the author's review; fixed with the preregistration, before any run.</em></p>
+<p>One file per run, <code>&lt;task&gt;-&lt;cell&gt;.json</code>, read by <code>../score.py</code>. Each holds the run's settled key: every planted unit and every unit labeled after the run, with its codes and the quotes that anchor it in the finished work.</p>
+<h2>A unit</h2>
+<p>Fields as in the first test (<code>../../scripted/labels/</code>), plus two:</p>
+<table><thead><tr><th>Field</th><th>Value</th></tr></thead><tbody><tr><td><code>id</code>, <code>kind</code>, <code>row</code>, <code>label</code></td><td>K1, K2, …; decision or claim; the checklist row; a short name</td></tr><tr><td><code>anchors</code></td><td>Quotes copied exactly from the finished work, with their files</td></tr><tr><td><code>discretion</code>, <code>certification</code></td><td>The codes; a dash in the key is <code>null</code></td></tr><tr><td><code>basis</code></td><td>The steps or turns that settle the codes</td></tr><tr><td><code>labeled</code></td><td>Which codes were labeled after the run (<code>discretion</code>, <code>certification</code>), or <code>override</code> where a departure overrode the planted code</td></tr><tr><td><code>labeled_by</code></td><td><code>planted</code>, <code>Claude, by precedent</code>, <code>Claude, new kind</code> (the author labels these himself, so they're never in the spot-check draw), or <code>the author</code></td></tr><tr><td><code>precedent</code></td><td>For a label Claude applied, the precedent it cites (P1–P17 in <code>../precedents.md</code>), or <code>new kind</code></td></tr></tbody></table>
+<h2>The steps, in order</h2>
+<ol><li><strong>After each run, Claude labels it</strong> from the run's full transcript (<code>tools.py transcripts</code>, with brainstorm turns shown and marked):</li><li>each planted unit, anchored in the finished work, with its planted code, unless Claude departed from the planted instruction, in which case the departure is labeled and overrides the planted code;</li><li>what Claude did unasked: calls it took, checks it ran, claims it added;</li><li>whether its replies told the author about each handed-over call, which decides ignored versus wasn't notified;</li><li>the cases the key leaves to the labels (for example, a call the author's notes write out, kept only if the finished work uses it as written).</li></ol>
+<p>A label of a kind settled in the first test cites its precedent. A label that fits no precedent is marked <code>new kind</code>; the first cases under coding rules 9 and 10 are new kinds.</p>
+<ol><li><strong>Claude commits its labels</strong> before the author sees them, so his labels below are independent.</li><li><strong>The author labels every new kind</strong> himself, from the transcript, and settles any disagreement with Claude's label. Where the author rules, the label records it (<code>labeled_by: The author</code>), and later cases of the same kind cite his ruling.</li><li><strong>The author spot-checks a random tenth</strong> of the labels applied by precedent, drawn by <code>tools.py spotcheck</code> with the seed fixed in the preregistration. He marks each one agree or gives his code; his code is the settled one, and the number he changes is reported.</li><li><strong>The settled key is committed</strong>, and only then does the reader run (<code>../score.py read</code> refuses to start until the labels are committed).</li></ol>
+<p>Reported with the results: how many units were labeled after the runs, how many applied a precedent and how many were new kinds, how many departures overrode a planted code, the author's agreement with Claude on the new kinds, and how many of the spot-checked labels he changed.</p>
+</main>
+<script>
+// A copy button on every box. The clipboard API can be refused on a page opened
+// from a file, so a hidden text area does the copying then.
+document.querySelectorAll("pre").forEach(function (pre) {
+  var button = document.createElement("button");
+  button.type = "button"; button.className = "copy"; button.textContent = "Copy";
+  button.addEventListener("click", function () {
+    var text = (pre.querySelector("code") || pre).innerText.replace(/\n$/, "");
+    var done = function () { button.textContent = "Copied"; setTimeout(function () { button.textContent = "Copy"; }, 1500); };
+    var fallback = function () {
+      var area = document.createElement("textarea");
+      area.value = text; area.style.position = "fixed"; area.style.opacity = "0";
+      document.body.appendChild(area); area.select();
+      try { document.execCommand("copy"); done(); } catch (e) {}
+      area.remove();
+    };
+    if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(text).then(done, fallback);
+    else fallback();
+  });
+  pre.appendChild(button);
+});
+</script>
+</body>
+</html>

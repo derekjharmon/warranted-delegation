@@ -1,0 +1,597 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Warranted delegation paper trail</title>
+<style>
+/*FONTS*/
+/* Layout: the timeline of turns across the top; below, the manuscript on the left and the trail of whatever is selected on the right. */
+:root {
+  --bg: #f2f3f5; --page: #ffffff; --fg: #1c222a; --soft: #3b4551; --muted: #5f6874; --rule: #dadee4; --focus: #1f3f66;
+  /* the disclosure's shades (render.py), so a mark here means what it means there */
+  --made: #9aa1aa; --w1: #2f6aa3; --w2: #5b92c4; --w3: #9cc0e0; --n1: #e3a06c; --n2: #c4622b;
+  --c1: #1f3f66; --c2: #4f86bd; --unseen: #f2d2b4; --c4: #e3a06c; --c5: #c4622b;
+  --tint: 20%;
+  --serif: "Source Serif 4", "Iowan Old Style", Georgia, serif;
+  --sans: "IBM Plex Sans", -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #11151a; --page: #191f26; --fg: #e5e8ec; --soft: #c3cad3; --muted: #97a1ad; --rule: #2d3540; --focus: #8fb8e6;
+  --made: #6e7681; --w1: #5f99d1; --w2: #3f74a8; --w3: #2b5277; --n1: #b97447; --n2: #e08b55;
+  --c1: #8fb8e6; --c2: #4f86bd; --unseen: #7a5a40; --c4: #b97447; --c5: #e08b55; --tint: 30%; color-scheme: dark; } }
+:root[data-theme="dark"] {
+  --bg: #11151a; --page: #191f26; --fg: #e5e8ec; --soft: #c3cad3; --muted: #97a1ad; --rule: #2d3540; --focus: #8fb8e6;
+  --made: #6e7681; --w1: #5f99d1; --w2: #3f74a8; --w3: #2b5277; --n1: #b97447; --n2: #e08b55;
+  --c1: #8fb8e6; --c2: #4f86bd; --unseen: #7a5a40; --c4: #b97447; --c5: #e08b55; --tint: 30%; color-scheme: dark; }
+
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 15px/1.55 var(--sans); }
+.wrap { max-width: 1320px; margin: 0 auto; padding-inline: 20px; padding-block: 28px 64px; display: grid; gap: 22px; }
+h1, h2, h3 { text-wrap: balance; margin: 0; }
+p { margin: 0; }
+button { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+.mono { font-family: var(--mono); font-size: 0.86em; }
+.eyebrow { font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); font-weight: 500; }
+.note { color: var(--muted); font-size: 13.5px; }
+
+/* Header */
+header.top { display: grid; gap: 10px; }
+header.top .condition { justify-self: start; font-size: 1.05rem; font-weight: 600; padding: 5px 12px; border-radius: 999px; background: var(--page); border: 1.5px solid var(--w1); }
+header.top .ptitle { font-family: var(--serif); font-size: 1.35rem; font-weight: 600; line-height: 1.25; }
+header.top .checks { font-size: 1.05rem; }
+header.top .meta { color: var(--muted); font-size: 13.5px; display: grid; gap: 6px; max-width: 78ch; }
+header.top .meta code { font-family: var(--mono); font-size: 12px; word-break: break-all; }
+header.top h1 { font-family: var(--serif); font-weight: 600; font-size: clamp(1.6rem, 1.2rem + 1.4vw, 2.2rem); line-height: 1.15; }
+header.top .lede { color: var(--soft); font-size: 15.5px; max-width: 78ch; }
+
+/* Key and filters */
+.controls { display: flex; flex-wrap: wrap; gap: 14px 28px; align-items: flex-start; }
+.key { display: grid; gap: 6px; min-width: 0; background: var(--page); border: 1px solid var(--rule); border-radius: 10px; padding: 12px 16px; flex: 1 1 320px; align-content: start; }
+.key h2 { font-family: var(--serif); font-size: 1.05rem; font-weight: 600; }
+.key ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 13px; color: var(--soft); }
+.key li { display: inline-flex; align-items: center; gap: 6px; font-variant-numeric: tabular-nums; }
+.sw { width: 11px; height: 11px; border-radius: 2px; flex: none; display: inline-block; }
+.filters { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.filters span { font-size: 13px; color: var(--muted); margin-right: 2px; }
+.filters button { border: 1px solid var(--rule); background: var(--page); border-radius: 999px; padding: 3px 11px; font-size: 13px; cursor: pointer; font-variant-numeric: tabular-nums; }
+.filters button[aria-pressed="true"] { background: var(--fg); color: var(--page); border-color: var(--fg); }
+
+/* Timeline */
+.timeline { background: var(--page); border: 1px solid var(--rule); border-radius: 10px; padding: 14px 16px 12px; display: grid; gap: 10px; min-width: 0; }
+.timeline .head { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 16px; align-items: baseline; }
+.timeline h2 { font-size: 14px; font-weight: 600; }
+.tl-scroll { overflow-x: auto; }
+.tl { display: grid; grid-template-columns: 8.5rem repeat(var(--n), minmax(var(--w, 22px), 1fr)); column-gap: 3px; row-gap: 4px; min-width: calc(8.5rem + var(--n) * (var(--w, 22px) + 3px)); }
+.tl .rowlab { font-size: 12px; color: var(--muted); align-self: end; padding-bottom: 2px; }
+.tl .cell { display: flex; flex-wrap: wrap-reverse; align-content: flex-start; gap: 1px; padding-inline: 1px; border-bottom: 1px solid var(--rule); min-height: 14px; }
+.tl .cell.claims { border-bottom: none; border-top: 1px solid var(--rule); flex-wrap: wrap; padding-top: 2px; }
+.tl .col-hover { background: color-mix(in srgb, var(--fg) 5%, transparent); }
+.sq { width: 6px; height: 6px; border: 0; padding: 0; border-radius: 1px; cursor: pointer; background: var(--shade); }
+.sq.sel { outline: 2px solid var(--fg); outline-offset: 1px; position: relative; z-index: 1; }
+.tlab { border: 0; background: none; padding: 2px 0; font-family: var(--mono); font-size: 10.5px; color: var(--muted); cursor: pointer; text-align: center; position: relative; }
+.tlab:hover, .tlab.sel { color: var(--fg); font-weight: 500; }
+.tlab.open { color: var(--fg); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
+.linkish { border: 0; background: none; padding: 0; font: inherit; color: var(--fg); text-decoration: underline; cursor: pointer; }
+#tl-day-wrap { display: grid; gap: 6px; padding-top: 6px; border-top: 1px dashed var(--rule); }
+#tl-day-wrap[hidden] { display: none; }
+.tlab.hand::before { content: ""; position: absolute; left: -3px; top: 50%; width: 5px; height: 5px; margin-top: -2.5px; transform: rotate(45deg); background: var(--n2); }
+.caption { font-size: 13px; color: var(--soft); min-height: 1.55em; overflow-wrap: anywhere; }
+.caption b { font-family: var(--mono); font-weight: 500; font-size: 12px; }
+.tl-note { font-size: 13px; color: var(--soft); max-width: 90ch; }
+.tl-note i { display: inline-block; width: 5px; height: 5px; transform: rotate(45deg); background: var(--n2); margin-right: 6px; vertical-align: middle; }
+
+/* Manuscript and trail */
+.main { display: grid; gap: 22px; align-items: start; }
+@media (min-width: 1080px) { .main { grid-template-columns: minmax(0, 1fr) minmax(360px, 430px); } }
+.paper { background: var(--page); border: 1px solid var(--rule); border-radius: 10px; padding: clamp(20px, 4vw, 48px) clamp(18px, 5vw, 64px); min-width: 0; font-family: var(--serif); font-size: 17px; line-height: 1.62; }
+.paper > * { max-width: 68ch; }
+.paper h1 { font-size: 1.65em; line-height: 1.2; margin: 0 0 0.6em; }
+.paper h2 { font-size: 1.2em; margin: 1.6em 0 0.5em; }
+.paper h3 { font-size: 1.04em; margin: 1.3em 0 0.4em; }
+.paper p, .paper ul, .paper ol { margin: 0 0 0.9em; }
+.paper code { font-family: var(--mono); font-size: 0.82em; }
+.paper .byline { font-family: var(--sans); color: var(--muted); font-size: 0.9em; margin: 0 0 0.3em; }
+.paper .figcap { display: block; font-family: var(--sans); font-size: 0.88em; color: var(--soft); border-left: 3px solid var(--rule); padding-left: 10px; }
+.paper table { display: block; overflow-x: auto; max-width: 100%; border-collapse: collapse; font-family: var(--sans); font-size: 13px; font-variant-numeric: tabular-nums; margin: 0 0 1.2em; }
+.paper th, .paper td { border-bottom: 1px solid var(--rule); padding: 4px 8px; text-align: left; vertical-align: top; }
+.paper a { color: inherit; }
+mark.u { color: inherit; background: color-mix(in srgb, var(--shade) var(--tint), transparent); box-shadow: inset 0 -2px 0 var(--shade); cursor: pointer; border-radius: 1px; transition: background 0.15s; }
+mark.u.k-claim { box-shadow: none; text-decoration: underline dotted var(--shade); text-decoration-thickness: 2px; text-underline-offset: 3px; }
+/* A sentence that restates a call made elsewhere: outlined, not filled (DECISIONS.md, Oct 12). */
+mark.u.restate { background: transparent; box-shadow: none; text-decoration: underline dashed var(--shade); text-decoration-thickness: 1.5px; text-underline-offset: 4px; }
+mark.u.restate:hover { background: color-mix(in srgb, var(--shade) 10%, transparent); }
+mark.u:hover { background: color-mix(in srgb, var(--shade) calc(var(--tint) + 18%), transparent); }
+mark.u.sel { background: color-mix(in srgb, var(--shade) calc(var(--tint) + 30%), transparent); box-shadow: inset 0 -3px 0 var(--fg); text-decoration: none; }
+body[data-filter="handed"] mark.u:not(.f-handed), body[data-filter="notwarranted"] mark.u:not(.f-notwarranted),
+body[data-filter="unchecked"] mark.u:not(.f-unchecked) { background: transparent; box-shadow: inset 0 -1px 0 var(--rule); text-decoration: none; }
+body[data-filter="handed"] .sq:not(.f-handed), body[data-filter="notwarranted"] .sq:not(.f-notwarranted),
+body[data-filter="unchecked"] .sq:not(.f-unchecked) { opacity: 0.14; }
+@keyframes flash { from { outline: 3px solid var(--fg); } to { outline: 3px solid transparent; } }
+mark.u.flash { animation: flash 1.2s ease-out; outline-offset: 2px; }
+@media (prefers-reduced-motion: reduce) { mark.u.flash { animation: none; } mark.u { transition: none; } }
+
+.offpaper { margin-top: 2.2em; padding-top: 1.2em; border-top: 1px solid var(--rule); font-family: var(--sans); font-size: 14px; max-width: none; }
+.offpaper h2 { font-family: var(--sans); font-size: 15px; margin: 0 0 4px; }
+.offpaper ul { list-style: none; padding: 0; margin: 8px 0 0; display: grid; gap: 2px; }
+.offpaper button { width: 100%; text-align: left; border: 0; background: none; padding: 5px 6px; border-radius: 6px; cursor: pointer; display: grid; grid-template-columns: 11px 3.2rem minmax(0, 1fr); gap: 8px; align-items: baseline; }
+.offpaper button:hover, .offpaper button.sel { background: color-mix(in srgb, var(--fg) 6%, transparent); }
+.offpaper .file { color: var(--muted); font-family: var(--mono); font-size: 12px; }
+
+aside.trail { background: var(--page); border: 1px solid var(--rule); border-radius: 10px; min-width: 0; display: grid; }
+@media (min-width: 1080px) { aside.trail { position: sticky; top: calc(env(safe-area-inset-top, 0px) + 14px); max-height: calc(100vh - 28px); overflow-y: auto; } }
+@media (max-width: 1079px) {
+  aside.trail { position: fixed; left: 0; right: 0; bottom: 0; z-index: 10; max-height: 64vh; overflow-y: auto; border-radius: 14px 14px 0 0; border-bottom: 0; box-shadow: 0 -8px 30px color-mix(in srgb, #000 22%, transparent); padding-bottom: env(safe-area-inset-bottom, 0px); }
+  aside.trail:not(.open) { display: none; }
+  .wrap { padding-bottom: 50vh; }
+}
+.trail .bar { position: sticky; top: 0; background: var(--page); border-bottom: 1px solid var(--rule); padding: 10px 18px; display: flex; justify-content: space-between; align-items: center; gap: 10px; z-index: 1; }
+.trail .bar .eyebrow { margin: 0; }
+.trail .close { border: 1px solid var(--rule); background: none; border-radius: 6px; padding: 2px 10px; cursor: pointer; font-size: 13px; }
+.trail .body { padding: 16px 18px 22px; display: grid; gap: 16px; min-width: 0; }
+.trail h3 { font-family: var(--serif); font-size: 1.25rem; line-height: 1.25; font-weight: 600; }
+.trail .k { font-size: 12px; letter-spacing: 0.07em; text-transform: uppercase; color: var(--muted); font-weight: 500; margin-bottom: 6px; }
+.trail .idline { display: flex; flex-wrap: wrap; gap: 4px 12px; font-size: 13px; color: var(--muted); }
+.trail .status { display: flex; gap: 8px; align-items: baseline; font-size: 14px; font-weight: 500; }
+.trail .status .sw { transform: translateY(1px); }
+.trail blockquote { margin: 0; padding: 8px 12px; border-left: 3px solid var(--shade, var(--rule)); background: color-mix(in srgb, var(--shade, var(--rule)) 10%, transparent); font-family: var(--serif); font-size: 15px; border-radius: 0 6px 6px 0; overflow-wrap: anywhere; }
+.trail ul.plain { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; font-size: 14px; }
+.trail .file { font-family: var(--mono); font-size: 12px; color: var(--muted); display: block; }
+.trail q { font-family: var(--serif); quotes: "\201C" "\201D"; overflow-wrap: anywhere; }
+.trail q.snip { display: block; font-size: 13px; color: var(--muted); margin-top: 2px; }
+.trail .switch { display: flex; flex-wrap: wrap; gap: 6px; }
+.trail .switch button { border: 1px solid var(--rule); background: none; border-radius: 6px; padding: 3px 9px; cursor: pointer; font-size: 13px; display: inline-flex; gap: 6px; align-items: center; }
+.trail .switch button[aria-pressed="true"] { border-color: var(--fg); font-weight: 500; }
+.turn { border: 1px solid var(--rule); border-radius: 8px; padding: 10px 12px; display: grid; gap: 8px; min-width: 0; }
+.turn header { display: flex; gap: 8px; align-items: baseline; font-size: 13px; color: var(--muted); }
+.tlink { border: 1px solid var(--rule); background: none; border-radius: 5px; padding: 0 6px; font-family: var(--mono); font-size: 12px; cursor: pointer; color: var(--fg); }
+.tlink:hover { border-color: var(--fg); }
+.prompt { white-space: pre-wrap; overflow-wrap: anywhere; font-size: 14px; }
+.turn details summary { cursor: pointer; font-size: 13px; color: var(--soft); }
+.turn details[open] summary { margin-bottom: 6px; }
+.reply { font-size: 13.5px; overflow-wrap: anywhere; min-width: 0; }
+.reply p, .reply ul, .reply ol { margin: 0 0 0.6em; }
+.reply h1, .reply h2, .reply h3 { font-size: 14px; margin: 0.8em 0 0.3em; }
+.reply table { display: block; overflow-x: auto; border-collapse: collapse; font-size: 12px; }
+.reply td, .reply th { border-bottom: 1px solid var(--rule); padding: 2px 6px; }
+.reply code, .tools, pre { font-family: var(--mono); font-size: 12px; }
+pre { margin: 0; white-space: pre-wrap; overflow-wrap: anywhere; max-height: 22em; overflow-y: auto; background: color-mix(in srgb, var(--fg) 4%, transparent); padding: 8px; border-radius: 6px; }
+.tools { margin: 0; padding-left: 16px; display: grid; gap: 2px; color: var(--soft); overflow-wrap: anywhere; }
+.chips { display: flex; flex-wrap: wrap; gap: 5px; }
+.chips button { border: 1px solid var(--rule); background: none; border-radius: 6px; padding: 2px 8px; cursor: pointer; font-size: 12.5px; display: inline-flex; gap: 6px; align-items: center; max-width: 100%; }
+.chips button span.t { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 15rem; }
+.handnote { font-size: 13px; color: var(--soft); }
+.empty-state { display: grid; gap: 10px; font-size: 14px; color: var(--soft); }
+.empty-state ul { margin: 0; padding-left: 18px; display: grid; gap: 6px; }
+.kindtag { font-size: 12px; color: var(--muted); }
+footer.src { font-size: 12.5px; color: var(--muted); max-width: 90ch; }
+</style>
+</head><body>
+
+<div class="wrap">
+  <header class="top">
+    <!--HEADER-->
+    <p class="lede">Every judgment call and verifiable claim the reader found is marked in the paper, in the shade the disclosure gives it. Click one to see the words it rests on, the reader's basis for its code, and the turns that produced it.</p>
+  </header>
+
+  <div class="controls" id="controls"></div>
+
+  <section class="timeline" aria-labelledby="tl-h">
+    <div class="head">
+      <h2 id="tl-h">When each call came up</h2>
+    </div>
+    <p class="tl-note">A turn is one message from the author and everything the AI did in reply. Each square is a call or claim, placed at the turn where it first came up. Turns follow the order of the work, not the order of the paper.</p>
+    <p class="tl-note" id="tl-group" hidden></p>
+    <p class="tl-note"><i></i>marks hand edits made before a turn.</p>
+    <div class="tl-scroll"><div class="tl" id="tl"></div></div>
+    <div id="tl-day-wrap" hidden><p class="tl-note" id="tl-day-h"></p><div class="tl-scroll"><div class="tl" id="tl-day"></div></div></div>
+    <p class="caption" id="caption">Point at a turn to see the author's prompt; click its number to open the turn.</p>
+  </section>
+
+  <div class="main">
+    <article class="paper" id="paper"><!--PAPER--><section class="offpaper" id="offpaper"></section></article>
+    <aside class="trail" id="trail" aria-live="polite">
+      <div class="bar"><p class="eyebrow" id="trail-title">The trail</p><button class="close" id="close" type="button">Close</button></div>
+      <div class="body" id="trail-body"></div>
+    </aside>
+  </div>
+
+  <footer class="src" id="src"></footer>
+</div>
+
+<script>
+const DATA = /*DATA*/null;
+const D_SHADE = {"made": "--made", "changed": "--w1", "elaborated and okayed": "--w2", "okayed": "--w3", "ignored": "--n1", "wasn't notified": "--n2"};
+const C_SHADE = {"you checked it against the source": "--c1", "tool checked, you confirmed": "--c2", "tool checked, you didn't see the result": "--unseen", "no check": "--c4", "wasn't notified": "--c5"};
+const shade = u => `var(${(u.kind === "decision" ? D_SHADE : C_SHADE)[u.key] || "--unseen"})`;
+const rank = u => u.kind === "decision" ? {not: 0, warranted: 1, made: 2}[u.group] : {not: 3, unseen: 4, checked: 5}[u.group];
+const FILTERS = {
+  handed: u => u.kind === "decision" && u.group !== "made",
+  notwarranted: u => u.kind === "decision" && u.group === "not",
+  unchecked: u => u.kind === "claim" && u.group !== "checked",
+};
+const U = Object.fromEntries(DATA.units.map(u => [u.id, u]));
+const T = DATA.turns;
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"}[c]));
+const $ = id => document.getElementById(id);
+const fclasses = units => Object.entries(FILTERS).filter(([, f]) => units.some(f)).map(([k]) => "f-" + k).join(" ");
+const kindName = u => u.kind === "decision" ? "Judgment call" : "Verifiable claim";
+const firstLine = s => (s || "").split("\n").find(l => l.trim()) || "";
+
+/* ---- Key and filters ---- */
+(function controls() {
+  const dl = DATA.decisionParts.filter(p => p[2]).map(([k, l, n]) =>
+    `<li><span class="sw" style="background:var(${D_SHADE[k]})"></span>${esc(l)} <b>${n}</b></li>`).join("");
+  const cl = DATA.claimParts.filter(p => p[2]).map(([k, l, n]) =>
+    `<li><span class="sw" style="background:var(${C_SHADE[k]})"></span>${esc(l)} <b>${n}</b></li>`).join("");
+  const nd = DATA.units.filter(u => u.kind === "decision").length, nc = DATA.units.length - nd;
+  const count = f => DATA.units.filter(f).length;
+  $("controls").innerHTML = `
+    <div class="key"><h2>Judgment calls: ${nd}</h2><ul>${dl}</ul></div>
+    <div class="key"><h2>Verifiable claims: ${nc}</h2><ul>${cl}</ul></div>
+    <p class="note" style="flex-basis:100%">A shaded passage with a solid underline is where a judgment call is made, and a dotted underline a verifiable claim. A dashed underline, unshaded, is a sentence that restates a call made elsewhere; click it to see where. A results table is one claim for all its numbers, so the whole table carries one mark. Text that does nothing a checklist row names isn't a unit.</p>
+    <div class="filters" role="group" aria-label="Show"><span>Show</span>
+      <button type="button" data-f="all" aria-pressed="true">Everything</button>
+      <button type="button" data-f="handed" aria-pressed="false">Handed to the tool (${count(FILTERS.handed)})</button>
+      <button type="button" data-f="notwarranted" aria-pressed="false">Not warranted (${count(FILTERS.notwarranted)})</button>
+      <button type="button" data-f="unchecked" aria-pressed="false">Claims not checked (${count(FILTERS.unchecked)})</button>
+    </div>`;
+  $("controls").addEventListener("click", e => {
+    const b = e.target.closest("button[data-f]");
+    if (!b) return;
+    document.body.dataset.filter = b.dataset.f;
+    $("controls").querySelectorAll("button[data-f]").forEach(x => x.setAttribute("aria-pressed", String(x === b)));
+  });
+})();
+
+/* ---- Marks in the paper ---- */
+const unplaced = new Set();
+(function marks() {
+  const root = $("paper");
+  const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
+    acceptNode: n => n.parentElement.closest("#offpaper") ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT});
+  const nodes = [], starts = [];
+  let full = "";
+  while (walker.nextNode()) { nodes.push(walker.currentNode); starts.push(full.length); full += walker.currentNode.data; }
+  const strip = /[\s*_`|\\#]/;
+  let ns = ""; const map = [];
+  for (let i = 0; i < full.length; i++) if (!strip.test(full[i])) { ns += full[i]; map.push(i); }
+  const cover = new Array(full.length);
+  const tables = new Map();  // table -> [first char, last char] of its text
+  nodes.forEach((nd, k) => {
+    const t = nd.parentElement.closest("table");
+    if (!t || !nd.data.length) return;
+    const r = tables.get(t) || [starts[k], 0];
+    r[1] = starts[k] + nd.data.length - 1;
+    tables.set(t, r);
+  });
+  const nodeAt = i => { let lo = 0, hi = starts.length - 1; while (lo < hi) { const m = (lo + hi + 1) >> 1; starts[m] <= i ? lo = m : hi = m - 1; } return nodes[lo]; };
+  const recover = new Array(full.length);  // restatements, shown only where no call is made
+  for (const u of DATA.units) {
+    const anchors = u.anchors.filter(a => DATA.manuscript.includes(a.file) && a.found && a.nq);
+    if (!anchors.length) continue;
+    let placed = false;
+    for (const a of anchors) {
+      const at = ns.indexOf(a.nq);
+      if (at < 0) continue;
+      if (!a.restates) placed = true;
+      let gs = map[at], ge = map[at + a.nq.length - 1];
+      const t = u.kind === "claim" && u.row === "QV1" && nodeAt(gs).parentElement.closest("table");
+      if (t && tables.has(t)) [gs, ge] = tables.get(t);
+      const into = a.restates ? recover : cover;
+      for (let i = gs; i <= ge; i++) (into[i] ||= []).includes(u.id) || into[i].push(u.id);
+    }
+    if (!placed && anchors.some(a => !a.restates)) unplaced.add(u.id);
+  }
+  nodes.forEach((node, k) => {
+    const s0 = starts[k], text = node.data;
+    let segs = [], cur = null;
+    for (let i = 0; i < text.length; i++) {
+      const made = (cover[s0 + i] || []).join(" ");
+      const key = made ? "m:" + made : (recover[s0 + i] || []).length ? "r:" + recover[s0 + i].join(" ") : "";
+      if (!cur || cur.key !== key) { cur = {key, text: ""}; segs.push(cur); }
+      cur.text += text[i];
+    }
+    if (segs.length === 1 && !segs[0].key) return;
+    const frag = document.createDocumentFragment();
+    for (const sg of segs) {
+      if (!sg.key) { frag.appendChild(document.createTextNode(sg.text)); continue; }
+      const restate = sg.key.startsWith("r:");
+      const units = sg.key.slice(2).split(" ").map(id => U[id]).sort((a, b) => rank(a) - rank(b));
+      const m = document.createElement("mark");
+      m.className = "u " + fclasses(units) + (restate ? " restate" : units[0].kind === "claim" ? " k-claim" : "");
+      m.dataset.u = units.map(u => u.id).join(" ");
+      if (restate) m.title = `Restates ${units.map(u => u.id).join(", ")}, made elsewhere`;
+      m.style.setProperty("--shade", shade(units[0]));
+      m.textContent = sg.text;
+      frag.appendChild(m);
+    }
+    node.parentNode.replaceChild(frag, node);
+  });
+  root.addEventListener("click", e => {
+    const m = e.target.closest("mark.u");
+    if (m) {
+      e.preventDefault();
+      clicked = (m.closest("table") || m.closest("p, li, h1, h2, h3, h4, h5, h6, blockquote") || m).textContent;
+      selectUnits(m.dataset.u.split(" "), {from: "paper"});
+    }
+  });
+})();
+
+/* ---- Units made outside the paper ---- */
+(function offpaper() {
+  const made = u => u.anchors.some(a => DATA.manuscript.includes(a.file) && a.found && !a.restates);
+  const off = DATA.units.filter(u => !made(u) || unplaced.has(u.id));
+  if (!off.length) { $("offpaper").remove(); return; }
+  off.sort((a, b) => (a.anchors[0]?.file || "").localeCompare(b.anchors[0]?.file || "") || rank(a) - rank(b));
+  const restated = off.filter(u => u.anchors.some(a => DATA.manuscript.includes(a.file) && a.restates)).length;
+  $("offpaper").innerHTML = `<h2>Made elsewhere in the finished work</h2>
+    <p class="note">${off.length} units the reader found made outside ${esc(DATA.manuscript.join(", "))}${restated ? ` (${restated} of them restated in the paper, with a dashed underline)` : ""}${unplaced.size ? `, or whose quote this view couldn't place (${unplaced.size})` : ""}.</p>
+    <ul>${off.map(u => `<li><button type="button" class="${fclasses([u])}" data-unit="${u.id}"><span class="sw" style="background:${shade(u)}"></span>
+      <span class="mono">${u.id}</span><span>${esc(u.label)} <span class="file">${esc(u.anchors.map(a => a.file).filter((f, i, x) => x.indexOf(f) === i).join(", "))}</span></span></button></li>`).join("")}</ul>`;
+  $("offpaper").addEventListener("click", e => {
+    const b = e.target.closest("button[data-unit]");
+    if (b) selectUnits([b.dataset.unit], {from: "list"});
+  });
+})();
+
+/* ---- Timeline ---- */
+(function timeline() {
+  // One column per turn while that fits; a long record gets the smallest calendar unit, a day, a week, or a month,
+  // that fits in MAX columns, and a click opens a column's turns (DECISIONS.md, Oct 23).
+  const n = DATA.nturns, tl = $("tl"), cap = $("caption"), TURN_MAX = 100, MAX = 40;
+  const MON = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+  const MONTH = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+  const all = Array.from({length: n}, (_, i) => i + 1);
+  const firstAt = {};
+  for (const u of DATA.units) (firstAt[u.first] ||= []).push(u);
+  const unitsIn = (c, kind) => c.turns.flatMap(t => firstAt[t] || []).filter(u => u.kind === kind);
+  const squares = us => us.sort((a, b) => rank(b) - rank(a)).map(u =>
+    `<button type="button" class="sq ${fclasses([u])}" data-unit="${u.id}" style="--shade:${shade(u)}" title="${esc(u.id + " · " + u.label + " · " + u.status)}" aria-label="${esc(u.id + ": " + u.label)}"></button>`).join("");
+  const grid = (el, cols, rowlab, minw) => {
+    el.style.setProperty("--n", cols.length);
+    el.style.setProperty("--w", minw + "px");
+    let h = `<div class="rowlab">${rowlab}</div>`;
+    cols.forEach((c, i) => h += `<button type="button" class="tlab${c.hand ? " hand" : ""}"${c.turn ? ` data-turn="${c.turn}"` : ""} data-col="${i}" aria-label="${esc(c.aria)}">${c.label}</button>`);
+    for (const [kind, label] of [["decision", "Judgment calls"], ["claim", "Verifiable claims"]]) {
+      h += `<div class="rowlab">${label}</div>`;
+      cols.forEach((c, i) => h += `<div class="cell${kind === "claim" ? " claims" : ""}" data-col="${i}">${squares(unitsIn(c, kind))}</div>`);
+    }
+    el.innerHTML = h;
+  };
+  const turnW = ts => Math.max(22, String(ts[ts.length - 1]).length * 7 + 4);
+  const turnCols = ts => ts.map(t => ({turn: t, label: String(t), turns: [t], hand: !!T[t]?.hand, aria: `Open turn ${t}`}));
+  const turnCaption = c => {
+    const p = firstLine(T[c.turn]?.prompt);
+    return `<b>T${c.turn}</b> · ${esc(p.length > 180 ? p.slice(0, 180) + "…" : p) || "<span class='note'>(no prompt text)</span>"}`;
+  };
+  let rest = cap.innerHTML;
+  const wire = (el, getCols, caption, click) => {
+    let hot = null;
+    const hover = i => {
+      if (hot === i) return;
+      el.querySelectorAll(".col-hover").forEach(x => x.classList.remove("col-hover"));
+      hot = i;
+      if (i === null) { cap.innerHTML = rest; return; }
+      el.querySelectorAll(`[data-col="${i}"]`).forEach(x => x.classList.add("col-hover"));
+      cap.innerHTML = caption(getCols()[i]);
+    };
+    el.addEventListener("mouseover", e => { const c = e.target.closest("[data-col]"); hover(c ? +c.dataset.col : null); });
+    el.addEventListener("focusin", e => { const c = e.target.closest("[data-col]"); if (c) hover(+c.dataset.col); });
+    el.addEventListener("mouseleave", () => hover(null));
+    el.addEventListener("click", e => {
+      const sq = e.target.closest(".sq"), c = e.target.closest("[data-col]");
+      if (sq) selectUnits([sq.dataset.unit], {from: "timeline"});
+      else if (c) click(getCols()[+c.dataset.col]);
+    });
+  };
+  const byTurn = () => {
+    const cols = turnCols(all);
+    grid(tl, cols, "Turn", turnW(all));
+    wire(tl, () => cols, turnCaption, c => selectTurn(c.turn));
+  };
+  // Each turn's day, from the record (trail.py adds it only to long records); a turn without one takes the last day before it.
+  const dayOf = {};
+  let last = all.map(t => T[t]?.day).find(Boolean);
+  for (const t of all) dayOf[t] = last = T[t]?.day || last;
+  if (n <= TURN_MAX || !last) return byTurn();
+
+  const D = s => new Date(s + "T00:00:00Z"), iso = d => d.toISOString().slice(0, 10);
+  const keyOf = {
+    Day: s => s,
+    Week: s => { const d = D(s); return iso(new Date(+d - ((d.getUTCDay() + 6) % 7) * 864e5)); },
+    Month: s => s.slice(0, 7),
+  };
+  const dateOf = (unit, k) => D(unit === "Month" ? k + "-01" : k);
+  const days = all.map(t => dayOf[t]).sort();
+  const lo = D(days[0]), hi = D(days[days.length - 1]);
+  let unit, keys;
+  for (unit of ["Day", "Week", "Month"]) {
+    keys = [];
+    for (let d = lo; d <= hi; d = new Date(+d + 864e5)) { const k = keyOf[unit](iso(d)); if (keys[keys.length - 1] !== k) keys.push(k); }
+    if (keys.length <= MAX) break;
+  }
+  if (keys.length < 2) return byTurn();  // a long record done in one day: its turns, one by one
+  const cols = keys.map((k, i) => {
+    const d = dateOf(unit, k), prev = i ? dateOf(unit, keys[i - 1]) : null;
+    const newMonth = !prev || prev.getUTCMonth() !== d.getUTCMonth(), newYear = !prev || prev.getUTCFullYear() !== d.getUTCFullYear();
+    const label = unit === "Month" ? MON[d.getUTCMonth()] + (newYear ? ` '${String(d.getUTCFullYear()).slice(2)}` : "")
+      : (newMonth ? `${MON[d.getUTCMonth()]} ${d.getUTCDate()}` : String(d.getUTCDate()));
+    const name = unit === "Month" ? `${MONTH[d.getUTCMonth()]} ${d.getUTCFullYear()}`
+      : unit === "Week" ? `the week of ${MON[d.getUTCMonth()]} ${d.getUTCDate()}` : `${MON[d.getUTCMonth()]} ${d.getUTCDate()}`;
+    return {key: k, label, name, turns: [], hand: false, aria: `Show the turns of ${name}`};
+  });
+  const at = Object.fromEntries(keys.map((k, i) => [k, i]));
+  for (const t of all) { const c = cols[at[keyOf[unit](dayOf[t])]]; c.turns.push(t); if (T[t]?.hand) c.hand = true; }
+  const per = unit.toLowerCase();
+  $("tl-group").textContent = `This record has ${n.toLocaleString()} turns, too many to show one by one, so each column is one ${per}. `
+    + `Each square is placed at the ${per} its call or claim first came up. Click a ${per} to see its turns.`;
+  $("tl-group").hidden = false;
+  grid(tl, cols, unit === "Week" ? "Week of" : unit, 30);
+  rest = cap.innerHTML = `Point at a ${per} to see its turns and what first came up then; click it to show its turns one by one.`;
+  const colCaption = c => !c.turns.length ? `<b>${c.name}</b> · no turns`
+    : `<b>${c.name}</b> · turns ${c.turns[0]}–${c.turns[c.turns.length - 1]} (${c.turns.length}) · `
+      + `${unitsIn(c, "decision").length} calls and ${unitsIn(c, "claim").length} claims first came up · click to see its turns`;
+  const wrap = $("tl-day-wrap"), sub = $("tl-day"), subh = $("tl-day-h");
+  let subCols = [];
+  const open = c => {
+    tl.querySelectorAll(".tlab.open").forEach(x => x.classList.remove("open"));
+    if (!c.turns.length) { wrap.hidden = true; return; }
+    subCols = turnCols(c.turns);
+    grid(sub, subCols, "Turn", turnW(c.turns));
+    subh.innerHTML = `<b>${c.name}</b>: turns ${c.turns[0]} to ${c.turns[c.turns.length - 1]}. <button type="button" class="linkish" id="tl-day-x">Close</button>`;
+    wrap.hidden = false;
+    tl.querySelector(`.tlab[data-col="${cols.indexOf(c)}"]`).classList.add("open");
+  };
+  wire(tl, () => cols, colCaption, open);
+  wire(sub, () => subCols, turnCaption, c => selectTurn(c.turn));
+  subh.addEventListener("click", e => {
+    if (e.target.id !== "tl-day-x") return;
+    wrap.hidden = true;
+    tl.querySelectorAll(".tlab.open").forEach(x => x.classList.remove("open"));
+  });
+  // A call selected in the paper opens its column, so its square is in view.
+  document.addEventListener("click", e => {
+    if (e.target.closest(".timeline")) return;
+    setTimeout(() => {
+      const s = tl.querySelector(".sq.sel");
+      if (!s) return;
+      const i = +s.closest("[data-col]").dataset.col;
+      if (!tl.querySelector(`.tlab.open[data-col="${i}"]`)) open(cols[i]);
+    }, 0);
+  });
+})();
+
+
+/* ---- The trail panel ---- */
+const trail = $("trail"), body = $("trail-body");
+function openTrail(title) {
+  $("trail-title").textContent = title;
+  trail.classList.add("open");
+  trail.scrollTop = 0;
+}
+function clearSel() {
+  document.querySelectorAll(".sel").forEach(x => x.classList.remove("sel"));
+}
+function turnCard(t, {full = false} = {}) {
+  const x = T[t];
+  if (!x) return `<div class="turn"><header><span class="mono">T${t}</span></header><p class="note">Not in the record as read.</p></div>`;
+  const head = label => `<header><button type="button" class="tlink" data-turn="${t}">T${t}</button><span>${label}</span></header>`;
+  const instr = x.instructions ? `<details><summary>Instructions in force from this turn</summary><pre>${esc(x.instructions)}</pre></details>` : "";
+  if (x.kind === "aside") return `<div class="turn">${head("Set aside")}<p class="handnote">${esc(x.prompt)}</p></div>`;
+  if (x.kind === "first") return `<div class="turn">${head("The author's first save")}<p class="handnote">${esc(x.prompt)}</p></div>`;
+  if (x.kind === "attest") return `<div class="turn">${head("The author's signed save")}<div class="prompt">${esc(x.prompt)}</div>${instr}</div>`;
+  const long = x.prompt.length > 700;
+  const prompt = long && !full
+    ? `<div class="prompt">${esc(x.prompt.slice(0, 700))}…</div><details><summary>The rest of the prompt</summary><div class="prompt">${esc(x.prompt.slice(700))}</div></details>`
+    : `<div class="prompt">${esc(x.prompt) || '<span class="note">(no text)</span>'}</div>`;
+  const hand = x.hand ? `<details><summary>Before this turn, the author edited ${x.hand.files.length} file${x.hand.files.length === 1 ? "" : "s"} by hand</summary>
+      <p class="handnote">${x.hand.files.map(esc).join(", ")}</p><pre>${esc(x.hand.diff)}</pre></details>` : "";
+  const tools = x.tools.length ? `<details><summary>The AI took ${x.tools.length} action${x.tools.length === 1 ? "" : "s"}</summary><ol class="tools">${x.tools.map(s => `<li>${esc(s)}</li>`).join("")}</ol></details>` : "";
+  const skills = (x.skills || []).length ? `<ul class="plain handnote">${x.skills.map(s => `<li>${esc(s)}</li>`).join("")}</ul>` : "";
+  const reply = x.reply ? `<details${full ? " open" : ""}><summary>The AI's reply</summary><div class="reply">${x.reply}</div></details>`
+                        : `<p class="note">No reply from the AI this turn (a command the plugin handled).</p>`;
+  return `<div class="turn">${head("The author's prompt")}${instr}${prompt}${skills}${hand}${tools}${reply}</div>`;
+}
+// The passage clicked in the paper, so the panel can set it apart from the
+// call's other places (Oct 23). Opened any other way, every place is shown.
+let clicked = "";
+const squeeze = s => (s || "").replace(/[\s*_`|\\#]/g, "");  // as the marks match quotes
+const opening = s => { const w = (s || "").replace(/[*`]/g, "").replace(/\s*\|\s*/g, " ").trim().split(/\s+/);
+  return w.slice(0, 8).join(" ") + (w.length > 8 ? "…" : ""); };
+function unitView(u) {
+  const here = squeeze(clicked);
+  const isHere = (file, nq) => !!(here && nq && DATA.manuscript.includes(file) && here.includes(nq));
+  const quote = a => `<li><span class="file">${esc(a.file)} · ${a.restates ? "restated" : "made here"}${a.found ? "" : " · quote not found"}</span><q>${esc(a.quote)}</q></li>`;
+  const elsewhere = u.anchors.filter(a => !isHere(a.file, a.nq));
+  const anchors = elsewhere.length ? elsewhere.map(quote).join("") : `<li class="note">Nowhere else in the work.</li>`;
+  const src = c => c.by === "Claude" ? `which the AI wrote in T${c.turn}`
+    : c.by === "the author, between turns" ? `which the author wrote by hand before T${c.turn}`
+    : c.by && c.by.startsWith("the author's first save") ? "which was in the author's first save, before the record began"
+    : "whose origin isn't in the record";
+  const steps = [...u.trace.filter(t => isHere(t.file, t.nq)), ...u.trace.filter(t => !isHere(t.file, t.nq))];
+  const trace = steps.length ? steps.map(t => {
+      const copied = (t.copied || []).length;
+      const by = t.by === "Claude" ? "The AI" : t.by || "?";  // the record says which agent; the page says "the AI" for Claude Code and Codex alike
+      const verb = copied ? `${esc(by)} copied it into` : `${esc(by)} ${esc(t.change || "added")} it in`;
+      const from = copied ? ` from ${t.copied.map(c => `<span class="mono">${esc(c.file)}</span>, ${src(c)}`).join("; and from ")}` : "";
+      const mine = isHere(t.file, t.nq) ? ` <span class="note">· the passage you clicked</span>` : "";
+      const words = t.text ? `<q class="snip">${esc(opening(t.text))}</q>` : "";
+      return `<li><button type="button" class="tlink" data-turn="${t.turn}">T${t.turn}</button> ${verb} <span class="mono">${esc(t.file)}</span>${from}${mine}${words}</li>`;
+    }).join("")
+                               : `<li class="note">No turn of the AI's produced this text.</li>`;
+  const who = u.kind === "decision" ? (u.group === "made" ? "Who made the call" : "Who made the call, and how it ended") : "How it was checked";
+  return `
+    <div class="idline"><span class="mono">${u.id} · ${esc(u.row)}</span><span>${esc(u.stage)}</span><span>${kindName(u)}</span></div>
+    <h3>${esc(u.label)}</h3>
+    <div><div class="k">${who}</div><p class="status"><span class="sw" style="background:${shade(u)}"></span><span>${esc(u.status)}</span></p></div>
+    ${u.basis ? `<div><div class="k">The reader's basis for the code</div><blockquote style="--shade:${shade(u)}">${esc(u.basis)}</blockquote>
+      <p class="note" style="margin-top:6px">Confidence in code: ${esc(u.confidence || "—")}${u.turns.length ? " · evidence from " + u.turns.map(t => "T" + t).join(", ") : ""}</p></div>` : ""}
+    ${u.turns.length ? `<div><div class="k">The turns the code rests on</div><div style="display:grid;gap:10px">${u.turns.map(t => turnCard(t)).join("")}</div></div>` : ""}
+    <div><div class="k">How the text got there</div><ul class="plain">${trace}</ul></div>
+    <div><div class="k">${here ? "Elsewhere in the work" : "Where it appears in the work"}</div><ul class="plain">${anchors}</ul></div>`;
+}
+function selectUnits(ids, {from} = {}) {
+  if (from !== "paper") clicked = "";
+  ids = ids.filter(id => U[id]).sort((a, b) => rank(U[a]) - rank(U[b]));
+  if (!ids.length) return;
+  showUnit(ids, ids[0], from);
+}
+function showUnit(ids, id, from) {
+  const u = U[id];
+  clearSel();
+  const calls = ids.filter(i => U[i].kind === "decision").length, claims = ids.length - calls;
+  const some = (k, one, many) => k === 0 ? "" : k === 1 ? `a ${one}` : `${k} ${many}`;
+  const what = [some(calls, "judgment call", "judgment calls"), some(claims, "verifiable claim", "verifiable claims")].filter(Boolean).join(" and ");
+  const sw = ids.length > 1 ? `<div><div class="k">This passage has ${what}</div><div class="switch">${ids.map(i =>
+    `<button type="button" data-switch="${i}" aria-pressed="${i === id}"><span class="sw" style="background:${shade(U[i])}"></span>${i} · ${U[i].kind === "decision" ? "call" : "claim"}</button>`).join("")}</div></div>` : "";
+  body.innerHTML = sw + unitView(u);
+  body.dataset.ids = ids.join(" ");
+  const marks = [...document.querySelectorAll("mark.u")].filter(m => m.dataset.u.split(" ").includes(id));
+  marks.forEach(m => m.classList.add("sel"));
+  document.querySelectorAll(`.sq[data-unit="${id}"], .offpaper button[data-unit="${id}"]`).forEach(x => x.classList.add("sel"));
+  openTrail(`${u.id} · the trail`);
+  if (from !== "paper" && marks[0]) {
+    const reduce = from === "hash" || matchMedia("(prefers-reduced-motion: reduce)").matches;
+    marks[0].scrollIntoView({block: "center", behavior: reduce ? "auto" : "smooth"});
+    marks[0].classList.remove("flash"); void marks[0].offsetWidth; marks[0].classList.add("flash");
+  }
+}
+function selectTurn(t) {
+  clearSel();
+  document.querySelectorAll(`.tlab[data-turn="${t}"]`).forEach(x => x.classList.add("sel"));
+  const cited = DATA.units.filter(u => u.turns.includes(t)).sort((a, b) => rank(a) - rank(b));
+  const added = DATA.units.filter(u => u.trace.some(x => x.turn === t)).sort((a, b) => rank(a) - rank(b));
+  const chips = us => `<div class="chips">${us.map(u => `<button type="button" data-unit="${u.id}" title="${esc(u.label)}"><span class="sw" style="background:${shade(u)}"></span><span class="mono">${u.id}</span><span class="t">${esc(u.label)}</span></button>`).join("")}</div>`;
+  body.innerHTML = `<div class="idline"><span class="mono">T${t} of ${DATA.nturns}</span></div>
+    ${turnCard(t, {full: true})}
+    ${cited.length ? `<div><div class="k">Units whose code cites this turn (${cited.length})</div>${chips(cited)}</div>` : ""}
+    ${added.length ? `<div><div class="k">Calls and claims whose text the AI wrote this turn (${added.length})</div>${chips(added)}</div>` : ""}
+    ${!cited.length && !added.length ? `<p class="note">No unit cites this turn or traces to it.</p>` : ""}`;
+  openTrail(`Turn ${t}`);
+}
+function emptyState() {
+  body.innerHTML = `<div class="empty-state">
+    <p>Nothing selected yet.</p>
+    <ul>
+      <li>Click a marked passage in the paper to see the trail behind it.</li>
+      <li>Click a square in the timeline to jump to that unit.</li>
+      <li>Click a turn number to read the turn: the prompt, what the AI did, its reply, and the calls and claims that rest on it.</li>
+    </ul>
+    <p class="note">Where marks overlap, the shade shown is the one most worth a look: a call not warranted before one that was, and decisions before claims.</p></div>`;
+  $("trail-title").textContent = "The trail";
+}
+body.addEventListener("click", e => {
+  const s = e.target.closest("[data-switch]"), tl = e.target.closest(".tlink"), ch = e.target.closest("button[data-unit]");
+  if (s) showUnit(body.dataset.ids.split(" "), s.dataset.switch, "switch");
+  else if (tl) selectTurn(+tl.dataset.turn);
+  else if (ch) selectUnits([ch.dataset.unit], {from: "chip"});
+});
+$("close").addEventListener("click", () => { clearSel(); trail.classList.remove("open"); emptyState(); });
+
+$("src").innerHTML = `Built from the reader's output for this run (${esc(DATA.run.label)}; reader ${esc(DATA.run.reader)}, ${esc(DATA.run.model)}, ${esc(DATA.run.date)}): its unit list and codes, the record as the reader saw it, and ${esc(DATA.manuscript.join(", "))} as it was read. No model calls and no new codes. Not part of the disclosure or its fingerprint.${DATA.note ? " " + esc(DATA.note) : ""}`;
+
+emptyState();
+const start = decodeURIComponent(location.hash.slice(1));
+if (U[start]) selectUnits([start], {from: "hash"});
+</script>
+</body></html>

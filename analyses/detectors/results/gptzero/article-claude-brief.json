@@ -1,0 +1,30 @@
+{
+ "meta": {
+  "id": "article-claude-brief",
+  "group": "Article",
+  "label": "Claude's copy edit, journal brief",
+  "detector": "gptzero",
+  "scored_at": "2026-10-19T18:26:26+00:00"
+ },
+ "response": {
+  "version": "2026-10-07-base",
+  "neatVersion": "4.1o",
+  "documents": [
+   {
+    "completely_generated_prob": 0.0036875654925731197,
+    "average_generated_prob": 0.008830022075055188,
+    "predicted_class": "human",
+    "confidence_score": 0.9926211134877204,
+    "confidence_category": "high",
+    "class_probabilities": {
+     "human": 0.9926211134877204,
+     "ai": 0.007378886512279619,
+     "mixed": 0
+    },
+    "neatVersion": "4.1o",
+    "version": "2026-10-07-base",
+    "document_classification": "HUMAN_ONLY"
+   }
+  ]
+ }
+}

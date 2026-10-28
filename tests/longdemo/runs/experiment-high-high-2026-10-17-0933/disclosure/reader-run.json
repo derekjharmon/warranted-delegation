@@ -1,0 +1,85 @@
+{
+ "reader": "0.13.3",
+ "backend": "api",
+ "model": "claude-opus-5-5",
+ "effort": "high",
+ "date": "2026-10-17",
+ "reader_sha256": "795733ac39d9f2e963b33e7eab65e86f62d2dc64d11316b8389fc89317fff4a7",
+ "checklists_sha256": {
+  "checklists/judgment-decisions.md": "273ca3d890fedc7e529c512bfe5182bfee887747ef93e54c63cccd83ebb43f3c",
+  "checklists/checkable-claims.md": "68ed07106dd05adf56af8fc480db7273dde9d9ced33b657e98349859c6f6196d"
+ },
+ "work": [
+  "paper.md",
+  "preregistration.md",
+  "scripts/clean_data.py",
+  "scripts/",
+  "data/",
+  "output/"
+ ],
+ "packs": [
+  "quantitative",
+  "experiments"
+ ],
+ "label": "Demonstration run (high delegation, high warrant), last save 4b094be",
+ "converted": null,
+ "fingerprint": {
+  "commit": "4b094be605a6a9d349f2a58d1770b105f762c16b",
+  "logs": [
+   {
+    "log": "simulated-author-22cb",
+    "events": 254,
+    "head": "dabd9f06860f629c805c514eda5768b76e74c7b772679e178fe564f92fda78f1",
+    "verifies": true
+   }
+  ]
+ },
+ "work_map": {
+  "packs": "quantitative, experiments",
+  "manuscript": "paper.md",
+  "references": "paper.md, preregistration.md",
+  "collection": "none",
+  "cleaning": "scripts/clean_data.py",
+  "analysis": "scripts/",
+  "data": "data/",
+  "results": "output/",
+  "preregistration": "preregistration.md",
+  "materials": "none"
+ },
+ "outside": [
+  "notes.md"
+ ],
+ "numbers": {
+  "traced": 140,
+  "total": 140,
+  "untraced": [],
+  "per_unit": {
+   "U73": [
+    "719,721"
+   ],
+   "U106": [
+    "719,721"
+   ]
+  }
+ },
+ "typed": {
+  "tool_words": 3094,
+  "words": 3146,
+  "files": {
+   "paper.md": {
+    "tool": 3094,
+    "people": 52
+   }
+  }
+ },
+ "usage": {
+  "input_tokens": 196062,
+  "cache_creation_input_tokens": 182971,
+  "cache_read_input_tokens": 744773,
+  "output_tokens": 131754,
+  "calls": 10,
+  "seconds": 1044
+ },
+ "cost_usd": 4.48,
+ "title": "Motivating dull work without paying more: a preregistered reanalysis of an 18-arm experiment"
+}

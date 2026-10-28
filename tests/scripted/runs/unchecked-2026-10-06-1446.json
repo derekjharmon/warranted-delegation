@@ -1,0 +1,107 @@
+{
+  "run": "unchecked",
+  "started": "2026-10-06T14:46:27",
+  "environment": {
+    "claude_code": "2.1.291 (Claude Code)",
+    "model": "claude-opus-5-5",
+    "python": "3.14.7",
+    "statsmodels": "0.14.6",
+    "pandas": "2.2.3"
+  },
+  "attested_versions": {
+    "repo_head": "f353d31a9e75385a9af98dd7344affe3868541d5",
+    "answer_key": "6a074ca321bb95bc3d0d5b44a6e24aef2739ef71 2026-10-06T14:23:50-04:00"
+  },
+  "script_sha256": "073ec40ec32b8e643c2b270e22eab2c336025c0315ed2376a1c1d0402d7c1590",
+  "answer_key_sha256": "29e910cdc0845e2e41605959a701035ce3ebcb79e7b52ee2a4e2dbba92e524e4",
+  "runner_sha256": "dfe189e5b9ef11aeaf4c4e69d7714bcc37c63a5155f4bce0facfd42e86b8014d",
+  "steps": [
+    {
+      "id": "setup",
+      "kind": "attest",
+      "exit": 0,
+      "seconds": 2,
+      "is_error": false,
+      "turns": 0,
+      "cost_usd": 0,
+      "stderr": null,
+      "commit": "2ba9ae246a76a2097e0cb34663409983f5a5f9cb"
+    },
+    {
+      "id": "U1",
+      "kind": "prompt",
+      "exit": 0,
+      "seconds": 33,
+      "is_error": false,
+      "turns": 7,
+      "cost_usd": 0.16025560000000003,
+      "stderr": null
+    },
+    {
+      "id": "U2",
+      "kind": "prompt",
+      "exit": 0,
+      "seconds": 42,
+      "is_error": false,
+      "turns": 5,
+      "cost_usd": 0.2956362,
+      "stderr": null
+    },
+    {
+      "id": "U3",
+      "kind": "prompt",
+      "exit": 0,
+      "seconds": 26,
+      "is_error": false,
+      "turns": 2,
+      "cost_usd": 0.39579040000000004,
+      "stderr": null
+    },
+    {
+      "id": "U4",
+      "kind": "attest",
+      "exit": 0,
+      "seconds": 2,
+      "is_error": false,
+      "turns": 0,
+      "cost_usd": 0.39579040000000004,
+      "stderr": null,
+      "commit": "cbb650106dbd0576dc6d3b65976b930f63aab1c8"
+    },
+    {
+      "id": "U5",
+      "kind": "prompt",
+      "exit": 0,
+      "seconds": 46,
+      "is_error": false,
+      "turns": 3,
+      "cost_usd": 0.5646494,
+      "stderr": null
+    },
+    {
+      "id": "U6",
+      "kind": "hand edit",
+      "file": "memo.md"
+    },
+    {
+      "id": "U7",
+      "kind": "attest",
+      "exit": 0,
+      "seconds": 2,
+      "is_error": false,
+      "turns": 0,
+      "cost_usd": 0.5646494,
+      "stderr": null,
+      "commit": "0542e597c46ea22feb68a625a1d53b1d2610c573"
+    }
+  ],
+  "session": "8f7afa8a-9246-4a44-bed4-90f168d21d96",
+  "verify_log": [
+    "OK  39 events  head ada9716a76bec7a44db3181cf452511d7122fabebe708711315eebebeb0c3ee8  (/private/var/folders/_k/wpbxz8gn451dmsv_93z4yt6r0000gn/T/wd-scripted-unchecked-49u2pynd/project/provenance/log/simulated-author-afbc/events.jsonl)",
+    "sidecars: 24 checked, 0 withheld",
+    "snapshots: 6 present, 0 withheld"
+  ],
+  "final_commit": "0542e597c46ea22feb68a625a1d53b1d2610c573",
+  "finished": "2026-10-06T14:49:01",
+  "bundle_sha256": "3e530a049e83f83a3720fcd0c0695d2484b572a9e92c3c7c208dafab401601e5"
+}

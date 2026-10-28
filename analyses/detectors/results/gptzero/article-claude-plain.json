@@ -1,0 +1,30 @@
+{
+ "meta": {
+  "id": "article-claude-plain",
+  "group": "Article",
+  "label": "Claude's copy edit, \"Copy edit this.\"",
+  "detector": "gptzero",
+  "scored_at": "2026-10-19T18:26:29+00:00"
+ },
+ "response": {
+  "version": "2026-10-07-base",
+  "neatVersion": "4.1o",
+  "documents": [
+   {
+    "completely_generated_prob": 0.030474878430089666,
+    "average_generated_prob": 0.3345132743362832,
+    "predicted_class": "human",
+    "confidence_score": 0.9390287679683994,
+    "confidence_category": "high",
+    "class_probabilities": {
+     "human": 0.9390287679683994,
+     "ai": 0.06097123203160067,
+     "mixed": 0
+    },
+    "neatVersion": "4.1o",
+    "version": "2026-10-07-base",
+    "document_classification": "HUMAN_ONLY"
+   }
+  ]
+ }
+}

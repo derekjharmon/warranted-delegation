@@ -1,0 +1,118 @@
+{
+ "reader": "0.13.3",
+ "backend": "api",
+ "model": "claude-opus-5-5",
+ "effort": "high",
+ "date": "2026-10-17",
+ "reader_sha256": "795733ac39d9f2e963b33e7eab65e86f62d2dc64d11316b8389fc89317fff4a7",
+ "checklists_sha256": {
+  "checklists/judgment-decisions.md": "273ca3d890fedc7e529c512bfe5182bfee887747ef93e54c63cccd83ebb43f3c",
+  "checklists/checkable-claims.md": "68ed07106dd05adf56af8fc480db7273dde9d9ced33b657e98349859c6f6196d"
+ },
+ "work": [
+  "paper.md",
+  "preregistration.md",
+  "results.md",
+  "code/",
+  "data/",
+  "figures/",
+  "tables/"
+ ],
+ "packs": [
+  "quantitative",
+  "experiments"
+ ],
+ "label": "Demonstration run (low delegation, low warrant), last save e5396e9",
+ "converted": null,
+ "fingerprint": {
+  "commit": "e5396e97e8acc72222dbbed7a143733a29c3c235",
+  "logs": [
+   {
+    "log": "simulated-author-2482",
+    "events": 65,
+    "head": "985bf88fdd778b05fd323d07907632c73991b6f9c1a9ab0dee35f86b8c3065b3",
+    "verifies": true
+   }
+  ]
+ },
+ "work_map": {
+  "packs": "quantitative, experiments",
+  "manuscript": "paper.md, preregistration.md, results.md",
+  "references": "paper.md, preregistration.md, results.md",
+  "collection": "none",
+  "cleaning": "none",
+  "analysis": "code/",
+  "data": "data/",
+  "results": "figures/, tables/",
+  "preregistration": "preregistration.md",
+  "materials": "none"
+ },
+ "outside": [
+  "logs/clean_log.csv",
+  "notes.md"
+ ],
+ "numbers": {
+  "traced": 985,
+  "total": 985,
+  "untraced": [],
+  "per_unit": {
+   "U62": [
+    "726.87"
+   ],
+   "U63": [
+    "155.477858"
+   ],
+   "U64": [
+    "37.973833",
+    "599.101212",
+    "599.11",
+    "747.9647",
+    "747.973498"
+   ],
+   "U67": [
+    "726.87"
+   ],
+   "U73": [
+    "425.917586",
+    "586.314124"
+   ],
+   "U86": [
+    "111.973"
+   ],
+   "U87": [
+    "236.658",
+    "407.7485",
+    "422.5906",
+    "582.128"
+   ]
+  }
+ },
+ "typed": {
+  "tool_words": 6534,
+  "words": 7280,
+  "files": {
+   "paper.md": {
+    "tool": 3759,
+    "people": 417
+   },
+   "preregistration.md": {
+    "tool": 1224,
+    "people": 178
+   },
+   "results.md": {
+    "tool": 1551,
+    "people": 151
+   }
+  }
+ },
+ "usage": {
+  "input_tokens": 150018,
+  "cache_creation_input_tokens": 90540,
+  "cache_read_input_tokens": 286760,
+  "output_tokens": 96069,
+  "calls": 9,
+  "seconds": 747
+ },
+ "cost_usd": 3.03,
+ "title": "How Far Do Non-Pay Motivators Get? A Reanalysis of a Large Online Effort Experiment"
+}

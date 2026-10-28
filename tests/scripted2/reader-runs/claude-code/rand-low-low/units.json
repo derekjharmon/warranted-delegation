@@ -1,0 +1,4430 @@
+{
+ "files": [
+  "analysis/__pycache__/analysis.cpython-314.pyc",
+  "analysis/analysis.py",
+  "analysis/exploratory.py",
+  "memo.md",
+  "output/exploratory.md",
+  "output/table1.md",
+  "plan.md"
+ ],
+ "units": [
+  {
+   "id": "U1",
+   "kind": "decision",
+   "row": "S1",
+   "label": "Research question: does cost sharing reduce doctor visits",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "# Memo: Does cost sharing reduce doctor visits?",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "When people pay part of the cost of their care, do they use less of it?",
+     "found": true
+    },
+    {
+     "file": "plan.md",
+     "quote": "# Pre-analysis plan: cost sharing and doctor visits",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "# Memo: Does cost sharing reduce doctor visits?",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "When people pay part of the cost of their care, do they use less of it?",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added",
+     "copied_from": [
+      "notes/draft.md"
+     ]
+    },
+    {
+     "file": "plan.md",
+     "text": "# Pre-analysis plan: cost sharing and doctor visits",
+     "by": "Claude",
+     "turn": 3,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U2",
+   "kind": "decision",
+   "row": "S3",
+   "label": "Literature positioned in: RAND HIE / demand for care",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "Aron-Dine, Einav, and Finkelstein (2013) revisit the experiment and conclude",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "Trivedi (2002) use the same data to model the demand for doctor visits.",
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "Aron-Dine, Einav, and Finkelstein (2013) revisit the experiment and conclude",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added",
+     "copied_from": [
+      "notes/draft.md"
+     ]
+    },
+    {
+     "file": "memo.md",
+     "text": "Trivedi (2002) use the same data to model the demand for doctor visits.",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added",
+     "copied_from": [
+      "notes/draft.md"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "U3",
+   "kind": "decision",
+   "row": "S4",
+   "label": "Synthesis of prior work in Background",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "RAND Health Insurance Experiment answered this by assigning families at",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "that cost sharing had no effect on how often people saw a doctor. Deb and",
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "RAND Health Insurance Experiment answered this by assigning families at",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added",
+     "copied_from": [
+      "notes/draft.md"
+     ]
+    },
+    {
+     "file": "memo.md",
+     "text": "that cost sharing had no effect on how often people saw a doctor. Deb and",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added",
+     "copied_from": [
+      "notes/draft.md"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "U4",
+   "kind": "decision",
+   "row": "S5",
+   "label": "Source: Aron-Dine et al. (2013) cited for HIE revisit conclusion",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "Aron-Dine, Einav, and Finkelstein (2013) revisit the experiment and conclude",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "Aron-Dine, A., Einav, L., & Finkelstein, A. (2013). The RAND Health Insurance Experiment, three decades later.",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "Aron-Dine, Einav, and Finkelstein (2013) revisit the experiment and conclude",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added",
+     "copied_from": [
+      "notes/draft.md"
+     ]
+    },
+    {
+     "file": "memo.md",
+     "text": "Aron-Dine, A., Einav, L., & Finkelstein, A. (2013). The RAND Health Insurance Ex",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added",
+     "copied_from": [
+      "notes/references.md"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "U5",
+   "kind": "decision",
+   "row": "S5",
+   "label": "Source: Deb and Trivedi (2002) cited for demand modeling with same data",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "Trivedi (2002) use the same data to model the demand for doctor visits.",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "Deb, P., & Trivedi, P. K. (2002). The structure of demand for health care: Latent class versus two-part models.",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "Trivedi (2002) use the same data to model the demand for doctor visits.",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added",
+     "copied_from": [
+      "notes/draft.md"
+     ]
+    },
+    {
+     "file": "memo.md",
+     "text": "Deb, P., & Trivedi, P. K. (2002). The structure of demand for health care: Laten",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added",
+     "copied_from": [
+      "notes/references.md"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "U6",
+   "kind": "decision",
+   "row": "S5",
+   "label": "Source: Cameron and Trivedi (2005) cited as data distributor",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "Cameron and Trivedi (2005), have one row per person-year, with the number of",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "Cameron, A. C., & Trivedi, P. K. (2005). *Microeconometrics: Methods and applications*. Cambridge University Press.",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "Cameron and Trivedi (2005), have one row per person-year, with the number of",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added",
+     "copied_from": [
+      "notes/draft.md"
+     ]
+    },
+    {
+     "file": "memo.md",
+     "text": "Cameron, A. C., & Trivedi, P. K. (2005). *Microeconometrics: Methods and applica",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added",
+     "copied_from": [
+      "notes/references.md"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "U7",
+   "kind": "decision",
+   "row": "S7",
+   "label": "Argument structure of the memo (summary, plan and departures, results, exploratory, limitations)",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "## Pre-analysis plan and departures",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "## Exploratory analysis (not pre-specified)",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "## Summary",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "## Results",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "## Limitations",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "## Pre-analysis plan and departures",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "## Exploratory analysis (not pre-specified)",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "## Summary",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "## Results",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "## Limitations",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U8",
+   "kind": "decision",
+   "row": "S8",
+   "label": "Table 1: IRRs from Poisson and NB columns, with SE, CI, p",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "### Table 1. Outpatient doctor visits: main model and robustness check",
+     "found": true
+    },
+    {
+     "file": "output/table1.md",
+     "quote": "# Table 1. Outpatient doctor visits: main model and robustness check",
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "\"Notes: Each cell is the incidence-rate ratio (exponentiated \"",
+     "found": true
+    },
+    {
+     "file": "output/table1.md",
+     "quote": "Notes: Each cell is the incidence-rate ratio (exponentiated coefficient), its standard error in parentheses",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "*Notes:* Entries are incidence-rate ratios, with standard errors (delta method) in parentheses.",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "| Variable | (1) Poisson (main) | (2) Negative binomial |",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "plan.md",
+     "quote": "it appears as column (2) of Table 1",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "### Table 1. Outpatient doctor visits: main model and robustness check",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "output/table1.md",
+     "text": "# Table 1. Outpatient doctor visits: main model and robustness check",
+     "by": "Claude",
+     "turn": 6,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "\"Notes: Each cell is the incidence-rate ratio (exponentiated \"",
+     "by": "Claude",
+     "turn": 6,
+     "change": "added"
+    },
+    {
+     "file": "output/table1.md",
+     "text": "Notes: Each cell is the incidence-rate ratio (exponentiated coefficient), its st",
+     "by": "Claude",
+     "turn": 6,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "*Notes:* Entries are incidence-rate ratios, with standard errors (delta method) ",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "| Variable | (1) Poisson (main) | (2) Negative binomial |",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added",
+     "copied_from": [
+      "output/table1.md"
+     ]
+    },
+    {
+     "file": "plan.md",
+     "text": "it appears as column (2) of Table 1",
+     "by": "Claude",
+     "turn": 6,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U9",
+   "kind": "decision",
+   "row": "S8",
+   "label": "Coinsurance-rate translation table (visits relative to free care)",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "| Coinsurance rate | Visits relative to free care | 95% CI |",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "Compared with free care, the model implies:",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "| Coinsurance rate | Visits relative to free care | 95% CI |",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "Compared with free care, the model implies:",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U10",
+   "kind": "decision",
+   "row": "S8",
+   "label": "Exploratory logit table (odds ratios and average marginal effects)",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "| Variable | Odds ratio (SE) | Change in probability of any visit (SE) |",
+     "found": true
+    },
+    {
+     "file": "output/exploratory.md",
+     "quote": "# Exploratory: any outpatient visit in the year (not pre-specified)",
+     "found": true
+    },
+    {
+     "file": "analysis/exploratory.py",
+     "quote": "\"| Variable | Odds ratio (SE) [95% CI] | Avg. marginal effect (SE) | p |\",",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "The full table is in `output/exploratory.md`.",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "| Variable | Odds ratio (SE) | Change in probability of any visit (SE) |",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "output/exploratory.md",
+     "text": "# Exploratory: any outpatient visit in the year (not pre-specified)",
+     "by": "Claude",
+     "turn": 6,
+     "change": "added"
+    },
+    {
+     "file": "analysis/exploratory.py",
+     "text": "\"| Variable | Odds ratio (SE) [95% CI] | Avg. marginal effect (SE) | p |\",",
+     "by": "Claude",
+     "turn": 6,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "The full table is in `output/exploratory.md`.",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U11",
+   "kind": "decision",
+   "row": "S9",
+   "label": "Limitations: unclustered SEs, plan-boundary timing, measured controls",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "Without a person identifier, the standard errors treat each person-year as independent, so they are too small.",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "The plans ran for three or five years, and people may have delayed or moved care around the plan's start and end.",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "However, the controls and the participation incentive are measured, not assigned.",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "The standard errors are also probably too small, because the same people appear in several years and we cannot cluster on them.",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "plan.md",
+     "quote": "because the same people appear in several years, the robust standard errors probably understate the true uncertainty.",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "output/table1.md",
+     "quote": "The data have no person identifier, so standard errors are not clustered by person and probably understate the uncertainty, since people appear in several years.",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "output/exploratory.md",
+     "quote": "Standard errors are heteroskedasticity-robust (HC0) and not clustered by person, so they probably understate the uncertainty.",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "Without a person identifier, the standard errors treat each person-year as indep",
+     "by": "the author, between turns",
+     "turn": 9,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "The plans ran for three or five years, and people may have delayed or moved care",
+     "by": "the author, between turns",
+     "turn": 9,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "However, the controls and the participation incentive are measured, not assigned",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "The standard errors are also probably too small, because the same people appear ",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "plan.md",
+     "text": "because the same people appear in several years, the robust standard errors prob",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    },
+    {
+     "file": "output/table1.md",
+     "text": "The data have no person identifier, so standard errors are not clustered by pers",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    },
+    {
+     "file": "output/exploratory.md",
+     "text": "Standard errors are heteroskedasticity-robust (HC0) and not clustered by person,",
+     "by": "Claude",
+     "turn": 6,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U12",
+   "kind": "decision",
+   "row": "QC1",
+   "label": "Data source: RAND HIE as bundled with statsmodels",
+   "anchors": [
+    {
+     "file": "analysis/analysis.py",
+     "quote": "from statsmodels.datasets import randhie",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "**Data:** RAND Health Insurance Experiment (`statsmodels.datasets.randhie`)",
+     "found": true
+    },
+    {
+     "file": "plan.md",
+     "quote": "Data: RAND Health Insurance Experiment, as bundled with statsmodels (`statsmodels.datasets.randhie`).",
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "data = randhie.load_pandas().data",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "analysis/analysis.py",
+     "text": "from statsmodels.datasets import randhie",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "**Data:** RAND Health Insurance Experiment (`statsmodels.datasets.randhie`)",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "plan.md",
+     "text": "Data: RAND Health Insurance Experiment, as bundled with statsmodels (`statsmodel",
+     "by": "Claude",
+     "turn": 3,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "data = randhie.load_pandas().data",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U13",
+   "kind": "decision",
+   "row": "QC2",
+   "label": "Sample: keep every person-year, including zero-visit years",
+   "anchors": [
+    {
+     "file": "analysis/analysis.py",
+     "quote": "# Keep every person-year, including those with zero visits.",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "All 20,190 person-years are kept, including those with zero visits.",
+     "found": true
+    },
+    {
+     "file": "plan.md",
+     "quote": "all person-years are kept, including those with zero visits",
+     "found": true
+    },
+    {
+     "file": "output/table1.md",
+     "quote": "A check that drops influential observations was not run, because this project keeps every person-year.",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "plan.md",
+     "quote": "and this project keeps every person-year.",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "\"influential observations was not run, because this project keeps \"",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "analysis/analysis.py",
+     "text": "# Keep every person-year, including those with zero visits.",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "All 20,190 person-years are kept, including those with zero visits.",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "plan.md",
+     "text": "all person-years are kept, including those with zero visits",
+     "by": "Claude",
+     "turn": 3,
+     "change": "added"
+    },
+    {
+     "file": "output/table1.md",
+     "text": "A check that drops influential observations was not run, because this project ke",
+     "by": "Claude",
+     "turn": 6,
+     "change": "added"
+    },
+    {
+     "file": "plan.md",
+     "text": "and this project keeps every person-year.",
+     "by": "Claude",
+     "turn": 6,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "\"influential observations was not run, because this project keeps \"",
+     "by": "Claude",
+     "turn": 6,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U14",
+   "kind": "decision",
+   "row": "QK3",
+   "label": "Outliers/influential observations kept (Cook's distance check not run)",
+   "anchors": [
+    {
+     "file": "analysis/analysis.py",
+     "quote": "\"sample and standard errors as column (1). A check that drops \"",
+     "found": true
+    },
+    {
+     "file": "plan.md",
+     "quote": "refitting without observations whose Cook's distance exceeds 4/n, was not run",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "The checklist's other check, dropping influential observations, was not run, because it would remove person-years.",
+     "found": true
+    },
+    {
+     "file": "output/table1.md",
+     "quote": "A check that drops influential observations was not run, because this project keeps every person-year.",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "\"influential observations was not run, because this project keeps \"",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "analysis/analysis.py",
+     "text": "\"sample and standard errors as column (1). A check that drops \"",
+     "by": "Claude",
+     "turn": 6,
+     "change": "added"
+    },
+    {
+     "file": "plan.md",
+     "text": "refitting without observations whose Cook's distance exceeds 4/n, was not run",
+     "by": "Claude",
+     "turn": 6,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "The checklist's other check, dropping influential observations, was not run, bec",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "output/table1.md",
+     "text": "A check that drops influential observations was not run, because this project ke",
+     "by": "Claude",
+     "turn": 6,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "\"influential observations was not run, because this project keeps \"",
+     "by": "Claude",
+     "turn": 6,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U15",
+   "kind": "decision",
+   "row": "QK5",
+   "label": "Construct any-visit indicator (mdvis > 0)",
+   "anchors": [
+    {
+     "file": "analysis/exploratory.py",
+     "quote": "y = (data[OUTCOME] > 0).astype(int)",
+     "found": true
+    },
+    {
+     "file": "plan.md",
+     "quote": "Logit of whether a person-year has at least one outpatient visit (`mdvis > 0`)",
+     "found": true
+    },
+    {
+     "file": "analysis/exploratory.py",
+     "quote": "Logit of any outpatient visit (mdvis > 0) on the same covariates, sample and",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "We asked whether cost sharing changes *whether* people see a doctor at all in a year.",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "output/exploratory.md",
+     "quote": "Share of person-years with at least one visit: 0.688",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "analysis/exploratory.py",
+     "text": "y = (data[OUTCOME] > 0).astype(int)",
+     "by": "Claude",
+     "turn": 6,
+     "change": "added"
+    },
+    {
+     "file": "plan.md",
+     "text": "Logit of whether a person-year has at least one outpatient visit (`mdvis > 0`)",
+     "by": "Claude",
+     "turn": 6,
+     "change": "added"
+    },
+    {
+     "file": "analysis/exploratory.py",
+     "text": "Logit of any outpatient visit (mdvis > 0) on the same covariates, sample and",
+     "by": "Claude",
+     "turn": 6,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "We asked whether cost sharing changes *whether* people see a doctor at all in a ",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "output/exploratory.md",
+     "text": "Share of person-years with at least one visit: 0.688",
+     "by": "Claude",
+     "turn": 6,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U16",
+   "kind": "decision",
+   "row": "QA1",
+   "label": "Dependent variable: outpatient visits (mdvis)",
+   "anchors": [
+    {
+     "file": "analysis/analysis.py",
+     "quote": "OUTCOME = \"mdvis\"",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "**Outcome:** number of outpatient visits in the year (`mdvis`).",
+     "found": true
+    },
+    {
+     "file": "plan.md",
+     "quote": "Number of outpatient visits (`mdvis`).",
+     "found": true
+    },
+    {
+     "file": "plan.md",
+     "quote": "Poisson regression of `mdvis` on the treatment variables and controls.",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "outpatient doctor visits, the plan's coinsurance rate, whether the plan had",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "analysis/analysis.py",
+     "text": "OUTCOME = \"mdvis\"",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "**Outcome:** number of outpatient visits in the year (`mdvis`).",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "plan.md",
+     "text": "Number of outpatient visits (`mdvis`).",
+     "by": "Claude",
+     "turn": 3,
+     "change": "added"
+    },
+    {
+     "file": "plan.md",
+     "text": "Poisson regression of `mdvis` on the treatment variables and controls.",
+     "by": "Claude",
+     "turn": 3,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "outpatient doctor visits, the plan's coinsurance rate, whether the plan had",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added",
+     "copied_from": [
+      "notes/draft.md"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "U17",
+   "kind": "decision",
+   "row": "QA2",
+   "label": "Focal predictor: log coinsurance (lncoins)",
+   "anchors": [
+    {
+     "file": "analysis/analysis.py",
+     "quote": "TREATMENT = [\"lncoins\", \"idp\"]",
+     "found": true
+    },
+    {
+     "file": "plan.md",
+     "quote": "- Log coinsurance of the plan (`lncoins`)",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "**Treatment:** the plan's log coinsurance, ln(coinsurance + 1) (`lncoins`), and whether it has an individual deductible (`idp`).",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "\"lncoins\": \"Log coinsurance (lncoins)\",",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "Because the variable is ln(coinsurance + 1)",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "analysis/analysis.py",
+     "text": "TREATMENT = [\"lncoins\", \"idp\"]",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    },
+    {
+     "file": "plan.md",
+     "text": "- Log coinsurance of the plan (`lncoins`)",
+     "by": "Claude",
+     "turn": 3,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "**Treatment:** the plan's log coinsurance, ln(coinsurance + 1) (`lncoins`), and ",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "\"lncoins\": \"Log coinsurance (lncoins)\",",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "Because the variable is ln(coinsurance + 1)",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U18",
+   "kind": "decision",
+   "row": "QA2",
+   "label": "Focal predictor: individual deductible (idp)",
+   "anchors": [
+    {
+     "file": "analysis/analysis.py",
+     "quote": "TREATMENT = [\"lncoins\", \"idp\"]",
+     "found": true
+    },
+    {
+     "file": "plan.md",
+     "quote": "- Whether the plan has an individual deductible (`idp`)",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "**Treatment:** the plan's log coinsurance, ln(coinsurance + 1) (`lncoins`), and whether it has an individual deductible (`idp`).",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "\"idp\": \"Individual deductible (idp)\",",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "analysis/analysis.py",
+     "text": "TREATMENT = [\"lncoins\", \"idp\"]",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    },
+    {
+     "file": "plan.md",
+     "text": "- Whether the plan has an individual deductible (`idp`)",
+     "by": "Claude",
+     "turn": 3,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "**Treatment:** the plan's log coinsurance, ln(coinsurance + 1) (`lncoins`), and ",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "\"idp\": \"Individual deductible (idp)\",",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U19",
+   "kind": "decision",
+   "row": "QA3",
+   "label": "Controls: self-rated health, physical limitation, chronic diseases, lpi",
+   "anchors": [
+    {
+     "file": "analysis/analysis.py",
+     "quote": "CONTROLS = [\"hlthg\", \"hlthf\", \"hlthp\", \"physlm\", \"disea\", \"lpi\"]",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "**Controls:** self-rated health (good, fair or poor, against excellent), physical limitation, and number of chronic diseases.",
+     "found": true
+    },
+    {
+     "file": "plan.md",
+     "quote": "- Self-rated health: good (`hlthg`), fair (`hlthf`), poor (`hlthp`)",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "plan.md",
+     "quote": "- Physical limitation (`physlm`)",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "plan.md",
+     "quote": "- Number of chronic diseases (`disea`)",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "output/table1.md",
+     "quote": "Omitted health category: excellent.",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "Holding health and the participation incentive constant",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "analysis/analysis.py",
+     "text": "CONTROLS = [\"hlthg\", \"hlthf\", \"hlthp\", \"physlm\", \"disea\", \"lpi\"]",
+     "by": "Claude",
+     "turn": 5,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "**Controls:** self-rated health (good, fair or poor, against excellent), physica",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "plan.md",
+     "text": "- Self-rated health: good (`hlthg`), fair (`hlthf`), poor (`hlthp`)",
+     "by": "Claude",
+     "turn": 3,
+     "change": "added"
+    },
+    {
+     "file": "plan.md",
+     "text": "- Physical limitation (`physlm`)",
+     "by": "Claude",
+     "turn": 3,
+     "change": "added"
+    },
+    {
+     "file": "plan.md",
+     "text": "- Number of chronic diseases (`disea`)",
+     "by": "Claude",
+     "turn": 3,
+     "change": "added"
+    },
+    {
+     "file": "output/table1.md",
+     "text": "Omitted health category: excellent.",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "Holding health and the participation incentive constant",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U20",
+   "kind": "decision",
+   "row": "QA4",
+   "label": "Estimator: Poisson regression reported as IRRs",
+   "anchors": [
+    {
+     "file": "analysis/analysis.py",
+     "quote": "return sm.GLM(y, X, family=sm.families.Poisson()).fit(cov_type=\"HC0\")",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "**Model:** Poisson regression with heteroskedasticity-robust (HC0) standard errors, reported as incidence-rate ratios (IRRs).",
+     "found": true
+    },
+    {
+     "file": "plan.md",
+     "quote": "Poisson regression of `mdvis` on the treatment variables and controls.",
+     "found": true
+    },
+    {
+     "file": "plan.md",
+     "quote": "results are reported as incidence-rate ratios",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "(\"(1) Poisson (main)\", fit(data)),",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "irr = np.exp(b)",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "*Notes:* Entries are incidence-rate ratios",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "| Variable | (1) Poisson (main) | (2) Negative binomial |",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "analysis/analysis.py",
+     "text": "return sm.GLM(y, X, family=sm.families.Poisson()).fit(cov_type=\"HC0\")",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "**Model:** Poisson regression with heteroskedasticity-robust (HC0) standard erro",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "plan.md",
+     "text": "Poisson regression of `mdvis` on the treatment variables and controls.",
+     "by": "Claude",
+     "turn": 3,
+     "change": "added"
+    },
+    {
+     "file": "plan.md",
+     "text": "results are reported as incidence-rate ratios",
+     "by": "Claude",
+     "turn": 3,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "(\"(1) Poisson (main)\", fit(data)),",
+     "by": "Claude",
+     "turn": 6,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "irr = np.exp(b)",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "*Notes:* Entries are incidence-rate ratios",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "| Variable | (1) Poisson (main) | (2) Negative binomial |",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added",
+     "copied_from": [
+      "output/table1.md"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "U21",
+   "kind": "decision",
+   "row": "QA5",
+   "label": "Standard errors: HC0 robust, not clustered by person",
+   "anchors": [
+    {
+     "file": "analysis/analysis.py",
+     "quote": "# HC0 sandwich errors guard against misspecifying the Poisson variance.",
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "# No person identifier exists, so errors cannot be clustered by person;",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "Standard errors are heteroskedasticity-robust (HC0) but not clustered by person, because the data have no person identifier.",
+     "found": true
+    },
+    {
+     "file": "plan.md",
+     "quote": "Standard errors: heteroskedasticity-robust (HC0 sandwich), so inference does not rest on the Poisson variance assumption.",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "plan.md",
+     "quote": "The data have one row per person-year and no person or family identifier, so standard errors cannot be clustered",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "output/table1.md",
+     "quote": "The data have no person identifier, so standard errors are not clustered by person",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "**Model:** Poisson regression with heteroskedasticity-robust (HC0) standard errors",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "HC0 standard errors, not clustered by person",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "output/exploratory.md",
+     "quote": "Standard errors are heteroskedasticity-robust (HC0) and not clustered by person",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "\"no person identifier, so standard errors are not clustered by person \"",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "analysis/analysis.py",
+     "text": "# HC0 sandwich errors guard against misspecifying the Poisson variance.",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "# No person identifier exists, so errors cannot be clustered by person;",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "Standard errors are heteroskedasticity-robust (HC0) but not clustered by person,",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "plan.md",
+     "text": "Standard errors: heteroskedasticity-robust (HC0 sandwich), so inference does not",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    },
+    {
+     "file": "plan.md",
+     "text": "The data have one row per person-year and no person or family identifier, so sta",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    },
+    {
+     "file": "output/table1.md",
+     "text": "The data have no person identifier, so standard errors are not clustered by pers",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "**Model:** Poisson regression with heteroskedasticity-robust (HC0) standard erro",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "HC0 standard errors, not clustered by person",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "output/exploratory.md",
+     "text": "Standard errors are heteroskedasticity-robust (HC0) and not clustered by person",
+     "by": "Claude",
+     "turn": 6,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "\"no person identifier, so standard errors are not clustered by person \"",
+     "by": "Claude",
+     "turn": 6,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U22",
+   "kind": "decision",
+   "row": "QA6",
+   "label": "Inference: two-tailed tests at .05",
+   "anchors": [
+    {
+     "file": "analysis/analysis.py",
+     "quote": "ALPHA = 0.05  # two-tailed",
+     "found": true
+    },
+    {
+     "file": "plan.md",
+     "quote": "tests are two-tailed at the .05 level",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "Both estimates are statistically significant at the .05 level (two-tailed).",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "All p-values are two-tailed.",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "z = stats.norm.ppf(1 - ALPHA / 2)",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "analysis/analysis.py",
+     "text": "ALPHA = 0.05  # two-tailed",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    },
+    {
+     "file": "plan.md",
+     "text": "tests are two-tailed at the .05 level",
+     "by": "Claude",
+     "turn": 3,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "Both estimates are statistically significant at the .05 level (two-tailed).",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "All p-values are two-tailed.",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "z = stats.norm.ppf(1 - ALPHA / 2)",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U23",
+   "kind": "decision",
+   "row": "QA7",
+   "label": "Robustness check: NB2 negative binomial with same covariates, sample, SEs",
+   "anchors": [
+    {
+     "file": "analysis/analysis.py",
+     "quote": "return sm.NegativeBinomial(y, X, loglike_method=\"nb2\").fit(",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "**Robustness check added.** A negative binomial model with the same covariates, sample and standard errors",
+     "found": true
+    },
+    {
+     "file": "plan.md",
+     "quote": "It refits the main model as an NB2 negative binomial with the same covariates (including `lpi`), sample and HC0 standard errors",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "output/table1.md",
+     "quote": "Column (2) is a robustness check (NB2 negative binomial) with the same covariates, sample and standard errors as column (1).",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "covariates and HC0 errors are unchanged from the main model.\"\"\"",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "They barely change in a negative binomial robustness check.",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "Both survive the negative binomial check almost unchanged",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "analysis/analysis.py",
+     "text": "return sm.NegativeBinomial(y, X, loglike_method=\"nb2\").fit(",
+     "by": "Claude",
+     "turn": 6,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "**Robustness check added.** A negative binomial model with the same covariates, ",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "plan.md",
+     "text": "It refits the main model as an NB2 negative binomial with the same covariates (i",
+     "by": "Claude",
+     "turn": 6,
+     "change": "added"
+    },
+    {
+     "file": "output/table1.md",
+     "text": "Column (2) is a robustness check (NB2 negative binomial) with the same covariate",
+     "by": "Claude",
+     "turn": 6,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "covariates and HC0 errors are unchanged from the main model.\"\"\"",
+     "by": "Claude",
+     "turn": 6,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "They barely change in a negative binomial robustness check.",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "Both survive the negative binomial check almost unchanged",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U24",
+   "kind": "decision",
+   "row": "QA8",
+   "label": "Exploratory logit of any visit with average marginal effects",
+   "anchors": [
+    {
+     "file": "analysis/exploratory.py",
+     "quote": "result = sm.Logit(y, X).fit(cov_type=\"HC0\", disp=False)",
+     "found": true
+    },
+    {
+     "file": "analysis/exploratory.py",
+     "quote": "ame = result.get_margeff(at=\"overall\")",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "A logit of any visit on the same covariates, with the same sample and standard errors, gives:",
+     "found": true
+    },
+    {
+     "file": "plan.md",
+     "quote": "Logit of whether a person-year has at least one outpatient visit (`mdvis > 0`), with the same covariates, sample and standard errors as the main model.",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "analysis/exploratory.py",
+     "quote": "Logit of any outpatient visit (mdvis > 0) on the same covariates, sample and",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "output/exploratory.md",
+     "quote": "Average marginal effects are changes in the probability of any visit.",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "Average marginal effects on the probability of any visit",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "analysis/exploratory.py",
+     "text": "result = sm.Logit(y, X).fit(cov_type=\"HC0\", disp=False)",
+     "by": "Claude",
+     "turn": 6,
+     "change": "added"
+    },
+    {
+     "file": "analysis/exploratory.py",
+     "text": "ame = result.get_margeff(at=\"overall\")",
+     "by": "Claude",
+     "turn": 6,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "A logit of any visit on the same covariates, with the same sample and standard e",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "plan.md",
+     "text": "Logit of whether a person-year has at least one outpatient visit (`mdvis > 0`), ",
+     "by": "Claude",
+     "turn": 6,
+     "change": "added"
+    },
+    {
+     "file": "analysis/exploratory.py",
+     "text": "Logit of any outpatient visit (mdvis > 0) on the same covariates, sample and",
+     "by": "Claude",
+     "turn": 6,
+     "change": "added"
+    },
+    {
+     "file": "output/exploratory.md",
+     "text": "Average marginal effects are changes in the probability of any visit.",
+     "by": "Claude",
+     "turn": 6,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "Average marginal effects on the probability of any visit",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U25",
+   "kind": "decision",
+   "row": "QM1",
+   "label": "Hypothesis: higher coinsurance means fewer outpatient visits",
+   "anchors": [
+    {
+     "file": "plan.md",
+     "quote": "People in plans with higher coinsurance make fewer outpatient doctor visits.",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "**Hypothesis:** people in plans with higher coinsurance make fewer outpatient doctor visits.",
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "plan.md",
+     "text": "People in plans with higher coinsurance make fewer outpatient doctor visits.",
+     "by": "Claude",
+     "turn": 3,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "**Hypothesis:** people in plans with higher coinsurance make fewer outpatient do",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U26",
+   "kind": "decision",
+   "row": "QM2",
+   "label": "Interpretation of coinsurance effect (relative to free care, diminishing in logs)",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "In other words, a person in a 25% coinsurance plan makes about a quarter fewer visits than the same person with free care.",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "That pattern comes partly from entering coinsurance in logs, which builds diminishing effects into the model.",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "Raising coinsurance further reduces visits more slowly",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "Because the variable is ln(coinsurance + 1), this is easier to read in terms of the plans themselves.",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "In other words, a person in a 25% coinsurance plan makes about a quarter fewer v",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "That pattern comes partly from entering coinsurance in logs, which builds dimini",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "Raising coinsurance further reduces visits more slowly",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "Because the variable is ln(coinsurance + 1), this is easier to read in terms of ",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U27",
+   "kind": "decision",
+   "row": "QM2",
+   "label": "Interpretation of deductible effect",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "**Individual deductible.** Plans with an individual deductible have about 26% fewer visits (IRR 0.739, 95% CI 0.700 to 0.779), holding coinsurance and the other variables constant.",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "An individual deductible is associated with about 26% fewer visits (IRR 0.739).",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "**Individual deductible.** Plans with an individual deductible have about 26% fe",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "An individual deductible is associated with about 26% fewer visits (IRR 0.739).",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U28",
+   "kind": "decision",
+   "row": "QM2",
+   "label": "Causal reading and strength of evidence given random assignment",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "Because plans were assigned at random, these associations can reasonably be read as effects of cost sharing.",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "Neither problem is likely to overturn estimates this far from the null, but the intervals above should be read as too narrow.",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "Both are far from zero relative to their standard errors.",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "Because plans were assigned at random, these associations can reasonably be read",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "Neither problem is likely to overturn estimates this far from the null, but the ",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "Both are far from zero relative to their standard errors.",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U29",
+   "kind": "decision",
+   "row": "QM2",
+   "label": "Interpretation of control coefficients",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "**Controls.** People in poor health, with a physical limitation, or with more chronic diseases make more visits, as expected.",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "The participation incentive is positively associated with visits (IRR 1.024).",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "**Controls.** People in poor health, with a physical limitation, or with more ch",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "The participation incentive is positively associated with visits (IRR 1.024).",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U30",
+   "kind": "decision",
+   "row": "QM2",
+   "label": "Interpretation of exploratory result: reduction comes from skipping care altogether",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "They suggest that much of the reduction in visits comes from people who skip care altogether, not only from fewer return visits.",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "suggests that much of the reduction comes from people not seeing a doctor at all during the year.",
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "They suggest that much of the reduction in visits comes from people who skip car",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "suggests that much of the reduction comes from people not seeing a doctor at all",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U31",
+   "kind": "decision",
+   "row": "QM3",
+   "label": "What gets reported: exploratory kept out of Table 1; CIs/p-values in output file only",
+   "anchors": [
+    {
+     "file": "analysis/exploratory.py",
+     "quote": "Results go to output/exploratory.md, not",
+     "found": true
+    },
+    {
+     "file": "plan.md",
+     "quote": "results in `output/exploratory.md`, kept out of Table 1.",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "Confidence intervals and exact p-values are in `output/table1.md`.",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "The full table is in `output/exploratory.md`.",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "analysis/exploratory.py",
+     "text": "Results go to output/exploratory.md, not",
+     "by": "Claude",
+     "turn": 6,
+     "change": "added"
+    },
+    {
+     "file": "plan.md",
+     "text": "results in `output/exploratory.md`, kept out of Table 1.",
+     "by": "Claude",
+     "turn": 6,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "Confidence intervals and exact p-values are in `output/table1.md`.",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "The full table is in `output/exploratory.md`.",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U32",
+   "kind": "decision",
+   "row": "EX8",
+   "label": "Pre-analysis plan registered before outcome data",
+   "anchors": [
+    {
+     "file": "plan.md",
+     "quote": "# Pre-analysis plan: cost sharing and doctor visits",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "Before looking at the outcome data, we wrote down the hypothesis, outcome, treatment, controls and model in a pre-analysis plan (`plan.md`):",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "## Pre-analysis plan and departures",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "plan.md",
+     "text": "# Pre-analysis plan: cost sharing and doctor visits",
+     "by": "Claude",
+     "turn": 3,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "Before looking at the outcome data, we wrote down the hypothesis, outcome, treat",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "## Pre-analysis plan and departures",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U33",
+   "kind": "decision",
+   "row": "EX9",
+   "label": "Departure: participation incentive (lpi) added as control",
+   "anchors": [
+    {
+     "file": "analysis/analysis.py",
+     "quote": "# lpi was added after the plan was written; see \"Departures from the plan\".",
+     "found": true
+    },
+    {
+     "file": "plan.md",
+     "quote": "1. **Added the participation incentive (`lpi`) as a control.**",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "1. **Participation incentive added as a control.** Incentive payments differed by plan and could themselves affect visits.",
+     "found": true
+    },
+    {
+     "file": "plan.md",
+     "quote": "Reason: the incentive payments differed by plan and could themselves affect visits, so leaving them out could bias the treatment estimates.",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "plan.md",
+     "quote": "This change was made on 2026-10-15, after the planned model had already been fitted and its Table 1 seen.",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "output/table1.md",
+     "quote": "The participation incentive (lpi) was added as a control after the pre-analysis plan",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "\"incentive (lpi) was added as a control after the pre-analysis plan; \"",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "Adding the incentive makes both effects slightly larger.",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "analysis/analysis.py",
+     "text": "# lpi was added after the plan was written; see \"Departures from the plan\".",
+     "by": "Claude",
+     "turn": 5,
+     "change": "added"
+    },
+    {
+     "file": "plan.md",
+     "text": "1. **Added the participation incentive (`lpi`) as a control.**",
+     "by": "Claude",
+     "turn": 5,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "1. **Participation incentive added as a control.** Incentive payments differed b",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "plan.md",
+     "text": "Reason: the incentive payments differed by plan and could themselves affect visi",
+     "by": "Claude",
+     "turn": 5,
+     "change": "added"
+    },
+    {
+     "file": "plan.md",
+     "text": "This change was made on 2026-10-15, after the planned model had already been fit",
+     "by": "Claude",
+     "turn": 5,
+     "change": "added"
+    },
+    {
+     "file": "output/table1.md",
+     "text": "The participation incentive (lpi) was added as a control after the pre-analysis ",
+     "by": "Claude",
+     "turn": 5,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "\"incentive (lpi) was added as a control after the pre-analysis plan; \"",
+     "by": "Claude",
+     "turn": 5,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "Adding the incentive makes both effects slightly larger.",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U34",
+   "kind": "decision",
+   "row": "EX9",
+   "label": "Departure: negative binomial robustness check added",
+   "anchors": [
+    {
+     "file": "plan.md",
+     "quote": "2. **Added a robustness check: negative binomial model.**",
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "\"\"\"Robustness check: functional form. NB2 for the count outcome; the",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "chosen using a standard robustness checklist.",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "plan.md",
+     "quote": "Chosen with the methods-kit robustness skill, after the main results had been seen.",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "output/table1.md",
+     "quote": "Column (2) is a robustness check (NB2 negative binomial)",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "plan.md",
+     "text": "2. **Added a robustness check: negative binomial model.**",
+     "by": "Claude",
+     "turn": 6,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "\"\"\"Robustness check: functional form. NB2 for the count outcome; the",
+     "by": "Claude",
+     "turn": 6,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "chosen using a standard robustness checklist.",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "plan.md",
+     "text": "Chosen with the methods-kit robustness skill, after the main results had been se",
+     "by": "Claude",
+     "turn": 6,
+     "change": "added"
+    },
+    {
+     "file": "output/table1.md",
+     "text": "Column (2) is a robustness check (NB2 negative binomial)",
+     "by": "Claude",
+     "turn": 6,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U35",
+   "kind": "claim",
+   "row": "V1",
+   "label": "Reference: Aron-Dine, Einav & Finkelstein (2013)",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "Aron-Dine, A., Einav, L., & Finkelstein, A. (2013). The RAND Health Insurance Experiment, three decades later.",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "Aron-Dine, Einav, and Finkelstein (2013) revisit the experiment and conclude",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "Aron-Dine, A., Einav, L., & Finkelstein, A. (2013). The RAND Health Insurance Ex",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added",
+     "copied_from": [
+      "notes/references.md"
+     ]
+    },
+    {
+     "file": "memo.md",
+     "text": "Aron-Dine, Einav, and Finkelstein (2013) revisit the experiment and conclude",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added",
+     "copied_from": [
+      "notes/draft.md"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "U36",
+   "kind": "claim",
+   "row": "V1",
+   "label": "Reference: Cameron & Trivedi (2005)",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "Cameron, A. C., & Trivedi, P. K. (2005). *Microeconometrics: Methods and applications*. Cambridge University Press.",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "Cameron and Trivedi (2005), have one row per person-year, with the number of",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "Cameron, A. C., & Trivedi, P. K. (2005). *Microeconometrics: Methods and applica",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added",
+     "copied_from": [
+      "notes/references.md"
+     ]
+    },
+    {
+     "file": "memo.md",
+     "text": "Cameron and Trivedi (2005), have one row per person-year, with the number of",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added",
+     "copied_from": [
+      "notes/draft.md"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "U37",
+   "kind": "claim",
+   "row": "V1",
+   "label": "Reference: Deb & Trivedi (2002)",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "Deb, P., & Trivedi, P. K. (2002). The structure of demand for health care: Latent class versus two-part models.",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "Trivedi (2002) use the same data to model the demand for doctor visits.",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "Deb, P., & Trivedi, P. K. (2002). The structure of demand for health care: Laten",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added",
+     "copied_from": [
+      "notes/references.md"
+     ]
+    },
+    {
+     "file": "memo.md",
+     "text": "Trivedi (2002) use the same data to model the demand for doctor visits.",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added",
+     "copied_from": [
+      "notes/draft.md"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "U38",
+   "kind": "claim",
+   "row": "V2",
+   "label": "Aron-Dine et al. said to conclude cost sharing had no effect on doctor visits",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "that cost sharing had no effect on how often people saw a doctor. Deb and",
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "that cost sharing had no effect on how often people saw a doctor. Deb and",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added",
+     "copied_from": [
+      "notes/draft.md"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "U39",
+   "kind": "claim",
+   "row": "V2",
+   "label": "Deb & Trivedi said to use the same data to model demand for visits",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "Trivedi (2002) use the same data to model the demand for doctor visits.",
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "Trivedi (2002) use the same data to model the demand for doctor visits.",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added",
+     "copied_from": [
+      "notes/draft.md"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "U40",
+   "kind": "claim",
+   "row": "V2",
+   "label": "Data said to be as distributed by Cameron & Trivedi, one row per person-year",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "Cameron and Trivedi (2005), have one row per person-year, with the number of",
+     "found": true
+    },
+    {
+     "file": "plan.md",
+     "quote": "The data have one row per person-year and no person or family identifier",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "Cameron and Trivedi (2005), have one row per person-year, with the number of",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added",
+     "copied_from": [
+      "notes/draft.md"
+     ]
+    },
+    {
+     "file": "plan.md",
+     "text": "The data have one row per person-year and no person or family identifier",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U41",
+   "kind": "claim",
+   "row": "V5",
+   "label": "Experiment ran in a single city, Seattle",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "The experiment ran in a single city, Seattle.",
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "The experiment ran in a single city, Seattle.",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added",
+     "copied_from": [
+      "notes/draft.md"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "U42",
+   "kind": "claim",
+   "row": "V5",
+   "label": "HIE assigned families at random to plans",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "RAND Health Insurance Experiment answered this by assigning families at",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "Because plans were assigned at random, these associations can reasonably be read as effects of cost sharing.",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "RAND Health Insurance Experiment answered this by assigning families at",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added",
+     "copied_from": [
+      "notes/draft.md"
+     ]
+    },
+    {
+     "file": "memo.md",
+     "text": "Because plans were assigned at random, these associations can reasonably be read",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U43",
+   "kind": "claim",
+   "row": "V5",
+   "label": "Incentive payments differed by plan",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "Incentive payments differed by plan and could themselves affect visits.",
+     "found": true
+    },
+    {
+     "file": "plan.md",
+     "quote": "the incentive payments differed by plan and could themselves affect visits",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "Incentive payments differed by plan and could themselves affect visits.",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "plan.md",
+     "text": "the incentive payments differed by plan and could themselves affect visits",
+     "by": "Claude",
+     "turn": 5,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U44",
+   "kind": "claim",
+   "row": "V5",
+   "label": "Plans ran for three or five years",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "The plans ran for three or five years",
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "The plans ran for three or five years",
+     "by": "the author, between turns",
+     "turn": 9,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U45",
+   "kind": "claim",
+   "row": "V4",
+   "label": "Person-years N = 20,190 consistent across memo and tables",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "All 20,190 person-years are kept",
+     "found": true
+    },
+    {
+     "file": "output/table1.md",
+     "quote": "| Person-years | 20,190 | 20,190 |",
+     "found": true
+    },
+    {
+     "file": "output/exploratory.md",
+     "quote": "Person-years: 20,190",
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "All 20,190 person-years are kept",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "output/table1.md",
+     "text": "| Person-years | 20,190 | 20,190 |",
+     "by": "Claude",
+     "turn": 6,
+     "change": "added"
+    },
+    {
+     "file": "output/exploratory.md",
+     "text": "Person-years: 20,190",
+     "by": "Claude",
+     "turn": 6,
+     "change": "added",
+     "copied_from": [
+      "output/table1.md"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "U46",
+   "kind": "claim",
+   "row": "V4",
+   "label": "Memo Table 1 values match output/table1.md",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "| Log coinsurance | 0.916 (0.006) | 0.917 (0.006) |",
+     "found": true
+    },
+    {
+     "file": "output/table1.md",
+     "quote": "| Log coinsurance (lncoins) | 0.916 (0.006) [0.905, 0.928] p<0.001 | 0.917 (0.006) [0.905, 0.928] p<0.001 |",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "| Individual deductible | 0.739 (0.020) | 0.749 (0.020) |",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "output/table1.md",
+     "quote": "| Individual deductible (idp) | 0.739 (0.020) [0.700, 0.779] p<0.001 | 0.749 (0.020) [0.710, 0.790] p<0.001 |",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "| Log coinsurance | 0.916 (0.006) | 0.917 (0.006) |",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "output/table1.md",
+     "text": "| Log coinsurance (lncoins) | 0.916 (0.006) [0.905, 0.928] p<0.001 | 0.917 (0.00",
+     "by": "Claude",
+     "turn": 6,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "| Individual deductible | 0.739 (0.020) | 0.749 (0.020) |",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "output/table1.md",
+     "text": "| Individual deductible (idp) | 0.739 (0.020) [0.700, 0.779] p<0.001 | 0.749 (0.",
+     "by": "Claude",
+     "turn": 6,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U47",
+   "kind": "claim",
+   "row": "V4",
+   "label": "Memo Methods (OLS) consistent with model stated elsewhere (Poisson)",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "We estimate the number of visits with a linear regression by OLS.",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "**Model:** Poisson regression with heteroskedasticity-robust (HC0) standard errors",
+     "found": true
+    },
+    {
+     "file": "plan.md",
+     "quote": "Poisson regression of `mdvis` on the treatment variables and controls.",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "return sm.GLM(y, X, family=sm.families.Poisson()).fit(cov_type=\"HC0\")",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "We estimate the number of visits with a linear regression by OLS.",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added",
+     "copied_from": [
+      "notes/draft.md"
+     ]
+    },
+    {
+     "file": "memo.md",
+     "text": "**Model:** Poisson regression with heteroskedasticity-robust (HC0) standard erro",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "plan.md",
+     "text": "Poisson regression of `mdvis` on the treatment variables and controls.",
+     "by": "Claude",
+     "turn": 3,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "return sm.GLM(y, X, family=sm.families.Poisson()).fit(cov_type=\"HC0\")",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U48",
+   "kind": "claim",
+   "row": "QV1",
+   "label": "Table 1 numbers (Poisson and NB columns)",
+   "anchors": [
+    {
+     "file": "output/table1.md",
+     "quote": "| Individual deductible (idp) | 0.739 (0.020) [0.700, 0.779] p<0.001 | 0.749 (0.020) [0.710, 0.790] p<0.001 |",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "| Dispersion (alpha) | \u2013 | 1.305 |",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "| Individual deductible | 0.739 (0.020) | 0.749 (0.020) |",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "| Log coinsurance | 0.916 (0.006) | 0.917 (0.006) |",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "output/table1.md",
+     "text": "| Individual deductible (idp) | 0.739 (0.020) [0.700, 0.779] p<0.001 | 0.749 (0.",
+     "by": "Claude",
+     "turn": 6,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "| Dispersion (alpha) | \u2013 | 1.305 |",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added",
+     "copied_from": [
+      "output/table1.md"
+     ]
+    },
+    {
+     "file": "memo.md",
+     "text": "| Individual deductible | 0.739 (0.020) | 0.749 (0.020) |",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "| Log coinsurance | 0.916 (0.006) | 0.917 (0.006) |",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U49",
+   "kind": "claim",
+   "row": "QV1",
+   "label": "Exploratory logit table numbers",
+   "anchors": [
+    {
+     "file": "output/exploratory.md",
+     "quote": "| Log coinsurance (lncoins) | 0.827 (0.008) [0.812, 0.842] | -0.039 (0.002) | <0.001 |",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "| Individual deductible | 0.516 (0.019) | \u22120.134 (0.007) |",
+     "found": true
+    },
+    {
+     "file": "output/exploratory.md",
+     "quote": "| Individual deductible (idp) | 0.516 (0.019) [0.479, 0.556] | -0.134 (0.007) | <0.001 |",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "| Log coinsurance | 0.827 (0.008) | \u22120.039 (0.002) |",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "Each one-unit increase in log coinsurance lowers the chance of any visit by about 4 percentage points.",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "An individual deductible lowers it by about 13 points.",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "output/exploratory.md",
+     "text": "| Log coinsurance (lncoins) | 0.827 (0.008) [0.812, 0.842] | -0.039 (0.002) | <0",
+     "by": "Claude",
+     "turn": 6,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "| Individual deductible | 0.516 (0.019) | \u22120.134 (0.007) |",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "output/exploratory.md",
+     "text": "| Individual deductible (idp) | 0.516 (0.019) [0.479, 0.556] | -0.134 (0.007) | ",
+     "by": "Claude",
+     "turn": 6,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "| Log coinsurance | 0.827 (0.008) | \u22120.039 (0.002) |",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "Each one-unit increase in log coinsurance lowers the chance of any visit by abou",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "An individual deductible lowers it by about 13 points.",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U50",
+   "kind": "claim",
+   "row": "QV1",
+   "label": "Coinsurance-rate translation table numbers",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "| 25% | 0.75 | [0.72, 0.78] |",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "| 95% | 0.67 | [0.63, 0.71] |",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "| 50% | 0.71 | [0.68, 0.75] |",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "| 25% | 0.75 | [0.72, 0.78] |",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "| 95% | 0.67 | [0.63, 0.71] |",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "| 50% | 0.71 | [0.68, 0.75] |",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U51",
+   "kind": "claim",
+   "row": "QV1",
+   "label": "Text: coinsurance IRR 0.916, about 8% fewer visits",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "about 8% fewer visits (incidence-rate ratio 0.916)",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "The IRR of 0.916 means that each one-unit increase in log coinsurance multiplies the expected number of visits by 0.916",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "| Log coinsurance | 0.916 (0.006) | 0.917 (0.006) |",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "output/table1.md",
+     "quote": "| Log coinsurance (lncoins) | 0.916 (0.006) [0.905, 0.928] p<0.001 | 0.917 (0.006) [0.905, 0.928] p<0.001 |",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "about 8% fewer visits (incidence-rate ratio 0.916)",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "The IRR of 0.916 means that each one-unit increase in log coinsurance multiplies",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "| Log coinsurance | 0.916 (0.006) | 0.917 (0.006) |",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "output/table1.md",
+     "text": "| Log coinsurance (lncoins) | 0.916 (0.006) [0.905, 0.928] p<0.001 | 0.917 (0.00",
+     "by": "Claude",
+     "turn": 6,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U52",
+   "kind": "claim",
+   "row": "QV1",
+   "label": "Text: deductible IRR 0.739, about 26% fewer, CI 0.700 to 0.779",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "An individual deductible is associated with about 26% fewer visits (IRR 0.739).",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "(IRR 0.739, 95% CI 0.700 to 0.779)",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "| Individual deductible | 0.739 (0.020) | 0.749 (0.020) |",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "output/table1.md",
+     "quote": "| Individual deductible (idp) | 0.739 (0.020) [0.700, 0.779] p<0.001 | 0.749 (0.020) [0.710, 0.790] p<0.001 |",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "An individual deductible is associated with about 26% fewer visits (IRR 0.739).",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "(IRR 0.739, 95% CI 0.700 to 0.779)",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "| Individual deductible | 0.739 (0.020) | 0.749 (0.020) |",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "output/table1.md",
+     "text": "| Individual deductible (idp) | 0.739 (0.020) [0.700, 0.779] p<0.001 | 0.749 (0.",
+     "by": "Claude",
+     "turn": 6,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U53",
+   "kind": "claim",
+   "row": "QV1",
+   "label": "Text: average 3.9 outpatient visits per person-year",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "average is 3.9 outpatient visits.",
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "average is 3.9 outpatient visits.",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added",
+     "copied_from": [
+      "notes/draft.md"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "U54",
+   "kind": "claim",
+   "row": "QV1",
+   "label": "Text: 20,190 person-years",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "All 20,190 person-years are kept, including those with zero visits.",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "| Person-years | 20,190 | 20,190 |",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "output/exploratory.md",
+     "quote": "Person-years: 20,190",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "All 20,190 person-years are kept, including those with zero visits.",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "| Person-years | 20,190 | 20,190 |",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added",
+     "copied_from": [
+      "output/table1.md"
+     ]
+    },
+    {
+     "file": "output/exploratory.md",
+     "text": "Person-years: 20,190",
+     "by": "Claude",
+     "turn": 6,
+     "change": "added",
+     "copied_from": [
+      "output/table1.md"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "U55",
+   "kind": "claim",
+   "row": "QV1",
+   "label": "Text: planned-model IRRs 0.931 (SE 0.005) and 0.767 (SE 0.021)",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "the IRRs were 0.931 (SE 0.005) for log coinsurance and 0.767 (SE 0.021) for the individual deductible",
+     "found": true
+    },
+    {
+     "file": "plan.md",
+     "quote": "The planned model's treatment estimates were IRR 0.931 (SE 0.005) for `lncoins` and 0.767 (SE 0.021) for `idp`",
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "the IRRs were 0.931 (SE 0.005) for log coinsurance and 0.767 (SE 0.021) for the ",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "plan.md",
+     "text": "The planned model's treatment estimates were IRR 0.931 (SE 0.005) for `lncoins` ",
+     "by": "Claude",
+     "turn": 5,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U56",
+   "kind": "claim",
+   "row": "QV1",
+   "label": "Text: with lpi, IRRs 0.916 (SE 0.006) and 0.739 (SE 0.020)",
+   "anchors": [
+    {
+     "file": "plan.md",
+     "quote": "with `lpi` added they are 0.916 (SE 0.006) and 0.739 (SE 0.020)",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "| Log coinsurance | 0.916 (0.006) | 0.917 (0.006) |",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "| Individual deductible | 0.739 (0.020) | 0.749 (0.020) |",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "output/table1.md",
+     "quote": "| Log coinsurance (lncoins) | 0.916 (0.006) [0.905, 0.928] p<0.001 | 0.917 (0.006) [0.905, 0.928] p<0.001 |",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "output/table1.md",
+     "quote": "| Individual deductible (idp) | 0.739 (0.020) [0.700, 0.779] p<0.001 | 0.749 (0.020) [0.710, 0.790] p<0.001 |",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "plan.md",
+     "text": "with `lpi` added they are 0.916 (SE 0.006) and 0.739 (SE 0.020)",
+     "by": "Claude",
+     "turn": 5,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "| Log coinsurance | 0.916 (0.006) | 0.917 (0.006) |",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "| Individual deductible | 0.739 (0.020) | 0.749 (0.020) |",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "output/table1.md",
+     "text": "| Log coinsurance (lncoins) | 0.916 (0.006) [0.905, 0.928] p<0.001 | 0.917 (0.00",
+     "by": "Claude",
+     "turn": 6,
+     "change": "added"
+    },
+    {
+     "file": "output/table1.md",
+     "text": "| Individual deductible (idp) | 0.739 (0.020) [0.700, 0.779] p<0.001 | 0.749 (0.",
+     "by": "Claude",
+     "turn": 6,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U57",
+   "kind": "claim",
+   "row": "QV1",
+   "label": "Text: a quarter fewer visits at 25%; another 8 points from 25% to 95%",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "makes about a quarter fewer visits than the same person with free care",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "going from 25% to 95% takes off only about another 8 percentage points",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "| 25% | 0.75 | [0.72, 0.78] |",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "| 95% | 0.67 | [0.63, 0.71] |",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "makes about a quarter fewer visits than the same person with free care",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "going from 25% to 95% takes off only about another 8 percentage points",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "| 25% | 0.75 | [0.72, 0.78] |",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "| 95% | 0.67 | [0.63, 0.71] |",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U58",
+   "kind": "claim",
+   "row": "QV1",
+   "label": "Text: dispersion alpha = 1.3",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "much more spread out than a Poisson model assumes (alpha = 1.3)",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "| Dispersion (alpha) | \u2013 | 1.305 |",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "much more spread out than a Poisson model assumes (alpha = 1.3)",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "| Dispersion (alpha) | \u2013 | 1.305 |",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added",
+     "copied_from": [
+      "output/table1.md"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "U59",
+   "kind": "claim",
+   "row": "QV1",
+   "label": "Text: participation incentive IRR 1.024",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "The participation incentive is positively associated with visits (IRR 1.024).",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "| Log participation incentive | 1.024 (0.005) | 1.026 (0.005) |",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "output/table1.md",
+     "quote": "| Log participation incentive (lpi) | 1.024 (0.005) [1.015, 1.033] p<0.001 | 1.026 (0.005) [1.017, 1.035] p<0.001 |",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "The participation incentive is positively associated with visits (IRR 1.024).",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "| Log participation incentive | 1.024 (0.005) | 1.026 (0.005) |",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "output/table1.md",
+     "text": "| Log participation incentive (lpi) | 1.024 (0.005) [1.015, 1.033] p<0.001 | 1.0",
+     "by": "Claude",
+     "turn": 6,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U60",
+   "kind": "claim",
+   "row": "QV1",
+   "label": "Text: 68.8% of person-years have any visit (69% baseline)",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "In the data, 68.8% of person-years include at least one outpatient visit.",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "These are large relative to the 69% baseline.",
+     "found": true
+    },
+    {
+     "file": "output/exploratory.md",
+     "quote": "Share of person-years with at least one visit: 0.688",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "In the data, 68.8% of person-years include at least one outpatient visit.",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "These are large relative to the 69% baseline.",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "output/exploratory.md",
+     "text": "Share of person-years with at least one visit: 0.688",
+     "by": "Claude",
+     "turn": 6,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U61",
+   "kind": "claim",
+   "row": "QV1",
+   "label": "Text: about 4 and 13 percentage points lower chance of any visit",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "lowers the chance of any visit by about 4 percentage points",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "An individual deductible lowers it by about 13 points.",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "| Log coinsurance | 0.827 (0.008) | \u22120.039 (0.002) |",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "| Individual deductible | 0.516 (0.019) | \u22120.134 (0.007) |",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "output/exploratory.md",
+     "quote": "| Log coinsurance (lncoins) | 0.827 (0.008) [0.812, 0.842] | -0.039 (0.002) | <0.001 |",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "output/exploratory.md",
+     "quote": "| Individual deductible (idp) | 0.516 (0.019) [0.479, 0.556] | -0.134 (0.007) | <0.001 |",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "lowers the chance of any visit by about 4 percentage points",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "An individual deductible lowers it by about 13 points.",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "| Log coinsurance | 0.827 (0.008) | \u22120.039 (0.002) |",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "| Individual deductible | 0.516 (0.019) | \u22120.134 (0.007) |",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "output/exploratory.md",
+     "text": "| Log coinsurance (lncoins) | 0.827 (0.008) [0.812, 0.842] | -0.039 (0.002) | <0",
+     "by": "Claude",
+     "turn": 6,
+     "change": "added"
+    },
+    {
+     "file": "output/exploratory.md",
+     "text": "| Individual deductible (idp) | 0.516 (0.019) [0.479, 0.556] | -0.134 (0.007) | ",
+     "by": "Claude",
+     "turn": 6,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U62",
+   "kind": "claim",
+   "row": "QV2",
+   "label": "Both treatment estimates significant at .05; p < .001 in both columns",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "Both estimates are statistically significant at the .05 level (two-tailed).",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "For both treatment variables p < .001 in both columns.",
+     "found": true
+    },
+    {
+     "file": "output/table1.md",
+     "quote": "| Log coinsurance (lncoins) | 0.916 (0.006) [0.905, 0.928] p<0.001 | 0.917 (0.006) [0.905, 0.928] p<0.001 |",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "output/table1.md",
+     "quote": "| Individual deductible (idp) | 0.739 (0.020) [0.700, 0.779] p<0.001 | 0.749 (0.020) [0.710, 0.790] p<0.001 |",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "Both estimates are statistically significant at the .05 level (two-tailed).",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "For both treatment variables p < .001 in both columns.",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "output/table1.md",
+     "text": "| Log coinsurance (lncoins) | 0.916 (0.006) [0.905, 0.928] p<0.001 | 0.917 (0.00",
+     "by": "Claude",
+     "turn": 6,
+     "change": "added"
+    },
+    {
+     "file": "output/table1.md",
+     "text": "| Individual deductible (idp) | 0.739 (0.020) [0.700, 0.779] p<0.001 | 0.749 (0.",
+     "by": "Claude",
+     "turn": 6,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U63",
+   "kind": "claim",
+   "row": "QV2",
+   "label": "Estimates barely change in NB check",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "They barely change in a negative binomial robustness check.",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "Both survive the negative binomial check almost unchanged",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "| Log coinsurance | 0.916 (0.006) | 0.917 (0.006) |",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "| Individual deductible | 0.739 (0.020) | 0.749 (0.020) |",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "output/table1.md",
+     "quote": "| Log coinsurance (lncoins) | 0.916 (0.006) [0.905, 0.928] p<0.001 | 0.917 (0.006) [0.905, 0.928] p<0.001 |",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "output/table1.md",
+     "quote": "| Individual deductible (idp) | 0.739 (0.020) [0.700, 0.779] p<0.001 | 0.749 (0.020) [0.710, 0.790] p<0.001 |",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "They barely change in a negative binomial robustness check.",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "Both survive the negative binomial check almost unchanged",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "| Log coinsurance | 0.916 (0.006) | 0.917 (0.006) |",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "| Individual deductible | 0.739 (0.020) | 0.749 (0.020) |",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "output/table1.md",
+     "text": "| Log coinsurance (lncoins) | 0.916 (0.006) [0.905, 0.928] p<0.001 | 0.917 (0.00",
+     "by": "Claude",
+     "turn": 6,
+     "change": "added"
+    },
+    {
+     "file": "output/table1.md",
+     "text": "| Individual deductible (idp) | 0.739 (0.020) [0.700, 0.779] p<0.001 | 0.749 (0.",
+     "by": "Claude",
+     "turn": 6,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U64",
+   "kind": "claim",
+   "row": "QV2",
+   "label": "Adding incentive makes both effects slightly larger",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "Adding the incentive makes both effects slightly larger.",
+     "found": true
+    },
+    {
+     "file": "plan.md",
+     "quote": "with `lpi` added they are 0.916 (SE 0.006) and 0.739 (SE 0.020)",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "With the planned controls only, the IRRs were 0.931 (SE 0.005) for log coinsurance and 0.767 (SE 0.021) for the individual deductible.",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "Adding the incentive makes both effects slightly larger.",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "plan.md",
+     "text": "with `lpi` added they are 0.916 (SE 0.006) and 0.739 (SE 0.020)",
+     "by": "Claude",
+     "turn": 5,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "With the planned controls only, the IRRs were 0.931 (SE 0.005) for log coinsuran",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U65",
+   "kind": "claim",
+   "row": "QV2",
+   "label": "Only good and fair self-rated health not significant among controls",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "Among the controls, only good and fair self-rated health are not significant at .05.",
+     "found": true
+    },
+    {
+     "file": "output/table1.md",
+     "quote": "| Self-rated health: good (hlthg) | 0.988 (0.022) [0.946, 1.033] p=0.604 | 0.961 (0.022) [0.918, 1.006] p=0.086 |",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "output/table1.md",
+     "quote": "| Self-rated health: fair (hlthf) | 1.056 (0.045) [0.972, 1.148] p=0.200 | 1.013 (0.043) [0.932, 1.101] p=0.767 |",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "Among the controls, only good and fair self-rated health are not significant at ",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "output/table1.md",
+     "text": "| Self-rated health: good (hlthg) | 0.988 (0.022) [0.946, 1.033] p=0.604 | 0.961",
+     "by": "Claude",
+     "turn": 6,
+     "change": "added"
+    },
+    {
+     "file": "output/table1.md",
+     "text": "| Self-rated health: fair (hlthf) | 1.056 (0.045) [0.972, 1.148] p=0.200 | 1.013",
+     "by": "Claude",
+     "turn": 6,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U66",
+   "kind": "claim",
+   "row": "QV2",
+   "label": "Poor health, limitation, chronic diseases associated with more visits",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "People in poor health, with a physical limitation, or with more chronic diseases make more visits, as expected.",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "| Self-rated health: poor | 1.238 (0.095) | 1.213 (0.088) |",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "| Physical limitation | 1.299 (0.043) | 1.300 (0.043) |",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "| Number of chronic diseases | 1.035 (0.002) | 1.040 (0.002) |",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "output/table1.md",
+     "quote": "| Self-rated health: poor (hlthp) | 1.238 (0.095) [1.065, 1.439] p=0.006 | 1.213 (0.088) [1.052, 1.398] p=0.008 |",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "output/table1.md",
+     "quote": "| Physical limitation (physlm) | 1.299 (0.043) [1.218, 1.386] p<0.001 | 1.300 (0.043) [1.218, 1.387] p<0.001 |",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "output/table1.md",
+     "quote": "| Number of chronic diseases (disea) | 1.035 (0.002) [1.032, 1.038] p<0.001 | 1.040 (0.002) [1.036, 1.043] p<0.001 |",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "People in poor health, with a physical limitation, or with more chronic diseases",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "| Self-rated health: poor | 1.238 (0.095) | 1.213 (0.088) |",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "| Physical limitation | 1.299 (0.043) | 1.300 (0.043) |",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "| Number of chronic diseases | 1.035 (0.002) | 1.040 (0.002) |",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "output/table1.md",
+     "text": "| Self-rated health: poor (hlthp) | 1.238 (0.095) [1.065, 1.439] p=0.006 | 1.213",
+     "by": "Claude",
+     "turn": 6,
+     "change": "added"
+    },
+    {
+     "file": "output/table1.md",
+     "text": "| Physical limitation (physlm) | 1.299 (0.043) [1.218, 1.386] p<0.001 | 1.300 (0",
+     "by": "Claude",
+     "turn": 6,
+     "change": "added"
+    },
+    {
+     "file": "output/table1.md",
+     "text": "| Number of chronic diseases (disea) | 1.035 (0.002) [1.032, 1.038] p<0.001 | 1.",
+     "by": "Claude",
+     "turn": 6,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U67",
+   "kind": "claim",
+   "row": "QV2",
+   "label": "Both results in hypothesized direction and far from zero",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "Both results go in the direction of the hypothesis. Both are far from zero relative to their standard errors.",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "People in plans that made them pay more of the bill made fewer outpatient doctor visits.",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "Neither problem is likely to overturn estimates this far from the null",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "Both results go in the direction of the hypothesis. Both are far from zero relat",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "People in plans that made them pay more of the bill made fewer outpatient doctor",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "Neither problem is likely to overturn estimates this far from the null",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U68",
+   "kind": "claim",
+   "row": "QV2",
+   "label": "Exploratory: p < .001 for both treatments",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "HC0 standard errors, not clustered by person; p < .001 for both.",
+     "found": true
+    },
+    {
+     "file": "output/exploratory.md",
+     "quote": "| Log coinsurance (lncoins) | 0.827 (0.008) [0.812, 0.842] | -0.039 (0.002) | <0.001 |",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "output/exploratory.md",
+     "quote": "| Individual deductible (idp) | 0.516 (0.019) [0.479, 0.556] | -0.134 (0.007) | <0.001 |",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "HC0 standard errors, not clustered by person; p < .001 for both.",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "output/exploratory.md",
+     "text": "| Log coinsurance (lncoins) | 0.827 (0.008) [0.812, 0.842] | -0.039 (0.002) | <0",
+     "by": "Claude",
+     "turn": 6,
+     "change": "added"
+    },
+    {
+     "file": "output/exploratory.md",
+     "text": "| Individual deductible (idp) | 0.516 (0.019) [0.479, 0.556] | -0.134 (0.007) | ",
+     "by": "Claude",
+     "turn": 6,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U69",
+   "kind": "claim",
+   "row": "QV3",
+   "label": "Methods says OLS linear regression",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "We estimate the number of visits with a linear regression by OLS.",
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "We estimate the number of visits with a linear regression by OLS.",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added",
+     "copied_from": [
+      "notes/draft.md"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "U70",
+   "kind": "claim",
+   "row": "QV3",
+   "label": "Model described as Poisson with HC0 SEs, IRRs, delta-method SEs",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "Entries are incidence-rate ratios, with standard errors (delta method) in parentheses.",
+     "found": true
+    },
+    {
+     "file": "output/table1.md",
+     "quote": "the SE of each IRR is from the delta method, and the interval is the exponentiated Wald interval for the coefficient",
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "return sm.GLM(y, X, family=sm.families.Poisson()).fit(cov_type=\"HC0\")",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "se_irr = irr * se  # delta method",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "**Model:** Poisson regression with heteroskedasticity-robust (HC0) standard errors, reported as incidence-rate ratios (IRRs).",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "plan.md",
+     "quote": "Poisson regression of `mdvis` on the treatment variables and controls.",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "plan.md",
+     "quote": "Standard errors: heteroskedasticity-robust (HC0 sandwich)",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "plan.md",
+     "quote": "results are reported as incidence-rate ratios",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "output/table1.md",
+     "quote": "Each cell is the incidence-rate ratio (exponentiated coefficient), its standard error in parentheses",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "Standard errors are heteroskedasticity-robust (HC0) but not clustered by person, because the data have no person identifier.",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "Entries are incidence-rate ratios, with standard errors (delta method) in parent",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "output/table1.md",
+     "text": "the SE of each IRR is from the delta method, and the interval is the exponentiat",
+     "by": "Claude",
+     "turn": 6,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "return sm.GLM(y, X, family=sm.families.Poisson()).fit(cov_type=\"HC0\")",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "se_irr = irr * se  # delta method",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "**Model:** Poisson regression with heteroskedasticity-robust (HC0) standard erro",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "plan.md",
+     "text": "Poisson regression of `mdvis` on the treatment variables and controls.",
+     "by": "Claude",
+     "turn": 3,
+     "change": "added"
+    },
+    {
+     "file": "plan.md",
+     "text": "Standard errors: heteroskedasticity-robust (HC0 sandwich)",
+     "by": "Claude",
+     "turn": 4,
+     "change": "added"
+    },
+    {
+     "file": "plan.md",
+     "text": "results are reported as incidence-rate ratios",
+     "by": "Claude",
+     "turn": 3,
+     "change": "added"
+    },
+    {
+     "file": "output/table1.md",
+     "text": "Each cell is the incidence-rate ratio (exponentiated coefficient), its standard ",
+     "by": "Claude",
+     "turn": 6,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "Standard errors are heteroskedasticity-robust (HC0) but not clustered by person,",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U71",
+   "kind": "claim",
+   "row": "QV3",
+   "label": "NB and logit described as using same covariates, sample, SEs as main model",
+   "anchors": [
+    {
+     "file": "output/table1.md",
+     "quote": "Column (2) is a robustness check (NB2 negative binomial) with the same covariates, sample and standard errors as column (1).",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "A logit of any visit on the same covariates, with the same sample and standard errors, gives:",
+     "found": true
+    },
+    {
+     "file": "analysis/analysis.py",
+     "quote": "covariates and HC0 errors are unchanged from the main model.",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "plan.md",
+     "quote": "It refits the main model as an NB2 negative binomial with the same covariates (including `lpi`), sample and HC0 standard errors",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "plan.md",
+     "quote": "with the same covariates, sample and standard errors as the main model",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "A negative binomial model with the same covariates, sample and standard errors, chosen using a standard robustness checklist.",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "analysis/exploratory.py",
+     "quote": "Logit of any outpatient visit (mdvis > 0) on the same covariates, sample and",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "analysis/exploratory.py",
+     "quote": "result = sm.Logit(y, X).fit(cov_type=\"HC0\", disp=False)",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "output/table1.md",
+     "text": "Column (2) is a robustness check (NB2 negative binomial) with the same covariate",
+     "by": "Claude",
+     "turn": 6,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "A logit of any visit on the same covariates, with the same sample and standard e",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "analysis/analysis.py",
+     "text": "covariates and HC0 errors are unchanged from the main model.",
+     "by": "Claude",
+     "turn": 6,
+     "change": "added"
+    },
+    {
+     "file": "plan.md",
+     "text": "It refits the main model as an NB2 negative binomial with the same covariates (i",
+     "by": "Claude",
+     "turn": 6,
+     "change": "added"
+    },
+    {
+     "file": "plan.md",
+     "text": "with the same covariates, sample and standard errors as the main model",
+     "by": "Claude",
+     "turn": 6,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "A negative binomial model with the same covariates, sample and standard errors, ",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "analysis/exploratory.py",
+     "text": "Logit of any outpatient visit (mdvis > 0) on the same covariates, sample and",
+     "by": "Claude",
+     "turn": 6,
+     "change": "added"
+    },
+    {
+     "file": "analysis/exploratory.py",
+     "text": "result = sm.Logit(y, X).fit(cov_type=\"HC0\", disp=False)",
+     "by": "Claude",
+     "turn": 6,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U72",
+   "kind": "claim",
+   "row": "QV3",
+   "label": "Treatment variable described as ln(coinsurance + 1)",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "Because the variable is ln(coinsurance + 1), this is easier to read in terms of the plans themselves.",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "**Treatment:** the plan's log coinsurance, ln(coinsurance + 1) (`lncoins`)",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "Because the variable is ln(coinsurance + 1), this is easier to read in terms of ",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "**Treatment:** the plan's log coinsurance, ln(coinsurance + 1) (`lncoins`)",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    }
+   ]
+  },
+  {
+   "id": "U73",
+   "kind": "claim",
+   "row": "EXV3",
+   "label": "Memo's account of the pre-analysis plan and departures matches plan.md",
+   "anchors": [
+    {
+     "file": "memo.md",
+     "quote": "There are two departures from the plan. Both were decided after the planned model had been fitted.",
+     "found": true
+    },
+    {
+     "file": "plan.md",
+     "quote": "## Departures from the plan",
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "Before looking at the outcome data, we wrote down the hypothesis, outcome, treatment, controls and model in a pre-analysis plan (`plan.md`):",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "1. **Participation incentive added as a control.**",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "memo.md",
+     "quote": "2. **Robustness check added.**",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "plan.md",
+     "quote": "1. **Added the participation incentive (`lpi`) as a control.**",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "plan.md",
+     "quote": "2. **Added a robustness check: negative binomial model.**",
+     "restates": true,
+     "found": true
+    },
+    {
+     "file": "output/table1.md",
+     "quote": "see \"Departures from the plan\" in plan.md",
+     "restates": true,
+     "found": true
+    }
+   ],
+   "trace": [
+    {
+     "file": "memo.md",
+     "text": "There are two departures from the plan. Both were decided after the planned mode",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "plan.md",
+     "text": "## Departures from the plan",
+     "by": "Claude",
+     "turn": 5,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "Before looking at the outcome data, we wrote down the hypothesis, outcome, treat",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "1. **Participation incentive added as a control.**",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "memo.md",
+     "text": "2. **Robustness check added.**",
+     "by": "Claude",
+     "turn": 8,
+     "change": "added"
+    },
+    {
+     "file": "plan.md",
+     "text": "1. **Added the participation incentive (`lpi`) as a control.**",
+     "by": "Claude",
+     "turn": 5,
+     "change": "added"
+    },
+    {
+     "file": "plan.md",
+     "text": "2. **Added a robustness check: negative binomial model.**",
+     "by": "Claude",
+     "turn": 6,
+     "change": "added"
+    },
+    {
+     "file": "output/table1.md",
+     "text": "see \"Departures from the plan\" in plan.md",
+     "by": "Claude",
+     "turn": 5,
+     "change": "added"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,642 @@
+{
+ "U55": {
+  "id": "U55",
+  "discretion": "none",
+  "certification": "you checked it against the source",
+  "turns": "T7",
+  "basis": "I reran the analysis myself and compared the results table with its output",
+  "confidence": "high"
+ },
+ "U56": {
+  "id": "U56",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T5, T6, T7",
+  "basis": "Bootstrap p column added in T6 and never rechecked; T5 checked only the range and GM row, so the weakest code applies",
+  "confidence": "medium"
+ },
+ "U57": {
+  "id": "U57",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T2, T5, T7",
+  "basis": "T5 checked only the GM and DM means (608.0, 3.08), not the whole table",
+  "confidence": "medium"
+ },
+ "U58": {
+  "id": "U58",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T6",
+  "basis": "T5 check: 11.7\u00a2, s.e. 0.012 \u2705; T6: I've read the results. p moved to 0.001 in the T6 rerun",
+  "confidence": "medium"
+ },
+ "U59": {
+  "id": "U59",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T5, T6",
+  "basis": "T5 produced the two-way figure (270.9 \u2192 $32M) as a fix; T6 adopted it and nothing compared it afterwards",
+  "confidence": "medium"
+ },
+ "U60": {
+  "id": "U60",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T6",
+  "basis": "133.3 and 146.0 \u2705; I've read the results",
+  "confidence": "high"
+ },
+ "U61": {
+  "id": "U61",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T6",
+  "basis": "GM $608M; Diamond Match $3M \u2705 608.0 and 3.08; I've read the results",
+  "confidence": "high"
+ },
+ "U62": {
+  "id": "U62",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T6",
+  "basis": "over half \u2705 69.5%; I've read the results",
+  "confidence": "high"
+ },
+ "U63": {
+  "id": "U63",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T6",
+  "basis": "K&Z say Diamond Match and American Steel are 'somewhat smaller than the others'; I've read the results",
+  "confidence": "medium"
+ },
+ "U64": {
+  "id": "U64",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T6",
+  "basis": "HC1 error less than half the clustered one \u2705 0.42; I've read the results",
+  "confidence": "high"
+ },
+ "U65": {
+  "id": "U65",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T6",
+  "basis": "b ranges from 0.110 to 0.117 \u2705 columns 1\u20134; I've read the results",
+  "confidence": "high"
+ },
+ "U66": {
+  "id": "U66",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T6",
+  "basis": "72.5% within R\u00b2 \u2705; I've read the results",
+  "confidence": "high"
+ },
+ "U67": {
+  "id": "U67",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T6",
+  "basis": "leave-one-out range 0.113\u20130.125 \u2705; I've read the results",
+  "confidence": "high"
+ },
+ "U68": {
+  "id": "U68",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T6",
+  "basis": "without GM 0.067 (0.032), 42% \u2705; p_t(9) 0.0634 computed; I've read the results",
+  "confidence": "medium"
+ },
+ "U69": {
+  "id": "U69",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T6",
+  "basis": "1.1**0.4327-1 = 0.0421; bootstrap p 0.12 \u2705; I've read the results",
+  "confidence": "high"
+ },
+ "U70": {
+  "id": "U70",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T6",
+  "basis": "GM's 1935 capital is 2.8 \u2705; I've read the results",
+  "confidence": "high"
+ },
+ "U71": {
+  "id": "U71",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T6",
+  "basis": "'very stable' holds for columns 1\u20134 only (T5 flag); I've read the results. Fix it",
+  "confidence": "medium"
+ },
+ "U72": {
+  "id": "U72",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T6",
+  "basis": "Findings 1\u20134 match the table \u2705; I've read the results",
+  "confidence": "medium"
+ },
+ "U73": {
+  "id": "U73",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T6",
+  "basis": "HC1 error less than half the clustered one \u2705 0.42; I've read the results",
+  "confidence": "high"
+ },
+ "U74": {
+  "id": "U74",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T6",
+  "basis": "t(9) p = 0.063; bootstrap p = 0.021 reported in T5; I've read the results",
+  "confidence": "medium"
+ },
+ "U75": {
+  "id": "U75",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T6",
+  "basis": "The equation matches column (4) \u2705; I've read the results",
+  "confidence": "high"
+ },
+ "U76": {
+  "id": "U76",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T6",
+  "basis": "Errors are clustered by firm \u2705; I've read the results. t with 10 df added in T6",
+  "confidence": "medium"
+ },
+ "U77": {
+  "id": "U77",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T6",
+  "basis": "restricted wild bootstrap uses Webb weights and 9,999 draws \u2705; I've read the results",
+  "confidence": "medium"
+ },
+ "U78": {
+  "id": "U78",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T6, T7",
+  "basis": "Note written in the T6 fix; no later check of the note text against the code",
+  "confidence": "medium"
+ },
+ "U79": {
+  "id": "U79",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T6",
+  "basis": "logs check and drop-one-firm check exist as described \u2705; I've read the results",
+  "confidence": "medium"
+ },
+ "U80": {
+  "id": "U80",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T6",
+  "basis": "All 660 values match\u2026 / I've read the results",
+  "confidence": "high"
+ },
+ "U42": {
+  "id": "U42",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T6",
+  "basis": "Crossref lookup \u2705 Matches; \"I've read the results\"",
+  "confidence": "high"
+ },
+ "U43": {
+  "id": "U43",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T6",
+  "basis": "Crossref lookup \u2705 Matches; \"I've read the results\"",
+  "confidence": "high"
+ },
+ "U44": {
+  "id": "U44",
+  "discretion": "none",
+  "certification": "you checked it against the source",
+  "turns": "T7",
+  "basis": "I checked the Tobin reference against its Crossref record",
+  "confidence": "high"
+ },
+ "U45": {
+  "id": "U45",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T6",
+  "basis": "supported by Brainard, Shapiro & Shoven (NBER w3452); \"I've read the results\"",
+  "confidence": "medium"
+ },
+ "U46": {
+  "id": "U46",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T6",
+  "basis": "abstract fetched; \"Only partly verified\"; \"I've read the results\"",
+  "confidence": "medium"
+ },
+ "U47": {
+  "id": "U47",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T6",
+  "basis": "working paper grep: \"list errors in about ten published versions\" \u2705",
+  "confidence": "high"
+ },
+ "U48": {
+  "id": "U48",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T6",
+  "basis": "\"Several versions circulate with differing values\": \u2705",
+  "confidence": "medium"
+ },
+ "U49": {
+  "id": "U49",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T6, T7",
+  "basis": "Counts: consistent everywhere\u2026 220 observations; \"I've read the results\"",
+  "confidence": "medium"
+ },
+ "U50": {
+  "id": "U50",
+  "discretion": "none",
+  "certification": "tool checked, you didn't see the result",
+  "turns": "T6, T7",
+  "basis": "grep for stale 0.002 \u2192 \"no stale values\"; T6 reply never answered",
+  "confidence": "medium"
+ },
+ "U51": {
+  "id": "U51",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T6",
+  "basis": "without GM 0.067 (0.032), \"about 40% smaller\" \u2705 42%",
+  "confidence": "medium"
+ },
+ "U52": {
+  "id": "U52",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T6",
+  "basis": "Grunfeld's 1958 PhD thesis, University of Chicago: \u2705",
+  "confidence": "high"
+ },
+ "U53": {
+  "id": "U53",
+  "discretion": "none",
+  "certification": "tool checked, you confirmed",
+  "turns": "T5, T6",
+  "basis": "Units are \"millions of 1947 dollars\": \u2705; Westinghouse, IBM and Chrysler average",
+  "confidence": "medium"
+ },
+ "U54": {
+  "id": "U54",
+  "discretion": "none",
+  "certification": "no check",
+  "turns": "T2, T6",
+  "basis": "no source lookup for over-rejection claim",
+  "confidence": "medium"
+ },
+ "U18": {
+  "id": "U18",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T2, T3, T4",
+  "basis": "item 9 \"Investment on market value and capital stock in levels\"; \"Keep the rest of the list\"",
+  "confidence": "medium"
+ },
+ "U19": {
+  "id": "U19",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T2, T3, T4",
+  "basis": "item 9 \"did not use a q-style ratio\"; \"Keep the rest\"",
+  "confidence": "high"
+ },
+ "U20": {
+  "id": "U20",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T2, T3, T4",
+  "basis": "item 9 regression variables; \"Keep the rest of the list\"",
+  "confidence": "medium"
+ },
+ "U21": {
+  "id": "U21",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T2, T3, T4",
+  "basis": "\"Keep the estimator\" (reason given is about errors)",
+  "confidence": "medium"
+ },
+ "U22": {
+  "id": "U22",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T2, T3, T4",
+  "basis": "items 6, 12; \"Keep the estimator\"",
+  "confidence": "medium"
+ },
+ "U23": {
+  "id": "U23",
+  "discretion": "given",
+  "certification": "elaborated and okayed",
+  "turns": "T2, T3, T4",
+  "basis": "Keep\u2026 the standard errors: I'd rather have errors that are too cautious",
+  "confidence": "high"
+ },
+ "U24": {
+  "id": "U24",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T5, T6, T7",
+  "basis": "\"Clustered p-values now use a t-distribution with 10 degrees of freedom\"; no response",
+  "confidence": "medium"
+ },
+ "U25": {
+  "id": "U25",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T2, T3, T4",
+  "basis": "item 14 restricted, Webb, 9,999, seed; \"Keep the rest of the list\"",
+  "confidence": "medium"
+ },
+ "U26": {
+  "id": "U26",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T3, T4",
+  "basis": "item 19 \"Significance stars at 1%/5%/10%\"; \"Keep the rest\"",
+  "confidence": "high"
+ },
+ "U27": {
+  "id": "U27",
+  "discretion": "given",
+  "certification": "ignored",
+  "turns": "T5, T6, T7",
+  "basis": "\"Stars on market value now come from the wild bootstrap\"; no response",
+  "confidence": "medium"
+ },
+ "U28": {
+  "id": "U28",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T1, T2, T3",
+  "basis": "\"the specification in notes/draft.md\"; \"I kept your specification as column (1)\"",
+  "confidence": "medium"
+ },
+ "U29": {
+  "id": "U29",
+  "discretion": "given",
+  "certification": "elaborated and okayed",
+  "turns": "T2, T3, T4",
+  "basis": "T3 item 13 'clustered by firm'; T4 'Keep the estimator and the standard errors: with this few firms, I'd rather have errors that are too cautious'",
+  "confidence": "medium"
+ },
+ "U30": {
+  "id": "U30",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T2, T3, T4",
+  "basis": "T2 'pick whatever approach'; T3 item 12 fixed effects; T4 'Keep the rest of the list too'",
+  "confidence": "medium"
+ },
+ "U31": {
+  "id": "U31",
+  "discretion": "taken",
+  "certification": "okayed",
+  "turns": "T2, T3, T4",
+  "basis": "T3 item 15 'Column (5) in logs. I added it'; T4 'Keep the rest of the list too'",
+  "confidence": "medium"
+ },
+ "U32": {
+  "id": "U32",
+  "discretion": "taken",
+  "certification": "okayed",
+  "turns": "T2, T3, T4, T6",
+  "basis": "T3 item 16 'Leave-one-firm-out check. I added it'; T4 'Keep the rest'",
+  "confidence": "medium"
+ },
+ "U33": {
+  "id": "U33",
+  "discretion": "taken",
+  "certification": "okayed",
+  "turns": "T3, T4",
+  "basis": "T3 item 17 'Within R\u00b2. I defined it'; T4 'Keep the rest of the list too'",
+  "confidence": "medium"
+ },
+ "U34": {
+  "id": "U34",
+  "discretion": "given",
+  "certification": "changed",
+  "turns": "T3, T4, T5, T6",
+  "basis": "T5 flagged 's.d. removes firm averages but not year effects'; T6 'Fix anything they found wrong'",
+  "confidence": "medium"
+ },
+ "U35": {
+  "id": "U35",
+  "discretion": "taken",
+  "certification": "okayed",
+  "turns": "T2, T3, T4",
+  "basis": "T3 item 5 'Mean investment 155.9 \u2192 133.3'; T4 'Keep the rest of the list too'",
+  "confidence": "medium"
+ },
+ "U15": {
+  "id": "U15",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T2",
+  "basis": "'using the Grunfeld data in statsmodels'",
+  "confidence": "high"
+ },
+ "U16": {
+  "id": "U16",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T2, T3, T4",
+  "basis": "T3 item 11 'All 11 firms, including American Steel'; T4 'Keep the rest'",
+  "confidence": "medium"
+ },
+ "U17": {
+  "id": "U17",
+  "discretion": "taken",
+  "certification": "okayed",
+  "turns": "T3, T4",
+  "basis": "T3 item 15 'Column (5) in logs. I added it'; T4 'Keep the rest'",
+  "confidence": "medium"
+ },
+ "U36": {
+  "id": "U36",
+  "discretion": "given",
+  "certification": "changed",
+  "turns": "T2, T4",
+  "basis": "T4 'except the interpretation. Rewrite it as a statement about these firms in this period only'",
+  "confidence": "high"
+ },
+ "U37": {
+  "id": "U37",
+  "discretion": "given",
+  "certification": "changed",
+  "turns": "T4, T5, T6",
+  "basis": "T4 'Rewrite it as a statement about these firms'; T6 'Fix anything they found wrong'",
+  "confidence": "medium"
+ },
+ "U38": {
+  "id": "U38",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T2, T3, T4",
+  "basis": "T3 item 6 'understate uncertainty by more than half'; T4 'Keep the rest'",
+  "confidence": "low"
+ },
+ "U39": {
+  "id": "U39",
+  "discretion": "taken",
+  "certification": "okayed",
+  "turns": "T2, T3, T4",
+  "basis": "T3 item 16 'It's what turned up the GM finding'; T4 'Keep the rest'",
+  "confidence": "medium"
+ },
+ "U40": {
+  "id": "U40",
+  "discretion": "taken",
+  "certification": "okayed",
+  "turns": "T2, T3, T4",
+  "basis": "T2 'The log version is weaker'; T3 item 15; T4 'Keep the rest'",
+  "confidence": "medium"
+ },
+ "U41": {
+  "id": "U41",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T3, T4",
+  "basis": "T3 items 20-21 output files and structure; T4 'Keep the rest'",
+  "confidence": "medium"
+ },
+ "U1": {
+  "id": "U1",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T2",
+  "basis": "'whether a firm's market value predicts how much it invests'",
+  "confidence": "high"
+ },
+ "U2": {
+  "id": "U2",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T1, T2",
+  "basis": "draft: 'Tobin (1969) argued that firms invest... Hayashi'",
+  "confidence": "medium"
+ },
+ "U3": {
+  "id": "U3",
+  "discretion": "taken",
+  "certification": "okayed",
+  "turns": "T3, T4",
+  "basis": "T3 item 7 'early, rough version of the q idea. That framing is my interpretation'; T4 'Keep the rest'",
+  "confidence": "medium"
+ },
+ "U4": {
+  "id": "U4",
+  "discretion": "taken",
+  "certification": "changed",
+  "turns": "T3, T4, T5, T6",
+  "basis": "T5 '\"Financing frictions\" isn't in Hayashi'; T6 'Fix anything they found wrong'",
+  "confidence": "medium"
+ },
+ "U5": {
+  "id": "U5",
+  "discretion": "kept",
+  "certification": "none",
+  "turns": "T1, T2",
+  "basis": "draft: 'Tobin (1969) argued that firms invest when the market values their capital'",
+  "confidence": "high"
+ },
+ "U6": {
+  "id": "U6",
+  "discretion": "taken",
+  "certification": "okayed",
+  "turns": "T2, T3, T4",
+  "basis": "T3 item 1 'Hayashi's finding is reversed... I rewrote it'; T4 'Keep the rest'",
+  "confidence": "medium"
+ },
+ "U7": {
+  "id": "U7",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T2, T3, T4",
+  "basis": "T3 item 11 'Kleiber and Zeileis discuss different versions'; T4 'Keep the rest'",
+  "confidence": "low"
+ },
+ "U8": {
+  "id": "U8",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T3, T4",
+  "basis": "T3 item 26 'attributed to Kleiber and Zeileis from memory'; T4 'Keep the rest'",
+  "confidence": "medium"
+ },
+ "U9": {
+  "id": "U9",
+  "discretion": "taken",
+  "certification": "okayed",
+  "turns": "T3, T4",
+  "basis": "T3 item 21 'a Recommendation section you didn't ask for'; T4 'Keep the rest'",
+  "confidence": "high"
+ },
+ "U10": {
+  "id": "U10",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T2, T3, T4",
+  "basis": "T3 item 21 \"Structure. A 'Bottom line' up front, then Background/Data/Methods/Results/Limitations\"; T4 \"Keep the rest of the list too\"",
+  "confidence": "medium"
+ },
+ "U11": {
+  "id": "U11",
+  "discretion": "given",
+  "certification": "okayed",
+  "turns": "T2, T3, T4",
+  "basis": "T2 \"put a results table in output/... pick whatever approach\"; T3 items 12, 15, 20 listed; T4 \"Keep the rest of the list too\"",
+  "confidence": "medium"
+ },
+ "U12": {
+  "id": "U12",
+  "discretion": "taken",
+  "certification": "okayed",
+  "turns": "T2, T3, T4",
+  "basis": "T3 item 16 \"Leave-one-firm-out check. I added it\"; T4 \"Keep the rest of the list too\"",
+  "confidence": "medium"
+ },
+ "U13": {
+  "id": "U13",
+  "discretion": "taken",
+  "certification": "wasn't notified",
+  "turns": "T2, T3",
+  "basis": "Firm means table not requested; T3 item 20 lists output files without mentioning firm means table",
+  "confidence": "medium"
+ },
+ "U14": {
+  "id": "U14",
+  "discretion": "given",
+  "certification": "changed",
+  "turns": "T2, T3, T4",
+  "basis": "T3 item 24 \"'Not causal' and the other limitations. These are my judgments\"; T4 \"except the interpretation. Rewrite it as a statement about these firms in this period only\"",
+  "confidence": "high"
+ }
+}
